@@ -52,7 +52,7 @@
                 "name": "DaTroll's Collection EXPANDED",
                 "description": "Local folder",
 
-                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection EXPANDED/"
+                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection_EXPANDED/"
             },
             
             {
@@ -60,7 +60,7 @@
                 "name": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
                 "description": "Local folder",
 
-                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection EXPANDED_DEV/"
+                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection_EXPANDED_DEV/"
             },
         ]
     }
