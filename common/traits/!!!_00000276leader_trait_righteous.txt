@@ -1,0 +1,49 @@
+leader_trait_righteous = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_righteous"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_crime_add = -25
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_crime_no_happiness_add = -25
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_crime_add = -10
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_crime_no_happiness_add = -10
+    }
+    leader_class = {
+        commander
+        official
+    }
+    opposites = {
+        leader_trait_corrupt
+        leader_trait_corrupt_2
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

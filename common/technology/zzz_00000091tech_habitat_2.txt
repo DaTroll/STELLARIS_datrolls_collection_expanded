@@ -1,0 +1,51 @@
+tech_habitat_2 = {
+    cost = @tier4cost2
+    area = engineering
+    category = {
+        voidcraft
+    }
+    tier = 4
+    prerequisites = {
+        "tech_habitat_1"
+        "tech_starbase_4"
+    }
+    weight = @tier4weight3
+    is_rare = yes
+    potential = {
+        OR = {
+            has_origin = origin_void_dwellers
+            host_has_dlc = "Utopia"
+        }
+    }
+    modifier = {
+        habitat_max_districts_add = 1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    is_planet_class = pc_habitat
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            has_origin = origin_void_dwellers
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_habitat_2
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 100
+            OR = {
+                has_origin = origin_toxic_knights
+                has_country_flag = payback_habitat
+                has_valid_civic = civic_void_hive
+            }
+        }
+    }
+}

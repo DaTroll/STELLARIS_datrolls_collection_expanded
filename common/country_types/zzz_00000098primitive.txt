@@ -1,0 +1,54 @@
+primitive = {
+    randomize_ethos = yes
+    shuffle_pop_ethos = yes
+    observable = no
+    relations = yes
+    ai = {
+        enabled = yes
+        declare_war = no
+        colonizer = no
+        internal_policies = no
+        modification = no
+        construction = no
+        tech = no
+        espionage = no
+        modules = {
+            foreign_minister_module
+        }
+    }
+    faction = {
+        hostile = no
+        primitive = yes
+        needs_border_access = no
+        generate_borders = no
+        needs_colony = yes
+        intel_effects_surveyed = no
+    }
+    hide_names_if_no_communication = no
+    show_in_contacts_list = yes
+    modules = {
+        standard_event_module = {
+        }
+        basic_technology_module = {
+        }
+        exclusive_diplomacy_module = {
+            contact_rule = on_action_only
+            can_receive = {
+                action_improve_relation
+                action_harm_relation
+                action_reveal_presence
+                action_build_spy_network
+                action_manage_spy_network
+                action_societal_enlightenment
+                action_stop_societal_enlightenment
+                action_open_technological_enlightenment
+                action_stop_open_technological_enlightenment
+                action_stratified_technological_enlightenment
+                action_stop_stratified_technological_enlightenment
+                action_pre_ftl_trade
+                action_stop_pre_ftl_trade
+                action_open_pre_ftl_homeworld
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_stellarite_affluence_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

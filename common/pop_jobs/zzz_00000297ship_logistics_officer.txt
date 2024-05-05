@@ -1,0 +1,6 @@
+ship_logistics_officer = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

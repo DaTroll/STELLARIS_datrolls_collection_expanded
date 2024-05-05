@@ -1,0 +1,8 @@
+building_grand_dvorets = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

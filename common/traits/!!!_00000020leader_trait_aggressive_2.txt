@@ -1,0 +1,24 @@
+leader_trait_aggressive_2 = {
+    replace_traits = {
+        leader_trait_aggressive
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_aggressive
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        ship_fire_rate_mult = 0.05
+        ship_weapon_damage = 0.05
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_cautious
+        leader_trait_cautious_2
+    }
+}

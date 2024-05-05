@@ -1,0 +1,33 @@
+trait_agrarian = {
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        planet_jobs_food_produces_mult = 0.15
+    }
+    slave_cost = {
+        energy = 500
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_farming_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_rural_designation = yes
+            }
+        }
+    }
+}

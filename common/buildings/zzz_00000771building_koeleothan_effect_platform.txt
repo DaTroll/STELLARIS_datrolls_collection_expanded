@@ -1,0 +1,72 @@
+building_koeleothan_effect_platform = {
+    base_buildtime = 180
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = resource
+    potential = {
+        planet = {
+            planet_has_koeleothan_deposit = yes
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_koeleothan_utilization
+                }
+            }
+            planet = {
+                planet_has_koeleothan_deposit = no
+            }
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = "requirement_has_koeleothan"
+            planet = {
+                planet_has_koeleothan_deposit = yes
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/farmers_add
+        FARMER_AMOUNT = 2
+        ANGLER_AMOUNT = 3
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            society_research = 3
+            food = 2
+        }
+        cost = {
+            minerals = 200
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 2
+            exotic_gases = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_civic = civic_agrarian_idyll
+            }
+        }
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    country_modifier = {
+        pop_government_ethic_attraction = 0.15
+    }
+    ai_weight = {
+        weight = 100
+    }
+    prerequisites = {
+        "tech_koeleothan_utilization"
+    }
+}

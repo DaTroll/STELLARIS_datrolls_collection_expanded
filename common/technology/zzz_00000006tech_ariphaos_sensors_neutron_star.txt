@@ -1,0 +1,11 @@
+tech_ariphaos_sensors_neutron_star = {
+    cost = 0
+    area = physics
+    category = {
+        computing
+    }
+    tier = 3
+    potential = {
+        merg_has_sensor_expansion = yes
+    }
+}

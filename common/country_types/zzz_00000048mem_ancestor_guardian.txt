@@ -1,0 +1,5 @@
+mem_ancestor_guardian = {
+    ai = {
+        enabled = no
+    }
+}

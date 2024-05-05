@@ -1,0 +1,87 @@
+"Holy Kog Wasters" = {
+    key = "Holy Kog Wasters"
+    ship_prefix = {
+        key = "KSW"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun14"
+        species_name = {
+            key = "Kog"
+        }
+        species_plural = {
+            key = "Kogs"
+        }
+        species_adjective = {
+            key = "Kog"
+        }
+        species_bio = "The Kog are the most useless, inefficient, space wasting, worst investment you could possibly make when you buy your first space slave. The Kog have only one advantage: living long lives, however they are really bad for working on fields or mines aswell as just working. It's actually an evolutionary wonder that they came this far in their evolution, making the process of selectivness for survival intriguing.The problem or threat coming from them wont be to the outisde, but the inside of your Empire once you've annexed them. (-Dedicated to Cornelius)"
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_weak"
+        trait = "trait_solitary"
+        trait = "trait_venerable"
+        trait = "trait_wasteful"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Holy Kog Wasters"
+    }
+    adjective = {
+        key = "Kog"
+    }
+    authority = "auth_democratic"
+    government = "gov_theocratic_republic"
+    planet_name = {
+        key = "Wasteworld"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Wastestar"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_3.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "burgundy"
+            "brown"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kag"
+            }
+        }
+        portrait = "fun14"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophile"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_free_haven"
+        "civic_reanimated_armies"
+    }
+    origin = "origin_post_apocalyptic"
+}

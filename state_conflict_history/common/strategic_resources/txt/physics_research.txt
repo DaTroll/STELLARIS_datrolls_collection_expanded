@@ -1,0 +1,6 @@
+physics_research = {
+    category = other
+    ai_weight = {
+        weight = 1
+    }
+}

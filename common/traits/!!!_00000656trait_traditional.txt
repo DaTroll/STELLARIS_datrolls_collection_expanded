@@ -1,0 +1,37 @@
+trait_traditional = {
+    cost = 1
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    opposites = {
+        "trait_quarrelsome"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    slave_cost = {
+        energy = 500
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_unity_designation = yes
+            }
+        }
+        modifier = {
+            add = 1.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+leader_trait_obelisk_curse = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        CLASS = leader
+        ICON = "GFX_leader_trait_obelisk_curse"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        country_energy_produces_mult = 0.1
+    }
+    custom_tooltip_with_modifiers = leader_trait_obelisk_curse_tt
+    on_gained_effect = {
+        owner = {
+            country_event = {
+                id = astral_rift.1960
+                days = 360
+                scopes = {
+                    from = prev
+                }
+            }
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

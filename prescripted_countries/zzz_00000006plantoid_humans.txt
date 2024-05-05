@@ -1,0 +1,67 @@
+plantoid_humans = {
+    name = "EMPIRE_DESIGN_plantoid_humans"
+    adjective = "PRESCRIPTED_adjective_humans1"
+    spawn_enabled = no
+    ignore_portrait_duplication = yes
+    ship_prefix = "PRESCRIPTED_ship_prefix_plantoid_humans"
+    species = {
+        class = "PLANT"
+        portrait = "pla17"
+        name = "PRESCRIPTED_species_name_plantoid_humans"
+        plural = "PRESCRIPTED_species_plural_plantoid_humans"
+        adjective = "PRESCRIPTED_species_adjective_plantoid_humans"
+        name_list = "PLANT3"
+        gender = not_set
+        trait = "trait_plantoid_radiotrophic"
+        trait = "trait_conservational"
+        trait = "trait_agrarian"
+        trait = "trait_slow_learners"
+        trait = "trait_slow_breeders"
+    }
+    playable = has_plantoids
+    room = "plantoid3_room"
+    authority = "auth_democratic"
+    civics = {
+        "civic_environmentalist"
+        "civic_catalytic_processing"
+    }
+    government = gov_moral_democracy
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_egalitarian"
+    origin = "origin_fruitful"
+    flags = {
+        human_plantoid
+    }
+    planet_name = "NAME_Gaea"
+    planet_class = "pc_tropical"
+    initializer = "sol_system_initializer"
+    system_name = "NAME_Sol"
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_24.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "rounded_middle.dds"
+        }
+        colors = {
+            "toxic_green"
+            "shadow_teal"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        name = "PRESCRIPTED_ruler_name_plantoid_humans"
+        gender = female
+        portrait = "pla17_f"
+        texture = 0
+        attachment = 0
+        clothes = 2
+        trait = "trait_ruler_charismatic"
+        leader_class = official
+    }
+}

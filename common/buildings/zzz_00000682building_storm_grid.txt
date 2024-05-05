@@ -1,0 +1,56 @@
+building_storm_grid = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_storm
+        NOT = {
+            has_building = building_storm_lab_regular
+        }
+        NOT = {
+            has_building_construction = building_storm_lab_regular
+        }
+        NOT = {
+            has_building = building_storm_grid
+        }
+        NOT = {
+            has_building_construction = building_storm_grid
+        }
+        NOT = {
+            has_building = building_storm_mine
+        }
+        NOT = {
+            has_building_construction = building_storm_mine
+        }
+        OR = {
+            owner = {
+                is_ai = no
+            }
+            has_any_generator_district_or_building = yes
+        }
+    }
+    inline_script = "buildings/pd_rare_energy_building"
+    destroy_trigger = {
+        OR = {
+            OR = {
+                has_modifier = resort_colony
+                has_modifier = crucible_colony
+            }
+            AND = {
+                exists = owner
+                owner = {
+                    is_ai = yes
+                }
+                has_any_generator_district_or_building = no
+            }
+        }
+        planet = {
+            NOT = {
+                is_planet_class = pc_storm
+            }
+        }
+    }
+}

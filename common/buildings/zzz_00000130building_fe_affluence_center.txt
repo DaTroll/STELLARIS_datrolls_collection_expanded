@@ -1,0 +1,8 @@
+building_fe_affluence_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

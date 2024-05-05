@@ -1,0 +1,21 @@
+trait_cyborg_power_intensive = {
+    cost = -1
+    opposites = {
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip = TRAIT_POWER_INTENSIVE_EFFECT
+    slave_cost = {
+        energy = -250
+    }
+}

@@ -1,0 +1,29 @@
+leader_trait_adventurous_spirit_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_adventurous_spirit"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_adventurous_spirit"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_councilor = no
+        }
+        show_if_not_potential = yes
+        not_potential_override_text_key = adventurous_spirit_on_council
+        leaders_upkeep_mult = -0.25
+        species_leader_exp_gain = 0.05
+    }
+    custom_tooltip_with_modifiers = leader_trait_adventurous_spirit_effect
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+}

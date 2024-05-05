@@ -1,0 +1,36 @@
+tech_adaptive_bureaucracy = {
+    cost = @tier1cost2
+    area = society
+    tier = 1
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_planetary_unification"
+    }
+    weight = @tier1weight2
+    gateway = espionage
+    modifier = {
+        country_edict_fund_add = 20
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            num_owned_planets < 2
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 2
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 3
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 4
+        }
+    }
+    ai_weight = {
+    }
+}

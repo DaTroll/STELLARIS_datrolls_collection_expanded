@@ -1,0 +1,8 @@
+building_hive_major_capital_sick = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

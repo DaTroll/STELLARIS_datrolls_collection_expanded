@@ -1,0 +1,31 @@
+leader_trait_inquisitive = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_inquisitive"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.01
+        num_tech_alternatives_add = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_scientist_councilor
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+    opposites = {
+        leader_trait_narrow_minded
+        leader_trait_narrow_minded_2
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

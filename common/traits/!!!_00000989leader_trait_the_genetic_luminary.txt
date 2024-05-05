@@ -1,0 +1,29 @@
+leader_trait_the_genetic_luminary = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_legendary_xenophobe_one"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_upkeep
+        RESOURCE = food
+        AMOUNT = 100
+    }
+    councilor_modifier = {
+        BIOLOGICAL_species_trait_points_add = 1
+        BIOLOGICAL_species_trait_picks_add = 1
+        modify_species_cost_mult = -0.15
+        pop_growth_speed = -0.15
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+    immortal_leaders = yes
+}

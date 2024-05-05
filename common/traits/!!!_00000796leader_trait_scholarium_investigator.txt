@@ -1,0 +1,26 @@
+leader_trait_scholarium_investigator = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_specialist
+        CLASS = scientist
+        ICON = "GFX_leader_trait_scholarium_investigator"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_jobs_physics_research_produces_mult = 0.25
+        planet_jobs_society_research_produces_mult = 0.25
+        planet_jobs_engineering_research_produces_mult = 0.25
+    }
+    sector_modifier = {
+        planet_jobs_physics_research_produces_mult = 0.125
+        planet_jobs_society_research_produces_mult = 0.125
+        planet_jobs_engineering_research_produces_mult = 0.125
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

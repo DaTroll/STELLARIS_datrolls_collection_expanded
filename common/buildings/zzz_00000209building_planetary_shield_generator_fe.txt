@@ -1,0 +1,8 @@
+building_planetary_shield_generator_fe = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

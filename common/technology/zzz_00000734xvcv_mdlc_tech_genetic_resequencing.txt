@@ -1,0 +1,19 @@
+xvcv_mdlc_tech_genetic_resequencing = {
+    cost = @tier4cost1
+    area = society
+    tier = 4
+    is_rare = yes
+    category = {
+        biology
+    }
+    weight = @xvcv_mdlc_not_researchable_tech_weight
+    potential = {
+        has_ascension_perk = xvcv_mdlc_ap_genetics_mastery
+    }
+    prereqfor_desc = {
+        custom = {
+            title = "xvcv_mdlc_tech_genetic_resequencing_effect"
+            desc = "xvcv_mdlc_tech_genetic_resequencing_effect_desc"
+        }
+    }
+}

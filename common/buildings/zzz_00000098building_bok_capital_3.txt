@@ -1,0 +1,8 @@
+building_bok_capital_3 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

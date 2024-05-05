@@ -1,0 +1,5 @@
+contact_with_MSI_01 = {
+    opinion = {
+        base = -200
+    }
+}

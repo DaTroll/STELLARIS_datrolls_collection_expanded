@@ -1,0 +1,25 @@
+tech_basic_science_lab_3 = {
+    area = physics
+    category = {
+        computing
+    }
+    tier = 3
+    cost = @tier3cost1
+    prerequisites = {
+        "tech_basic_science_lab_2"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight1
+    weight_modifier = {
+        factor = 2
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = scholarium
+            }
+        }
+    }
+    ai_weight = {
+        factor = @ai_research_lab_factor
+    }
+}

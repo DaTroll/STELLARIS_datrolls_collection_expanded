@@ -1,0 +1,64 @@
+namespace = colony_mod
+namespace = colony_fed
+planet_event = {
+    id = colony_mod.16
+    title = "colony_mod.16.name"
+    desc = "colony_mod.16.desc"
+    picture = GFX_evt_alien_city
+    show_sound = event_air_raid_siren
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+    }
+    trigger = {
+        owner = {
+            is_ai = no
+        }
+        has_modifier = "strong_magnetic_field"
+        NOT = {
+            has_modifier = "magnetic_research_boost"
+        }
+        NOT = {
+            has_modifier = "magnetic_disruption"
+        }
+        NOT = {
+            has_planet_flag = magnetic_mystery_solved
+        }
+        num_pops > 0
+    }
+    immediate = {
+        OWNER = {
+            change_variable = {
+                which = "magnetic_planet_research"
+                value = 1
+            }
+        }
+    }
+    is_triggered_only = yes
+    option = {
+        name = FASCINATING
+        add_modifier = {
+            modifier = "magnetic_research_boost"
+            days = 1800
+        }
+        OWNER = {
+            if = {
+                limit = {
+                    check_variable = {
+                        which = magnetic_planet_research
+                        value = 3
+                    }
+                }
+                enable_special_project = {
+                    name = "MAGNETIC_PLANET_RESEARCH_PROJECT"
+                    location = root
+                    owner = this
+                }
+            }
+        }
+    }
+}

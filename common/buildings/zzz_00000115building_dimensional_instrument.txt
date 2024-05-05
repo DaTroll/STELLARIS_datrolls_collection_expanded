@@ -1,0 +1,8 @@
+building_dimensional_instrument = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

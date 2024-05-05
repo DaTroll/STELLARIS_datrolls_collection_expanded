@@ -1,0 +1,5 @@
+huge_country = {
+    ai = {
+        enabled = no
+    }
+}

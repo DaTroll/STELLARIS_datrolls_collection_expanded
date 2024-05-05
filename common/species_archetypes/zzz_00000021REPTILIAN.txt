@@ -1,0 +1,3 @@
+REPTILIAN = {
+    uses_modifiers = no
+}

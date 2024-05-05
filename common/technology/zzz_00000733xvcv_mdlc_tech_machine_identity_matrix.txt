@@ -1,0 +1,17 @@
+xvcv_mdlc_tech_machine_identity_matrix = {
+    icon = "tech_synthetic_leaders"
+    cost = @tier3cost3
+    area = physics
+    tier = 3
+    category = {
+        computing
+    }
+    weight = @tier3weight3
+    potential = {
+        has_authority = auth_machine_intelligence
+    }
+    modifier = {
+        councilor_skill_add = 1
+        species_leader_exp_gain = 0.25
+    }
+}

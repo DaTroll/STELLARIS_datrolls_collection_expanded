@@ -1,0 +1,8 @@
+opinion_imperial_vassal_new_overlord = {
+    opinion = {
+        base = 150
+    }
+    decay = {
+        base = 1
+    }
+}

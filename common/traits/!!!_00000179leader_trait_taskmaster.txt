@@ -1,0 +1,71 @@
+leader_trait_taskmaster = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_taskmaster"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        army_starting_experience_add = 500
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                country_uses_food = yes
+            }
+        }
+        planet_soldiers_energy_produces_add = 2
+        planet_soldiers_minerals_produces_add = 2
+        planet_soldiers_food_produces_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                country_uses_food = no
+            }
+        }
+        planet_soldiers_energy_produces_add = 3
+        planet_soldiers_minerals_produces_add = 3
+    }
+    sector_modifier = {
+        army_starting_experience_add = 250
+    }
+    triggered_sector_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                country_uses_food = yes
+            }
+        }
+        planet_soldiers_energy_produces_add = 1
+        planet_soldiers_minerals_produces_add = 1
+        planet_soldiers_food_produces_add = 1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                country_uses_food = no
+            }
+        }
+        planet_soldiers_energy_produces_add = 1.5
+        planet_soldiers_minerals_produces_add = 1.5
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_governor
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

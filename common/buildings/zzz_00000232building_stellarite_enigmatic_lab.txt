@@ -1,0 +1,8 @@
+building_stellarite_enigmatic_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

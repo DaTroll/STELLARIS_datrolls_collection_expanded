@@ -1,0 +1,115 @@
+@stickiness = 10
+col_industrial = {
+    icon = GFX_colony_type_industrial
+    potential = {
+        exists = owner
+        owner = {
+            country_uses_consumer_goods = yes
+        }
+        NOR = {
+            uses_district_set = city_world
+            uses_district_set = habitat
+            uses_district_set = machine_world
+            uses_district_set = hive_world
+            uses_district_set = pdarchive
+            uses_district_set = pdwarform
+            uses_district_set = pdecocity
+            uses_district_set = pdpalacearc
+            uses_district_set = pdplanethab
+            uses_district_set = pdbioforge
+            uses_district_set = pdbiocapital
+            uses_district_set = pdmachinefactory
+            uses_district_set = pdmachinecapital
+            uses_district_set = pdfloraforge
+            uses_district_set = pdmilarc
+            uses_district_set = pdbiofort
+            uses_district_set = pdmachinefort
+            uses_district_set = pdcorpoarc
+            uses_district_set = pdcrucible
+        }
+        is_special_colony_type = no
+        is_capital = no
+    }
+    planet_modifier = {
+        planet_district_industrial_build_speed_mult = 0.25
+        planet_artisans_upkeep_mult = -0.1
+        planet_metallurgists_upkeep_mult = -0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            uses_district_set = ring_world
+        }
+        pop_growth_speed = 0.1
+        planet_pop_assembly_mult = 0.1
+        planet_pop_assembly_organic_mult = 0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_galactic_community_member = yes
+            }
+            OR = {
+                is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+                is_active_resolution = "resolution_industry_project_cornucopia"
+            }
+        }
+        modifier = {
+            planet_artisans_produces_mult = 0.0375
+            planet_metallurgists_produces_mult = 0.0375
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_tradition = tr_adaptability_finish
+            }
+        }
+        modifier = {
+            planet_artisans_produces_mult = 0.05
+            planet_metallurgists_produces_mult = 0.05
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_galactic_community_member = yes
+            }
+            is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+        }
+        modifier = {
+            planet_artisans_produces_mult = 0.1
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            add = @stickiness
+            has_designation = col_industrial
+        }
+        complex_trigger_modifier = {
+            trigger = num_districts
+            parameters = {
+                type = district_industrial
+            }
+            mode = add
+            mult = 3
+        }
+        modifier = {
+            add = 15
+            AND = {
+                OR = {
+                    has_building = building_factory_1
+                    has_building = building_factory_2
+                    has_building = building_factory_3
+                }
+                OR = {
+                    has_building = building_foundry_1
+                    has_building = building_foundry_2
+                    has_building = building_foundry_3
+                }
+            }
+        }
+    }
+}

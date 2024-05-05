@@ -1,0 +1,25 @@
+leader_trait_dpe_ruthless = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_legendary_authoritarian_bad"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        NOT = {
+            from = {
+                has_ethic = "ethic_gestalt_consciousness"
+            }
+        }
+    }
+    leader_class = {
+        official
+    }
+    modifier = {
+        planet_stability_add = 8
+    }
+    initial = no
+    randomized = no
+}

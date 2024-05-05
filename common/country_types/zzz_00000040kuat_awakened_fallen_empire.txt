@@ -1,0 +1,5 @@
+kuat_awakened_fallen_empire = {
+    ai = {
+        enabled = no
+    }
+}

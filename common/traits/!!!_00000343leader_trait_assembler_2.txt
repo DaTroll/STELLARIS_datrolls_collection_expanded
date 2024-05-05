@@ -1,0 +1,50 @@
+leader_trait_assembler_2 = {
+    replace_traits = {
+        "leader_trait_assembler"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_assembler"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    leader_trait_type = veteran
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = no
+            }
+        }
+        planet_pop_assembly_mult = 0.25
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        planet_pop_assembly_organic_mult = 0.25
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = no
+            }
+        }
+        planet_pop_assembly_mult = 0.125
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        planet_pop_assembly_organic_mult = 0.125
+    }
+    leader_class = {
+        official
+        scientist
+    }
+}

@@ -1,0 +1,8 @@
+building_giga_fortress_array = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

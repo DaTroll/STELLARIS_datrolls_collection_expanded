@@ -1,0 +1,8 @@
+building_kuat_shield = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

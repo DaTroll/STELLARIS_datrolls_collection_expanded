@@ -1,0 +1,88 @@
+"Paranian Republic" = {
+    key = "Paranian Republic"
+    ship_prefix = {
+        key = "PRSC"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam5"
+        species_name = {
+            key = "Paranian"
+        }
+        species_plural = {
+            key = "Paranians"
+        }
+        species_adjective = {
+            key = "Paranian"
+        }
+        species_bio = "Yet another specie, too intelligent for their own good. The Paranians litteraly rushed the technological ascenscion. Many smaller democratic and authorian states where battleling for the first spot on an international race for space. Once this step got achieved; war broke out. Out of the ashes formed the Paranian Republic. They are extremly intelligent but also very weak, their four eyes proved to be a great advantage on their jungle planet. However, the new challenge will be to survive on a new sphere."
+        name_list = "MAM4"
+        gender = not_set
+        trait = "trait_quick_learners"
+        trait = "trait_weak"
+        trait = "trait_intelligent"
+    }
+    name = {
+        key = "Paranian Republic"
+    }
+    adjective = {
+        key = "Paranian "
+    }
+    authority = "auth_democratic"
+    government = "gov_rational_consensus"
+    advisor_voice_type = "l_xenophile"
+    planet_name = {
+        key = "Parania"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Paranox"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "yellow"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kerenius"
+            }
+        }
+        portrait = "mam5"
+        texture = 4
+        attachment = 0
+        clothes = 3
+        ruler_title_female = {
+            key = "First Voted"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_meritocracy"
+        "civic_technocracy"
+    }
+    origin = "origin_mechanists"
+}

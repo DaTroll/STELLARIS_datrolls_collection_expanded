@@ -1,0 +1,40 @@
+tech_gray_goo = {
+    cost = @tier3cost2
+    area = physics
+    tier = 3
+    category = {
+        particles
+    }
+    ai_update_type = military
+    weight = @tier3weight2
+    modifier = {
+        damage_vs_country_type_gray_goo_mult = 0.25
+        weapon_type_energy_weapon_damage_mult = 0.1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOT = {
+                has_global_flag = tech_gray_goo_enabled
+            }
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_global_flag = active_gray_goo
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 100
+            has_global_flag = active_gray_goo
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_global_flag = active_gray_goo
+            }
+        }
+    }
+}

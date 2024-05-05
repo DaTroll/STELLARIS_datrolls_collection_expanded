@@ -1,0 +1,31 @@
+pd_trait_group_think = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_quarrelsome"
+        "trait_traditional"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_LOW
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.2
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_unity_designation = yes
+            }
+        }
+    }
+}

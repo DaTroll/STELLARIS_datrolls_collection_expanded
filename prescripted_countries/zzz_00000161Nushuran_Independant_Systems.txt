@@ -1,0 +1,99 @@
+"Nushuran Independant Systems" = {
+    key = "Nushuran Independant Systems"
+    ship_prefix = {
+        key = "NSP"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox1"
+        species_name = {
+            key = "Noshur"
+            literal = yes
+        }
+        species_plural = {
+            key = "Noshyr"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Nushuran"
+            literal = yes
+        }
+        species_bio = "The Noshur are a deeply complex and illogical society. They once had a wonderful paradise world which their wasteness only destroyed, forcing them to live within those metallic and strange water-suits. They relie on their brute force and strengh, wasting many things in the process, but also scavenging them afterwards. Some suggest that they might even lack the most basic logical thought capabilities."
+        name_list = "TOX2"
+        gender = indeterminable
+        trait = "trait_aquatic"
+        trait = "trait_nonadaptive"
+        trait = "trait_wasteful"
+        trait = "trait_noxious"
+        trait = "trait_resilient"
+    }
+    name = {
+        key = "Nushuran Independant Systems"
+        literal = yes
+    }
+    adjective = {
+        key = "Nushuran"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_bandit_kingdom"
+    advisor_voice_type = "l_aqu_vir"
+    planet_name = {
+        key = "Nesh"
+        literal = yes
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Sio"
+        literal = yes
+    }
+    initializer = "ocean_paradise_start"
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "necroid_01"
+    empire_flag = {
+        icon = {
+            category = "toxoid"
+            file = "toxoid_12.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "sinus.dds"
+        }
+        colors = {
+            "shadow_blue"
+            "ocean_turquoise"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Alpus"
+                literal = yes
+            }
+        }
+        portrait = "tox1"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Warrior"
+            literal = yes
+        }
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "scrappy_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_barbaric_despoilers"
+        "civic_scavengers"
+    }
+    origin = "origin_ocean_paradise"
+}

@@ -1,0 +1,62 @@
+holding_sacrificial_shrine = {
+    base_buildtime = @b1_time
+    owner_type = subject_holding
+    icon = building_sacrificial_temple_2
+    base_cap_amount = 1
+    category = unity
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            is_death_cult_empire = yes
+        }
+        owner = {
+            is_machine_empire = no
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        owner = {
+            is_machine_empire = yes
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_spiritualist = no
+            }
+        }
+        monthly_loyalty = -0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_mortal_initiate_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_mortal_initiate_drone_add = 2
+    }
+    triggered_desc = {
+        text = job_overlord_mortal_initiate_effect_desc
+    }
+}

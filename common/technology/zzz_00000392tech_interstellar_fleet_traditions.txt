@@ -1,0 +1,22 @@
+tech_interstellar_fleet_traditions = {
+    cost = @tier2cost2
+    area = society
+    tier = 2
+    category = {
+        military_theory
+    }
+    weight = @tier2weight2
+    weight_modifier = {
+        factor = 3
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

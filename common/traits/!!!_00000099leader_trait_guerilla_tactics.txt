@@ -1,0 +1,45 @@
+leader_trait_guerilla_tactics = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_guerilla_tactics
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    triggered_fleet_modifier = {
+        potential = {
+            has_first_contact_dlc = no
+        }
+        ship_disengage_chance_mult = 0.5
+    }
+    triggered_fleet_modifier = {
+        potential = {
+            has_first_contact_dlc = yes
+        }
+        ship_cloaking_strength_add = 2
+    }
+    fleet_modifier = {
+        ship_disengage_opportunities_add = 2
+        ship_evasion_add = 10
+        fleet_mia_time_mult = -0.5
+        command_limit_mult = -0.25
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_admiral
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+    background_icon = GFX_leader_background_destiny_1
+}

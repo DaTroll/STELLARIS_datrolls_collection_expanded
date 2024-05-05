@@ -1,0 +1,52 @@
+trait_latent_psionic = {
+    cost = 0
+    potential_crossbreeding_chance = 0.25
+    icon = "gfx/interface/icons/traits/trait_latent_psionic_species.dds"
+    opposites = {
+        "trait_cybernetic"
+    }
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.1
+        planet_jobs_society_research_produces_mult = 0.1
+        planet_jobs_engineering_research_produces_mult = 0.1
+        planet_jobs_unity_produces_mult = 0.05
+    }
+    slave_cost = {
+        energy = 1500
+    }
+    assembly_score = {
+        modifier = {
+            add = 0.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_unity_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

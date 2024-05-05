@@ -1,0 +1,28 @@
+tech_refit_standards = {
+    cost = @tier3cost1
+    area = society
+    tier = 3
+    category = {
+        military_theory
+    }
+    prerequisites = {
+        "tech_interstellar_fleet_traditions"
+    }
+    weight = @tier3weight1
+    modifier = {
+        starbase_shipyard_build_speed_mult = 0.1
+        ships_upkeep_mult = -0.05
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_pox_sample = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_pox_sample"
+    sound = "relic_activation_javorian_pox_sample"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_robot_empire = no
+        }
+        leader_lifespan_add = 20
+        show_only_custom_tooltip = no
+        custom_tooltip = relic_javorian_pox
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_robot_empire = yes
+        }
+        planet_pops_robotics_upkeep_mult = -0.1
+        show_only_custom_tooltip = no
+        custom_tooltip = relic_javorian_pox
+    }
+    score = 5000
+    active_effect = {
+        add_modifier = {
+            modifier = "javorian_pox"
+            days = @triumph_duration
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_pox_sample
+        }
+    }
+}

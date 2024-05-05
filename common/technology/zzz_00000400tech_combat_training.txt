@@ -1,0 +1,28 @@
+tech_combat_training = {
+    cost = @tier3cost1
+    area = society
+    tier = 3
+    category = {
+        military_theory
+    }
+    prerequisites = {
+        "tech_centralized_command"
+    }
+    weight = @tier3weight1
+    modifier = {
+        army_attack_damage_mult = 0.15
+        army_attack_morale_mult = 0.15
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

@@ -1,0 +1,57 @@
+tech_hycean_climate_restoration = {
+    cost = @tier4cost1
+    area = society
+    tier = 4
+    category = {
+        new_worlds
+    }
+    prerequisites = {
+        "tech_terrestrial_sculpting"
+    }
+    weight = @tier4weight1
+    is_reverse_engineerable = no
+    start_tech = no
+    is_rare = yes
+    prereqfor_desc = {
+        diplo_action = {
+            title = "TECH_UNLOCK_TERRAFORMING_HYCEAN_CHANGE_TITLE"
+            desc = "TECH_UNLOCK_TERRAFORMING_HYCEAN_CHANGE_DESC"
+        }
+    }
+    weight_modifier = {
+        factor = 100
+        modifier = {
+            factor = 0
+            NOT = {
+                has_origin = origin_pd_hycean_aquatic
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_new_worlds
+            }
+        }
+    }
+    ai_weight = {
+        factor = @terraforming_tech_ai_factor
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_new_worlds
+            }
+        }
+        modifier = {
+            factor = 5
+            has_origin = origin_life_seeded
+        }
+        modifier = {
+            factor = 5
+            any_system_within_border = {
+                any_system_planet = {
+                    is_planet_class = pc_pd_hycean
+                }
+            }
+        }
+    }
+}

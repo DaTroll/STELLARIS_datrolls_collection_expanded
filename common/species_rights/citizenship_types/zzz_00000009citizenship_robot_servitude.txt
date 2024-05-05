@@ -1,0 +1,34 @@
+citizenship_robot_servitude = {
+    is_robot_servant = yes
+    potential = {
+        exists = from
+        from = {
+            is_gestalt = no
+        }
+        has_trait = trait_mechanical
+    }
+    allow = {
+        hidden_trigger = {
+            exists = from
+        }
+        custom_tooltip = {
+            fail_text = ROBOTS_HAVE_RIGHTS
+            from = {
+                NOT = {
+                    has_policy_flag = ai_full_rights
+                }
+            }
+        }
+        custom_tooltip = {
+            fail_text = ROBOTS_ARE_OUTLAWED
+            from = {
+                NOT = {
+                    has_policy_flag = robots_outlawed
+                }
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}

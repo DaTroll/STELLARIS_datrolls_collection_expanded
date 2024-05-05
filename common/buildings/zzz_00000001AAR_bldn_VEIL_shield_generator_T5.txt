@@ -1,0 +1,8 @@
+AAR_bldn_VEIL_shield_generator_T5 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

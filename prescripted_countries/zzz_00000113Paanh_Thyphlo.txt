@@ -1,0 +1,89 @@
+"Paanh Thyphlo" = {
+    key = "Paanh Thyphlo"
+    ship_prefix = {
+        key = "HSS"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun8"
+        species_name = {
+            key = "Typhlo"
+        }
+        species_plural = {
+            key = "Typhle"
+        }
+        species_adjective = {
+            key = "Typhlo"
+        }
+        species_bio = "The Typhle are born blind and remain in for the rest of their lives. This disadvantage had also some advantages, all there other senses are increased and work even better. In an advanced age they are even capable to see by many other means, shifting their vision if necessary. But the only and true way how they see is with the Godly eye. Their religion has for many become their way to see, guided in the darkness by the religious texts, milenial old and still relevant and practiced. The Typhlo Religion will be an issue if you are not a member of their communities. "
+        name_list = "PLANT2"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_traditional"
+        trait = "trait_ingenious"
+        trait = "trait_nonadaptive"
+        trait = "trait_repugnant"
+    }
+    name = {
+        key = "Paanh Thyphlo"
+    }
+    adjective = {
+        key = "Thyphlian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_theocratic_dictatorship"
+    planet_name = {
+        key = "Paanh"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Paanh"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_23.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "dark_teal"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Ivory Needle"
+            }
+        }
+        portrait = "fun8"
+        texture = 4
+        attachment = 0
+        clothes = 2
+        ruler_title = {
+            key = "First Artriarch"
+        }
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_free_haven"
+        "civic_efficient_bureaucracy"
+    }
+    origin = "origin_common_ground"
+}

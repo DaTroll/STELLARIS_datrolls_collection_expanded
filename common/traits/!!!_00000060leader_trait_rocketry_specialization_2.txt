@@ -1,0 +1,26 @@
+leader_trait_rocketry_specialization_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_rocketry_specialization
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_rocketry_specialization
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        weapon_type_explosive_weapon_fire_rate_mult = 0.15
+        weapon_type_explosive_weapon_damage_mult = 0.15
+    }
+    prerequisites = {
+        tech_missiles_1
+    }
+    leader_class = {
+        commander
+    }
+    fleet_specialization_tag = explosive
+    custom_tooltip_with_modifiers = only_one_admiral_focus
+}

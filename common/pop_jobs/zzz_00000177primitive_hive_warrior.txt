@@ -1,0 +1,31 @@
+primitive_hive_warrior = {
+    category = simple_drone
+    is_capped_by_modifier = yes
+    building_icon = building_primitive_dwellings
+    icon = primitive_warrior
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                has_country_flag = bronze_age
+                has_country_flag = iron_age
+                has_country_flag = late_medieval_age
+                has_country_flag = renaissance_age
+                has_country_flag = steam_age
+            }
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 3
+    }
+    weight = {
+        weight = @soldier_job_weight
+    }
+}

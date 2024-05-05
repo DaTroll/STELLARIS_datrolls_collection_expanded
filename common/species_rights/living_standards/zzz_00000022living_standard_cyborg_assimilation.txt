@@ -1,0 +1,36 @@
+living_standard_cyborg_assimilation = {
+    pop_modifier = {
+        pop_happiness = -0.25
+    }
+    potential = {
+        host_has_dlc = "Utopia"
+        NOR = {
+            has_trait = trait_latent_psionic
+            has_trait = trait_psionic
+            has_trait = trait_mechanical
+            has_trait = trait_machine_unit
+        }
+        exists = from
+        from = {
+            AND = {
+                is_hive_empire = no
+                has_tradition = tr_cybernetics_transubstantiation_synthesis
+            }
+        }
+    }
+    allow = {
+        hidden_trigger = {
+            exists = from
+        }
+        custom_tooltip = {
+            fail_text = SPECIES_MUST_BE_ASSIMILATING
+            has_citizenship_type = {
+                type = citizenship_assimilation
+                country = from
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 100
+    }
+}

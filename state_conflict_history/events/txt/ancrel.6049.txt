@@ -1,0 +1,41 @@
+namespace = ancrel
+planet_event = {
+    id = ancrel.6049
+    title = "ancrel.6049.name"
+    desc = "ancrel.6049.desc"
+    picture = GFX_evt_archaeology_camp
+    show_sound = event_dig_site
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        is_ai = no
+        has_ground_combat = no
+        is_capital = no
+        is_occupied_flag = no
+    }
+    trigger = {
+        has_ancrel = yes
+        num_pops > 0
+        OR = {
+            is_pd_regular = yes
+        }
+        NOT = {
+            exists = archaeological_site
+        }
+        NOR = {
+            has_global_flag = arc_hunting_grounds
+            has_planet_flag = colony_event
+            has_planet_flag = suppress_archaeological_sites
+        }
+    }
+    is_triggered_only = yes
+    immediate = {
+        set_global_flag = arc_hunting_grounds
+        set_planet_flag = colony_event
+    }
+    option = {
+        name = CURIOUS
+        create_archaeological_site = site_hunting_ground
+    }
+}

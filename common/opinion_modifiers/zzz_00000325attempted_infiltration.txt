@@ -1,0 +1,17 @@
+attempted_infiltration = {
+    opinion = {
+        base = -150
+    }
+    unique = yes
+    decay = {
+        base = 1.5
+        modifier = {
+            add = 0.5
+            has_ethic = "ethic_xenophile"
+        }
+        modifier = {
+            add = 1
+            has_ethic = "ethic_fanatic_xenophile"
+        }
+    }
+}

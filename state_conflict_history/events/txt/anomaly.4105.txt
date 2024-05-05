@@ -1,0 +1,161 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4105
+    title = "anomaly.4105.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = anomaly.4105.desc
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = anomaly.4105.desc.mach
+    }
+    picture = GFX_evt_relic_world_street
+    show_sound = event_ghost_town
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        leader = {
+            add_trait = leader_trait_expertise_propulsion
+        }
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = story.5
+                    days = 30
+                }
+            }
+        }
+        from = {
+            clear_deposits = yes
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                has_country_flag = edict_renewable_energy
+            }
+        }
+        name = SCRAPIT
+        custom_tooltip = "anomaly.4105.a.tooltip"
+        small_artifact_reward = yes
+        hidden_effect = {
+            from = {
+                add_deposit = d_engineering_4
+                add_deposit = d_engineering_2
+                add_modifier = {
+                    modifier = fallen_robots
+                    days = -1
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_country_flag = edict_renewable_energy
+                }
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        name = anomaly.4105.a
+        custom_tooltip = "anomaly.4105.b.tooltip"
+        small_artifact_reward = yes
+        hidden_effect = {
+            owner = {
+                set_country_flag = edict_renewable_energy
+            }
+            from = {
+                add_deposit = d_engineering_4
+                add_deposit = d_engineering_2
+                add_modifier = {
+                    modifier = fallen_robots
+                    days = -1
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_country_flag = edict_renewable_energy
+                }
+                has_authority = auth_machine_intelligence
+            }
+        }
+        name = anomaly.4105.a.mach
+        custom_tooltip = "anomaly.4105.b.tooltip"
+        small_artifact_reward = yes
+        hidden_effect = {
+            owner = {
+                set_country_flag = edict_renewable_energy
+            }
+            from = {
+                add_deposit = d_engineering_4
+                add_deposit = d_engineering_2
+                add_modifier = {
+                    modifier = fallen_robots
+                    days = -1
+                }
+            }
+        }
+    }
+    after = {
+        tooltip = {
+            if = {
+                limit = {
+                    exists = leader
+                }
+                leader = {
+                    add_trait = leader_trait_expertise_propulsion
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            leader = {
+                OR = {
+                    has_trait = leader_trait_expertise_propulsion
+                    has_trait = leader_trait_expertise_industry
+                    has_trait = leader_trait_expertise_computing
+                    has_trait = leader_trait_custom_AI_assistant
+                    has_trait = leader_trait_sapient_AI_assistant
+                    has_trait = leader_trait_roamer
+                    has_trait = leader_trait_cataloger
+                    has_trait = leader_trait_carefree
+                }
+            }
+        }
+        name = anomaly.4105.robot
+        enable_special_project = {
+            name = "ROBOT_CLEANERS_PROJECT"
+            owner = root
+            location = from
+        }
+    }
+    after = {
+        if = {
+            limit = {
+                exists = leader
+            }
+            leader = {
+                add_trait = leader_trait_expertise_propulsion
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+building_corporate_pdzro = {
+    base_buildtime = @b2_time
+    base_cap_amount = 1
+    icon = building_pdzro_dealer_domestic
+    category = trade
+    owner_type = corporate
+    potential = {
+        has_branch_office = yes
+        branch_office_owner = {
+            is_criminal_syndicate = no
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = "requires_building_major_capital"
+            OR = {
+                has_building = building_major_capital
+                has_building = building_system_capital
+                has_building = building_imperial_capital
+            }
+        }
+    }
+    prerequisites = {
+        "tech_pd_zro_dealer"
+    }
+    show_tech_unlock_if = {
+        is_megacorp = yes
+        is_criminal_syndicate = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+        }
+        modifier = {
+            job_merchant_add = 1
+            pop_happiness = 0.1
+            branch_office_value_mult = 0.2
+        }
+    }
+    resources = {
+        category = planet_branch_office_buildings
+        cost = {
+            minerals = @b3_minerals
+            sr_zro = 100
+        }
+        upkeep = {
+            energy = 3
+            sr_zro = 1
+        }
+    }
+    ai_weight = {
+        weight = 50
+        modifier = {
+            factor = 10
+            branch_office_owner = {
+                is_galactic_community_member = yes
+            }
+        }
+    }
+}

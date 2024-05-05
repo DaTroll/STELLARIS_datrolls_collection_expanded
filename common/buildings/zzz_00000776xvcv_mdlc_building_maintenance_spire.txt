@@ -1,0 +1,40 @@
+xvcv_mdlc_building_maintenance_spire = {
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    category = amenity
+    potential = {
+        exists = owner
+        owner = {
+            has_valid_civic = xvcv_mdlc_civic_maintenance_depot
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_valid_civic = xvcv_mdlc_civic_maintenance_depot
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            rare_crystals = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            rare_crystals = @b3_rare_upkeep
+        }
+    }
+    triggered_planet_modifier = {
+        planet_housing_add = 1
+        mult = value:xvcv_mdlc_count_maintenance_drone
+    }
+    triggered_desc = {
+        text = xvcv_mdlc_building_maintenance_spire_effect_desc
+    }
+}

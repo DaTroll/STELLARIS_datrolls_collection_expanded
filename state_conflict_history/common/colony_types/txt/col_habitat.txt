@@ -1,0 +1,13 @@
+col_habitat = {
+    icon = GFX_colony_type_habitat
+    potential = {
+        OR = {
+            uses_district_set = habitat
+            uses_district_set = pdarchive
+        }
+        is_capital = no
+    }
+    weight_modifier = {
+        base = 500
+    }
+}

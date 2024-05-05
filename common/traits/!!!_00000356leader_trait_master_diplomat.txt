@@ -1,0 +1,37 @@
+leader_trait_master_diplomat = {
+    leader_trait_type = destiny
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_master_diplomat"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        diplo_weight_mult = 0.2
+        country_trust_cap_add = 50
+        envoys_add = 2
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_diplomacy_councilor
+        exists = owner
+        owner = {
+            is_homicidal = no
+        }
+    }
+    leader_class = {
+        official
+    }
+    opposites = {
+        leader_trait_reclusive
+        leader_trait_reclusive_2
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

@@ -1,0 +1,92 @@
+"Rakex Galactic Kingdom" = {
+    key = "Rakex Galactic Kingdom"
+    ship_prefix = {
+        key = "RSO"
+    }
+    species = {
+        class = "ART"
+        portrait = "art14"
+        species_name = {
+            key = "Rakex"
+        }
+        species_plural = {
+            key = "Rakex"
+        }
+        species_adjective = {
+            key = "Rakexian"
+        }
+        species_bio = "Do you think you can depose your King but keep him? Apparently!                                                                                                               The Tropical homeworld of Rakex experienced a bloody civil war a long time ago, with the royalist and the poorest people on the other side. But no side managed to gain a significant advantage over the other side. So they agreed to change the system after the heirless King would die, they would elect a new one every 20 years. The system does the best work on the paper and that's it because their ruthless politician carefully plan who will become the next King to please themselves the most, obviously."
+        name_list = "ART3"
+        gender = not_set
+        trait = "trait_nonadaptive"
+        trait = "trait_quick_learners"
+        trait = "trait_repugnant"
+        trait = "trait_venerable"
+        trait = "trait_conservational"
+    }
+    name = {
+        key = "Rakex Galactic Kingdom"
+    }
+    adjective = {
+        key = "Rakex"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_citizen_stratocracy"
+    planet_name = {
+        key = "Rakexia"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Rakexia"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_15.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "light_green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Rakex"
+            }
+        }
+        portrait = "art14"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Elected King"
+        }
+        ruler_title_female = {
+            key = "Elected Queen"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_citizen_service"
+    }
+    origin = "origin_default"
+}

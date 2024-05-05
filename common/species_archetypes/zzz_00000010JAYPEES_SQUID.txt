@@ -1,0 +1,3 @@
+JAYPEES_SQUID = {
+    uses_modifiers = no
+}

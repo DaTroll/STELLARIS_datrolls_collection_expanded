@@ -1,0 +1,11 @@
+opinion_envoy_insult_laughed_at = {
+    opinion = {
+        base = 50
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

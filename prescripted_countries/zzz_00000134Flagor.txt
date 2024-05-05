@@ -1,0 +1,84 @@
+"Flagor" = {
+    key = "Flagor"
+    ship_prefix = {
+        key = "FSS"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith7"
+        species_name = {
+            key = "Flagor"
+        }
+        species_plural = {
+            key = "Falgorans"
+        }
+        species_adjective = {
+            key = "Falgorians"
+        }
+        species_bio = "Neatly shaped and evenly distributed. The Ascetic Falgorians do love when things are even and neat. Therefore their Hive mind is based around this princip. Nothing more is known about them since they do only communicate through a subspace neurolink which cannot be hacked."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_hive_mind"
+        trait = "trait_talented"
+        trait = "trait_quick_learners"
+    }
+    name = {
+        key = "Flagor"
+    }
+    adjective = {
+        key = "Flagoran"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Flagor"
+    }
+    planet_class = "pc_arid"
+    system_name = {
+        key = "Flagor-Star"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_20.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "triangle_split.dds"
+        }
+        colors = {
+            "brown"
+            "orange"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Flagore"
+            }
+        }
+        portrait = "lith7"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_subspace_ephapse"
+        "civic_hive_ascetic"
+    }
+    origin = "origin_default"
+}

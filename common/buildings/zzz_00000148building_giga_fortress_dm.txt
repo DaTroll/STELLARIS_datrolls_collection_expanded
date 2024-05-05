@@ -1,0 +1,8 @@
+building_giga_fortress_dm = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

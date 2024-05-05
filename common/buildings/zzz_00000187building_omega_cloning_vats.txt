@@ -1,0 +1,8 @@
+building_omega_cloning_vats = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

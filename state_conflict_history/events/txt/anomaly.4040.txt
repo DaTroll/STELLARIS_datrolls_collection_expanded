@@ -1,0 +1,29 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4040
+    title = "anomaly.4040.name"
+    desc = "anomaly.4040.desc"
+    picture = GFX_evt_nuclear_explosion
+    show_sound = event_super_explosion
+    location = FROM
+    is_triggered_only = yes
+    option = {
+        name = CURIOUS
+        custom_tooltip = "anomaly.4040.a.tooltip"
+        hidden_effect = {
+        FROM = {
+            add_modifier = {
+                modifier = "irradiated_wasteland"
+                days = -1
+            }
+            add_deposit = d_irradiated_wasteland_anomaly
+            add_deposit = d_radioactive_wasteland
+            add_deposit = d_radioactive_wasteland
+            add_deposit = d_radioactive_wasteland
+            add_deposit = d_radioactive_wasteland
+            add_deposit = d_radioactive_wasteland
+            add_deposit = d_radioactive_wasteland
+            }
+        }
+    }
+}

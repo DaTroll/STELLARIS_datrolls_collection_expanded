@@ -1,0 +1,80 @@
+building_woorskyr_growth_monitoring_center = {
+    base_buildtime = 720
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = research
+    potential = {
+        planet = {
+            planet_has_woorskyr_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_woorskyr
+            planet = {
+                planet_has_woorskyr_deposit = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_woorskyr_growth_monitoring_center
+                }
+            }
+            planet = {
+                planet_has_woorskyr_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/researchers_add
+        AMOUNT = 3
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            engineering_research = 6
+            society_research = 6
+            physics_research = 6
+        }
+        cost = {
+            minerals = 200
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 3
+            exotic_gases = 2
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    country_uses_food = yes
+                }
+            }
+            food = 1
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    country_uses_food = no
+                }
+            }
+            minerals = 1
+        }
+    }
+    planet_modifier = {
+        biological_pop_growth_speed = 0.1
+        planet_orbital_bombardment_damage = -0.1
+    }
+    country_modifier = {
+        category_biology_research_speed_mult = 0.1
+    }
+    prerequisites = {
+        "tech_woorskyr_growth_monitoring_center"
+    }
+}

@@ -1,0 +1,48 @@
+@terraforming_cost_level_4 = 15000
+@terraforming_duration_level_4 = 7200
+terraform_link = {
+    from = pc_toxic
+    to = pc_hive
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_4
+        }
+    }
+    duration = @terraforming_duration_level_4
+    potential = {
+        from = {
+            has_modifier = toxic_terraforming_candidate
+            NOT = {
+                has_modifier = pd_infestingplanet
+            }
+        }
+    }
+    condition = {
+        has_ascension_perk = "ap_hive_worlds"
+    }
+    effect = {
+        from = {
+            remove_modifier = toxic_terraforming_candidate
+        }
+    }
+    ai_weight = {
+        weight = 20
+        modifier = {
+            factor = 0
+            from = {
+                any_owned_pop = {
+                    NOT = {
+                        has_trait = trait_hive_mind
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            from = {
+                is_colony = no
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_familiar_clone_vat = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

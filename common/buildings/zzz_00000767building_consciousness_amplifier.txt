@@ -1,0 +1,243 @@
+building_consciousness_amplifier = {
+    base_buildtime = 1800
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = unity
+    potential = {
+        planet = {
+            planet_has_koeleothan_deposit = yes
+        }
+        exists = owner
+        owner = {
+            has_quantumpearl_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_koeleothan
+            planet = {
+                planet_has_koeleothan_deposit = yes
+            }
+        }
+        custom_tooltip_fail = {
+            text = requirement_empire_quantumpearl
+            exists = owner
+            owner = {
+                has_quantumpearl_building = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_koeleothan_utilization
+                }
+            }
+            planet = {
+                planet_has_koeleothan_deposit = no
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_spiritualist = no
+                is_megacorp = no
+                is_worker_coop_empire = no
+                has_make_spiritualist_perk = no
+            }
+        }
+        modifier = {
+            job_bureaucrat_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                OR = {
+                    is_spiritualist = yes
+                    has_make_spiritualist_perk = yes
+                }
+            }
+        }
+        modifier = {
+            job_priest_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_spiritualist = no
+                has_make_spiritualist_perk = no
+            }
+        }
+        modifier = {
+            job_manager_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_spiritualist = no
+                has_make_spiritualist_perk = no
+                is_worker_coop_empire = yes
+            }
+        }
+        modifier = {
+            job_steward_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                has_make_spiritualist_perk = no
+                is_spiritualist = yes
+            }
+        }
+        modifier = {
+            job_manager_add = 1
+            job_priest_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = yes
+                has_make_spiritualist_perk = no
+                is_spiritualist = yes
+            }
+        }
+        modifier = {
+            job_steward_add = 1
+            job_priest_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            job_synapse_drone_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        modifier = {
+            job_coordinator_add = 2
+        }
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            unity = 6
+            energy = 4
+        }
+        cost = {
+            minerals = 500
+            unity = 60
+            exotic_gases = 20
+        }
+        upkeep = {
+            minerals = 2
+            exotic_gases = 2
+        }
+    }
+    planet_modifier = {
+        planet_stability_add = 5
+    }
+    country_modifier = {
+        pop_government_ethic_attraction = 0.2
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_spiritualist = no
+                is_megacorp = no
+                is_worker_coop_empire = no
+                has_make_spiritualist_perk = no
+            }
+        }
+        text = job_bureaucrat_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                OR = {
+                    is_spiritualist = yes
+                    has_make_spiritualist_perk = yes
+                }
+            }
+        }
+        text = job_priest_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = no
+                has_make_spiritualist_perk = no
+            }
+        }
+        text = job_manager_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_worker_coop_empire = yes
+                has_make_spiritualist_perk = no
+            }
+        }
+        text = job_steward_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        text = job_coordinator_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        text = job_synapse_drone_effect_desc
+    }
+    ai_weight = {
+        weight = 100
+    }
+    prerequisites = {
+        "tech_koeleothan_utilization"
+    }
+}

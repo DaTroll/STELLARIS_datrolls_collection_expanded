@@ -1,0 +1,92 @@
+"Hai'mian Empire" = {
+    key = "Hai'mian Empire"
+    ship_prefix = {
+        key = "HIF"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_11"
+        species_name = {
+            key = "Hai'mi"
+        }
+        species_plural = {
+            key = "Hai'mies"
+        }
+        species_adjective = {
+            key = "Hai'mian"
+        }
+        species_bio = "Thoses small humanoids have adapted themselves to their environment many times. The last great change occured 2.000 BSF (Before -the first- Space Flight), when the atmosphere got toxic and they had to flee underground. Since then their atmosphere got normal again, maybe due to an extrahai'mian intervension? In the last 2.000 years they got special skills for mining and a good sense of housing organisation, but they lost their willingness to give up their homes. Since the loss of their  first spacecraft in 23 ASF (after -the first- Space Flight) they got more militaristic and xenophob. Their future lies in the hands of Khebb."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_industrious"
+        trait = "trait_communal"
+        trait = "trait_strong"
+        trait = "trait_sedentary"
+        trait = "trait_slow_learners"
+    }
+    name = {
+        key = "Hai'mian Empire"
+    }
+    adjective = {
+        key = "Hai'mian"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    advisor_voice_type = "l_militarist"
+    planet_name = {
+        key = "Hai'mi"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Hai'mi'nah"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_20.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "yellow"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Khebb"
+            }
+        }
+        portrait = "humanoid_hp_11"
+        texture = 0
+        attachment = 4
+        clothes = 4
+        heir_title = {
+            key = "Vize-Emperor"
+            literal = yes
+        }
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_erudite_explorers_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_mining_guilds"
+        "civic_warrior_culture"
+    }
+    origin = "origin_post_apocalyptic"
+}

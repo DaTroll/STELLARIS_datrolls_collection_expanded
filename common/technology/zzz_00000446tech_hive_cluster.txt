@@ -1,0 +1,16 @@
+tech_hive_cluster = {
+    cost = @tier2cost2
+    area = society
+    category = {
+        statecraft
+    }
+    tier = 2
+    prerequisites = {
+        "tech_hive_node"
+    }
+    weight = @tier2weight2
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

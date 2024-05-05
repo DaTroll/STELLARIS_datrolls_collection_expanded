@@ -1,0 +1,8 @@
+ag_class_5_singularity = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,92 @@
+"Slar Predators" = {
+    key = "Slar Predators"
+    ship_prefix = {
+        key = "SLH"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla13"
+        species_name = {
+            key = "Slar"
+        }
+        species_plural = {
+            key = "Slars"
+        }
+        species_adjective = {
+            key = "Slaran"
+        }
+        species_bio = "The Slar predators, as they like to call themselves, can be ruthless manipulative egoistic and extremly violent. But they mustn't be and aren't always like that. A lot of them actually enjoy just to spend time at the fresh air of Colona and enjoy the wildlife such as the compagny of animals. Their appearance does surely reflect a violent past or even many possibilities to hurt someone or something. But to be fair, who isn't?                                                 Some Empires have had rough periods. Some have had years called \"year of the four/five/six Emperors\". The Slar have had years of the twenty-three emperors. This is what happens if the royal familly is too big and power not centralized enough."
+        name_list = "PLANT2"
+        gender = not_set
+        trait = "trait_communal"
+        trait = "trait_sedentary"
+        trait = "trait_repugnant"
+        trait = "trait_resilient"
+        trait = "trait_very_strong"
+    }
+    name = {
+        key = "Slar Predators"
+    }
+    adjective = {
+        key = "Slars"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    planet_name = {
+        key = "Colona"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Artsa"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Sly"
+            }
+        }
+        portrait = "pla13"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Strongest"
+        }
+        heir_title = {
+            key = "Second Strongest"
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_police_state"
+    }
+    origin = "origin_default"
+}

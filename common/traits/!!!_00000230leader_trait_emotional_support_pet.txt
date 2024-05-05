@@ -1,0 +1,27 @@
+leader_trait_emotional_support_pet = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_emotional_support_pet"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    self_modifier = {
+        leader_lifespan_add = 10
+        negative_traits_leader = -1
+    }
+    leader_potential_add = {
+        is_pool_leader = yes
+        has_paragon_dlc = yes
+        owner = {
+            is_machine_empire = no
+        }
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = @shared_trait_weight
+}

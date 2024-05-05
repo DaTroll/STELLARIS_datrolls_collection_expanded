@@ -1,0 +1,145 @@
+gpm_precursor_research_center = {
+    base_buildtime = @b2_time
+    base_cap_amount = 1
+    category = research
+    potential = {
+        exists = owner
+        has_ancrel = yes
+        gpm_is_a_precursor_world = yes
+    }
+    prerequisites = {
+        tech_archaeostudies
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+            minor_artifacts = 35
+        }
+        produces = {
+            minor_artifacts = 0.25
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_technology = gpm_tech_arcane_research
+                }
+            }
+            minor_artifacts = 0.25
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+    country_modifier = {
+        country_resource_max_minor_artifacts_add = 1000
+    }
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_ascension_perk = ap_archaeoengineers
+            }
+        }
+        country_resource_max_minor_artifacts_add = 2000
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_archaeoengineers_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            job_archaeo_drone_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        modifier = {
+            job_archaeo_unit_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                has_ascension_perk = ap_archaeoengineers
+            }
+        }
+        modifier = {
+            job_archaeoengineers_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+                has_ascension_perk = ap_archaeoengineers
+            }
+        }
+        modifier = {
+            job_archaeo_drone_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+                has_ascension_perk = ap_archaeoengineers
+            }
+        }
+        modifier = {
+            job_archaeo_unit_add = 1
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = job_archaeoengineers_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        text = job_archaeo_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        text = job_archaeo_unit_effect_desc
+    }
+    triggered_desc = {
+        text = gpm_building_precursor_research_center_effect
+    }
+}

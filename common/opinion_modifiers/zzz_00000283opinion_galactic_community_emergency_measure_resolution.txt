@@ -1,0 +1,12 @@
+opinion_galactic_community_emergency_measure_resolution = {
+    opinion = {
+        base = 100
+    }
+    accumulative = yes
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

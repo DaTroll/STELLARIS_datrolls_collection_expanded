@@ -1,0 +1,45 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+subclass_commander_governor = {
+    custom_subtitle = commander_subclass
+    leader_trait_type = subclass
+    inline_script = {
+        script = trait/icon_subclass
+        SUBCLASS = commander_governor
+        COUNCIL = no
+    }
+    custom_tooltip_with_modifiers = governor_subclass_tt
+    planet_modifier = {
+        job_soldier_stability_add = 1
+    }
+    sector_modifier = {
+        job_soldier_stability_add = 0.5
+    }
+    ai_weight = {
+        modifier = {
+            is_councilor = yes
+            factor = @ai_selection_low
+        }
+        modifier = {
+            is_councilor = no
+            factor = @ai_selection_high
+        }
+        modifier = {
+            exists = planet
+            factor = @ai_selection_high
+        }
+        modifier = {
+            NOT = {
+                exists = planet
+            }
+            factor = @ai_selection_low
+        }
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    leader_class = {
+        commander
+    }
+    background_icon = "GFX_leader_subclass_commander_governor_background"
+}

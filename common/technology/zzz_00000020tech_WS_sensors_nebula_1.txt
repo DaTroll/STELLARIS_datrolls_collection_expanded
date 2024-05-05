@@ -1,0 +1,11 @@
+tech_WS_sensors_nebula_1 = {
+    cost = 0
+    area = physics
+    category = {
+        particles
+    }
+    tier = 4
+    potential = {
+        merg_has_wild_space = yes
+    }
+}

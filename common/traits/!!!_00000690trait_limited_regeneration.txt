@@ -1,0 +1,23 @@
+trait_limited_regeneration = {
+    cost = 0
+    potential_crossbreeding_chance = 0.33
+    initial = no
+    species_potential_add = {
+        always = no
+    }
+    randomized = no
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        army_damage_mult = 0.1
+        leader_lifespan_add = 10
+    }
+    slave_cost = {
+        energy = 250
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

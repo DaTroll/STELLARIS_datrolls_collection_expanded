@@ -1,0 +1,93 @@
+"Utopian Imeri Rixona" = {
+    key = "Utopian Imeri Rixona"
+    ship_prefix = {
+        key = "ISM"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_08"
+        species_name = {
+            key = "Imeri"
+        }
+        species_plural = {
+            key = "Imeris"
+        }
+        species_adjective = {
+            key = "Imerian"
+        }
+        species_bio = "Utopia.                                                                                                   The Great Protector provides everything for his poeple. The  Imeri live a troubleless life. Since the begining of time their species has known no wars or conflict, everyone has what he needs, conflicts are solved peacefully.When their first Space probe landed on an other planet, euphory raged for days. But with the discovery they realised that not all ressources are limitless as on Utopia. The Imeri have grown Quarrelsome. This adding to the problem, that the pursuit of their problemless lifes, the Imeri have become what some species would call stupid.                                                                    Their journey into the Stars will be a hard one. Realising that life is different then what they knew for generations. They must whathout for unexpected threats.  The Universe is not as kind as they used to be."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_slow_learners"
+        trait = "trait_slow_breeders"
+        trait = "trait_venerable"
+        trait = "trait_quarrelsome"
+        trait = "trait_thrifty"
+    }
+    name = {
+        key = "Utopian Imeri Rixona"
+    }
+    adjective = {
+        key = "Imerian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_elective_monarchy"
+    advisor_voice_type = "l_pacifist"
+    planet_name = {
+        key = "Utopia"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Utopia'Tso"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_24.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "black"
+            "teal"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Rixona"
+            }
+        }
+        portrait = "humanoid_hp_08"
+        texture = 0
+        attachment = 0
+        clothes = 2
+        ruler_title = {
+            key = "Great Protector"
+        }
+        ruler_title_female = {
+            key = "Great Protector"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophile"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_environmentalist"
+        "civic_philosopher_king"
+    }
+    origin = "origin_life_seeded"
+}

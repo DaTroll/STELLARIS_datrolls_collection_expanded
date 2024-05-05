@@ -1,0 +1,11 @@
+opinion_hostile_first_comms_greeting = {
+    opinion = {
+        base = -50
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

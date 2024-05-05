@@ -1,0 +1,110 @@
+holding_pd_techno_canal = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = building_techno_synth_workshop
+    base_cap_amount = 1
+    category = resource
+    resources = {
+        category = planet_holdings
+        produces = {
+            engineering_research = 6
+            food = 6
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_technology = tech_techno_canal
+        }
+        NOT = {
+            planet.owner = {
+                country_uses_food = no
+            }
+        }
+        is_pd_hive_world = no
+        is_artificial = no
+        is_pd_unique = no
+        is_pd_arcology = no
+        is_pd_machine = no
+        is_pd_habitat = no
+        is_pd_planetary_megaproject = no
+    }
+    destroy_trigger = {
+        is_pd_hive_world = yes
+        is_artificial = yes
+        is_pd_unique = yes
+        is_pd_arcology = yes
+        is_pd_machine = yes
+        is_pd_habitat = yes
+        is_pd_planetary_megaproject = yes
+    }
+    planet_modifier = {
+        monthly_loyalty = 0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_farmer_add = 3
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_agri_drone_add = 3
+    }
+    on_built = {
+        planet = {
+            add_blocker = {
+                type = d_technocanal_blocker
+            }
+            if = {
+                limit = {
+                    has_deposit = d_technocanal_blocker
+                }
+                while = {
+                    limit = {
+                        num_districts = {
+                            type = district_farming
+                            value > 0
+                        }
+                    }
+                    remove_district = district_farming
+                    add_district_and_planet_size_if_needed_effect = {
+                        district = district_farming_uncapped
+                    }
+                }
+            }
+        }
+    }
+    on_destroy = {
+        planet = {
+            if = {
+                limit = {
+                    has_deposit = d_technocanal_blocker
+                }
+                remove_deposit = d_technocanal_blocker
+                while = {
+                    limit = {
+                        num_districts = {
+                            type = district_farming_uncapped
+                            value > 0
+                        }
+                    }
+                    remove_district = district_farming_uncapped
+                    add_district_and_planet_size_if_needed_effect = {
+                        district = district_farming
+                    }
+                }
+            }
+        }
+    }
+    triggered_desc = {
+        text = holding_techno_canal_effect
+    }
+}

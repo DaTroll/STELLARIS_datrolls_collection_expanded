@@ -1,0 +1,8 @@
+opinion_respect_independence = {
+    opinion = {
+        base = 100
+    }
+    decay = {
+        base = -1
+    }
+}

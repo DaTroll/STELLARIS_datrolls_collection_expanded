@@ -1,0 +1,25 @@
+@t3_mult = 0.25
+leader_trait_resolution_category_greatergood_focus_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_resolution_category_greatergood_focus_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_resolution_category_greatergood_focus"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    galcom_modifier = {
+        resolution_category_greatergood_vote_strength_mult = @t3_mult
+    }
+    custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_3_favor_tt
+    leader_class = {
+        official
+    }
+}

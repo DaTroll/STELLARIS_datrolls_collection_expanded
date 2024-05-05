@@ -1,0 +1,91 @@
+"Sacred Agan Crusaders" = {
+    key = "Sacred Agan Crusaders"
+    ship_prefix = {
+        key = "SC"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi14"
+        species_name = {
+            key = "Agan"
+        }
+        species_plural = {
+            key = "Agans"
+        }
+        species_adjective = {
+            key = "Agian"
+        }
+        species_bio = "\"You are to your next, what your next is to his next\"                            This seemingly infinite sentence is what the Church of Aga'pri repeated for centuries until they became the only allowed religion on their homeplanet. They used this power to take total control and make any form of governement to give them their power. Since then, their ideological grasp has been extremly strong on the young people, giving them little room to really think. Free thinkers were placed into 'liar centers' until they recognised their errors and were ready to accept the only truth. "
+        name_list = "AVI2"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_conformists"
+        trait = "trait_slow_breeders"
+        trait = "trait_wasteful"
+    }
+    name = {
+        key = "Sacred Agan Crusaders"
+    }
+    adjective = {
+        key = "Agan"
+    }
+    authority = "auth_corporate"
+    government = "gov_megachurch"
+    planet_name = {
+        key = "Aga'pri"
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "Aga'pre"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_02.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "red_orange"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tska"
+            }
+        }
+        portrait = "avi14_m"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Godly envoy"
+        }
+        ruler_title_female = {
+            key = "Godly envoy"
+        }
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_militarist"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_gospel_of_the_masses"
+        "civic_media_conglomerate"
+    }
+    origin = "origin_default"
+}

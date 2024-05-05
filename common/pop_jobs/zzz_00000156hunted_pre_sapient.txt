@@ -1,0 +1,75 @@
+hunted_pre_sapient = {
+    category = pre_sapients
+    is_capped_by_modifier = no
+    clothes_texture_index = 2
+    contributes_to_diplo_weight = no
+    icon = livestock
+    possible_pre_triggers = {
+        is_sapient = no
+    }
+    possible = {
+        planet = {
+            exists = owner
+            owner = {
+                has_policy_flag = pre_sapients_eat
+            }
+        }
+    }
+    resources = {
+        category = planet_livestock
+        produces = {
+            trigger = {
+                is_pre_sapient = yes
+                is_pre_sapient_lithoid = no
+            }
+            food = 4
+        }
+        produces = {
+            trigger = {
+                is_pre_sapient = yes
+                is_pre_sapient_lithoid = no
+                planet = {
+                    has_active_building = building_food_processing_facility
+                }
+            }
+            food = 1
+        }
+        produces = {
+            trigger = {
+                is_pre_sapient = yes
+                is_pre_sapient_lithoid = no
+                planet = {
+                    has_active_building = building_food_processing_center
+                }
+            }
+            food = 2
+        }
+        produces = {
+            trigger = {
+                is_pre_sapient_lithoid = yes
+            }
+            minerals = 2
+        }
+        produces = {
+            trigger = {
+                is_pre_sapient_lithoid = yes
+                planet = {
+                    has_active_building = building_mineral_purification_plant
+                }
+            }
+            minerals = 1
+        }
+        produces = {
+            trigger = {
+                is_pre_sapient_lithoid = yes
+                planet = {
+                    has_active_building = building_mineral_purification_hub
+                }
+            }
+            minerals = 2
+        }
+    }
+    weight = {
+        weight = 5500
+    }
+}

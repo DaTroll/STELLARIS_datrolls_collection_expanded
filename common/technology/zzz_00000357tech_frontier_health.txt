@@ -1,0 +1,30 @@
+tech_frontier_health = {
+    cost = @tier1cost2
+    area = society
+    tier = 1
+    category = {
+        biology
+    }
+    prerequisites = {
+        "tech_genome_mapping"
+    }
+    weight = @tier1weight2
+    potential = {
+        is_regular_empire = yes
+    }
+    weight_modifier = {
+        factor = 2
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_harmony_adopt
+        }
+        modifier = {
+            factor = 2
+            has_relic = r_pox_sample
+        }
+        modifier = {
+            factor = 2
+            has_country_flag = payback_researching_gene_clinics
+        }
+    }
+}

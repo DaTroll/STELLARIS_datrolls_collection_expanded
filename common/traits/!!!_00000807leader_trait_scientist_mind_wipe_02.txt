@@ -1,0 +1,20 @@
+leader_trait_scientist_mind_wipe_02 = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = scientist
+        ICON = "GFX_leader_trait_mind_wipe"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_archaeological_site_excavation_speed_mult = 0.2
+        ship_archaeological_site_clues_add = 1
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

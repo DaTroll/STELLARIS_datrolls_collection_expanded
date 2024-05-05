@@ -1,0 +1,112 @@
+"Synbot Integrators" = {
+    key = "Synbot Integrators"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_hum_robot"
+        species_name = {
+            key = "Synbot"
+        }
+        species_plural = {
+            key = "Synbots"
+        }
+        species_adjective = {
+            key = "Synbotian"
+        }
+        species_bio = "The Synbot want more.                                                                      The arent the type of Machine empire you would expect, they a living core to assemble their pieces upon. Thats why they didnt exterminate all sentient life on their planet. They want to \"upgrade\" all the universe into their galactic-neural network."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_enhanced_memory"
+        trait = "trait_robot_learning_algorithms"
+        trait = "trait_robot_uncanny"
+        trait = "trait_robot_mass_produced"
+        trait = "trait_robot_luxurious"
+    }
+    secondary_species = {
+        class = "HUM"
+        portrait = "humanoid_hp_06"
+        species_name = {
+            key = "Ka'tnu"
+        }
+        species_plural = {
+            key = "Ka'tnus"
+        }
+        species_adjective = {
+            key = "Ka'tnuan"
+        }
+        species_bio = "The Ka'tnu where excellent engineers, doomed by their own success."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_cybernetic"
+        trait = "trait_industrious"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_fleeting"
+        trait = "trait_slow_breeders"
+        trait = "trait_slow_learners"
+    }
+    name = {
+        key = "Synbot Integrators"
+    }
+    adjective = {
+        key = "Synbotian"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_assimilator"
+    advisor_voice_type = "l_machine"
+    planet_name = {
+        key = "000-001"
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "000"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_13.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "new_dawn.dds"
+        }
+        colors = {
+            "light_orange"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "SB-Alpha2"
+            }
+        }
+        portrait = "sd_hum_robot"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Main Integrator"
+        }
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_erudite_explorers_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_assimilator"
+        "civic_machine_rockbreakers"
+    }
+    origin = "origin_machine"
+}

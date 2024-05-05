@@ -1,0 +1,46 @@
+holding_organic_sanctuary = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = building_organic_sanctuary
+    base_cap_amount = 1
+    category = unity
+    resources = {
+        category = planet_holdings
+        upkeep = {
+            consumer_goods = 10
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_machine_servitor
+        }
+        owner = {
+            is_machine_empire = no
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_bio_trophy_add = 5
+        monthly_loyalty = 0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_bio_trophy_drone_add = 5
+    }
+    triggered_desc = {
+        text = job_overlord_bio_trophy_effect_desc
+    }
+}

@@ -1,0 +1,86 @@
+"Yrd democracy" = {
+    key = "Yrd democracy"
+    ship_prefix = {
+        key = "YSS"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol15"
+        species_name = {
+            key = "Yrd"
+        }
+        species_plural = {
+            key = "Yrds"
+        }
+        species_adjective = {
+            key = "Yrdian"
+        }
+        species_bio = "the Yrd like to refer to their homeworld as \"Rock\". It's a big dusty and massively sand-like planet. Therefore they have developped a strong habit to Migrate regulary depending on the month and the heat. Also notable is their Parlament, their direct democracy has an extremly powerfull parlament which can decide almost everything and self-run the state. This is how came to life their Robotic workers, immune to the heat and global geographical influences. They are extremly useful and overhelmingly used. The question is if they are going to improve their robots even further? or will they ultimatly turn around while their technologies imrpoves?"
+        name_list = "MAM1"
+        gender = not_set
+        trait = "trait_nonadaptive"
+        trait = "trait_rapid_breeders"
+        trait = "trait_intelligent"
+        trait = "trait_nomadic"
+        trait = "trait_solitary"
+    }
+    name = {
+        key = "Yrd democracy"
+    }
+    adjective = {
+        key = "Yrdian"
+    }
+    authority = "auth_democratic"
+    government = "gov_direct_democracy"
+    planet_name = {
+        key = "Rock"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Rock"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_7.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "new_dawn.dds"
+        }
+        colors = {
+            "black"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Pud"
+            }
+        }
+        portrait = "mol15"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_parliamentary_system"
+        "civic_functional_architecture"
+    }
+    origin = "origin_mechanists"
+}

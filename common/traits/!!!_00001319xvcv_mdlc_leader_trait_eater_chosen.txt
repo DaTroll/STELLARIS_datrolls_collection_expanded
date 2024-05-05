@@ -1,0 +1,49 @@
+xvcv_mdlc_leader_trait_eater_chosen = {
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = leader
+        ICON = "GFX_leader_trait_eater_chosen"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_weapon_damage = 0.4
+        ship_accuracy_add = 10
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        army_morale = 0.5
+        army_morale_damage_mult = 0.5
+        army_damage_mult = 0.3
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        starbase_shipyard_build_speed_mult = 0.25
+        starbase_shipyard_build_cost_mult = -0.15
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        ships_upkeep_mult = -0.1
+        starbase_shipyard_build_speed_mult = 0.15
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+}

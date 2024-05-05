@@ -1,0 +1,65 @@
+holding_recruitment_office = {
+    base_buildtime = @b1_time
+    owner_type = subject_holding
+    icon = holding_recruitment_office
+    base_cap_amount = 1
+    category = army
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_citizen_service
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_recruiter_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_recruiter_drone_add = 2
+    }
+    triggered_country_modifier = {
+        country_naval_cap_add = 10
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_pacifist = yes
+            }
+        }
+        monthly_loyalty = -0.5
+    }
+    triggered_desc = {
+        text = job_overlord_recruiter_effect_desc
+    }
+    on_built = {
+        planet = {
+            planet_event = {
+                id = subject.5010
+                days = 1800
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+mem_voggo_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_master_bureaucrat"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    immortal_leaders = yes
+    modifier = {
+        planet_stability_add = 5
+    }
+    self_modifier = {
+        leaders_upkeep_mult = 1
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

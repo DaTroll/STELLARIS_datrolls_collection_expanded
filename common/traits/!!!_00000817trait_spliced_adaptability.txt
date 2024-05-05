@@ -1,0 +1,51 @@
+trait_spliced_adaptability = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 1
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    allowed_origins = {
+        origin_overtuned
+    }
+    randomized = no
+    species_potential_add = {
+        exists = from
+        from = {
+            has_origin = origin_overtuned
+        }
+    }
+    species_possible_remove = {
+        can_remove_overtuned_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    custom_tooltip_with_modifiers = spliced_adaptability_tooltip
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = fromfrom
+            fromfrom = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        pop_environment_tolerance = 0.2
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = fromfrom
+            fromfrom = {
+                has_edict = damn_the_consequences
+            }
+        }
+        pop_environment_tolerance = 0.4
+    }
+    modifier = {
+        leader_lifespan_add = -10
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

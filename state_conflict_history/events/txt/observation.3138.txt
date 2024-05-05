@@ -1,0 +1,70 @@
+namespace = observation
+country_event = {
+    id = observation.3138
+    hide_window = yes
+    trigger = {
+        is_country_type = primitive
+        NOT = {
+            has_country_flag = indoctrination_cooldown
+        }
+        NOT = {
+            has_ethic = ethic_fanatic_authoritarian
+        }
+        capital_scope = {
+            has_observation_outpost = yes
+            observation_outpost = {
+                has_mission = native_indoctrination
+            }
+            observation_outpost_owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_authoritarian
+                    has_ethic = ethic_authoritarian
+                }
+            }
+            any_owned_pop = {
+                has_ethic = ethic_authoritarian
+            }
+            OR = {
+                root = {
+                    NOT = {
+                        has_ethic = ethic_authoritarian
+                    }
+                }
+                count_owned_pop = {
+                    limit = {
+                        has_ethic = ethic_authoritarian
+                    }
+                    count > 1
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 9
+    }
+    immediate = {
+        set_timed_country_flag = {
+            flag = indoctrination_cooldown
+            days = 360
+        }
+        shift_ethic = "ethic_authoritarian"
+        if = {
+            limit = {
+                OR = {
+                    has_authority = auth_democratic
+                    has_authority = auth_oligarchic
+                }
+            }
+            change_government = {
+                authority = auth_imperial
+            }
+        }
+        capital_scope = {
+            observation_outpost_owner = {
+                country_event = {
+                    id = observation.3139
+                }
+            }
+        }
+    }
+}

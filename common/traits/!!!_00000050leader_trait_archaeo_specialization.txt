@@ -1,0 +1,37 @@
+leader_trait_archaeo_specialization = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_expertise_archaeostudies
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_ancrel = yes
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_commander_admiral
+        }
+        exists = owner
+        owner = {
+            has_ascension_perk = ap_archaeoengineers
+        }
+    }
+    fleet_modifier = {
+        weapon_archaeotech_weapon_damage_mult = 0.15
+        weapon_archaeotech_weapon_fire_rate_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+}

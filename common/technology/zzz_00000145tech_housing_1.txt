@@ -1,0 +1,21 @@
+tech_housing_1 = {
+    cost = @tier2cost2
+    area = engineering
+    tier = 2
+    category = {
+        industry
+    }
+    weight = @tier2weight2
+    modifier = {
+        description = district_housing_tech_effect
+    }
+    weight_modifier = {
+        factor = 1.5
+    }
+    ai_weight = {
+        modifier = {
+            factor = @housing_ai_tech_factor
+            num_pops >= 100
+        }
+    }
+}

@@ -1,0 +1,26 @@
+trait_ruler_feedback_loop_2 = {
+    replace_traits = {
+        "trait_ruler_feedback_loop"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_magnifying_glass"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        planet_stability_add = 2
+        planet_amenities_no_happiness_add = 3
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    opposites = {
+        leader_trait_tyrannical
+        leader_trait_tyrannical_2
+    }
+}

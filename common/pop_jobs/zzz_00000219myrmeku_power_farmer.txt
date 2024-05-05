@@ -1,0 +1,32 @@
+@power_farmer_output = 12
+@power_farmer_alloy_upkeep = 0.5
+@power_farmer_mineral_upkeep = 2
+myrmeku_power_farmer = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_primitive_farm
+    clothes_texture_index = 3
+    icon = technician
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_technician
+        produces = {
+            energy = @power_farmer_output
+        }
+        upkeep = {
+            minerals = @power_farmer_mineral_upkeep
+            alloys = @power_farmer_alloy_upkeep
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|myrmeku_power_farmer|RESOURCE|energy|
+    }
+}

@@ -1,0 +1,5 @@
+opinion_tech_abusers = {
+    opinion = {
+        base = -300
+    }
+}

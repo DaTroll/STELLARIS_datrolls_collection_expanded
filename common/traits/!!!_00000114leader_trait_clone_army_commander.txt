@@ -1,0 +1,20 @@
+leader_trait_clone_army_commander = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_clone_soldier
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_fire_rate_mult = 0.25
+        ship_weapon_range_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

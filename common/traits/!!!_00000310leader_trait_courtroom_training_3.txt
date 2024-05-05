@@ -1,0 +1,24 @@
+leader_trait_courtroom_training_3 = {
+    replace_traits = {
+        "leader_trait_courtroom_training_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_courtroom_training"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    councilor_modifier = {
+        country_trust_cap_add = 75
+    }
+    leader_class = {
+        official
+    }
+    opposites = {
+        leader_trait_intolerant
+        leader_trait_intolerant_2
+    }
+    leader_trait_type = veteran
+}

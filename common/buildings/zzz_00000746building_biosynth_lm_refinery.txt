@@ -1,0 +1,62 @@
+building_biosynth_lm_refinery = {
+    base_buildtime = @b3_time
+    category = manufacturing
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            owner = {
+                NOT = {
+                    has_origin = origin_techno_world
+                }
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_origin = origin_techno_world
+            }
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_pd_lm_refiner_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_origin = origin_techno_world
+            }
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        job_pd_lm_refiner_drone_add = 1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_biosynth_lm_refinery"
+    }
+}

@@ -1,0 +1,70 @@
+building_corporate_monument = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    icon = building_autochthon_monument
+    category = unity
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = slave_colony
+        }
+        owner = {
+            is_megacorp = yes
+            is_memorialist_empire = no
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            owner = {
+                OR = {
+                    is_megacorp = no
+                    is_memorialist_empire = yes
+                }
+            }
+        }
+    }
+    convert_to = {
+        building_autochthon_monument
+        building_simulation_1
+        building_galactic_memorial_1
+        building_sensorium_1
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            trigger = {
+                exists = owner
+            }
+            unity = 1
+            multiplier = owner.trigger:num_ascension_perks
+        }
+        cost = {
+            minerals = @b1_minerals
+        }
+    }
+    planet_modifier = {
+        planet_jobs_unity_produces_mult = 0.05
+        job_culture_worker_add = @b1_jobs
+    }
+    triggered_desc = {
+        text = building_autochthon_monument_effect
+    }
+    triggered_desc = {
+        text = job_culture_worker_effect_desc
+    }
+    prerequisites = {
+        "tech_cultural_heritage"
+    }
+    show_tech_unlock_if = {
+        is_megacorp = yes
+        is_memorialist_empire = no
+    }
+    upgrades = {
+        building_corporate_site
+    }
+}

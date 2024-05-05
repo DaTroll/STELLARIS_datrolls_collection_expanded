@@ -1,0 +1,8 @@
+ag_ancient_structure = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

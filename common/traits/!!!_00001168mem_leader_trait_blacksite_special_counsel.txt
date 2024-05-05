@@ -1,0 +1,23 @@
+mem_leader_trait_blacksite_special_counsel = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_mem_detective"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        army_health = 0.05
+        army_morale = 0.15
+        army_collateral_damage_mult = -0.2
+    }
+    self_modifier = {
+        leader_skill_levels = 2
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

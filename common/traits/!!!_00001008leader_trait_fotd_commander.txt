@@ -1,0 +1,21 @@
+leader_trait_fotd_commander = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_cunning"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_orbital_bombardment_mult = 0.5
+        ship_fire_rate_mult = 0.05
+        ship_cloaking_strength_add = 2
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

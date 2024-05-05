@@ -1,0 +1,56 @@
+overlord_breeder = {
+    category = specialist
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_splinter_hive
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+    resources = {
+        category = planet_overlord_breeders
+        upkeep = {
+            trigger = {
+                exists = owner.overlord
+                owner.overlord = {
+                    is_lithoid = yes
+                }
+            }
+            minerals = 6
+        }
+        upkeep = {
+            trigger = {
+                exists = owner.overlord
+                owner.overlord = {
+                    OR = {
+                        is_machine_empire = yes
+                        is_mechanical_empire = yes
+                    }
+                }
+            }
+            energy = 6
+        }
+        upkeep = {
+            trigger = {
+                exists = owner.overlord
+                owner.overlord = {
+                    is_lithoid = no
+                    is_machine_empire = no
+                    is_mechanical_empire = no
+                }
+            }
+            food = 6
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

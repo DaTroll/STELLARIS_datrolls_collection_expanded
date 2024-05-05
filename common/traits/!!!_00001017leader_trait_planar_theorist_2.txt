@@ -1,0 +1,26 @@
+leader_trait_planar_theorist_2 = {
+    replace_traits = {
+        "leader_trait_planar_theorist"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_planar_theorist"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = 2
+    }
+    modifier = {
+        country_astral_rift_speed_mult = 0.2
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        category_particles_research_speed_mult = 0.1
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

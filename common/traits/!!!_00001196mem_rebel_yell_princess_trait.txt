@@ -1,0 +1,19 @@
+mem_rebel_yell_princess_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_restrained"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_fire_rate_mult = 0.1
+        ship_weapon_range_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

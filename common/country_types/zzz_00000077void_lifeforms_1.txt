@@ -1,0 +1,5 @@
+void_lifeforms_1 = {
+    ai = {
+        enabled = no
+    }
+}

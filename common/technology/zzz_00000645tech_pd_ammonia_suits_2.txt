@@ -1,0 +1,30 @@
+tech_pd_ammonia_suits_2 = {
+    cost = @tier4cost1
+    area = society
+    tier = 4
+    category = {
+        new_worlds
+    }
+    prerequisites = {
+        "tech_ammonia_suits"
+    }
+    weight = @tier4weight1
+    is_reverse_engineerable = no
+    start_tech = no
+    is_rare = yes
+    modifier = {
+        custom_tooltip = PDAMMONIA_SUITS_TECH_2
+    }
+    weight_modifier = {
+        factor = 0
+    }
+    ai_weight = {
+        factor = 10000
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_new_worlds
+            }
+        }
+    }
+}

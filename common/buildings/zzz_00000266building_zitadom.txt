@@ -1,0 +1,8 @@
+building_zitadom = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

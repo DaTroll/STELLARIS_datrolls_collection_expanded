@@ -1,0 +1,30 @@
+@terraforming_cost_level_3 = 10000
+@terraforming_duration_level_3 = 5400
+terraform_link = {
+    from = pc_toxic
+    to = pc_glacial
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_3
+        }
+    }
+    duration = @terraforming_duration_level_3
+    potential = {
+        from = {
+            has_modifier = toxic_terraforming_candidate
+        }
+    }
+    condition = {
+        has_technology = "tech_climate_restoration"
+        has_ascension_perk = "ap_detox"
+    }
+    effect = {
+        from = {
+            detox_hangover = yes
+        }
+    }
+    ai_weight = {
+        weight = 5
+    }
+}

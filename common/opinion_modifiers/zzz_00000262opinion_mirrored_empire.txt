@@ -1,0 +1,6 @@
+opinion_mirrored_empire = {
+    opinion = {
+        base = 150
+    }
+    unique = yes
+}

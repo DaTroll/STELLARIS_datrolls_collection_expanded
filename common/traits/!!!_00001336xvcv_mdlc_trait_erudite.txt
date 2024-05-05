@@ -1,0 +1,41 @@
+xvcv_mdlc_trait_erudite = {
+    cost = 4
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    icon = "gfx/interface/icons/traits/trait_erudite.dds"
+    species_potential_add = {
+        exists = from
+        from = {
+            has_technology = xvcv_mdlc_tech_genetic_resequencing
+        }
+    }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.2
+        planet_jobs_society_research_produces_mult = 0.2
+        planet_jobs_engineering_research_produces_mult = 0.2
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.1
+    }
+    slave_cost = {
+        energy = 2000
+    }
+    assembly_score = {
+        modifier = {
+            add = 2.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            add = 2.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

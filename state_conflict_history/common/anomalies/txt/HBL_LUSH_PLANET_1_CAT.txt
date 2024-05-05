@@ -1,0 +1,77 @@
+HBL_LUSH_PLANET_1_CAT = {
+    desc = "HBL_LUSH_PLANET_1_DESC"
+    picture = "GFX_evt_medieval_alien_civilization"
+    level = 4
+    spawn_chance = {
+        modifier = {
+            add = 5
+            OR = {
+                is_continental = yes
+                is_tropical = yes
+            }
+            is_arid = no
+            is_gaia = no
+        }
+        modifier = {
+            factor = @anomaly_habitable
+            colonizable_planet = yes
+        }
+        modifier = {
+            factor = 2
+            is_gaia = yes
+        }
+        modifier = {
+            factor = 3
+            is_nuked = yes
+        }
+        modifier = {
+            factor = 2
+            years_passed > 75
+        }
+    }
+    on_success = {
+        1 = anomaly.85
+        1 = anomaly.90
+        0 = {
+            modifier = {
+                add = 1
+                owner = {
+                    OR = {
+                        species_portrait = human
+                        species_portrait = human_legacy
+                    }
+                    OR = {
+                        has_country_flag = human_1
+                        has_country_flag = human_2
+                        capital_scope.solar_system = {
+                            has_star_flag = sol_system
+                        }
+                        capital_scope.solar_system = {
+                            has_star_flag = deneb_system
+                        }
+                    }
+                    NOT = {
+                        has_country_flag = found_voyager
+                    }
+                }
+            }
+            anomaly_event = anomaly.110
+        }
+        0 = {
+            modifier = {
+                add = 1
+                years_passed > 75
+            }
+            anomaly_event = anomaly.3130
+        }
+        0 = {
+            modifier = {
+                add = 1
+                owner = {
+                    is_homicidal = no
+                }
+            }
+            anomaly_event = anomalymod.220
+        }
+    }
+}

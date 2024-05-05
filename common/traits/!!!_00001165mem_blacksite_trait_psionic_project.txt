@@ -1,0 +1,19 @@
+mem_blacksite_trait_psionic_project = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_mem_mad_scientist"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = none
+    }
+    modifier = {
+        all_technology_research_speed = 0.2
+        num_tech_alternatives_add = 1
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

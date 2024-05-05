@@ -1,0 +1,91 @@
+namespace = anomaly
+country_event = {
+    id = anomaly.4104
+    title = "anomaly.4100.name"
+    desc = "anomaly.4104.desc"
+    picture = GFX_evt_animal_wildlife
+    show_sound = event_alien_nature
+    location = fromfrom
+    is_triggered_only = yes
+    option = {
+        name = anomaly.4104.a
+        fromfrom = {
+            add_modifier = {
+                modifier = horse_powered_factories_medium
+                days = -1
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_negative_high
+            }
+            remove_modifier = "media_coverage_negative_high"
+            add_modifier = {
+                modifier = media_coverage_negative_high
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_negative_medium
+            }
+            remove_modifier = "media_coverage_negative_medium"
+            add_modifier = {
+                modifier = media_coverage_negative_high
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_negative_low
+            }
+            remove_modifier = "media_coverage_negative_low"
+            add_modifier = {
+                modifier = media_coverage_negative_medium
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                NOR = {
+                    has_modifier = media_coverage_positive_high
+                    has_modifier = media_coverage_positive_medium
+                    has_modifier = media_coverage_positive_low
+                    has_modifier = media_coverage_negative_low
+                    has_modifier = media_coverage_negative_medium
+                    has_modifier = media_coverage_negative_high
+                }
+            }
+            add_modifier = {
+                modifier = media_coverage_negative_low
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_positive_low
+            }
+            remove_modifier = media_coverage_positive_low
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_positive_medium
+            }
+            remove_modifier = media_coverage_positive_medium
+            add_modifier = {
+                modifier = media_coverage_positive_low
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = media_coverage_positive_high
+            }
+            remove_modifier = media_coverage_positive_high
+            add_modifier = {
+                modifier = media_coverage_positive_medium
+                days = 7200
+            }
+        }
+    }
+}

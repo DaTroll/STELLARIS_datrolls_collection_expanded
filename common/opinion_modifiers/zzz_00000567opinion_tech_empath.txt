@@ -1,0 +1,13 @@
+opinion_tech_empath = {
+    trigger = {
+        is_playable = yes
+        is_gestalt = no
+        FROM = {
+            is_hive_empire = yes
+            has_technology = tech_empath_2
+        }
+    }
+    opinion = {
+        base = 20
+    }
+}

@@ -1,0 +1,38 @@
+building_research_lab_2 = {
+    base_buildtime = @b2_time
+    position_priority = 135
+    can_build = no
+    category = research
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+        }
+    }
+    inline_script = {
+        script = jobs/researchers_add
+        AMOUNT = @b2_jobs
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+            exotic_gases = @b2_rare_cost
+        }
+        upkeep = {
+            energy = @b2_upkeep
+            exotic_gases = @b2_rare_upkeep
+        }
+    }
+    upgrades = {
+        "building_research_lab_3"
+    }
+    prerequisites = {
+        "tech_basic_science_lab_2"
+    }
+}

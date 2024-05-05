@@ -1,0 +1,70 @@
+namespace = colony
+planet_event = {
+    id = colony.1510
+    title = "colony.1510.name"
+    desc = "colony.1510.desc"
+    picture = GFX_evt_asteroid_approaching_planet
+    location = ROOT
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            has_country_flag = FLDrone_country
+        }
+    }
+    option = {
+        name = colony.1510.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = influence
+                value = @tier2influencereward
+                min = @tier2influencemin
+                max = @tier2influencemax
+            }
+        }
+        hidden_effect = {
+            planet_event = {
+                id = colony.1514
+                days = 730
+            }
+        }
+    }
+    option = {
+        name = colony.1510.b
+        allow = {
+            owner = {
+                resource_stockpile_compare = {
+                    resource = alloys
+                    value >= 100
+                }
+            }
+        }
+        owner = {
+            add_resource = {
+                alloys = -100
+            }
+        }
+        hidden_effect = {
+            planet_event = {
+                id = colony.1511
+                days = 7
+            }
+        }
+    }
+    option = {
+        name = colony.1510.c
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier3researchreward
+                min = @tier3researchmin
+                max = @tier3researchmax
+            }
+        }
+        hidden_effect = {
+            planet_event = {
+                id = colony.1513
+                days = 730
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+ag_ancient_lab_overlord = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

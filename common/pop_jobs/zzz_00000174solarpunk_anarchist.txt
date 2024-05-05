@@ -1,0 +1,54 @@
+solarpunk_anarchist = {
+    category = ruler
+    is_capped_by_modifier = yes
+    building_icon = building_paradise_dome
+    icon = ranger
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_ruler_job
+    resources = {
+        category = planet_politicians
+        produces = {
+            unity = 3
+        }
+    }
+    planet_modifier = {
+        planet_stability_add = 0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                NOT = {
+                    has_country_flag = human_slavers
+                }
+                prev.species = {
+                    NOT = {
+                        OR = {
+                            species_portrait = human
+                            species_portrait = human_legacy
+                        }
+                    }
+                }
+            }
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+}

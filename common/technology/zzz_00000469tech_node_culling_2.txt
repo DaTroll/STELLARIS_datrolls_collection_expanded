@@ -1,0 +1,55 @@
+tech_node_culling_2 = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_node_culling_1"
+    }
+    weight = @tier3weight3
+    potential = {
+        is_hive_empire = yes
+    }
+    modifier = {
+        restored_node_bonus_skill = 2
+        councilor_exp_gain = 0.25
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill < 4
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 5
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 7
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 9
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

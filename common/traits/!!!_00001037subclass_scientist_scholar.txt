@@ -1,0 +1,46 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+subclass_scientist_scholar = {
+    custom_subtitle = scientist_subclass
+    leader_trait_type = subclass
+    inline_script = {
+        script = trait/icon_subclass
+        SUBCLASS = scientist_scholar
+        COUNCIL = no
+    }
+    custom_tooltip_with_modifiers = scholar_subclass_tt
+    modifier = {
+        ship_anomaly_research_speed_mult = 0.1
+        ship_archaeological_site_excavation_speed_mult = 0.1
+        country_astral_rift_speed_mult = 0.1
+    }
+    ai_weight = {
+        modifier = {
+            is_councilor = yes
+            factor = @ai_selection_low
+        }
+        modifier = {
+            is_councilor = no
+            factor = @ai_selection_high
+        }
+        modifier = {
+            exists = fleet
+            NOT = {
+                fleet = {
+                    is_ship_class = shipclass_transport
+                }
+            }
+            factor = @ai_selection_high
+        }
+        modifier = {
+            NOT = {
+                exists = fleet
+            }
+            factor = @ai_selection_low
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    background_icon = "GFX_leader_subclass_scientist_scholar_background"
+}

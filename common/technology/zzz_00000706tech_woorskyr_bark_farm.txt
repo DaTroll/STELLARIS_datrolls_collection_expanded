@@ -1,0 +1,60 @@
+tech_woorskyr_bark_farm = {
+    cost = @tier2cost1
+    area = society
+    category = {
+        new_worlds
+    }
+    is_rare = yes
+    tier = 3
+    icon = tech_woorskyr_habitation
+    weight = @tier2weight1
+    prerequisites = {
+        tech_woorskyr_habitation
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            country_uses_food = no
+        }
+        modifier = {
+            factor = 2
+            has_country_flag = cf_woorskyr_found
+        }
+        modifier = {
+            factor = 3
+            has_woorskyr_deposit = yes
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_woorskyr_bark_farm
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_woorskyr_found
+            }
+            NOT = {
+                has_woorskyr_deposit = yes
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_woorskyr_found
+            }
+            NOT = {
+                has_woorskyr_deposit = yes
+            }
+        }
+        modifier = {
+            factor = 2
+            has_country_flag = cf_woorskyr_found
+        }
+        modifier = {
+            factor = 3
+            has_woorskyr_deposit = yes
+        }
+    }
+}

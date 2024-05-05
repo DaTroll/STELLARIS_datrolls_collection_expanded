@@ -1,0 +1,8 @@
+building_wula_order_keep = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

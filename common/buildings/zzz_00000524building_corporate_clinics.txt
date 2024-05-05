@@ -1,0 +1,59 @@
+building_corporate_clinics = {
+    base_buildtime = @b2_time
+    icon = building_corporate_clinic
+    base_cap_amount = 1
+    owner_type = corporate
+    category = resource
+    potential = {
+        has_branch_office = yes
+        branch_office_owner = {
+            has_valid_civic = civic_private_healthcare_corporate
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    on_built = {
+        planet = {
+            set_planet_flag = has_private_clinics
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_planet_flag = has_private_clinics
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            branch_office_owner = {
+                is_criminal_syndicate = yes
+            }
+        }
+        planet_crime_add = 20
+    }
+    planet_modifier = {
+        job_healthcare_add = 1
+    }
+    resources = {
+        category = planet_branch_office_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        produces = {
+            energy = 8
+            unity = 2
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = planet.owner
+        }
+        text = building_corporate_clinics_effect
+    }
+    ai_weight = {
+        weight = 120
+    }
+}

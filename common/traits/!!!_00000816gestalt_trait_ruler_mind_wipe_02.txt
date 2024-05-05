@@ -1,0 +1,23 @@
+gestalt_trait_ruler_mind_wipe_02 = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = leader
+        ICON = "GFX_leader_trait_mind_wipe"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        ship_weapon_damage = 0.15
+        army_damage_mult = 0.15
+        empire_size_mult = 0.1
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    initial = no
+    randomized = no
+}

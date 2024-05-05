@@ -1,0 +1,63 @@
+building_xenograss_processor = {
+    base_buildtime = 180
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = research
+    potential = {
+        planet = {
+            planet_has_xenograss_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_xenograss
+            planet = {
+                planet_has_xenograss_deposit = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_xenograss_harvesting
+                }
+            }
+            planet = {
+                planet_has_xenograss_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/researchers_add
+        AMOUNT = 3
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            engineering_research = 5
+        }
+        cost = {
+            minerals = 200
+            volatile_motes = 20
+        }
+        upkeep = {
+            minerals = 2
+            food = 1
+            volatile_motes = 2
+        }
+    }
+    country_modifier = {
+        planet_colony_development_speed_mult = 0.1
+        planet_building_build_speed_mult = 0.1
+    }
+    ai_weight = {
+        weight = 100
+    }
+    prerequisites = {
+        "tech_xenograss_harvesting"
+    }
+}

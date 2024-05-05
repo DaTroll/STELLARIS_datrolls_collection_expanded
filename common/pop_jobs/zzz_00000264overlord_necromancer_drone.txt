@@ -1,0 +1,55 @@
+overlord_necromancer_drone = {
+    category = complex_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_dread_encampment
+    clothes_texture_index = 1
+    icon = overlord_beholder
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_overlord_necromancers
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_lithoid = yes
+                }
+            }
+            minerals = 6
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_lithoid = no
+                    is_machine_empire = no
+                    is_mechanical_empire = no
+                }
+            }
+            food = 6
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 2
+    }
+    overlord_resources = {
+        category = planet_overlord_necromancers
+        produces = {
+            physics_research = 6
+            society_research = 6
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

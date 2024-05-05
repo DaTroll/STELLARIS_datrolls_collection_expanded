@@ -1,0 +1,5 @@
+compound_empire = {
+    ai = {
+        enabled = no
+    }
+}

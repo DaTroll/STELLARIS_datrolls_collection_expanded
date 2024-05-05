@@ -1,0 +1,43 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_worm_scales = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_worm_scales"
+    sound = "relic_activation_scales_of_the_worm"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_physics_tech_research_speed = 0.1
+        pc_nuked_habitability = 0.4
+    }
+    score = 1000
+    active_effect = {
+        add_modifier = {
+            modifier = "worm_scales"
+            days = @triumph_duration
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_worm_scales
+        }
+    }
+}

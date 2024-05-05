@@ -1,0 +1,5 @@
+ag_kuat_invasion_country = {
+    ai = {
+        enabled = no
+    }
+}

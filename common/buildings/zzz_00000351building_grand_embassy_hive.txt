@@ -1,0 +1,77 @@
+building_grand_embassy_hive = {
+    base_buildtime = @b3_time
+    icon = building_grand_embassy
+    can_build = no
+    category = government
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+        }
+        planet = {
+            is_capital = yes
+        }
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        if = {
+            limit = {
+                exists = orbital_defence
+            }
+            orbital_defence = {
+                exists = starbase
+                starbase = {
+                    NOR = {
+                        has_starbase_building = ring_embassy_complex_hive
+                        is_starbase_building_building = ring_embassy_complex_hive
+                    }
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        OR = {
+            AND = {
+                exists = owner
+                owner = {
+                    is_hive_empire = no
+                }
+            }
+            planet = {
+                is_capital = no
+            }
+        }
+    }
+    country_modifier = {
+        envoys_add = 2
+    }
+    planet_modifier = {
+        job_synapse_drone_add = 2
+    }
+    triggered_desc = {
+        text = job_synapse_drone_effect_desc
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b4_minerals
+            rare_crystals = @b4_rare_cost
+        }
+        upkeep = {
+            energy = @b4_upkeep
+            rare_crystals = @b4_rare_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_empath_2"
+    }
+    show_tech_unlock_if = {
+        is_hive_empire = yes
+    }
+}

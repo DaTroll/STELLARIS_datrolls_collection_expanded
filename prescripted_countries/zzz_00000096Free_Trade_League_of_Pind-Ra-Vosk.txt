@@ -1,0 +1,91 @@
+"Free Trade League of Pind-Ra-Vosk" = {
+    key = "Free Trade League of Pind-Ra-Vosk"
+    ship_prefix = {
+        key = "PRV"
+    }
+    species = {
+        class = "ART"
+        portrait = "art19"
+        species_name = {
+            key = "Ra-Vosk"
+        }
+        species_plural = {
+            key = "Ra-Vosks"
+        }
+        species_adjective = {
+            key = "Ra-Voskian"
+        }
+        species_bio = "The Pind-Ra-Voskian Traders have always seen a lot of benefits in the trade with others. May it be other Tribes, Nations or associations. In the end this Ideology became so overhelming that they founded a mixture of Nation and Megacorporation. They will try to minimise the costs and maxime the profit. In their past they have been hunted and even been victims of cannibalism, apparently they are supposed to be delicious, but this can only be verified by a devoured swarm and i wonder if they would tell us! But while we wait for this day to finally come. Make sure to not let them undermine your governement, with their lucrative offers. "
+        name_list = "ART1"
+        gender = not_set
+        trait = "trait_thrifty"
+        trait = "trait_weak"
+        trait = "trait_charismatic"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Free Trade League of Pind-Ra-Vosk"
+    }
+    adjective = {
+        key = "Pindian"
+    }
+    authority = "auth_corporate"
+    government = "gov_trade_league"
+    planet_name = {
+        key = "Pind-Ra-Vosk"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Pind"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_06.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "light_orange"
+            "dark_blue"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tal's"
+            }
+        }
+        portrait = "art19"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Supreme Traider"
+        }
+        ruler_title_female = {
+            key = "Supreme Traider"
+        }
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_xenophile"
+    civics = {
+        "civic_free_traders"
+        "civic_indentured_assets"
+    }
+    origin = "origin_default"
+}

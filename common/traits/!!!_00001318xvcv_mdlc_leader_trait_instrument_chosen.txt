@@ -1,0 +1,59 @@
+xvcv_mdlc_leader_trait_instrument_chosen = {
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = leader
+        ICON = "GFX_leader_trait_instrument_chosen"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_speed_mult = 0.4
+        ship_windup_mult = -0.15
+        ship_emergency_ftl_mult = -0.25
+        ship_disengage_chance_mult = 0.35
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        leader_scientists_sr_zro_produces_add = 2
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        leader_scientists_physics_research_produces_add = 7.5
+        leader_scientists_society_research_produces_add = 7.5
+        leader_scientists_engineering_research_produces_add = 7.5
+        mult = trigger:has_skill
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        planet_jobs_slave_produces_mult = 0.3
+        planet_stability_add = 5
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        pop_happiness = 0.1
+        trade_value_mult = 0.15
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+}

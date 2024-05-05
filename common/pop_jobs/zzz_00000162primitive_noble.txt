@@ -1,0 +1,56 @@
+primitive_noble = {
+    category = ruler
+    is_capped_by_modifier = yes
+    building_icon = building_primitive_capital
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_ruler_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                NOT = {
+                    has_country_flag = human_slavers
+                }
+                prev.species = {
+                    NOT = {
+                        OR = {
+                            species_portrait = human
+                            species_portrait = human_legacy
+                        }
+                    }
+                }
+            }
+            OR = {
+                has_country_flag = bronze_age
+                has_country_flag = iron_age
+                has_country_flag = late_medieval_age
+                has_country_flag = renaissance_age
+                has_country_flag = steam_age
+            }
+        }
+    }
+    resources = {
+        category = planet_politicians
+        produces = {
+            unity = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @ruler_job_weight
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+    }
+}

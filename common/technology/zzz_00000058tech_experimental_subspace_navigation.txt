@@ -1,0 +1,33 @@
+tech_experimental_subspace_navigation = {
+    area = physics
+    cost = @tier2cost3
+    category = {
+        field_manipulation
+    }
+    tier = 2
+    is_rare = yes
+    prerequisites = {
+        tech_sensors_2
+    }
+    weight = @tier2weight2
+    feature_flags = {
+        experimental_subspace_navigation
+    }
+    weight_modifier = {
+        factor = 0.5
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_experimental_subspace_navigation
+        }
+        modifier = {
+            factor = @ap_grasp_the_void_travel_tech
+            has_ascension_perk = ap_grasp_the_void
+        }
+        modifier = {
+            factor = @eager_explorer_effect
+            is_eager_explorer_empire = yes
+        }
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,46 @@
+building_toxic_bath_machine = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = amenity
+    icon = building_toxic_bath_machine
+    potential = {
+        owner = {
+            is_machine_empire = yes
+            has_valid_civic = civic_machine_toxic_baths
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                is_machine_empire = no
+            }
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_machine_toxic_baths
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        job_bath_attendant_machine_add = @b1_jobs
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+        }
+        text = job_toxic_baths_effect_machine_desc
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+}

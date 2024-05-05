@@ -1,0 +1,8 @@
+building_cfcouncil = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

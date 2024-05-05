@@ -1,0 +1,97 @@
+"Survivors of Dex'na" = {
+    key = "Survivors of Dex'na"
+    ship_prefix = {
+        key = "DSL"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep16"
+        species_name = {
+            key = "Dex"
+        }
+        species_plural = {
+            key = "Dex"
+        }
+        species_adjective = {
+            key = "Dexian"
+        }
+        species_bio = "Do you see those eyes? The Pupil is dilated like nothing imaginable. This is due to two reasons:                                          Firstly: the extreme long time they spend underground in bunkers due to their nuclear winter.                                                            Secondly: Their also extreme drug addiction.                                  The Dex are very good Physicist thus they have been able  to craft and synthesize the strongest drugs to enhance their population, armies, leaders; everyone. With little to no side effects the drugs are effective. The core material is a rare mineral found in the litossphere of the planet unfortunatly it'll soon be exhausted. They hope to find new materials in space..."
+        name_list = "REP3"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_natural_physicists"
+        trait = "trait_intelligent"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Survivors of Dex'na"
+    }
+    adjective = {
+        key = "Dex"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    planet_name = {
+        key = "Dex'na"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Dex'ra"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "beige"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Dex'na Tush"
+            }
+        }
+        portrait = "rep16_m"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Survivor"
+        }
+        heir_title = {
+            key = "Second Survivor"
+        }
+        ruler_title_female = {
+            key = "First Survivor"
+        }
+        heir_title_female = {
+            key = "Second Survivor"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_slaving_despots_room"
+    spawn_enabled = always
+    ethic = "ethic_militarist"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_technocracy"
+    }
+    origin = "origin_post_apocalyptic"
+}

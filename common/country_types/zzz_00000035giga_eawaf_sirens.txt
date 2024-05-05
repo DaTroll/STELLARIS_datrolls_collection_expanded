@@ -1,0 +1,5 @@
+giga_eawaf_sirens = {
+    ai = {
+        enabled = no
+    }
+}

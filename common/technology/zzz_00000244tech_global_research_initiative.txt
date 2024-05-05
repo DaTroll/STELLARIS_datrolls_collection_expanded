@@ -1,0 +1,35 @@
+tech_global_research_initiative = {
+    area = physics
+    tier = 3
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    prerequisites = {
+        "tech_basic_science_lab_2"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight1
+    weight_modifier = {
+        factor = 1.5
+        modifier = {
+            factor = 0.25
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_computing
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = scholarium
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,29 @@
+tech_defense_platform_hull_1 = {
+    cost = @tier2cost2
+    area = engineering
+    tier = 2
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_starbase_3"
+    }
+    is_rare = yes
+    weight = @tier2weight2
+    weight_modifier = {
+        factor = 0.5
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_defense_platform_hull_1
+        }
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = bulwark
+            }
+        }
+    }
+    modifier = {
+        shipsize_military_station_small_hull_mult = 0.1
+    }
+}

@@ -1,0 +1,46 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+subclass_official_delegate = {
+    custom_subtitle = governor_subclass
+    leader_trait_type = subclass
+    inline_script = {
+        script = trait/icon_subclass
+        SUBCLASS = official_delegate
+        COUNCIL = no
+    }
+    leader_class = {
+        official
+    }
+    custom_tooltip_with_modifiers = delegate_subclass_tt
+    federation_modifier = {
+        cohesion_add = 0.5
+    }
+    galcom_modifier = {
+        diplo_weight_mult = 0.05
+    }
+    ai_weight = {
+        modifier = {
+            is_councilor = yes
+            factor = @ai_selection_low
+        }
+        modifier = {
+            is_councilor = no
+            factor = @ai_selection_high
+        }
+        modifier = {
+            OR = {
+                is_assigned_to_federation = yes
+                is_assigned_to_galcom = yes
+            }
+            factor = @ai_selection_high
+        }
+        modifier = {
+            OR = {
+                is_assigned_to_federation = no
+                is_assigned_to_galcom = no
+            }
+            factor = @ai_selection_low
+        }
+    }
+    background_icon = "GFX_leader_subclass_official_delegate_background"
+}

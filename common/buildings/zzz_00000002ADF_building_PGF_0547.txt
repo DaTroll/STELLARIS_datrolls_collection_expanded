@@ -1,0 +1,8 @@
+ADF_building_PGF_0547 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

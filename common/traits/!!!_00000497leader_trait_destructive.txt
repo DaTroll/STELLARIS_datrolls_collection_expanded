@@ -1,0 +1,28 @@
+leader_trait_destructive = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_destructive"
+        COUNCIL = no
+        TIER = 1
+    }
+    inline_script = {
+        script = paragon/leader_resource_upkeep
+        RESOURCE = alloys
+        AMOUNT = 5
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        modifier = {
+            species = {
+                has_trait = trait_deviants
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

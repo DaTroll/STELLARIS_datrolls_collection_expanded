@@ -1,0 +1,26 @@
+leader_trait_juryrigger_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_juryrigger
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_juryrigger
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        create_debris_chance = -1
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip_with_modifiers = leader_trait_juryrigger_2_effect
+    opposites = {
+        leader_trait_wrecker
+        leader_trait_wrecker_2
+        leader_trait_wrecker_3
+    }
+}

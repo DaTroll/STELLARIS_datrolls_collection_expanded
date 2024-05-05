@@ -1,0 +1,39 @@
+tech_archaeostudies = {
+    cost = @tier2cost1
+    area = society
+    category = {
+        archaeostudies
+    }
+    tier = 2
+    is_rare = yes
+    weight = @tier2weight3
+    potential = {
+        has_ancrel = yes
+    }
+    weight_modifier = {
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_archaeostudies
+        }
+        modifier = {
+            factor = 0
+            has_ancrel = no
+        }
+        modifier = {
+            factor = 0.3
+            count_archaeological_site = {
+                count < 3
+                limit = {
+                    is_site_completed = yes
+                }
+            }
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_country_flag = origin_shoulders_closure
+                has_completed_precursor_research = yes
+            }
+        }
+    }
+}

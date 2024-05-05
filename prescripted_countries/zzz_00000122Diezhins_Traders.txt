@@ -1,0 +1,89 @@
+"Diezhins Traders" = {
+    key = "Diezhins Traders"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla4"
+        species_name = {
+            key = "Diezhin"
+        }
+        species_plural = {
+            key = "Diezhins"
+        }
+        species_adjective = {
+            key = "Diezhin"
+        }
+        species_bio = "The Diezhin have had several harsh and extrem violent governments in the past. With the age of new communications many new organisations spread across the planet, breaking the barriers of controled communication and forcing the governments to release many innocent political prisoneers. This resulted in a constant weakening of the States. Until a very young and daring Jakob D. Die took over an apparently unimportant coorporation. Under his leadership they overthrough the planet and within a decade they became -litteraly- the owner of the planet and every living thing on it. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_charismatic"
+        trait = "trait_strong"
+        trait = "trait_quarrelsome"
+        trait = "trait_communal"
+        trait = "trait_fleeting"
+    }
+    name = {
+        key = "Diezhins Traders"
+    }
+    adjective = {
+        key = "Diezhins"
+    }
+    authority = "auth_corporate"
+    government = "gov_criminal_syndicate"
+    planet_name = {
+        key = "Ister"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Istast"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_02.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "burgundy"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Die"
+            }
+        }
+        portrait = "pla4"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Yak"
+        }
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_criminal_heritage"
+        "civic_ruthless_competition"
+    }
+    origin = "origin_default"
+}

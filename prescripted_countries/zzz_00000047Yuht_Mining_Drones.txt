@@ -1,0 +1,87 @@
+"Yuht Mining Drones" = {
+    key = "Yuht Mining Drones"
+    ship_prefix = {
+        key = ""
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_hum_robot"
+        species_name = {
+            key = "Yuht Mining Drone"
+        }
+        species_plural = {
+            key = "Yuht Mining Drones"
+        }
+        species_adjective = {
+            key = "Mining Drone of the Yuht"
+        }
+        species_bio = "\"Master ... is that ... you ...? *GRRRRRR* ... *KRKPFFFF* HAHAHAHAHAHAHAHAAHA... *SCHIIIIIIII* ... error ... data error ... restarting system.\"                                                                                 The Yuht, a long extinct specie, seem to have left behind more than just ruins and artefacts but also a colony of mining drones. When the Yuht dissapeared, it seems that they continued their work for a while, but the lack of instructions caused chaos in their ranks.Some event must have made them self conscient and thus capable to think and become self aware.They might turn out to be excellent Mineral traders, but be aware. They can process more in one fraction of a second than a human being in his lifetime."
+        name_list = "MACHINE1"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_efficient_processors"
+        trait = "trait_robot_power_drills"
+        trait = "trait_robot_luxurious"
+        trait = "trait_robot_repurposed_hardware"
+        trait = "trait_robot_high_maintenance"
+    }
+    name = {
+        key = "Yuht Mining Drones"
+    }
+    adjective = {
+        key = "Yuht Mining Dronan"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_industrial"
+    advisor_voice_type = "l_machine"
+    planet_name = {
+        key = "Core"
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "Shine I"
+    }
+    initializer = "shattered_ring_start"
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_18.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "red"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Omega Prime"
+            }
+        }
+        portrait = "sd_hum_robot"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_rockbreakers"
+        "civic_machine_unitary_cohesion"
+    }
+    origin = "origin_shattered_ring"
+}

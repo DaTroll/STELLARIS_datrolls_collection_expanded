@@ -1,0 +1,24 @@
+fe_maintenance_worker = {
+    category = worker
+    is_capped_by_modifier = no
+    building_icon = building_residence
+    clothes_texture_index = 3
+    icon = primitive_laborer
+    possible_pre_triggers = {
+        has_owner = yes
+    }
+    possible = {
+        owner = {
+            is_country_type = gate_builders_remnant
+        }
+    }
+    planet_modifier = {
+        planet_amenities_add = 7
+    }
+    resources = {
+        category = planet_jobs
+    }
+    weight = {
+        weight = @special_job_weight
+    }
+}

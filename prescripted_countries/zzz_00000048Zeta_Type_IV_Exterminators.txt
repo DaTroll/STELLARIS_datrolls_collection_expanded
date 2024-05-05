@@ -1,0 +1,88 @@
+"Zeta Type IV Exterminators" = {
+    key = "Zeta Type IV Exterminators"
+    ship_prefix = {
+        key = "ZSP"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_art_robot"
+        species_name = {
+            key = "Zeta Machine Type IV"
+        }
+        species_plural = {
+            key = "Zeta Machines"
+        }
+        species_adjective = {
+            key = "Zetian"
+        }
+        species_bio = "8 eyes, flying, and several sharp hands.                                               What did the scientist who invented this design think? Or perhaps, what did he think, when they gained consciounsness and startet to attack their creators? The Machine quickly overran the Planet and destoryed it, ultimately turning it into a Tomb Wolrd. They quickly hacked all the operating systems and thus reached Space Flight within a few decades. You better extermine them as soon as possible, or risk to be at their mercy. And we all know how this would end. "
+        name_list = "MACHINE3"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_enhanced_memory"
+        trait = "trait_robot_bulky"
+        trait = "trait_robot_repurposed_hardware"
+        trait = "trait_robot_durable"
+    }
+    name = {
+        key = "Zeta Type IV Exterminators"
+    }
+    adjective = {
+        key = "Zetian"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_terminator"
+    planet_name = {
+        key = "Zeta"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Zeta"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_13.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "black"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Zeta Type V"
+            }
+        }
+        portrait = "sd_art_robot"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Terminal Command"
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_terminator"
+        "civic_machine_factory_overclock"
+    }
+    origin = "origin_default"
+}

@@ -1,0 +1,34 @@
+building_dread_encampment = {
+    base_buildtime = @b2_time
+    base_cap_amount = 1
+    can_be_ruined = no
+    category = army
+    potential = {
+        exists = owner
+        owner = {
+            has_valid_civic = civic_reanimated_armies
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    planet_modifier = {
+        job_necromancer_add = 2
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            always = yes
+        }
+        text = job_necromancer_effect_desc
+    }
+}

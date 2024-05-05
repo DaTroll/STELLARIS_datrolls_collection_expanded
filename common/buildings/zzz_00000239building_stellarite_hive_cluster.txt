@@ -1,0 +1,8 @@
+building_stellarite_hive_cluster = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

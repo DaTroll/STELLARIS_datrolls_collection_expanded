@@ -1,0 +1,124 @@
+"Kekh'Tan First Hive" = {
+    key = "Kekh'Tan First Hive"
+    ship_prefix = {
+        key = "KS"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu5"
+        species_name = {
+            key = "Kekh'Tan"
+            literal = yes
+        }
+        species_plural = {
+            key = "Kehk'Tans"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Kekh'Tan"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "Weak and fleeting, such were described the Kekh'Tan in the great encyclopaedia of all galatic lifeforms, when they were still a young species. But they were able to develloppe their own uniqueness : their created all-autonomous, detached from the hive leaders. With those they were able to single-handedly focus all their efforts on the issues at hand and never again be encombered by the omnipotent-thought-stream of the Hives. But they became dependant, as such now their fleets are only a shell of their possible self, such is the curse of the Kekh'Tan Hive."
+        name_list = "HIVE2"
+        gender = indeterminable
+        trait = "trait_hive_mind"
+        trait = "trait_fleeting"
+        trait = "trait_weak"
+        trait = "trait_docile"
+        trait = "trait_quick_learners"
+        trait = "trait_natural_sociologists"
+    }
+    name = {
+        key = "Kekh'Tan First Hive"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "hive_mind"
+                            value = {
+                                key = "Prime"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Kekh'Tan"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    advisor_voice_type = "l_hivemind"
+    planet_name = {
+        key = "Kekh'Pri"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kekh'S"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_10.dds"
+        }
+        colors = {
+            "dark_red"
+            "intense_turquoise"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "HIVE2_RULER_Source"
+            }
+        }
+        portrait = "aqu5_m"
+        texture = 3
+        attachment = 0
+        clothes = 1
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_natural_neural_network"
+        "civic_hive_subsumed_will"
+    }
+    origin = "origin_progenitor_hive"
+}

@@ -1,0 +1,3 @@
+JAYPEES_FISH = {
+    uses_modifiers = no
+}

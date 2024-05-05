@@ -1,0 +1,3 @@
+half_aberration = {
+    uses_modifiers = no
+}

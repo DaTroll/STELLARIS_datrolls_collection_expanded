@@ -1,0 +1,20 @@
+mem_leader_trait_cyborg = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_cyborg"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        planet_jobs_robotic_produces_mult = 0.15
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    initial = no
+    randomized = no
+}

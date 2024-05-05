@@ -1,0 +1,55 @@
+@diplo_flag = custom_preftl_diplomacy
+action_stop_pre_ftl_trade = {
+    icon = "GFX_diplomacy_pre_ftl_trade"
+    auto_accepted = yes
+    should_show_auto_accept_message_recipient = yes
+    action_type = negative
+    potential = {
+        hidden_trigger = {
+            OR = {
+                merg_is_default_empire = yes
+                AND = {
+                    has_global_flag = has_fallen_empire_player
+                    is_country_type = fallen_empire
+                }
+            }
+            from = {
+                is_country_type = primitive
+                NOT = {
+                    has_country_flag = @diplo_flag
+                }
+                has_pre_ftl_trade = root
+            }
+        }
+    }
+    on_accept = {
+        hidden_effect = {
+            from = {
+                if = {
+                    limit = {
+                        capital_scope = {
+                            has_observation_outpost = yes
+                        }
+                    }
+                    capital_scope.observation_outpost = {
+                        remove_modifier = preftl_action_trade_pact
+                    }
+                }
+                if = {
+                    limit = {
+                        NOR = {
+                            has_country_flag = preftl_societal_enlightenment_pact
+                            has_country_flag = open_technological_enlightenment_pact
+                            capital_scope.observation_outpost = {
+                                has_modifier = preftl_action_trade_pact
+                            }
+                        }
+                    }
+                    capital_scope.observation_outpost = {
+                        set_event_locked = no
+                    }
+                }
+            }
+        }
+    }
+}

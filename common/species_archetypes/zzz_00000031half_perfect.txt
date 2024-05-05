@@ -1,0 +1,3 @@
+half_perfect = {
+    uses_modifiers = no
+}

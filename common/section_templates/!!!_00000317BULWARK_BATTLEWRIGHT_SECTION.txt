@@ -1,0 +1,9 @@
+ship_section_template = {
+    key = "BULWARK_BATTLEWRIGHT_SECTION"
+    ship_size = constructor
+    fits_on_slot = mid
+    entity = "construction_ship_entity"
+    icon = "GFX_ship_part_core_mid"
+    should_draw_components = no
+    small_utility_slots = 4
+}

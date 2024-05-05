@@ -1,0 +1,20 @@
+leader_trait_annihilator_2 = {
+    replace_traits = {
+        leader_trait_annihilator
+    }
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_annihilator
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        ship_orbital_bombardment_mult = 1
+    }
+    leader_class = {
+        commander
+    }
+}

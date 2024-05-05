@@ -1,0 +1,8 @@
+building_bugfables = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

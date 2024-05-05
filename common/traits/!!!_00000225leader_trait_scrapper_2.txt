@@ -1,0 +1,94 @@
+leader_trait_scrapper_2 = {
+    replace_traits = {
+        "leader_trait_scrapper"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_scrapper"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                    is_catalytic_empire = no
+                }
+            }
+            trait_is_gestalt_check = no
+        }
+        job_foundry_add = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                    is_catalytic_empire = no
+                }
+            }
+            trait_is_hive_check = yes
+        }
+        job_alloy_drone_add = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                    is_catalytic_empire = no
+                }
+            }
+            trait_is_machine_check = yes
+        }
+        job_fabricator_add = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                    is_catalytic_empire = yes
+                }
+            }
+            trait_is_gestalt_check = no
+        }
+        job_catalytic_technician_add = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                    is_catalytic_empire = yes
+                }
+            }
+            trait_is_gestalt_check = yes
+        }
+        job_catalytic_drone_add = 2
+    }
+    planet_modifier = {
+        planet_metallurgists_alloys_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_metallurgists_alloys_produces_mult = 0.05
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+}

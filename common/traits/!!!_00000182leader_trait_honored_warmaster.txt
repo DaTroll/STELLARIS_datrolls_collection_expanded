@@ -1,0 +1,31 @@
+leader_trait_honored_warmaster = {
+    leader_trait_type = destiny
+    ethic_destiny_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_honored_warmaster"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        job_soldier_per_pop = 0.1
+    }
+    sector_modifier = {
+        job_soldier_per_pop = 0.05
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_governor
+        has_ethic = ethic_xenophile
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

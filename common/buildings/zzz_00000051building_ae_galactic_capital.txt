@@ -1,0 +1,8 @@
+building_ae_galactic_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

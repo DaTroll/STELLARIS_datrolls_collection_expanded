@@ -1,0 +1,21 @@
+leader_trait_general_mind_wipe_01 = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = commander
+        ICON = "GFX_leader_trait_mind_wipe"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    army_modifier = {
+        army_damage_mult = 0.25
+        army_collateral_damage_mult = 0.1
+        army_morale = -0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

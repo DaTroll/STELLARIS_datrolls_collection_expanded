@@ -1,0 +1,87 @@
+"Hktarian Empire" = {
+    key = "Hktarian Empire"
+    ship_prefix = {
+        key = "HSS"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol5"
+        species_name = {
+            key = "Hktara"
+        }
+        species_plural = {
+            key = "Hktaras"
+        }
+        species_adjective = {
+            key = "Hktarian"
+        }
+        species_bio = "90% of the population died during the intial blasts. 5% more during the fallout. This event, described in their History as the \"great dieing\" happend while they were experiencing the post-old times. Roughly 700 years ago. This therefore can't be the result of their actions. Did their planet end up being a testground for biological and atomic weapons? This would explain some physiological mutations from their ancestors, according to ancient paintings and descriptions. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_nomadic"
+        trait = "trait_communal"
+        trait = "trait_repugnant"
+        trait = "trait_conservational"
+        trait = "trait_resilient"
+    }
+    name = {
+        key = "Hktarian Empire"
+    }
+    adjective = {
+        key = "Hktarian"
+    }
+    authority = "auth_imperial"
+    government = "gov_star_empire"
+    planet_name = {
+        key = "Hktar"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Hktar"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "avian_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "horizontal_stripe.dds"
+        }
+        colors = {
+            "dark_green"
+            "grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Jesslur"
+            }
+        }
+        portrait = "mol5"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_militarist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_police_state"
+    }
+    origin = "origin_post_apocalyptic"
+}

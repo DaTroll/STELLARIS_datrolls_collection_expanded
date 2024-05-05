@@ -1,0 +1,8 @@
+building_precinct_house_at_b = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

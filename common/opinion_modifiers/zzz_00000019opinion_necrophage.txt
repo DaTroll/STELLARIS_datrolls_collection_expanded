@@ -1,0 +1,41 @@
+opinion_necrophage = {
+    opinion = {
+        base = -1
+        modifier = {
+            add = -1
+            OR = {
+                has_ethic = ethic_xenophile
+                has_valid_civic = civic_hive_empath
+                has_valid_civic = civic_machine_exploration_protocol
+            }
+        }
+        modifier = {
+            add = -3
+            OR = {
+                has_ethic = ethic_fanatic_xenophile
+                has_origin = origin_fruitful
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+    }
+    accumulative = yes
+    min = -100
+    decay = {
+        base = 2
+        modifier = {
+            add = -1
+            OR = {
+                has_ethic = ethic_fanatic_xenophile
+                has_origin = origin_fruitful
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        modifier = {
+            add = 1
+            OR = {
+                has_defensive_pact = from
+                is_in_federation_with = from
+            }
+        }
+    }
+}

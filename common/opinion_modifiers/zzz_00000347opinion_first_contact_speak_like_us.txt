@@ -1,0 +1,11 @@
+opinion_first_contact_speak_like_us = {
+    opinion = {
+        base = 150
+    }
+    decay = {
+        base = 1
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

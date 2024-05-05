@@ -1,0 +1,8 @@
+building_eutab_medigel_cultivator = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

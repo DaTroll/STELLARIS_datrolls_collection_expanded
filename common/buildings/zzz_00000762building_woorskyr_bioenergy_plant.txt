@@ -1,0 +1,67 @@
+building_woorskyr_bioenergy_plant = {
+    base_buildtime = 360
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = resource
+    potential = {
+        planet = {
+            planet_has_woorskyr_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_woorskyr
+            planet = {
+                planet_has_woorskyr_deposit = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_woorskyr_bioenergy_plant
+                }
+            }
+            planet = {
+                planet_has_woorskyr_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/technicians_add
+        AMOUNT = 4
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            energy = 5
+        }
+        cost = {
+            minerals = 200
+            exotic_gases = 20
+        }
+        upkeep = {
+            minerals = 1
+            exotic_gases = 2
+        }
+    }
+    country_modifier = {
+        planet_technician_energy_produces_add = 0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_tradition = tr_prosperity_pursuit_of_profit
+            }
+        }
+        planet_jobs_unity_produces_mult = 0.2
+    }
+    prerequisites = {
+        "tech_woorskyr_bioenergy_plant"
+    }
+}

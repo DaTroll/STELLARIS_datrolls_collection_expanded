@@ -1,0 +1,19 @@
+tech_space_science_4 = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        computing
+    }
+    prerequisites = {
+        "tech_space_science_3"
+    }
+    weight = @tier2weight3
+    modifier = {
+        station_researchers_produces_mult = 0.1
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

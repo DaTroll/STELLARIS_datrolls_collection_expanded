@@ -1,0 +1,87 @@
+"Tonai Coalition" = {
+    key = "Tonai Coalition"
+    ship_prefix = {
+        key = "TCSC"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_06"
+        species_name = {
+            key = "Tonai"
+        }
+        species_plural = {
+            key = "Tonais"
+        }
+        species_adjective = {
+            key = "Tonaian"
+        }
+        species_bio = "Tonaie knew many genocides. The many Nations of Tonaie only united after the succesfull instaltion of their first Space Station over Ko'Tonaie. The Tonai are very Tall thus Strong and smart, in the last 253 years BSF (Before -the first- Space Flight) they mechanised and improved greatly the art of killing and hating the ennemy. But with the first step in Space their mindset changed. The believe in the Peacefull and egalitarian Society and Problem Solving. "
+        name_list = "HUM4"
+        gender = not_set
+        trait = "trait_fleeting"
+        trait = "trait_wasteful"
+        trait = "trait_solitary"
+        trait = "trait_very_strong"
+        trait = "trait_intelligent"
+    }
+    name = {
+        key = "Tonai Coalition"
+    }
+    adjective = {
+        key = "Tonaian"
+    }
+    authority = "auth_democratic"
+    government = "gov_moral_democracy"
+    advisor_voice_type = "l_egalitarian"
+    planet_name = {
+        key = "Tonaie"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Ko'Tonaie"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "avian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_9.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "blue"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tohai"
+            }
+        }
+        portrait = "humanoid_hp_06"
+        texture = 1
+        attachment = 0
+        clothes = 1
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_egalitarian"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_parliamentary_system"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

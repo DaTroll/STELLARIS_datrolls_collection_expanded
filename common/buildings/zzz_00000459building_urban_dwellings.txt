@@ -1,0 +1,34 @@
+building_urban_dwellings = {
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = no
+    icon = building_residence
+    category = amenity
+    potential = {
+        exists = owner
+        owner = {
+            is_primitive = yes
+            is_hive_empire = no
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_primitive = no
+                is_hive_empire = yes
+            }
+        }
+    }
+    planet_modifier = {
+        planet_housing_add = 24
+    }
+    upgrades = {
+    }
+}

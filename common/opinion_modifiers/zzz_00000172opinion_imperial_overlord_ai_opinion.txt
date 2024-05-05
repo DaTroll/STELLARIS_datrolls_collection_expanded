@@ -1,0 +1,8 @@
+opinion_imperial_overlord_ai_opinion = {
+    opinion = {
+        base = 150
+    }
+    decay = {
+        base = 1
+    }
+}

@@ -1,0 +1,36 @@
+trait_robot_harvesters = {
+    cost = 2
+    allowed_archetypes = {
+        ROBOT
+        MACHINE
+    }
+    modifier = {
+        planet_jobs_food_produces_mult = 0.15
+    }
+    slave_cost = {
+        energy = 750
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_farming_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_rural_designation = yes
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0
+            exists = from
+            from = {
+                country_uses_food = no
+            }
+        }
+    }
+}

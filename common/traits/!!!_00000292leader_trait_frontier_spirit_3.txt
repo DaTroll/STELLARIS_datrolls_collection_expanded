@@ -1,0 +1,22 @@
+leader_trait_frontier_spirit_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_frontier_spirit_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_frontier_spirit"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    councilor_modifier = {
+        ship_colonizer_cost_mult = -0.1
+        planet_colony_development_speed_mult = 0.5
+        colony_start_num_pops_add = 1
+    }
+    leader_class = {
+        official
+    }
+}

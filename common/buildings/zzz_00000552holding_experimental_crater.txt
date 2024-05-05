@@ -1,0 +1,54 @@
+holding_experimental_crater = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_experimental_crater
+    base_cap_amount = 1
+    category = research
+    resources = {
+        category = planet_holdings
+        produces = {
+            engineering_research = 8
+            physics_research = 4
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_origin = origin_lithoid
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    planet_modifier = {
+        monthly_loyalty = -1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_miner_add = 3
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_mining_drone_add = 3
+    }
+    on_built = {
+        planet = {
+            planet_event = {
+                id = subject.5005
+                days = 360
+            }
+        }
+    }
+    triggered_desc = {
+        text = holding_experimental_crater_effect
+    }
+}

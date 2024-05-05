@@ -1,0 +1,37 @@
+gpm_tech_arcane_research = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        archaeostudies
+    }
+    prerequisites = {
+        "tech_arcane_deciphering"
+    }
+    weight = @tier3weight3
+    is_rare = yes
+    modifier = {
+        custom_tooltip = gpm_tech_arcane_researchTT
+    }
+    potential = {
+        has_ancrel = yes
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            NOT = {
+                has_resource = {
+                    type = minor_artifacts
+                    amount > 0
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            has_ancrel = no
+        }
+    }
+    ai_weight = {
+    }
+}

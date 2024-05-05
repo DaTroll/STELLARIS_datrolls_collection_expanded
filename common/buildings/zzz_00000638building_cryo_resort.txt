@@ -1,0 +1,47 @@
+building_cryo_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_cryoflora
+        NOT = {
+            has_building = building_cryo_lab
+        }
+        NOT = {
+            has_building = building_cryo_guild
+        }
+        NOT = {
+            has_building = building_cryo_resort
+        }
+        NOT = {
+            has_building_construction = building_cryo_lab
+        }
+        NOT = {
+            has_building_construction = building_cryo_guild
+        }
+        NOT = {
+            has_building_construction = building_cryo_resort
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_cryoflora
+            }
+        }
+    }
+    ai_resource_production = {
+        trigger = {
+            planet_resource_compare = {
+                resource = physics_research
+                value >= 30
+            }
+        }
+        physics_research = 5
+        society_research = 5
+        engineering_research = 5
+    }
+}

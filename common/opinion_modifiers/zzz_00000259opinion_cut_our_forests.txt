@@ -1,0 +1,9 @@
+opinion_cut_our_forests = {
+    opinion = {
+        base = -50
+    }
+    accumulative = yes
+    decay = {
+        base = 0.5
+    }
+}

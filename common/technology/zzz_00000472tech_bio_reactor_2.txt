@@ -1,0 +1,31 @@
+tech_bio_reactor_2 = {
+    cost = @tier2cost1
+    area = society
+    tier = 2
+    category = {
+        biology
+    }
+    prerequisites = {
+        "tech_bio_reactor"
+    }
+    weight = @tier2weight1
+    is_rare = yes
+    weight_modifier = {
+        factor = 0.1
+        modifier = {
+            factor = 20
+            OR = {
+                is_catalytic_empire = yes
+                is_machine_empire = yes
+                is_mechanical_empire = yes
+                is_lithoid_empire = yes
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_bio_reactor_2
+        }
+    }
+    ai_weight = {
+    }
+}

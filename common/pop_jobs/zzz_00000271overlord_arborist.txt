@@ -1,0 +1,31 @@
+overlord_arborist = {
+    category = worker
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_tree_of_life_sapling
+    clothes_texture_index = 1
+    icon = ranger
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    resources = {
+        category = planet_overlord_arborists
+        upkeep = {
+            food = 10
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_arborists
+        produces = {
+            food = 15
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

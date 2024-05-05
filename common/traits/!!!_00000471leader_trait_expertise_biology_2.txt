@@ -1,0 +1,27 @@
+leader_trait_expertise_biology_2 = {
+    replace_traits = {
+        "leader_trait_expertise_biology"
+    }
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon_society
+        CLASS = scientist
+        ICON = "GFX_leader_trait_expertise_biology"
+        RARITY = free_or_veteran
+        COUNCIL = triggered
+        TIER = 2
+    }
+    councilor_modifier = {
+        category_biology_research_speed_mult = 0.1
+        category_biology_draw_chance_mult = 0.35
+    }
+    inline_script = {
+        script = traits/technocracy_expertise_effects
+        FIELD = society
+        TIER = 2
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

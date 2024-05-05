@@ -1,0 +1,5 @@
+nep_phantom_passive = {
+    ai = {
+        enabled = no
+    }
+}

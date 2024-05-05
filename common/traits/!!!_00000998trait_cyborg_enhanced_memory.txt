@@ -1,0 +1,26 @@
+trait_cyborg_enhanced_memory = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.25
+    }
+    ai_weight = {
+        factor = 0
+    }
+    slave_cost = {
+        energy = 750
+    }
+}

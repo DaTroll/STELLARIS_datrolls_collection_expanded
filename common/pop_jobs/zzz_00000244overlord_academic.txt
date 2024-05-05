@@ -1,0 +1,40 @@
+overlord_academic = {
+    category = specialist
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_satellite_campus
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+    resources = {
+        category = planet_overlord_academics
+        produces = {
+            physics_research = 1
+            engineering_research = 1
+            society_research = 1
+        }
+        upkeep = {
+            consumer_goods = 2
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_academics
+        produces = {
+            physics_research = 3
+            engineering_research = 3
+            society_research = 3
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

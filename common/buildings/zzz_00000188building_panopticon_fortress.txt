@@ -1,0 +1,8 @@
+building_panopticon_fortress = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

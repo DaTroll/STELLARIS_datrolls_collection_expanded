@@ -1,0 +1,129 @@
+building_galactic_memorial_2 = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = unity
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = slave_colony
+        }
+        owner = {
+            is_memorialist_empire = yes
+        }
+    }
+    allow = {
+        exists = owner
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            owner = {
+                is_memorialist_empire = no
+            }
+        }
+    }
+    convert_to = {
+        building_heritage_site
+        building_corporate_site
+        building_simulation_2
+        building_sensorium_2
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            trigger = {
+                exists = owner
+            }
+            unity = 2
+            multiplier = owner.trigger:num_ascension_perks
+        }
+        cost = {
+            minerals = @b2_minerals
+            exotic_gases = @b2_rare_cost
+        }
+        upkeep = {
+            minerals = @b2_upkeep
+            exotic_gases = @b2_rare_upkeep
+        }
+    }
+    planet_modifier = {
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    triggered_desc = {
+        text = building_heritage_site_effect
+    }
+    prerequisites = {
+        "tech_heritage_site"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_death_chronicler_add = @b2_jobs
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = "job_death_chronicler_effect_desc"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_chronicle_drone_add = @b2_jobs
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = "job_chronicle_drone_effect_desc"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+            OR = {
+                is_planet_class = pc_nuked
+                is_planet_class = pc_relic
+            }
+        }
+        pop_government_ethic_attraction = 0.2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+            OR = {
+                is_planet_class = pc_nuked
+                is_planet_class = pc_relic
+            }
+        }
+        planet_crime_no_happiness_add = -20
+    }
+    upgrades = {
+        building_galactic_memorial_3
+    }
+    show_tech_unlock_if = {
+        is_memorialist_empire = yes
+    }
+}

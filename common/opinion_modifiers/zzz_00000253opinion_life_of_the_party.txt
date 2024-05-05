@@ -1,0 +1,11 @@
+opinion_life_of_the_party = {
+    opinion = {
+        base = 150
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

@@ -1,0 +1,39 @@
+overlord_mortal_initiate = {
+    category = worker
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_sacrificial_temple_2
+    clothes_texture_index = 1
+    icon = mortal_initiate
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    possible = {
+        is_robotic_species = no
+        NOT = {
+            has_trait = trait_zombie
+        }
+    }
+    resources = {
+        category = planet_overlord_mortal_initiates
+        produces = {
+            unity = 2
+            society_research = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

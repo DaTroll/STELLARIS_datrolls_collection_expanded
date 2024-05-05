@@ -1,0 +1,24 @@
+leader_trait_naturalist_3 = {
+    replace_traits = {
+        "leader_trait_naturalist_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_naturalist"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    planet_modifier = {
+        deposit_blockers_natural_unity_produces_add = 12
+    }
+    sector_modifier = {
+        deposit_blockers_natural_unity_produces_add = 6
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        official
+        scientist
+    }
+}

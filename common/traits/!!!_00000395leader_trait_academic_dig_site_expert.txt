@@ -1,0 +1,31 @@
+leader_trait_academic_dig_site_expert = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_academic_dig_site_expert"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    modifier = {
+        ship_archaeological_site_clues_add = 1
+    }
+    leader_potential_add = {
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_scientist_scholar
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_scholar
+        }
+    }
+}

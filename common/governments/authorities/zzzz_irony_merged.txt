@@ -1,0 +1,522 @@
+auth_corporate_fiefdom = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_corporate_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_cooperative = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_direct_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_bugged_direct_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_bugged_corporate_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_bugged_corporate_imperial = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_tec_patrocorporate = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_tec_ai_corporate = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_private = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_dict_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_strict_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_corporate_imperial = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+}
+auth_AL_arsenal = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_AL_democratic = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_azur_dictatorial = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_azur_lane_0 = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_azur_lane_1 = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_azur_lane_2 = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_azur_lane_K = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_grey_witch_council = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_kc_fe = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_kivotos = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_sh_fe = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_shenhai = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_siren_group = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_traveler = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_warshipgirls = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_wg_fe = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_witch_dictatorial = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+GF_auth_commonwealth = {
+    playable = {
+        always = no
+    }
+    possible = {
+        always = no
+    }
+    ruler_council_position = councilor_ruler_democratic
+}
+auth_democratic = {
+    election_term_years = 10
+    re_election_allowed = yes
+    election_type = democratic
+    uses_mandates = yes
+    ruler_council_position = councilor_ruler_democratic
+    possible = {
+        origin = {
+            NOR = {
+                text = origin_legendary_leader_no_gov_change
+                value = origin_legendary_leader_dictatorial
+                value = origin_legendary_leader_imperial
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_gestalt_consciousness
+                value = ethic_authoritarian
+                value = ethic_fanatic_authoritarian
+            }
+        }
+    }
+    country_modifier = {
+        faction_approval = 0.1
+        country_leader_pool_size = 1
+        custom_tooltip = auth_democratic_tt
+    }
+    random_weight = {
+        base = 2
+    }
+    tags = {
+        AUTHORITY_ELECTION_DEMOCRATIC
+    }
+}
+auth_oligarchic = {
+    election_term_years = 20
+    election_type = oligarchic
+    can_have_emergency_elections = yes
+    max_election_candidates = 4
+    has_agendas = yes
+    ruler_council_position = councilor_ruler_oligarchic
+    possible = {
+        origin = {
+            NOR = {
+                text = origin_legendary_leader_no_gov_change
+                value = origin_legendary_leader_dictatorial
+                value = origin_legendary_leader_imperial
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_gestalt_consciousness
+                value = ethic_fanatic_egalitarian
+                value = ethic_fanatic_authoritarian
+            }
+        }
+    }
+    country_modifier = {
+        councilor_skill_add = 2
+    }
+    random_weight = {
+        base = 2
+    }
+    tags = {
+        AUTHORITY_ELECTION_OLIGARCHIC
+    }
+}
+auth_dictatorial = {
+    election_type = oligarchic
+    has_agendas = yes
+    ruler_council_position = councilor_ruler_dictatorial
+    possible = {
+        origin = {
+            NOT = {
+                text = origin_legendary_leader_no_gov_change
+                value = origin_legendary_leader_imperial
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_gestalt_consciousness
+                value = ethic_egalitarian
+                value = ethic_fanatic_egalitarian
+            }
+        }
+    }
+    country_modifier = {
+        councilor_ruler_dictatorial_exp_gain = 0.25
+        country_leader_pool_size = -1
+    }
+    random_weight = {
+        base = 2
+    }
+    tags = {
+        AUTHORITY_ELECTION_ON_RULER_DEATH
+    }
+}
+auth_imperial = {
+    has_heir = yes
+    has_agendas = yes
+    ruler_council_position = councilor_ruler_imperial
+    possible = {
+        origin = {
+            NOT = {
+                text = origin_legendary_leader_no_gov_change
+                value = origin_legendary_leader_dictatorial
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_gestalt_consciousness
+                value = ethic_egalitarian
+                value = ethic_fanatic_egalitarian
+            }
+        }
+    }
+    country_modifier = {
+        country_leader_pool_size = -1
+    }
+    random_weight = {
+        base = 2
+    }
+    tags = {
+        AUTHORITY_HAS_HEIR
+        AUTH_IMPERIAL_CAPITAL_SYSTEM_BONUS
+    }
+}
+auth_hive_mind = {
+    has_heir = no
+    election_type = none
+    has_factions = no
+    can_reform = no
+    localization_postfix = hive_mind
+    valid_for_released_vassal = yes
+    ruler_council_position = councilor_ruler_hive_mind
+    playable = {
+        host_has_dlc = "Utopia"
+    }
+    possible = {
+        ethics = {
+            value = ethic_gestalt_consciousness
+        }
+    }
+    random_weight = {
+        base = 2
+    }
+    traits = {
+        trait = trait_hive_mind
+    }
+    country_modifier = {
+        pop_growth_speed = 0.25
+        empire_size_penalty_mult = -0.25
+    }
+    tags = {
+        AUTH_HIVE_MIND_AI_RESTRICTIONS
+        AUTH_HIVE_MIND_FOREIGN_POP_SURVIVAL
+        AUTH_HIVE_MIND_GENEMODDING
+        AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS
+    }
+}
+auth_machine_intelligence = {
+    machine_empire = yes
+    has_heir = no
+    election_type = none
+    has_factions = no
+    can_reform = no
+    localization_postfix = machine_intelligence
+    valid_for_released_vassal = no
+    ruler_council_position = councilor_ruler_machine_intelligence
+    playable = {
+        host_has_dlc = "Synthetic Dawn Story Pack"
+    }
+    possible = {
+        ethics = {
+            value = ethic_gestalt_consciousness
+        }
+    }
+    random_weight = {
+        base = 2
+    }
+    traits = {
+        trait = trait_machine_unit
+    }
+    country_modifier = {
+        colony_start_num_pops_add = 1
+        planet_pop_assembly_add = 1
+        station_gatherers_produces_mult = 0.1
+        empire_size_colonies_mult = 0.5
+        pop_growth_speed_reduction = 0.5
+    }
+    tags = {
+        AUTH_MACHINE_INTELLIGENCE_IMMORTAL_LEADERS
+        AUTH_MACHINE_NATIVE_POPS
+        AUTH_MACHINE_FOREIGN_POP_SURVIVAL
+        AUTH_MACHINE_TECH_ADDITIONS
+        AUTH_MACHINE_TECH_RESTRICTIONS
+        AUTH_MACHINE_ASCENSION_RESTRICTIONS
+    }
+}
+auth_ancient_machine_intelligence = {
+    has_heir = no
+    election_type = none
+    can_reform = no
+    valid_for_released_vassal = no
+    ruler_council_position = councilor_ruler_machine_intelligence
+    icon = "gfx/interface/icons/governments/authorities/auth_hive_mind.dds"
+    potential = {
+        country_type = {
+            value = ai_empire
+        }
+    }
+}
+auth_corporate = {
+    election_term_years = 20
+    election_type = oligarchic
+    can_have_emergency_elections = yes
+    max_election_candidates = 4
+    localization_postfix = corporate
+    has_agendas = yes
+    ruler_council_position = councilor_ruler_corporate
+    potential = {
+        country_type = {
+            NOT = {
+                value = primitive
+            }
+        }
+    }
+    playable = {
+        host_has_dlc = "Megacorp"
+    }
+    possible = {
+        origin = {
+            NOR = {
+                text = origin_legendary_leader_no_gov_change
+                value = origin_legendary_leader_dictatorial
+                value = origin_legendary_leader_imperial
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_gestalt_consciousness
+                value = ethic_fanatic_egalitarian
+                value = ethic_fanatic_authoritarian
+            }
+        }
+    }
+    country_modifier = {
+        commercial_pact_mult = 0.2
+        empire_size_colonies_mult = 0.5
+        external_leader_pool_add = 1
+    }
+    tags = {
+        AUTHORITY_ELECTION_OLIGARCHIC
+    }
+}

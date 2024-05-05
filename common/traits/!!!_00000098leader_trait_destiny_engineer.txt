@@ -1,0 +1,31 @@
+leader_trait_destiny_engineer = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_engineer
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_hull_mult = 0.25
+        ship_hull_regen_add_perc = 0.02
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_admiral
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+    background_icon = GFX_leader_background_destiny_1
+}

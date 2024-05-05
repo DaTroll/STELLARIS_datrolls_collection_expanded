@@ -1,0 +1,8 @@
+eda_building_alloy_foundry = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

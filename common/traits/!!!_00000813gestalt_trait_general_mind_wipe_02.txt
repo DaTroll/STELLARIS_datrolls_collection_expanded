@@ -1,0 +1,21 @@
+gestalt_trait_general_mind_wipe_02 = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = commander
+        ICON = "GFX_leader_trait_mind_wipe"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    army_modifier = {
+        army_disengage_chance_mult = 0.2
+        army_morale = 0.1
+        armies_upkeep_mult = 0.15
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

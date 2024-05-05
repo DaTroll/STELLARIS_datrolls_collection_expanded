@@ -1,0 +1,34 @@
+tech_tiyanki_observation_lab = {
+    area = society
+    tier = 2
+    cost = @tier2cost1
+    category = {
+        biology
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+        "tech_tiyanki_research"
+    }
+    weight = @tier2weight1
+    is_rare = yes
+    potential = {
+        has_country_flag = pdtiyankistudyonly
+    }
+    weight_modifier = {
+        factor = 10
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_biology
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_biology
+            }
+        }
+    }
+}

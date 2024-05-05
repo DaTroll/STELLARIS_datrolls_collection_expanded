@@ -1,0 +1,22 @@
+leader_trait_curator = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_curator"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = leader_trait_curator_effect
+    councilor_modifier = {
+        all_technology_research_speed = 0.1
+        planet_researchers_upkeep_mult = 0.1
+        science_ship_survey_speed = 0.25
+    }
+    initial = no
+    randomized = no
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

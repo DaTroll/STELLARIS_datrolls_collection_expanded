@@ -1,0 +1,101 @@
+@hab_cost = 500
+@hab_maintenance = 2
+district_pdhab_housing = {
+    base_buildtime = 240
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    show_on_uncolonized = {
+        uses_district_set = pdplanethab
+    }
+    potential = {
+        uses_district_set = pdplanethab
+    }
+    conversion_ratio = 1
+    convert_to = {
+        district_city
+        district_nexus
+        district_hive
+    }
+    allow = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            has_modifier = resort_colony_pd_hab
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_reg
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_ges
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_reg_asteroid
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_ges_asteroid
+        }
+    }
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+        }
+    }
+    planet_modifier = {
+        planet_housing_add = 8
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_designation = col_habitat_farming
+        }
+        modifier = {
+            planet_housing_add = -2
+            job_farmer_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_designation = col_habitat_gestalt_farming
+        }
+        modifier = {
+            planet_housing_add = -2
+            job_agri_drone_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_maintenance_drone_add = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            has_designation = col_habitat_farming
+        }
+        text = job_farmer_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            has_designation = col_habitat_gestalt_farming
+        }
+        text = job_agri_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_maintenance_drone_effect_desc
+    }
+}

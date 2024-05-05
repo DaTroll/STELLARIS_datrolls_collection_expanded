@@ -1,0 +1,59 @@
+namespace = colony
+planet_event = {
+    id = colony.182
+    title = "colony.182.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = colony.182.desc
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = colony.182.desc.mach
+    }
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_ship_explosion
+    location = ROOT
+    is_triggered_only = yes
+    immediate = {
+        fromfrom = {
+            remove_relation_flag = {
+                who = root.owner
+                flag = asteroid_enemy
+            }
+            destroy_country = yes
+        }
+        remove_global_flag = asteroid_sighted_global
+        remove_planet_flag = asteroid_sighted
+        set_planet_flag = asteroid_collision
+        owner = {
+            add_event_chain_counter = {
+                event_chain = "asteroid_sighted_chain"
+                counter = "asteroid_destroyed"
+                amount = 1
+            }
+        }
+    }
+    option = {
+        name = EXCELLENT
+        owner = {
+            gain_possitive_media_coverage = yes
+            end_event_chain = "asteroid_sighted_chain"
+            add_monthly_resource_mult = {
+                resource = minerals
+                value = @tier2materialreward
+                min = @tier2materialmin
+                max = @tier2materialmax
+            }
+        }
+    }
+}

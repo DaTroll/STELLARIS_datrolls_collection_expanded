@@ -1,0 +1,8 @@
+building_fe_institute = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

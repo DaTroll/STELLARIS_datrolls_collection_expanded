@@ -1,0 +1,22 @@
+trait_ruler_charismatic_2 = {
+    replace_traits = {
+        "trait_ruler_charismatic"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_charismatic"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        edicts_upkeep_mult = -0.1
+        country_edict_fund_add = 35
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+}

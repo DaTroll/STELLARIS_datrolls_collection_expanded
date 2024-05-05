@@ -1,0 +1,47 @@
+holding_emporium = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_emporium
+    base_cap_amount = 1
+    category = amenity
+    allow = {
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_trader_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_trader_drone_add = 2
+    }
+    potential = {
+        owner.overlord = {
+            is_machine_empire = no
+            is_hive_empire = no
+        }
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+            consumer_goods = 5
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_trader_effect_desc
+    }
+}

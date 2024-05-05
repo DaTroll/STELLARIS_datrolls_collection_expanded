@@ -1,0 +1,50 @@
+building_pdzro_harvester = {
+    base_buildtime = 360
+    is_capped_by_modifier = yes
+    category = resource
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+    }
+    prerequisites = {
+        "tech_mine_pd_zro"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        modifier = {
+            job_pdzro_harvester_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_pdzro_drone_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 400
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    ai_resource_production = {
+        trigger = {
+            always = yes
+        }
+        sr_zro = 1
+    }
+}

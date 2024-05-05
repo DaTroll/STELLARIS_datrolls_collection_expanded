@@ -1,0 +1,62 @@
+xvcv_mdlc_building_organic_production_center_2 = {
+    base_buildtime = @b3_time
+    can_build = no
+    category = manufacturing
+    potential = {
+        exists = owner
+        owner = {
+            has_authority = auth_machine_intelligence
+            has_ascension_perk = xvcv_mdlc_ap_organic_work
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NAND = {
+                has_authority = auth_machine_intelligence
+                has_ascension_perk = xvcv_mdlc_ap_organic_work
+            }
+        }
+    }
+    convert_to = {
+        building_ministry_production
+        building_production_center
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            volatile_motes = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            volatile_motes = @b3_rare_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_paradise_dome"
+    }
+    show_tech_unlock_if = {
+        owner = {
+            has_ascension_perk = xvcv_mdlc_ap_organic_work
+        }
+    }
+    planet_modifier = {
+        job_xvcv_mdlc_organic_administrator_add = 2
+    }
+    triggered_desc = {
+        text = job_xvcv_mdlc_organic_administrator_effect_desc
+    }
+    ai_resource_production = {
+        alloys = 12
+        trigger = {
+            always = yes
+        }
+    }
+    ai_resource_production = {
+        consumer_goods = 16
+        trigger = {
+            always = yes
+        }
+    }
+}

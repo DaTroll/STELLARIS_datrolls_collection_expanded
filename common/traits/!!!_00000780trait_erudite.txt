@@ -1,0 +1,49 @@
+trait_erudite = {
+    cost = 4
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    improves_leaders = yes
+    advanced_trait = yes
+    opposites = {
+        "trait_nerve_stapled"
+        "trait_intelligent"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.2
+        planet_jobs_society_research_produces_mult = 0.2
+        planet_jobs_engineering_research_produces_mult = 0.2
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.1
+    }
+    slave_cost = {
+        energy = 2000
+    }
+    assembly_score = {
+        modifier = {
+            add = 2.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            add = 2.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+"Sundkm'eer Trade League" = {
+    key = "Sundkm'eer Trade League"
+    ship_prefix = {
+        key = "STV"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox2"
+        species_name = {
+            key = "Sundkm'eer"
+            literal = yes
+        }
+        species_plural = {
+            key = "Sundkm'eers"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Sundkm'eer"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Sundkm'eeran are contrary to popular beliefs, actually quite well manered and also very keen to meet new people, places and races. The highest value of their society is trade and the fullfillement of a fair deal, they see no victory is ruthlessness or scams. They see trading as a sport and cheating is not an honorable way. For many decades now they are lead by a high Council of tradors who ensures that the values are kept for generations and that every citizen can profit from a free and regulated planetary market. "
+        name_list = "TOX3"
+        gender = not_set
+        trait = "trait_adaptive"
+        trait = "trait_traditional"
+        trait = "trait_nomadic"
+        trait = "trait_repugnant"
+    }
+    name = {
+        key = "Sundkm'eer Trade League"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "oligarchic_gen"
+                            value = {
+                                key = "Cartel"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Sundkm'eer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_oligarchic"
+    government = "gov_plutocratic_oligarchy"
+    advisor_voice_type = "l_xenophile"
+    planet_name = {
+        key = "Sundkm"
+        literal = yes
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Entkn"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "toxoid_01"
+    city_graphical_culture = "toxoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_26.dds"
+        }
+        colors = {
+            "khaki_brown"
+            "dark_red"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Sain'eera'O"
+                literal = yes
+            }
+        }
+        portrait = "tox2"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "aquatics_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_xenophile"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_scavengers"
+    }
+    origin = "origin_default"
+}

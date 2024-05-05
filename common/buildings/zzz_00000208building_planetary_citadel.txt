@@ -1,0 +1,8 @@
+building_planetary_citadel = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

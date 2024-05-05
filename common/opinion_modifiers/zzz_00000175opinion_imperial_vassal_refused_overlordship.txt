@@ -1,0 +1,8 @@
+opinion_imperial_vassal_refused_overlordship = {
+    opinion = {
+        base = -80
+    }
+    decay = {
+        base = 2
+    }
+}

@@ -1,0 +1,8 @@
+building_sep_foundry = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

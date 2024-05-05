@@ -1,0 +1,8 @@
+building_gray_nano_foundry2 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

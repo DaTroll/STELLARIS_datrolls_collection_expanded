@@ -1,0 +1,86 @@
+"Kzerian Gourmets" = {
+    key = "Kzerian Gourmets"
+    ship_prefix = {
+        key = "KGD"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol16"
+        species_name = {
+            key = "Kzeria"
+        }
+        species_plural = {
+            key = "Kzerias"
+        }
+        species_adjective = {
+            key = "Kzerian"
+        }
+        species_bio = "This delightfull looking Swarm is a ... specific Specie. The Kzerian Gourmets have an extraordinary developped tongue and actually several mouth thus tongues. But the point is that they want to taste any living flesh that they can find. Intelligent or not. Feeling or not. Everything. Be aware to be at their borders. This might end ugly for their victims. The Kzerias are known or rumored to be extremly cruel with or to their food before consuming, aswell as during their time before being consumed. The mental states is just fascinating them. Beware."
+        name_list = "MOL1"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_quick_learners"
+        trait = "trait_repugnant"
+        trait = "trait_natural_sociologists"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "Kzerian Gourmets"
+    }
+    adjective = {
+        key = "Kzerian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Kzeria"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kzeria"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pirate"
+            file = "flag_pirate_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "turquoise"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kzeria"
+            }
+        }
+        portrait = "mol16"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_strength_of_legions"
+    }
+    origin = "origin_default"
+}

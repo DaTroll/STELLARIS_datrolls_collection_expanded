@@ -1,0 +1,30 @@
+leader_trait_spacebender = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_spacebender
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_produces
+        RESOURCE = astral_threads
+        AMOUNT = 10
+    }
+    modifier = {
+        ship_ftl_jumpdrive_range_mult = 0.5
+        ship_jumpdrive_cooldown_mult = -0.9
+    }
+    leader_potential_add = {
+        has_astral_planes_dlc = yes
+    }
+    custom_tooltip_with_modifiers = leader_trait_spacebender_effect
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+    background_icon = "GFX_leader_background_destiny_1"
+}

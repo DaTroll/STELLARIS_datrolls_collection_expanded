@@ -1,0 +1,23 @@
+synth_exterminators = {
+    trigger = {
+        is_playable = yes
+        OR = {
+            has_country_flag = synthetic_empire
+            is_machine_empire = yes
+        }
+        FROM = {
+            is_playable = yes
+            OR = {
+                has_policy_flag = ai_outlawed
+                has_policy_flag = robots_outlawed
+            }
+            NOR = {
+                has_country_flag = synthetic_empire
+                is_machine_empire = yes
+            }
+        }
+    }
+    opinion = {
+        base = -50
+    }
+}

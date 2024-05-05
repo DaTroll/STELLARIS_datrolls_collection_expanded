@@ -1,0 +1,86 @@
+"Sogg Mind" = {
+    key = "Sogg Mind"
+    ship_prefix = {
+        key = "SM"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol12"
+        species_name = {
+            key = "Sogg"
+        }
+        species_plural = {
+            key = "Soggs"
+        }
+        species_adjective = {
+            key = "Soggian"
+        }
+        species_bio = "The Soggs are one but not fanatics. They act rationaly and think about their actions. They don't want to vassalise or conquer the world, they merely want to survive. The Sogg will try to develop peacefully and therefore not be hyperaggressive. Nothing is known about their upcoming, since their home planet is one of the few 'never observed' before. No one knows when, how or even why they evolved to what they are? Could it be that they are a former scientific experiment? Who knows. "
+        name_list = "MOL4"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_very_strong"
+        trait = "trait_fleeting"
+        trait = "trait_quick_learners"
+        trait = "trait_talented"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "Sogg Mind"
+    }
+    adjective = {
+        key = "Soggian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Lonesome Capital"
+    }
+    planet_class = "pc_tundra"
+    system_name = {
+        key = "Lonesome System"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_23.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "light_blue"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Sogg"
+            }
+        }
+        portrait = "mol12"
+        texture = 8
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_ruthless_capitalists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_one_mind"
+        "civic_hive_natural_neural_network"
+    }
+    origin = "origin_tree_of_life"
+}

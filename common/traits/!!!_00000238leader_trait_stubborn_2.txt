@@ -1,0 +1,26 @@
+leader_trait_stubborn_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_stubborn"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_stubborn"
+        COUNCIL = no
+        TIER = 2
+    }
+    self_modifier = {
+        leader_trait_selection_options_add = -1
+        species_leader_exp_gain = -0.2
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    opposites = {
+        leader_trait_adaptable
+        leader_trait_adaptable_2
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

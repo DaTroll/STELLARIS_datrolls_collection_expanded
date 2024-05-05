@@ -1,0 +1,87 @@
+"Tar'm Reavers" = {
+    key = "Tar'm Reavers"
+    ship_prefix = {
+        key = "TS"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun16"
+        species_name = {
+            key = "Tar'm"
+        }
+        species_plural = {
+            key = "Tar'm"
+        }
+        species_adjective = {
+            key = "Tar'm"
+        }
+        species_bio = "*disturbing smell*                                                                        Do you smell this? This is how a radioactive dead living  beeing. The Ter'm have all died in the atomic bombardement. They have since then been extremly isolationist. There is absolutely no explanation why or how they are still alive or even moving. Scientist would say that the radiation have altered things over a very short amount of time. they would say that it's a sign of God, the all mighty. Except if they would have a time machine, no one will ever know that precisely happend and how."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_industrious"
+        trait = "trait_fleeting"
+        trait = "trait_repugnant"
+        trait = "trait_quarrelsome"
+    }
+    name = {
+        key = "Tar'm Reavers"
+    }
+    adjective = {
+        key = "Tar'm"
+    }
+    authority = "auth_imperial"
+    government = "gov_blood_court"
+    planet_name = {
+        key = "Grave"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Gravestar"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_11.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "light_green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tar'k"
+            }
+        }
+        portrait = "fun16"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_fanatic_purifiers"
+        "civic_reanimated_armies"
+    }
+    origin = "origin_post_apocalyptic"
+}

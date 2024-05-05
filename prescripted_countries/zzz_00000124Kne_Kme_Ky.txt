@@ -1,0 +1,89 @@
+"Kne Kme Ky" = {
+    key = "Kne Kme Ky"
+    ship_prefix = {
+        key = "KtI"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla9"
+        species_name = {
+            key = "Kni"
+        }
+        species_plural = {
+            key = "Kny"
+        }
+        species_adjective = {
+            key = "Knu"
+        }
+        species_bio = "*Ak kni Kne' kta ke vra'k'm. Kny ot kna'u s'ke ki. Pko knu zikrt krts kmakt'k'y. Knu Kme kyr'km kur knp. ktrk Kmt Kikn kna kno kne slbr. Kravsk krko'y ks'kl. Kne Kme Ky. ko Ky ke'l kakol kysv. Kysv ke kokul kakz kzy kwo kly. Ky ktr ker. Ker kar'u ke kan.*                The Kni as they call themselves are not only a huge mistery to us, but also to themselves. The ancient text are only translated in the most elite places and are the probably best garded items in the galaxy. There is no known specie which has decifered their language. They are also very reluctant to establish communications. No one knows what exactly they are talking. One of the big mysteries of the universe. "
+        name_list = "REP4"
+        gender = not_set
+        trait = "trait_rapid_breeders"
+        trait = "trait_communal"
+        trait = "trait_deviants"
+        trait = "trait_repugnant"
+        trait = "trait_agrarian"
+    }
+    name = {
+        key = "Kne Kme Ky"
+    }
+    adjective = {
+        key = "Knu"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_purity_order"
+    planet_name = {
+        key = "Kne"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kme"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "red"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kikn"
+            }
+        }
+        portrait = "pla9"
+        texture = 3
+        attachment = 0
+        clothes = 4
+        ruler_title = {
+            key = "Kmt"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_fanatic_purifiers"
+        "civic_police_state"
+    }
+    origin = "origin_default"
+}

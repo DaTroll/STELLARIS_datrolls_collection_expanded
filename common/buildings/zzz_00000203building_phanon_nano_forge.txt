@@ -1,0 +1,8 @@
+building_phanon_nano_forge = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

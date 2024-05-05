@@ -1,0 +1,24 @@
+tech_resort_colonies = {
+    cost = @tier2cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_artificial_moral_codes"
+    }
+    weight = @tier2weight3
+    potential = {
+        is_gestalt = no
+    }
+    weight_modifier = {
+        factor = 1.5
+        modifier = {
+            factor = 0
+            num_owned_planets < 2
+        }
+    }
+    ai_weight = {
+    }
+}

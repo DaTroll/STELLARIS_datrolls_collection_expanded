@@ -1,0 +1,32 @@
+leader_trait_legendary_genetic_purist = {
+    starting_ruler_trait = yes
+    leader_trait_type = veteran
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    allowed_ethics = {
+        ethic_xenophobe
+        ethic_fanatic_xenophobe
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_xenophobe_one"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        BIOLOGICAL_species_trait_points_add = 1
+        modify_species_cost_mult = -0.1
+        planet_pops_upkeep_mult = -0.05
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

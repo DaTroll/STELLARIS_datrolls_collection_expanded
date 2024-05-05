@@ -1,0 +1,62 @@
+building_network_junction = {
+    base_buildtime = @b2_time
+    can_build = no
+    icon = building_heritage_site
+    category = unity
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+            NOT = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_machine_empire = no
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+    }
+    convert_to = {
+        building_bureaucratic_2
+        building_holotemple
+        building_hive_cluster
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+            rare_crystals = @b2_rare_cost
+        }
+        upkeep = {
+            energy = @b2_upkeep
+            rare_crystals = @b2_rare_upkeep
+        }
+    }
+    planet_modifier = {
+        job_coordinator_add = @b2_jobs
+    }
+    triggered_desc = {
+        text = job_coordinator_effect_desc
+    }
+    upgrades = {
+        "building_system_conflux"
+    }
+    prerequisites = {
+        "tech_colonial_bureaucracy"
+    }
+    show_tech_unlock_if = {
+        is_machine_empire = yes
+        NOT = {
+            has_valid_civic = civic_machine_servitor
+        }
+    }
+}

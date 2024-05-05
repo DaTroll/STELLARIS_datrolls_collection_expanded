@@ -1,0 +1,8 @@
+opinion_imperial_vassal_ai_opinion = {
+    opinion = {
+        base = 120
+    }
+    decay = {
+        base = 1
+    }
+}

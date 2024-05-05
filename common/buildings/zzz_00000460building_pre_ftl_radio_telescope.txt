@@ -1,0 +1,41 @@
+building_pre_ftl_radio_telescope = {
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = no
+    base_cap_amount = 1
+    category = research
+    potential = {
+        exists = owner
+        owner = {
+            is_primitive = yes
+            has_country_flag = early_space_age
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            is_primitive = no
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_primitive_researcher_2_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_primitive_hive_brain_drone_add = 2
+    }
+    triggered_desc = {
+        text = awareness_gain_desc
+    }
+}

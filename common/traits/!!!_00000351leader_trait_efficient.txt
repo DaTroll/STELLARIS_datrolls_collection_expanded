@@ -1,0 +1,31 @@
+leader_trait_efficient = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_efficient"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_governor
+    }
+    planet_modifier = {
+        planet_jobs_ruler_produces_mult = 0.5
+        pop_cat_ruler_political_power = 0.15
+    }
+    sector_modifier = {
+        planet_jobs_ruler_produces_mult = 0.25
+        pop_cat_ruler_political_power = 0.075
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

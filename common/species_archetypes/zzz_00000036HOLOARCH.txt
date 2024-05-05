@@ -1,0 +1,3 @@
+HOLOARCH = {
+    uses_modifiers = no
+}

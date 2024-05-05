@@ -1,0 +1,47 @@
+namespace = fallen_machine_empire
+country_event = {
+    id = fallen_machine_empire.12
+    title = fallen_machine_empire.12.name
+    desc = fallen_machine_empire.12.desc
+    picture = GFX_evt_genetic_modification
+    desc = {
+        trigger = {
+            has_ethic = ethic_gestalt_consciousness
+        }
+        text = fallen_machine_empire.12.desc.b
+    }
+    trigger = {
+        OR = {
+            has_modifier = machine_empire_inoculations
+            has_modifier = machine_empire_inoculations_xenophobe
+        }
+    }
+    mean_time_to_happen = {
+        years = 10
+        modifier = {
+            factor = 0.66
+            has_country_flag = fallen_machine_empire_awaken_2
+        }
+    }
+    immediate = {
+        if = {
+            limit = {
+                has_modifier = machine_empire_inoculations
+            }
+            remove_modifier = machine_empire_inoculations
+        }
+        if = {
+            limit = {
+                has_modifier = machine_empire_inoculations_xenophobe
+            }
+            remove_modifier = machine_empire_inoculations_xenophobe
+        }
+    }
+    option = {
+        name = fallen_machine_empire.12.a
+        add_modifier = {
+            modifier = machine_empire_mutations
+            days = 3600
+        }
+    }
+}

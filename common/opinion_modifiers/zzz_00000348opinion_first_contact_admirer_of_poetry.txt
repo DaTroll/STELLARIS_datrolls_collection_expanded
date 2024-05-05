@@ -1,0 +1,9 @@
+opinion_first_contact_admirer_of_poetry = {
+    opinion = 100
+    decay = {
+        base = 1
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_ae_galactic_hive_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

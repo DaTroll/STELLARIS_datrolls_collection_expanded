@@ -1,0 +1,8 @@
+building_enigmatic_assembly_plant = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

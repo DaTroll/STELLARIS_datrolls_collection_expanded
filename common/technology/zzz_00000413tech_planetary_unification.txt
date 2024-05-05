@@ -1,0 +1,53 @@
+tech_planetary_unification = {
+    cost = @tier1cost1
+    area = society
+    tier = 1
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_planetary_government"
+    }
+    weight = @tier1weight1
+    gateway = capital
+    feature_flags = {
+        campaign_edicts
+    }
+    modifier = {
+        country_unity_produces_mult = 0.05
+        show_only_custom_tooltip = no
+        custom_tooltip = tech_planetary_unification_effect
+    }
+    weight_modifier = {
+        factor = 4
+        modifier = {
+            factor = 0.75
+            NOT = {
+                OR = {
+                    has_ethic = ethic_pacifist
+                    has_ethic = ethic_fanatic_pacifist
+                }
+            }
+        }
+    }
+    ai_weight = {
+        factor = @capital_tech_ai_factor
+        modifier = {
+            factor = 0.75
+            NOT = {
+                OR = {
+                    has_ethic = ethic_pacifist
+                    has_ethic = ethic_fanatic_pacifist
+                }
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_authoritarian
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_authoritarian
+        }
+    }
+}

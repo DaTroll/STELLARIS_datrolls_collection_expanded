@@ -1,0 +1,74 @@
+holding_knight_commandery = {
+    base_buildtime = @b1_time
+    owner_type = subject_holding
+    icon = building_order_holding
+    base_cap_amount = 1
+    category = government
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_origin = origin_toxic_knights
+            NOT = {
+                has_country_flag = quest_abandoned
+            }
+        }
+    }
+    allow = {
+        exists = planet
+        planet = {
+            is_capital = yes
+            num_pops >= 50
+        }
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        OR = {
+            NOT = {
+                exists = owner.overlord
+            }
+            owner.overlord = {
+                NOT = {
+                    has_origin = origin_toxic_knights
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_knight_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_knight_drone_add = 1
+    }
+    country_modifier = {
+        country_naval_cap_add = 4
+    }
+    triggered_desc = {
+        trigger = {
+            exists = planet.owner
+        }
+        text = job_overlord_knight_commandery_effect_desc
+    }
+}

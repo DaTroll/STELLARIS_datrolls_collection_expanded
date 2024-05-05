@@ -1,0 +1,25 @@
+trait_delicious = {
+    cost = 2
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        planet_livestock_food_produces_add = 2
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

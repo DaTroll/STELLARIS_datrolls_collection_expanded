@@ -1,0 +1,5 @@
+shroud_entities = {
+    ai = {
+        enabled = no
+    }
+}

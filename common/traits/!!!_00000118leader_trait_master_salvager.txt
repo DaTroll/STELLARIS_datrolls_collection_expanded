@@ -1,0 +1,18 @@
+leader_trait_master_salvager = {
+    force_councilor_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_master_salvager"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = leader_trait_master_salvager_effect
+    initial = no
+    randomized = no
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

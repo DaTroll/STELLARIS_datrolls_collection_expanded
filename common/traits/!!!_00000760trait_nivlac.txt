@@ -1,0 +1,32 @@
+trait_nivlac = {
+    cost = 2
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_resilient"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        pop_environment_tolerance = 0.5
+        pop_growth_speed = 0.15
+    }
+    slave_cost = {
+        energy = 100
+    }
+}

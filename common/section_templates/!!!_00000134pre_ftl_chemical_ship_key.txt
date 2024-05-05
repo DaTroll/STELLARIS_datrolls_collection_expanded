@@ -1,0 +1,9 @@
+ship_section_template = {
+    key = "pre_ftl_chemical_ship_key"
+    ship_size = pre_ftl_chemical_ship
+    fits_on_slot = "mid"
+    entity = "pre_ftl_chemical_ship_mesh_entity"
+    icon = "GFX_ship_part_core_mid"
+    small_utility_slots = 1
+    aux_utility_slots = 1
+}

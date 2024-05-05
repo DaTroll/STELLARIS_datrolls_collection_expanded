@@ -1,0 +1,27 @@
+leader_trait_guardian = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_guardian"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        shipclass_military_station_damage_mult = 0.05
+        shipclass_military_station_hull_mult = 0.05
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_councilor
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

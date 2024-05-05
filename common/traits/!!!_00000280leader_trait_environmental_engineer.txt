@@ -1,0 +1,40 @@
+leader_trait_environmental_engineer = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_environmental_engineer"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        exists = owner
+        owner = {
+            has_blocker_removal_tech = yes
+        }
+    }
+    planet_modifier = {
+        deposit_blockers_cost_mult = -0.25
+        planet_clear_blocker_speed_mult = 0.25
+    }
+    sector_modifier = {
+        deposit_blockers_cost_mult = -0.1
+        planet_clear_blocker_speed_mult = 0.1
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            owner = {
+                has_valid_civic = civic_environmentalist
+            }
+            factor = @anti_synergy_weight_mult
+        }
+    }
+}

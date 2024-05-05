@@ -1,0 +1,76 @@
+zro_harvester = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_gas_mine
+    clothes_texture_index = 2
+    possible_precalc = can_fill_worker_job
+    possible = {
+        owner = {
+            is_gestalt = no
+        }
+    }
+    resources = {
+        category = planet_miners
+        produces = {
+            sr_zro = 3
+        }
+        upkeep = {
+            consumer_goods = 0.5
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|zro_harvester|RESOURCE|sr_zro|
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+            can_take_grunt_job = no
+            NOT = {
+                has_slavery_type = {
+                    type = slavery_indentured
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            can_take_grunt_job = no
+            owner = {
+                has_technology = tech_droid_workers
+            }
+        }
+        modifier = {
+            factor = 200
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            can_take_grunt_job = no
+            owner = {
+                NOT = {
+                    has_technology = tech_droid_workers
+                }
+            }
+        }
+        modifier = {
+            factor = 0.1
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 0.25
+            can_take_grunt_job = yes
+        }
+        modifier = {
+            factor = 0
+            has_living_standard = {
+                type = living_standard_chemical_bliss
+            }
+        }
+    }
+}

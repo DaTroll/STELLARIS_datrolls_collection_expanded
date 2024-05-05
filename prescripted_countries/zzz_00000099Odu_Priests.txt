@@ -1,0 +1,86 @@
+"Odu Priests" = {
+    key = "Odu Priests"
+    ship_prefix = {
+        key = "OSC"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol3"
+        species_name = {
+            key = "Odu"
+        }
+        species_plural = {
+            key = "Odus"
+        }
+        species_adjective = {
+            key = "Oduan"
+        }
+        species_bio = "The Odu found the religion of the eye when they needed it the most. The priest guide the Odu since the old times, no one dares to oppose them and each who does, can't blame about it later. With their new FTL capable ships, some hope to find the true and finite form of their god, some others secretly hope to find proof of his non-existance. A race to the truth has started, but who will win? One thing is sure: the winner will change the shape of the entire galaxy, no matter when or where he does it. It will cahnge everything. "
+        name_list = "MOL1"
+        gender = not_set
+        trait = "trait_conformists"
+        trait = "trait_venerable"
+        trait = "trait_wasteful"
+        trait = "trait_slow_breeders"
+        trait = "trait_nonadaptive"
+    }
+    name = {
+        key = "Odu Priests"
+    }
+    adjective = {
+        key = "Oduan"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_holy_tribunal"
+    planet_name = {
+        key = "Sithgosh"
+    }
+    planet_class = "pc_arid"
+    system_name = {
+        key = "Sithgosh"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "burgundy"
+            "dark_grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Germa"
+            }
+        }
+        portrait = "mol3"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        trait = "trait_ruler_charismatic"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_exalted_priesthood"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

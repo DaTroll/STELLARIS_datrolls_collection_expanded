@@ -1,0 +1,8 @@
+building_phanon_psg = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

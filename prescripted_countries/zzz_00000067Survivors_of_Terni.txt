@@ -1,0 +1,93 @@
+"Survivors of Terni" = {
+    key = "Survivors of Terni"
+    ship_prefix = {
+        key = "TSS"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam13"
+        species_name = {
+            key = "Terni"
+        }
+        species_plural = {
+            key = "Ternii"
+        }
+        species_adjective = {
+            key = "Ternian"
+        }
+        species_bio = "The Terni belive in one truth and one only.                                       The strongest survives. The weak dies.                                              This is probably the only reason that this specie is still alive on a dead planet. The weak died off. And the strong who survive shall rule. It is not a rare occuring that an assassination attempf will occur in the middle of the street. however since Tern seized the power and made himself Dictator for life, who knows how he will compete with his predecessors? Even if his reforms to criminalize the assassinations and terrorist acts are habing a hard time to get approved by the larger population. "
+        name_list = "MAM3"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_nonadaptive"
+        trait = "trait_very_strong"
+        trait = "trait_quarrelsome"
+        trait = "trait_deviants"
+        trait = "trait_rapid_breeders"
+    }
+    name = {
+        key = "Survivors of Terni"
+    }
+    adjective = {
+        key = "Ternian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_military_dictatorship"
+    planet_name = {
+        key = "Terni"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Terni"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_1.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "grey"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tern"
+            }
+        }
+        portrait = "mam13"
+        texture = 2
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "First Survivor"
+        }
+        ruler_title_female = {
+            key = "First Survivor"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_honorbound_warriors_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_police_state"
+        "civic_corvee_system"
+    }
+    origin = "origin_post_apocalyptic"
+}

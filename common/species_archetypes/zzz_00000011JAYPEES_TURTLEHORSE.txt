@@ -1,0 +1,3 @@
+JAYPEES_TURTLEHORSE = {
+    uses_modifiers = no
+}

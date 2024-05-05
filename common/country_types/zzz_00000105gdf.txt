@@ -1,0 +1,32 @@
+gdf = {
+    blocks_piracy = yes
+    government = no
+    observable = no
+    uses_origins = no
+    playable = no
+    needs_survey = no
+    ship_disengagement = yes
+    has_complete_sensor = yes
+    ai = {
+        enabled = yes
+        modules = {
+            military_minister_module
+            galactic_community_patrol_military_minister_module
+        }
+    }
+    faction = {
+        hostile = no
+        needs_border_access = yes
+        generate_borders = no
+        needs_colony = no
+    }
+    modules = {
+        exclusive_diplomacy_module = {
+            contact_rule = always
+        }
+        all_technology_module = {
+        }
+        standard_event_module = {
+        }
+    }
+}

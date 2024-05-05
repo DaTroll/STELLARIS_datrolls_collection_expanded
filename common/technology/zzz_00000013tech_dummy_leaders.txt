@@ -1,0 +1,11 @@
+tech_dummy_leaders = {
+    cost = 0
+    area = engineering
+    category = {
+        industry
+    }
+    tier = 4
+    potential = {
+        merg_has_wandering_witch = yes
+    }
+}

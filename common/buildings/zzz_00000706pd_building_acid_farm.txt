@@ -1,0 +1,36 @@
+pd_building_acid_farm = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        is_planet_class = pc_acid
+        NOT = {
+            has_building = pd_building_acid_farm
+        }
+        NOT = {
+            has_building = pd_building_acid_rock
+        }
+        NOT = {
+            has_building = pd_building_acid_research
+        }
+        NOT = {
+            has_building_construction = pd_building_acid_farm
+        }
+        NOT = {
+            has_building_construction = pd_building_acid_rock
+        }
+        NOT = {
+            has_building_construction = pd_building_acid_research
+        }
+        NOT = {
+            has_modifier = resort_colony
+        }
+    }
+    inline_script = "buildings/pd_rare_farm_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_acid
+            }
+        }
+    }
+}

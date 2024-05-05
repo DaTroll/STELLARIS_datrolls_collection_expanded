@@ -1,0 +1,120 @@
+district_gpm_precursor_manufactorium = {
+    base_buildtime = 600
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    show_on_uncolonized = {
+        uses_district_set = gpm_precursor
+    }
+    potential = {
+        uses_district_set = gpm_precursor
+    }
+    conversion_ratio = 1
+    convert_to = {
+        district_industrial
+    }
+    resources = {
+        category = planet_districts
+        cost = {
+            trigger = {
+                exists = owner
+            }
+            minerals = 2000
+            minor_artifacts = 1000
+        }
+        upkeep = {
+            energy = 30
+            minor_artifacts = 1
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    NOT = {
+                        has_deficit = minor_artifacts
+                    }
+                    is_gestalt = yes
+                }
+            }
+            alloys = 20
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    NOT = {
+                        has_deficit = minor_artifacts
+                    }
+                    is_gestalt = no
+                }
+            }
+            alloys = 15
+            consumer_goods = 15
+        }
+    }
+    ai_weight = {
+        weight = 1000
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value <= 30
+                }
+            }
+        }
+        modifier = {
+            factor = 20
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value > 40
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value > 100
+                }
+            }
+        }
+        modifier = {
+            factor = 100
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 50
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 200
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 1000
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 2000
+                }
+            }
+        }
+    }
+}

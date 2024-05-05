@@ -1,0 +1,25 @@
+tech_unusual_senses = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        particles
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    prereqfor_desc = {
+        custom = {
+            title = tech_unusual_senses_effect
+        }
+    }
+    modifier = {
+        envoys_add = @insight_envoy_gain
+        country_tech_influence_produces_add = 0.1
+    }
+    ai_weight = {
+    }
+}

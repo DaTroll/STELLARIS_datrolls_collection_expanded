@@ -1,0 +1,50 @@
+@hab_cost = 500
+@hab_maintenance = 2
+district_pd_warform_housing = {
+    base_buildtime = 240
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    icon = district_hab_housing
+    show_on_uncolonized = {
+        uses_district_set = pdwarform
+    }
+    potential = {
+        uses_district_set = pdwarform
+    }
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            has_planet_flag = pd_warform_repaired_housing
+        }
+        planet_housing_add = 8
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_maintenance_drone_add = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_maintenance_drone_effect_desc
+    }
+}

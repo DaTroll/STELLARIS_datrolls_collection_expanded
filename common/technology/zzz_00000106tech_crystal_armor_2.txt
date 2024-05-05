@@ -1,0 +1,13 @@
+tech_crystal_armor_2 = {
+    area = engineering
+    cost = @tier4cost1
+    tier = 4
+    is_rare = yes
+    category = {
+        materials
+    }
+    ai_update_type = all
+    weight = 0
+    ai_weight = {
+    }
+}

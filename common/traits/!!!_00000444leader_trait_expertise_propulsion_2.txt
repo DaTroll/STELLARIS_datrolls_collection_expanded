@@ -1,0 +1,27 @@
+leader_trait_expertise_propulsion_2 = {
+    replace_traits = {
+        "leader_trait_expertise_propulsion"
+    }
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon_engineering
+        CLASS = scientist
+        ICON = "GFX_leader_trait_expertise_propulsion"
+        RARITY = free_or_veteran
+        COUNCIL = triggered
+        TIER = 2
+    }
+    inline_script = {
+        script = traits/technocracy_expertise_effects
+        FIELD = engineering
+        TIER = 2
+    }
+    councilor_modifier = {
+        category_propulsion_research_speed_mult = 0.1
+        category_propulsion_draw_chance_mult = 0.35
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

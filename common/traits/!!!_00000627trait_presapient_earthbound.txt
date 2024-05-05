@@ -1,0 +1,27 @@
+trait_presapient_earthbound = {
+    cost = 0
+    opposites = {
+        "trait_presapient_starborn"
+        "trait_nomadic"
+    }
+    initial = no
+    sapient = no
+    species_possible_remove = {
+        can_remove_presapient_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        PRESAPIENT
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_energy_produces_mult = 0.1
+        army_defense_damage_mult = 0.5
+    }
+}

@@ -1,0 +1,39 @@
+@designation_bonus = 50
+leader_trait_trade_focus = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_trader"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        has_paragon_dlc = yes
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+    }
+    planet_modifier = {
+        trade_value_mult = 0.15
+    }
+    sector_modifier = {
+        trade_value_mult = 0.075
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            add = @designation_bonus
+            exists = planet
+            planet = {
+                has_trade_designation = yes
+            }
+        }
+    }
+}

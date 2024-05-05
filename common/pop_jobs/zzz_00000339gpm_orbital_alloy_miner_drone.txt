@@ -1,0 +1,31 @@
+gpm_orbital_alloy_miner_drone = {
+    category = complex_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_foundry_1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        NOT = {
+            has_trait = trait_nerve_stapled
+        }
+    }
+    resources = {
+        category = planet_metallurgists
+        produces = {
+            alloys = 12
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+    weight = {
+        weight = @complex_drone_job_weight
+        mult = value:job_weights_modifier|JOB|gpm_orbital_alloy_miner_drone|RESOURCE|alloys|
+    }
+}

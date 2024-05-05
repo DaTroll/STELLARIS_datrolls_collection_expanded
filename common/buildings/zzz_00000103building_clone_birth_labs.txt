@@ -1,0 +1,8 @@
+building_clone_birth_labs = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

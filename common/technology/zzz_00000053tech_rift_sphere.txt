@@ -1,0 +1,16 @@
+tech_rift_sphere = {
+    cost = @tier3cost2
+    area = physics
+    tier = 2
+    category = {
+        field_manipulation
+    }
+    is_rare = yes
+    weight = 0
+    feature_flags = {
+        unlock_astral_rift_exploration
+    }
+    potential = {
+        has_astral_planes_dlc = yes
+    }
+}

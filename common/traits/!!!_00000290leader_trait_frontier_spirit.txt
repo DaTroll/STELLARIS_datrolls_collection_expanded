@@ -1,0 +1,26 @@
+leader_trait_frontier_spirit = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_frontier_spirit"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        ship_colonizer_cost_mult = -0.05
+        planet_colony_development_speed_mult = 0.15
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_economy_councilor
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

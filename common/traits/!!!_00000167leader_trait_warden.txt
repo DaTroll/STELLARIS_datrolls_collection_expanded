@@ -1,0 +1,31 @@
+leader_trait_warden = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_warden"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    planet_modifier = {
+        defense_armies_add = 2
+    }
+    sector_modifier = {
+        defense_armies_add = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_commander_governor
+        }
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

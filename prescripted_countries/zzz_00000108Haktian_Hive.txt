@@ -1,0 +1,86 @@
+"Haktian Hive" = {
+    key = "Haktian Hive"
+    ship_prefix = {
+        key = "HSE"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol14"
+        species_name = {
+            key = "Hakta"
+        }
+        species_plural = {
+            key = "Haktas"
+        }
+        species_adjective = {
+            key = "Haktan"
+        }
+        species_bio = "Strong and longliving.                                                                                      This is the shortest possoböle description of the Haktian Hive. They do not care about where you are from or what you are. But they will attack you with a neverseen relentlessness. They will devour everything in their way, everything that is consumable. Everything that is foreign to their Hive. Be aware that they have no interest in any form of Diplomatical actions. They-want-to-eat and they will eat if you don't so something. Also never trust a Haktan, this might be your certainly last but still a bad decision."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_nonadaptive"
+        trait = "trait_very_strong"
+        trait = "trait_venerable"
+        trait = "trait_repugnant"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Haktian Hive"
+    }
+    adjective = {
+        key = "Haktian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Hakta"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Hakta"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_10.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "burgundy"
+            "beige"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Hakta"
+            }
+        }
+        portrait = "mol14"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_subspace_ephapse"
+    }
+    origin = "origin_default"
+}

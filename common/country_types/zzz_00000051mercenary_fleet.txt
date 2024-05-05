@@ -1,0 +1,5 @@
+mercenary_fleet = {
+    ai = {
+        enabled = no
+    }
+}

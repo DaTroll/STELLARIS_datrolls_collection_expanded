@@ -1,0 +1,63 @@
+holding_produce_requisitorium = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_produce_requisitorium
+    base_cap_amount = 1
+    category = resource
+    potential = {
+        has_overlord_dlc = yes
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = ove_requires_tech_food_processing_2
+            owner.overlord = {
+                has_technology = tech_food_processing_2
+            }
+        }
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+            rare_crystals = 1
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -0.25
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner.overlord
+            owner.overlord = {
+                is_gestalt = no
+            }
+        }
+        monthly_loyalty = -0.25
+    }
+    on_built = {
+        planet = {
+            set_planet_flag = has_produce_requisitorium
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_planet_flag = has_produce_requisitorium
+        }
+    }
+    triggered_desc = {
+        text = job_food_requisitioned_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner.overlord
+            owner.overlord = {
+                is_gestalt = no
+            }
+        }
+        text = job_consumer_goods_requisitioned_effect_desc
+    }
+}

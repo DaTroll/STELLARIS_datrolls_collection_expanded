@@ -1,0 +1,24 @@
+tech_shields_2 = {
+    area = physics
+    cost = @tier1cost3
+    tier = 1
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_shields_1"
+    }
+    weight = @tier1weight3
+    weight_modifier = {
+        factor = 1.25
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = bulwark
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

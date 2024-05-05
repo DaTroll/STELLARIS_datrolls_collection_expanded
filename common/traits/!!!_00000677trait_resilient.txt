@@ -1,0 +1,20 @@
+trait_resilient = {
+    cost = 1
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        army_defense_damage_mult = 0.5
+    }
+    slave_cost = {
+        energy = 500
+    }
+}

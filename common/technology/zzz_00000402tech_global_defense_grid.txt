@@ -1,0 +1,34 @@
+tech_global_defense_grid = {
+    cost = @tier2cost1
+    area = society
+    tier = 2
+    category = {
+        military_theory
+    }
+    prerequisites = {
+        "tech_ground_defense_planning"
+    }
+    weight = @tier2weight1
+    modifier = {
+        army_defense_health_mult = 0.25
+    }
+    weight_modifier = {
+        factor = 2
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = bulwark
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

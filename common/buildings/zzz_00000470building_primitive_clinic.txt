@@ -1,0 +1,56 @@
+building_primitive_clinic = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = no
+    category = amenity
+    potential = {
+        exists = owner
+        owner = {
+            is_primitive = yes
+            is_hive_empire = yes
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_primitive = no
+                is_hive_empire = no
+            }
+        }
+    }
+    planet_modifier = {
+        job_healthcare_add = 2
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    prerequisites = {
+    }
+    upgrades = {
+    }
+    convert_to = {
+        building_clinic
+    }
+    triggered_desc = {
+        text = job_healthcare_effect_desc
+    }
+    on_destroy = {
+    }
+    on_repaired = {
+    }
+}

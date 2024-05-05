@@ -1,0 +1,98 @@
+"Tuhls of the Galaxy" = {
+    key = "Tuhls of the Galaxy"
+    ship_prefix = {
+        key = "TSS"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox8"
+        species_name = {
+            key = "Tuhl"
+            literal = yes
+        }
+        species_plural = {
+            key = "Tuhls"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Tuhlan"
+            literal = yes
+        }
+        species_bio = "\"More, *GNAAAAA* MORE\" - A common expression comming from a Tuhl. The Tuhl are deeply greedy, wanting more, and more. Knowledge, ressources, everything. All they want is simply all. They had many dictatures and Empires in the past, but it never worked with a greedy populace, all wanting some of everything, therefore established the democracy. To add to that, they are deeplyintelligent, always in quest of more knowledge. Somehow, they live on a ring world, their history doesnt mention a transition, letting it suggest that they, since ever, lived on the Ring world. "
+        name_list = "TOX4"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_slow_breeders"
+        trait = "trait_weak"
+        trait = "trait_noxious"
+        trait = "trait_docile"
+    }
+    name = {
+        key = "Tuhls of the Galaxy"
+        literal = yes
+    }
+    adjective = {
+        key = "Tuhlan"
+    }
+    authority = "auth_democratic"
+    government = "gov_rational_consensus"
+    advisor_voice_type = "l_evil_corp"
+    planet_name = {
+        key = "Tuhl's Ring"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "SPEC_Grimanche_system"
+    }
+    initializer = "shattered_ring_start"
+    graphical_culture = "toxoid_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_4.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_32.dds"
+        }
+        colors = {
+            "shadow_teal"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tuhl IV"
+                literal = yes
+            }
+        }
+        portrait = "tox8"
+        texture = 0
+        attachment = 2
+        clothes = 2
+        ruler_title_female = {
+            key = "First Collector"
+            literal = yes
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "toxoids_room"
+    spawn_enabled = always
+    ethic = "ethic_militarist"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_relentless_industrialists"
+        "civic_technocracy"
+    }
+    origin = "origin_shattered_ring"
+}

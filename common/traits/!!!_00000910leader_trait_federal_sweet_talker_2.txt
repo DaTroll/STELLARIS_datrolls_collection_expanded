@@ -1,0 +1,20 @@
+leader_trait_federal_sweet_talker_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_federal_sweet_talker"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_federal_sweet_talker"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    federation_modifier = {
+        cohesion_ethics_penalty_mult = -0.1
+    }
+    leader_class = {
+        official
+    }
+}

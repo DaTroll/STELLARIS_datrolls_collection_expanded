@@ -1,0 +1,23 @@
+leader_trait_observant_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_observant_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_observant"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    modifier = {
+        ship_sensor_range_add = 3
+        ship_hyperlane_range_add = 4
+        ship_windup_mult = -0.25
+    }
+    leader_class = {
+        commander
+        scientist
+    }
+}

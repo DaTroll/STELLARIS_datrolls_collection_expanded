@@ -1,0 +1,20 @@
+mem_vestigial_wormhole_wanderer_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_dimensional_stutter"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_anomaly_generation_chance_mult = 0.1
+        ship_anomaly_research_speed_mult = 0.2
+        science_ship_survey_speed = 0.25
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

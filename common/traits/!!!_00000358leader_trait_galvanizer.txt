@@ -1,0 +1,35 @@
+leader_trait_galvanizer = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_galvanizer"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_governor
+    }
+    planet_modifier = {
+        pop_category_workers_unity_produces_add = 0.5
+        pop_category_specialists_unity_produces_add = 0.5
+        pop_category_rulers_unity_produces_add = 0.5
+        pop_happiness = 0.05
+    }
+    sector_modifier = {
+        pop_category_workers_unity_produces_add = 0.25
+        pop_category_specialists_unity_produces_add = 0.25
+        pop_category_rulers_unity_produces_add = 0.25
+        pop_happiness = 0.05
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

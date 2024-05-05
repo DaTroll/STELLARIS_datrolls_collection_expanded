@@ -1,0 +1,27 @@
+tech_subspace_drive = {
+    cost = @tier0cost1
+    area = physics
+    tier = 0
+    category = {
+        particles
+    }
+    ai_update_type = all
+    is_reverse_engineerable = no
+    is_rare = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    feature_flags = {
+        jump_method
+    }
+    weight_modifier = {
+        factor = 0
+    }
+    prereqfor_desc = {
+        component = {
+            title = "TECH_UNLOCK_SUBSPACE_DRIVE_TITLE"
+            desc = "TECH_UNLOCK_SUBSPACE_DRIVE_DESC"
+        }
+    }
+}

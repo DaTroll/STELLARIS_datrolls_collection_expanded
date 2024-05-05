@@ -1,0 +1,39 @@
+building_hive_primitive_farm = {
+    icon = building_primitive_farm
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = no
+    category = resource
+    potential = {
+        exists = owner
+        owner = {
+            is_primitive = yes
+            is_hive_empire = yes
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+            is_lithoid_empire = no
+        }
+    }
+    convert_to = {
+        building_hive_primitive_mine
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_primitive = no
+                is_hive_empire = no
+                is_lithoid_empire = yes
+            }
+        }
+    }
+    planet_modifier = {
+        job_primitive_hive_farmer_add = 10
+    }
+    upgrades = {
+    }
+}

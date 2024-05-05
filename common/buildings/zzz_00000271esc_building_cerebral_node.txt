@@ -1,0 +1,8 @@
+esc_building_cerebral_node = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,39 @@
+oxr_mdlc_mamp_frame_1 = {
+    cost = 2
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        OXR_MDLC_MAMP
+    }
+    icon = "gfx/interface/icons/traits/oxr_mdlc_mamp_frame_1.dds"
+    species_potential_add = {
+        from = {
+            is_machine_empire = yes
+            has_ascension_perk = oxr_mdlc_ap_mamp
+        }
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    modifier = {
+        planet_jobs_produces_mult = 2
+        planet_jobs_upkeep_mult = 2
+        pop_housing_usage_mult = 2
+        pop_resettlement_cost_mult = 2
+        pop_amenities_usage_robotic_mult = 2
+        planet_pops_robotics_upkeep_mult = 2
+        army_defense_health_mult = 2
+    }
+    opposites = {
+        "oxr_mdlc_mamp_frame_2"
+        "oxr_mdlc_mamp_frame_3"
+    }
+    assembly_score = {
+        modifier = {
+            add = 0.5
+        }
+    }
+}

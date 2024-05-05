@@ -1,0 +1,28 @@
+tech_pd_warform_cyber_lab = {
+    cost = @tier3cost3
+    area = engineering
+    tier = 3
+    category = {
+        industry
+    }
+    weight = @tier3cost3
+    is_rare = yes
+    is_reverse_engineerable = no
+    potential = {
+        any_owned_planet = {
+            is_pd_warform_world = yes
+        }
+    }
+    weight_modifier = {
+        factor = 0
+    }
+    ai_weight = {
+        factor = 4
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_sh_foundryU = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,54 @@
+pd_lm_refiner = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_biosynth_lm_refinery
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_refiners
+        produces = {
+            sr_living_metal = 2
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    is_catalytic_empire = no
+                }
+            }
+            minerals = 40
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    is_catalytic_empire = yes
+                }
+            }
+            food = 60
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|chemist|RESOURCE|volatile_motes|
+        modifier = {
+            factor = 0.2
+            has_citizenship_rights = no
+            NOT = {
+                has_trait = trait_mechanical
+            }
+        }
+        modifier = {
+            factor = 0.1
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 7
+            has_job = chemist
+        }
+    }
+}

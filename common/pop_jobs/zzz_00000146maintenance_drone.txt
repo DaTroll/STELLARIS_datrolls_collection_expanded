@@ -1,0 +1,112 @@
+maintenance_drone = {
+    category = simple_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_maintenance_depot
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    resources = {
+        category = planet_jobs
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_valid_civic = civic_machine_maintenance_protocols
+                }
+            }
+            unity = 1
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_active_tradition = tr_versatility_operational_proxies
+                }
+            }
+            unity = 1
+        }
+    }
+    possible_precalc = can_fill_drone_job
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_no_happiness_add = 4
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                has_active_tradition = tr_versatility_finish
+            }
+        }
+        planet_amenities_no_happiness_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.orbital_defence
+            planet.orbital_defence = {
+                exists = starbase
+                starbase = {
+                    has_starbase_building = ring_maintenance_hub
+                }
+            }
+        }
+        planet_amenities_no_happiness_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                is_ringworld = yes
+                has_building = building_alpha_hub
+            }
+        }
+        planet_amenities_no_happiness_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @maintenance_drone_job
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        modifier = {
+            mult = value:job_weights_modifier|JOB|maintenance_drone|RESOURCE|unity|FACTOR|0.25|
+            exists = owner
+            owner = {
+                OR = {
+                    has_valid_civic = civic_machine_maintenance_protocols
+                    has_active_tradition = tr_versatility_operational_proxies
+                }
+            }
+        }
+        modifier = {
+            factor = 1.1
+            exists = owner
+            years_passed < 1
+            owner = {
+                has_valid_civic = civic_machine_assimilator
+            }
+            has_trait = trait_cybernetic
+        }
+        modifier = {
+            factor = 1000
+            NOT = {
+                has_job = maintenance_drone
+            }
+            planet = {
+                free_amenities < 3
+            }
+        }
+        modifier = {
+            factor = 1000
+            has_job = maintenance_drone
+            planet = {
+                free_amenities < 8
+            }
+        }
+    }
+}

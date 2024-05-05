@@ -1,0 +1,51 @@
+leader_trait_profligate = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_profligate"
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_jobs_consumer_goods_upkeep_mult = 0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        pop_amenities_usage_no_happiness_mult = 0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_jobs_consumer_goods_upkeep_mult = 0.05
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        pop_amenities_usage_no_happiness_mult = 0.05
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_wasteful
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

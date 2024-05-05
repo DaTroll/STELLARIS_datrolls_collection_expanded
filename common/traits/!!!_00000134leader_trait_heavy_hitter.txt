@@ -1,0 +1,32 @@
+leader_trait_heavy_hitter = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_heavy_hitter"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    army_modifier = {
+        army_damage_mult = 0.1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_commander_general
+        }
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/army_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+}

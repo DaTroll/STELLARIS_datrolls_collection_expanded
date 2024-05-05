@@ -1,0 +1,38 @@
+leader_trait_bureaucrat_2 = {
+    replace_traits = {
+        "leader_trait_bureaucrat"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_bureaucrat"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_administrators_unity_produces_mult = 0.05
+        mult = trigger:has_skill
+    }
+    triggered_sector_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_administrators_unity_produces_mult = 0.025
+        mult = trigger:has_skill
+    }
+    triggered_desc = {
+        exclusive_trigger = {
+            always = yes
+        }
+        text = leader_trait_bureaucrat_2_tt
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+}

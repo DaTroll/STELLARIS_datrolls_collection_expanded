@@ -1,0 +1,8 @@
+fotd_destroyed_starbase = {
+    opinion = {
+        base = -200
+    }
+    decay = {
+        base = 1
+    }
+}

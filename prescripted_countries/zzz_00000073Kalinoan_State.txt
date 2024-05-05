@@ -1,0 +1,92 @@
+"Kalinoan State" = {
+    key = "Kalinoan State"
+    ship_prefix = {
+        key = "KSS"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep13"
+        species_name = {
+            key = "Kalinoa"
+        }
+        species_plural = {
+            key = "Kalinoans"
+        }
+        species_adjective = {
+            key = "Kalinoan"
+        }
+        species_bio = "The Kalinoans have several states of developpment in during their Lifetime. All of those are coming along with a change of the color of their skin. In fact some Kalinoans like to conserve their last shed skin and show it to other Kalinoans. The sheding of their skin usually comes along an intense Pain that lasts for several hours. Many die refusing to experience the pain out of fear. But when getting older they don't have the same relation to pain as hey had when they were young. Making them much more dangerous. "
+        name_list = "REP2"
+        gender = not_set
+        trait = "trait_perfected_genes"
+        trait = "trait_strong"
+        trait = "trait_quick_learners"
+        trait = "trait_resilient"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "Kalinoan State"
+    }
+    adjective = {
+        key = "Kalinoan"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_constitutional_dictatorship"
+    planet_name = {
+        key = "Kala"
+    }
+    planet_class = "pc_arid"
+    system_name = {
+        key = "Kalasto"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "zoological"
+            file = "flag_zoological_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "vertical.dds"
+        }
+        colors = {
+            "red"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kala"
+            }
+        }
+        portrait = "rep13"
+        texture = 5
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "First Shed"
+        }
+        ruler_title_female = {
+            key = "First Shed"
+        }
+        trait = "leader_trait_legendary_evervigilant"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hive_mind_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_xenophobe"
+    civics = {
+        "civic_slaver_guilds"
+        "civic_police_state"
+    }
+    origin = "origin_legendary_leader"
+}

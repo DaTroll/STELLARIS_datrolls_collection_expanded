@@ -1,0 +1,95 @@
+"Xwi Purifiers" = {
+    key = "Xwi Purifiers"
+    ship_prefix = {
+        key = "XS"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_09"
+        species_name = {
+            key = "Xwi"
+        }
+        species_plural = {
+            key = "Xwin"
+        }
+        species_adjective = {
+            key = "Xwian"
+        }
+        species_bio = "Xwi'ta. Homeworld of the Xwi only has few species on it's surface. The first Xenologist observing the planet only documented a dozen. The question is still unanswered about what happened to them but if the planet of Xwi'te is one thing; it's harsh.The Xwi had to developp a radical method of conservation and nourishment in order to survive. Otherwise this desert like planet would have been their end.                                                                                        Their Flag represents a sunrise. It's a sunrise over a sea of red blood. With on it a fist. It's the iron fist of their people. Determined to do whatever is required to accomplish their goals.                                                                        Ruthless Pragmatism is their only rule."
+        name_list = "HUM4"
+        gender = not_set
+        trait = "trait_sedentary"
+        trait = "trait_wasteful"
+        trait = "trait_solitary"
+        trait = "trait_rapid_breeders"
+        trait = "trait_very_strong"
+    }
+    name = {
+        key = "Xwi Purifiers"
+    }
+    adjective = {
+        key = "Xwian"
+    }
+    authority = "auth_imperial"
+    government = "gov_blood_court"
+    advisor_voice_type = "l_xenophobe"
+    planet_name = {
+        key = "Xwi'te"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Xwi'ta'ne"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_7.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "sinus.dds"
+        }
+        colors = {
+            "light_orange"
+            "red"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kra"
+            }
+        }
+        portrait = "humanoid_hp_09"
+        texture = 3
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "Senior Executioner"
+            literal = yes
+        }
+        heir_title = {
+            key = "Junior Executioner"
+            literal = yes
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_fanatic_purifiers"
+        "civic_warrior_culture"
+    }
+    origin = "origin_lost_colony"
+}

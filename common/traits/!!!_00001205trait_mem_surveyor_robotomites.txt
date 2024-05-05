@@ -1,0 +1,15 @@
+trait_mem_surveyor_robotomites = {
+    cost = 0
+    initial = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    randomized = no
+    icon = "gfx/interface/icons/traits/trait_mem_cyborg.dds"
+    modifier = {
+        pop_environment_tolerance = 0.4
+    }
+}

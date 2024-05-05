@@ -1,0 +1,3 @@
+half_species = {
+    uses_modifiers = no
+}

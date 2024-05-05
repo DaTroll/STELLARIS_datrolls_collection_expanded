@@ -1,0 +1,8 @@
+building_eternal_nexus_ai = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

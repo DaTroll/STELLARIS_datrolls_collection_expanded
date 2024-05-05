@@ -1,0 +1,8 @@
+building_wula_foundry = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

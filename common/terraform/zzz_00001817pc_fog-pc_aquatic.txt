@@ -1,0 +1,51 @@
+@terraforming_cost_gaia = 7500
+@terraforming_duration_gaia = 3600
+terraform_link = {
+    from = pc_fog
+    to = pc_aquatic
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = @terraforming_cost_gaia
+        }
+    }
+    duration = @terraforming_duration_gaia
+    potential = {
+        has_ascension_perk = ap_hydrocentric
+        has_ascension_perk = ap_world_shaper
+    }
+    condition = {
+        has_ascension_perk = ap_hydrocentric
+        has_ascension_perk = ap_world_shaper
+    }
+    effect = {
+        from = {
+            set_planet_flag = hotaquatic
+            set_planet_entity = {
+                entity = "aquatichot_planet_01_entity"
+                picture = pc_aquatichot
+            }
+        }
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_fog
+                CLASS_TO = pc_aquatic
+            }
+        }
+        modifier = {
+            factor = 10
+            any_owned_species = {
+                OR = {
+                    has_trait = trait_aquatic
+                    has_trait = trait_pc_aquatic_preference
+                    has_trait = trait_pc_ocean_preference
+                }
+                is_sapient = yes
+            }
+        }
+    }
+}

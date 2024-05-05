@@ -1,0 +1,36 @@
+trait_voidling = {
+    cost = 3
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+        exists = from
+        from = {
+            has_technology = tech_leviathan_transgenesis
+            has_country_flag = harvested_voidspawn_dna
+        }
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    potential_crossbreeding_chance = 1
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    opposites = {
+        "trait_plantoid_phototrophic"
+        "trait_lithoid_radiotrophic"
+        "trait_advanced_phototrophic"
+        "trait_advanced_radiotrophic"
+        "trait_harvested_radiotrophic"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    custom_tooltip_with_modifiers = TRAIT_VOIDLING_EFFECT
+    modifier = {
+        habitability_floor_add = 0.2
+    }
+    slave_cost = {
+        energy = 1500
+    }
+}

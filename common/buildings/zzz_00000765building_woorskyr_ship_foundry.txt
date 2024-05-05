@@ -1,0 +1,116 @@
+building_woorskyr_ship_foundry = {
+    base_buildtime = 1800
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = army
+    potential = {
+        planet = {
+            AND = {
+                planet_has_woorskyr_deposit = yes
+                exists = owner
+                owner = {
+                    has_xenograss_deposit = yes
+                }
+            }
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_woorskyr
+            planet = {
+                planet_has_woorskyr_deposit = yes
+            }
+        }
+        custom_tooltip_fail = {
+            text = requirement_empire_xenograss
+            exists = owner
+            owner = {
+                has_xenograss_building = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_woorskyr_ship_foundry
+                }
+            }
+            planet = {
+                planet_has_woorskyr_deposit = no
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_soldier_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_warrior_drone_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner_main_species = {
+                is_robotic_species = yes
+            }
+        }
+        modifier = {
+            job_roboticist_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            unity = 4
+            minerals = 2
+        }
+        cost = {
+            minerals = 500
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 3
+            food = 1
+            exotic_gases = 2
+        }
+    }
+    country_modifier = {
+        shipclass_constructor_build_cost_mult = -0.1
+        shipclass_colonizer_build_cost_mult = -0.1
+        shipclass_science_ship_build_cost_mult = -0.1
+        shipclass_mining_station_build_cost_mult = -0.1
+        shipclass_research_station_build_cost_mult = -0.1
+        shipclass_observation_station_build_cost_mult = -0.1
+        shipsize_constructor_build_speed_mult = 0.1
+        shipclass_colonizer_build_speed_mult = 0.1
+        shipsize_science_build_speed_mult = 0.1
+        shipclass_mining_station_build_speed_mult = 0.1
+        shipclass_research_station_build_speed_mult = 0.1
+        shipclass_observation_station_build_speed_mult = 0.1
+    }
+    ai_weight = {
+        weight = 200
+    }
+    prerequisites = {
+        "tech_woorskyr_ship_foundry"
+    }
+}

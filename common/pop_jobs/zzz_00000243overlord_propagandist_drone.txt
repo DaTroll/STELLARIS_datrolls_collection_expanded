@@ -1,0 +1,34 @@
+overlord_propagandist_drone = {
+    category = complex_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_propaganda_office
+    clothes_texture_index = 1
+    icon = overlord_propagandist
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_overlord_propagandists
+        upkeep = {
+            unity = 1
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_propagandists
+        produces = {
+            influence = 0.15
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

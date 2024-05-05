@@ -1,0 +1,127 @@
+"Waves of XL-709" = {
+    key = "Waves of XL-709"
+    ship_prefix = {
+        key = "SOF"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec4"
+        species_name = {
+            key = "709"
+            literal = yes
+        }
+        species_plural = {
+            key = "709ians"
+            literal = yes
+        }
+        species_adjective = {
+            key = "709ians"
+            literal = yes
+        }
+        species_bio = "The gluant and sticky swarm of XL-709 makes them utterly disgusting and reproducing in the worst visual possible way in the galaxy. First discovered by and assimilating swarm of robots, every attempt to add them to their collective failed due to their slimmy nature. Therefore, the disgusting creatures known as \"709ians\" kept this given name by their visitor from space. It seems that before this visit, they never reflected over their perception of self and therefore never gave their own species a name up until that point."
+        name_list = "NECROID1"
+        gender = indeterminable
+        trait = "trait_hive_mind"
+        trait = "trait_necrophage"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_unruly"
+        trait = "trait_repugnant"
+        trait = "trait_intelligent"
+    }
+    secondary_species = {
+        class = "REP"
+        portrait = "rep3"
+        species_name = {
+            key = "Former"
+            literal = yes
+        }
+        species_plural = {
+            key = "Formers"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Former"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The \"Former\" have no memory of their history. They came to this world as cyborgs with the objective to assimilate this planet, but their attempts failed and therefore they were left behind, after having lost their robotics, the 709ians are now praying upon them."
+        name_list = "NECROID1"
+        gender = not_set
+        trait = "trait_nonadaptive"
+        trait = "trait_slow_breeders"
+        trait = "trait_intelligent"
+        trait = "trait_venerable"
+    }
+    name = {
+        key = "Waves of XL-709"
+        literal = yes
+    }
+    adjective = {
+        key = "709ian"
+        literal = yes
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    advisor_voice_type = "l_hivemind"
+    planet_name = {
+        key = "XL-709"
+        literal = yes
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "XL-700-1"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "necroid"
+            file = "necroid_09.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_57.dds"
+        }
+        colors = {
+            "yellow"
+            "dark_green"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Voice of All"
+                literal = yes
+            }
+        }
+        portrait = "nec4"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_ruthless_capitalists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_one_mind"
+    }
+    origin = "origin_necrophage"
+}

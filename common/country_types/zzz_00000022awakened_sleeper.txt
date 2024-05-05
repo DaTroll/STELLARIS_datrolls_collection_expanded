@@ -1,0 +1,5 @@
+awakened_sleeper = {
+    ai = {
+        enabled = no
+    }
+}

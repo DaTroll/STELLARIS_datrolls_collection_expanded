@@ -1,0 +1,5 @@
+uo_une_member_active = {
+    ai = {
+        enabled = no
+    }
+}

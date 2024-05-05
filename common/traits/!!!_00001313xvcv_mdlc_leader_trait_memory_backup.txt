@@ -1,0 +1,18 @@
+xvcv_mdlc_leader_trait_memory_backup = {
+    inline_script = {
+        script = trait/icon_machine
+        CLASS = leader
+        ICON = "GFX_xvcv_mdlc_leader_trait_memory_backup"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    custom_tooltip = xvcv_mdlc_leader_trait_memory_backup_tooltip
+    initial = no
+    randomized = no
+}

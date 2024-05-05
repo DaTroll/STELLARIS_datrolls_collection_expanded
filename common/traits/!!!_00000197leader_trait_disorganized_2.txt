@@ -1,0 +1,21 @@
+leader_trait_disorganized_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_disorganized"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_disorganized"
+        COUNCIL = no
+        TIER = 2
+    }
+    army_modifier = {
+        armies_upkeep_mult = 1
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

@@ -1,0 +1,24 @@
+synth_enslavers = {
+    trigger = {
+        is_playable = yes
+        OR = {
+            has_country_flag = synthetic_empire
+            is_machine_empire = yes
+        }
+        FROM = {
+            is_playable = yes
+            has_policy_flag = ai_servitude
+            OR = {
+                has_technology = tech_synthetic_workers
+                has_technology = tech_sapient_ai
+            }
+            NOR = {
+                has_country_flag = synthetic_empire
+                is_machine_empire = yes
+            }
+        }
+    }
+    opinion = {
+        base = -25
+    }
+}

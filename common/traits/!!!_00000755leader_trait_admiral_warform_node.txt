@@ -1,0 +1,26 @@
+leader_trait_admiral_warform_node = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_warform"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        ship_armor_regen_add_perc = 0.05
+        ship_armor_hardening_add = 0.15
+        ship_sensor_range_add = 1
+        ship_hyperlane_range_add = 2
+    }
+    initial = no
+    randomized = no
+    immortal_leaders = yes
+    leader_class = {
+        commander
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

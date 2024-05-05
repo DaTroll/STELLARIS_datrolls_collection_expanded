@@ -1,0 +1,35 @@
+leader_trait_gunship_specialization = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_gunship_specialization
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    fleet_modifier = {
+        s_slot_weapon_fire_rate_mult = 0.1
+        s_slot_weapon_damage_mult = 0.1
+        m_slot_weapon_fire_rate_mult = 0.05
+        m_slot_weapon_damage_mult = 0.05
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_any_admiral_speciality = no
+        has_trait = subclass_commander_admiral
+    }
+    leader_class = {
+        commander
+    }
+    fleet_specialization_tag = gunship
+    custom_tooltip_with_modifiers = only_one_admiral_focus
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+}

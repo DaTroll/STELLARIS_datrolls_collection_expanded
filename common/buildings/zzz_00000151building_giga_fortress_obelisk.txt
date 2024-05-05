@@ -1,0 +1,8 @@
+building_giga_fortress_obelisk = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

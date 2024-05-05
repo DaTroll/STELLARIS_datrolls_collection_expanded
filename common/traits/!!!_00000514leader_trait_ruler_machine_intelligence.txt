@@ -1,0 +1,21 @@
+leader_trait_ruler_machine_intelligence = {
+    force_councilor_trait = yes
+    immortal_leaders = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_machine_intelligence"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = leader_trait_ignore_leader_cap_tt
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    initial = no
+    randomized = no
+    hide_age = yes
+}

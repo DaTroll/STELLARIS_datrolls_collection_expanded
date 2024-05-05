@@ -1,0 +1,8 @@
+building_volgan_clone_vats = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

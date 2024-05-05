@@ -1,0 +1,8 @@
+building_ccathedral = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,19 @@
+leader_trait_bulwark_sentinel = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_specialist
+        CLASS = commander
+        ICON = "GFX_leader_trait_bulwark_sentinel"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_friendly_territory_shield_mult = 0.3
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

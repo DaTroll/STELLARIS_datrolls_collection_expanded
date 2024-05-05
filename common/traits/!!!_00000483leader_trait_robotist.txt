@@ -1,0 +1,38 @@
+leader_trait_robotist = {
+    leader_trait_type = destiny
+    ethic_destiny_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_robotist"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_scientist_governor
+        has_ethic = ethic_materialist
+    }
+    planet_modifier = {
+        planet_pop_assembly_mult = 0.2
+        planet_jobs_robotic_produces_mult = 0.2
+        pop_amenities_usage_robotic_mult = -0.2
+    }
+    sector_modifier = {
+        planet_pop_assembly_mult = 0.1
+        planet_jobs_robotic_produces_mult = 0.1
+        pop_amenities_usage_robotic_mult = -0.1
+    }
+    leader_class = {
+        scientist
+    }
+    prerequisites = {
+        tech_robotic_workers
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

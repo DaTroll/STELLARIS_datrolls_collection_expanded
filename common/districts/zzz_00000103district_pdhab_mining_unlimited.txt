@@ -1,0 +1,140 @@
+@hab_cost = 500
+@hab_maintenance = 2
+district_pdhab_mining_unlimited = {
+    base_buildtime = 240
+    is_capped_by_modifier = no
+    show_on_uncolonized = {
+        has_planet_flag = pd_mining_hab
+        NOT = {
+            has_modifier = hab_terraforming_candidate
+        }
+        NOT = {
+            has_modifier = hab_pdhabsubglacialocean
+        }
+    }
+    potential = {
+        has_planet_flag = pd_mining_hab
+        NOT = {
+            has_modifier = hab_terraforming_candidate
+        }
+        NOT = {
+            has_modifier = hab_pdhabsubglacialocean
+        }
+    }
+    allow = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            has_modifier = resort_colony_pd_hab
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_reg
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_ges
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_reg_asteroid
+        }
+        NOT = {
+            has_modifier = military_pd_habitat_ges_asteroid
+        }
+    }
+    conversion_ratio = 1
+    convert_to = {
+        district_mining
+        district_mining_uncapped
+    }
+    planet_modifier = {
+        planet_housing_add = 2
+    }
+    resources = {
+        category = planet_districts_hab_mining
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            job_mining_drone_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        modifier = {
+            job_mining_drone_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        modifier = {
+            job_miner_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        modifier = {
+            job_fe_acolyte_mine_add = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_mining_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        text = job_miner_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        text = job_fe_acolyte_mine_effect_desc
+    }
+    ai_resource_production = {
+        minerals = 1
+        trigger = {
+            always = yes
+        }
+    }
+}

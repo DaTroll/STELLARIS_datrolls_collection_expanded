@@ -1,0 +1,20 @@
+action_open_pre_ftl_homeworld = {
+    auto_accepted = yes
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    action_type = neutral
+    potential = {
+        hidden_trigger = {
+            OR = {
+                merg_is_default_empire = yes
+                AND = {
+                    has_global_flag = has_fallen_empire_player
+                    is_country_type = fallen_empire
+                }
+            }
+            from = {
+                is_country_type = primitive
+            }
+        }
+    }
+}

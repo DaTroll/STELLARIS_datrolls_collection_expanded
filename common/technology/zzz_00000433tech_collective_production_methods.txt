@@ -1,0 +1,22 @@
+tech_collective_production_methods = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_unity_of_purpose"
+    }
+    weight = @tier3weight1
+    modifier = {
+        planet_jobs_produces_mult = 0.05
+    }
+    potential = {
+        has_authority = auth_hive_mind
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

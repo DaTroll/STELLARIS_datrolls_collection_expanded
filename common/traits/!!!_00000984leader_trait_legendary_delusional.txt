@@ -1,0 +1,28 @@
+leader_trait_legendary_delusional = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_negative_no_tiers
+        ICON = "GFX_leader_trait_legendary_bloody"
+        COUNCIL = yes
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            check_variable = {
+                which = paragon_origin_delusion_tier
+                value > 0
+            }
+        }
+        planet_stability_add = 0.5
+        planet_crime_add = -1.5
+        planet_jobs_unity_produces_mult = -0.005
+        pop_happiness = -0.01
+        mult = this.paragon_origin_delusion_tier
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,8 @@
+building_dm_galactic_machine_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

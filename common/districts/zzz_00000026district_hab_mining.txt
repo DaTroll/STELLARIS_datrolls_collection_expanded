@@ -1,0 +1,104 @@
+@hab_cost = 500
+@hab_maintenance = 2
+@low_hab_maintenance = 0.2
+@hab_time = 240
+district_hab_mining = {
+    base_buildtime = @hab_time
+    is_capped_by_modifier = yes
+    show_on_uncolonized = {
+        uses_district_set = habitat
+    }
+    potential = {
+        uses_district_set = habitat
+    }
+    planet_modifier = {
+        planet_housing_add = 3
+    }
+    inline_script = {
+        script = districts/habitat_districts_triggered_mods
+    }
+    resources = {
+        category = planet_districts_hab_mining
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+            alloys = @low_hab_maintenance
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_mining_drone_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        job_mining_drone_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        job_miner_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        job_fe_acolyte_mine_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_mining_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        text = job_miner_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        text = job_fe_acolyte_mine_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            always = yes
+        }
+        text = num_mining_orbitals
+    }
+}

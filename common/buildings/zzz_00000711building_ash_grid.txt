@@ -1,0 +1,37 @@
+building_ash_grid = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_ash
+        NOT = {
+            has_building = building_ash_grid
+        }
+        NOT = {
+            has_building_construction = building_ash_grid
+        }
+        NOT = {
+            has_building = building_ash_foundry
+        }
+        NOT = {
+            has_building_construction = building_ash_foundry
+        }
+        NOT = {
+            has_building = building_ash_lab
+        }
+        NOT = {
+            has_building_construction = building_ash_lab
+        }
+    }
+    inline_script = "buildings/pd_rare_energy_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_ash
+            }
+        }
+    }
+}

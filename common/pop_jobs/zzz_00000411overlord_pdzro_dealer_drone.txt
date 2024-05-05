@@ -1,0 +1,57 @@
+overlord_pdzro_dealer_drone = {
+    category = complex_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_pdzro_dealer_domestic
+    clothes_texture_index = 1
+    icon = overlord_pdzro_dealer
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_overlord_traders
+        upkeep = {
+            trigger = {
+                owner = {
+                    is_machine_empire = yes
+                }
+            }
+            energy = 4
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    is_hive_empire = yes
+                }
+            }
+            minerals = 3
+            energy = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_stability_add = 5
+    }
+    overlord_resources = {
+        category = planet_overlord_traders
+        produces = {
+            energy = 7
+        }
+        upkeep = {
+            sr_zro = 0.5
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

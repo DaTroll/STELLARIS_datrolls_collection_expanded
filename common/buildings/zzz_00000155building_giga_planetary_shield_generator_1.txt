@@ -1,0 +1,8 @@
+building_giga_planetary_shield_generator_1 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

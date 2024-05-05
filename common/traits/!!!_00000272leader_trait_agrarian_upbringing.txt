@@ -1,0 +1,50 @@
+leader_trait_agrarian_upbringing = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_agrarian_upbringing"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        has_global_flag = game_started
+        exists = owner
+        owner = {
+            country_uses_food = yes
+        }
+        is_pool_leader = yes
+    }
+    on_gained_effect = {
+        if = {
+            limit = {
+                owner = {
+                    is_anglers_empire = yes
+                }
+            }
+            change_background_job = angler
+        }
+        else = {
+            change_background_job = farmer
+        }
+    }
+    planet_modifier = {
+        planet_jobs_food_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_jobs_food_produces_mult = 0.05
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = {
+            script = "paragon/existing_trait_weight_mult"
+            TRAIT = leader_trait_agrarian_upbringing
+        }
+    }
+}

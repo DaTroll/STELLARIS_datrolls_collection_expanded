@@ -1,0 +1,24 @@
+leader_trait_legendary_commanding_presence_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_commanding_presence_2"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_authoritarian_one"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        monthly_loyalty_from_subjects = 1
+        diplo_action_acceptance_add = 15
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

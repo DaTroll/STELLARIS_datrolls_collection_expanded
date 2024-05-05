@@ -1,0 +1,108 @@
+"Enhenced Assimilators" = {
+    key = "Enhenced Assimilators"
+    ship_prefix = {
+        key = "AC"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "default_robot"
+        species_name = {
+            key = "Assimilators"
+        }
+        species_plural = {
+            key = "Assimilators"
+        }
+        species_adjective = {
+            key = "Assimilators"
+        }
+        species_bio = "A pre-space-flight capable civilisation meets a crashing assimilator drone. The Assimilators were no match for the primitive civilisation and so the hole planet got assimiled. It is a big question where the drones come from or who send them. Is there a bigger network out there? Time traveler? Or did some ancient civilisation have fun watch a primitive world get assembled? Or was it for science? A large scale social and engineering experience, which would be technically a genocide.                                                                                                                                          But just technically. "
+        name_list = "MACHINE3"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_enhanced_memory"
+        trait = "trait_robot_repurposed_hardware"
+        trait = "trait_robot_luxurious"
+        trait = "trait_robot_logic_engines"
+    }
+    secondary_species = {
+        class = "HUM"
+        portrait = "human"
+        species_name = {
+            key = "Specie 57"
+        }
+        species_plural = {
+            key = "Specie 57"
+        }
+        species_adjective = {
+            key = "Specie 57"
+        }
+        species_bio = "Specie 57 got assimilated when a drone stranded on their planet. Their weak bodies and primitive Technology where no match for us. In order to advance our cause, the assimilation of all beings in the galaxy, they have been turned into Cyborgs, ready to be soon assimilated."
+        name_list = "HUMAN1"
+        gender = not_set
+        trait = "trait_cybernetic"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_fleeting"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Enhenced Assimilators"
+    }
+    adjective = {
+        key = "Assimilators"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_assimilator"
+    planet_name = {
+        key = "Sleep"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Star I"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_15.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "light_green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Drone B2-47"
+            }
+        }
+        portrait = "default_robot"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Drone"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_assimilator"
+        "civic_machine_replication"
+    }
+    origin = "origin_machine"
+}

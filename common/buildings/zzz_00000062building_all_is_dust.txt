@@ -1,0 +1,8 @@
+building_all_is_dust = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

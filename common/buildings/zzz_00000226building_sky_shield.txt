@@ -1,0 +1,8 @@
+building_sky_shield = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

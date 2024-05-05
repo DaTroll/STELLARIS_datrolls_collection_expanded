@@ -1,0 +1,30 @@
+@terraforming_cost_shroud = 750
+terraform_link = {
+    from = pc_gray_goo
+    to = pc_pdshroud
+    resources = {
+        category = terraforming
+        cost = {
+            sr_zro = @terraforming_cost_shroud
+        }
+    }
+    duration = 360
+    potential = {
+        from = {
+            has_modifier = terraforming_candidate
+        }
+        pd_has_psionic_ascension_finished = yes
+    }
+    condition = {
+        has_technology = "tech_climate_restoration"
+        pd_has_psionic_ascension_finished = yes
+    }
+    effect = {
+        from = {
+            remove_modifier = terraforming_candidate
+        }
+    }
+    ai_weight = {
+        weight = 5
+    }
+}

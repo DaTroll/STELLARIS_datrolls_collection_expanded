@@ -1,0 +1,49 @@
+purge_necrophage = {
+    token = purge_necrophage
+    pop_escape_chance = 0.25
+    pop_decline_rate = 20
+    pop_modifier = {
+        pop_happiness = -0.5
+    }
+    potential = {
+        exists = from
+        from = {
+            OR = {
+                has_valid_civic = civic_machine_replicators
+                has_valid_civic = civic_hive_parasitic
+                AND = {
+                    has_origin = origin_necrophage
+                    has_trait = trait_necrophage
+                }
+            }
+        }
+    }
+    allow = {
+        hidden_trigger = {
+            exists = from
+        }
+        custom_tooltip = {
+            fail_text = CANNOT_NECROPHAGE_MACHINES
+            is_robotic = no
+        }
+        if = {
+            limit = {
+                is_lonely_hive_mind_pop = no
+            }
+            custom_tooltip = {
+                fail_text = PURGES_ALLOWED
+                from = {
+                    OR = {
+                        has_valid_civic = civic_machine_replicators
+                        has_valid_civic = civic_hive_parasitic
+                        has_valid_civic = civic_fanatic_purifiers
+                        has_policy_flag = purge_allowed
+                    }
+                }
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 100
+    }
+}

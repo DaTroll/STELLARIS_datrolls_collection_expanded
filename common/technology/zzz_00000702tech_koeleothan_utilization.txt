@@ -1,0 +1,52 @@
+tech_koeleothan_utilization = {
+    cost = @tier2cost1
+    area = society
+    category = {
+        psionics
+    }
+    is_rare = yes
+    tier = 2
+    weight = @tier2weight1
+    weight_modifier = {
+        modifier = {
+            factor = 2
+            has_country_flag = cf_koeleothan_found
+        }
+        modifier = {
+            factor = 3
+            has_koeleothan_deposit = yes
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_koeleothan_utilization
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_koeleothan_found
+            }
+            NOT = {
+                has_koeleothan_deposit = yes
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_koeleothan_found
+            }
+            NOT = {
+                has_koeleothan_deposit = yes
+            }
+        }
+        modifier = {
+            factor = 2
+            has_country_flag = cf_koeleothan_found
+        }
+        modifier = {
+            factor = 3
+            has_koeleothan_deposit = yes
+        }
+    }
+}

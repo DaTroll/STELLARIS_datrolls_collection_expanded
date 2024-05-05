@@ -1,0 +1,28 @@
+low_tech_warrior = {
+    category = specialist
+    is_capped_by_modifier = yes
+    building_icon = building_low_tech_capital
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_low_tech_start = yes
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 1
+    }
+    planet_modifier = {
+        planet_crime_add = -10
+    }
+    weight = {
+        weight = @soldier_job_weight
+        modifier = {
+            factor = 5
+            has_job = low_tech_warrior
+        }
+    }
+}

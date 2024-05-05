@@ -1,0 +1,27 @@
+trait_cyborg_double_jointed = {
+    cost = 1
+    opposites = {
+        "trait_cyborg_bulky"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        pop_housing_usage_mult = -0.1
+        pop_growth_from_immigration = 0.15
+        pop_resettlement_cost_mult = -0.25
+    }
+    slave_cost = {
+        energy = 1500
+    }
+}

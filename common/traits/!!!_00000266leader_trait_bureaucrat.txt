@@ -1,0 +1,39 @@
+leader_trait_bureaucrat = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_bureaucrat"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_administrators_unity_produces_mult = 0.05
+        mult = trigger:has_skill
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    triggered_desc = {
+        exclusive_trigger = {
+            always = yes
+        }
+        text = leader_trait_bureaucrat_tt
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/governor_weight_mult
+        inline_script = {
+            script = "paragon/existing_trait_weight_mult"
+            TRAIT = leader_trait_bureaucrat
+        }
+    }
+}

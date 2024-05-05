@@ -1,0 +1,18 @@
+leader_trait_sentinel = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_sentinel"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        damage_vs_country_type_swarm_mult = 0.2
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

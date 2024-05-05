@@ -1,0 +1,18 @@
+tech_gpm_precursor_planetary_gun_discovery = {
+    area = physics
+    cost = @tier2cost1
+    category = {
+        computing
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        ship_weapon_range_mult = 0.12
+        ship_engagement_range_mult = 0.12
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

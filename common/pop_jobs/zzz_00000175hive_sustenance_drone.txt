@@ -1,0 +1,53 @@
+hive_sustenance_drone = {
+    category = simple_drone
+    is_capped_by_modifier = no
+    clothes_texture_index = 2
+    icon = hunter_gatherer
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            is_hive_empire = yes
+            has_country_flag = stone_age
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_no_happiness_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    resources = {
+        category = planet_farmers
+        produces = {
+            trigger = {
+                is_lithoid = no
+            }
+            food = 1
+        }
+        produces = {
+            trigger = {
+                is_lithoid = yes
+            }
+            minerals = 1
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        modifier = {
+            factor = value:job_weights_modifier|JOB|hive_sustenance_drone|RESOURCE|minerals|
+            is_lithoid = yes
+        }
+        modifier = {
+            factor = value:job_weights_modifier|JOB|hive_sustenance_drone|RESOURCE|food|
+            is_lithoid = no
+        }
+    }
+}

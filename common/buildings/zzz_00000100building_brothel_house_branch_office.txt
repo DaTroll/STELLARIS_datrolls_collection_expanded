@@ -1,0 +1,8 @@
+building_brothel_house_branch_office = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

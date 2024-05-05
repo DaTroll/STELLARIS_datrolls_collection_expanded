@@ -1,0 +1,90 @@
+"Ka'lo Nation of Science" = {
+    key = "Ka'lo Nation of Science"
+    ship_prefix = {
+        key = ""
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_02"
+        species_name = {
+            key = "Ka"
+        }
+        species_plural = {
+            key = "Kas"
+        }
+        species_adjective = {
+            key = "Kaik"
+        }
+        species_bio = "Weak, Small, Slow Breeders. Only few Kaik children survive, but those who do have the benifits of the extraordinary Kaik educational System. The surviving young adults become extremly Intelligent, longliving and adaptive, with an IQ estimated of at least 200. They see the need to reproduce as necessary but unoleasant, rather spending time participing in the progress of science. Their Star-system being called \"Ka'nuu'Ra\", with Ra meaning Sun definetly shows some similarities with ancient Egypt, might this be a coincidence? Or a hint in a much larger question? The Ka'lo Nation is based on Merit and progress. They'll do everything to outsmart you."
+        name_list = "HUM2"
+        gender = not_set
+        trait = "trait_weak"
+        trait = "trait_enduring"
+        trait = "trait_intelligent"
+        trait = "trait_slow_breeders"
+        trait = "trait_adaptive"
+    }
+    name = {
+        key = "Ka'lo Nation of Science"
+    }
+    adjective = {
+        key = "Ka'loi"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_science_directorate"
+    planet_name = {
+        key = "Ka'nuu"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Ka'nuu'Ra"
+    }
+    initializer = "shattered_ring_start"
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_7.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "triangle_split.dds"
+        }
+        colors = {
+            "grey"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Junak Va"
+            }
+        }
+        portrait = "humanoid_hp_02"
+        texture = 0
+        attachment = 8
+        clothes = 2
+        ruler_title = {
+            key = "First Scientist"
+            literal = yes
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_meritocracy"
+    }
+    origin = "origin_shattered_ring"
+}

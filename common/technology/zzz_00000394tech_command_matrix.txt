@@ -1,0 +1,28 @@
+tech_command_matrix = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        military_theory
+    }
+    prerequisites = {
+        "tech_refit_standards"
+    }
+    weight = @tier3weight3
+    modifier = {
+        ship_fire_rate_mult = 0.05
+    }
+    weight_modifier = {
+        factor = 3
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

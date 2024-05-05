@@ -1,0 +1,24 @@
+leader_trait_industrial_focus_2 = {
+    replace_traits = {
+        "leader_trait_industrial_focus"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_industrial_focus"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    planet_modifier = {
+        planet_jobs_consumer_goods_produces_mult = 0.2
+    }
+    sector_modifier = {
+        planet_jobs_consumer_goods_produces_mult = 0.1
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        official
+    }
+    custom_tooltip_with_modifiers = only_one_governor_focus
+}

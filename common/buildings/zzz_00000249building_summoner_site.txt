@@ -1,0 +1,8 @@
+building_summoner_site = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

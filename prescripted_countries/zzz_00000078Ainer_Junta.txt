@@ -1,0 +1,92 @@
+"Ainer Junta" = {
+    key = "Ainer Junta"
+    ship_prefix = {
+        key = "ASV"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi1"
+        species_name = {
+            key = "Ainur"
+        }
+        species_plural = {
+            key = "Ainurs"
+        }
+        species_adjective = {
+            key = "Ainuran"
+        }
+        species_bio = "This Military Junta is a dictatorial regime which enslaved the people of their home planet and imposed a very nationalistic vision. After the great war of subjugation against their hole planets, they finally turned against their dearest allies and assumed total world domination.Now several decades passed and the sacrifices seemed to have paid off. Which the first space vessel who is capable of FTL speed, the Ainur are eger to discover new frontiers and to explore the vast unknown of space. Will their domination aswell continue in space? Or will their civilisation be  reduced to ashes and only be, a footnote in the galactic History?"
+        name_list = "AVI2"
+        gender = not_set
+        trait = "trait_slow_learners"
+        trait = "trait_communal"
+        trait = "trait_conformists"
+        trait = "trait_natural_physicists"
+        trait = "trait_quarrelsome"
+    }
+    name = {
+        key = "Ainer Junta"
+    }
+    adjective = {
+        key = "Aineran"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_military_dictatorship"
+    planet_name = {
+        key = "Aina"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Ainer"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_1.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "red_orange"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Ainar"
+            }
+        }
+        portrait = "avi1"
+        texture = 0
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "Grand Commander"
+        }
+        ruler_title_female = {
+            key = "Grand Commander"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_harmonious_hierarchy_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_nationalistic_zeal"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

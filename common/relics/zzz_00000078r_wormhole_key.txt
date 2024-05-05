@@ -1,0 +1,47 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_wormhole_key = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_wormhole_key_5"
+    sound = "par_ui_keides_relic"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_physics_tech_research_speed = 0.25
+        ship_jumpdrive_cooldown_mult = -0.25
+    }
+    score = 2500
+    active_effect = {
+        add_modifier = {
+            modifier = "paragon_relic_wormhole_key"
+            days = 100
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+        set_timed_country_flag = {
+            flag = jump_drive_allowed
+            days = 100
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_wormhole_key
+        }
+    }
+}

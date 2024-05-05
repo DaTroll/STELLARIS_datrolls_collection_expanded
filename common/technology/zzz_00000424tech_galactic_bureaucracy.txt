@@ -1,0 +1,36 @@
+tech_galactic_bureaucracy = {
+    cost = @tier3cost1
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_colonial_bureaucracy"
+    }
+    weight = @tier3weight1
+    modifier = {
+        country_edict_fund_add = 20
+        add_base_country_intel = 10
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            num_pops < 50
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 2
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 3
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 4
+        }
+    }
+    ai_weight = {
+    }
+}

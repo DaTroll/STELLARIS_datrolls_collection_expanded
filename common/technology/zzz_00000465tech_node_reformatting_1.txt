@@ -1,0 +1,66 @@
+tech_node_reformatting_1 = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+    }
+    weight = @tier2weight3
+    potential = {
+        is_machine_empire = yes
+    }
+    gateway = node_reformatting
+    prereqfor_desc = {
+        custom = {
+            title = "AGENDA_UNLOCK_NODE_REFORMATTING_TITLE"
+            desc = "AGENDA_UNLOCK_NODE_REFORMATTING_DESC"
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill < 2
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 3
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 5
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 7
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 9
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

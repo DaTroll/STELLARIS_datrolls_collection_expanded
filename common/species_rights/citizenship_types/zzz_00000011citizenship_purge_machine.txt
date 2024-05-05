@@ -1,0 +1,54 @@
+citizenship_purge_machine = {
+    new_pop_weight = 0
+    is_purge = yes
+    potential = {
+        exists = from
+        from = {
+            has_authority = auth_machine_intelligence
+        }
+        NOR = {
+            has_trait = trait_machine_unit
+            has_trait = trait_mechanical
+            has_trait = trait_machine_replica
+            AND = {
+                has_trait = trait_cybernetic
+                has_trait = trait_zombie
+                from = {
+                    has_ascension_perk = ap_mechromancy
+                }
+            }
+        }
+        NAND = {
+            is_lonely_hive_mind_pop = no
+            from = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+    }
+    allow = {
+        hidden_trigger = {
+            exists = from
+        }
+        custom_tooltip = {
+            fail_text = same_species_disallowed
+            NOT = {
+                is_same_species = from
+            }
+        }
+        custom_tooltip = {
+            fail_text = "presapients_not_purged_citizenship"
+            OR = {
+                is_sapient = yes
+                from = {
+                    NOR = {
+                        has_policy_flag = pre_sapients_protect
+                        has_policy_flag = pre_sapients_allow
+                    }
+                }
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}

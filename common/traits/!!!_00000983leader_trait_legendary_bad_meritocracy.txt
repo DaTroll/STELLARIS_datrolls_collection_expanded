@@ -1,0 +1,35 @@
+leader_trait_legendary_bad_meritocracy = {
+    starting_ruler_trait = yes
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    opposites = {
+        leader_trait_legendary_unfriendly
+        leader_trait_legendary_warmonger
+        leader_trait_legendary_dreamlike
+        leader_trait_legendary_harsh_ruler
+        leader_trait_legendary_too_open
+        leader_trait_legendary_hoplofobia
+    }
+    allowed_ethics = {
+        ethic_materialist
+        ethic_fanatic_materialist
+    }
+    cost = -1
+    inline_script = {
+        script = trait/icon_negative_no_tiers
+        ICON = "GFX_leader_trait_legendary_materialist_bad"
+        COUNCIL = yes
+    }
+    councilor_modifier = {
+        leaders_upkeep_mult = 0.3
+        pop_amenities_usage_mult = 0.2
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,8 @@
+opinion_imperial_vassal_harsh_response_overlord_opinion = {
+    opinion = {
+        base = -20
+    }
+    decay = {
+        base = 2
+    }
+}

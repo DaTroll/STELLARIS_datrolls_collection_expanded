@@ -1,0 +1,31 @@
+leader_trait_politician = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_politician"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        council_agenda_progress_speed = 0.05
+    }
+    leader_potential_add = {
+        OR = {
+            is_gestalt = no
+            AND = {
+                is_gestalt = yes
+                is_councilor = yes
+            }
+        }
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

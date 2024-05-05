@@ -1,0 +1,27 @@
+tech_sensors_3 = {
+    area = physics
+    cost = @tier3cost1
+    tier = 3
+    category = {
+        computing
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_sensors_2"
+    }
+    weight = @tier3weight1
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_discovery_adopt
+        }
+    }
+    ai_weight = {
+    }
+    prereqfor_desc = {
+        component = {
+            title = "TECH_UNLOCK_SENSOR_3_TITLE"
+            desc = "TECH_UNLOCK_SENSOR_3_DESC"
+        }
+    }
+}

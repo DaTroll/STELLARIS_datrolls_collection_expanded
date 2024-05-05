@@ -1,0 +1,27 @@
+leader_trait_prospector = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_prospector"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_trait = subclass_scientist_explorer
+        has_paragon_dlc = yes
+    }
+    custom_tooltip = leader_trait_prospector_effect
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_explorer
+        }
+    }
+}

@@ -1,0 +1,6 @@
+chief_navigator = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

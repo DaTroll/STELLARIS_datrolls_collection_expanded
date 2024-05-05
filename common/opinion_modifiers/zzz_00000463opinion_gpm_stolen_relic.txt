@@ -1,0 +1,41 @@
+opinion_gpm_stolen_relic = {
+    opinion = {
+        base = -2000
+    }
+    accumulative = yes
+    decay = {
+        base = 10
+        modifier = {
+            add = -2
+            has_ethic = "ethic_militarist"
+        }
+        modifier = {
+            add = -4
+            has_ethic = "ethic_fanatic_militarist"
+        }
+        modifier = {
+            add = -5
+            has_ethic = "ethic_xenophobe"
+        }
+        modifier = {
+            add = -10
+            has_ethic = "ethic_fanatic_xenophobe"
+        }
+        modifier = {
+            add = 5
+            has_ethic = "ethic_pacifist"
+        }
+        modifier = {
+            add = 10
+            has_ethic = "ethic_fanatic_pacifist"
+        }
+        modifier = {
+            add = 2
+            has_ethic = "ethic_xenophile"
+        }
+        modifier = {
+            add = 4
+            has_ethic = "ethic_fanatic_xenophile"
+        }
+    }
+}

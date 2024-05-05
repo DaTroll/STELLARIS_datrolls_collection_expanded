@@ -1,0 +1,102 @@
+triggered_opinion_same_ascension_path = {
+    trigger = {
+        is_playable = yes
+        OR = {
+            AND = {
+                has_ascension_perk = ap_engineered_evolution
+                FROM = {
+                    has_ascension_perk = ap_engineered_evolution
+                }
+            }
+            AND = {
+                OR = {
+                    has_ascension_perk = ap_the_flesh_is_weak
+                    has_ascension_perk = ap_organo_machine_interfacing
+                    has_ascension_perk = ap_organo_machine_interfacing_assimilator
+                    has_origin = origin_primitive_cyborgs
+                }
+                FROM = {
+                    OR = {
+                        has_ascension_perk = ap_the_flesh_is_weak
+                        has_ascension_perk = ap_organo_machine_interfacing
+                        has_ascension_perk = ap_organo_machine_interfacing_assimilator
+                        has_origin = origin_primitive_cyborgs
+                    }
+                }
+            }
+            AND = {
+                OR = {
+                    has_ascension_perk = ap_synthetic_evolution
+                    has_ascension_perk = ap_synthetic_age
+                }
+                FROM = {
+                    OR = {
+                        has_ascension_perk = ap_synthetic_evolution
+                        has_ascension_perk = ap_synthetic_age
+                    }
+                }
+            }
+            AND = {
+                OR = {
+                    has_ascension_perk = ap_mind_over_matter
+                    is_shroudwalker_apprentice_empire = yes
+                }
+                FROM = {
+                    OR = {
+                        has_ascension_perk = ap_mind_over_matter
+                        is_shroudwalker_apprentice_empire = yes
+                    }
+                }
+            }
+        }
+    }
+    opinion = {
+        base = 10
+        modifier = {
+            add = 5
+            OR = {
+                has_ascension_perk = ap_the_flesh_is_weak
+                has_ascension_perk = ap_organo_machine_interfacing
+                has_ascension_perk = ap_organo_machine_interfacing_assimilator
+                has_origin = origin_primitive_cyborgs
+            }
+            FROM = {
+                OR = {
+                    has_ascension_perk = ap_the_flesh_is_weak
+                    has_ascension_perk = ap_organo_machine_interfacing
+                    has_ascension_perk = ap_organo_machine_interfacing_assimilator
+                    has_origin = origin_primitive_cyborgs
+                }
+            }
+            is_materialist = yes
+        }
+        modifier = {
+            add = 5
+            OR = {
+                has_ascension_perk = ap_synthetic_evolution
+                has_ascension_perk = ap_synthetic_age
+            }
+            FROM = {
+                OR = {
+                    has_ascension_perk = ap_synthetic_evolution
+                    has_ascension_perk = ap_synthetic_age
+                }
+            }
+            is_materialist = yes
+        }
+        modifier = {
+            add = 5
+            OR = {
+                has_ascension_perk = ap_mind_over_matter
+                is_shroudwalker_apprentice_empire = yes
+            }
+            FROM = {
+                OR = {
+                    has_ascension_perk = ap_mind_over_matter
+                    is_shroudwalker_apprentice_empire = yes
+                }
+            }
+            is_spiritualist = yes
+        }
+    }
+}

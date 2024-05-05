@@ -1,0 +1,11 @@
+opinion_refused_extradited_envoy = {
+    opinion = {
+        base = -50
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

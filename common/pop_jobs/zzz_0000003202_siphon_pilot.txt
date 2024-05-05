@@ -1,0 +1,11 @@
+02_siphon_pilot = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

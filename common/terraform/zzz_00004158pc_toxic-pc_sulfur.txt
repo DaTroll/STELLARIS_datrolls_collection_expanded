@@ -1,0 +1,45 @@
+@terraforming_cost_level_2 = 5000
+@terraforming_duration_level_2 = 3600
+terraform_link = {
+    from = pc_toxic
+    to = pc_sulfur
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_2
+        }
+    }
+    duration = @terraforming_duration_level_2
+    potential = {
+        has_origin = origin_pd_sulfur_springs
+        from = {
+            has_modifier = sulfur_terraforming_candidate
+        }
+    }
+    condition = {
+        has_origin = origin_pd_sulfur_springs
+        from = {
+            has_modifier = sulfur_terraforming_candidate
+        }
+    }
+    effect = {
+        from = {
+            remove_modifier = sulfur_terraforming_candidate
+            reroll_planet = yes
+        }
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 1
+            should_terraform_trigger = {
+                CLASS_FROM = pc_toxic
+                CLASS_TO = pc_sulfur
+            }
+        }
+        modifier = {
+            factor = 10
+            has_trait = trait_pc_ammonia_preference
+        }
+    }
+}

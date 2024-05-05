@@ -1,0 +1,32 @@
+trait_cyborg_logic_engines = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.1
+        planet_jobs_society_research_produces_mult = 0.1
+        planet_jobs_engineering_research_produces_mult = 0.1
+    }
+    slave_cost = {
+        energy = 750
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+    }
+}

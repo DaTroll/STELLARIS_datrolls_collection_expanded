@@ -1,0 +1,97 @@
+sulfur_ent = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_sulfur_onsen
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible = {
+        entertainer_job_check_trigger = yes
+    }
+    resources = {
+        category = planet_entertainers
+        produces = {
+            unity = 2
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 10
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 4
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_pleasure_seeker = yes
+            }
+        }
+        modifier = {
+            pop_growth_speed = 0.01
+        }
+    }
+    weight = {
+        weight = @high_prio_specialist_job_weight
+        mult = value:job_weights_modifier|JOB|entertainer|RESOURCE|unity|FACTOR|0.25|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        modifier = {
+            factor = 0.2
+            has_citizenship_rights = no
+            NOT = {
+                has_trait = trait_mechanical
+            }
+        }
+        modifier = {
+            factor = 3
+            has_trait = trait_robot_domestic_protocols
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+        }
+        modifier = {
+            factor = 1.5
+            has_job = entertainer
+        }
+        modifier = {
+            factor = 0.1
+            is_domestic_servant = yes
+        }
+        modifier = {
+            factor = 0.1
+            NOT = {
+                has_job = entertainer
+            }
+            exists = planet
+            planet = {
+                free_amenities > 5
+            }
+        }
+        modifier = {
+            factor = 2
+            NOT = {
+                has_job = entertainer
+            }
+            exists = planet
+            planet = {
+                free_amenities < 2
+            }
+        }
+    }
+}

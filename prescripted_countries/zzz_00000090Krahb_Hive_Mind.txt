@@ -1,0 +1,86 @@
+"Krahb Hive Mind" = {
+    key = "Krahb Hive Mind"
+    ship_prefix = {
+        key = "KHM"
+    }
+    species = {
+        class = "ART"
+        portrait = "art12"
+        species_name = {
+            key = "Krahb"
+        }
+        species_plural = {
+            key = "Krahbs"
+        }
+        species_adjective = {
+            key = "Krahb"
+        }
+        species_bio = "The neurological subnetwork connecting all the Krahb together is probably one of the most stunning things in the entire universe- They act together in perfect harmony and no one is \"wasted\". Due to their most extreme organisation and coordination their army works as well as a wet ball rolling down a mountain: exellent. Their regular military manoevers, on Land, Sea, Air or Space are an exellent proof of this. They will also never  surrender and have an unbreakable will and unshatterable beliefs. \"We are Legions\" as they like to say of themselves."
+        name_list = "ART3"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_slow_learners"
+        trait = "trait_quarrelsome"
+        trait = "trait_strong"
+        trait = "trait_natural_sociologists"
+        trait = "trait_adaptive"
+    }
+    name = {
+        key = "Krahb Hive Mind"
+    }
+    adjective = {
+        key = "Krahb"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Krahb'ze"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Karhb'Ie"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_9.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "black"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Krahbkie"
+            }
+        }
+        portrait = "art12"
+        texture = 6
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_strength_of_legions"
+    }
+    origin = "origin_default"
+}

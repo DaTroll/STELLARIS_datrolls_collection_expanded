@@ -1,0 +1,9 @@
+opinion_withheld_tech = {
+    opinion = {
+        base = -75
+    }
+    accumulative = yes
+    decay = {
+        base = 1
+    }
+}

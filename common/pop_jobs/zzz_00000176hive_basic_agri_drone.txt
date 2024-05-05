@@ -1,0 +1,53 @@
+hive_basic_agri_drone = {
+    category = simple_drone
+    is_capped_by_modifier = no
+    building_icon = building_primitive_farm
+    clothes_texture_index = 2
+    icon = peasant
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            is_hive_empire = yes
+            OR = {
+                has_country_flag = bronze_age
+                has_country_flag = iron_age
+                has_country_flag = late_medieval_age
+                has_country_flag = renaissance_age
+                has_country_flag = steam_age
+            }
+        }
+    }
+    resources = {
+        category = planet_farmers
+        produces = {
+            trigger = {
+                is_lithoid = no
+            }
+            food = 2
+        }
+        produces = {
+            trigger = {
+                is_lithoid = yes
+            }
+            minerals = 2
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        modifier = {
+            factor = value:job_weights_modifier|JOB|hive_basic_agri_drone|RESOURCE|minerals|
+            is_lithoid = yes
+        }
+        modifier = {
+            factor = value:job_weights_modifier|JOB|hive_basic_agri_drone|RESOURCE|food|
+            is_lithoid = no
+        }
+    }
+}

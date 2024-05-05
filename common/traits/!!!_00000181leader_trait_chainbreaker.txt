@@ -1,0 +1,33 @@
+leader_trait_chainbreaker = {
+    leader_trait_type = destiny
+    ethic_destiny_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_chainbreaker"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    army_modifier = {
+        army_morale = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_general
+        has_ethic = ethic_egalitarian
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/army_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+    custom_tooltip_with_modifiers = leader_trait_chainbreaker_effect
+    background_icon = "GFX_leader_background_destiny_1"
+}

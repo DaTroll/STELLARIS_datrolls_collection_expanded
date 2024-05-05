@@ -1,0 +1,92 @@
+"Sharnankian Unit" = {
+    key = "Sharnankian Unit"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox4"
+        species_name = {
+            key = "Sharnek"
+            literal = yes
+        }
+        species_plural = {
+            key = "Sharneks"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Sharnankian"
+            literal = yes
+        }
+        species_bio = "Some say, according to myths and Legends, that not Sharnankian has ever been born naturally, and that all those, who folloed the first one, are coming from a secret laboratory which set them free on a random habitable planet. Whoever those myths and Legends may or may not be true, \"inside each Sharnankian is another one\", making their body just an effective hull to their hive-mind like society, making one ask, who is really inside ? And is he also part of the hive ?"
+        name_list = "HUM1"
+        gender = indeterminable
+        trait = "trait_hive_mind"
+        trait = "trait_repugnant"
+        trait = "trait_incubator"
+        trait = "trait_natural_sociologists"
+        trait = "trait_strong"
+    }
+    name = {
+        key = "Sharnankian Unit"
+        literal = yes
+    }
+    adjective = {
+        key = "Sharnankian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Sharkon"
+        literal = yes
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Sharke"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "nemesis_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "ochre_brown"
+            "dark_brown"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Velt"
+                literal = yes
+            }
+        }
+        portrait = "tox4"
+        texture = 6
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "organic_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_cordyceptic_drones"
+        "civic_hive_subspace_ephapse"
+    }
+    origin = "origin_progenitor_hive"
+}

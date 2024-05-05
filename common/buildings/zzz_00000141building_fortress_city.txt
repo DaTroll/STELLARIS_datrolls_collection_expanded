@@ -1,0 +1,8 @@
+building_fortress_city = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

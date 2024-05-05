@@ -1,0 +1,63 @@
+tr_psionics_finish = {
+    custom_tooltip = tr_psionics_finish_desc
+    on_enabled = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_country_flag = has_shroud_patron
+                    NOT = {
+                        has_country_flag = covenant_end_of_the_cycle
+                    }
+                }
+                country_event = {
+                    id = utopia.2658
+                    days = 360
+                }
+                set_country_flag = confirmation_incoming
+            }
+            if = {
+                limit = {
+                    any_planet_within_border = {
+                        has_planet_flag = fotd_seperatist_planet@root
+                        owner = {
+                            has_country_flag = fotd_seperatist_country@root
+                        }
+                    }
+                }
+                country_event = {
+                    id = origin.6110
+                    days = 5
+                    random = 2
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_origin = origin_legendary_leader_dictatorial
+                        AND = {
+                            has_country_flag = paragon_origin_reformists_gone
+                            has_origin = origin_legendary_leader_imperial
+                        }
+                    }
+                    NOT = {
+                        has_country_flag = luminary_ascension_path
+                    }
+                    exists = ruler
+                    ruler = {
+                        has_leader_flag = paragon_origin_legendary_leader
+                    }
+                }
+                country_event = {
+                    id = paragon.5201
+                    days = 3600
+                    random = 7200
+                }
+            }
+        }
+    }
+    modifier = {
+        edicts_upkeep_mult = -0.1
+        shroud_delve_cooldown = -0.2
+        ascension_perks_add = 1
+    }
+}

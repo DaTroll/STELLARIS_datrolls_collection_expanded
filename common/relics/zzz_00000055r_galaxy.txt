@@ -1,0 +1,47 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_galaxy = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_galaxy"
+    sound = "relic_activation_miniature_galaxy"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+        modifier = {
+            factor = 1.5
+            is_materialist = yes
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        all_technology_research_speed = 0.05
+        category_field_manipulation_research_speed_mult = 0.15
+    }
+    score = 2000
+    active_effect = {
+        custom_tooltip = relic_galaxy_active
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+            country_event = {
+                id = ancrel.7007
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_galaxy
+        }
+    }
+}

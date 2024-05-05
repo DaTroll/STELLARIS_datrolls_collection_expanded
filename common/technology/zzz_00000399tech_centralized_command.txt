@@ -1,0 +1,24 @@
+tech_centralized_command = {
+    cost = @tier3cost2
+    area = society
+    tier = 3
+    category = {
+        military_theory
+    }
+    weight = @tier3weight2
+    modifier = {
+        country_occupation_armies_add = 2
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

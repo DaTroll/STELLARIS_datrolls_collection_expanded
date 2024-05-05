@@ -1,0 +1,95 @@
+"Hornatan Democratic Union" = {
+    key = "Hornatan Democratic Union"
+    ship_prefix = {
+        key = "HFV"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox12"
+        species_name = {
+            key = "Hornat"
+            literal = yes
+        }
+        species_plural = {
+            key = "Hornater"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Hornatan"
+            literal = yes
+        }
+        species_bio = "The Hornat are tall, incredibly so even, and are even more incredible diplomats. For many centuries they only knew peace on their planet due to their advanced diplomatic corps who always were able to find the middle ground and thus avoid any conflict. This is a trend that they might and will carry over to the stars. Up to them is it, to upheld their traditions or break away from those. Who knows if they will always be able to find the middle ground in the negociations."
+        name_list = "MAM3"
+        gender = not_set
+        trait = "trait_talented"
+        trait = "trait_natural_sociologists"
+        trait = "trait_fleeting"
+        trait = "trait_wasteful"
+        trait = "trait_charismatic"
+    }
+    name = {
+        key = "Hornatan Democratic Union"
+        literal = yes
+    }
+    adjective = {
+        key = "Hornatan"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_irenic_bureaucracy"
+    advisor_voice_type = "l_the_diplomat"
+    planet_name = {
+        key = "Hooren"
+        literal = yes
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Haal"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "nemesis_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "imperial"
+            file = "imperial_06.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_39.dds"
+        }
+        colors = {
+            "light_blue"
+            "light_grey"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Shaart"
+                literal = yes
+            }
+        }
+        portrait = "tox12_f"
+        texture = 0
+        attachment = 0
+        clothes = 1
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophile"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_diplomatic_corps"
+    }
+    origin = "origin_common_ground"
+}

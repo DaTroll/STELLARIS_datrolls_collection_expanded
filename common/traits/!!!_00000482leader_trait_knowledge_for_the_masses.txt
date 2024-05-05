@@ -1,0 +1,28 @@
+leader_trait_knowledge_for_the_masses = {
+    leader_trait_type = destiny
+    ethic_destiny_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_knowledge_for_the_masses"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        species_leader_exp_gain = 0.25
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_scientist_councilor
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

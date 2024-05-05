@@ -1,0 +1,29 @@
+leader_trait_victory_or_death = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_victory_or_death"
+        COUNCIL = no
+        TIER = 1
+    }
+    army_modifier = {
+        army_disengage_chance_mult = -0.3
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        NOT = {
+            has_ethic = ethic_pacifist
+        }
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_restrained
+        leader_trait_restrained_2
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/army_weight_mult
+    }
+}

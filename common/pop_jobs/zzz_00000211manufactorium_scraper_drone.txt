@@ -1,0 +1,26 @@
+manufactorium_scraper_drone = {
+    category = simple_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_ancient_cryo_chamber
+    icon = miner
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 1
+            alloys = 1
+            engineering_research = 0.5
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        mult = value:job_weights_modifier|JOB|manufactorium_scraper_drone|RESOURCE|minerals|
+    }
+}

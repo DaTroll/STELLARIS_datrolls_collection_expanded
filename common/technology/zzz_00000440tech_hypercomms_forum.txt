@@ -1,0 +1,17 @@
+tech_hypercomms_forum = {
+    cost = @tier3cost1
+    area = society
+    category = {
+        statecraft
+    }
+    tier = 3
+    prerequisites = {
+        "tech_heritage_site"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight1
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

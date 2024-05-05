@@ -1,0 +1,3 @@
+PLANTOID = {
+    uses_modifiers = no
+}

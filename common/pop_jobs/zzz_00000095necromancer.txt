@@ -1,0 +1,129 @@
+necromancer = {
+    category = specialist
+    condition_string = BATTLE_THRALL_JOB_TRIGGER
+    building_icon = building_dread_encampment
+    clothes_texture_index = 3
+    country_modifier = {
+        country_naval_cap_add = 2
+    }
+    triggered_country_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner
+                owner = {
+                    has_technology = "tech_ground_defense_planning"
+                }
+            }
+        }
+        modifier = {
+            country_naval_cap_add = 2
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 3
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = leader
+                leader = {
+                    leader_class = commander
+                }
+            }
+        }
+        modifier = {
+            pop_defense_armies_add = 2
+        }
+    }
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 6
+            society_research = 6
+        }
+        produces = {
+            trigger = {
+                exists = planet
+                planet = {
+                    has_councilor = {
+                        COUNCILOR = "councilor_reanimated_armies"
+                    }
+                }
+            }
+            unity = @councilor_reanimated_armies_necromancer_unity
+            mult = value:councilor_level|TYPE|councilor_reanimated_armies|
+        }
+        upkeep = {
+            consumer_goods = 2
+        }
+    }
+    triggered_country_modifier = {
+        modifier = {
+            country_naval_cap_add = 1
+        }
+        mult = planet.modifier:job_researcher_naval_cap_add
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible = {
+        battle_thrall_job_check_trigger = yes
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_multiple_resources_modifier|JOB|necromancer|RESOURCE1|physics_research|WEIGHT1|0.5|RESOURCE2|society_research|WEIGHT2|0.5|
+        modifier = {
+            factor = 10
+            exists = planet
+            planet = {
+                exists = leader
+                leader = {
+                    leader_class = commander
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_resilient
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_very_strong
+        }
+        modifier = {
+            factor = 1.5
+            has_trait = trait_strong
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_weak
+        }
+        modifier = {
+            factor = 1.1
+            has_trait = trait_cybernetic
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_presapient_earthbound
+        }
+        modifier = {
+            factor = 1.1
+            has_trait = trait_limited_regeneration
+        }
+        modifier = {
+            factor = 0
+            species = {
+                can_be_soldier = no
+            }
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_lithoid
+        }
+    }
+}

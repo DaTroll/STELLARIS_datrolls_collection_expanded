@@ -1,0 +1,91 @@
+"Agrarian Union of Vurl" = {
+    key = "Agrarian Union of Vurl"
+    ship_prefix = {
+        key = "VSF"
+    }
+    species = {
+        class = "ART"
+        portrait = "art9"
+        species_name = {
+            key = "Vurl"
+        }
+        species_plural = {
+            key = "Vurls"
+        }
+        species_adjective = {
+            key = "Vurlian"
+        }
+        species_bio = "The Vurlian stayed an overly agrarian society even after the age of Industrialisation. Their crops are part of the best in the galaxy and their 'know how' is legendary. Legends say that a Vurl is the best weather predictor; for a hole season! The field work made them physically stronger and more enduring. Their Democratic system is a simple and direct one in which Referendums are common thing."
+        name_list = "ART2"
+        gender = not_set
+        trait = "trait_agrarian"
+        trait = "trait_slow_breeders"
+        trait = "trait_strong"
+        trait = "trait_enduring"
+    }
+    name = {
+        key = "Agrarian Union of Vurl"
+    }
+    adjective = {
+        key = "Vurlian"
+    }
+    authority = "auth_democratic"
+    government = "gov_moral_democracy"
+    planet_name = {
+        key = "Vurl"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Vurl"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_18.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Vurl"
+            }
+        }
+        portrait = "art9"
+        texture = 1
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "Prime Farmer"
+        }
+        ruler_title_female = {
+            key = "Prime Farmer"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_spiritual_seekers_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_egalitarian"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_agrarian_idyll"
+        "civic_byzantine_bureaucracy"
+    }
+    origin = "origin_life_seeded"
+}

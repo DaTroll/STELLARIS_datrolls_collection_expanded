@@ -1,0 +1,138 @@
+"Accord of Caerule" = {
+    key = "Accord of Caerule"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec12"
+        species_name = {
+            key = "Cerita"
+            literal = yes
+        }
+        species_plural = {
+            key = "Ceritas"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Cerita"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Ceritan live on many islands, on a mostly aquatic planet. With little access to the ground and its ressources they quickly turned to transform the living tissue and nutritious edibles into alloys and such. Their ingenuity separates them from many other species, while making much from little and finding solutions where other only see obstructions. "
+        name_list = "AQUATIC4"
+        gender = not_set
+        trait = "trait_aquatic"
+        trait = "trait_agrarian"
+        trait = "trait_communal"
+        trait = "trait_unruly"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "format.dem_mat.2"
+        variables = {
+             {
+                key = "democratic_mat"
+                value = {
+                    key = "Accord"
+                }
+            }
+             {
+                key = "This.Capital.GetName"
+                value = {
+                    key = "Caerule"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.homeworld"
+                    variables = {
+                         {
+                            key = "democratic_mat"
+                            value = {
+                                key = "Accord"
+                            }
+                        }
+                         {
+                            key = "This.Capital.GetName"
+                            value = {
+                                key = "Caerule"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_democratic"
+    government = "gov_direct_democracy"
+    advisor_voice_type = "l_egalitarian"
+    planet_name = {
+        key = "Caerule"
+        literal = yes
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Flavus"
+        literal = yes
+    }
+    initializer = "ocean_paradise_start"
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "necroid_01"
+    empire_flag = {
+        icon = {
+            category = "pirate"
+            file = "flag_pirate_3.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "pink_purple"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Roseanne"
+                literal = yes
+            }
+        }
+        portrait = "nec12"
+        texture = 3
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_xenophile"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_anglers"
+        "civic_catalytic_processing"
+    }
+    origin = "origin_ocean_paradise"
+}

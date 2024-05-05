@@ -1,0 +1,6 @@
+chief_security_officer = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

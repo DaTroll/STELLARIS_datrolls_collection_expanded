@@ -1,0 +1,11 @@
+tech_nep_phantom_phase_shift = {
+    cost = 0
+    area = physics
+    tier = 5
+    category = {
+        particles
+    }
+    potential = {
+        merg_has_wild_space = yes
+    }
+}

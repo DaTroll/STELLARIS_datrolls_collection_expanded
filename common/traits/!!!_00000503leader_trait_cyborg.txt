@@ -1,0 +1,82 @@
+leader_trait_cyborg = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_cyborg"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        planet_structures_upkeep_mult = -0.25
+        empire_size_districts_mult = -0.05
+    }
+    triggered_fleet_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_weapon_damage = 0.1
+        ship_weapon_range_mult = 0.1
+        ship_orbital_bombardment_mult = 0.1
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        planet_combat_width_add = 2
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        ship_anomaly_generation_chance_mult = 0.15
+    }
+    triggered_galcom_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        diplo_weight_technology_mult = 0.05
+    }
+    triggered_federation_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        federation_experience_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_ruler = no
+        }
+        planet_jobs_physics_research_produces_mult = 0.1
+        planet_jobs_society_research_produces_mult = 0.1
+        planet_jobs_engineering_research_produces_mult = 0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            is_ruler = no
+        }
+        planet_jobs_physics_research_produces_mult = 0.05
+        planet_jobs_society_research_produces_mult = 0.05
+        planet_jobs_engineering_research_produces_mult = 0.05
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    opposites = {
+        leader_trait_psionic
+        leader_trait_chosen
+    }
+    initial = no
+    randomized = no
+    notify_on_gained = no
+}

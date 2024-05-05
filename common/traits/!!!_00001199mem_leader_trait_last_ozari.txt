@@ -1,0 +1,18 @@
+mem_leader_trait_last_ozari = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_mem_phoenix"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        category_biology_research_speed_mult = 0.2
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

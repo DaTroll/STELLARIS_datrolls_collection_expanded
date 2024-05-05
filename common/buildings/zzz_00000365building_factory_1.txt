@@ -1,0 +1,84 @@
+building_factory_1 = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = manufacturing
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                country_uses_consumer_goods = yes
+                has_origin = origin_fear_of_the_dark
+            }
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+        }
+        OR = {
+            owner = {
+                is_ai = no
+            }
+            and = {
+                has_any_industry_district = yes
+                owner = {
+                    should_ai_focus_on_trade = no
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+            AND = {
+                exists = owner
+                OR = {
+                    owner = {
+                        AND = {
+                            country_uses_consumer_goods = no
+                            NOT = {
+                                has_origin = origin_fear_of_the_dark
+                            }
+                        }
+                    }
+                    AND = {
+                        owner = {
+                            is_ai = yes
+                        }
+                        has_any_industry_district = no
+                    }
+                    AND = {
+                        owner = {
+                            should_ai_focus_on_trade = yes
+                            has_monthly_income = {
+                                resource = consumer_goods
+                                value > 30
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/factory_add
+        AMOUNT = @b1_jobs
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    prerequisites = {
+        tech_basic_industry
+    }
+    upgrades = {
+        building_factory_2
+    }
+}

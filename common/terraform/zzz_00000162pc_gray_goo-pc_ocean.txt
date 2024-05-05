@@ -1,0 +1,45 @@
+terraform_link = {
+    from = pc_gray_goo
+    to = pc_ocean
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = 1000
+        }
+    }
+    duration = 360
+    potential = {
+        from = {
+            has_modifier = terraforming_candidate
+        }
+    }
+    condition = {
+        has_technology = "tech_climate_restoration"
+    }
+    effect = {
+        from = {
+            remove_modifier = terraforming_candidate
+        }
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_gray_goo
+                CLASS_TO = pc_ocean
+            }
+        }
+        modifier = {
+            factor = 10
+            any_owned_species = {
+                OR = {
+                    has_trait = trait_aquatic
+                    has_trait = trait_pc_aquatic_preference
+                    has_trait = trait_pc_ocean_preference
+                }
+                is_sapient = yes
+            }
+        }
+    }
+}

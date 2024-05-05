@@ -1,0 +1,190 @@
+manufactorium_specialist = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_ancient_cryo_chamber
+    icon = foundry
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+    resources = {
+        category = planet_metallurgists
+        produces = {
+            alloys = 5
+        }
+        upkeep = {
+            minerals = 5
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_crafters
+                }
+            }
+            unity = 0.5
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_subterranean
+                }
+            }
+            unity = 0.5
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_dwarven_craft
+                }
+            }
+            unity = 1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_earthquake_upkeep
+                }
+            }
+            minerals = 2
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_earthquake_production
+                }
+            }
+            alloys = -1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_guardians_produce
+                }
+            }
+            alloys = -1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_engineering
+                }
+            }
+            engineering_research = 1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_society
+                }
+            }
+            society_research = 1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_work_production
+                }
+            }
+            alloys = -1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_work_production
+                }
+            }
+            minerals = -1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_random_good
+                }
+            }
+            minerals = -1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_environmentalists
+                }
+            }
+            minerals = -2
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_despoilers
+                }
+            }
+            alloys = 1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_took_opportunity
+                }
+            }
+            alloys = 1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_took_opportunity
+                }
+            }
+            minerals = 2
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_took_opportunity_bad
+                }
+            }
+            minerals = 1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_catalytic
+                }
+            }
+            minerals = -2
+            food = 2
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_remnants
+                }
+            }
+            alloys = 1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = manufactorium_remnants
+                }
+            }
+            minerals = 1
+        }
+    }
+    triggered_pop_modifier = {
+        potential = {
+            planet = {
+                has_planet_flag = manufactorium_work_happiness
+            }
+        }
+        pop_happiness = -0.2
+    }
+    weight = {
+        weight = @special_job_weight
+        mult = value:job_weights_modifier|JOB|manufactorium_specialist|RESOURCE|alloys|
+    }
+}

@@ -1,0 +1,89 @@
+"Hallowed Letaran" = {
+    key = "Hallowed Letaran"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla6"
+        species_name = {
+            key = "Letar"
+        }
+        species_plural = {
+            key = "Letars"
+        }
+        species_adjective = {
+            key = "Letaran"
+        }
+        species_bio = "\"A strong rule requires weak subjects\"                                                this has been the way the young Letaran have been educated for centuries. Well ... they didn't know that they have been but the principle was surely applied. The religious movement reformed itself to become a profit only organisation thus using religious motives aswell as insults of blasphemy and heterisims to gain more money and influence among the population. Finally when they even challenged head to states and forced their religion upon whole nations at once, they simply deposed the governments and state leaders to take over the world.                                                                       Over night."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_conservational"
+        trait = "trait_enduring"
+        trait = "trait_weak"
+        trait = "trait_decadent"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Hallowed Letaran"
+    }
+    adjective = {
+        key = "Letaran"
+    }
+    authority = "auth_corporate"
+    government = "gov_megachurch"
+    planet_name = {
+        key = "Holy Letar"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Holy Ketar"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_06.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "dark_purple"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Letar the Wise"
+            }
+        }
+        portrait = "pla6"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        ruler_title = {
+            key = "Hallowed Leader"
+        }
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_gospel_of_the_masses"
+        "civic_indentured_assets"
+    }
+    origin = "origin_default"
+}

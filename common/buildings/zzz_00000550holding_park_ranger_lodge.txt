@@ -1,0 +1,91 @@
+holding_park_ranger_lodge = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_park_ranger_lodge
+    base_cap_amount = 1
+    category = amenity
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_environmentalist
+        }
+        NOT = {
+            owner = {
+                has_valid_civic = civic_environmentalist
+            }
+        }
+        NOR = {
+            is_planet_class = pc_city
+            is_planet_class = pc_hive
+            is_planet_class = pc_machine
+            is_planet_class = pc_relic
+        }
+        is_artificial = no
+    }
+    destroy_trigger = {
+        OR = {
+            is_planet_class = pc_city
+            is_planet_class = pc_hive
+            is_planet_class = pc_machine
+            is_planet_class = pc_relic
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = no_free_district_for_ranger_lodge
+            planet = {
+                num_free_districts = {
+                    type = any
+                    value > 0
+                }
+            }
+        }
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_ranger_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_ranger_drone_add = 1
+    }
+    on_built = {
+        planet = {
+            add_blocker = {
+                type = d_nature_preserve_blocker
+            }
+        }
+    }
+    on_destroy = {
+        planet = {
+            if = {
+                limit = {
+                    has_deposit = d_nature_preserve_blocker
+                }
+                remove_deposit = d_nature_preserve_blocker
+            }
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_ranger_effect_desc
+    }
+}

@@ -1,0 +1,20 @@
+leader_trait_towel = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_scroll"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        science_ship_survey_speed = 0.42
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+    ai_weight = 100
+}

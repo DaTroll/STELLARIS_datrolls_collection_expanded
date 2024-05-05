@@ -1,0 +1,29 @@
+low_tech_farmer = {
+    category = worker
+    is_capped_by_modifier = yes
+    building_icon = building_low_tech_farm
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_low_tech_start = yes
+        }
+    }
+    resources = {
+        category = planet_farmers
+        produces = {
+            food = 4
+        }
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|low_tech_farmer|RESOURCE|food|
+        modifier = {
+            factor = 5
+            has_job = low_tech_farmer
+        }
+    }
+}

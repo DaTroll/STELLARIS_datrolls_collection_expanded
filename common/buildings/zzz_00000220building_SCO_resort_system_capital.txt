@@ -1,0 +1,8 @@
+building_SCO_resort_system_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

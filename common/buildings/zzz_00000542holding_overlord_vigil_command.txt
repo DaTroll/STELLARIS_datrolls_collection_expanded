@@ -1,0 +1,102 @@
+holding_overlord_vigil_command = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_overlord_vigil_command
+    empire_limit = 1
+    category = army
+    potential = {
+        has_overlord_dlc = yes
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = is_capital
+            exists = planet
+            planet = {
+                is_capital = yes
+            }
+        }
+        custom_tooltip = {
+            fail_text = subject_is_bulwark
+            exists = planet.owner
+            planet.owner = {
+                is_specialist_subject_type = {
+                    TYPE = bulwark
+                }
+            }
+        }
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_beholder_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_beholder_drone_add = 1
+    }
+    triggered_country_modifier = {
+        potential = {
+            planet.owner = {
+                is_specialist_subject_tier = {
+                    TYPE = bulwark
+                    TIER = 1
+                }
+            }
+        }
+        starbase_defense_platform_capacity_add = 1
+    }
+    triggered_country_modifier = {
+        potential = {
+            planet.owner = {
+                is_specialist_subject_tier = {
+                    TYPE = bulwark
+                    TIER = 2
+                }
+            }
+        }
+        starbase_defense_platform_capacity_add = 2
+    }
+    triggered_country_modifier = {
+        potential = {
+            planet.owner = {
+                is_specialist_subject_tier = {
+                    TYPE = bulwark
+                    TIER = 3
+                }
+            }
+        }
+        starbase_defense_platform_capacity_add = 4
+    }
+    destroy_trigger = {
+        exists = planet.owner
+        planet.owner = {
+            NOT = {
+                is_specialist_subject_type = {
+                    TYPE = bulwark
+                }
+            }
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_beholder_effect_desc
+    }
+}

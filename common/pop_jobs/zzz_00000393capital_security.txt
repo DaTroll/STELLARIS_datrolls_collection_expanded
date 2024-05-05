@@ -1,0 +1,125 @@
+capital_security = {
+    category = specialist
+    condition_string = BATTLE_THRALL_JOB_TRIGGER
+    building_icon = building_senate_building
+    clothes_texture_index = 5
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    resources = {
+        category = planet_enforcers
+        produces = {
+            unity = 2
+            society_research = 2
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_active_tradition = tr_domination_judgment_corps
+                }
+            }
+            unity = 1
+        }
+        upkeep = {
+            trigger = {
+                exists = planet
+                planet = {
+                    has_modifier = anticrime_campaign
+                }
+            }
+            energy = 2
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                has_modifier = anticrime_campaign
+            }
+        }
+        modifier = {
+            planet_crime_add = -10
+        }
+    }
+    possible = {
+        soldier_job_check_trigger = yes
+        owner = {
+            is_gestalt = no
+        }
+    }
+    weight = {
+        weight = @soldier_job_weight
+        modifier = {
+            factor = 10
+            exists = planet
+            planet = {
+                has_modifier = martial_law
+            }
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_resilient
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_very_strong
+        }
+        modifier = {
+            factor = 1.5
+            has_trait = trait_strong
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_weak
+        }
+        modifier = {
+            factor = 0.1
+            is_enslaved = yes
+            NOT = {
+                has_slavery_type = {
+                    type = slavery_military
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            has_slavery_type = {
+                type = slavery_military
+            }
+        }
+        modifier = {
+            factor = 0.1
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 1.1
+            has_trait = trait_cybernetic
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_presapient_earthbound
+        }
+        modifier = {
+            factor = 1.1
+            has_trait = trait_limited_regeneration
+        }
+        modifier = {
+            factor = 0
+            species = {
+                can_be_soldier = no
+            }
+        }
+        modifier = {
+            factor = 2
+            has_trait = trait_lithoid
+        }
+    }
+}

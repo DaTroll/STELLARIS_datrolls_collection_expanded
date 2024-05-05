@@ -1,0 +1,78 @@
+turtle_miner = {
+    category = worker
+    is_capped_by_modifier = yes
+    clothes_texture_index = 2
+    icon = miner
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 3
+            food = 2
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_active_building = building_food_processing_facility
+                }
+            }
+            food = 1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_active_building = building_food_processing_center
+                }
+            }
+            food = 2
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_multiple_resources_modifier|JOB|turtle_miner|RESOURCE1|minerals|WEIGHT1|0.5|RESOURCE2|food|WEIGHT2|0.5|
+        modifier = {
+            factor = 2
+            OR = {
+                has_trait = trait_robot_harvesters
+                has_trait = trait_agrarian
+                has_trait = trait_robot_power_drills
+                has_trait = trait_industrious
+            }
+        }
+        modifier = {
+            factor = 1.1
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+        }
+        modifier = {
+            factor = 0.25
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_lithoid
+            owner = {
+                is_lithoid_empire = yes
+                has_monthly_income = {
+                    resource = food
+                    value >= 0
+                }
+            }
+        }
+    }
+}

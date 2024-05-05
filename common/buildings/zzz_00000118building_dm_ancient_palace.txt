@@ -1,0 +1,8 @@
+building_dm_ancient_palace = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

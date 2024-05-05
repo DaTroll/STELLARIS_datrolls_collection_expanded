@@ -1,0 +1,24 @@
+leader_trait_legendary_far_from_home = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_nebulous_past"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_speed_mult = 0.25
+        fleet_mia_time_mult = -0.5
+        ship_archaeological_site_excavation_speed_mult = 0.25
+    }
+    self_modifier = {
+        leader_lifespan_add = 10
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

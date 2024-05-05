@@ -1,0 +1,34 @@
+pd_building_rad_farms = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        is_pd_radiotrophic_world = yes
+        NOT = {
+            has_building = pd_building_gamma_research
+        }
+        NOT = {
+            has_building = pd_building_rad_farms
+        }
+        NOT = {
+            has_building = pd_building_gamma_energy
+        }
+        NOT = {
+            has_building_construction = pd_building_gamma_research
+        }
+        NOT = {
+            has_building_construction = pd_building_rad_farms
+        }
+        NOT = {
+            has_building_construction = pd_building_gamma_energy
+        }
+        NOT = {
+            has_modifier = resort_colony
+        }
+    }
+    inline_script = "buildings/pd_rare_farm_building"
+    destroy_trigger = {
+        planet = {
+            is_pd_radiotrophic_world = no
+        }
+    }
+}

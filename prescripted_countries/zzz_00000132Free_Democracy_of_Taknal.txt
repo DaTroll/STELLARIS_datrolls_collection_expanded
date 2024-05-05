@@ -1,0 +1,88 @@
+"Free Democracy of Taknal" = {
+    key = "Free Democracy of Taknal"
+    ship_prefix = {
+        key = "DTS"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith5"
+        species_name = {
+            key = "Taknal"
+        }
+        species_plural = {
+            key = "Taknan"
+        }
+        species_adjective = {
+            key = "Taknal"
+        }
+        species_bio = "The Taknal do believe in two things. In science and in democracy. Well at least according to their state propaganda. The latter one was imposed after the big war and the former was accepted when they noticed how a slight technological advantage can change the tide of History. By nature they are very intelligent and especially clever creatures who do like to talk about their ideas and discuss many issues. Due to the past, they have developped a strong mecanical branch of engineering and are proud creators of their robots, who will one day fight their battles. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_intelligent"
+        trait = "trait_quarrelsome"
+        trait = "trait_sedentary"
+        trait = "trait_communal"
+        trait = "trait_natural_sociologists"
+    }
+    name = {
+        key = "Free Democracy of Taknal"
+    }
+    adjective = {
+        key = "Taknalan"
+    }
+    authority = "auth_democratic"
+    government = "gov_direct_democracy"
+    advisor_voice_type = "l_lithoid_vir"
+    planet_name = {
+        key = "Taknal"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Toknol"
+    }
+    initializer = ""
+    graphical_culture = "lithoid_01"
+    city_graphical_culture = "lithoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tak"
+            }
+        }
+        portrait = "lith5"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_parliamentary_system"
+        "civic_meritocracy"
+    }
+    origin = "origin_mechanists"
+}

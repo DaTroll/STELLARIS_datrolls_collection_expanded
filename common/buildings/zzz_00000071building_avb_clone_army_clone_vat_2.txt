@@ -1,0 +1,8 @@
+building_avb_clone_army_clone_vat_2 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,84 @@
+namespace = colony_mod
+namespace = colony_fed
+planet_event = {
+    id = colony_mod.1
+    title = "colony_mod.1.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = "colony_mod.1.desc"
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = "colony_mod.1.desc_mach"
+    }
+    picture = GFX_evt_alien_city
+    show_sound = event_air_raid_siren
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+    }
+    trigger = {
+        OR = {
+            has_modifier = "irradiated_planet"
+            has_modifier = recovered_tomb_world
+        }
+        NOT = {
+            has_planet_flag = irradiated_colony_flag
+        }
+        num_pops > 0
+    }
+    immediate = {
+        set_planet_flag = irradiated_colony_flag
+    }
+    is_triggered_only = yes
+    option = {
+        name = colony_mod.1.a
+        custom_tooltip = irradiated_planet_tooltip
+        hidden_effect = {
+            random_list = {
+                20 = {
+                    planet_event = {
+                        id = colony_mod.6
+                        days = 40
+                        random = 20
+                    }
+                }
+                20 = {
+                    planet_event = {
+                        id = colony_mod.7
+                        days = 40
+                        random = 20
+                    }
+                }
+                20 = {
+                    planet_event = {
+                        id = colony_mod.8
+                        days = 40
+                        random = 20
+                    }
+                }
+                40 = {
+                    planet_event = {
+                        id = colony_mod.9
+                        days = 40
+                        random = 20
+                    }
+                }
+            }
+        }
+    }
+}

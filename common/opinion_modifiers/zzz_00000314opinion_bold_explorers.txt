@@ -1,0 +1,5 @@
+opinion_bold_explorers = {
+    opinion = {
+        base = 750
+    }
+}

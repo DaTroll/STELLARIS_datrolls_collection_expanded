@@ -1,0 +1,26 @@
+leader_trait_paranoid_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_paranoid"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_paranoid"
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        all_technology_research_speed = -0.1
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_spark_of_genius
+        leader_trait_spark_of_genius_2
+        leader_trait_maniacal
+        leader_trait_maniacal_2
+        leader_trait_maniacal_3
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

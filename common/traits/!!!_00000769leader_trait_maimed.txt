@@ -1,0 +1,16 @@
+leader_trait_maimed = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative_no_tiers
+        ICON = "GFX_leader_trait_maimed"
+        COUNCIL = no
+    }
+    self_modifier = {
+        leader_lifespan_add = -40
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

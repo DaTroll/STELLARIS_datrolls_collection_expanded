@@ -1,0 +1,64 @@
+building_pdzro_dealer_domestic = {
+    base_buildtime = 360
+    base_cap_amount = 1
+    category = resource
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            is_planet_class = pc_pd_zro
+        }
+    }
+    prerequisites = {
+        "tech_pd_zro_dealer"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        modifier = {
+            job_pdzro_dealer_add = 4
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_pdzro_dealer_drone_add = 4
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+            sr_zro = 100
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    ai_resource_production = {
+        trigger = {
+            always = yes
+        }
+        sr_zro = 1
+    }
+}

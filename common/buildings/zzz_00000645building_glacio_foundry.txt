@@ -1,0 +1,41 @@
+building_glacio_foundry = {
+    base_buildtime = 600
+    category = manufacturing
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_glacio
+        owner = {
+            NOT = {
+                is_catalytic_empire = yes
+            }
+        }
+        NOT = {
+            has_building = building_glacio_foundry
+        }
+        NOT = {
+            has_building_construction = building_glacio_foundry
+        }
+        NOT = {
+            has_building = building_glacio_resort
+        }
+        NOT = {
+            has_building_construction = building_glacio_resort
+        }
+        NOT = {
+            has_building = building_glacio_mine
+        }
+        NOT = {
+            has_building_construction = building_glacio_mine
+        }
+    }
+    inline_script = "buildings/pd_rare_foundry_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_glacio
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+leader_trait_assembler = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_assembler"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        OR = {
+            has_trait = subclass_official_governor
+            has_trait = subclass_scientist_governor
+        }
+        exists = owner
+        owner = {
+            OR = {
+                is_gestalt = yes
+                has_technology = tech_robotic_workers
+            }
+        }
+    }
+    leader_trait_type = veteran
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = no
+            }
+        }
+        planet_pop_assembly_mult = 0.15
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        planet_pop_assembly_organic_mult = 0.15
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = no
+            }
+        }
+        planet_pop_assembly_mult = 0.075
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        planet_pop_assembly_organic_mult = 0.075
+    }
+    leader_class = {
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

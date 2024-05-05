@@ -1,0 +1,8 @@
+fotd_apoligized = {
+    opinion = {
+        base = -100
+    }
+    decay = {
+        base = 1
+    }
+}

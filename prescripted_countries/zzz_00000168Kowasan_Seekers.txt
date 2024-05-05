@@ -1,0 +1,111 @@
+"Kowasan Seekers" = {
+    key = "Kowasan Seekers"
+    ship_prefix = {
+        key = "KAS"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox14"
+        species_name = {
+            key = "Kowas Alt."
+            literal = yes
+        }
+        species_plural = {
+            key = "Kowasa"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Kowasan"
+            literal = yes
+        }
+        species_bio = "Some one came, offering solutions and help. After gaining out trust, he gave us a last item for the population. But then, he left, never to return. He changed us. Made us into those ... monsters. What could we do ? We trusted him and he left. We long for revenge. We will find him. Make him pay. And we shall undo our monstrosity. But until there. We shall seek and with vengence on mind, we shall hunt."
+        name_list = "TOX1"
+        gender = indeterminable
+        trait = "trait_very_strong"
+        trait = "trait_artificial_intelligence"
+        trait = "trait_intelligent"
+        trait = "trait_unruly"
+        trait = "trait_nonadaptive"
+    }
+    name = {
+        key = "Kowasan Seekers"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJ%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "Kowasan"
+                    literal = yes
+                }
+            }
+        }
+    }
+    authority = "auth_imperial"
+    government = "gov_blood_court"
+    planet_name = {
+        key = "Kowaseena"
+        literal = yes
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Star #1058"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "toxoid_01"
+    city_graphical_culture = "aquatic_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_50.dds"
+        }
+        colors = {
+            "green"
+            "ocean_turquoise"
+            "pink"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Kowas-een"
+                literal = yes
+            }
+        }
+        portrait = "tox14"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "High Alt. Executioner"
+            literal = yes
+        }
+        heir_title = {
+            key = "Low Alt. Executioner"
+            literal = yes
+        }
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "toxoids_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_corvee_system"
+        "civic_fanatic_purifiers"
+    }
+    origin = "origin_overtuned"
+}

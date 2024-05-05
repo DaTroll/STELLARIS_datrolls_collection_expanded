@@ -1,0 +1,6 @@
+government_employee = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

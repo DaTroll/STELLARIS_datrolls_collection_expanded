@@ -1,0 +1,80 @@
+tech_precognition_interface = {
+    cost = @tier4cost2
+    area = society
+    tier = 4
+    category = {
+        psionics
+    }
+    is_rare = yes
+    prerequisites = {
+        "tech_telepathy"
+    }
+    weight = @tier4weight2
+    is_reverse_engineerable = no
+    prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_TITLE"
+            desc = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_DESC"
+        }
+    }
+    potential = {
+        NOT = {
+            has_ethic = ethic_gestalt_consciousness
+        }
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            host_has_dlc = "Utopia"
+        }
+        modifier = {
+            factor = 0.5
+            NOT = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_psionics
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_precognition_interface
+        }
+        modifier = {
+            factor = 2
+            has_ethic = "ethic_spiritualist"
+        }
+        modifier = {
+            factor = 3
+            has_ethic = "ethic_fanatic_spiritualist"
+        }
+        modifier = {
+            factor = 3
+            has_paragon_dlc = no
+            any_owned_leader = {
+                has_trait = leader_trait_shroudwalker
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_2
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_3
+                }
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

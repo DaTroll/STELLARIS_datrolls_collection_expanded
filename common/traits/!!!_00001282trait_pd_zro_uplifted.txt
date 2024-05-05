@@ -1,0 +1,69 @@
+trait_pd_zro_uplifted = {
+    cost = 0
+    potential_crossbreeding_chance = 0
+    opposites = {
+        "trait_very_strong"
+        "trait_weak"
+        "trait_strong"
+        "trait_intelligent"
+    }
+    sorting_priority = 20
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        army_damage_mult = 0.1
+        planet_jobs_minerals_produces_mult = 0.1
+        planet_jobs_food_produces_mult = 0.1
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_planet_class = pc_pd_zro
+                    is_pd_shroud_world = yes
+                    has_building = building_pdzro_dealer_domestic
+                }
+                exists = owner
+            }
+        }
+        planet_jobs_unity_produces_mult = 0.2
+        planet_jobs_physics_research_produces_mult = 0.2
+        planet_jobs_engineering_research_produces_mult = 0.2
+        planet_jobs_society_research_produces_mult = 0.2
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                NOR = {
+                    is_planet_class = pc_pd_zro
+                    is_pd_shroud_world = yes
+                    has_building = building_pdzro_dealer_domestic
+                }
+                exists = owner
+            }
+        }
+        planet_jobs_unity_produces_mult = -0.4
+        planet_jobs_physics_research_produces_mult = -0.4
+        planet_jobs_engineering_research_produces_mult = -0.4
+        planet_jobs_society_research_produces_mult = -0.4
+    }
+    custom_tooltip_with_modifiers = trait_pd_zro_uplifted_tooltip
+    ai_weight = {
+        weight = 0
+    }
+}

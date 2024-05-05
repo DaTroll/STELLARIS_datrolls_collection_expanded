@@ -1,0 +1,3 @@
+TC_GOLEM_MACHINE = {
+    uses_modifiers = no
+}

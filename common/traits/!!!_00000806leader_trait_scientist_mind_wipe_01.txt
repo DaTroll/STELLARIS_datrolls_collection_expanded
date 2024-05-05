@@ -1,0 +1,20 @@
+leader_trait_scientist_mind_wipe_01 = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = scientist
+        ICON = "GFX_leader_trait_mind_wipe"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.1
+        category_psionics_research_speed_mult = 0.25
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,5 @@
+berserker_awoken_hive = {
+    ai = {
+        enabled = no
+    }
+}

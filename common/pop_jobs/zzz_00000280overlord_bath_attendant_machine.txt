@@ -1,0 +1,39 @@
+overlord_bath_attendant_machine = {
+    category = complex_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_toxic_baths
+    clothes_texture_index = 1
+    icon = bath_attendant
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_overlord_bath_attendants_machine
+        upkeep = {
+            minerals = 2
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_bath_attendants_machine
+        produces = {
+            unity = 5
+        }
+    }
+    triggered_planet_modifier = {
+        planet_pop_assembly_mult = 0.01
+        pop_amenities_usage_mult = 0.01
+        mult = planet.value:toxic_attendant_growth
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

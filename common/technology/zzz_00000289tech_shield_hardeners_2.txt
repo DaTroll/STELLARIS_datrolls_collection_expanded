@@ -1,0 +1,18 @@
+tech_shield_hardeners_2 = {
+    area = physics
+    cost = @tier5cost3
+    tier = 5
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_shield_hardeners_1"
+        "tech_mine_zro"
+    }
+    weight = @tier5weight3
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,5 @@
+kuat_fleet = {
+    ai = {
+        enabled = no
+    }
+}

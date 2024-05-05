@@ -1,0 +1,25 @@
+leader_trait_narrow_minded_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_narrow_minded"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_narrow_minded"
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        all_technology_research_speed = -0.05
+        num_tech_alternatives_add = -1
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_inquisitive
+        leader_trait_inquisitive_2
+        leader_trait_inquisitive_3
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

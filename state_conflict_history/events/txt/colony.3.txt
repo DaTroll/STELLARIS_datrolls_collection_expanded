@@ -1,0 +1,41 @@
+namespace = colony
+planet_event = {
+    id = colony.3
+    title = "PROJECT_COMPLETE"
+    desc = {
+        text = "colony.3.desc"
+        trigger = {
+            owner = {
+                is_xenophile = no
+            }
+        }
+    }
+    desc = {
+        text = "colony.3.desc.phile"
+        trigger = {
+            owner = {
+                is_xenophile = yes
+            }
+        }
+    }
+    picture = GFX_evt_alien_planet
+    show_sound = event_alien_nature
+    location = ROOT
+    is_triggered_only = yes
+    option = {
+        name = EXCELLENT
+        set_planet_flag = burned_forests
+        remove_modifier = "migrating_forests"
+        hidden_effect = {
+            remove_deposit = d_migrating_forests
+        }
+        owner = {
+            if = {
+                limit = {
+                    is_xenophile = yes
+                }
+                gain_negative_media_coverage = yes
+            }
+        }
+    }
+}

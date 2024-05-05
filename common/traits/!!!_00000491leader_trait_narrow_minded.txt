@@ -1,0 +1,30 @@
+leader_trait_narrow_minded = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_narrow_minded"
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        all_technology_research_speed = -0.05
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_inquisitive
+        leader_trait_inquisitive_2
+        leader_trait_inquisitive_3
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/council_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_slow_learners
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

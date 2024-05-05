@@ -1,0 +1,30 @@
+low_tech_laborer = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_low_tech_scrap_refinery
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    possible = {
+    }
+    resources = {
+        category = planet_laborer
+        produces = {
+            consumer_goods = 3
+            alloys = 1.5
+        }
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_multiple_resources_modifier|JOB|low_tech_laborer|RESOURCE1|consumer_goods|WEIGHT1|0.5|RESOURCE2|alloys|WEIGHT2|0.5|
+        modifier = {
+            factor = 5
+            has_job = low_tech_laborer
+        }
+    }
+}

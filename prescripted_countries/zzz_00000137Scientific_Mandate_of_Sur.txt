@@ -1,0 +1,87 @@
+"Scientific Mandate of Sur" = {
+    key = "Scientific Mandate of Sur"
+    ship_prefix = {
+        key = "SSV"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith11"
+        species_name = {
+            key = "Suru"
+        }
+        species_plural = {
+            key = "Surus"
+        }
+        species_adjective = {
+            key = "Suru"
+        }
+        species_bio = "the most intriguing aspect of this society is the fact, that all of their members are pseudo-levitating over the ground defying logic and gravity. Therefore many extra-sururian incursions have taken place, some more and some less discrete than others. The fact being that many abductions have taken place, transforming the Suru society from its core, the once spiritualist empire is now hellbend on finding out why the bodies are so logic defying. The many incursions made them also very suspicious, outright xeneophobe for many."
+        name_list = "LITHOID3"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_intelligent"
+        trait = "trait_quick_learners"
+        trait = "trait_weak"
+        trait = "trait_communal"
+        trait = "trait_fleeting_lithoid"
+    }
+    name = {
+        key = "Scientific Mandate of Sur"
+    }
+    adjective = {
+        key = "Suran"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_plutocratic_oligarchy"
+    planet_name = {
+        key = "Sururia"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Sur"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "avian_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "light_orange"
+            "dark_grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Sur"
+            }
+        }
+        portrait = "lith11"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_charismatic"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_police_state"
+    }
+    origin = "origin_galactic_doorstep"
+}

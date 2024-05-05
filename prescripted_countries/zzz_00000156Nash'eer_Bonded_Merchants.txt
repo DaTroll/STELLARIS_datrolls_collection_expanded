@@ -1,0 +1,138 @@
+"Nash'eer Bonded Merchants" = {
+    key = "Nash'eer Bonded Merchants"
+    ship_prefix = {
+        key = "NCF"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu11"
+        species_name = {
+            key = "Nash'eer"
+            literal = yes
+        }
+        species_plural = {
+            key = "Nash'eers"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Nash'eer"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "Miracoulously enough, the Nash'eer survived themselves to a point to even devellop intergalactic space travel. Even though every aspect of their civilisation pointed towards their doom and their self destruction. Somehow they managed not to befall to their natural and almost omnipresent violence despise their weak nature. Once aspect which helped them to survive was perhaps the living elder, few in numbers but rich in wisdom and such they guided the rather ... young Nash'eer to survival. Even if their survival was in a form of a Megacorporation who was able to impose itself among the nations."
+        name_list = "AQUATIC2"
+        gender = not_set
+        trait = "trait_venerable"
+        trait = "trait_weak"
+        trait = "trait_quarrelsome"
+        trait = "trait_unruly"
+        trait = "trait_rapid_breeders"
+    }
+    name = {
+        key = "format.trade_league.1"
+        variables = {
+             {
+                key = "trade_league"
+                value = {
+                    key = "Bonded_Merchants"
+                }
+            }
+             {
+                key = "This.GetSpeciesName"
+                value = {
+                    key = "Nash'eer"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "trade_league"
+                            value = {
+                                key = "Bonded_Merchants"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Nash'eer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_corporate"
+    government = "gov_trade_league"
+    advisor_voice_type = "l_slick_corp"
+    planet_name = {
+        key = "Nos"
+        literal = yes
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "He'drik"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_08.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_50.dds"
+        }
+        colors = {
+            "black"
+            "intense_blue"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Lagur"
+                literal = yes
+            }
+        }
+        portrait = "aqu11"
+        texture = 4
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_slaving_despots_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophile"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_free_traders"
+        "civic_permanent_employment"
+    }
+    origin = "origin_shoulders_of_giants"
+}

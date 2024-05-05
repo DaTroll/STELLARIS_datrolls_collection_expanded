@@ -1,0 +1,82 @@
+building_artist_patron = {
+    base_buildtime = @b2_time
+    can_demolish = yes
+    empire_limit = 1
+    category = unity
+    potential = {
+        custom_tooltip = {
+            text = EMPIRE_UNIQUE_BUILDING
+            owner = {
+                has_country_flag = artist_building_patron
+            }
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        planet_jobs_unity_produces_mult = 0.15
+        job_culture_worker_add = 3
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        planet_jobs_unity_produces_mult = 0.15
+        job_evaluator_add = 3
+    }
+    resources = {
+        category = planet_buildings
+        upkeep = {
+            energy = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = job_culture_worker_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_evaluator_effect_desc
+    }
+    desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = building_artist_patron_desc
+    }
+    desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = building_artist_patron_gestalt_desc
+    }
+}

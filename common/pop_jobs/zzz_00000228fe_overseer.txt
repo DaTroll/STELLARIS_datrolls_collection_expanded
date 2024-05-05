@@ -1,0 +1,39 @@
+fe_overseer = {
+    category = precursor
+    is_capped_by_modifier = yes
+    clothes_texture_index = 1
+    icon = administrator
+    building_icon = building_palace
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_precursor_job
+    possible = {
+        is_same_species = owner
+    }
+    planet_modifier = {
+        planet_stability_add = 5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 10
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = 30000
+        modifier = {
+            factor = 0.01
+            exists = planet
+            exists = planet.controller
+            planet.controller = {
+                OR = {
+                    is_country_type = swarm
+                    is_country_type = ai_empire
+                }
+            }
+        }
+    }
+}

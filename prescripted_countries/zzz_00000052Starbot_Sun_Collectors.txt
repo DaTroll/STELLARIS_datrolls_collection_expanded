@@ -1,0 +1,88 @@
+"Starbot Sun Collectors" = {
+    key = "Starbot Sun Collectors"
+    ship_prefix = {
+        key = "SC"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_pla_robot"
+        species_name = {
+            key = "Starbot"
+        }
+        species_plural = {
+            key = "Starbots"
+        }
+        species_adjective = {
+            key = "Starbot"
+        }
+        species_bio = "The Starbots are sofisticated robots. With their Solar Panels all over their bodies and ships. They have been for centuries using majorarily the power of the stars but only for sublight speed. They have specific branches dedicated especially to warfare. Those killerbots, which some species refer to as \"centipedes\" are extremly dangerous and devastating, especially against infantery. It is unknown if their initial purpose was power collection or warfare, but at least we know they are great at doing both!"
+        name_list = "MACHINE2"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_superconductive"
+        trait = "trait_robot_double_jointed"
+        trait = "trait_robot_high_maintenance"
+        trait = "trait_robot_custom_made"
+    }
+    name = {
+        key = "Starbot Sun Collectors"
+    }
+    adjective = {
+        key = "Starbot"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_research"
+    planet_name = {
+        key = "Yellow"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "White"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "zoological"
+            file = "flag_zoological_1.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "yellow"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Unit K12"
+            }
+        }
+        portrait = "sd_pla_robot"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Collector"
+        }
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "machine_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_introspective"
+        "civic_machine_warbots"
+    }
+    origin = "origin_default"
+}

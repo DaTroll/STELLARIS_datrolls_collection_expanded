@@ -1,0 +1,43 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+subclass_official_diplomacy_councilor = {
+    custom_subtitle = councilor_subclass_governor
+    leader_trait_type = subclass
+    inline_script = {
+        script = trait/icon_subclass
+        SUBCLASS = official_diplomacy_councilor
+        COUNCIL = yes
+    }
+    custom_tooltip_with_modifiers = councilor_subclass_tt
+    triggered_councilor_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        country_trust_growth = 0.05
+    }
+    leader_potential_add = {
+        NAND = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            is_councilor = yes
+            factor = @ai_selection_high
+        }
+        modifier = {
+            is_councilor = no
+            factor = @ai_selection_low
+        }
+    }
+    leader_class = {
+        official
+    }
+    background_icon = "GFX_leader_subclass_official_diplomacy_councilor_background"
+}

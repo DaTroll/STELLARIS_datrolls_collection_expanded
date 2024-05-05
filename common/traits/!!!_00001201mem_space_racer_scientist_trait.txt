@@ -1,0 +1,19 @@
+mem_space_racer_scientist_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_medal"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        category_voidcraft_research_speed_mult = 0.15
+        category_propulsion_research_speed_mult = 0.15
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

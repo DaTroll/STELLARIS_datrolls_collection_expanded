@@ -1,0 +1,16 @@
+trait_xvcv_mdlc_pc_machine_ecu_preference = {
+    icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+    species_potential_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        MACHINE
+    }
+    sorting_priority = 30
+    modifier = {
+        xvcv_mdlc_pc_machine_ecu_habitability = 1
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

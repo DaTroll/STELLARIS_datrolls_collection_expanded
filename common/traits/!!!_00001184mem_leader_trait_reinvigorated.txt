@@ -1,0 +1,20 @@
+mem_leader_trait_reinvigorated = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_resilient"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    self_modifier = {
+        leader_lifespan_add = 30
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    initial = no
+    randomized = no
+}

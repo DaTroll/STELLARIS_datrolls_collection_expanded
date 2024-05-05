@@ -1,0 +1,9 @@
+ship_section_template = {
+    key = "azaryn_dome_key"
+    ship_size = azaryn_dome
+    should_draw_components = no
+    fits_on_slot = "ship"
+    entity = "azaryn_dome_ship_entity"
+    icon = "GFX_ship_part_core_mid"
+    large_utility_slots = 10
+}

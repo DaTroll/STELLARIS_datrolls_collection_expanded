@@ -1,0 +1,35 @@
+leader_trait_polluter = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_polluter"
+        COUNCIL = no
+        TIER = 1
+    }
+    planet_modifier = {
+        pop_growth_speed = -0.05
+    }
+    sector_modifier = {
+        pop_growth_speed = -0.025
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        exists = owner
+        owner = {
+            is_machine_empire = no
+        }
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            has_ethic = ethic_materialist
+            factor = @ethic_weight_mult
+        }
+    }
+}

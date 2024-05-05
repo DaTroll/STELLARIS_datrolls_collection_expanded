@@ -1,0 +1,11 @@
+tech_advanced_dummy_workers = {
+    cost = 0
+    area = engineering
+    category = {
+        industry
+    }
+    tier = 2
+    potential = {
+        merg_has_wandering_witch = yes
+    }
+}

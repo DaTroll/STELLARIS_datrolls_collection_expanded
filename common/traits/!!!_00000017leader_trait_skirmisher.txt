@@ -1,0 +1,21 @@
+leader_trait_skirmisher = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_skirmisher
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        ship_weapon_damage = 0.025
+        ship_speed_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

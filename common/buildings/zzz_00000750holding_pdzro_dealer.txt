@@ -1,0 +1,62 @@
+holding_pdzro_dealer = {
+    base_buildtime = 360
+    owner_type = subject_holding
+    icon = building_pdzro_dealer_domestic
+    base_cap_amount = 1
+    category = resource
+    planet_modifier = {
+        pop_happiness = 0.1
+        monthly_loyalty = 1
+    }
+    prerequisites = {
+        "tech_pd_zro_dealer"
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        modifier = {
+            job_overlord_pdzro_dealer_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_overlord_pdzro_dealer_drone_add = 2
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+            sr_zro = 100
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_pdzro_dealer_effect_desc
+    }
+}

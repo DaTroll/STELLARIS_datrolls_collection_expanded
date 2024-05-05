@@ -1,0 +1,23 @@
+leader_trait_fleet_logistician = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_fleet_logistician
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = no
+    }
+    fleet_modifier = {
+        ship_orbit_upkeep_mult = -0.15
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/pilot_weight_mult
+    }
+}

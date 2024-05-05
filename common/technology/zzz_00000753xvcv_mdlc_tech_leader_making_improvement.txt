@@ -1,0 +1,15 @@
+xvcv_mdlc_tech_leader_making_improvement = {
+    cost = @tier3cost3
+    area = physics
+    tier = 3
+    category = {
+        computing
+    }
+    prerequisites = {
+        "xvcv_mdlc_tech_leader_making"
+    }
+    weight = @tier3weight3
+    modifier = {
+        custom_tooltip = xvcv_mdlc_tech_leader_making_improvement_tooltip
+    }
+}

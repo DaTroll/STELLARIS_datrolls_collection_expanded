@@ -1,0 +1,86 @@
+"Han Solar Realm" = {
+    key = "Han Solar Realm"
+    ship_prefix = {
+        key = "HSF"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun17"
+        species_name = {
+            key = "Han"
+        }
+        species_plural = {
+            key = "Hans"
+        }
+        species_adjective = {
+            key = "Han"
+        }
+        species_bio = "The Han enjoy their ^utopic lifestyle\" since they have been brought here by an unknown alien race a long time ago. The Han suppose this because they never found anysort of traces of early civilisations or even anything like ruins or relics on their homeworld. Therefore they know little about their own origins or even evolution. Some of them, however are interessted in studying pre-FTL Xenospecies in order to better understand their own origins, or at least own their early evolution worked. "
+        name_list = "PLANT"
+        gender = not_set
+        trait = "trait_talented"
+        trait = "trait_traditional"
+        trait = "trait_weak"
+        trait = "trait_fleeting"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Han Solar Realm"
+    }
+    adjective = {
+        key = "Han"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_theocratic_oligarchy"
+    planet_name = {
+        key = "Han"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Han"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_16.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "yellow"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Fronds of Red"
+            }
+        }
+        portrait = "fun17"
+        texture = 9
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_meritocracy"
+        "civic_idyllic_bloom"
+    }
+    origin = "origin_life_seeded"
+}

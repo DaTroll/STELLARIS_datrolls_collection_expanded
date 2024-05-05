@@ -1,0 +1,8 @@
+building_ie_spawning_pool = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

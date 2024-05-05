@@ -1,0 +1,8 @@
+building_fe_machine_dome = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

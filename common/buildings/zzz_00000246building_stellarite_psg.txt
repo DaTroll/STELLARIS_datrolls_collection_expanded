@@ -1,0 +1,8 @@
+building_stellarite_psg = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,8 @@
+building_ae_nano_forge = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

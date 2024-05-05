@@ -1,0 +1,65 @@
+trait_farm_hands = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 1
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    allowed_origins = {
+        origin_overtuned
+    }
+    randomized = no
+    species_potential_add = {
+        exists = from
+        from = {
+            has_origin = origin_overtuned
+        }
+    }
+    species_possible_remove = {
+        can_remove_overtuned_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    custom_tooltip_with_modifiers = farm_hands_tooltip
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        planet_jobs_food_produces_mult = 0.15
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_edict = damn_the_consequences
+            }
+        }
+        planet_jobs_food_produces_mult = 0.3
+    }
+    modifier = {
+        leader_lifespan_add = -10
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_farming_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_rural_designation = yes
+            }
+        }
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

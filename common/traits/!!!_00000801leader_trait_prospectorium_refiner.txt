@@ -1,0 +1,26 @@
+leader_trait_prospectorium_refiner = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_specialist
+        CLASS = official
+        ICON = "GFX_leader_trait_prospectorium_refiner"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_chemists_volatile_motes_produces_mult = 0.25
+        planet_refiners_exotic_gases_produces_mult = 0.25
+        planet_translucers_rare_crystals_produces_mult = 0.25
+    }
+    sector_modifier = {
+        planet_chemists_volatile_motes_produces_mult = 0.125
+        planet_refiners_exotic_gases_produces_mult = 0.125
+        planet_translucers_rare_crystals_produces_mult = 0.125
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

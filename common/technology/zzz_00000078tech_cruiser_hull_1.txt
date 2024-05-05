@@ -1,0 +1,25 @@
+tech_cruiser_hull_1 = {
+    cost = @tier3cost3
+    area = engineering
+    tier = 3
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_cruisers"
+    }
+    weight = @tier3weight3
+    modifier = {
+        custom_tooltip = tech_cruiser_hull_effect
+        shipsize_cruiser_hull_mult = 0.1
+        shipsize_offspring_cruiser_hull_mult = 0.1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_supremacy_adopt
+        }
+    }
+    ai_weight = {
+    }
+}

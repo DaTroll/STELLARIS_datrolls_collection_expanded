@@ -1,0 +1,27 @@
+tech_pd_tracking_3 = {
+    area = physics
+    tier = 4
+    cost = @tier4cost1
+    category = {
+        computing
+    }
+    ai_update_type = military
+    prerequisites = {
+        "tech_pd_tracking_2"
+    }
+    weight = @tier4weight1
+    weight_modifier = {
+    }
+    ai_weight = {
+        modifier = {
+            factor = @favored_weapon_ai_tech_factor
+            is_preferred_weapons = weapon_type_strike_craft
+        }
+        modifier = {
+            factor = @disfavored_weapon_ai_tech_factor
+            NOT = {
+                is_preferred_weapons = weapon_type_strike_craft
+            }
+        }
+    }
+}

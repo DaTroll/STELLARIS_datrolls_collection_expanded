@@ -1,0 +1,8 @@
+opinion_voted_to_kill_tiyanki = {
+    opinion = {
+        base = -20
+    }
+    decay = {
+        base = 1
+    }
+}

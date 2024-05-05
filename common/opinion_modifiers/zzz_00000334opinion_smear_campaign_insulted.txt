@@ -1,0 +1,13 @@
+opinion_smear_campaign_insulted = {
+    opinion = {
+        base = -60
+    }
+    accumulative = yes
+    min = -300
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

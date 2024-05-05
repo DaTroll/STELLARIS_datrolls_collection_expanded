@@ -1,0 +1,103 @@
+"Sons of Temeen" = {
+    key = "Sons of Temeen"
+    ship_prefix = {
+        key = "TIC"
+        literal = yes
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox5"
+        species_name = {
+            key = "Tameen"
+            literal = yes
+        }
+        species_plural = {
+            key = "Tamaan"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Tameenaan"
+            literal = yes
+        }
+        species_bio = "The Tameen are able to fly. somehow. No one knows why, or how, they just do it. They explain it themselves by their deep faith in the \"First one\" - who they claim is their first ancestor. But along side their spirituality and their this oriented society, they also are deeply xenophile, as they believe that they must share and expand the faith of the \"First One\" among as many other civilisations as possible. They want to achieve great things, and to do as much, they will convert every possible way of doing. Beware of \"the first one\""
+        name_list = "TOX3"
+        gender = not_set
+        trait = "trait_latent_psionic"
+        trait = "trait_inorganic_breath"
+        trait = "trait_repugnant"
+        trait = "trait_docile"
+        trait = "trait_slow_learners"
+    }
+    name = {
+        key = "Sons of Temeen"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJ%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "Tameenaan"
+                    literal = yes
+                }
+            }
+        }
+    }
+    authority = "auth_imperial"
+    government = "gov_enlightened_monarchy"
+    planet_name = {
+        key = "Tamen's World"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Tamen's Eye"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "toxoid_01"
+    city_graphical_culture = "toxoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_18.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "rounded_middle.dds"
+        }
+        colors = {
+            "dark_brown"
+            "shadow_teal"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tameen VI"
+                literal = yes
+            }
+        }
+        portrait = "tox5_f"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_decadent_hierarchy_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_ascensionists"
+        "civic_philosopher_king"
+    }
+    origin = "origin_shroudwalker_apprentice"
+}

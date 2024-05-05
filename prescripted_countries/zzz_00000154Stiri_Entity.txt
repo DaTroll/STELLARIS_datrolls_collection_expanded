@@ -1,0 +1,137 @@
+"Stiri Entity" = {
+    key = "Stiri Entity"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu7"
+        species_name = {
+            key = "Stiri"
+            literal = yes
+        }
+        species_plural = {
+            key = "Stiris"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Stiri"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Stiri are unique in the way they are connected to their planet. Many suppose that the only reason they are alive in the first place is their connection to or from the Tree which reigns centraly over their planet. The roots of said planet are supposed to connect every point and every single living being on this planet, but no one actually saw it all.The Stiri are all linked to themselves as a Hive mind aswell as to the Tree, which makes the severance from both almost always fatal. Thanks to their shared conciousness and their connection to the Tree they do, however, master the art of farming without any chemicals."
+        name_list = "PLANT3"
+        gender = indeterminable
+        trait = "trait_hive_mind"
+        trait = "trait_agrarian"
+        trait = "trait_slow_breeders"
+        trait = "trait_communal"
+        trait = "trait_sedentary"
+        trait = "trait_charismatic"
+    }
+    name = {
+        key = "format.hive_mind.1"
+        variables = {
+             {
+                key = "hive_mind"
+                value = {
+                    key = "Entity"
+                }
+            }
+             {
+                key = "This.GetSpeciesName"
+                value = {
+                    key = "Stiri"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "hive_mind"
+                            value = {
+                                key = "Entity"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Stiri"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    advisor_voice_type = "l_hivemind"
+    planet_name = {
+        key = "Hearthseed"
+        literal = yes
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Seedto-ru'"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "plantoid"
+            file = "plantoid_02.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_3.dds"
+        }
+        colors = {
+            "green"
+            "dark_brown"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Treeborn"
+                literal = yes
+            }
+        }
+        portrait = "aqu7"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "organic_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_one_mind"
+        "civic_hive_pooled_knowledge"
+    }
+    origin = "origin_tree_of_life"
+}

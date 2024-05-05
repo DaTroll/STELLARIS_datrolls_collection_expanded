@@ -1,0 +1,20 @@
+xvcv_mdlc_trait_sensitive_body = {
+    cost = -1
+    initial = yes
+    allowed_archetypes = {
+        MACHINE
+        ROBOT
+    }
+    opposites = {
+        "trait_robot_durable"
+    }
+    modifier = {
+        pop_environment_tolerance = -1
+    }
+    opposites = {
+        "oxr_mdlc_trait_all_terrain_hull"
+    }
+    slave_cost = {
+        energy = 100
+    }
+}

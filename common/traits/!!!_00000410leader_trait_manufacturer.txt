@@ -1,0 +1,32 @@
+leader_trait_manufacturer = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_manufacturer"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        OR = {
+            has_trait = subclass_scientist_governor
+            has_trait = subclass_official_governor
+        }
+        has_paragon_dlc = yes
+    }
+    planet_modifier = {
+        planet_amenities_add = 10
+    }
+    sector_modifier = {
+        planet_amenities_add = 5
+    }
+    leader_class = {
+        scientist
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

@@ -1,0 +1,36 @@
+building_rogue_grid = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_rogue
+        NOT = {
+            has_building = building_rogue_lab
+        }
+        NOT = {
+            has_building = building_rogue_grid
+        }
+        NOT = {
+            has_building_construction = building_rogue_grid
+        }
+        NOT = {
+            has_building_construction = building_rogue_lab
+        }
+        NOT = {
+            has_building = building_rogue_mine
+        }
+        NOT = {
+            has_building_construction = building_rogue_mine
+        }
+    }
+    inline_script = "buildings/pd_rare_energy_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_rogue
+            }
+        }
+    }
+}

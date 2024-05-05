@@ -1,0 +1,59 @@
+knight_commander = {
+    category = ruler
+    condition_string = RULER_JOB_TRIGGER
+    building_icon = building_order_keep
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_ruler_job
+    possible = {
+        hidden_trigger = {
+            exists = owner
+        }
+        owner = {
+            is_gestalt = no
+        }
+    }
+    resources = {
+        category = planet_knights
+        produces = {
+            trigger = {
+                exists = owner
+            }
+            unity = 4
+            mult = value:knight_commander_unity_output_modifier
+        }
+        produces = {
+            trigger = {
+                exists = owner
+            }
+            physics_research = 2
+            engineering_research = 2
+            society_research = 2
+            mult = value:knight_commander_research_output_modifier
+        }
+        upkeep = {
+            alloys = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 5
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    country_modifier = {
+        country_naval_cap_add = 6
+    }
+    weight = {
+        weight = @high_prio_specialist_job_weight
+        mult = value:job_weights_modifier|JOB|knight_commander|RESOURCE|unity|
+        mult = value:job_weights_research_modifier|JOB|knight_commander|
+    }
+}

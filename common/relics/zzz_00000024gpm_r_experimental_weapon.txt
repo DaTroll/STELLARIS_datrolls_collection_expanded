@@ -1,0 +1,50 @@
+@triumph_duration_veryshort = 900
+gpm_r_experimental_weapon = {
+    activation_duration = @triumph_duration_veryshort
+    portrait = "GFX_gpm_r_experimental_weapon"
+    sound = "relic_activation_generic"
+    resources = {
+        category = relics
+        cost = {
+            energy = 10000
+        }
+    }
+    ai_weight = {
+        weight = 0
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        ship_weapon_range_mult = 0.2
+        ship_engagement_range_mult = 0.2
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_ancrel = yes
+        }
+        weapon_archaeotech_weapon_damage_mult = 0.33
+    }
+    score = 1000
+    active_effect = {
+        add_modifier = {
+            modifier = "gpm_r_experimental_weapon_active_effect"
+            days = @triumph_duration_veryshort
+        }
+        custom_tooltip = relic_triumph_cooldown_veryshort
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_veryshort
+            }
+        }
+    }
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_relic_no_cooldown"
+            NOT = {
+                has_modifier = relic_activation_cooldown
+            }
+        }
+    }
+}

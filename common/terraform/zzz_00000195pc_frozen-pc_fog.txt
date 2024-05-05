@@ -1,0 +1,35 @@
+@terraforming_cost_level_4 = 15000
+terraform_link = {
+    from = "pc_frozen"
+    to = "pc_fog"
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = @terraforming_cost_level_4
+        }
+    }
+    duration = 7200
+    potential = {
+        from = {
+            has_modifier = terraforming_candidate
+        }
+    }
+    condition = {
+        has_technology = "tech_climate_restoration"
+    }
+    effect = {
+        from = {
+            remove_modifier = terraforming_candidate
+        }
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_frozen
+                CLASS_TO = pc_fog
+            }
+        }
+    }
+}

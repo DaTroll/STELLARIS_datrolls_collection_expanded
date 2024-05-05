@@ -1,0 +1,8 @@
+building_plentiful_traditions_biogenesis_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

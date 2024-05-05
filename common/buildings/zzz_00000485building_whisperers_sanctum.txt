@@ -1,0 +1,91 @@
+building_whisperers_sanctum = {
+    base_buildtime = @b3_time
+    category = government
+    empire_limit = {
+        base = 1
+    }
+    potential = {
+        host_has_dlc = "Utopia"
+        owner = {
+            has_country_flag = whisperers_covenant_rank_1
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        NOT = {
+            owner = {
+                has_country_flag = whisperers_covenant_rank_1
+            }
+        }
+    }
+    planet_modifier = {
+        job_telepath_add = 3
+    }
+    country_modifier = {
+        envoys_add = 1
+        spy_network_daily_value_mult = 0.15
+    }
+    triggered_desc = {
+        trigger = {
+            has_first_contact_dlc = yes
+        }
+        text = covenant_detection_first_contact_effect
+    }
+    on_built = {
+        if = {
+            limit = {
+                has_first_contact_dlc = yes
+            }
+            planet = {
+                solar_system = {
+                    starbase = {
+                        fleet = {
+                            add_modifier = {
+                                modifier = covenant_detection_first_contact
+                                days = -1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    on_destroy = {
+        if = {
+            limit = {
+                has_first_contact_dlc = yes
+            }
+            planet = {
+                solar_system = {
+                    starbase = {
+                        fleet = {
+                            remove_modifier = covenant_detection_first_contact
+                        }
+                    }
+                }
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            exotic_gases = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            exotic_gases = @b3_rare_upkeep
+        }
+    }
+    triggered_desc = {
+        text = job_telepath_effect_desc
+    }
+}

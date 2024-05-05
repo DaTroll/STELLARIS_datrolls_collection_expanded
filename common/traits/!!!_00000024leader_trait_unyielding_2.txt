@@ -1,0 +1,28 @@
+leader_trait_unyielding_2 = {
+    replace_traits = {
+        leader_trait_unyielding
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_unyielding
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        ship_hull_mult = 0.2
+        ship_disengage_chance_mult = -0.2
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_nervous
+        leader_trait_nervous_2
+        leader_trait_slipshod
+        leader_trait_slipshod_2
+        leader_trait_trickster
+        leader_trait_trickster_2
+    }
+}

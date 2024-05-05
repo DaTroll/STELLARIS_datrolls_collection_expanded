@@ -1,0 +1,38 @@
+@t1_mult = 0.05
+leader_trait_resolution_category_politics_traditions_focus = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_resolution_category_politics_traditions_focus"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        OR = {
+            AND = {
+                exists = owner
+                owner = {
+                    is_galactic_community_member = yes
+                }
+                has_paragon_dlc = no
+            }
+            has_trait = subclass_official_delegate
+        }
+    }
+    galcom_modifier = {
+        resolution_category_politics_tradition_1_vote_strength_mult = @t1_mult
+        resolution_category_politics_tradition_2_vote_strength_mult = @t1_mult
+        resolution_category_politics_tradition_3_vote_strength_mult = @t1_mult
+        resolution_category_politics_tradition_4_vote_strength_mult = @t1_mult
+    }
+    custom_tooltip = leader_trait_resolution_category_politics_traditions_focus_1_tt
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/galcom_weight_mult
+    }
+}

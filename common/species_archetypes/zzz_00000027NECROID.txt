@@ -1,0 +1,3 @@
+NECROID = {
+    uses_modifiers = no
+}

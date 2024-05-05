@@ -1,0 +1,93 @@
+tech_nutrient_replication = {
+    cost = @tier4cost3
+    area = society
+    tier = 4
+    is_rare = yes
+    category = {
+        biology
+    }
+    prerequisites = {
+        "tech_nano_vitality_crops"
+    }
+    weight = @tier4weight3
+    modifier = {
+        planet_jobs_food_produces_mult = 0.15
+        starbase_constructions_food_produces_mult = 0.1
+    }
+    potential = {
+        NOT = {
+            has_authority = auth_machine_intelligence
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.01
+            OR = {
+                is_machine_empire = yes
+                is_lithoid_empire = yes
+            }
+            NOR = {
+                has_country_flag = non_lithoid_subspecies
+                has_valid_civic = civic_machine_servitor
+                has_valid_civic = civic_machine_assimilator
+                any_owned_planet = {
+                    OR = {
+                        num_districts = {
+                            type = district_farming
+                            value > 0
+                        }
+                        num_districts = {
+                            type = district_rw_farming
+                            value > 0
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                is_machine_empire = yes
+                is_lithoid_empire = yes
+            }
+        }
+        modifier = {
+            factor = 0.5
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_biology
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_nutrient_replication
+        }
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_pacifist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_pacifist
+        }
+        modifier = {
+            factor = 2
+            has_relic = r_pox_sample
+        }
+    }
+    ai_weight = {
+        factor = @farming_ai_weight_factor
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_pacifist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_pacifist
+        }
+    }
+}

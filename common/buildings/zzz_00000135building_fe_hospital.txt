@@ -1,0 +1,8 @@
+building_fe_hospital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

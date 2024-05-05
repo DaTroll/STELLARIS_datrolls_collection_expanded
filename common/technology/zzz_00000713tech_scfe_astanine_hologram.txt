@@ -1,0 +1,13 @@
+tech_scfe_astanine_hologram = {
+    cost = 0
+    area = physics
+    tier = 4
+    category = {
+        particles
+    }
+    is_rare = yes
+    weight = 0
+    ai_weight = {
+        weight = 0
+    }
+}

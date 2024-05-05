@@ -1,0 +1,8 @@
+building_phanon_affluence_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

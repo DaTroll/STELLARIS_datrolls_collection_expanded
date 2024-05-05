@@ -1,0 +1,94 @@
+"Faith of Na'moi'di" = {
+    key = "Faith of Na'moi'di"
+    ship_prefix = {
+        key = "FNSC"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_10"
+        species_name = {
+            key = "Na'moi'te"
+        }
+        species_plural = {
+            key = "Na'moi'ta"
+        }
+        species_adjective = {
+            key = "Na'moi'tean"
+        }
+        species_bio = "The Holy torch has been passed through many generation of High priests. The Na'moi'te have been unified for centuries under Religion and Faith but are not at all closed to the world around them. They are willing to share and help anyone which shall ask -expect if he has the wrong beliefs, of course-. Kal'ro is leading the Faith of two generations into uncharted territory. Sworn to never forget their Agrarian past and traditions, they stay devoted."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_slow_breeders"
+        trait = "trait_traditional"
+        trait = "trait_weak"
+        trait = "trait_conformists"
+        trait = "trait_agrarian"
+    }
+    name = {
+        key = "Faith of Na'moi'di"
+    }
+    adjective = {
+        key = "Na'moi'dian"
+    }
+    authority = "auth_imperial"
+    government = "gov_theocratic_monarchy"
+    planet_name = {
+        key = "Na'moi'di"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Na'moi'da"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "human"
+            file = "flag_human_6.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "light_orange"
+            "red"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kal'ro"
+            }
+        }
+        portrait = "humanoid_hp_10"
+        texture = 3
+        attachment = 0
+        clothes = 5
+        ruler_title = {
+            key = "High Priest"
+            literal = yes
+        }
+        heir_title = {
+            key = "Low Priest"
+            literal = yes
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_free_haven"
+        "civic_aristocratic_elite"
+    }
+    origin = "origin_remnants"
+}

@@ -1,0 +1,8 @@
+building_stellarite_nano_forge = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

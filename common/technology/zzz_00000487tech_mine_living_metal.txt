@@ -1,0 +1,29 @@
+tech_mine_living_metal = {
+    cost = @tier5cost1
+    area = engineering
+    tier = 5
+    category = {
+        materials
+    }
+    prerequisites = {
+        "tech_space_construction"
+    }
+    weight = @tier5weight1
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            NOT = {
+                any_planet_within_border = {
+                    has_deposit = d_living_metal_deposit
+                }
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 20
+            has_country_flag = dragon_breeders
+        }
+    }
+}

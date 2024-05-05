@@ -1,0 +1,55 @@
+tech_ecological_adaptation = {
+    cost = @tier3cost2
+    area = society
+    tier = 3
+    category = {
+        new_worlds
+    }
+    prerequisites = {
+        "tech_terrestrial_sculpting"
+    }
+    weight = @tier3weight2
+    feature_flags = {
+        terraform_inhabited
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_expansion_adopt
+        }
+    }
+    ai_weight = {
+        factor = @terraforming_tech_ai_factor
+        modifier = {
+            factor = 2
+            OR = {
+                is_xenophobe = yes
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            OR = {
+                any_owned_planet = {
+                    habitability = {
+                        who = root
+                        value < 0.5
+                    }
+                }
+                any_system_within_border = {
+                    any_system_planet = {
+                        is_planet_class = pc_nuked
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 5
+            has_origin = origin_life_seeded
+        }
+        modifier = {
+            factor = 2
+            is_ai = no
+        }
+    }
+}

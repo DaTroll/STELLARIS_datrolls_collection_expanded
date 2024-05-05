@@ -1,0 +1,86 @@
+"Nation of Zeon" = {
+    key = "Nation of Zeon"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla8"
+        species_name = {
+            key = "Zeon"
+        }
+        species_plural = {
+            key = "Zeons"
+        }
+        species_adjective = {
+            key = "Zeon"
+        }
+        species_bio = "\"Hail to the Nation of Zeon\"                                                            This was the \"conquer Sentence\" of the Nation of Zeon after they'd successfully annex another nation on their Homeworld of Karal. However this sentence became mostly obsolete as soon as the whole planet was inder their control. Their very adaptive and engineering nature gave them the possibility to exploint many situations to their advantage, resulting in an authoritarian and militaristic state, which cares little about it's oppressed and does want to exploint many ressources to their full potential. Not even twenty years after the conquer of their Planet, and they already started to map the stars with astounishing accuracy in order to plan further expansions."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_adaptive"
+        trait = "trait_natural_engineers"
+        trait = "trait_intelligent"
+        trait = "trait_wasteful"
+        trait = "trait_repugnant"
+    }
+    name = {
+        key = "Nation of Zeon"
+    }
+    adjective = {
+        key = "Zeonian"
+    }
+    authority = "auth_imperial"
+    government = "gov_star_empire"
+    planet_name = {
+        key = "Karal"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kara'H"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_11.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "dark_green"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Zeon"
+            }
+        }
+        portrait = "pla8"
+        texture = 2
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_nationalistic_zeal"
+        "civic_police_state"
+    }
+    origin = "origin_default"
+}

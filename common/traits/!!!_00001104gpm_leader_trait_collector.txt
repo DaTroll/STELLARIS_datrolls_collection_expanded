@@ -1,0 +1,19 @@
+gpm_leader_trait_collector = {
+    cost = 1
+    icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_archaeostudies.dds"
+    leader_potential_add = {
+        from = {
+            has_ancrel = yes
+        }
+    }
+    modifier = {
+        ship_archaeological_site_excavation_speed_mult = -0.2
+    }
+    custom_tooltip = gpm_leader_trait_collectorTT
+    leader_class = {
+        scientist
+    }
+    ai_weight = {
+        weight = 25
+    }
+}

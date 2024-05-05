@@ -1,0 +1,33 @@
+leader_trait_governor_gray = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = official
+        ICON = "GFX_leader_trait_psionic_chosen_one"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    immortal_leaders = yes
+    planet_modifier = {
+        planet_buildings_cost_mult = -0.4
+        planet_building_build_speed_mult = 0.4
+        planet_jobs_energy_produces_mult = 0.15
+        planet_jobs_minerals_produces_mult = 0.15
+        deposit_blockers_cost_mult = -0.4
+        planet_clear_blocker_speed_mult = 0.4
+    }
+    sector_modifier = {
+        planet_buildings_cost_mult = -0.2
+        planet_building_build_speed_mult = 0.2
+        planet_jobs_energy_produces_mult = 0.075
+        planet_jobs_minerals_produces_mult = 0.075
+        deposit_blockers_cost_mult = -0.2
+        planet_clear_blocker_speed_mult = 0.2
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

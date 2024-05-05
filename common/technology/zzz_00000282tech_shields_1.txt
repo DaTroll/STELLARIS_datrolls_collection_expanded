@@ -1,0 +1,10 @@
+tech_shields_1 = {
+    area = physics
+    cost = 0
+    tier = 0
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    start_tech = yes
+}

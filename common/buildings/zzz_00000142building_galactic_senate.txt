@@ -1,0 +1,8 @@
+building_galactic_senate = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

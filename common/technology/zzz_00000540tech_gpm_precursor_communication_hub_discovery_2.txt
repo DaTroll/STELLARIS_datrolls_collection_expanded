@@ -1,0 +1,18 @@
+tech_gpm_precursor_communication_hub_discovery_2 = {
+    area = society
+    cost = @tier2cost1
+    category = {
+        new_worlds
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        planet_colony_development_speed_mult = 1
+        fleet_mia_time_mult = -0.5
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

@@ -1,0 +1,86 @@
+"Kolvaran Imperium " = {
+    key = "Kolvaran Imperium "
+    ship_prefix = {
+        key = "KSV"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith12"
+        species_name = {
+            key = "Kolvar"
+        }
+        species_plural = {
+            key = "Kolvars"
+        }
+        species_adjective = {
+            key = "Kolvaran"
+        }
+        species_bio = "The Kolvaran mining guilds and aristocracy are the most fundamental elements of Kolvar Society. Through centuries, the robust, strong and overall Colossal Kolvaran have used their massive strengh to their advantage. Creating crushing armies and enduring laborers, this world is like many others rich in ressources, allowing the profound exploitation up to its core. A level of greed only seen in few other races, ready to sacrifice everything, the whole planet for wealth. The Imperial Society is extremly conservative, to the liking of many Kolvaran, promissing stability and prosperity, for the price of Progress. but things might change in a near future."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_very_strong"
+        trait = "trait_unruly"
+        trait = "trait_quarrelsome"
+        trait = "trait_industrious"
+    }
+    name = {
+        key = "Kolvaran Imperium "
+    }
+    adjective = {
+        key = "Kolvaran"
+    }
+    authority = "auth_imperial"
+    government = "gov_star_empire"
+    planet_name = {
+        key = "Kolvar"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Kolvar-Kor"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_4.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "grey"
+            "dark_green"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kolkar"
+            }
+        }
+        portrait = "lith12"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hive_mind_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_mining_guilds"
+    }
+    origin = "origin_doomsday"
+}

@@ -1,0 +1,28 @@
+tech_mem_vazuran_rift_stabilization = {
+    cost = @tier5cost2
+    area = physics
+    tier = 5
+    category = {
+        field_manipulation
+    }
+    is_rare = yes
+    is_reverse_engineerable = no
+    weight = @tier5weight1
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOR = {
+                has_technology = tech_mem_vazuran_rift_travel
+                any_system_within_border = {
+                    has_megastructure = mem_vazuran_gateway_endpoint_ruined
+                }
+            }
+        }
+    }
+    prereqfor_desc = {
+        custom = {
+            title = feature_mem_vazuran_rift_stabilization
+            desc = feature_mem_vazuran_rift_stabilization_desc
+        }
+    }
+}

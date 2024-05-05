@@ -1,0 +1,25 @@
+leader_trait_legendary_gunboat_diplomacy_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_gunboat_diplomacy"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_xenophile_one"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        diplo_weight_naval_mult = 0.15
+        country_power_projection_influence_produces_add = 0.5
+        ship_orbit_upkeep_mult = -0.1
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

@@ -1,0 +1,25 @@
+pd_trait_macro_consciousnesss = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_deviants"
+        "trait_hive_mind"
+        "trait_machine_unit"
+        "trait_conformists"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_LOW
+    modifier = {
+        pop_government_ethic_attraction = 0.5
+    }
+}

@@ -1,0 +1,3 @@
+KANMUSU = {
+    uses_modifiers = no
+}

@@ -1,0 +1,3 @@
+HUMANOID = {
+    uses_modifiers = no
+}

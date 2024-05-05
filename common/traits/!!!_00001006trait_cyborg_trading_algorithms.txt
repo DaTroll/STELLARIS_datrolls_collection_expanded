@@ -1,0 +1,29 @@
+trait_cyborg_trading_algorithms = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+        NOT = {
+            has_trait = trait_hive_mind
+        }
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        pop_job_trade_mult = 0.25
+    }
+    slave_cost = {
+        energy = 500
+    }
+}

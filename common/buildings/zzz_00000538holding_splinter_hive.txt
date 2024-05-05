@@ -1,0 +1,86 @@
+holding_splinter_hive = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_splinter_hive
+    base_cap_amount = 1
+    category = pop_assembly
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        has_overlord_dlc = yes
+        owner.overlord = {
+            is_hive_empire = yes
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = no_free_district_for_splinter_hive
+            planet = {
+                num_free_districts = {
+                    type = any
+                    value > 0
+                }
+            }
+        }
+        planet = {
+            num_pops >= 25
+        }
+        is_occupied_flag = no
+    }
+    planet_modifier = {
+        monthly_loyalty = -2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_breeder_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_breeder_drone_add = 1
+    }
+    on_built = {
+        planet = {
+            add_blocker = {
+                type = d_spawning_complex_blocker
+            }
+            owner.overlord.capital_scope = {
+                append_symbiotic_link = yes
+                refresh_splinter_hive_modifier = yes
+            }
+        }
+    }
+    on_destroy = {
+        planet = {
+            if = {
+                limit = {
+                    has_deposit = d_spawning_complex_blocker
+                }
+                remove_deposit = d_spawning_complex_blocker
+            }
+            owner.overlord.capital_scope = {
+                remove_symbiotic_link = yes
+                refresh_splinter_hive_modifier = yes
+            }
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_breeder_effect_desc
+    }
+}

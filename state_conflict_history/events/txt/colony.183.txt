@@ -1,0 +1,86 @@
+namespace = colony
+planet_event = {
+    id = colony.183
+    title = "colony.183.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = colony.183.desc
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = colony.183.desc.mach
+    }
+    picture = GFX_evt_nuclear_explosion
+    show_sound = event_super_explosion
+    location = ROOT
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            country_event = {
+                id = colony.184
+                days = 1
+            }
+        }
+        remove_global_flag = asteroid_sighted_global
+        remove_planet_flag = asteroid_sighted
+        set_planet_flag = asteroid_collision
+        add_deposit = d_crater
+        owner = {
+            end_event_chain = "asteroid_sighted_chain"
+        }
+    }
+    option = {
+        name = colony.183.a
+        owner = {
+            gain_negative_media_coverage = yes
+        }
+        add_planet_devastation = 50
+        if = {
+            limit = {
+                num_pops < 3
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+        }
+        else_if = {
+            limit = {
+                num_pops > 2
+                num_pops < 6
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+        }
+        else_if = {
+            limit = {
+                num_pops > 5
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+            random_owned_pop = {
+                kill_pop = yes
+            }
+        }
+    }
+}

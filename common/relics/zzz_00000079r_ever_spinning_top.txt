@@ -1,0 +1,42 @@
+@activation_cost = 3000
+@triumph_duration_short = 1800
+r_ever_spinning_top = {
+    activation_duration = @triumph_duration_short
+    portrait = "GFX_ever_spinning_top"
+    sound = "relic_activation_spinning_top"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_energy_produces_mult = 0.1
+    }
+    score = 3000
+    active_effect = {
+        add_modifier = {
+            modifier = "ever_spinning_top_modifier"
+            days = @triumph_duration_short
+        }
+        custom_tooltip = relic_triumph_cooldown_short
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_short
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_ever_spinning_top
+        }
+    }
+}

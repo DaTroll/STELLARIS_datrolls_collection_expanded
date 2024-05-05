@@ -1,0 +1,24 @@
+leader_trait_reclusive_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_reclusive"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_reclusive"
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        diplo_weight_mult = -0.15
+    }
+    leader_class = {
+        official
+        scientist
+        commander
+    }
+    opposites = {
+        leader_trait_master_diplomat
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

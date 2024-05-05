@@ -1,0 +1,18 @@
+tech_shield_hardeners_1 = {
+    area = physics
+    cost = @tier2cost3
+    tier = 2
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_shield_rechargers_1"
+        "tech_exotic_gases"
+    }
+    weight = @tier2weight3
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

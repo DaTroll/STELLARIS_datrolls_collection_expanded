@@ -1,0 +1,18 @@
+xvcv_mdlc_tech_orbital_cracker_upgrade_2 = {
+    cost = @tier3cost3
+    area = engineering
+    tier = 3
+    category = {
+        industry
+    }
+    weight = @tier4weight1
+    prerequisites = {
+        "xvcv_mdlc_tech_orbital_cracker_upgrade_1"
+    }
+    potential = {
+        has_valid_civic = xvcv_mdlc_civic_planet_cracker
+    }
+    modifier = {
+        custom_tooltip = xvcv_mdlc_tech_orbital_cracker_upgrade_2_tooltip
+    }
+}

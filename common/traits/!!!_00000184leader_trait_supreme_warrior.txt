@@ -1,0 +1,32 @@
+leader_trait_supreme_warrior = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_supreme_warrior"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    army_modifier = {
+        army_damage_mult = 0.33
+        army_morale = 0.66
+        army_collateral_damage_mult = -0.33
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_general
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/army_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

@@ -1,0 +1,172 @@
+@hab_cost = 500
+@hab_maintenance = 2
+district_pd_warform_science = {
+    base_buildtime = 240
+    is_capped_by_modifier = no
+    icon = district_hab_science
+    show_on_uncolonized = {
+        uses_district_set = pdwarform
+        OR = {
+            has_planet_flag = pd_warform_regular_research
+            has_planet_flag = pd_warform_organic_research
+        }
+    }
+    potential = {
+        uses_district_set = pdwarform
+        OR = {
+            has_planet_flag = pd_warform_regular_research
+            has_planet_flag = pd_warform_organic_research
+        }
+    }
+    allow = {
+        OR = {
+            NOT = {
+                exists = owner
+            }
+            owner = {
+                has_technology = tech_basic_science_lab_1
+            }
+        }
+    }
+    resources = {
+        category = planet_districts_hab_research
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        modifier = {
+            job_warform_researcher_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        modifier = {
+            job_warform_brain_drone_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        modifier = {
+            job_warform_calculator_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        modifier = {
+            job_researcher_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        modifier = {
+            job_brain_drone_add = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        modifier = {
+            job_calculator_add = 3
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        text = job_researcher_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        text = job_brain_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+            has_planet_flag = pd_warform_regular_research
+        }
+        text = job_calculator_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        text = job_warform_researcher_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        text = job_warform_brain_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+            has_planet_flag = pd_warform_organic_research
+        }
+        text = job_warform_calculator_effect_desc
+    }
+}

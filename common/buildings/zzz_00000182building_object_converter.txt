@@ -1,0 +1,8 @@
+building_object_converter = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

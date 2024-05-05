@@ -1,0 +1,40 @@
+building_low_tech_power_plant = {
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = yes
+    category = resource
+    empire_limit = {
+        base = 1
+    }
+    base_buildtime = @b0_time
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b0_minerals
+        }
+        upkeep = {
+            energy = @b0_upkeep
+        }
+    }
+    potential = {
+        exists = owner
+        owner = {
+            has_origin = origin_broken_shackles
+        }
+        has_deposit = d_crashed_slaver_ship
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_origin = origin_broken_shackles
+            }
+        }
+    }
+    planet_modifier = {
+        job_low_tech_technician_add = 2
+    }
+    triggered_desc = {
+        text = job_low_tech_technician_effect_desc
+    }
+}

@@ -1,0 +1,92 @@
+"Nautilia Interstellar Empire" = {
+    key = "Nautilia Interstellar Empire"
+    ship_prefix = {
+        key = "NSS"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam16"
+        species_name = {
+            key = "Nautilia"
+        }
+        species_plural = {
+            key = "Nautilias"
+        }
+        species_adjective = {
+            key = "Nautilian"
+        }
+        species_bio = "The Nautilian are a submerged race, they live mainly under water, only few of them actually live on the planets surface.                                                                                                                                     The Nautilian wars of unification have proven very ferrocious, only letting the strongest one survive. Therefore this specie is very strong and resilient and on top of that, to take full control of their planet one must invade the submerged megacities and thus fight underwater, where most weapons become useless due to the extreme salt water on this planet."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_nonadaptive"
+        trait = "trait_very_strong"
+        trait = "trait_resilient"
+        trait = "trait_sedentary"
+        trait = "trait_natural_engineers"
+    }
+    name = {
+        key = "Nautilia Interstellar Empire"
+    }
+    adjective = {
+        key = "Nautilian"
+    }
+    authority = "auth_imperial"
+    government = "gov_irenic_monarchy"
+    planet_name = {
+        key = "Nautilia"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Nautilus"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "zoological"
+            file = "flag_zoological_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "sinus.dds"
+        }
+        colors = {
+            "yellow"
+            "blue"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Nautilus"
+            }
+        }
+        portrait = "mam16_m"
+        texture = 3
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "First Nautilian"
+        }
+        heir_title = {
+            key = "Second Nautilian"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_inwards_perfection"
+        "civic_aristocratic_elite"
+    }
+    origin = "origin_lost_colony"
+}

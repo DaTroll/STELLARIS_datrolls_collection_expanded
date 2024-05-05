@@ -1,0 +1,121 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4100
+    title = "anomaly.4100.name"
+    desc = {
+        text = "anomaly.4100.desc"
+        trigger = {
+            leader = {
+                NOR = {
+                    has_trait = leader_trait_expertise_statecraft
+                    has_trait = leader_trait_expertise_biology
+                }
+            }
+        }
+    }
+    desc = {
+        text = "anomaly.4100.expert.desc"
+        trigger = {
+            leader = {
+                OR = {
+                    has_trait = leader_trait_expertise_statecraft
+                    has_trait = leader_trait_expertise_biology
+                }
+            }
+        }
+    }
+    picture = GFX_evt_animal_wildlife
+    show_sound = event_alien_nature
+    location = from
+    trackable = yes
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = story.3
+                    days = 30
+                }
+            }
+        }
+    }
+    option = {
+        name = anomaly.4100.a
+        trigger = {
+            owner = {
+                NOT = {
+                    has_policy_flag = interference_passive
+                }
+            }
+        }
+        enable_special_project = {
+            name = "PSIONIC_HORSES_PROJECT"
+            owner = root
+            location = from
+        }
+    }
+    option = {
+        name = anomaly.4100.b
+        trigger = {
+            owner = {
+                NOT = {
+                    has_policy_flag = interference_passive
+                }
+            }
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    owner = {
+                        OR = {
+                            has_ethic = "ethic_fanatic_xenophobe"
+                            has_ethic = "ethic_fanatic_militarist"
+                            has_ethic = "ethic_fanatic_egalitarian"
+                            has_ethic = "ethic_xenophobe"
+                            has_ethic = "ethic_militarist"
+                        }
+                    }
+                }
+                owner = {
+                    country_event = {
+                        id = anomaly.4103
+                        days = 14
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    owner = {
+                        NOR = {
+                            has_ethic = "ethic_fanatic_xenophobe"
+                            has_ethic = "ethic_fanatic_militarist"
+                            has_ethic = "ethic_fanatic_egalitarian"
+                            has_ethic = "ethic_xenophobe"
+                            has_ethic = "ethic_militarist"
+                        }
+                    }
+                }
+                owner = {
+                    country_event = {
+                        id = anomaly.4104
+                        days = 14
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = anomaly.4100.c
+        trigger = {
+            owner = {
+                has_policy_flag = interference_passive
+            }
+        }
+        from = {
+            add_modifier = {
+                modifier = society_animal_life
+                days = 1000
+            }
+        }
+    }
+}

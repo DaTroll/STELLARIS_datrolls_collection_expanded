@@ -1,0 +1,24 @@
+@battleship_section_cost = 80
+ship_section_template = {
+    key = "OFFSPRING_BATTLESHIP_STERN_L1"
+    ship_size = offspring_battleship
+    fits_on_slot = stern
+    should_draw_components = yes
+    entity = "battleship_stern_L1_entity"
+    icon = "GFX_ship_part_core_stern"
+    ai_tags = {
+        artillery
+    }
+    component_slot = {
+        name = "LARGE_GUN_01"
+        template = "large_turret"
+        locatorname = "large_gun_01"
+    }
+    aux_utility_slots = 2
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = @battleship_section_cost
+        }
+    }
+}

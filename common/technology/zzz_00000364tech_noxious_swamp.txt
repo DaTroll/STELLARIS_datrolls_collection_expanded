@@ -1,0 +1,49 @@
+tech_noxious_swamp = {
+    cost = @tier1cost2
+    area = society
+    tier = 1
+    category = {
+        new_worlds
+    }
+    prerequisites = {
+        "tech_colonization_1"
+    }
+    weight = @tier1weight2
+    weight_groups = {
+        deposit_blockers
+    }
+    mod_weight_if_group_picked = {
+        deposit_blockers = 0.5
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 2
+        }
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_expansion_adopt
+        }
+        modifier = {
+            factor = 4
+            has_ascension_perk = ap_mastery_of_nature
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    has_deposit = "d_noxious_swamp"
+                }
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    has_deposit = "d_noxious_swamp"
+                }
+            }
+        }
+    }
+}

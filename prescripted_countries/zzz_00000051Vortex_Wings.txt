@@ -1,0 +1,89 @@
+"Vortex Wings" = {
+    key = "Vortex Wings"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_avi_robot"
+        species_name = {
+            key = "Vortex Unit"
+        }
+        species_plural = {
+            key = "Vortex Units"
+        }
+        species_adjective = {
+            key = "Vortex Unit"
+        }
+        species_bio = "Little is known about the Vortex Units. They appeared somehow and somewhere. The strange part is that there was neither a Robot programm neither an Extraterretrial Impact on Welkin. But witness have said that in front of a red light they might look like somewhat an angel, but only few ever saw them. Some theories suggest that the population of Welkin never got whipped out by the Vortex Units or assimilated or whatsoever. Some people suggest that the living beings on Welkin actually are the Vortex; They suggest that the Vortex are 'just' a Suit, some sort of powered and enhanced full body exoskeleton, or like an enhanced space suit, with wings, because wings are cool (?) Probably. Maybe someone should someday look inside of a Vortex and disassemble one...                    Also, their flag represents and ascending movement, up  o the sky and the stars beyond. \"As far as science and our wings may take us\" -National Devise"
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_luxurious"
+        trait = "trait_robot_custom_made"
+        trait = "trait_robot_logic_engines"
+        trait = "trait_robot_learning_algorithms"
+        trait = "trait_robot_double_jointed"
+    }
+    name = {
+        key = "Vortex Wings"
+    }
+    adjective = {
+        key = "Vortexian"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_research"
+    planet_name = {
+        key = "Welkin"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Welkinson"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "avian_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_8.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Vortex One"
+            }
+        }
+        portrait = "sd_avi_robot"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Ikarus"
+        }
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "machine_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_delegated_functions"
+        "civic_machine_factory_overclock"
+    }
+    origin = "origin_default"
+}

@@ -1,0 +1,43 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_cryo_core = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_cryo_core"
+    sound = "relic_activation_yuht_cryo_core"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        colony_start_num_pops_add = 1
+        weapon_type_energy_weapon_fire_rate_mult = 0.2
+    }
+    score = 5000
+    active_effect = {
+        add_modifier = {
+            modifier = "yuht_cryo_core"
+            days = @triumph_duration
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_cryo_core
+        }
+    }
+}

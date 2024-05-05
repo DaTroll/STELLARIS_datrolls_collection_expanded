@@ -1,0 +1,16 @@
+tech_pain_farms = {
+    cost = @tier3cost2
+    area = society
+    tier = 3
+    category = {
+        archaeostudies
+    }
+    weight = 0
+    is_rare = yes
+    icon = tech_food_processing_1
+    weight_modifier = {
+        factor = 0
+    }
+    ai_weight = {
+    }
+}

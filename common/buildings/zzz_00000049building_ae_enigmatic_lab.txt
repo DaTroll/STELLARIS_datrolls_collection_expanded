@@ -1,0 +1,8 @@
+building_ae_enigmatic_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

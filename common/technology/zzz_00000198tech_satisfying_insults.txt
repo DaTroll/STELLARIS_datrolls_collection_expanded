@@ -1,0 +1,30 @@
+tech_satisfying_insults = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        statecraft
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    prereqfor_desc = {
+        custom = {
+            title = tech_satisfying_insults_effect
+        }
+    }
+    modifier = {
+        envoys_add = @major_insight_envoy_gain
+        country_tech_influence_produces_add = 0.2
+        country_insult_efficiency = 0.5
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            values_others = no
+        }
+    }
+}

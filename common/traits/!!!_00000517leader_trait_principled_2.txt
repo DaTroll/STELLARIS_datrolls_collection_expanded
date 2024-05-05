@@ -1,0 +1,19 @@
+leader_trait_principled_2 = {
+    replace_traits = {
+        "leader_trait_principled"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_principled"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        planet_stability_add = 4
+    }
+    leader_class = {
+        official
+    }
+}

@@ -1,0 +1,16 @@
+xvcv_mdlc_tech_psionic_barrier = {
+    icon = "tech_psionic_shield"
+    cost = @tier4cost3
+    area = physics
+    tier = 4
+    ai_update_type = all
+    is_rare = yes
+    category = {
+        field_manipulation
+    }
+    weight = @xvcv_mdlc_not_researchable_tech_weight
+    is_reverse_engineerable = no
+    potential = {
+        has_ascension_perk = xvcv_mdlc_ap_abyss
+    }
+}

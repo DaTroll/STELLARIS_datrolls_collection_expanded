@@ -1,0 +1,8 @@
+building_ae_alloy_forge = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,112 @@
+xvcv_mdlc_building_whisperers_sanctum = {
+    base_buildtime = @b3_time
+    icon = building_whisperers_sanctum
+    category = government
+    empire_limit = {
+        base = 1
+    }
+    potential = {
+        owner = {
+            has_country_flag = xvcv_mdlc_abyss_patron_whisperers_rank_1
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_country_flag = xvcv_mdlc_abyss_patron_whisperers_rank_1
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        job_evaluator_add = 3
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        text = job_evaluator_effect_desc
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_ethic = ethic_gestalt_consciousness
+                }
+            }
+        }
+        job_culture_worker_add = 3
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_ethic = ethic_gestalt_consciousness
+                }
+            }
+        }
+        text = job_culture_worker_effect_desc
+    }
+    country_modifier = {
+        envoys_add = 1
+        spy_network_daily_value_mult = 0.15
+    }
+    triggered_desc = {
+        trigger = {
+            has_first_contact_dlc = yes
+        }
+        text = xvcv_mdlc_covenant_detection_first_contact_effect
+    }
+    on_built = {
+        if = {
+            limit = {
+                has_first_contact_dlc = yes
+            }
+            planet.solar_system.starbase.fleet = {
+                add_modifier = {
+                    modifier = xvcv_mdlc_covenant_detection_first_contact
+                    days = -1
+                }
+            }
+        }
+    }
+    on_destroy = {
+        if = {
+            limit = {
+                has_first_contact_dlc = yes
+            }
+            planet.solar_system.starbase.fleet = {
+                remove_modifier = xvcv_mdlc_covenant_detection_first_contact
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            exotic_gases = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            exotic_gases = @b3_rare_upkeep
+        }
+    }
+}

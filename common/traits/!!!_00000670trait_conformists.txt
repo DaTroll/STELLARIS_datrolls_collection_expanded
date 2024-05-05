@@ -1,0 +1,28 @@
+trait_conformists = {
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    modifier = {
+        pop_government_ethic_attraction = 0.3
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_deviants"
+        "trait_hive_mind"
+        "trait_machine_unit"
+    }
+    ai_weight = {
+        weight = 0
+    }
+    slave_cost = {
+        energy = 500
+    }
+}

@@ -1,0 +1,32 @@
+low_tech_bureaucrat = {
+    category = specialist
+    is_capped_by_modifier = yes
+    building_icon = building_low_tech_admin_hub
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_low_tech_start = yes
+        }
+    }
+    resources = {
+        category = planet_administrators
+        produces = {
+            unity = 2
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|low_tech_bureaucrat|RESOURCE|unity|
+        modifier = {
+            factor = 5
+            has_job = low_tech_bureaucrat
+        }
+    }
+}

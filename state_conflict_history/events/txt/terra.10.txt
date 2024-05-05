@@ -1,0 +1,270 @@
+namespace = terra
+planet_event = {
+    id = terra.10
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        NOR = {
+            has_planet_flag = terraformed_once
+            has_planet_flag = no_terraform_event
+            is_planet_class = pc_relic
+            is_planet_class = pc_city
+        }
+        can_have_habitable_deposits = yes
+    }
+    immediate = {
+        set_planet_flag = terraformed_once
+        random_list = {
+            3 = {
+                modifier = {
+                    factor = 0
+                    free_district_slots = 0
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.15
+                    }
+                }
+            }
+            3 = {
+                modifier = {
+                    factor = 0
+                    is_planet_class = pc_nuked
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.20
+                    }
+                }
+            }
+            3 = {
+                modifier = {
+                    factor = 0
+                    free_district_slots >= 4
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.25
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    OR = {
+                        is_ideal_planet_class = {
+                            who = space_owner
+                            status = no
+                        }
+                        space_owner = {
+                            has_country_flag = terraformed_homeworld_2
+                        }
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.35
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    OR = {
+                        has_planet_flag = nuked_terraform
+                        has_planet_flag = barren_terraform
+                        has_planet_flag = barren_cold_terraform
+                        is_planet_class = pc_gaia
+                        is_planet_class = pc_cold_gaia
+                        is_planet_class = pc_hot_gaia
+                        is_planet_class = pc_nuked
+                        is_colony = yes
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.40
+                    }
+                }
+            }
+            3 = {
+                modifier = {
+                    factor = 0
+                    OR = {
+                        has_planet_flag = barren_terraform
+                        has_planet_flag = barren_cold_terraform
+                        is_planet_class = pc_gaia
+                        is_planet_class = pc_cold_gaia
+                        is_planet_class = pc_hot_gaia
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.45
+                    }
+                }
+            }
+            1 = {
+                modifier = {
+                    factor = 0.5
+                    always = yes
+                }
+                modifier = {
+                    factor = 0
+                    OR = {
+                        space_owner = {
+                            is_gestalt = no
+                        }
+                        has_planet_flag = barren_terraform
+                        has_planet_flag = barren_cold_terraform
+                        has_planet_flag = nuked_terraform
+                        is_planet_class = pc_nuked
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.50
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    OR = {
+                        space_owner = {
+                            is_gestalt = no
+                        }
+                        space_owner = {
+                            is_civic_machine_servitor = yes
+                        }
+                        has_planet_flag = barren_terraform
+                        has_planet_flag = barren_cold_terraform
+                        is_planet_class = pc_nuked
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.55
+                    }
+                }
+            }
+            3 = {
+                modifier = {
+                    factor = 0
+                    NAND = {
+                        has_planet_flag = barren_terraform
+                        has_planet_flag = barren_cold_terraform
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.65
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    NAND = {
+                        OR = {
+                            is_planet_class = pc_gaia
+                            is_planet_class = pc_cold_gaia
+                            is_planet_class = pc_hot_gaia
+                        }
+                        is_colony = yes
+                        space_owner = {
+                            country_uses_consumer_goods = yes
+                            NOT = {
+                                has_origin = origin_life_seeded
+                            }
+                        }
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.70
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    NAND = {
+                        OR = {
+                            is_planet_class = pc_gaia
+                            is_planet_class = pc_cold_gaia
+                            is_planet_class = pc_hot_gaia
+                        }
+                        space_owner = {
+                            is_gestalt = no
+                            NOT = {
+                                has_country_flag = made_paradise
+                            }
+                        }
+                        is_homeworld = no
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.75
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    NAND = {
+                        has_planet_flag = nuked_terraform
+                        host_has_dlc = "Plantoids Species Pack"
+                        space_owner = {
+                            NOT = {
+                                has_country_flag = harvested_radiotrophic_dna
+                            }
+                            species = {
+                                NOT = {
+                                    has_trait = trait_plantoid_radiotrophic
+                                    has_trait = trait_radiotrophic_mutants
+                                }
+                            }
+                        }
+                        is_homeworld = no
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.80
+                    }
+                }
+            }
+            2 = {
+                modifier = {
+                    factor = 0
+                    NAND = {
+                        has_planet_flag = nuked_terraform
+                        host_has_dlc = "Ancient Relics Story Pack"
+                        space_owner = {
+                            NOT = {
+                                has_country_flag = tombworld_weapon_cache_spawned
+                            }
+                        }
+                        is_homeworld = no
+                    }
+                }
+                modifier = {
+                    factor = 50
+                    OR = {
+                        has_planet_flag = planet_earth
+                        has_planet_flag = nuked_earth
+                    }
+                }
+                space_owner = {
+                    country_event = {
+                        id = terra.90
+                    }
+                }
+            }
+            10 = {
+            }
+        }
+    }
+}

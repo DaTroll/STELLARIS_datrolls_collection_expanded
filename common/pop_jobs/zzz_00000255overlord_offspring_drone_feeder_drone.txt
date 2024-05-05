@@ -1,0 +1,52 @@
+overlord_offspring_drone_feeder_drone = {
+    category = complex_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_offspring_nest
+    clothes_texture_index = 1
+    icon = spawning_drone
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    planet_modifier = {
+        planet_jobs_simple_drone_produces_mult = 0.05
+    }
+    resources = {
+        category = planet_overlord_offspring_drone_feeder
+        upkeep = {
+            trigger = {
+                exists = owner.overlord
+                owner.overlord = {
+                    is_lithoid = yes
+                }
+            }
+            minerals = 6
+        }
+        upkeep = {
+            trigger = {
+                exists = owner.overlord
+                owner.overlord = {
+                    country_uses_food = yes
+                }
+            }
+            food = 6
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+    overlord_resources = {
+        category = planet_overlord_offspring_drone_feeder
+        produces = {
+            society_research = 8
+        }
+    }
+}

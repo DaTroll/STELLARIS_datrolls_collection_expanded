@@ -1,0 +1,21 @@
+leader_trait_artillerist_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_artillerist
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_artillerist
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        ship_weapon_damage = 0.1
+        ship_tracking_mult = 0.075
+    }
+    leader_class = {
+        commander
+    }
+}

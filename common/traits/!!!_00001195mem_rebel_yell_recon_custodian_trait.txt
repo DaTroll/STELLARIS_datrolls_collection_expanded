@@ -1,0 +1,24 @@
+mem_rebel_yell_recon_custodian_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_restrained"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_speed_mult = 0.25
+        ship_evasion_mult = 0.15
+        ship_shield_mult = 0.15
+        ship_armor_mult = 0.15
+        ship_hull_regen_add_perc = 0.005
+        ship_armor_regen_add_perc = 0.005
+        ship_weapon_range_mult = 0.2
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

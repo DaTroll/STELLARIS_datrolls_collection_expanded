@@ -1,0 +1,22 @@
+tech_atmospheric_orbital_mechanics = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        computing
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    modifier = {
+        envoys_add = @insight_envoy_gain
+        country_tech_influence_produces_add = 0.1
+        stations_produces_mult = 0.05
+        stations_upkeep_mult = -0.5
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,27 @@
+mem_building_fe_stronghold = {
+    base_buildtime = @b2_time
+    can_build = no
+    icon = building_fortress
+    category = army
+    potential = {
+        exists = owner
+        owner = {
+            is_country_type = mem_vazurans
+        }
+    }
+    convert_to = {
+        building_fortress
+    }
+    planet_modifier = {
+        job_soldier_add = 5
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+}

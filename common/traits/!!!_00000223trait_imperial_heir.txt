@@ -1,0 +1,42 @@
+trait_imperial_heir = {
+    force_councilor_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_imperial_heir"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = "trait_imperial_heir_effects"
+    triggered_self_modifier = {
+        potential = {
+            has_paragon_dlc = yes
+        }
+        leader_trait_selection_options_add = 1
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            is_ruler = yes
+            exists = owner
+            exists = FROM
+            FROM.owner = {
+                is_same_value = root.owner
+            }
+            owner = {
+                has_valid_civic = civic_imperial_cult
+            }
+        }
+        job_priest_add = 1
+        mult = trigger:has_skill
+    }
+    on_gained_effect = {
+        change_background_job = noble
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    randomized = no
+}

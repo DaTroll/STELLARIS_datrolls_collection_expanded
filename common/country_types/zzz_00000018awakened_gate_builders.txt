@@ -1,0 +1,5 @@
+awakened_gate_builders = {
+    ai = {
+        enabled = no
+    }
+}

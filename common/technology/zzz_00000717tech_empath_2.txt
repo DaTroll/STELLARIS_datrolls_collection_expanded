@@ -1,0 +1,49 @@
+tech_empath_2 = {
+    icon = tech_synthetic_leaders
+    cost = @tier4cost3
+    area = society
+    tier = 4
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_empath_1"
+        "tech_galactic_administration"
+        "tech_embodied_dynamism"
+    }
+    weight = @tier4weight3
+    potential = {
+        is_hive_empire = yes
+    }
+    modifier = {
+        diplo_weight_mult = 0.1
+        show_only_custom_tooltip = no
+        custom_tooltip = NON_HIVE_OPINION_BOOST
+    }
+    weight_modifier = {
+        factor = 2
+        modifier = {
+            factor = 2
+            has_civic = civic_hive_empath
+        }
+        modifier = {
+            factor = 2
+            is_galactic_community_member = yes
+        }
+        modifier = {
+            factor = 0.01
+            has_civic = civic_closed_collective
+        }
+    }
+    ai_weight = {
+        factor = 2
+        modifier = {
+            factor = 2
+            has_civic = civic_hive_empath
+        }
+        modifier = {
+            factor = 0.01
+            has_civic = civic_closed_collective
+        }
+    }
+}

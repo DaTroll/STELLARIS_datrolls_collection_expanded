@@ -1,0 +1,26 @@
+leader_trait_uninspiring = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_uninspiring"
+        COUNCIL = no
+        TIER = 1
+    }
+    army_modifier = {
+        army_morale = -0.15
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        exists = owner
+        owner = {
+            is_robot_empire = no
+        }
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/army_weight_mult
+    }
+}

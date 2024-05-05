@@ -1,0 +1,26 @@
+leader_trait_shipbreaker = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_shipbreaker
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        OR = {
+            has_trait = subclass_commander_admiral
+            has_trait = subclass_commander_general
+        }
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip = leader_trait_shipbreaker_effect
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+    }
+}

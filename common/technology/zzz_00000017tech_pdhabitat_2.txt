@@ -1,0 +1,11 @@
+tech_pdhabitat_2 = {
+    cost = 0
+    area = engineering
+    category = {
+        voidcraft
+    }
+    tier = 2
+    potential = {
+        merg_has_pd_planetary_habitats = yes
+    }
+}

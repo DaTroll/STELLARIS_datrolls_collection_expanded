@@ -1,0 +1,87 @@
+"Tedasian Peacekeepers" = {
+    key = "Tedasian Peacekeepers"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_07"
+        species_name = {
+            key = "Tedasian"
+        }
+        species_plural = {
+            key = "Tedasians"
+        }
+        species_adjective = {
+            key = "Tedasian"
+        }
+        species_bio = "The Tedasian didn't always look like this. Before the nuclear war and following winter, they were a specie which many extraterrestrial Xenologist qualified as beautiful. But now, their specie mutated in order to survive, they lost their eyes in the process but can now see through supersonics.An other mutation is their extreme long lifespan which can make an Tedasian more than 200 years old.                                                               Once the Nuclear winter was over, approximitly three decades ago and they could set again the foot outside, many decided not to, they settled underground for over ten thousand years. They sworn to never use atomic weapons again in order to preserve the natural balance they lost. But now the time for discovery has come and the universe is at reach!"
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_nonadaptive"
+        trait = "trait_venerable"
+        trait = "trait_natural_engineers"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Tedasian Peacekeepers"
+    }
+    adjective = {
+        key = "Tedasian"
+    }
+    authority = "auth_imperial"
+    government = "gov_irenic_monarchy"
+    advisor_voice_type = "l_pacifist"
+    planet_name = {
+        key = "Tedasia"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Tedasian"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_20.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Corron"
+            }
+        }
+        portrait = "humanoid_hp_07"
+        texture = 0
+        attachment = 0
+        clothes = 3
+        trait = "trait_ruler_industrialist"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_erudite_explorers_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_pacifist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_efficient_bureaucracy"
+        "civic_mining_guilds"
+    }
+    origin = "origin_post_apocalyptic"
+}

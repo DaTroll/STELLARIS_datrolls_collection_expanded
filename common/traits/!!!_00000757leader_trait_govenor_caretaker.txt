@@ -1,0 +1,47 @@
+leader_trait_govenor_caretaker = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_caretaker"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        pop_growth_speed = 0.05
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_jobs_consumer_goods_upkeep_mult = -0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        pop_amenities_usage_no_happiness_mult = -0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_jobs_consumer_goods_upkeep_mult = -0.05
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        pop_amenities_usage_no_happiness_mult = -0.05
+    }
+    initial = no
+    randomized = no
+    immortal_leaders = yes
+    leader_class = {
+        official
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

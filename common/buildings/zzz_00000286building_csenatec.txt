@@ -1,0 +1,8 @@
+building_csenatec = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

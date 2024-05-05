@@ -1,0 +1,24 @@
+trait_fleeting = {
+    cost = -1
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    potential_crossbreeding_chance = 1
+    modifier = {
+        leader_lifespan_add = -10
+    }
+    opposites = {
+        "trait_venerable"
+        "trait_enduring"
+        "trait_fleeting_lithoid"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    ai_weight = {
+        weight = 0
+    }
+    slave_cost = {
+        energy = -200
+    }
+}

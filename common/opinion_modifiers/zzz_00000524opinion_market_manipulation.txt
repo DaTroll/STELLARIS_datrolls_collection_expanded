@@ -1,0 +1,12 @@
+opinion_market_manipulation = {
+    opinion = {
+        base = -50
+        modifier = {
+            add = -25
+            is_capitalist = yes
+        }
+    }
+    decay = {
+        base = 1
+    }
+}

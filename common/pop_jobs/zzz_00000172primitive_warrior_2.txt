@@ -1,0 +1,51 @@
+primitive_warrior_2 = {
+    category = specialist
+    is_capped_by_modifier = yes
+    building_icon = building_residence
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                NOT = {
+                    has_country_flag = human_slavers
+                }
+                prev.species = {
+                    NOT = {
+                        OR = {
+                            species_portrait = human
+                            species_portrait = human_legacy
+                        }
+                    }
+                }
+            }
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 3
+    }
+    weight = {
+        weight = @soldier_job_weight
+        modifier = {
+            factor = 6
+            is_militarist = yes
+        }
+        modifier = {
+            factor = 0
+            is_pacifist = yes
+        }
+    }
+}

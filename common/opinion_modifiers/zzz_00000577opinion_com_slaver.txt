@@ -1,0 +1,28 @@
+opinion_com_slaver = {
+    opinion = {
+        base = -50
+    }
+    trigger = {
+        has_country_flag = human_1
+        has_country_flag = com_is_slaver
+        is_xenophobe = no
+        is_authoritarian = no
+        FROM = {
+            has_country_flag = human_2
+            any_owned_pop = {
+                OR = {
+                    is_enslaved = yes
+                    AND = {
+                        is_being_purged = yes
+                        NOT = {
+                            has_purge_type = {
+                                type = purge_displacement
+                                country = prev
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

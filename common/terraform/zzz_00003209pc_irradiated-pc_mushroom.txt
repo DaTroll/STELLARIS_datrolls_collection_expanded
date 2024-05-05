@@ -1,0 +1,38 @@
+@terraforming_cost_level_3 = 10000
+@terraforming_duration_level_3 = 5400
+terraform_link = {
+    from = pc_irradiated
+    to = pc_mushroom
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_3
+        }
+    }
+    duration = @terraforming_duration_level_3
+    condition = {
+        has_technology = tech_climate_restoration
+    }
+    potential = {
+        has_technology = tech_climate_restoration
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 1
+            should_terraform_trigger = {
+                CLASS_FROM = pc_irradiated
+                CLASS_TO = pc_mushroom
+            }
+        }
+        modifier = {
+            factor = 10
+            has_trait = trait_pc_mushroom_preference
+        }
+    }
+    effect = {
+        from = {
+            remove_modifier = radiotrophic
+        }
+    }
+}

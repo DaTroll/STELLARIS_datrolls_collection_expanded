@@ -1,0 +1,27 @@
+leader_trait_admiral_hells_heart = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_hells_heart"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_fire_rate_mult = 0.1
+        ship_weapon_damage = 0.1
+        ship_speed_mult = 0.1
+        ship_evasion_mult = -0.05
+        ship_disengage_chance_mult = -0.33
+    }
+    custom_tooltip_with_modifiers = hells_heart_effect
+    initial = no
+    randomized = no
+    leader_class = {
+        commander
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

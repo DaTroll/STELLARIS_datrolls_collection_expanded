@@ -1,0 +1,8 @@
+building_house_of_the_fleshsculpter = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

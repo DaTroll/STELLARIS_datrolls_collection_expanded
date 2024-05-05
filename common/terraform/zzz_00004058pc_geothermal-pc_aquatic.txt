@@ -1,0 +1,47 @@
+@terraforming_cost_gaia = 7500
+@terraforming_duration_gaia = 3600
+terraform_link = {
+    from = pc_geothermal
+    to = pc_aquatic
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = @terraforming_cost_gaia
+        }
+    }
+    duration = @terraforming_duration_gaia
+    potential = {
+        has_ascension_perk = ap_hydrocentric
+        has_ascension_perk = ap_world_shaper
+    }
+    condition = {
+        has_ascension_perk = ap_hydrocentric
+        has_ascension_perk = ap_world_shaper
+    }
+    effect = {
+        from = {
+            remove_modifier = geothermal
+            set_planet_entity = {
+                picture = pc_aquatic_surface
+            }
+        }
+    }
+    ai_weight = {
+        weight = 2
+        modifier = {
+            factor = 0
+            resource_stockpile_compare = {
+                resource = energy
+                value < 40000
+            }
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                is_mechanical_empire = yes
+                is_cyborg_empire = yes
+                has_authority = auth_machine_intelligence
+            }
+        }
+    }
+}

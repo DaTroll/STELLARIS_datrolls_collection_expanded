@@ -1,0 +1,52 @@
+building_pd_rogue_council = {
+    base_buildtime = @b2_time
+    icon = building_senate_building
+    base_cap_amount = 1
+    category = government
+    potential = {
+        exists = owner
+        planet = {
+            or = {
+                has_building = building_pd_rogue_council
+                owner = {
+                    is_ai = no
+                }
+            }
+        }
+        owner = {
+            is_machine_empire = yes
+            has_valid_civic = civic_machine_servitor
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        NOT = {
+            owner = {
+                is_machine_empire = yes
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+    }
+    planet_modifier = {
+        job_pd_capital_bio_politician_add = 4
+        planet_housing_add = 4
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    triggered_desc = {
+        text = job_pd_capital_bio_effect_desc
+    }
+}

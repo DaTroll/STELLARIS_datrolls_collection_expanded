@@ -1,0 +1,21 @@
+leader_trait_armada_logistician_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_armada_logistician
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_armada_logistician
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        ship_orbit_upkeep_mult = -0.075
+        country_naval_cap_mult = 0.025
+    }
+    leader_class = {
+        commander
+    }
+}

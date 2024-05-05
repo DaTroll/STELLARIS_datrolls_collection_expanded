@@ -1,0 +1,42 @@
+tech_embodied_dynamism = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_autonomous_agents"
+    }
+    weight = @tier3weight3
+    modifier = {
+        country_official_cap_add = 1
+        country_commander_cap_add = 1
+        country_scientist_cap_add = 1
+        external_leader_pool_add = 1
+        envoys_add = 1
+    }
+    potential = {
+        has_ethic = ethic_gestalt_consciousness
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            num_owned_planets < 7
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 8
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 9
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 10
+        }
+    }
+    ai_weight = {
+    }
+}

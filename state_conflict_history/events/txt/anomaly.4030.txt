@@ -1,0 +1,48 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4030
+    title = "anomaly.4030.name"
+    desc = "anomaly.4030.desc"
+    picture = GFX_evt_archaeological_dig
+    show_sound = event_sensor_ping
+    location = FROM
+    trackable = yes
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            owner = {
+                set_country_flag = ai_admiral_found
+                country_event = {
+                    id = story.5
+                    days = 30
+                }
+            }
+        }
+    }
+    option = {
+        name = "anomaly.4030.a"
+        trigger = {
+            owner = {
+                NOT = {
+                    has_policy_flag = ai_outlawed
+                }
+            }
+        }
+        FROM = {
+            enable_special_project = {
+                name = "AI_ADMIRAL_PROJECT"
+                owner = root
+                location = this
+            }
+        }
+    }
+    option = {
+        name = "anomaly.4030.b"
+        custom_tooltip = "anomaly.4030.b.tooltip"
+        hidden_effect = {
+            FROM = {
+                add_deposit = d_ai_fleet
+            }
+        }
+    }
+}

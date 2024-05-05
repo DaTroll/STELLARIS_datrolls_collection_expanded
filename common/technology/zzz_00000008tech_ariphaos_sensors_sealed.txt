@@ -1,0 +1,11 @@
+tech_ariphaos_sensors_sealed = {
+    cost = 0
+    area = physics
+    category = {
+        particles
+    }
+    tier = 5
+    potential = {
+        merg_has_sensor_expansion = yes
+    }
+}

@@ -1,0 +1,68 @@
+holding_reemployment_center = {
+    base_buildtime = @b1_time
+    owner_type = subject_holding
+    icon = building_posthumous_employment_center
+    base_cap_amount = 1
+    category = pop_assembly
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_permanent_employment
+        }
+        NOT = {
+            owner = {
+                has_valid_civic = civic_permanent_employment
+            }
+        }
+        owner = {
+            is_machine_empire = no
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_reassigner_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_reassigner_drone_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_egalitarian = yes
+            }
+        }
+        monthly_loyalty = -0.5
+    }
+    triggered_desc = {
+        text = job_overlord_reassigner_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            has_planet_flag = reemployment_center_timer
+        }
+        text = holding_reemployment_center_effect
+    }
+}

@@ -1,0 +1,56 @@
+trait_gene_mentorship = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 1
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    allowed_origins = {
+        origin_overtuned
+    }
+    randomized = no
+    species_potential_add = {
+        exists = from
+        from = {
+            has_origin = origin_overtuned
+        }
+    }
+    species_possible_remove = {
+        can_remove_overtuned_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    custom_tooltip_with_modifiers = gene_mentorship_tooltip
+    triggered_leader_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        modifier = {
+            species_leader_exp_gain = 0.3
+        }
+    }
+    triggered_leader_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_edict = damn_the_consequences
+            }
+        }
+        modifier = {
+            species_leader_exp_gain = 0.6
+        }
+    }
+    modifier = {
+        leader_lifespan_add = -10
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

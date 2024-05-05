@@ -1,0 +1,92 @@
+"United Telnian Settlements" = {
+    key = "United Telnian Settlements"
+    ship_prefix = {
+        key = "TSS"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam17"
+        species_name = {
+            key = "Telnia"
+        }
+        species_plural = {
+            key = "Telnias"
+        }
+        species_adjective = {
+            key = "Telnian"
+        }
+        species_bio = "Desert. Water is rare but not inexistant, deep underground are abundant water sources.                                               The Telnian have build a lot of independant settlements, ressenting any travelers or someone foreign to their cities. However was this also a great advantage for them, they build tall buildings and became very skilled engineers. Their gratest challenge might be to overcome their xenophobia and heat necessarity for survive, in a larger galaxy. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_ingenious"
+        trait = "trait_natural_engineers"
+        trait = "trait_quick_learners"
+        trait = "trait_sedentary"
+        trait = "trait_solitary"
+    }
+    name = {
+        key = "United Telnian Settlements"
+    }
+    adjective = {
+        key = "Telnian"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_plutocratic_oligarchy"
+    planet_name = {
+        key = "Telna"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Telna"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "diagonal.dds"
+        }
+        colors = {
+            "brown"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tunerk"
+            }
+        }
+        portrait = "mam17"
+        texture = 2
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "High Telnian"
+        }
+        ruler_title_female = {
+            key = "High Telnia"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_spiritual_seekers_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_xenophobe"
+    civics = {
+        "civic_mining_guilds"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

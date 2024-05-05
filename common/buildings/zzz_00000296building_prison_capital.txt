@@ -1,0 +1,8 @@
+building_prison_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

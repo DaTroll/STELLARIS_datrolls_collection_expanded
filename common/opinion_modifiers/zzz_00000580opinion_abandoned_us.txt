@@ -1,0 +1,12 @@
+opinion_abandoned_us = {
+    opinion = {
+        base = -100
+    }
+    trigger = {
+        has_country_flag = abandoned_primitives
+        has_relation_flag = {
+            flag = abandoned_us
+            who = from
+        }
+    }
+}

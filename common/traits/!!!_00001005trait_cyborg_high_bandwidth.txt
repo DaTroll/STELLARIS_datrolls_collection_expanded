@@ -1,0 +1,24 @@
+trait_cyborg_high_bandwidth = {
+    cost = -2
+    opposites = {
+        "trait_cyborg_streamlined_protocols"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    modifier = {
+        species_empire_size_mult = 0.1
+    }
+    slave_cost = {
+        energy = -150
+    }
+}

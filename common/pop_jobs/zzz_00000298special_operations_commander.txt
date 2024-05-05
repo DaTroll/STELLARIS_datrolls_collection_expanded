@@ -1,0 +1,6 @@
+special_operations_commander = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

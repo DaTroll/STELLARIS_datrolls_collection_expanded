@@ -1,0 +1,20 @@
+mem_is_spherical_world = {
+    is_ringworld = no
+    NOR = {
+        uses_district_set = habitat
+        habitable_structure = yes
+        merg_is_habitat = yes
+        merg_is_hab_ringworld = yes
+        uses_district_set = giga_planet
+        uses_district_set = giga_gas_giant_habitat
+        uses_district_set = giga_birch
+        uses_district_set = virtual_ring
+        uses_district_set = virtual_ring_industry
+        uses_district_set = acot_giga_void_sphere
+        uses_district_set = giga_alderson
+        is_planet_class = pc_flat_world
+        is_planet_class = pc_habitat
+        is_planet_class = pc_mem_vazuran_habitat
+        is_planet_class = pc_habitat
+    }
+}

@@ -1,0 +1,28 @@
+leader_trait_educator = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_educator"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_council_subclass = yes
+    }
+    councilor_modifier = {
+        leader_trait_selection_options_add = 1
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = "paragon/council_weight_mult"
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

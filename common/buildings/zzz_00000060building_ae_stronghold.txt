@@ -1,0 +1,8 @@
+building_ae_stronghold = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,8 @@
+building_simple_citadel = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,51 @@
+tech_zro_research_initiative = {
+    area = society
+    tier = 3
+    cost = @tier3cost1
+    category = {
+        psionics
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+        "tech_mine_pd_zro"
+    }
+    weight = @tier3weight1
+    is_rare = yes
+    potential = {
+        any_owned_planet = {
+            is_planet_class = pc_pd_zro
+        }
+    }
+    weight_modifier = {
+        factor = 10
+        modifier = {
+            factor = 0
+            NOT = {
+                has_resource = {
+                    type = sr_zro
+                    amount > 0
+                }
+            }
+            NOT = {
+                any_owned_planet = {
+                    is_planet_class = pc_pd_zro
+                    is_colony = yes
+                }
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_psionics
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_psionics
+            }
+        }
+    }
+}

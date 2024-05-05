@@ -1,0 +1,64 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.70
+    title = "colony.70.name"
+    desc = {
+        trigger = {
+            NOT = {
+                owner = {
+                    has_origin = origin_subterranean
+                }
+            }
+        }
+        text = "colony.70.desc"
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_origin = origin_subterranean
+            }
+        }
+        text = "colony.70.desc.subterranean"
+    }
+    picture = GFX_evt_alien_cavemen
+    show_sound = event_primitive_civilization
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+    }
+    trigger = {
+        has_planet_flag = seismic_disturbance_friendly
+        NOT = {
+            has_planet_flag = seismic_disturbance_gift
+        }
+        num_pops > 0
+        check_variable = {
+            which = "angry_subterraneans"
+            value < 1
+        }
+    }
+    mean_time_to_happen = {
+        months = 240
+    }
+    immediate = {
+        set_timed_planet_flag = {
+            flag = seismic_disturbance_gift
+            days = 18000
+        }
+    }
+    option = {
+        name = colony.70.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = minerals
+                value = @tier1materialreward
+                min = @tier1materialmin
+                max = @tier1materialmax
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+leader_trait_farming_focus_2 = {
+    replace_traits = {
+        "leader_trait_farming_focus"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_food"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    planet_modifier = {
+        planet_jobs_food_produces_mult = 0.25
+    }
+    sector_modifier = {
+        planet_jobs_food_produces_mult = 0.125
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        commander
+    }
+    custom_tooltip_with_modifiers = only_one_governor_focus
+}

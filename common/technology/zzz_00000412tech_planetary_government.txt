@@ -1,0 +1,12 @@
+tech_planetary_government = {
+    cost = @tier0cost1
+    area = society
+    tier = 0
+    category = {
+        statecraft
+    }
+    start_tech = yes
+    starting_potential = {
+        is_low_tech_start = no
+    }
+}

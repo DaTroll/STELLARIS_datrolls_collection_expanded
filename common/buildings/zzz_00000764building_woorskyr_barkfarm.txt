@@ -1,0 +1,78 @@
+building_woorskyr_barkfarm = {
+    base_buildtime = 180
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = resource
+    potential = {
+        planet = {
+            planet_has_woorskyr_deposit = yes
+        }
+        exists = owner
+        owner = {
+            country_uses_food = yes
+        }
+    }
+    allow = {
+        AND = {
+            custom_tooltip_fail = {
+                text = requirement_has_woorskyr
+                planet = {
+                    planet_has_woorskyr_deposit = yes
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_woorskyr_bark_farm
+                }
+            }
+            owner = {
+                country_uses_food = no
+            }
+            planet = {
+                planet_has_woorskyr_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/farmers_add
+        FARMER_AMOUNT = 3
+        ANGLER_AMOUNT = 2
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            food = 5
+        }
+        cost = {
+            minerals = 200
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 1
+            minerals = 1
+            exotic_gases = 2
+        }
+    }
+    country_modifier = {
+        planet_farmers_food_produces_add = 0.1
+    }
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            owner_main_species = {
+                is_species_class = PLANT
+            }
+        }
+        biological_pop_growth_speed = 0.1
+    }
+    prerequisites = {
+        "tech_woorskyr_bark_farm"
+    }
+}

@@ -1,0 +1,3 @@
+MOLUSCOID = {
+    uses_modifiers = no
+}

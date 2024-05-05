@@ -1,0 +1,11 @@
+opinion_forced_to_remain = {
+    opinion = {
+        base = -75
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

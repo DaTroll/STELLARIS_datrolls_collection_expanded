@@ -1,0 +1,10 @@
+opinion_toxified_an_uninhabited_world = {
+    opinion = {
+        base = -30
+    }
+    accumulative = yes
+    min = -150
+    decay = {
+        base = 1
+    }
+}

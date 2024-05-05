@@ -1,0 +1,140 @@
+"Lexus Dual Monarchy" = {
+    key = "Lexus Dual Monarchy"
+    ship_prefix = {
+        key = "LUN"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu14"
+        species_name = {
+            key = "Antora"
+            literal = yes
+        }
+        species_plural = {
+            key = "Antoras"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Antora"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "Brute Force, that is a language that every Antoran understands. They are fierce and resilient warriors, even overly good engineers, who understand the art of warfare and the subtilities of the battlefields, with such capacities they achieved total control over their Homeworld, Lexus. The Ocean world, however, within it's multiple layers of sea water, sand, rocks, also harbored the now subjects called Speran. The differences between those two species represents the fundamental struggle of their society, whereas the one are only good for war, the other are excellent leaders, who came in second in the millenial old struggle."
+        name_list = "AQUATIC3"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_fleeting"
+        trait = "trait_resilient"
+        trait = "trait_unruly"
+        trait = "trait_natural_engineers"
+    }
+    secondary_species = {
+        class = "AQUATIC"
+        portrait = "aqu15"
+        species_name = {
+            key = "Spera"
+            literal = yes
+        }
+        species_plural = {
+            key = "Speras"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Speran"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Speran are the smart, intelligent, natural good leaders, but they are simply not made for any physical actions. This is why they, in the end, lost the century old struggle between them and the Antorans, who are nothing more than a sort of intelligent brute and overhelming with their sheer numbers. If only, the Speran Leaders would direct the Antoran brute force, they might in fact be unstoppable. "
+        name_list = "AQUATIC3"
+        gender = not_set
+        trait = "trait_syncretic_proles"
+        trait = "trait_talented"
+        trait = "trait_quick_learners"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Lexus Dual Monarchy"
+        literal = yes
+    }
+    adjective = {
+        key = "Lexan"
+        literal = yes
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    advisor_voice_type = "l_aqu_vir"
+    planet_name = {
+        key = "Lexus"
+        literal = yes
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Nekt"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "black"
+            "white"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Luibaal"
+                literal = yes
+            }
+        }
+        portrait = "aqu14"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Dual Monarch"
+            literal = yes
+        }
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "aquatics_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_militarist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_nationalistic_zeal"
+    }
+    origin = "origin_syncretic_evolution"
+}
