@@ -1,0 +1,67 @@
+{
+    "deploy.reloaded": {
+        "values": {
+            "outputDir": {
+                "type": "code",
+                "code": "require('os').homedir() + '/'"
+            }
+        },
+        
+        "packages": [
+            {
+                "name": "DaTroll's Collection EXPANDED",
+                "description": "DaTroll's Collection EXPANDED",
+
+                "button": {
+                    "text": "Deploy to DaTroll's Collection EXPANDED",
+                    
+                    "targets": [ "DaTroll's Collection EXPANDED" ]
+                },
+
+                "files": [
+                    "**",
+                ],
+                "exclude": [
+                    ".vscode/**",
+                    "*.md",
+                    "exported.json"
+                ],
+
+                "deployOnSaveButton": [ "DaTroll's Collection EXPANDED" ]
+            },
+
+            {
+                "name": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+                "description": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+                "syncWhenOpen": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+
+                "files": [
+                    "**",
+                ],
+                "exclude": [
+                    ".vscode/**",
+                    "*.md",
+                    "exported.json"
+                ],
+            },
+        ],
+
+        "targets": [          
+            {
+                "type": "local",
+                "name": "DaTroll's Collection EXPANDED",
+                "description": "Local folder",
+
+                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection EXPANDED/"
+            },
+            
+            {
+                "type": "local",
+                "name": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+                "description": "Local folder",
+
+                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection EXPANDED_DEV/"
+            },
+        ]
+    }
+}
