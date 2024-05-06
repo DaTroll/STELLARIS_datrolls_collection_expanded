@@ -1,0 +1,20 @@
+leader_trait_MYH_lawyer = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_resolution_category_sanctions_focus"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        country_councilor_influence_produces_add = 0.5
+        country_edict_fund_mult = 0.1
+    }
+    initial = no
+    randomized = no
+    leader_class = {
+        official
+    }
+    ai_weight = 100
+}

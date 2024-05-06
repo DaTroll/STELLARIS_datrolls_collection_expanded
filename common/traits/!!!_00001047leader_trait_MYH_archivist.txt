@@ -1,0 +1,21 @@
+leader_trait_MYH_archivist = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_curator"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        weapon_archaeotech_weapon_damage_mult = 0.25
+        category_archaeostudies_research_speed_mult = 0.5
+        category_archaeostudies_draw_chance_mult = 1
+    }
+    initial = no
+    randomized = no
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}
