@@ -76,6 +76,7 @@ action_support_independence = {
                         OR = {
                             has_country_flag = synthetic_empire
                             has_authority = auth_machine_intelligence
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -97,6 +98,7 @@ action_support_independence = {
                     OR = {
                         has_country_flag = synthetic_empire
                         has_authority = auth_machine_intelligence
+                        is_individual_machine = yes
                     }
                 }
             }

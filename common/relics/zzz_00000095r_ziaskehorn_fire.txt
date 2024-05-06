@@ -2,6 +2,7 @@ r_ziaskehorn_fire = {
     activation_duration = 3600
     portrait = "GFX_ziaskehorn_fire"
     sound = "relic_activation_ziaskehorn"
+    can_be_stolen = no
     resources = {
         category = relics
         cost = {

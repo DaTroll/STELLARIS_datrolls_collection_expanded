@@ -1,20 +1,21 @@
-@terraforming_cost_level_3 = 10000
-@terraforming_duration_level_4 = 7200
+@machineCost = 10000
+@machineTime = 7200
 terraform_link = {
-    from = pc_tundra
-    to = pc_machine
+    to = "pc_machine"
+    from = "pc_tundra"
     resources = {
         category = terraforming
         cost = {
-            energy = @terraforming_cost_level_3
+            energy = @machineCost
         }
     }
-    duration = @terraforming_duration_level_4
-    condition = {
+    duration = @machineTime
+    potential = {
+        exists = owner
         has_ascension_perk = ap_machine_worlds
     }
     ai_weight = {
-        weight = 20
+        weight = 10
         modifier = {
             factor = 0
             from = {

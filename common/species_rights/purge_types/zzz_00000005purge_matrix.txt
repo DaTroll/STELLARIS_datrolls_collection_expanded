@@ -5,7 +5,6 @@ purge_matrix = {
         pop_happiness = -10
     }
     potential = {
-        host_has_dlc = "Synthetic Dawn Story Pack"
         from = {
             has_authority = auth_machine_intelligence
         }

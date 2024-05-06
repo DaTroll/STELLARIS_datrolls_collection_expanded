@@ -38,9 +38,12 @@ military_service_none = {
                         has_authority = auth_machine_intelligence
                     }
                 }
-                NOR = {
-                    has_trait = trait_mechanical
-                    has_trait = trait_machine_unit
+                OR = {
+                    NOR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                    }
+                    has_trait = trait_robot_suppressed
                 }
             }
         }

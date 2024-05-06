@@ -1,17 +1,36 @@
 building_storm_lab = {
-    base_buildtime = 360
-    is_capped_by_modifier = yes
-    is_capped_by_modifier = yes
+    base_buildtime = 600
     category = research
     potential = {
+        exists = owner
         NOT = {
             has_modifier = resort_colony
         }
-        is_planet_class = pc_storm
+        has_modifier = pd_storm
+        NOT = {
+            has_building = building_storm_lab
+        }
+        NOT = {
+            has_building_construction = building_storm_lab
+        }
+        NOT = {
+            has_building = building_storm_grid
+        }
+        NOT = {
+            has_building_construction = building_storm_grid
+        }
+        NOT = {
+            has_building = building_storm_mine
+        }
+        NOT = {
+            has_building_construction = building_storm_mine
+        }
     }
     allow = {
         has_upgraded_capital = yes
     }
+    inline_script = "buildings/pd_rare_physics_building"
+    inline_script = "buildings/pd_rare_engineering_building"
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -20,7 +39,7 @@ building_storm_lab = {
             }
         }
         modifier = {
-            job_storm_researcher_add = 6
+            job_head_researcher_add = 1
         }
     }
     triggered_planet_modifier = {
@@ -31,8 +50,7 @@ building_storm_lab = {
             }
         }
         modifier = {
-            job_brain_drone_add = 6
-            planet_housing_mult = 0.15
+            job_brain_drone_add = 1
         }
     }
     triggered_planet_modifier = {
@@ -43,31 +61,23 @@ building_storm_lab = {
             }
         }
         modifier = {
-            job_calculator_add = 6
-            planet_housing_mult = 0.15
-        }
-    }
-    show_tech_unlock_if = {
-        owner = {
-            any_owned_planet = {
-                is_planet_class = pc_storm
-            }
+            job_calculator_add = 1
         }
     }
     resources = {
         category = planet_buildings
         cost = {
-            minerals = 400
+            minerals = 800
         }
         upkeep = {
-            energy = 1
+            energy = 4
         }
     }
-    ai_resource_production = {
-        trigger = {
-            always = yes
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                has_modifier = pd_storm
+            }
         }
-        physics_research = 30
-        engineering_research = 30
     }
 }

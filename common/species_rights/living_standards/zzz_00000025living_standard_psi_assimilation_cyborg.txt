@@ -3,7 +3,7 @@ living_standard_psi_assimilation_cyborg = {
         pop_happiness = -0.25
     }
     potential = {
-        host_has_dlc = "Utopia"
+        has_utopia = yes
         has_trait = trait_cybernetic
         exists = from
         from = {

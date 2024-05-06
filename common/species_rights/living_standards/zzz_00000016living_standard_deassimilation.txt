@@ -2,14 +2,14 @@ living_standard_deassimilation = {
     pop_modifier = {
     }
     potential = {
-        host_has_dlc = "Utopia"
+        has_utopia = yes
         exists = from
         has_trait = trait_hive_mind
         from = {
             NOT = {
                 has_ethic = ethic_gestalt_consciousness
             }
-            has_tradition = tr_genetics_creation
+            has_active_tradition = tr_genetics_creation
         }
     }
     allow = {

@@ -13,7 +13,7 @@ tech_habitat_3 = {
     is_rare = yes
     potential = {
         OR = {
-            has_origin = origin_void_dwellers
+            is_void_dweller_empire = yes
             host_has_dlc = "Utopia"
         }
     }
@@ -31,7 +31,7 @@ tech_habitat_3 = {
         }
         modifier = {
             factor = 10
-            has_origin = origin_void_dwellers
+            is_void_dweller_empire = yes
         }
         inline_script = {
             script = technologies/rare_technologies_weight_modifiers
@@ -42,7 +42,7 @@ tech_habitat_3 = {
         modifier = {
             factor = 100
             OR = {
-                has_origin = origin_void_dwellers
+                is_void_dweller_empire = yes
                 has_origin = origin_toxic_knights
                 has_country_flag = payback_habitat
                 has_valid_civic = civic_void_hive

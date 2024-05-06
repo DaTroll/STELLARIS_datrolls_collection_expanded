@@ -12,9 +12,9 @@ action_invite_to_federation = {
     should_notify_auto_recipient_on_vote_fail = yes
     potential = {
         hidden_trigger = {
-            is_fallen_machine_empire = no
+            is_fallen_empire_machine = no
             from = {
-                is_fallen_machine_empire = no
+                is_fallen_empire_machine = no
             }
         }
         hidden_trigger = {
@@ -113,6 +113,7 @@ action_invite_to_federation = {
                         OR = {
                             has_country_flag = synthetic_empire
                             has_authority = auth_machine_intelligence
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -134,6 +135,7 @@ action_invite_to_federation = {
                     OR = {
                         has_country_flag = synthetic_empire
                         has_authority = auth_machine_intelligence
+                        is_individual_machine = yes
                     }
                 }
             }

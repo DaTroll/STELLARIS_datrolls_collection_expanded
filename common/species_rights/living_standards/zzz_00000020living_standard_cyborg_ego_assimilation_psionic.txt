@@ -12,6 +12,10 @@ living_standard_cyborg_ego_assimilation_psionic = {
     }
     potential = {
         OR = {
+            has_utopia = yes
+            has_machine_age_dlc = yes
+        }
+        OR = {
             has_trait = trait_latent_psionic
             has_trait = trait_psionic
         }

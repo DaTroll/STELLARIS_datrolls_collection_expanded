@@ -15,17 +15,18 @@ living_standard_none = {
                     type = citizenship_purge
                 }
             }
-            OR = {
+            NOR = {
                 has_purge_type = {
                     country = from
                     type = purge_neutering
                 }
-                AND = {
-                    has_purge_type = {
-                        country = from
-                        type = purge_displacement
-                    }
-                    is_robotic = no
+                has_purge_type = {
+                    country = from
+                    type = purge_cosmogenesis_lathe_resettle
+                }
+                has_purge_type = {
+                    country = from
+                    type = purge_displacement
                 }
             }
         }

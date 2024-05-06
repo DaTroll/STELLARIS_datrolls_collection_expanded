@@ -1,8 +1,8 @@
 @hiveCost = 10000
 @hiveTime = 7200
 terraform_link = {
-    to = pc_hive
-    from = pc_arctic
+    to = "pc_hive"
+    from = "pc_arctic"
     resources = {
         category = terraforming
         cost = {
@@ -11,15 +11,11 @@ terraform_link = {
     }
     duration = @hiveTime
     potential = {
+        exists = owner
         has_ascension_perk = ap_hive_worlds
-        from = {
-            NOT = {
-                has_modifier = pd_infestingplanet
-            }
-        }
     }
     ai_weight = {
-        weight = 20
+        weight = 10
         modifier = {
             factor = 0
             NOT = {

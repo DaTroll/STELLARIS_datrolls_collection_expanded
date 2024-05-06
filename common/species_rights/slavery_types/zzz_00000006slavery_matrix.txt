@@ -5,9 +5,13 @@ slavery_matrix = {
     pop_tooltip = MATRIX_LIVESTOCK
     pop_status_frame = 6
     potential = {
-        host_has_dlc = "Synthetic Dawn Story Pack"
         from = {
             has_authority = auth_machine_intelligence
+        }
+        NOT = {
+            from = {
+                has_valid_civic = civic_machine_guided_sapience
+            }
         }
     }
     in_breach_of = {

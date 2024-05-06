@@ -4,7 +4,10 @@ servant = {
     building_icon = building_luxury_residence
     clothes_texture_index = 2
     possible_pre_triggers = {
+        has_owner = yes
         is_sapient = yes
+        is_being_purged = no
+        is_being_assimilated = no
     }
     possible = {
         can_take_servant_job = yes

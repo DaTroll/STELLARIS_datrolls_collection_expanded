@@ -6,9 +6,19 @@ slavery_livestock = {
     pop_status_frame = 6
     potential = {
         host_has_dlc = "Utopia"
-        from = {
-            NOT = {
-                has_authority = auth_machine_intelligence
+        OR = {
+            from = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+            AND = {
+                from = {
+                    has_authority = auth_machine_intelligence
+                }
+                from = {
+                    has_valid_civic = civic_machine_guided_sapience
+                }
             }
         }
     }

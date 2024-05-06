@@ -24,7 +24,7 @@ opinion_nuker = {
             OR = {
                 has_ethic = ethic_pacifist
                 has_ethic = ethic_xenophile
-                has_civic = civic_hive_empath
+                has_valid_civic = civic_hive_empath
             }
             is_country_type = default
         }
@@ -33,7 +33,7 @@ opinion_nuker = {
             OR = {
                 has_ethic = ethic_fanatic_pacifist
                 has_ethic = ethic_fanatic_xenophile
-                has_civic = civic_machine_servitor
+                has_valid_civic = civic_machine_servitor
             }
             is_country_type = default
         }

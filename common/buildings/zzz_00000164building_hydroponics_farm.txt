@@ -83,4 +83,8 @@ building_hydroponics_farm = {
     prerequisites = {
         "tech_hydroponics"
     }
+    upgrades = {
+        building_eutab_hydroponics_tower
+        building_avb_hydroponics_farm_2
+    }
 }

@@ -16,8 +16,8 @@ terraform_link = {
         }
     }
     condition = {
-        has_technology = "tech_climate_restoration"
         has_ascension_perk = "ap_detox"
+        has_technology = "tech_climate_restoration"
     }
     effect = {
         from = {

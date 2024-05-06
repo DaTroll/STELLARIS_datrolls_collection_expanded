@@ -4,6 +4,7 @@ district_nexus = {
     is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     show_on_uncolonized = {
+        exists = from
         from = {
             is_machine_empire = yes
         }
@@ -35,8 +36,37 @@ district_nexus = {
         }
     }
     allow = {
-        NOT = {
+        NOR = {
             has_modifier = resort_colony
+            has_modifier = pd_aw_core_tap
+            has_modifier = pd_aw_agriworld
+            has_modifier = pd_aw_stripmine
+        }
+        OR = {
+            NOT = {
+                exists = owner
+            }
+            AND = {
+                exists = owner
+                OR = {
+                    owner = {
+                        is_ai = no
+                    }
+                    AND = {
+                        num_districts = {
+                            type = district_nexus
+                            value < 3
+                        }
+                    }
+                    AND = {
+                        num_districts = {
+                            type = district_nexus
+                            value < 6
+                        }
+                        is_capital = yes
+                    }
+                }
+            }
         }
     }
     conversion_ratio = 1

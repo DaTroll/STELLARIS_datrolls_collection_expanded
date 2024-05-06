@@ -1,16 +1,15 @@
-@terraforming_cost_level_3 = 10000
-@terraforming_duration_level_3 = 5400
 terraform_link = {
-    from = pc_barren_cold
-    to = pc_tundra
+    from = "pc_barren_cold"
+    to = "pc_tundra"
     resources = {
         category = terraforming
         cost = {
-            energy = @terraforming_cost_level_3
+            energy = 5000
         }
     }
-    duration = @terraforming_duration_level_3
+    duration = 3600
     potential = {
+        exists = owner
         from = {
             has_modifier = terraforming_candidate
         }
@@ -24,13 +23,6 @@ terraform_link = {
         }
     }
     ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 2
-            should_terraform_trigger = {
-                CLASS_FROM = pc_barren_cold
-                CLASS_TO = pc_tundra
-            }
-        }
+        weight = 5
     }
 }

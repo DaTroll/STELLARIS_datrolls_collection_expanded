@@ -3,6 +3,12 @@ action_make_claims_diplomacy_view = {
     potential = {
         hidden_trigger = {
             NOT = {
+                has_global_flag = synth_queen_happened
+                from = {
+                    is_fallen_empire = yes
+                }
+            }
+            NOT = {
                 from = {
                     is_country_type = primitive
                 }

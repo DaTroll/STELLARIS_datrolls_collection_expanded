@@ -69,9 +69,19 @@ living_standard_worker_ownership = {
                         }
                     }
                 }
-                has_purge_type = {
-                    country = from
-                    type = purge_neutering
+                OR = {
+                    has_purge_type = {
+                        country = from
+                        type = purge_neutering
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_cosmogenesis_lathe_resettle
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_displacement
+                    }
                 }
             }
         }

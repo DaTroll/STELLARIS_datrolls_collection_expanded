@@ -48,6 +48,7 @@ action_ask_for_federation_association_status = {
                         OR = {
                             has_country_flag = synthetic_empire
                             has_authority = auth_machine_intelligence
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -69,6 +70,7 @@ action_ask_for_federation_association_status = {
                     OR = {
                         has_country_flag = synthetic_empire
                         has_authority = auth_machine_intelligence
+                        is_individual_machine = yes
                     }
                 }
             }

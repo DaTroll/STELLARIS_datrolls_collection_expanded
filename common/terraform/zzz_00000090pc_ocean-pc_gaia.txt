@@ -1,19 +1,19 @@
-@terraforming_cost_gaia = 7500
-@terraforming_duration_gaia = 3600
+@gaiaCost = 7500
+@gaiaTime = 3600
 terraform_link = {
-    from = pc_ocean
-    to = pc_gaia
+    from = "pc_ocean"
+    to = "pc_gaia"
     resources = {
         category = terraforming
         cost = {
-            energy = @terraforming_cost_gaia
+            energy = @gaiaCost
         }
     }
-    duration = @terraforming_duration_gaia
+    duration = @gaiaTime
     potential = {
         OR = {
             from = {
-                has_azaryn_in_orbit = yes
+                has_planet_flag = terraform_nucleus_transfixed
             }
             AND = {
                 exists = owner
@@ -21,24 +21,21 @@ terraform_link = {
             }
         }
     }
-    condition = {
-        has_ascension_perk = ap_world_shaper
-    }
     ai_weight = {
-        weight = 2
+        weight = 1
         modifier = {
             factor = 0
-            resource_stockpile_compare = {
-                resource = energy
-                value < 40000
-            }
-        }
-        modifier = {
-            factor = 0
-            OR = {
-                is_mechanical_empire = yes
-                is_cyborg_empire = yes
-                has_authority = auth_machine_intelligence
+            from = {
+                is_colony = yes
+                pop_percentage = {
+                    percentage >= 0.5
+                    limit = {
+                        OR = {
+                            has_trait = trait_aquatic
+                            has_trait = trait_robot_aquatic
+                        }
+                    }
+                }
             }
         }
     }

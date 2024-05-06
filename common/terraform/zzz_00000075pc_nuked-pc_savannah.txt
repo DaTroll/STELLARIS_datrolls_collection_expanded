@@ -1,22 +1,20 @@
-@terraforming_cost_level_3 = 10000
-@terraforming_duration_level_3 = 5400
 terraform_link = {
-    from = pc_nuked
-    to = pc_savannah
+    from = "pc_nuked"
+    to = "pc_savannah"
     resources = {
         category = terraforming
         cost = {
-            energy = @terraforming_cost_level_3
+            energy = 10000
         }
     }
-    duration = @terraforming_duration_level_3
+    duration = 7200
     condition = {
-        has_technology = tech_climate_restoration
+        has_technology = "tech_climate_restoration"
     }
     ai_weight = {
         weight = 0
         modifier = {
-            weight = 2
+            weight = 5
             should_terraform_trigger = {
                 CLASS_FROM = pc_nuked
                 CLASS_TO = pc_savannah

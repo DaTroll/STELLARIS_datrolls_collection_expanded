@@ -1,17 +1,16 @@
-@terraforming_cost_level_2 = 5000
-@terraforming_duration_level_2 = 3600
+@advancedCost = 5000
 terraform_link = {
-    from = pc_arctic
-    to = pc_arid
+    from = "pc_arctic"
+    to = "pc_arid"
     resources = {
         category = terraforming
         cost = {
-            energy = @terraforming_cost_level_2
+            energy = @advancedCost
         }
     }
-    duration = @terraforming_duration_level_2
+    duration = 3600
     condition = {
-        has_technology = tech_terrestrial_sculpting
+        has_technology = "tech_terrestrial_sculpting"
     }
     ai_weight = {
         weight = 0

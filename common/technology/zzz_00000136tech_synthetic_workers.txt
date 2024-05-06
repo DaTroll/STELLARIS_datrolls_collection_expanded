@@ -21,8 +21,9 @@ tech_synthetic_workers = {
         planet_jobs_robotic_produces_mult = 0.1
     }
     potential = {
-        NOT = {
+        NOR = {
             has_ethic = "ethic_gestalt_consciousness"
+            is_individual_machine = yes
         }
     }
     weight_modifier = {
@@ -99,6 +100,10 @@ tech_synthetic_workers = {
         modifier = {
             factor = 2
             has_origin = origin_mechanists
+        }
+        modifier = {
+            factor = 1000
+            has_origin = origin_synthetic_fertility
         }
     }
 }

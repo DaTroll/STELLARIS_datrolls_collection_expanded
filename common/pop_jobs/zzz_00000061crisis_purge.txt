@@ -9,6 +9,7 @@ crisis_purge = {
         is_sapient = yes
     }
     possible = {
+        has_global_flag = galactic_crisis_happened
         exists = planet
         exists = planet.controller
         planet.controller = {

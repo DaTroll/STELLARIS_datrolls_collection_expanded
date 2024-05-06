@@ -22,6 +22,10 @@ building_paradise_dome = {
     }
     allow = {
         has_upgraded_capital = yes
+        owner = {
+            is_ai = no
+        }
+        is_occupied_flag = no
     }
     destroy_trigger = {
         exists = owner
@@ -34,6 +38,9 @@ building_paradise_dome = {
             }
             buildings_no_crystals = yes
             has_modifier = slave_colony
+            owner = {
+                is_ai = yes
+            }
         }
     }
     convert_to = {

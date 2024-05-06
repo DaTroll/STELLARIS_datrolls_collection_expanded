@@ -240,6 +240,9 @@ nanites = {
     tradable = no
     category = rare
     max = 15000
+    prerequisites = {
+        "tech_construction_templates"
+    }
     visibility_prerequisite = {
         always = yes
     }
@@ -251,7 +254,7 @@ nanites = {
 minor_artifacts = {
     tradable = no
     category = rare
-    max = 2000
+    max = 4000
     special_max_amount = yes
     visibility_prerequisite = {
         has_ancrel = yes
@@ -295,6 +298,13 @@ menace = {
         weight = 1
     }
 }
+advanced_logic = {
+    tradable = no
+    category = other
+    ai_weight = {
+        weight = 1
+    }
+}
 larva = {
     tradable = no
     visibility_prerequisite = {
@@ -302,51 +312,5 @@ larva = {
     }
     ai_weight = {
         weight = 1
-    }
-}
-sr_eludium = {
-    tradable = no
-    max = 5000
-    deficit_modifier = eludium_deficit
-    visibility_prerequisite = {
-        always = yes
-    }
-    ai_weight = {
-        weight = 100
-    }
-}
-sr_acean = {
-    tradable = yes
-    market_amount = 5
-    market_price = 100
-    max = 5000
-    deficit_modifier = rare_crystals_deficit
-    visibility_prerequisite = {
-        always = yes
-    }
-    ai_weight = {
-        weight = 100
-    }
-}
-sr_rad_bloom = {
-    tradable = no
-    max = 5000
-    deficit_modifier = rad_bloom_deficit
-    visibility_prerequisite = {
-        always = yes
-    }
-    ai_weight = {
-        weight = 100
-    }
-}
-sr_tiyanki_parts = {
-    tradable = no
-    max = 5000
-    deficit_modifier = tiyanki_parts_deficit
-    visibility_prerequisite = {
-        always = yes
-    }
-    ai_weight = {
-        weight = 100
     }
 }

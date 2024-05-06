@@ -1,20 +1,22 @@
+@lClusterCost = 1000
 terraform_link = {
     from = pc_gray_goo
     to = pc_desert
+    condition = {
+        has_technology = "tech_climate_restoration"
+    }
     resources = {
         category = terraforming
         cost = {
-            energy = 1000
+            energy = @lClusterCost
         }
     }
     duration = 360
     potential = {
+        exists = owner
         from = {
             has_modifier = terraforming_candidate
         }
-    }
-    condition = {
-        has_technology = "tech_climate_restoration"
     }
     effect = {
         from = {
@@ -22,13 +24,6 @@ terraform_link = {
         }
     }
     ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 2
-            should_terraform_trigger = {
-                CLASS_FROM = pc_gray_goo
-                CLASS_TO = pc_desert
-            }
-        }
+        weight = 10
     }
 }

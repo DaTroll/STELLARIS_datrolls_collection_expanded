@@ -11,7 +11,7 @@ tech_habitat_1 = {
     weight = @tier3weight2
     potential = {
         OR = {
-            has_origin = origin_void_dwellers
+            has_void_dweller_origin = yes
             has_origin = origin_toxic_knights
             host_has_dlc = "Utopia"
         }

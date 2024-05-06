@@ -19,5 +19,21 @@ action_declare_war = {
                 }
             }
         }
+        custom_tooltip = {
+            fail_text = "the_fe_is_busy_with_synth_queen"
+            OR = {
+                from = {
+                    is_fallen_empire = no
+                }
+                AND = {
+                    NOT = {
+                        has_global_flag = synth_queen_happened
+                    }
+                    from = {
+                        is_fallen_empire = yes
+                    }
+                }
+            }
+        }
     }
 }

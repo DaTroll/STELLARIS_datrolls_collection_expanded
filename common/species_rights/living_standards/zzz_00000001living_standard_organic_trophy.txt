@@ -14,7 +14,7 @@ living_standard_organic_trophy = {
         pop_category_bio_trophy_consumer_goods_upkeep_add = @living_standard_luxuries_very_high
     }
     potential = {
-        host_has_dlc = "Synthetic Dawn Story Pack"
+        has_synthetic_dawn = yes
         exists = from
         from = {
             has_authority = auth_machine_intelligence

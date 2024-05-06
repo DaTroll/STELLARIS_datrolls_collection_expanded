@@ -88,6 +88,7 @@ default = {
             trigger = {
                 OR = {
                     AND = {
+                        is_individual_machine = no
                         is_lithoid_empire = no
                         OR = {
                             is_regular_empire = yes
@@ -95,8 +96,16 @@ default = {
                         }
                     }
                     AND = {
+                        is_lithoid_empire = yes
+                        has_country_flag = non_lithoid_subspecies
+                    }
+                    AND = {
                         has_country_flag = non_lithoid_subspecies
                         is_machine_empire = yes
+                    }
+                    AND = {
+                        is_individual_machine = yes
+                        has_country_flag = non_lithoid_subspecies
                     }
                 }
             }

@@ -39,8 +39,11 @@ district_hive = {
         }
     }
     allow = {
-        NOT = {
+        NOR = {
             has_modifier = resort_colony
+            has_modifier = pd_aw_core_tap
+            has_modifier = pd_aw_agriworld
+            has_modifier = pd_aw_stripmine
         }
     }
     conversion_ratio = 1
@@ -54,7 +57,16 @@ district_hive = {
     resources = {
         category = planet_districts_cities
         cost = {
+            trigger = {
+                pd_aw_is_megaflora_planet = no
+            }
             minerals = @city_cost
+        }
+        cost = {
+            trigger = {
+                pd_aw_is_megaflora_planet = yes
+            }
+            food = @city_cost
         }
         upkeep = {
             energy = 2
@@ -69,6 +81,7 @@ district_hive = {
         potential = {
             OR = {
                 is_pd_hive_world = yes
+                pd_aw_is_megaflora_planet = yes
                 is_planet_class = pc_bioforge
                 is_planet_class = pc_biofort
                 is_planet_class = pc_megaflorafort

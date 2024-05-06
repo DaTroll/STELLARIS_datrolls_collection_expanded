@@ -15,8 +15,9 @@ tech_droid_workers = {
         droids
     }
     potential = {
-        NOT = {
+        NOR = {
             has_ethic = "ethic_gestalt_consciousness"
+            is_individual_machine = yes
         }
     }
     weight_modifier = {
@@ -62,6 +63,10 @@ tech_droid_workers = {
         modifier = {
             factor = 2
             has_origin = origin_mechanists
+        }
+        modifier = {
+            factor = 1000
+            has_origin = origin_synthetic_fertility
         }
     }
 }

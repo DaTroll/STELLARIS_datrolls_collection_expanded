@@ -19,7 +19,12 @@ citizenship_limited = {
             }
         }
         NOR = {
-            has_trait = trait_machine_unit
+            AND = {
+                from = {
+                    is_individual_machine = no
+                }
+                has_trait = trait_machine_unit
+            }
             is_shackled_robot_species_rights = yes
         }
     }
@@ -39,9 +44,14 @@ citizenship_limited = {
         custom_tooltip = {
             fail_text = "HIVE_MIND_SPECIES_CITIZENS_ONLY"
             OR = {
-                NOT = {
+                OR = {
+                    NOT = {
+                        from = {
+                            has_authority = auth_hive_mind
+                        }
+                    }
                     from = {
-                        has_authority = auth_hive_mind
+                        has_valid_civic = civic_hive_guided_sapience
                     }
                 }
                 has_trait = trait_hive_mind

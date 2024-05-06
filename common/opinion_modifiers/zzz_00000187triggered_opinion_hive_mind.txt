@@ -13,5 +13,17 @@ triggered_opinion_hive_mind = {
     }
     opinion = {
         base = -30
+        modifier = {
+            add = 35
+            from = {
+                has_country_flag = nice_hive_envoys
+            }
+        }
+        modifier = {
+            add = -20
+            from = {
+                has_country_flag = scary_hive_envoys
+            }
+        }
     }
 }

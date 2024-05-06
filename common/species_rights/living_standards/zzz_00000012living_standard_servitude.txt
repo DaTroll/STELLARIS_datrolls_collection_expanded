@@ -4,7 +4,10 @@ living_standard_servitude = {
         from = {
             is_gestalt = no
         }
-        has_trait = trait_mechanical
+        OR = {
+            has_trait = trait_mechanical
+            has_trait = trait_machine_unit
+        }
     }
     allow = {
         custom_tooltip = {

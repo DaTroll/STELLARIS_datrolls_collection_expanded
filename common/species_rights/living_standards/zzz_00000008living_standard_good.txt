@@ -58,10 +58,20 @@ living_standard_good = {
                 has_valid_civic = civic_dystopian_society
             }
         }
-        NOR = {
+        NOT = {
             has_trait = trait_hive_mind
-            has_trait = trait_machine_unit
-            is_shackled_robot_species_rights = yes
+        }
+        OR = {
+            AND = {
+                is_robotic_species = yes
+                OR = {
+                    species_rights_robot_full_rights_check = yes
+                    from = {
+                        is_individual_machine = yes
+                    }
+                }
+            }
+            is_robotic_species = no
         }
     }
     allow = {
@@ -108,6 +118,10 @@ living_standard_good = {
                     has_purge_type = {
                         country = from
                         type = purge_neutering
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_cosmogenesis_lathe_resettle
                     }
                     has_purge_type = {
                         country = from

@@ -166,14 +166,32 @@ living_standard_dystopian_society = {
         }
         custom_tooltip = {
             fail_text = is_undesirables_tooltip
-            NOR = {
-                has_citizenship_type = {
-                    country = from
-                    type = citizenship_purge_machine
+            if = {
+                limit = {
+                    OR = {
+                        has_citizenship_type = {
+                            country = from
+                            type = citizenship_purge_machine
+                        }
+                        has_citizenship_type = {
+                            country = from
+                            type = citizenship_purge
+                        }
+                    }
                 }
-                has_citizenship_type = {
-                    country = from
-                    type = citizenship_purge
+                OR = {
+                    has_purge_type = {
+                        country = from
+                        type = purge_neutering
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_cosmogenesis_lathe_resettle
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_displacement
+                    }
                 }
             }
         }

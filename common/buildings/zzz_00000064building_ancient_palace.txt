@@ -10,6 +10,7 @@ building_ancient_palace = {
         exists = owner
         owner = {
             is_fallen_empire = yes
+            is_hive_empire = no
         }
     }
     convert_to = {
@@ -20,7 +21,7 @@ building_ancient_palace = {
     }
     planet_modifier = {
         planet_housing_add = 12
-        planet_amenities_add = 12
+        planet_amenities_add = 150
         planet_max_buildings_add = 11
     }
     triggered_planet_modifier = {

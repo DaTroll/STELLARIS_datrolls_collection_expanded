@@ -22,7 +22,10 @@ leader_trait_slipshod = {
         inline_script = paragon/pilot_weight_mult
         modifier = {
             species = {
-                has_trait = trait_decadent
+                OR = {
+                    has_trait = trait_decadent
+                    has_trait = trait_robot_decadent
+                }
             }
             factor = @species_trait_weight_mult
         }

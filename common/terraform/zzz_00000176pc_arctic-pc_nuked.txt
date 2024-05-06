@@ -1,6 +1,6 @@
 terraform_link = {
-    from = pc_arctic
-    to = pc_nuked
+    from = "pc_arctic"
+    to = "pc_nuked"
     resources = {
         category = terraforming
         cost = {
@@ -11,6 +11,7 @@ terraform_link = {
     }
     duration = 3600
     potential = {
+        exists = owner
         has_policy_flag = relentless_industrialists_study
         has_country_flag = relentless_industrialists_study_completed
     }

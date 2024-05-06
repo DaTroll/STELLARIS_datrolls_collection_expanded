@@ -86,6 +86,10 @@ living_standard_shared_burden = {
                     }
                     has_purge_type = {
                         country = from
+                        type = purge_cosmogenesis_lathe_resettle
+                    }
+                    has_purge_type = {
+                        country = from
                         type = purge_displacement
                     }
                 }

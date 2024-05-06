@@ -78,6 +78,7 @@ action_form_defensive_pact = {
                         OR = {
                             has_country_flag = synthetic_empire
                             has_authority = auth_machine_intelligence
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -99,6 +100,7 @@ action_form_defensive_pact = {
                     OR = {
                         has_country_flag = synthetic_empire
                         has_authority = auth_machine_intelligence
+                        is_individual_machine = yes
                     }
                 }
             }

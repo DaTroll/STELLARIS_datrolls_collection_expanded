@@ -1,8 +1,8 @@
 @hiveCost = 10000
 @hiveTime = 7200
 terraform_link = {
-    to = pc_hive
-    from = pc_desert
+    to = "pc_hive"
+    from = "pc_desert"
     resources = {
         category = terraforming
         cost = {
@@ -11,27 +11,25 @@ terraform_link = {
     }
     duration = @hiveTime
     potential = {
+        exists = owner
         has_ascension_perk = ap_hive_worlds
-        from = {
-            NOT = {
-                has_modifier = pd_infestingplanet
-            }
-        }
     }
     ai_weight = {
-        weight = 20
+        weight = 10
         modifier = {
             factor = 0
-            NOT = {
-                has_origin = origin_necrophage
-            }
             from = {
-                any_owned_species = {
+                any_owned_pop = {
                     NOT = {
                         has_trait = trait_hive_mind
                     }
-                    is_sapient = yes
                 }
+            }
+        }
+        modifier = {
+            factor = 0
+            from = {
+                is_colony = no
             }
         }
     }

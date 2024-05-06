@@ -54,7 +54,12 @@ living_standard_normal = {
         }
         NOR = {
             has_trait = trait_hive_mind
-            has_trait = trait_machine_unit
+            AND = {
+                from = {
+                    is_individual_machine = no
+                }
+                has_trait = trait_machine_unit
+            }
             is_shackled_robot_species_rights = yes
         }
     }
@@ -90,6 +95,10 @@ living_standard_normal = {
                     has_purge_type = {
                         country = from
                         type = purge_neutering
+                    }
+                    has_purge_type = {
+                        country = from
+                        type = purge_cosmogenesis_lathe_resettle
                     }
                     has_purge_type = {
                         country = from

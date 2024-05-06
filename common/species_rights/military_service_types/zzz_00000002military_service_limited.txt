@@ -41,6 +41,7 @@ military_service_limited = {
                 from = {
                     OR = {
                         has_authority = auth_machine_intelligence
+                        is_individual_machine = yes
                         has_technology = tech_droid_workers
                     }
                 }
