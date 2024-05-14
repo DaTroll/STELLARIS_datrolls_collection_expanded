@@ -24,7 +24,9 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "exported.json"
+                    "*.irony"
+                    "*.irony.bak"
+                    "*.irony.tmp"
                 ],
 
                 "deployOnSaveButton": [ "DaTroll's Collection EXPANDED" ]
@@ -41,7 +43,9 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "exported.json"
+                    "*.irony"
+                    "*.irony.bak"
+                    "*.irony.tmp"
                 ],
             },
         ],
