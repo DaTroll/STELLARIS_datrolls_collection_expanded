@@ -43,6 +43,7 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
+                    "descriptor.mod"
                     "*.irony",
                     "*.irony.bak",
                     "*.irony.tmp"
