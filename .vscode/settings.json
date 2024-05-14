@@ -24,8 +24,8 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "*.irony"
-                    "*.irony.bak"
+                    "*.irony",
+                    "*.irony.bak",
                     "*.irony.tmp"
                 ],
 
@@ -43,8 +43,8 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "*.irony"
-                    "*.irony.bak"
+                    "*.irony",
+                    "*.irony.bak",
                     "*.irony.tmp"
                 ],
             },
