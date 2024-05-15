@@ -24,9 +24,7 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "*.irony",
-                    "*.irony.bak",
-                    "*.irony.tmp"
+                    "Stellaris_-_DaTroll's_Collection_EXPANDED.zip"
                 ],
 
                 "deployOnSaveButton": [ "DaTroll's Collection EXPANDED" ]
@@ -44,9 +42,6 @@
                     ".vscode/**",
                     "*.md",
                     "descriptor.mod"
-                    "*.irony",
-                    "*.irony.bak",
-                    "*.irony.tmp"
                 ],
             },
         ],
