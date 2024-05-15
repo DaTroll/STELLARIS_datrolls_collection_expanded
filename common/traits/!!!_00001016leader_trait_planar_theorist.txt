@@ -1,0 +1,64 @@
+leader_trait_planar_theorist = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_planar_theorist"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = 1
+    }
+    modifier = {
+        country_astral_rift_speed_mult = 0.1
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        category_particles_research_speed_mult = 0.05
+    }
+    leader_potential_add = {
+        has_astral_planes_dlc = yes
+        is_heir = no
+        is_ruler = no
+    }
+    leader_class = {
+        scientist
+    }
+    prerequisites = {
+        tech_rift_sphere
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/council_weight_mult
+        modifier = {
+            always = yes
+            factor = value:trait_selectable_weight_per_rift_completed
+        }
+        modifier = {
+            from = {
+                OR = {
+                    has_valid_civic = civic_dimensional_worship
+                    has_valid_civic = civic_corporate_dimensional_worship
+                }
+            }
+            factor = @synergy_weight_mult
+        }
+        modifier = {
+            from = {
+                is_hyperspace_specialty_empire = yes
+            }
+            factor = @synergy_weight_mult
+        }
+        modifier = {
+            from = {
+                has_origin = origin_riftworld
+            }
+            factor = @synergy_weight_mult
+        }
+        modifier = {
+            is_heir = yes
+            factor = 0
+        }
+    }
+    ai_weight = 100
+}

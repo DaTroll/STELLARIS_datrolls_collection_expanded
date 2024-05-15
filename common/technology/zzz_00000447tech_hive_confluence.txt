@@ -1,0 +1,17 @@
+tech_hive_confluence = {
+    cost = @tier3cost2
+    area = society
+    category = {
+        statecraft
+    }
+    tier = 3
+    prerequisites = {
+        "tech_hive_cluster"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight2
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

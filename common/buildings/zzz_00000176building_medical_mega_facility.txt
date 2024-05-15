@@ -1,0 +1,8 @@
+building_medical_mega_facility = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

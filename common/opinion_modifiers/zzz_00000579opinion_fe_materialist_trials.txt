@@ -1,0 +1,6 @@
+opinion_fe_materialist_trials = {
+    opinion = {
+        base = 50
+    }
+    unique = yes
+}

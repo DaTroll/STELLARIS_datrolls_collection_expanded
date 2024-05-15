@@ -1,0 +1,110 @@
+building_beetle_sensor = {
+    base_buildtime = 360
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = army
+    potential = {
+        planet = {
+            planet_has_beetle_deposit = yes
+        }
+    }
+    allow = {
+        AND = {
+            has_upgraded_capital = yes
+            custom_tooltip_fail = {
+                text = "requirement_has_beetle"
+                planet = {
+                    planet_has_beetle_deposit = yes
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_beetle_exploitation
+                }
+            }
+            planet = {
+                planet_has_beetle_deposit = no
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_soldier_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_warrior_drone_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            unity = 4
+            physics_research = 6
+        }
+        cost = {
+            minerals = 200
+            food = 50
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 3
+            food = 1
+            exotic_gases = 2
+        }
+    }
+    country_modifier = {
+        planet_sensor_range_add = 1
+        intel_decryption_add = 1
+        add_base_country_intel = 10
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_first_contact_dlc = yes
+            exists = owner
+            owner = {
+                has_technology = tech_detection_array
+            }
+        }
+        ship_cloaking_detection_add = 1
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_astral_planes_dlc = yes
+            exists = owner
+            owner = {
+                has_technology = tech_rift_sphere
+            }
+        }
+        country_astral_rift_speed_mult = 0.1
+    }
+    upgrades = {
+        "building_beetle_sensor_2"
+    }
+    ai_weight = {
+        weight = 100
+    }
+    prerequisites = {
+        "tech_beetle_exploitation"
+    }
+}

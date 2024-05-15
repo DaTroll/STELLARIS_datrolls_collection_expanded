@@ -1,0 +1,64 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_the_last_baol = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_baol"
+    sound = "relic_activation_the_last_baol"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_gestalt = no
+        }
+        modifier = {
+            pop_growth_speed = 0.1
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_hive_empire = yes
+        }
+        modifier = {
+            pop_growth_speed = 0.1
+            planet_pop_assembly_organic_mult = 0.1
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_machine_empire = yes
+        }
+        modifier = {
+            pop_growth_speed = 0.1
+            country_society_research_produces_mult = 0.1
+        }
+    }
+    score = 1000
+    active_effect = {
+        custom_tooltip = relic_last_baol_active_tooltip
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+            set_country_flag = not_activated_baol
+            set_timed_country_flag = {
+                flag = relic_last_baol_activated
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_the_last_baol
+        }
+    }
+}

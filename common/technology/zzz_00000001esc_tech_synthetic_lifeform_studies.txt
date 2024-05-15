@@ -1,0 +1,11 @@
+esc_tech_synthetic_lifeform_studies = {
+    cost = 0
+    area = society
+    category = {
+        materials
+    }
+    tier = 5
+    potential = {
+        merg_has_esc_next = yes
+    }
+}

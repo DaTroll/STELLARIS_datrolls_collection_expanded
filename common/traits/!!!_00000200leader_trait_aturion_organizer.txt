@@ -1,0 +1,32 @@
+leader_trait_aturion_organizer = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_supreme_organizer"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        empire_size_penalty_mult = -0.1
+        pop_government_ethic_attraction = 0.5
+        pop_happiness = -0.05
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = {
+            script = paragon/ethic_weight_mult
+            IS = xenophobe
+            NOT = xenophile
+        }
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+    randomized = no
+}

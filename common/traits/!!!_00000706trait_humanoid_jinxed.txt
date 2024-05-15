@@ -1,0 +1,20 @@
+trait_humanoid_jinxed = {
+    host_has_dlc = "Humanoids Species Pack"
+    cost = -1
+    potential_crossbreeding_chance = 0.3
+    opposites = {
+        "trait_talented"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+    custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+    modifier = {
+        negative_leader_traits_species = 1
+    }
+    slave_cost = {
+        energy = -500
+    }
+}

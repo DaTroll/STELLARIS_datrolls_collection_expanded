@@ -1,0 +1,83 @@
+trait_excessive_endurance = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 3
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    allowed_origins = {
+        origin_overtuned
+    }
+    randomized = no
+    species_potential_add = {
+        exists = from
+        from = {
+            has_origin = origin_overtuned
+        }
+    }
+    species_possible_remove = {
+        can_remove_overtuned_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    custom_tooltip_with_modifiers = excessive_endurance_tooltip
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        modifier = {
+            planet_jobs_produces_mult = 0.05
+        }
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = fromfrom
+            fromfrom = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        modifier = {
+            pop_environment_tolerance = 0.3
+        }
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_edict = damn_the_consequences
+            }
+        }
+        modifier = {
+            planet_jobs_produces_mult = 0.1
+        }
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = fromfrom
+            fromfrom = {
+                has_edict = damn_the_consequences
+            }
+        }
+        modifier = {
+            pop_environment_tolerance = 0.6
+        }
+    }
+    modifier = {
+        leader_lifespan_add = -30
+    }
+    assembly_score = {
+        base = 0.5
+    }
+    slave_cost = {
+        energy = 2000
+    }
+}

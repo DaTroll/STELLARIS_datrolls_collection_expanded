@@ -1,0 +1,28 @@
+trait_ruler_logistic_understanding = {
+    starting_ruler_trait = yes
+    forbidden_origins = {
+        origin_legendary_leader
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_logistic_understanding"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        ship_orbit_upkeep_mult = -0.05
+        armies_upkeep_mult = -0.1
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = "paragon/council_weight_mult"
+    }
+}

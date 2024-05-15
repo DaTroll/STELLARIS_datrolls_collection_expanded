@@ -1,0 +1,33 @@
+@cruiser_section_cost = 40
+ship_section_template = {
+    key = "OFFSPRING_CRUISER_STERN_S2"
+    ship_size = offspring_cruiser
+    fits_on_slot = stern
+    should_draw_components = yes
+    entity = "cruiser_stern_S2_entity"
+    icon = "GFX_ship_part_core_stern"
+    ai_tags = {
+        gunship
+        explosive
+        explosive_stealth
+        energy_torpedoes
+        energy_torpedoes_stealth
+    }
+    component_slot = {
+        name = "SMALL_GUN_01"
+        template = "small_turret"
+        locatorname = "small_gun_01"
+    }
+    component_slot = {
+        name = "SMALL_GUN_02"
+        template = "small_turret"
+        locatorname = "small_gun_02"
+    }
+    aux_utility_slots = 3
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = @cruiser_section_cost
+        }
+    }
+}

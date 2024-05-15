@@ -1,0 +1,61 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+@triumph_duration_veryshort = 900
+r_war_forge = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_war_forge"
+    sound = "relic_activation_cybrex_war_forge"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+        cost = {
+            minerals = 2000
+            multiplier = cybrex_count
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        custom_tooltip = relic_cybrex_passive
+    }
+    score = 5000
+    active_effect = {
+        add_resource = {
+            alloys = 1000
+            mult = cybrex_count
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_veryshort
+            }
+        }
+        custom_tooltip = "relic_triumph_cooldown_veryshort"
+        hidden_effect = {
+            if = {
+                limit = {
+                    check_variable = {
+                        which = cybrex_count
+                        value <= 19
+                    }
+                }
+                change_variable = {
+                    which = cybrex_count
+                    value = 1
+                }
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_war_forge
+        }
+    }
+}

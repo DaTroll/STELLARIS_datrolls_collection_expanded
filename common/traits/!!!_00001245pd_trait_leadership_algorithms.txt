@@ -1,0 +1,30 @@
+pd_trait_leadership_algorithms = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_nerve_stapled"
+        "trait_talented"
+        "trait_quick_learners"
+        "trait_slow_learners"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_LOW
+    modifier = {
+        negative_leader_traits_species = -1
+        species_leader_exp_gain = 0.2
+        leaders_upkeep_mult = -0.2
+    }
+    ai_weight = {
+        factor = 0
+    }
+}

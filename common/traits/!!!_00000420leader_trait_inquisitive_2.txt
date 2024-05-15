@@ -1,0 +1,26 @@
+leader_trait_inquisitive_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_inquisitive"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_inquisitive"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.02
+        num_tech_alternatives_add = 1
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+    opposites = {
+        leader_trait_narrow_minded
+        leader_trait_narrow_minded_2
+    }
+}

@@ -1,0 +1,32 @@
+building_astral_siphon_2 = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = research
+    potential = {
+        owner = {
+            check_variable = {
+                which = astral_siphon_unlocked
+                value >= 2
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    country_modifier = {
+        country_resource_max_astral_threads_add = 200
+    }
+    inline_script = {
+        script = jobs/astral_researchers_add
+        AMOUNT = @b2_jobs
+    }
+    upgrades = {
+        building_astral_siphon_3
+    }
+}

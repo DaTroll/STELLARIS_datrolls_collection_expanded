@@ -1,0 +1,30 @@
+@machineCost = 10000
+@machineTime = 7200
+terraform_link = {
+    from = "pc_machine"
+    to = "pc_savannah"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @machineCost
+        }
+    }
+    duration = @machineTime
+    potential = {
+        exists = owner
+        has_technology = tech_climate_restoration
+    }
+    effect = {
+        from = {
+            reroll_deposits = yes
+            clear_blockers = yes
+        }
+    }
+    ai_weight = {
+        weight = 5
+        modifier = {
+            factor = 0
+            has_authority = auth_machine_intelligence
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_alpha_fortress = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,26 @@
+leader_trait_intolerant = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_intolerant"
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        country_trust_cap_add = -10
+    }
+    leader_class = {
+        official
+        scientist
+        commander
+    }
+    opposites = {
+        leader_trait_courtroom_training
+        leader_trait_courtroom_training_2
+        leader_trait_courtroom_training_3
+    }
+    selectable_weight = {
+        weight = @shared_negative_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

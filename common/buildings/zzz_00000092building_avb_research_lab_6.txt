@@ -1,0 +1,8 @@
+building_avb_research_lab_6 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

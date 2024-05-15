@@ -1,0 +1,25 @@
+tech_combat_computers_2 = {
+    area = physics
+    tier = 3
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    ai_update_type = military
+    prerequisites = {
+        "tech_combat_computers_1"
+        "tech_self_aware_logic"
+    }
+    weight = @tier3weight1
+    weight_modifier = {
+    }
+    prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "TECH_UNLOCK_COMBAT_COMPUTERS_2_TITLE"
+            desc = "TECH_UNLOCK_COMBAT_COMPUTERS_2_DESC"
+        }
+    }
+    ai_weight = {
+    }
+}

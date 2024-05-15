@@ -1,0 +1,8 @@
+building_cgranhq = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

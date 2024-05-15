@@ -1,0 +1,52 @@
+holding_offspring_nest = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = building_offspring_nest
+    base_cap_amount = 1
+    category = government
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            is_hive_empire = yes
+            has_origin = origin_progenitor_hive
+        }
+        has_overlord_dlc = yes
+    }
+    allow = {
+        owner = {
+            NOT = {
+                has_origin = origin_progenitor_hive
+            }
+        }
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_offspring_drone_feeder_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_offspring_drone_feeder_drone_add = 1
+    }
+    triggered_desc = {
+        text = job_overlord_offspring_drone_feeder_effect_desc
+    }
+}

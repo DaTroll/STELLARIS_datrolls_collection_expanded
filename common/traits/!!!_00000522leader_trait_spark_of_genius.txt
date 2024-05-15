@@ -1,0 +1,30 @@
+leader_trait_spark_of_genius = {
+    starting_ruler_trait = yes
+    forbidden_origins = {
+        origin_legendary_leader
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_spark_of_genius"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.03
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_paranoid
+        leader_trait_paranoid_2
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+    ai_weight = 200
+}

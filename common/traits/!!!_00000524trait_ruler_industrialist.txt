@@ -1,0 +1,26 @@
+trait_ruler_industrialist = {
+    starting_ruler_trait = yes
+    forbidden_origins = {
+        origin_legendary_leader
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_industrialist"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        planet_jobs_minerals_produces_mult = 0.025
+    }
+    leader_class = {
+        official
+        scientist
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

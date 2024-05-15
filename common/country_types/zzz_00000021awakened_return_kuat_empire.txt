@@ -1,0 +1,5 @@
+awakened_return_kuat_empire = {
+    ai = {
+        enabled = no
+    }
+}

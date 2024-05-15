@@ -1,0 +1,48 @@
+holding_material_requisitorium = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_material_requisitorium
+    base_cap_amount = 1
+    category = resource
+    potential = {
+        has_overlord_dlc = yes
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = ove_requires_tech_mineral_purification_2
+            owner.overlord = {
+                has_technology = tech_mineral_purification_2
+            }
+        }
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+            volatile_motes = 1
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -0.5
+    }
+    on_built = {
+        planet = {
+            set_planet_flag = has_material_requisitorium
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_planet_flag = has_material_requisitorium
+        }
+    }
+    triggered_desc = {
+        text = job_minerals_requisitioned_effect_desc
+    }
+    triggered_desc = {
+        text = job_alloy_requisitioned_effect_desc
+    }
+}

@@ -1,0 +1,108 @@
+namespace = distar
+ship_event = {
+    id = distar.280
+    title = "distar.280.name"
+    desc = "distar.280.desc"
+    picture = {
+        trigger = {
+            from = {
+                is_desert = yes
+            }
+        }
+        picture = GFX_evt_desert
+    }
+    picture = {
+        trigger = {
+            from = {
+                is_gaia = yes
+            }
+        }
+        picture = GFX_evt_gaia
+    }
+    picture = {
+        trigger = {
+            from = {
+                is_planet_class = pc_barren
+            }
+        }
+        picture = GFX_evt_warm_barren
+    }
+    show_sound = event_default
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            if = {
+                limit = {
+                    is_planet_class = pc_barren
+                }
+                clear_deposits = yes
+            }
+        }
+        owner = {
+            country_event = {
+                id = story.5
+                days = 30
+            }
+        }
+    }
+    after = {
+        from = {
+            IF = {
+                limit = {
+                    habitable_planet = yes
+                }
+                add_deposit = d_nanosands
+            }
+            ELSE = {
+                add_deposit = d_minerals_4
+                add_deposit = d_volatile_motes_1
+            }
+        }
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier2researchreward
+                min = @tier2researchmin
+                max = @tier2researchmax
+            }
+            generate_lcluster_clue = yes
+        }
+    }
+    option = {
+        name = ASTOUNDING
+        owner = {
+            add_resource = {
+                nanites = 200
+            }
+        }
+    }
+    option = {
+        exclusive_trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophobe
+                    has_ethic = ethic_xenophobe
+                }
+            }
+        }
+        name = DISCONCERTING
+        from = {
+            IF = {
+                limit = {
+                    habitable_planet = yes
+                }
+                add_deposit = d_nanosands
+            }
+            ELSE = {
+                add_deposit = d_minerals_4
+            }
+        }
+        owner = {
+            add_resource = {
+                nanites = 200
+            }
+            generate_lcluster_clue = yes
+        }
+    }
+}

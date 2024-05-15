@@ -1,0 +1,22 @@
+leader_trait_percussive_maintainer = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_percussive_maintenance"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        category_computing_research_speed_mult = 0.1
+        ship_archaeological_site_excavation_speed_mult = 0.1
+        species_leader_exp_gain = -0.1
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+    ai_weight = 100
+}

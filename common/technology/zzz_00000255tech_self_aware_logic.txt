@@ -1,0 +1,19 @@
+tech_self_aware_logic = {
+    area = physics
+    tier = 2
+    cost = @tier2cost2
+    category = {
+        computing
+    }
+    prerequisites = {
+        "tech_administrative_ai"
+    }
+    weight = @tier2weight2
+    modifier = {
+        num_tech_alternatives_add = 1
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

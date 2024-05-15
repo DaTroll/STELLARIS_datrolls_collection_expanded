@@ -1,0 +1,209 @@
+namespace = distar
+country_event = {
+    id = distar.3013
+    title = "distar.3013.name"
+    desc = "distar.3013.desc"
+    picture = GFX_evt_microscopic_life
+    show_sound = event_scanner
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        random_owned_planet = {
+            weights = {
+                base = 1
+                modifier = {
+                    add = 2
+                    free_housing > 0
+                }
+                modifier = {
+                    add = 5
+                    free_housing > 1
+                }
+                modifier = {
+                    add = 10
+                    free_housing > 5
+                }
+                modifier = {
+                    add = 10
+                    free_housing > 10
+                }
+                modifier = {
+                    add = 5
+                    planet_size > 17
+                }
+                modifier = {
+                    add = 5
+                    planet_size > 21
+                }
+            }
+            save_event_target_as = nivlac_joint_planet
+            export_trigger_value_to_variable = {
+                trigger = free_housing
+                variable = new_pops
+            }
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = {
+                            which = new_pops
+                            value < 1
+                        }
+                        check_variable = {
+                            which = new_pops
+                            value > 7
+                        }
+                    }
+                }
+                set_variable = {
+                    which = new_pops
+                    value = 7
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            OR = {
+                has_ethic = ethic_xenophile
+                has_ethic = ethic_fanatic_xenophile
+            }
+        }
+        allow = {
+        }
+        name = distar.3013.a.xenophile
+        custom_tooltip = distar.3013.a.tooltip
+        hidden_effect = {
+            create_nivlac_effect = yes
+            event_target:nivlac_joint_planet = {
+                while = {
+                    count = new_pops
+                    create_pop = {
+                        species = event_target:nivlac_species
+                    }
+                }
+            }
+            country_event = {
+                id = distar.3017
+                days = 10
+            }
+        }
+    }
+    option = {
+        trigger = {
+            NOR = {
+                has_ethic = ethic_xenophile
+                has_ethic = ethic_fanatic_xenophile
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        allow = {
+        }
+        name = distar.3013.a
+        custom_tooltip = distar.3013.a.tooltip
+        hidden_effect = {
+            create_nivlac_effect = yes
+            event_target:nivlac_joint_planet = {
+                while = {
+                    count = new_pops
+                    create_pop = {
+                        species = event_target:nivlac_species
+                    }
+                }
+            }
+            country_event = {
+                id = distar.3017
+                days = 10
+            }
+        }
+    }
+    option = {
+        trigger = {
+            has_civic = civic_machine_servitor
+        }
+        allow = {
+        }
+        name = "distar.3013.a.serv"
+        custom_tooltip = "distar.3013.a.tooltip"
+        hidden_effect = {
+            create_nivlac_effect = yes
+            event_target:nivlac_species = {
+                remove_species_flag = nivlac_no_procreation
+            }
+            event_target:nivlac_joint_planet = {
+                while = {
+                    count = new_pops
+                    create_pop = {
+                        species = event_target:nivlac_species
+                    }
+                }
+            }
+            country_event = {
+                id = distar.3017
+                days = 10
+            }
+        }
+    }
+    option = {
+        trigger = {
+            has_civic = civic_machine_assimilator
+        }
+        allow = {
+        }
+        name = "distar.3013.a.assi"
+        custom_tooltip = "distar.3013.a.assi.tooltip"
+        hidden_effect = {
+            create_nivlac_effect = yes
+            event_target:nivlac_species = {
+                remove_species_flag = nivlac_no_procreation
+            }
+            event_target:nivlac_joint_planet = {
+                while = {
+                    count = new_pops
+                    create_pop = {
+                        species = event_target:nivlac_species
+                    }
+                }
+            }
+            country_event = {
+                id = distar.3017
+                days = 10
+            }
+        }
+    }
+    option = {
+        name = "distar.3013.b.no_room.kill"
+        custom_tooltip = "distar.3013.b.no_room.kill.tooltip"
+        trigger = {
+            has_civic = civic_machine_assimilator
+        }
+        add_monthly_resource_mult = {
+            resource = influence
+            value = @tier3influencereward
+            min = @tier3influencemin
+            max = @tier3influencemax
+        }
+    }
+    option = {
+        name = "distar.3013.b"
+        custom_tooltip = distar.3013.b.tooltip
+        trigger = {
+            NOT = {
+                has_civic = civic_machine_assimilator
+            }
+        }
+        hidden_effect = {
+            country_event = {
+                id = distar.3016
+                days = 730
+                random = 100
+            }
+        }
+    }
+    after = {
+        hidden_effect = {
+            event_target:nivlac_joint_planet = {
+                clear_variable = new_pops
+            }
+        }
+    }
+}

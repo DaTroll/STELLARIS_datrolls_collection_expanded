@@ -1,0 +1,8 @@
+building_acid_maker = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

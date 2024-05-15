@@ -1,0 +1,37 @@
+tech_modular_engineering = {
+    cost = @tier2cost3
+    area = engineering
+    category = {
+        voidcraft
+    }
+    tier = 2
+    prerequisites = {
+        "tech_starbase_3"
+    }
+    is_rare = yes
+    weight = @tier2weight3
+    modifier = {
+        starbase_buildings_cost_mult = -0.25
+        starbase_modules_cost_mult = -0.25
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0.5
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_voidcraft
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_modular_engineering
+        }
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,5 @@
+throng_country = {
+    ai = {
+        enabled = no
+    }
+}

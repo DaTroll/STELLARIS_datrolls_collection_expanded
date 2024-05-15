@@ -1,0 +1,22 @@
+trait_ruler_architectural_sense_2 = {
+    replace_traits = {
+        "trait_ruler_architectural_sense"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_architectural_sense"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        planet_buildings_cost_mult = -0.1
+        planet_districts_cost_mult = -0.1
+        planet_building_build_speed_mult = 0.15
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        official
+    }
+}

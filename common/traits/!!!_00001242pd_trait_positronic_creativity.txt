@@ -1,0 +1,35 @@
+pd_trait_positronic_creativity = {
+    cost = 2
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_intelligent"
+        "trait_nerve_stapled"
+        "trait_erudite"
+        "trait_enigmatic_intelligence_poor"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_HIGH
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.2
+        planet_jobs_society_research_produces_mult = 0.2
+        planet_jobs_engineering_research_produces_mult = 0.2
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+    }
+}

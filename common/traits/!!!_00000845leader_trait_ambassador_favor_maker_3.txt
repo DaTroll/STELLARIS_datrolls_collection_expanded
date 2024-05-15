@@ -1,0 +1,21 @@
+leader_trait_ambassador_favor_maker_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_ambassador_favor_maker_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_favor_maker"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    custom_tooltip = leader_trait_ambassador_favor_maker_3_effect
+    leader_class = {
+        official
+    }
+}

@@ -1,0 +1,27 @@
+leader_trait_corsair_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_corsair_2
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_corsair
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    fleet_modifier = {
+        ship_orbit_upkeep_mult = -0.2
+    }
+    triggered_modifier = {
+        potential = {
+            has_first_contact_dlc = yes
+        }
+        ship_cloaking_strength_add = 1
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip_with_modifiers = leader_trait_corsair_3_effect
+}

@@ -1,0 +1,20 @@
+leader_trait_gpm_shared_soul = {
+    cost = 0
+    initial = no
+    randomized = no
+    leader_potential_add = {
+        always = no
+    }
+    councilor_modifier = {
+        country_power_projection_influence_produces_add = 1
+        intel_decryption_add = 2
+        envoys_add = 1
+    }
+    icon = "gfx/interface/icons/traits/leader_trait_gpm_shared_soul.dds"
+    immortal_leaders = yes
+    leader_class = {
+        scientist
+        commander
+        official
+    }
+}

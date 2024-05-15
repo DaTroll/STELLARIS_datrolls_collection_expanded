@@ -1,0 +1,18 @@
+tech_gpm_precursor_obelisks_discovery_2 = {
+    area = physics
+    cost = @tier2cost1
+    category = {
+        computing
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        planet_jobs_upkeep_mult = -0.05
+        leader_trait_selection_options_add = 1
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

@@ -1,0 +1,21 @@
+leader_trait_plague_hardened = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_butcher"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    army_modifier = {
+        army_morale = 0.25
+        army_damage_mult = 0.15
+        army_disengage_chance_mult = -0.2
+    }
+    leader_class = {
+        commander
+    }
+    randomized = no
+    initial = no
+}

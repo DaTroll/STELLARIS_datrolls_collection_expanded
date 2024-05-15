@@ -1,0 +1,94 @@
+"Fareh Envoys" = {
+    key = "Fareh Envoys"
+    ship_prefix = {
+        key = "URS"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi6"
+        species_name = {
+            key = "Uni"
+        }
+        species_plural = {
+            key = "Unis"
+        }
+        species_adjective = {
+            key = "Unian"
+        }
+        species_bio = "\"Hallow are the Fareh\"                                                                       The Legends tell us that the Fareh came down and greeted the Uni of Kalat. They showed themselves as gods for a 'bright future'. Since the Fareh left the planet. They became almost mythical but are still worthshipped by the hole planet. Anyone who dares to oppose the faith is executed with all of his relatives, regardlessly of place in the society, fortune or fame. Many Warlords have been executed for claiming to be choosen by the Fareh. There is only one choosen one and he is our leader. Hallowed are the Fareh!"
+        name_list = "AVI1"
+        gender = not_set
+        trait = "trait_conformists"
+        trait = "trait_communal"
+        trait = "trait_charismatic"
+        trait = "trait_nonadaptive"
+        trait = "trait_wasteful"
+    }
+    name = {
+        key = "Fareh Envoys"
+    }
+    adjective = {
+        key = "Fareian"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_purification_committee"
+    planet_name = {
+        key = "Kalat"
+    }
+    planet_class = "pc_tundra"
+    system_name = {
+        key = "Kalat'k"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_9.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "yellow"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Naktea"
+            }
+        }
+        portrait = "avi6_f"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Choosen one"
+            literal = yes
+        }
+        ruler_title_female = {
+            key = "Choosen one"
+            literal = yes
+        }
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_exalted_priesthood"
+        "civic_fanatic_purifiers"
+    }
+    origin = "origin_default"
+}

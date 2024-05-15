@@ -1,0 +1,48 @@
+leader_trait_shroudwalker = {
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = leader
+        ICON = "GFX_leader_trait_shroudwalkers"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_amenities_mult = 0.05
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_telepaths_unity_produces_add = 3
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_evaluators_unity_produces_add = 2
+    }
+    sector_modifier = {
+        planet_amenities_mult = 0.025
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_telepaths_unity_produces_add = 1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_evaluators_unity_produces_add = 1
+    }
+    self_modifier = {
+        leader_lifespan_add = 30
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

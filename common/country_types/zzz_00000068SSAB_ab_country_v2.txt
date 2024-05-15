@@ -1,0 +1,5 @@
+SSAB_ab_country_v2 = {
+    ai = {
+        enabled = no
+    }
+}

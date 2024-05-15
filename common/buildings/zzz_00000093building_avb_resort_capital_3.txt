@@ -1,0 +1,8 @@
+building_avb_resort_capital_3 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,5 @@
+vbp_machine = {
+    ai = {
+        enabled = no
+    }
+}

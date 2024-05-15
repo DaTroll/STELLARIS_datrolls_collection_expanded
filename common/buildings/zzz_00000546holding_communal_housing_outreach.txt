@@ -1,0 +1,61 @@
+holding_communal_housing_outreach = {
+    base_buildtime = @b1_time
+    owner_type = subject_holding
+    icon = building_residence
+    base_cap_amount = 1
+    category = amenity
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_shared_burden
+        }
+        NOT = {
+            owner = {
+                has_valid_civic = civic_shared_burden
+            }
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    planet_modifier = {
+        planet_housing_add = 10
+        planet_amenities_add = 6
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_authoritarian = yes
+            }
+        }
+        monthly_loyalty = -0.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_egalitarian = yes
+            }
+        }
+        monthly_loyalty = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_egalitarian = no
+                is_gestalt = no
+            }
+        }
+        pop_ethic_egalitarian_attraction_mult = 1
+    }
+}

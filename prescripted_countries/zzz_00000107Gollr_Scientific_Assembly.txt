@@ -1,0 +1,92 @@
+"Gollr Scientific Assembly" = {
+    key = "Gollr Scientific Assembly"
+    ship_prefix = {
+        key = "GSV"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol13"
+        species_name = {
+            key = "Gollr"
+        }
+        species_plural = {
+            key = "Gollrs"
+        }
+        species_adjective = {
+            key = "Gollrians"
+        }
+        species_bio = "\"Science is the only way\"                                                                             The Gollrs are hardcore scientist. Believing that only science and logic might rightfully guide them ans assure their survival. They therefore only let scientist reign their world. Permetting the \"mentally deprived\" to focus on the fieldwork, the average Gollr to work in the cities, and the elites to make scientific breakthroughts and new discoveries. The question is, since they lack a significant punch power due to their overhelming investment in the sciences. Will they be able to keep up if they are technologicaly advanced but behind in raw power?"
+        name_list = "MOL1"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_natural_engineers"
+        trait = "trait_adaptive"
+        trait = "trait_weak"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "Gollr Scientific Assembly"
+    }
+    adjective = {
+        key = "Gollrian"
+    }
+    authority = "auth_democratic"
+    government = "gov_rational_consensus"
+    planet_name = {
+        key = "Goll"
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "Goll"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "zoological"
+            file = "flag_zoological_16.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "dark_grey"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Gollram"
+            }
+        }
+        portrait = "mol13"
+        texture = 3
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "Director-Researcher"
+        }
+        ruler_title_female = {
+            key = "Director-Researcher"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_free_haven"
+    }
+    origin = "origin_mechanists"
+}

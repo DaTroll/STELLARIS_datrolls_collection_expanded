@@ -1,0 +1,58 @@
+building_necroseeders_2 = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = government
+    can_be_disabled = no
+    upgrades = {
+        "building_necroseeders_3"
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            energy = 1500
+            exotic_gases = @b3_rare_cost
+        }
+        upkeep = {
+            energy = 20
+            exotic_gases = @b3_rare_upkeep
+        }
+    }
+    destroy_trigger = {
+        OR = {
+            is_planet_class = pc_city
+            is_pd_necro_world = yes
+            is_pd_arcology = yes
+            is_pd_robot_arcology = yes
+            is_pd_hive_arcology = yes
+            is_artificial = yes
+            is_pd_habitat = yes
+            is_pd_planetary_megaproject = yes
+            NOT = {
+                exists = owner
+            }
+            owner = {
+                NOT = {
+                    has_ascension_perk = ap_pd_necro_worlds
+                }
+            }
+        }
+    }
+    allow = {
+        is_pd_necro_world = no
+        owner = {
+            OR = {
+                has_civic = civic_memorialist
+                has_civic = civic_death_cult
+                has_civic = civic_death_cult_corporate
+                has_civic = civic_permanent_employment
+                has_civic = civic_reanimated_armies
+                has_origin = origin_necrophage
+                has_ascension_perk = ap_mechromancy
+            }
+        }
+    }
+    planet_modifier = {
+        planet_jobs_produces_mult = 0.05
+        pop_government_ethic_attraction = 0.1
+    }
+}

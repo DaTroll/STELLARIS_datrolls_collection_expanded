@@ -1,0 +1,87 @@
+@stickiness = 10
+col_ecu_industrial = {
+    icon = GFX_colony_type_industrial
+    potential = {
+        exists = owner
+        owner = {
+            country_uses_consumer_goods = yes
+        }
+        OR = {
+            uses_district_set = city_world
+            uses_district_set = pdcorpoarc
+        }
+        is_capital = no
+    }
+    planet_modifier = {
+        planet_district_arcology_arms_industry_build_speed_mult = 0.25
+        planet_district_arcology_civilian_industry_build_speed_mult = 0.25
+        planet_artisans_upkeep_mult = -0.1
+        planet_metallurgists_upkeep_mult = -0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_galactic_community_member = yes
+            }
+            OR = {
+                is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+                is_active_resolution = "resolution_industry_project_cornucopia"
+            }
+        }
+        modifier = {
+            planet_artisans_produces_mult = 0.05
+            planet_metallurgists_produces_mult = 0.05
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_galactic_community_member = yes
+            }
+            is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+        }
+        modifier = {
+            planet_artisans_produces_mult = 0.1
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            add = @stickiness
+            has_designation = col_ecu_industrial
+        }
+        complex_trigger_modifier = {
+            trigger = num_districts
+            parameters = {
+                type = district_arcology_civilian_industry
+            }
+            mode = add
+            mult = 6
+        }
+        complex_trigger_modifier = {
+            trigger = num_districts
+            parameters = {
+                type = district_arcology_arms_industry
+            }
+            mode = add
+            mult = 6
+        }
+        modifier = {
+            add = 8
+            OR = {
+                has_building = building_factory_1
+                has_building = building_factory_2
+                has_building = building_factory_3
+            }
+        }
+        modifier = {
+            add = 8
+            OR = {
+                has_building = building_foundry_1
+                has_building = building_foundry_2
+                has_building = building_foundry_3
+            }
+        }
+    }
+}

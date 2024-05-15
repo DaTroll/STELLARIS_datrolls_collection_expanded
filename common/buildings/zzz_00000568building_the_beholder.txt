@@ -1,0 +1,95 @@
+building_the_beholder = {
+    icon = building_temple_of_whispers
+    empire_limit = {
+        base = 1
+    }
+    can_build = no
+    can_demolish = no
+    category = manufacturing
+    destroy_trigger = {
+        OR = {
+            NOT = {
+                exists = owner
+            }
+            AND = {
+                exists = event_target:beholder_leader
+                exists = event_target:beholder_leader.owner
+                owner = {
+                    NOT = {
+                        is_same_value = event_target:beholder_leader.owner
+                    }
+                }
+            }
+            AND = {
+                NOT = {
+                    exists = event_target:beholder_leader.owner
+                }
+                owner = {
+                    NOT = {
+                        has_country_flag = beholder_chain_owner
+                    }
+                }
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = event_target:beholder_leader
+        }
+        planet_psionic_jobs_produces_mult = 0.1
+    }
+    resources = {
+        category = planet_buildings
+        upkeep = {
+            trigger = {
+                exists = event_target:beholder_leader
+            }
+            energy = 25
+        }
+        produces = {
+            trigger = {
+                exists = event_target:beholder_leader
+                NOT = {
+                    has_planet_flag = psi_inoculating_pops
+                }
+            }
+            sr_zro = 8
+        }
+        upkeep = {
+            trigger = {
+                NOT = {
+                    exists = event_target:beholder_leader
+                }
+            }
+            energy = 3
+        }
+        produces = {
+            trigger = {
+                NOT = {
+                    exists = event_target:beholder_leader
+                }
+            }
+            sr_zro = 1
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            NOT = {
+                exists = event_target:beholder_leader
+            }
+        }
+        text = building_the_beholder_unknown_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = event_target:beholder_leader
+        }
+        text = building_the_beholder_known_desc
+    }
+    triggered_desc = {
+        text = beholder_psi_pops_timer_tooltip
+        trigger = {
+            has_planet_flag = beholder_psi_pops_timer
+        }
+    }
+}

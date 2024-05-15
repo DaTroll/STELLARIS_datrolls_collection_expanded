@@ -1,0 +1,47 @@
+tech_mine_pd_zro = {
+    cost = @tier2cost1
+    area = engineering
+    tier = 2
+    category = {
+        materials
+    }
+    prerequisites = {
+        "tech_space_construction"
+    }
+    weight = @tier2weight1
+    is_rare = yes
+    is_reverse_engineerable = no
+    start_tech = no
+    potential = {
+        any_owned_planet = {
+            is_planet_class = pc_pd_zro
+        }
+    }
+    weight_modifier = {
+        factor = 25
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    is_planet_class = pc_pd_zro
+                    is_colony = yes
+                }
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+    ai_weight = {
+        factor = @strategic_resource_ai_tech_factor
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+}

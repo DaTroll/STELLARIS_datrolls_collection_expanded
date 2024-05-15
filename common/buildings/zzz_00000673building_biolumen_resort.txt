@@ -1,0 +1,36 @@
+building_biolumen_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_biolumen
+        NOT = {
+            has_building = building_biolumen_lab
+        }
+        NOT = {
+            has_building_construction = building_biolumen_lab
+        }
+        NOT = {
+            has_building = building_biolumen_resort
+        }
+        NOT = {
+            has_building_construction = building_biolumen_resort
+        }
+        NOT = {
+            has_building = building_biolumen_farm
+        }
+        NOT = {
+            has_building_construction = building_biolumen_farm
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_biolumen
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+leader_trait_corsair = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_corsair
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_admiral
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip = leader_trait_corsair_effect
+    initial = no
+    randomized = no
+}

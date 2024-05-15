@@ -1,0 +1,22 @@
+leader_trait_mercenary_warrior = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_mercenary_warrior"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_evasion_mult = 0.1
+        ship_fire_rate_mult = 0.1
+    }
+    army_modifier = {
+        army_damage_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

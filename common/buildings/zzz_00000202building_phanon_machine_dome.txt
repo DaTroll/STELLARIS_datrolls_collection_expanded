@@ -1,0 +1,8 @@
+building_phanon_machine_dome = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

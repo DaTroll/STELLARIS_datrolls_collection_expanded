@@ -1,0 +1,43 @@
+tech_techno_canal = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        new_worlds
+    }
+    weight = @tier3weight3
+    is_rare = yes
+    is_reverse_engineerable = no
+    potential = {
+        any_owned_planet = {
+            OR = {
+                is_planet_class = pc_technoorganic
+                is_planet_class = pc_pd_techno_arc
+            }
+        }
+    }
+    weight_modifier = {
+        factor = 25
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    has_deposit = d_subsurface_assembly
+                    is_colony = yes
+                }
+                owner = {
+                    has_origin = origin_techno_world
+                }
+            }
+        }
+    }
+    ai_weight = {
+        factor = 4
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_new_worlds
+            }
+        }
+    }
+}

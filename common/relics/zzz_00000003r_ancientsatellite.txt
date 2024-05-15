@@ -1,0 +1,10 @@
+r_ancientsatellite = {
+    activation_duration = 3600
+    portrait = "GFX_relic_dragon_trophy"
+    resources = {
+        category = relics
+    }
+    possible = {
+        always = no
+    }
+}

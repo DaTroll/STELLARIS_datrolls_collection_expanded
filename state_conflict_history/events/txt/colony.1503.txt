@@ -1,0 +1,90 @@
+namespace = colony
+planet_event = {
+    id = colony.1503
+    title = "colony.1503.name"
+    desc = "colony.1503.desc"
+    picture = GFX_evt_big_landing_ship
+    location = ROOT
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            has_country_flag = FLDrone_country
+        }
+    }
+    option = {
+        name = colony.1503.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier2researchreward
+                min = @tier2researchmin
+                max = @tier2researchmax
+            }
+        }
+        add_modifier = {
+            modifier = "drone_space_elevator"
+            days = 3600
+        }
+        hidden_effect = {
+            planet_event = {
+                id = colony.1504
+                days = 360
+            }
+        }
+    }
+    option = {
+        name = colony.1503.b
+        trigger = {
+            owner = {
+                has_technology = tech_space_elevator
+            }
+            solar_system = {
+                exists = starbase
+                starbase = {
+                    has_starbase_module = shipyard
+                }
+                NOR = {
+                    any_system_planet = {
+                        has_deposit = d_space_elevator
+                    }
+                }
+            }
+        }
+        allow = {
+            owner = {
+                resource_stockpile_compare = {
+                    resource = alloys
+                    value >= 500
+                }
+            }
+        }
+        owner = {
+            add_resource = {
+                alloys = -500
+            }
+        }
+        add_deposit = d_space_elevator
+        hidden_effect = {
+            create_ambient_object = {
+                type = "space_elevator"
+            }
+            solar_system = {
+                random_system_ambient_object = {
+                    limit = {
+                        is_same_value = last_created_ambient_object
+                    }
+                    set_location = {
+                        target = PREVPREV
+                        distance = 5
+                        angle = random
+                    }
+                    set_ambient_object_flag = space_elevator_anchor
+                }
+            }
+            planet_event = {
+                id = colony.1504
+                days = 360
+            }
+        }
+    }
+}

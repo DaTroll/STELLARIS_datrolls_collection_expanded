@@ -1,0 +1,18 @@
+leader_trait_prospector_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_prospector"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_prospector"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    custom_tooltip = leader_trait_prospector_2_effect
+    leader_class = {
+        scientist
+    }
+}

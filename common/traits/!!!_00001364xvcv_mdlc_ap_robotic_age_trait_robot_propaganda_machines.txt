@@ -1,0 +1,25 @@
+xvcv_mdlc_ap_robotic_age_trait_robot_propaganda_machines = {
+    cost = 1
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        ROBOT
+    }
+    species_potential_add = {
+        exists = from
+        from = {
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+            has_ascension_perk = xvcv_mdlc_ap_robotic_age
+        }
+    }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.25
+        planet_jobs_unity_upkeep_mult = -0.2
+        pop_amenities_usage_add = 0.2
+    }
+    slave_cost = {
+        energy = 150
+    }
+}

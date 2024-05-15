@@ -1,0 +1,41 @@
+@triumph_duration_short = 1800
+r_scfe_music_of_the_universe = {
+    activation_duration = @triumph_duration_short
+    portrait = "GFX_relic_scfe_music_of_the_universe"
+    sound = relic_activation_khans_throne
+    resources = {
+        category = relics
+        cost = {
+            unity = 2000
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_jobs_society_research_produces_mult = 0.1
+    }
+    score = 1000
+    active_effect = {
+        add_modifier = {
+            modifier = "scfe_music_of_the_universe_modifier"
+            days = @triumph_duration_short
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_short
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_scfe_music_of_the_universe
+        }
+    }
+}

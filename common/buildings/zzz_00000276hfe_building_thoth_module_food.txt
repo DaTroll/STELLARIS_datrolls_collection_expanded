@@ -1,0 +1,8 @@
+hfe_building_thoth_module_food = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

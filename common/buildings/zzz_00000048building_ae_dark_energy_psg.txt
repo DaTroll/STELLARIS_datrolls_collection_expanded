@@ -1,0 +1,8 @@
+building_ae_dark_energy_psg = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

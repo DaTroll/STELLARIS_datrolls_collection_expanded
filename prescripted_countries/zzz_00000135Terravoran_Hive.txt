@@ -1,0 +1,87 @@
+"Terravoran Hive" = {
+    key = "Terravoran Hive"
+    ship_prefix = {
+        key = "THS"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith9"
+        species_name = {
+            key = "Vore"
+        }
+        species_plural = {
+            key = "Voran"
+        }
+        species_adjective = {
+            key = "Voran"
+        }
+        species_bio = "The Voran are slow learners but quite strong for the matter. They do indeed eat almost anything that comes in their way, and will not hesitate to do so, even if it would be their home planet, which they have been mining for centuries. Their greed for more ressources especially minerals is astounishing even for galactic mesures. They will therefore try to seize any occasion to eat all the worlds in the Galaxy. "
+        name_list = "LITHOID1"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_hive_mind"
+        trait = "trait_industrious"
+        trait = "trait_slow_learners"
+        trait = "trait_strong"
+        trait = "trait_solitary"
+        trait = "trait_resilient"
+    }
+    name = {
+        key = "Terravoran Hive"
+    }
+    adjective = {
+        key = "Terravoran"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Voran"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Voran"
+    }
+    initializer = ""
+    graphical_culture = "lithoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_20.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "inverted_v.dds"
+        }
+        colors = {
+            "dark_brown"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Terravor Dax"
+            }
+        }
+        portrait = "lith9"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_subsumed_will"
+    }
+    origin = "origin_doomsday"
+}

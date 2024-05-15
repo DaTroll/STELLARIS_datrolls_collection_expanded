@@ -1,0 +1,18 @@
+tech_gpm_precursor_city_discovery_2 = {
+    area = physics
+    cost = @tier2cost1
+    category = {
+        computing
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        planet_districts_cost_mult = -0.2
+        planet_max_buildings_add = 1
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

@@ -1,0 +1,91 @@
+"Ezair First Compagny" = {
+    key = "Ezair First Compagny"
+    ship_prefix = {
+        key = "ETS"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi10"
+        species_name = {
+            key = "Ezair"
+        }
+        species_plural = {
+            key = "Ezairs"
+        }
+        species_adjective = {
+            key = "Ezairan"
+        }
+        species_bio = "The Ezairan have four eyes, two for the person sitting in front of them and two for the money.                                                           Their Homeworld of Aize isn't the richest planet, so they had, long ago, to trade. Trade made many person rich and they builded associations, guilds and finally conglomerates. Those associations soon overthrow the perwerless covernements who didn't know what to do against such a financial power. Now the Ezair First Compagny controls the hole planet and everything else coming with it. Will they be able to use the same techniques and sceems as before? Or will they now become the ruled?"
+        name_list = "AVI2"
+        gender = not_set
+        trait = "trait_thrifty"
+        trait = "trait_sedentary"
+        trait = "trait_charismatic"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Ezair First Compagny"
+    }
+    adjective = {
+        key = "Ezairan"
+    }
+    authority = "auth_corporate"
+    government = "gov_trade_league"
+    planet_name = {
+        key = "Bo"
+    }
+    planet_class = "pc_tundra"
+    system_name = {
+        key = "Bo'ne"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_03.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "vertical.dds"
+        }
+        colors = {
+            "black"
+            "light_green"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Krassus"
+            }
+        }
+        portrait = "avi10"
+        texture = 4
+        attachment = 0
+        clothes = 4
+        ruler_title = {
+            key = "First Official"
+        }
+        ruler_title_female = {
+            key = "First Official"
+        }
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophile"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_private_prospectors"
+        "civic_free_traders"
+    }
+    origin = "origin_default"
+}

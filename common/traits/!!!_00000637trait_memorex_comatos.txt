@@ -1,0 +1,44 @@
+trait_memorex_comatos = {
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "leader_trait_arrested_development"
+        COUNCIL = no
+        TIER = none
+    }
+    cost = 0
+    potential_crossbreeding_chance = 0
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        if = {
+            limit = {
+                exists = from
+            }
+            custom_tooltip = {
+                fail_text = trait_memorex_comatos_fixed
+                from = {
+                    has_country_flag = memorex_fixed
+                }
+            }
+        }
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    forced_happiness = yes
+    infertile = yes
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_produces_mult = -2
+    }
+    custom_tooltip = TRAIT_MEMOREX_COMATOS_EFFECT
+    slave_cost = {
+        energy = -1000
+    }
+}

@@ -1,0 +1,151 @@
+pearl_diver = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_food_processing_facility
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        hidden_trigger = {
+            exists = owner
+        }
+        owner = {
+            is_gestalt = no
+            is_anglers_empire = yes
+        }
+    }
+    resources = {
+        category = planet_artisans
+        produces = {
+            consumer_goods = 6
+        }
+        produces = {
+            trigger = {
+                has_councilor = {
+                    COUNCILOR = "councilor_anglers"
+                }
+            }
+            consumer_goods = @councilor_anglers_pearl_diver_consumer_goods_bonus
+            mult = value:councilor_level|TYPE|councilor_anglers|
+        }
+        upkeep = {
+            food = 3
+            minerals = 4
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = has_produce_requisitorium
+                    exists = owner.overlord
+                    owner.overlord = {
+                        is_gestalt = no
+                    }
+                }
+            }
+            consumer_goods = @requisitorium_consumer_goods_reduction
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = has_produce_requisitorium
+                    exists = owner.overlord
+                    owner.overlord = {
+                        is_gestalt = no
+                    }
+                }
+            }
+            minerals = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_councilor = {
+                COUNCILOR = "councilor_corporate_anglers"
+            }
+        }
+        trade_value_add = @councilor_corporate_anglers_pearl_diver_trade_value_bonus
+        mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_corporate_anglers|
+    }
+    overlord_resources = {
+        category = planet_requisitioned_consumer_goods
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = has_produce_requisitorium
+                    exists = owner.overlord
+                    owner.overlord = {
+                        is_gestalt = no
+                    }
+                }
+            }
+            consumer_goods = @requisitorium_consumer_goods_overlord
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        trade_value_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        planet_amenities_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|pearl_diver|RESOURCE|consumer_goods|FACTOR|0.75|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+        modifier = {
+            factor = 2
+            is_enslaved = yes
+            has_slavery_type = {
+                type = slavery_indentured
+            }
+        }
+        modifier = {
+            factor = 1.1
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        modifier = {
+            factor = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        modifier = {
+            factor = 0.1
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 0.1
+            NOT = {
+                has_job = pearl_diver
+            }
+            exists = owner
+            owner = {
+                resource_income_compare = {
+                    resource = food
+                    value < 5
+                }
+            }
+        }
+        modifier = {
+            factor = 5
+            has_job = pearl_diver
+        }
+    }
+}

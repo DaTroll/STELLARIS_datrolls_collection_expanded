@@ -1,0 +1,172 @@
+district_gpm_precursor_power_plant = {
+    base_buildtime = 600
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    show_on_uncolonized = {
+        uses_district_set = gpm_precursor
+    }
+    potential = {
+        uses_district_set = gpm_precursor
+    }
+    conversion_ratio = 1
+    convert_to = {
+        district_generator
+        district_rw_generator
+        district_srw_commercial
+    }
+    resources = {
+        category = planet_districts
+        cost = {
+            trigger = {
+                exists = owner
+            }
+            minerals = 2000
+            minor_artifacts = 1000
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    NOT = {
+                        has_deficit = minor_artifacts
+                    }
+                }
+            }
+            energy = 40
+        }
+        upkeep = {
+            minor_artifacts = 0.5
+        }
+    }
+    planet_modifier = {
+        planet_housing_add = 4
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        modifier = {
+            planet_housing_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            job_technician_drone_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        modifier = {
+            job_technician_drone_add = 2
+            planet_housing_add = 4
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        modifier = {
+            job_technician_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        modifier = {
+            job_fe_acolyte_generator_add = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_technician_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        text = job_technician_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        text = job_fe_acolyte_generator_effect_desc
+    }
+    ai_weight = {
+        weight = 100
+        modifier = {
+            factor = 100
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value <= 30
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value <= 60
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value <= 120
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value <= 200
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            free_jobs <= 0
+        }
+    }
+}

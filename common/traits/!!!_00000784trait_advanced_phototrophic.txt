@@ -1,0 +1,47 @@
+trait_advanced_phototrophic = {
+    host_has_dlc = "Plantoids Species Pack"
+    cost = 1
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+        exists = from
+        from = {
+            has_technology = tech_plantoid_transgenesis
+        }
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    potential_crossbreeding_chance = 1
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    opposites = {
+        "trait_plantoid_phototrophic"
+        "trait_plantoid_radiotrophic"
+        "trait_advanced_radiotrophic"
+        "trait_harvested_radiotrophic"
+        "trait_voidling"
+        "trait_cave_dweller"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    species_class = {
+        HUM
+        MAM
+        REP
+        AVI
+        ART
+        MOL
+        NECROID
+        AQUATIC
+        LITHOID
+        TOX
+    }
+    sorting_priority = 30
+    custom_tooltip = TRAIT_ADVANCED_PHOTOTROPHIC_EFFECT
+    slave_cost = {
+        energy = 1000
+    }
+}

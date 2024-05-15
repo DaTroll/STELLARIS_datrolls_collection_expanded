@@ -1,0 +1,36 @@
+building_glacio_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_glacio
+        NOT = {
+            has_building = building_glacio_foundry
+        }
+        NOT = {
+            has_building_construction = building_glacio_foundry
+        }
+        NOT = {
+            has_building = building_glacio_resort
+        }
+        NOT = {
+            has_building_construction = building_glacio_resort
+        }
+        NOT = {
+            has_building = building_glacio_mine
+        }
+        NOT = {
+            has_building_construction = building_glacio_mine
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_glacio
+            }
+        }
+    }
+}

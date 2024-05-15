@@ -1,0 +1,25 @@
+leader_trait_crusader_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_crusader_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_crusader"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    fleet_modifier = {
+        damage_vs_rival_mult = 0.15
+    }
+    army_modifier = {
+        army_damage_mult = 0.1
+        army_morale = 0.25
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip = leader_trait_crusader_3_effect
+}

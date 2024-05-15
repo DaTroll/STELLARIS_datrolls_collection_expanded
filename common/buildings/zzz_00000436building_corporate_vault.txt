@@ -1,0 +1,137 @@
+building_corporate_vault = {
+    base_buildtime = @b2_time
+    empire_limit = {
+        base = 1
+    }
+    icon = building_autocurating_vault
+    category = unity
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = slave_colony
+        }
+        owner = {
+            is_megacorp = yes
+            is_spiritualist = no
+            has_make_spiritualist_perk = no
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            owner = {
+                OR = {
+                    is_megacorp = no
+                    is_spiritualist = yes
+                    has_make_spiritualist_perk = yes
+                }
+            }
+        }
+    }
+    convert_to = {
+        building_citadel_of_faith
+        building_autocurating_vault
+        building_alpha_hub
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b2_minerals
+            rare_crystals = @b2_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 1200
+            rare_crystals = 375
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = @b2_upkeep
+            rare_crystals = @b2_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 8
+            rare_crystals = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_ringworld_output_boost = yes
+        }
+        planet_administrators_unity_produces_add = 1
+        planet_managers_unity_produces_add = 1
+        planet_priests_unity_produces_add = 1
+        planet_telepaths_unity_produces_add = 1
+    }
+    country_modifier = {
+        country_official_cap_add = 1
+        country_unity_produces_mult = 0.05
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = no
+            }
+        }
+        modifier = {
+            job_executive_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = yes
+            }
+        }
+        modifier = {
+            job_steward_add = 2
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = no
+            }
+        }
+        text = job_executive_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_megacorp = yes
+                is_worker_coop_empire = yes
+            }
+        }
+        text = job_steward_effect_desc
+    }
+    prerequisites = {
+        "tech_autocurating_vault"
+    }
+    show_tech_unlock_if = {
+        is_megacorp = yes
+        is_spiritualist = no
+        has_make_spiritualist_perk = no
+    }
+}

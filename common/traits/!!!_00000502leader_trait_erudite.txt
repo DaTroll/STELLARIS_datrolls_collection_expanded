@@ -1,0 +1,75 @@
+leader_trait_erudite = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_erudite"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        num_tech_alternatives_add = 1
+    }
+    triggered_fleet_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_fire_rate_mult = 0.1
+        ship_disengage_chance_mult = 0.1
+    }
+    triggered_army_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        army_damage_taken_mult = -0.1
+        army_disengage_chance_mult = 0.1
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        species_leader_exp_gain = 0.1
+        leader_trait_selection_options_add = 1
+    }
+    triggered_galcom_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        diplo_weight_pops_mult = 0.05
+    }
+    triggered_federation_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        federation_experience_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_ruler = no
+        }
+        planet_pops_upkeep_mult = -0.1
+        pop_amenities_usage_mult = -0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            is_ruler = no
+        }
+        planet_pops_upkeep_mult = -0.05
+        pop_amenities_usage_mult = -0.05
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+}

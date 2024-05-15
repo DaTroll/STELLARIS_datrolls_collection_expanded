@@ -1,0 +1,31 @@
+leader_trait_legendary_great_inventor = {
+    starting_ruler_trait = yes
+    leader_trait_type = veteran
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    allowed_ethics = {
+        ethic_materialist
+        ethic_fanatic_materialist
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_materialist_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_tt"
+    councilor_modifier = {
+        planet_pop_assembly_mult = 0.05
+        planet_pop_assemblers_engineering_research_produces_add = 0.5
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

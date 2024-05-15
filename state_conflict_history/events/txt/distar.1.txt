@@ -1,0 +1,136 @@
+namespace = distar
+ship_event = {
+    id = distar.1
+    title = "distar.1.name"
+    desc = "distar.1.desc"
+    picture = GFX_evt_space_debris
+    show_sound = event_ship_bridge
+    location = event_target:supply_wreckage_tar
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            any_neighbor_country = {
+                is_ai = yes
+                is_country_type = default
+                is_homicidal = no
+                has_communications = prev
+                NOR = {
+                    is_at_war_with = prev
+                    is_same_value = prev
+                }
+            }
+        }
+    }
+    immediate = {
+        create_ambient_object = {
+            type = "abandoned_ship_object"
+            location = from
+        }
+        last_created_ambient_object = {
+            save_event_target_as = supply_wreckage_tar
+            set_location = {
+                target = from
+                distance = 5
+                angle = 90
+            }
+        }
+        owner = {
+            random_neighbor_country = {
+                limit = {
+                    is_country_type = default
+                    is_homicidal = no
+                    has_communications = prev
+                    NOR = {
+                        is_at_war_with = prev
+                        is_country = prev
+                    }
+                    any_system = {
+                        has_access_fleet = prev
+                    }
+                }
+                save_event_target_as = wreckage_owner
+            }
+        }
+    }
+    option = {
+        name = "distar.1.a"
+        owner = {
+            add_resource = {
+                minerals = 300
+            }
+            add_intel = {
+                who = event_target:wreckage_owner
+                amount = 10
+            }
+        }
+        custom_tooltip = "distar.1.a.tooltip"
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = distar.2
+                    days = 180
+                }
+            }
+        }
+    }
+    option = {
+        name = "distar.1.a.alt"
+        trigger = {
+            owner = {
+                NOT = {
+                    is_at_war_with = event_target:wreckage_owner
+                }
+            }
+            leader = {
+                has_trait = leader_trait_expertise_statecraft
+            }
+        }
+        owner = {
+            add_resource = {
+                minerals = 150
+            }
+        }
+        hidden_effect = {
+            event_target:wreckage_owner = {
+                add_resource = {
+                    minerals = 150
+                }
+            }
+        }
+        custom_tooltip = "distar.1.a.tooltip.alt"
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = distar.3
+                    days = 180
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                NOT = {
+                    is_at_war_with = event_target:wreckage_owner
+                }
+            }
+        }
+        hidden_effect = {
+            event_target:wreckage_owner = {
+                add_resource = {
+                    minerals = 300
+                }
+            }
+        }
+        name = "distar.1.b"
+        custom_tooltip = "distar.1.b.tooltip"
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = distar.3
+                    days = 60
+                }
+            }
+        }
+    }
+}

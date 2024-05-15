@@ -1,0 +1,40 @@
+low_tech_researcher = {
+    category = specialist
+    is_capped_by_modifier = yes
+    building_icon = building_low_tech_research_lab
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_low_tech_start = yes
+        }
+    }
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 1
+            engineering_research = 1
+            society_research = 1
+        }
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+    triggered_country_modifier = {
+        modifier = {
+            country_naval_cap_add = 1
+        }
+        mult = planet.modifier:job_researcher_naval_cap_add
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_research_modifier|JOB|low_tech_researcher|
+        modifier = {
+            factor = 5
+            has_job = low_tech_researcher
+        }
+    }
+}

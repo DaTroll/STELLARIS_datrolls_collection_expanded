@@ -1,0 +1,66 @@
+livestock_zoo_animal = {
+    category = worker
+    is_capped_by_modifier = yes
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        is_enslaved = yes
+        is_sapient = yes
+        is_robot_pop = no
+    }
+    possible = {
+        has_citizenship_type = {
+            type = citizenship_slavery
+            country = owner
+        }
+        has_slavery_type = {
+            type = slavery_livestock
+        }
+        planet = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_warrior_culture
+                }
+            }
+            has_active_building = building_xeno_zoo
+        }
+    }
+    pop_modifier = {
+        pop_amenities_usage_add = -0.75
+        pop_housing_usage_add = -0.5
+        pop_political_power = -0.1
+    }
+    resources = {
+        category = planet_livestock
+        upkeep = {
+            trigger = {
+                is_lithoid = no
+            }
+            food = 1
+        }
+        upkeep = {
+            trigger = {
+                is_lithoid = yes
+            }
+            minerals = 1
+        }
+    }
+    triggered_planet_modifier = {
+        planet_amenities_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @special_job_weight
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        modifier = {
+            factor = 1.5
+            NOT = {
+                has_job = livestock_zoo_animal
+            }
+            exists = planet
+            planet = {
+                free_amenities < 5
+            }
+        }
+    }
+}

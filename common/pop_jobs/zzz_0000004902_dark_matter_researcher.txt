@@ -1,0 +1,11 @@
+02_dark_matter_researcher = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

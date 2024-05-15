@@ -1,0 +1,27 @@
+tech_mine_betharian = {
+    cost = @tier1cost2
+    area = engineering
+    tier = 2
+    category = {
+        materials
+    }
+    prerequisites = {
+        "tech_space_construction"
+    }
+    weight = @tier1weight2
+    weight_modifier = {
+        factor = 2
+        modifier = {
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    has_deposit = d_betharian_deposit
+                }
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

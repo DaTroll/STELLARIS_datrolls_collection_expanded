@@ -1,0 +1,32 @@
+@terraforming_cost_gaia = 7500
+@terraforming_duration_gaia = 3600
+terraform_link = {
+    from = pc_toxic
+    to = pc_aquatic
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = @terraforming_cost_gaia
+        }
+    }
+    duration = @terraforming_duration_gaia
+    potential = {
+        from = {
+            has_modifier = toxic_terraforming_candidate
+        }
+        has_ascension_perk = ap_hydrocentric
+    }
+    condition = {
+        has_technology = "tech_climate_restoration"
+        has_ascension_perk = "ap_detox"
+        has_ascension_perk = ap_hydrocentric
+    }
+    effect = {
+        from = {
+            detox_hangover = yes
+        }
+    }
+    ai_weight = {
+        weight = 10
+    }
+}

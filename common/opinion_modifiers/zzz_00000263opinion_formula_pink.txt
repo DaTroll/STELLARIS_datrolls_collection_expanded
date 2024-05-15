@@ -1,0 +1,6 @@
+opinion_formula_pink = {
+    opinion = {
+        base = 20
+    }
+    unique = yes
+}

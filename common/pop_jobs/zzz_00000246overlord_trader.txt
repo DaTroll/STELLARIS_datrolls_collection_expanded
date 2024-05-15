@@ -1,0 +1,40 @@
+overlord_trader = {
+    category = specialist
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_emporium
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 10
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    resources = {
+        category = planet_overlord_traders
+        upkeep = {
+            energy = 7
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_traders
+        produces = {
+            energy = 7
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

@@ -1,0 +1,6 @@
+none = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

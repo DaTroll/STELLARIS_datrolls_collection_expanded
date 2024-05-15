@@ -1,0 +1,11 @@
+02_exotic_resource_collector = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

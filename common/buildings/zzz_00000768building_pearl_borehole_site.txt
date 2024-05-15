@@ -1,0 +1,67 @@
+building_pearl_borehole_site = {
+    base_buildtime = 360
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = research
+    potential = {
+        planet = {
+            planet_has_quantumpearl_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_quantumpearl
+            planet = {
+                planet_has_quantumpearl_deposit = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_quantumpearls_exploitation
+                }
+            }
+            planet = {
+                planet_has_quantumpearl_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/researchers_add
+        AMOUNT = 2
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            engineering_research = 5
+        }
+        cost = {
+            minerals = 200
+            volatile_motes = 20
+        }
+        upkeep = {
+            energy = 2
+            volatile_motes = 2
+        }
+    }
+    planet_modifier = {
+        pop_environment_tolerance = -0.04
+    }
+    country_modifier = {
+        planet_jobs_engineering_research_produces_mult = 0.05
+    }
+    upgrades = {
+        "building_pearl_borehole_site_2"
+    }
+    ai_weight = {
+        weight = 100
+    }
+    prerequisites = {
+        "tech_quantumpearls_exploitation"
+    }
+}

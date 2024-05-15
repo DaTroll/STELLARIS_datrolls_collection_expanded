@@ -1,0 +1,21 @@
+tech_ordered_retreat = {
+    cost = @tier2cost3
+    area = engineering
+    tier = 2
+    category = {
+        voidcraft
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    modifier = {
+        envoys_add = @insight_envoy_gain
+        country_tech_influence_produces_add = 0.1
+        fleet_mia_time_mult = -0.15
+    }
+    ai_weight = {
+    }
+}

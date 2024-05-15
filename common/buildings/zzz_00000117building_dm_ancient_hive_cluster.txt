@@ -1,0 +1,8 @@
+building_dm_ancient_hive_cluster = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,60 @@
+@hab_cost = 500
+@hab_maintenance = 2
+@low_hab_maintenance = 0.2
+@hab_time = 240
+district_hab_housing = {
+    base_buildtime = @hab_time
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    show_on_uncolonized = {
+        uses_district_set = habitat
+        NOR = {
+            has_planet_flag = toxic_knights_habitat
+            has_building = building_order_castle
+        }
+    }
+    potential = {
+        uses_district_set = habitat
+        NAND = {
+            exists = owner
+            owner = {
+                has_origin = origin_toxic_knights
+            }
+            OR = {
+                has_planet_flag = toxic_knights_habitat
+                has_building = building_order_castle
+            }
+        }
+    }
+    convert_to = {
+        district_orders_demesne
+    }
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+            alloys = @low_hab_maintenance
+        }
+    }
+    planet_modifier = {
+        planet_max_buildings_add = 0.5
+        planet_housing_add = 6
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_prosperity_void_works
+            }
+        }
+        modifier = {
+            planet_housing_add = 1
+        }
+    }
+    inline_script = {
+        script = districts/habitat_housing_job_swaps
+    }
+}

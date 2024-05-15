@@ -1,0 +1,30 @@
+leader_trait_disorganized = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_disorganized"
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    army_modifier = {
+        armies_upkeep_mult = 0.4
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/army_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_unruly
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

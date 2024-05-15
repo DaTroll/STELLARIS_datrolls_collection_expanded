@@ -1,0 +1,28 @@
+leader_trait_zealot = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_righteous"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_stability_add = 10
+        planet_crime_add = -10
+        pop_government_ethic_attraction = 0.2
+        planet_administrators_unity_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_stability_add = 5
+        planet_crime_add = -5
+        pop_government_ethic_attraction = 0.1
+        planet_administrators_unity_produces_mult = 0.05
+    }
+    leader_class = {
+        official
+    }
+    randomized = no
+    initial = no
+}

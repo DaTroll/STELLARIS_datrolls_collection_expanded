@@ -1,0 +1,26 @@
+@terraforming_cost_level_1 = 2000
+@terraforming_duration_level_1 = 1800
+terraform_link = {
+    from = pc_sandsea
+    to = pc_badlands
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_1
+        }
+    }
+    duration = @terraforming_duration_level_1
+    condition = {
+        has_technology = tech_terrestrial_sculpting
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_sandsea
+                CLASS_TO = pc_badlands
+            }
+        }
+    }
+}

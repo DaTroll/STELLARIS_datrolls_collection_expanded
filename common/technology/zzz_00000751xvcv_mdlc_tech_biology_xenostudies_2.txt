@@ -1,0 +1,30 @@
+xvcv_mdlc_tech_biology_xenostudies_2 = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        biology
+    }
+    prerequisites = {
+        "xvcv_mdlc_tech_biology_xenostudies_1"
+    }
+    weight = @tier2weight1
+    is_rare = no
+    modifier = {
+        modify_species_cost_mult = -0.1
+        planet_pops_organics_food_upkeep_mult = -0.05
+    }
+    weight_modifier = {
+        factor = 0.1
+        modifier = {
+            factor = 5
+            OR = {
+                is_machine_empire = yes
+                is_mechanical_empire = yes
+            }
+        }
+    }
+    ai_weight = {
+        factor = @ai_society_tech_speed_factor
+    }
+}

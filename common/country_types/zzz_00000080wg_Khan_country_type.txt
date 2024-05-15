@@ -1,0 +1,5 @@
+wg_Khan_country_type = {
+    ai = {
+        enabled = no
+    }
+}

@@ -1,0 +1,8 @@
+building_plentiful_traditions_advanced_slave_processing = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

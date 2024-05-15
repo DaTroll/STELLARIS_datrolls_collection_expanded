@@ -1,0 +1,37 @@
+tech_colonial_bureaucracy = {
+    cost = @tier2cost1
+    area = society
+    tier = 2
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_adaptive_bureaucracy"
+    }
+    weight = @tier2weight1
+    gateway = espionage
+    modifier = {
+        country_edict_fund_add = 20
+        add_base_country_intel = 10
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            num_pops < 25
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 2
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 3
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 4
+        }
+    }
+    ai_weight = {
+    }
+}

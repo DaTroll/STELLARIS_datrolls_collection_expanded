@@ -1,0 +1,61 @@
+xvcv_mdlc_world_machine_auto_farm = {
+    base_buildtime = @b1_time
+    category = resource
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                country_uses_food = yes
+                is_ai = no
+            }
+        }
+        is_planet_world_machine = yes
+        xvcv_mdlc_debug_mode_on = yes
+        NOT = {
+            has_modifier = resort_colony
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                is_ai = yes
+                country_uses_food = no
+            }
+            planet = {
+                NOT = {
+                    is_planet_class = pc_habitat
+                }
+                free_building_slots = 0
+                owner = {
+                    is_ai = yes
+                    has_monthly_income = {
+                        resource = food
+                        value > 100
+                    }
+                }
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @xvcv_mdlc_district_cost_2
+        }
+        produces = {
+            food = 14
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    ai_resource_production = {
+        food = 10
+        trigger = {
+            always = yes
+        }
+    }
+    prerequisites = {
+        "tech_hydroponics"
+    }
+}

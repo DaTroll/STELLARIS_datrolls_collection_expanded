@@ -1,0 +1,21 @@
+leader_trait_ambassador_bully_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_ambassador_bully"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_bully"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        damage_vs_rival_mult = 0.05
+        rivalries_unity_produces_add = 5
+    }
+    leader_class = {
+        official
+    }
+}

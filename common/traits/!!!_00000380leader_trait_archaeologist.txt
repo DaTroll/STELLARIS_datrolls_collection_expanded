@@ -1,0 +1,25 @@
+leader_trait_archaeologist = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_archaeologist"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    modifier = {
+        ship_archaeological_site_excavation_speed_mult = 0.1
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_scholar
+        }
+    }
+    ai_weight = 100
+}

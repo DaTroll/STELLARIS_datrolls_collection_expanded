@@ -1,0 +1,37 @@
+namespace = anomaly
+namespace = anomaly
+ship_event = {
+    id = anomaly.300
+    title = "anomaly.300.name"
+    desc = "anomaly.300.desc"
+    picture = GFX_evt_atmospheric_flight
+    show_sound = event_ship_bridge
+    location = FROM
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            clear_deposits = yes
+        }
+        owner = {
+            set_country_flag = anomaly_300_happened
+            country_event = {
+                id = story.2
+                days = 30
+            }
+        }
+    }
+    option = {
+        name = FASCINATING
+        hidden_effect = {
+            FROM = {
+                add_modifier = {
+                    modifier = "atmospheric_ecosystem"
+                    days = -1
+                }
+            }
+        }
+        FROM = {
+            set_deposit = d_society_3
+        }
+    }
+}

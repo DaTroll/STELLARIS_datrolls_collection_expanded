@@ -1,0 +1,34 @@
+@terraforming_cost_level_4 = 15000
+@terraforming_duration_level_3 = 5400
+terraform_link = {
+    from = pc_nuked_tl
+    to = pc_eyeball
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_4
+        }
+    }
+    duration = @terraforming_duration_level_3
+    condition = {
+        has_technology = "tech_climate_restoration"
+    }
+    effect = {
+        from = {
+            add_modifier = {
+                modifier = pdeyeball
+                days = -1
+            }
+        }
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_nuked_tl
+                CLASS_TO = pc_eyeball
+            }
+        }
+    }
+}

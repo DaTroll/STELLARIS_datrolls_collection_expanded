@@ -1,0 +1,8 @@
+building_phanon_stronghold = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

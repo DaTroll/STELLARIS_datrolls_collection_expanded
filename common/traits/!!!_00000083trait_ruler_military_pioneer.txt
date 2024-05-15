@@ -1,0 +1,28 @@
+trait_ruler_military_pioneer = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_military_pioneer
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        starbase_shipyard_build_speed_mult = 0.05
+        starbase_upgrade_cost_mult = -0.05
+    }
+    leader_potential_add = {
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_commander_councilor
+        }
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

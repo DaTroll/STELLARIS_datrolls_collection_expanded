@@ -1,0 +1,25 @@
+trait_lithoid_volatile_excretions = {
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    opposites = {
+        "trait_lithoid_gaseous_byproducts"
+        "trait_lithoid_scintillating"
+        "trait_advanced_gaseous_byproducts"
+        "trait_advanced_scintillating"
+        "trait_advanced_volatile_excretions"
+        "trait_drake_scaled"
+    }
+    allowed_archetypes = {
+        LITHOID
+    }
+    custom_tooltip = TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT
+    slave_cost = {
+        energy = 1000
+    }
+}

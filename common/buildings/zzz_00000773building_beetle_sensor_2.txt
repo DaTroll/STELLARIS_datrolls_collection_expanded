@@ -1,0 +1,99 @@
+building_beetle_sensor_2 = {
+    base_buildtime = 540
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = army
+    potential = {
+        planet = {
+            planet_has_beetle_deposit = yes
+        }
+        owner = {
+            is_spiritualist = yes
+        }
+    }
+    allow = {
+        AND = {
+            has_major_upgraded_capital = yes
+            custom_tooltip_fail = {
+                text = "requirement_has_beetle"
+                planet = {
+                    planet_has_beetle_deposit = yes
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOR = {
+                    has_technology = tech_beetle_exploitation_2
+                    is_spiritualist = yes
+                }
+            }
+            planet = {
+                planet_has_beetle_deposit = no
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_soldier_add = 1
+            job_priest_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            unity = 8
+            physics_research = 10
+        }
+        cost = {
+            minerals = 300
+            energy = 50
+            food = 50
+            exotic_gases = 30
+        }
+        upkeep = {
+            energy = 5
+            food = 2
+            exotic_gases = 3
+        }
+    }
+    country_modifier = {
+        planet_sensor_range_add = 2
+        pop_happiness = 0.1
+        intel_decryption_add = 2
+        add_base_country_intel = 10
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_first_contact_dlc = yes
+            owner = {
+                has_technology = tech_detection_array
+            }
+        }
+        ship_cloaking_detection_add = 2
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_astral_planes_dlc = yes
+            exists = owner
+            owner = {
+                has_technology = tech_rift_sphere
+            }
+        }
+        country_astral_rift_speed_mult = 0.15
+    }
+    prerequisites = {
+        "tech_beetle_exploitation_2"
+    }
+    ai_weight = {
+        weight = 100
+    }
+}

@@ -1,0 +1,11 @@
+opinion_could_not_eat_the_food_party = {
+    opinion = {
+        base = 25
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

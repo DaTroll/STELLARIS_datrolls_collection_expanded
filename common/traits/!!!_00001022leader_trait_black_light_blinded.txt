@@ -1,0 +1,23 @@
+leader_trait_black_light_blinded = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        CLASS = leader
+        ICON = "GFX_leader_trait_black_light_blinded"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        science_ship_survey_speed = -0.5
+        ship_astral_rift_speed_mult = -0.5
+        ship_astral_rift_clues_add = -2
+        ship_archaeological_site_excavation_speed_mult = -0.5
+        ship_archaeological_site_clues_add = -2
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

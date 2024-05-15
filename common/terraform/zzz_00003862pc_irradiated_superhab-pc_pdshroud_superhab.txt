@@ -1,0 +1,35 @@
+@terraforming_cost_shroud = 750
+@terraforming_durantion_shroud = 3600
+terraform_link = {
+    from = pc_irradiated_superhab
+    to = pc_pdshroud_superhab
+    resources = {
+        category = terraforming
+        cost = {
+            sr_zro = @terraforming_cost_shroud
+        }
+    }
+    duration = @terraforming_durantion_shroud
+    condition = {
+        pd_has_psionic_ascension_finished = yes
+    }
+    potential = {
+        pd_has_psionic_ascension_finished = yes
+    }
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 0
+            NOT = {
+                has_origin = origin_pd_shroud
+            }
+        }
+        modifier = {
+            factor = 0
+            resource_stockpile_compare = {
+                resource = sr_zro
+                value < 500
+            }
+        }
+    }
+}

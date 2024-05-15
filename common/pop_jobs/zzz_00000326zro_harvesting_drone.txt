@@ -1,0 +1,27 @@
+zro_harvesting_drone = {
+    category = simple_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_zro_harvesters
+    possible_precalc = can_fill_drone_job
+    resources = {
+        category = planet_jobs
+        produces = {
+            sr_zro = 3
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        mult = value:job_weights_modifier|JOB|zro_harvesting_drone|RESOURCE|sr_zro|
+        modifier = {
+            factor = 1.1
+            years_passed < 1
+            owner = {
+                is_machine_assimilator = yes
+            }
+            has_trait = trait_cybernetic
+        }
+    }
+}

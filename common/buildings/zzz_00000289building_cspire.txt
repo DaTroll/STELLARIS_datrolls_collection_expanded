@@ -1,0 +1,8 @@
+building_cspire = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

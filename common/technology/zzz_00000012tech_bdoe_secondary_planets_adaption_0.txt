@@ -1,0 +1,11 @@
+tech_bdoe_secondary_planets_adaption_0 = {
+    cost = 0
+    area = society
+    category = {
+        new_worlds
+    }
+    tier = 3
+    potential = {
+        merg_has_the_belt = yes
+    }
+}

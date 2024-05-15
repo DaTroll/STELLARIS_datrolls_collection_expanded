@@ -1,0 +1,38 @@
+leader_trait_carrier_specialization = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_carrier_specialization
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    fleet_modifier = {
+        weapon_type_strike_craft_weapon_damage_mult = 0.1
+        weapon_type_strike_craft_weapon_fire_rate_mult = 0.1
+        ship_engagement_range_mult = 0.1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_any_admiral_speciality = no
+        has_trait = subclass_commander_admiral
+    }
+    prerequisites = {
+        tech_cruisers
+        tech_strike_craft_1
+    }
+    leader_class = {
+        commander
+    }
+    fleet_specialization_tag = carrier
+    custom_tooltip_with_modifiers = only_one_admiral_focus
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+}

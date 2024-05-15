@@ -1,0 +1,51 @@
+building_reef_guild = {
+    base_buildtime = 600
+    category = manufacturing
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_reef
+        NOT = {
+            has_building = building_reef_lab
+        }
+        NOT = {
+            has_building_construction = building_reef_lab
+        }
+        NOT = {
+            has_building = building_reef_guild
+        }
+        NOT = {
+            has_building_construction = building_reef_guild
+        }
+        NOT = {
+            has_building = building_reef_mine
+        }
+        NOT = {
+            has_building_construction = building_reef_mine
+        }
+    }
+    inline_script = "buildings/pd_rare_consumer_goods_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_reef
+            }
+        }
+    }
+    ai_resource_production = {
+        trigger = {
+            planet_resource_compare = {
+                resource = physics_research
+                value >= 30
+            }
+        }
+        physics_research = 5
+        society_research = 5
+        engineering_research = 5
+    }
+}

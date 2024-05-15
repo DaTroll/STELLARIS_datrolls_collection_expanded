@@ -1,0 +1,85 @@
+"Cresiane Star Mind" = {
+    key = "Cresiane Star Mind"
+    ship_prefix = {
+        key = "CSH"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla12"
+        species_name = {
+            key = "Cresiene"
+        }
+        species_plural = {
+            key = "Cresians"
+        }
+        species_adjective = {
+            key = "Cresienan"
+        }
+        species_bio = "The plant who multiplied and actually became a sentient beeing. The Hive Mind which originate from plants are the most fascinating. They are fanatically obsessed with solar power, having even tryed to implement micro atomic reactors on their bodies, only to fail catastrophically. Therefore they consider the solar power the only true worthwhile power. They are extremly strong and virtually any part of their hive can become a soldier at any time. They have to manage such complex task that the lost of one part of the hive is a total catastrophy. Any new part needs a long time to adapt within the hive and to perform its task at the best efficiency possible."
+        name_list = "PLANT4"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_repugnant"
+        trait = "trait_very_strong"
+        trait = "trait_rapid_breeders"
+        trait = "trait_slow_learners"
+    }
+    name = {
+        key = "Cresiane Star Mind"
+    }
+    adjective = {
+        key = "Cresian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Cresia"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Cresia Core"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_13.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "horizontal_stripe.dds"
+        }
+        colors = {
+            "teal"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Azul ka Cres"
+            }
+        }
+        portrait = "pla12"
+        texture = 4
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_divided_attention"
+        "civic_hive_strength_of_legions"
+    }
+    origin = "origin_tree_of_life"
+}

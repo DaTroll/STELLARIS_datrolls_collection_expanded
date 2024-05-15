@@ -1,0 +1,8 @@
+building_central_citadel = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

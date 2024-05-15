@@ -1,0 +1,20 @@
+leader_trait_commanding_presence_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_commanding_presence
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_commanding_presence
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        command_limit_add = 50
+    }
+    leader_class = {
+        commander
+    }
+}

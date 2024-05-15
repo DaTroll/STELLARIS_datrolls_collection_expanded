@@ -1,0 +1,86 @@
+"Paneirian Union" = {
+    key = "Paneirian Union"
+    ship_prefix = {
+        key = "CSV"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun11"
+        species_name = {
+            key = "Eire"
+        }
+        species_plural = {
+            key = "Eire"
+        }
+        species_adjective = {
+            key = "Eirian"
+        }
+        species_bio = "The Eire have never found great pleasure or even the time for this useless activity which is called fighting. They are extremly civilised (at least for themselves) and hate anything which is even remotely linked to warfare. They've since always solved their problems with words, discussions, meetings, or even, in the worst cases, bribes. Their intern safety and stability are major points on every candidates programm. To minimise conflicts they also believed that everyone must get more equal to each other, thus they try to do it. "
+        name_list = "PLANT3"
+        gender = not_set
+        trait = "trait_communal"
+        trait = "trait_conformists"
+        trait = "trait_conservational"
+        trait = "trait_sedentary"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Paneirian Union"
+    }
+    adjective = {
+        key = "Eirian"
+    }
+    authority = "auth_democratic"
+    government = "gov_moral_democracy"
+    planet_name = {
+        key = "Enth"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Enth"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "red"
+            "grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Basillicum Hawthorn"
+            }
+        }
+        portrait = "fun11"
+        texture = 4
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_spiritual_seekers_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_pacifist"
+    civics = {
+        "civic_beacon_of_liberty"
+        "civic_agrarian_idyll"
+    }
+    origin = "origin_scion"
+}

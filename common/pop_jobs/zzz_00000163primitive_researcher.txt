@@ -1,0 +1,57 @@
+primitive_researcher = {
+    category = specialist
+    is_capped_by_modifier = yes
+    building_icon = building_primitive_labs
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                NOT = {
+                    has_country_flag = human_slavers
+                }
+                prev.species = {
+                    NOT = {
+                        OR = {
+                            species_portrait = human
+                            species_portrait = human_legacy
+                        }
+                    }
+                }
+            }
+            OR = {
+                has_country_flag = bronze_age
+                has_country_flag = iron_age
+                has_country_flag = late_medieval_age
+                has_country_flag = renaissance_age
+                has_country_flag = steam_age
+            }
+        }
+    }
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 1
+            engineering_research = 1
+            society_research = 1
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        modifier = {
+            factor = 6
+            is_materialist = yes
+        }
+        modifier = {
+            factor = 0
+            is_spiritualist = yes
+        }
+    }
+}

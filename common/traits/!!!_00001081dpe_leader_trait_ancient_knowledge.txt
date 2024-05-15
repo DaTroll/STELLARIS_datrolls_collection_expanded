@@ -1,0 +1,28 @@
+dpe_leader_trait_ancient_knowledge = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_scroll"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        all_technology_research_speed = 0.1
+    }
+    leader_potential_add = {
+        NOT = {
+            from = {
+                has_ethic = "ethic_gestalt_consciousness"
+            }
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+    ai_weight = {
+        weight = 50
+    }
+}

@@ -1,0 +1,24 @@
+leader_trait_meticulous_2 = {
+    replace_traits = {
+        "leader_trait_meticulous"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_meticulous"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    modifier = {
+        ship_anomaly_generation_chance_mult = 0.15
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_carefree
+        leader_trait_carefree_2
+    }
+    ai_weight = 50
+}

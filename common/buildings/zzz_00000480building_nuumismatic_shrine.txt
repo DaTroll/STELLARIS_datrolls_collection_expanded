@@ -1,0 +1,35 @@
+building_nuumismatic_shrine = {
+    base_buildtime = 180
+    can_demolish = yes
+    base_cap_amount = 1
+    category = unity
+    potential = {
+        owner = {
+            has_country_flag = nuumismatic_shrine
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            is_regular_empire = no
+        }
+    }
+    planet_modifier = {
+        job_numistic_priest_add = 4
+    }
+    resources = {
+        cost = {
+            minerals = 1000
+        }
+        category = planet_buildings
+    }
+    triggered_desc = {
+        text = job_numistic_priest_effect_desc
+    }
+}

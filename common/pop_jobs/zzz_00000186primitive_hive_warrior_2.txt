@@ -1,0 +1,30 @@
+primitive_hive_warrior_2 = {
+    category = simple_drone
+    is_capped_by_modifier = yes
+    building_icon = building_residence
+    icon = warrior_drone
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 3
+    }
+    weight = {
+        weight = @soldier_job_weight
+    }
+}

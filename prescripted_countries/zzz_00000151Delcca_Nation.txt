@@ -1,0 +1,130 @@
+"Delcca Nation" = {
+    key = "Delcca Nation"
+    ship_prefix = {
+        key = "DSS"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu4"
+        species_name = {
+            key = "Delcca"
+            literal = yes
+        }
+        species_plural = {
+            key = "Delccas"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Delccan"
+            literal = yes
+        }
+        species_bio = "The Delcca did not always live on Delcce Tam', long ago, a young and curious species send out an expedition. Not having heard of it they supposed they died, but they survived. The Delcca Nation landed successfully on Delcce Tam' and amidst the extremly hostile environment, they were able to settle and thrive, learning how to respect the local wildlife and limiting their own expendentures. The current need to watch out for the wild life and to limit one's consumerims made their civilisation also more long-aging aswell as more reflective about itself."
+        name_list = "AQUATIC3"
+        gender = not_set
+        trait = "trait_conservational"
+        trait = "trait_deviants"
+        trait = "trait_weak"
+        trait = "trait_intelligent"
+        trait = "trait_enduring"
+    }
+    name = {
+        key = "format.dem_tech.3"
+        variables = {
+             {
+                key = "democratic_tech"
+                value = {
+                    key = "Nation"
+                }
+            }
+             {
+                key = "This.GetSpeciesName"
+                value = {
+                    key = "Delcca"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "democratic_tech"
+                            value = {
+                                key = "Nation"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Delcca"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_democratic"
+    government = "gov_rational_consensus"
+    advisor_voice_type = "l_materialist"
+    planet_name = {
+        key = "Delcce Tam'"
+        literal = yes
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Delcce Fa'"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_3.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "dark_grey"
+            "orange"
+            "orange"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Abd-Ul-Qar"
+                literal = yes
+            }
+        }
+        portrait = "aqu4_f"
+        texture = 2
+        attachment = 0
+        clothes = 4
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_environmentalist"
+    }
+    origin = "origin_lost_colony"
+}

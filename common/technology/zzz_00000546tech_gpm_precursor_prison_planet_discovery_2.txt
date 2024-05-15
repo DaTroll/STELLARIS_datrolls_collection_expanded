@@ -1,0 +1,20 @@
+tech_gpm_precursor_prison_planet_discovery_2 = {
+    area = society
+    cost = @tier2cost1
+    category = {
+        statecraft
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    potential = {
+        is_gestalt = no
+    }
+    modifier = {
+        pop_factions_unity_produces_mult = 0.3
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

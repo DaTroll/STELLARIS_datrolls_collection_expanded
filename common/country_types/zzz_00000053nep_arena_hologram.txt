@@ -1,0 +1,5 @@
+nep_arena_hologram = {
+    ai = {
+        enabled = no
+    }
+}

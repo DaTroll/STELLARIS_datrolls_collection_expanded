@@ -1,0 +1,34 @@
+terraform_link = {
+    to = "xvcv_mdlc_pc_machine_auto"
+    from = "xvcv_mdlc_pc_machine_ecu"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @xvcv_mdlc_world_machines_cost
+        }
+    }
+    duration = @xvcv_mdlc_world_machines_time
+    potential = {
+        has_ascension_perk = ap_machine_worlds
+        has_ascension_perk = xvcv_mdlc_ap_world_machines
+    }
+    effect = {
+        from = {
+            switch = {
+                trigger = has_modifier
+                xvcv_mdlc_world_machines_districts_heat_indicator_good = {
+                    remove_modifier = xvcv_mdlc_world_machines_districts_heat_indicator_good
+                }
+                xvcv_mdlc_world_machines_districts_heat_indicator_neutral = {
+                    remove_modifier = xvcv_mdlc_world_machines_districts_heat_indicator_neutral
+                }
+                xvcv_mdlc_world_machines_districts_heat_indicator_bad = {
+                    remove_modifier = xvcv_mdlc_world_machines_districts_heat_indicator_bad
+                }
+            }
+        }
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

@@ -1,0 +1,19 @@
+tech_gpm_precursor_energy_grid_discovery = {
+    area = physics
+    cost = @tier2cost1
+    category = {
+        particles
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        starbases_upkeep_mult = -0.2
+        stations_upkeep_mult = -0.2
+        ship_military_station_small_upkeep_mult = -0.2
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

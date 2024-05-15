@@ -1,0 +1,8 @@
+building_ie_clone_vats = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

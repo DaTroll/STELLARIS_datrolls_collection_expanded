@@ -1,0 +1,79 @@
+building_machine_assembly_plant = {
+    icon = building_robot_assembly_plant
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = pop_assembly
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+            OR = {
+                is_ai = no
+                num_pops < @ariphaos_patch_ai_pop_limit
+            }
+        }
+        NOT = {
+            has_modifier = crucible_colony
+        }
+    }
+    convert_to = {
+        building_robot_assembly_plant
+    }
+    allow = {
+        hidden_trigger = {
+            OR = {
+                owner = {
+                    is_ai = no
+                }
+                NAND = {
+                    free_district_slots = 0
+                    free_building_slots <= 1
+                    free_housing <= 0
+                    free_jobs <= 0
+                }
+            }
+        }
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                is_ai = yes
+                num_pops > @ariphaos_patch_ai_pop_limit
+            }
+            owner = {
+                is_robot_empire = no
+            }
+            AND = {
+                owner = {
+                    is_ai = yes
+                }
+                free_district_slots = 0
+                free_building_slots = 0
+                free_housing <= 0
+                free_jobs <= 0
+            }
+        }
+    }
+    planet_modifier = {
+        job_replicator_add = 1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    upgrades = {
+        building_machine_assembly_complex
+    }
+    prerequisites = {
+    }
+    triggered_desc = {
+        text = job_replicator_effect_desc
+    }
+}

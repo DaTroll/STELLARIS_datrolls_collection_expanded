@@ -1,0 +1,21 @@
+leader_trait_inspired_surveyor = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_inspired"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    self_modifier = {
+        species_leader_exp_gain = 0.2
+    }
+    modifier = {
+        ship_anomaly_research_speed_mult = 0.1
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

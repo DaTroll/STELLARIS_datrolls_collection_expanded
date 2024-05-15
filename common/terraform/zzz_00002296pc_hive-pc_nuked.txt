@@ -1,0 +1,30 @@
+terraform_link = {
+    from = pc_hive
+    to = pc_nuked
+    resources = {
+        category = terraforming
+        cost = {
+            energy = 1000
+            exotic_gases = 100
+            volatile_motes = 100
+        }
+    }
+    duration = 3600
+    potential = {
+        has_technology = tech_climate_restoration
+        has_policy_flag = relentless_industrialists_study
+        has_country_flag = relentless_industrialists_study_completed
+    }
+    ai_weight = {
+        weight = 5
+        modifier = {
+            factor = 0
+            has_authority = auth_hive_mind
+        }
+    }
+    effect = {
+        from = {
+            reroll_deposits = yes
+        }
+    }
+}

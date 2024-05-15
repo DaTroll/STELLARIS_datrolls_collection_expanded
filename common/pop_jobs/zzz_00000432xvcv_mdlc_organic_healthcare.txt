@@ -1,0 +1,53 @@
+xvcv_mdlc_organic_healthcare = {
+    category = bio_trophy
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = xvcv_mdlc_building_organic_clinic
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible = {
+        has_citizenship_type = {
+            type = citizenship_organic_trophy
+        }
+    }
+    planet_modifier = {
+        pop_growth_speed = 0.05
+        planet_pop_assembly_organic_mult = 0.05
+        pop_environment_tolerance = 0.025
+    }
+    triggered_planet_modifier = {
+        planet_amenities_no_happiness_add = 5
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    pop_modifier = {
+        pop_housing_usage_add = -1
+    }
+    resources = {
+        category = planet_doctors
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+    weight = {
+        weight = @high_prio_specialist_job_weight
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        modifier = {
+            factor = 1.5
+            has_job = xvcv_mdlc_organic_healthcare
+        }
+        modifier = {
+            factor = 10
+            NOT = {
+                has_job = xvcv_mdlc_organic_healthcare
+            }
+            planet = {
+                free_amenities < 0
+                has_available_jobs = xvcv_mdlc_organic_healthcare
+            }
+        }
+    }
+}

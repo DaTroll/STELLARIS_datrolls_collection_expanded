@@ -1,0 +1,31 @@
+@terraforming_cost_level_3 = 10000
+@terraforming_duration_level_4 = 7200
+terraform_link = {
+    from = pc_pd_necro
+    to = pc_arctic
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_3
+        }
+    }
+    duration = @terraforming_duration_level_4
+    condition = {
+        has_technology = tech_climate_restoration
+    }
+    ai_weight = {
+        weight = 20
+        modifier = {
+            factor = 0
+            from = {
+                any_owned_species = {
+                    OR = {
+                        has_trait = trait_machine_unit
+                        has_trait = trait_mechanical
+                    }
+                    is_sapient = yes
+                }
+            }
+        }
+    }
+}

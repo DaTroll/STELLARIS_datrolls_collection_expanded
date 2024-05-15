@@ -1,0 +1,37 @@
+tech_hyper_drive_3 = {
+    cost = @tier3cost3
+    area = physics
+    tier = 3
+    category = {
+        particles
+    }
+    ai_update_type = all
+    is_reverse_engineerable = no
+    prerequisites = {
+        "tech_hyper_drive_2"
+    }
+    weight = @tier3weight3
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_discovery_adopt
+        }
+        modifier = {
+            factor = @ap_grasp_the_void_travel_tech
+            has_ascension_perk = ap_grasp_the_void
+        }
+        modifier = {
+            factor = @eager_explorer_effect
+            is_eager_explorer_empire = yes
+        }
+    }
+    prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "TECH_UNLOCK_HYPERDRIVE_3_TITLE"
+            desc = "TECH_UNLOCK_HYPERDRIVE_3_DESC"
+        }
+    }
+    ai_weight = {
+    }
+}

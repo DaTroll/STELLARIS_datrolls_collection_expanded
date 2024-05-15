@@ -1,0 +1,95 @@
+@activation_cost = 3000
+@triumph_duration_short = 1800
+r_daedalus_seal = {
+    activation_duration = @triumph_duration_short
+    portrait = "GFX_daedalus_seal"
+    sound = "ap_rift_event_2_highfreq_activation"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+        produces = {
+            astral_threads = 1
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        custom_tooltip = daedalus_seal_acquisition_tt
+        dimensional_lock_duration_mult = 0.25
+    }
+    score = 3000
+    active_effect = {
+        custom_tooltip = daedalus_seal_active_effect_tt
+        custom_tooltip = relic_triumph_cooldown_short
+        hidden_effect = {
+            every_bypass = {
+                limit = {
+                    OR = {
+                        is_bypass_type = wormhole
+                        is_bypass_type = lgate
+                        is_bypass_type = shroud_tunnel
+                    }
+                    solar_system = {
+                        has_owner = yes
+                        owner = {
+                            is_same_value = root.owner
+                        }
+                    }
+                }
+                lock_bypass = {
+                    country = owner
+                    duration = 1440
+                }
+            }
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_short
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_daedalus_seal
+        }
+        custom_tooltip = {
+            fail_text = "daedalus_seal_no_bypasses_fail"
+            any_bypass = {
+                solar_system = {
+                    has_owner = yes
+                    owner = {
+                        is_same_value = root.owner
+                    }
+                }
+            }
+        }
+    }
+    ai_weight = {
+        weight = 10
+        modifier = {
+            factor = 10
+            is_militarist = yes
+        }
+        modifier = {
+            factor = 100
+            is_at_war = yes
+        }
+        modifier = {
+            factor = 0
+            count_bypass = {
+                count = 0
+                limit = {
+                    solar_system = {
+                        has_owner = yes
+                        owner = {
+                            is_same_value = root.owner
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

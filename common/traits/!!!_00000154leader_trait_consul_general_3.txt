@@ -1,0 +1,20 @@
+leader_trait_consul_general_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_consul_general_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_consul_general"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    councilor_modifier = {
+        envoy_improve_relations_mult = 1
+    }
+    leader_class = {
+        official
+    }
+}

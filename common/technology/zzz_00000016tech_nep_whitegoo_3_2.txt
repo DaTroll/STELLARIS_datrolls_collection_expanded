@@ -1,0 +1,11 @@
+tech_nep_whitegoo_3_2 = {
+    cost = 0
+    area = society
+    tier = 4
+    category = {
+        statecraft
+    }
+    potential = {
+        merg_has_wild_space = yes
+    }
+}

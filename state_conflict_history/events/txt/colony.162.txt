@@ -1,0 +1,63 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.162
+    title = "colony.162.name"
+    desc = "colony.162.desc"
+    picture = GFX_evt_satellite_in_orbit
+    show_sound = event_ship_bridge
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+        is_occupied_flag = no
+    }
+    trigger = {
+        NOT = {
+            has_planet_flag = armageddon_nuked
+        }
+        OR = {
+            is_nuked = yes
+            has_planet_flag = colonized_tomb_world
+        }
+        NOR = {
+            has_planet_flag = wasteland_space_station
+            has_planet_flag = primitives_nuked_themselves
+            has_planet_flag = nuked_planet_anomalies_disabled
+            solar_system = {
+                any_system_planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        num_pops > 0
+        NOT = {
+            owner = {
+                has_country_flag = had_colony_162
+            }
+        }
+    }
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            set_planet_flag = wasteland_space_station
+            owner = {
+                set_country_flag = had_colony_162
+            }
+        }
+    }
+    option = {
+        name = INTRIGUING
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier1researchreward
+                min = @tier1researchmin
+                max = @tier1researchmax
+            }
+        }
+    }
+}

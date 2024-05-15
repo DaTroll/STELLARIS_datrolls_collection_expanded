@@ -1,0 +1,5 @@
+ag_kae_ge_invasion_country = {
+    ai = {
+        enabled = no
+    }
+}

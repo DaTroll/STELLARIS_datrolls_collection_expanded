@@ -1,0 +1,96 @@
+@triumph_duration = 3600
+r_infinity_root = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_infinity_root"
+    sound = "ap_rift_event_14_writhing_plants_vine"
+    resources = {
+        category = relics
+        cost = {
+            astral_threads = 100
+        }
+    }
+    ai_weight = {
+        weight = 10
+        modifier = {
+            add = 10
+            count_owned_leader = {
+                count <= 4
+                limit = {
+                    leader_class = scientist
+                }
+            }
+        }
+        modifier = {
+            add = 20
+            count_owned_leader = {
+                count <= 3
+                limit = {
+                    leader_class = scientist
+                }
+            }
+        }
+        modifier = {
+            add = 60
+            count_owned_leader = {
+                count <= 2
+                limit = {
+                    leader_class = scientist
+                }
+            }
+        }
+        modifier = {
+            factor = 10
+            count_owned_leader = {
+                count <= 1
+                limit = {
+                    leader_class = scientist
+                }
+            }
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_country_flag = infinity_root_v1
+        }
+        country_food_produces_mult = 0.1
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_country_flag = infinity_root_v2
+        }
+        country_food_produces_mult = 0.2
+    }
+    score = 3000
+    active_effect = {
+        create_leader = {
+            name = random
+            species = event_target:infinity_root_leader_species
+            class = scientist
+            set_age = 1
+            randomize_traits = no
+            custom_description = infinity_root_leader_desc
+            traits = {
+                trait = leader_trait_eager
+                trait = leader_trait_adaptable
+            }
+            effect = {
+                set_skill = 3
+                set_leader_flag = should_not_have_upkeep
+            }
+        }
+        custom_tooltip = infinity_root_active_effect_tt
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_infinity_root
+        }
+    }
+}

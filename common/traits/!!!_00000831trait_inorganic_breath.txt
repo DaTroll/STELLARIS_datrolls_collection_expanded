@@ -1,0 +1,23 @@
+trait_inorganic_breath = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 3
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = inorganic_breath_tooltip
+    modifier = {
+        planet_pops_upkeep_mult = 0.5
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

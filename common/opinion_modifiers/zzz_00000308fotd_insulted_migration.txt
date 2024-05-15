@@ -1,0 +1,8 @@
+fotd_insulted_migration = {
+    opinion = {
+        base = -50
+    }
+    decay = {
+        base = 1
+    }
+}

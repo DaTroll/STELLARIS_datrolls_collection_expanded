@@ -1,0 +1,22 @@
+xvcv_mdlc_tech_core_modifying = {
+    cost = @tier3cost3
+    area = engineering
+    tier = 3
+    category = {
+        industry
+    }
+    prerequisites = {
+        "tech_robomodding_m"
+    }
+    weight = @tier3weight3
+    potential = {
+        has_authority = auth_machine_intelligence
+        has_paragon_dlc = yes
+    }
+    prereqfor_desc = {
+        custom = {
+            title = "unlock_edict_xvcv_mdlc_core_modifying"
+            desc = "unlock_edict_xvcv_mdlc_core_modifying_desc"
+        }
+    }
+}

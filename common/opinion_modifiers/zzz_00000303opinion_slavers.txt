@@ -1,0 +1,5 @@
+opinion_slavers = {
+    opinion = {
+        base = -1000
+    }
+}

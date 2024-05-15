@@ -1,0 +1,25 @@
+leader_trait_legendary_high_king_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_high_king"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_authoritarian_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        planet_stability_add = 5
+        pop_cat_ruler_happiness = 0.1
+        planet_jobs_ruler_produces_mult = 0.2
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

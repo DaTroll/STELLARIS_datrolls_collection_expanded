@@ -1,0 +1,51 @@
+stratovent_researcher = {
+    category = specialist
+    is_capped_by_modifier = yes
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_biolab_4
+    icon = xeno_zoo_keeper
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_researchers
+        produces = {
+            society_research = 3
+        }
+        upkeep = {
+            consumer_goods = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            always = yes
+        }
+        trade_value_add = 5
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            always = yes
+        }
+        planet_amenities_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult||
+    }
+    triggered_country_modifier = {
+        modifier = {
+            country_naval_cap_add = 1
+        }
+        mult = planet.modifier:job_researcher_naval_cap_add
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|stratovent_researcher|RESOURCE|society_research|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+    }
+}

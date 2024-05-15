@@ -1,0 +1,25 @@
+tech_biosynths = {
+    cost = @tier4cost2
+    area = society
+    tier = 4
+    category = {
+        biology
+    }
+    weight = 0
+    is_rare = yes
+    is_reverse_engineerable = no
+    potential = {
+        any_owned_planet = {
+            OR = {
+                is_planet_class = pc_technoorganic
+                is_planet_class = pc_pd_techno_arc
+            }
+        }
+    }
+    modifier = {
+        BIOLOGICAL_species_trait_points_add = 2
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

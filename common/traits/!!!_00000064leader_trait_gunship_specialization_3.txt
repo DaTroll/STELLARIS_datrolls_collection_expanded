@@ -1,0 +1,25 @@
+leader_trait_gunship_specialization_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_gunship_specialization_2
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_gunship_specialization
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    fleet_modifier = {
+        s_slot_weapon_fire_rate_mult = 0.25
+        s_slot_weapon_damage_mult = 0.25
+        m_slot_weapon_fire_rate_mult = 0.15
+        m_slot_weapon_damage_mult = 0.15
+    }
+    leader_class = {
+        commander
+    }
+    fleet_specialization_tag = gunship
+    custom_tooltip_with_modifiers = only_one_admiral_focus
+}

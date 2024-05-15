@@ -1,0 +1,8 @@
+building_tc_rune_shield_t1 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

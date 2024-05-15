@@ -1,0 +1,240 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.2001
+    title = colony.2001.name
+    desc = colony.2001.desc
+    picture = GFX_evt_smugglers_in_bar
+    show_sound = event_conversation
+    location = root
+    trigger = {
+        has_owner = yes
+        original_owner = yes
+        is_homeworld = no
+        owner = {
+            OR = {
+                has_ethic = ethic_fanatic_militarist
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_pacifist
+                has_ethic = ethic_pacifist
+            }
+            NOR = {
+                has_country_flag = colony_event_ethic_diverge
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        has_ground_combat = no
+        is_occupied_flag = no
+        num_pops > 0
+        is_capital = no
+        OR = {
+            is_continental = yes
+            is_tropical = yes
+            is_gaia = yes
+            is_pd_continental = yes
+            is_pd_tropical = yes
+            is_planet_class = pc_gaia
+            is_planet_class = pc_cold_gaia
+            is_planet_class = pc_hot_gaia
+        }
+        NOT = {
+            has_planet_flag = colony_event
+        }
+    }
+    is_triggered_only = yes
+    immediate = {
+        set_planet_flag = colony_event
+        owner = {
+            set_timed_country_flag = {
+                flag = colony_event_ethic_diverge
+                days = 1825
+            }
+        }
+    }
+    option = {
+        name = colony.2001.a
+        custom_tooltip = colony.2001.a.pacifist.tooltip
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_militarist
+                    has_ethic = ethic_fanatic_militarist
+                }
+            }
+        }
+        hidden_effect = {
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_pacifist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_militarist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_pacifist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_militarist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_pacifist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_militarist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+        }
+    }
+    option = {
+        name = colony.2001.a
+        custom_tooltip = colony.2001.a.military.tooltip
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_pacifist
+                    has_ethic = ethic_fanatic_pacifist
+                }
+            }
+        }
+        hidden_effect = {
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_militarist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_pacifist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_militarist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_pacifist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_militarist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_pacifist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+        }
+    }
+    option = {
+        name = colony.2001.b
+        custom_tooltip = colony.2001.b.pacifism.tooltip
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_pacifist
+                    has_ethic = ethic_pacifist
+                    has_ethic = ethic_fanatic_egalitarian
+                }
+            }
+        }
+        hidden_effect = {
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_pacifist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_militarist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            add_modifier = {
+                modifier = suppressed_opposition
+                days = 3600
+            }
+            set_timed_planet_flag = {
+                flag = suppressed_opposition_flag
+                days = 3600
+            }
+        }
+    }
+    option = {
+        name = colony.2001.b
+        custom_tooltip = colony.2001.b.military.tooltip
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_militarist
+                    has_ethic = ethic_militarist
+                    has_ethic = ethic_fanatic_egalitarian
+                }
+            }
+        }
+        hidden_effect = {
+            random_owned_pop = {
+                limit = {
+                    is_non_sapient_robot = no
+                    NOR = {
+                        has_ethic = ethic_militarist
+                        has_pop_flag = pop_changed_ethics
+                    }
+                }
+                set_timed_pop_flag = {
+                    flag = ethic_diverge_from_pacifist
+                    days = 7
+                }
+                pop_diverge_ethic = yes
+            }
+            add_modifier = {
+                modifier = suppressed_opposition
+                days = 3600
+            }
+            set_timed_planet_flag = {
+                flag = suppressed_opposition_flag
+                days = 3600
+            }
+        }
+    }
+}

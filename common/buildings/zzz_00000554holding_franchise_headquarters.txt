@@ -1,0 +1,114 @@
+holding_franchise_headquarters = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_franchise_headquarters
+    base_cap_amount = 1
+    category = government
+    destroy_trigger = {
+        NOT = {
+            planet = {
+                has_branch_office = owner.overlord
+            }
+        }
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_civic = civic_franchising
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = no_branch_office
+            planet = {
+                has_branch_office = owner.overlord
+            }
+        }
+        is_occupied_flag = no
+    }
+    on_built = {
+        planet = {
+            set_planet_flag = has_franchise_headquarters
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_planet_flag = has_franchise_headquarters
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -0.5
+        job_overlord_manager_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_spiritualist
+            }
+        }
+        pop_ethic_spiritualist_attraction_mult = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_materialist
+            }
+        }
+        pop_ethic_materialist_attraction_mult = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_xenophobe
+            }
+        }
+        pop_ethic_xenophobe_attraction_mult = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_xenophile
+            }
+        }
+        pop_ethic_xenophile_attraction_mult = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_authoritarian
+            }
+        }
+        pop_ethic_authoritarian_attraction_mult = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner.overlord = {
+                has_ethic = ethic_fanatic_egalitarian
+            }
+        }
+        pop_ethic_egalitarian_attraction_mult = 1
+    }
+    triggered_desc = {
+        text = job_overlord_manager_effect_desc
+    }
+    triggered_desc = {
+        text = holding_franchise_headquarters_effect
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner.overlord
+            owner.overlord = {
+                is_fanatic = no
+            }
+        }
+        text = holding_franchise_headquarters_ethics_effect
+    }
+}

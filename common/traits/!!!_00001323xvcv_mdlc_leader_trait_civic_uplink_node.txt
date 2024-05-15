@@ -1,0 +1,20 @@
+xvcv_mdlc_leader_trait_civic_uplink_node = {
+    inline_script = {
+        script = trait/icon_machine
+        CLASS = leader
+        ICON = "GFX_xvcv_mdlc_leader_trait_civic_uplink_node"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    custom_tooltip = xvcv_mdlc_leader_trait_civic_uplink_node_tooltip
+    triggered_councilor_modifier = {
+        planet_jobs_produces_mult = 0.02
+        mult = trigger:has_skill
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

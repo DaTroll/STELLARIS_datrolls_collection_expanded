@@ -1,0 +1,8 @@
+building_phanon_hive_cluster = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

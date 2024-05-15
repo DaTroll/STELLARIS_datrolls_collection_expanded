@@ -1,0 +1,33 @@
+trait_plantoid_budding = {
+    host_has_dlc = "Plantoids Species Pack"
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    opposites = {
+        "trait_slow_breeders"
+        "trait_rapid_breeders"
+        "trait_rapid_breeders_lithoid"
+        "trait_necrophage"
+        "trait_clone_soldier_infertile"
+        "trait_clone_soldier_infertile_full_potential"
+        "trait_lithoid_budding"
+        "trait_advanced_budding"
+        "trait_tiyanki"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    species_class = {
+        PLANT
+        FUN
+    }
+    custom_tooltip = TRAIT_PLANTOID_BUDDING_EFFECT
+    slave_cost = {
+        energy = 2000
+    }
+}

@@ -1,0 +1,53 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_dragon_trophy = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_relic_dragon_trophy"
+    sound = "relic_activation_ether_drake_trophy"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_unity_produces_mult = 0.1
+    }
+    score = 1000
+    active_effect = {
+        if = {
+            limit = {
+                is_gestalt = no
+            }
+            add_modifier = {
+                modifier = "ether_drake_triumph"
+                days = @triumph_duration
+            }
+        }
+        else = {
+            add_modifier = {
+                modifier = "ether_drake_triumph_gestalt"
+                days = @triumph_duration
+            }
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_dragon_trophy
+        }
+    }
+}

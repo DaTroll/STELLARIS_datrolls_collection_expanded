@@ -1,0 +1,19 @@
+leader_trait_caravan_counter = {
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_enclave_trader"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_emergency_ftl_mult = -0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

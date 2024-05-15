@@ -1,0 +1,30 @@
+building_betharian_power_plant = {
+    base_buildtime = @b1_time
+    is_capped_by_modifier = yes
+    category = resource
+    potential = {
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = crucible_colony
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 200
+        }
+        produces = {
+            energy = 10
+        }
+    }
+    inline_script = {
+        script = jobs/technicians_add
+        AMOUNT = 4
+    }
+    prerequisites = {
+        "tech_mine_betharian"
+    }
+}

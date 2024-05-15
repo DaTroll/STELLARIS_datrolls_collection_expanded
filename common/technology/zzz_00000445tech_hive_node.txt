@@ -1,0 +1,16 @@
+tech_hive_node = {
+    cost = 0
+    area = society
+    start_tech = yes
+    category = {
+        statecraft
+    }
+    tier = 0
+    potential = {
+        is_hive_empire = yes
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

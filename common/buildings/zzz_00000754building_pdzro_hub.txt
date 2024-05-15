@@ -1,0 +1,54 @@
+building_pdzro_hub = {
+    icon = building_pdzro_hub
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    category = research
+    prerequisites = {
+        "tech_pd_robo_zro_processing"
+    }
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+        }
+    }
+    allow = {
+        owner = {
+            is_machine_empire = yes
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            is_robot_empire = no
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+            owner = {
+                NOT = {
+                    has_deficit = sr_zro
+                }
+            }
+        }
+        modifier = {
+            planet_jobs_produces_mult = 0.1
+            planet_pop_assembly_mult = 0.1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            sr_zro = 100
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            sr_zro = 1
+        }
+    }
+}

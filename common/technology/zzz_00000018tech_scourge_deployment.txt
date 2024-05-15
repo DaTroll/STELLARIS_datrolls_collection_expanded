@@ -1,0 +1,11 @@
+tech_scourge_deployment = {
+    cost = 0
+    area = physics
+    category = {
+        particles
+    }
+    tier = 4
+    potential = {
+        merg_has_gigastructures = yes
+    }
+}

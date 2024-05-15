@@ -1,0 +1,8 @@
+eda_building_factory = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

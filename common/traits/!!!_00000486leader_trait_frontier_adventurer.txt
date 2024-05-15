@@ -1,0 +1,38 @@
+leader_trait_frontier_adventurer = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_frontier_adventurer"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_produces
+        RESOURCE = minor_artifacts
+        AMOUNT = 1
+    }
+    modifier = {
+        science_ship_survey_speed = 0.25
+        ship_speed_mult = 0.25
+        ship_evasion_add = 15
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_ancrel = yes
+        has_trait = subclass_scientist_explorer
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_explorer
+        }
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

@@ -1,0 +1,8 @@
+building_phanon_hospital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

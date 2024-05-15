@@ -1,0 +1,8 @@
+building_ae_hive_evochamber = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

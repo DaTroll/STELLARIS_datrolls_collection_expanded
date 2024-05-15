@@ -1,0 +1,11 @@
+opinion_caught_hacking = {
+    opinion = {
+        base = -250
+    }
+    decay = {
+        base = 1.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

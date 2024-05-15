@@ -1,0 +1,35 @@
+leader_trait_legendary_hoplofobia = {
+    starting_ruler_trait = yes
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    opposites = {
+        leader_trait_legendary_unfriendly
+        leader_trait_legendary_warmonger
+        leader_trait_legendary_dreamlike
+        leader_trait_legendary_harsh_ruler
+        leader_trait_legendary_too_open
+        leader_trait_legendary_bad_meritocracy
+    }
+    allowed_ethics = {
+        ethic_pacifist
+        ethic_fanatic_pacifist
+    }
+    cost = -1
+    inline_script = {
+        script = trait/icon_negative_no_tiers
+        ICON = "GFX_leader_trait_legendary_pacifist_bad"
+        COUNCIL = yes
+    }
+    councilor_modifier = {
+        ships_upkeep_mult = 0.15
+        country_naval_cap_mult = -0.1
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,36 @@
+leader_trait_overseer = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_overseer"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        monthly_loyalty_from_subjects = 0.2
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_diplomacy_councilor
+        exists = owner
+        owner = {
+            is_homicidal = no
+        }
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/council_weight_mult
+        modifier = {
+            exists = owner
+            owner = {
+                is_overlord = no
+            }
+            factor = 0.3
+        }
+    }
+}

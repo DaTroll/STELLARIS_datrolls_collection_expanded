@@ -1,0 +1,24 @@
+leader_trait_legendary_scientific_diplomacy_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_scientific_diplomacy_2"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_xenophile_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_3_tt"
+    councilor_modifier = {
+        diplo_weight_technology_mult = 0.2
+        all_technology_research_speed = 0.1
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

@@ -1,0 +1,11 @@
+opinion_emperor_removed_council_seat = {
+    opinion = {
+        base = -250
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

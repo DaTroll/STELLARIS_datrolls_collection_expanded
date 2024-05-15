@@ -1,0 +1,21 @@
+leader_trait_engineer = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_engineer
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    fleet_modifier = {
+        ship_hull_regen_add_perc = 0.0025
+        ship_armor_regen_add_perc = 0.005
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/pilot_weight_mult
+    }
+}

@@ -1,0 +1,22 @@
+xvcv_mdlc_trait_delicious = {
+    cost = 2
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    icon = "gfx/interface/icons/traits/trait_delicious.dds"
+    species_potential_add = {
+        exists = from
+        from = {
+            has_technology = xvcv_mdlc_tech_genetic_resequencing
+        }
+    }
+    modifier = {
+        planet_livestock_food_produces_add = 2
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

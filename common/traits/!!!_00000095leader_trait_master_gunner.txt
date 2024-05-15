@@ -1,0 +1,32 @@
+leader_trait_master_gunner = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_master_gunner
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    fleet_modifier = {
+        ship_weapon_range_mult = 0.3
+        ship_tracking_mult = 0.3
+        ship_accuracy_mult = 0.3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_admiral
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+    background_icon = GFX_leader_background_destiny_1
+}

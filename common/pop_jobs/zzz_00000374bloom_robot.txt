@@ -1,0 +1,67 @@
+bloom_robot = {
+    category = complex_drone
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_sugarbush
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_researchers
+        produces = {
+            sr_rad_bloom = 0.5
+            society_research = 6
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        mult = value:job_weights_modifier|JOB|agri_drone|RESOURCE|food|
+        modifier = {
+            factor = 0.9
+            NOT = {
+                has_job = agri_drone
+            }
+            owner = {
+                has_monthly_income = {
+                    resource = food
+                    value > 50
+                }
+            }
+        }
+        modifier = {
+            factor = 1.2
+            has_job = agri_drone
+        }
+        modifier = {
+            factor = 0.9
+            owner = {
+                is_robot_empire = yes
+            }
+        }
+        modifier = {
+            factor = 1.1
+            exists = owner
+            years_passed < 1
+            owner = {
+                has_valid_civic = civic_machine_assimilator
+            }
+            has_trait = trait_cybernetic
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_lithoid
+            owner = {
+                is_lithoid_empire = yes
+                has_monthly_income = {
+                    resource = food
+                    value >= 0
+                }
+            }
+        }
+    }
+}

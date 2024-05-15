@@ -1,0 +1,42 @@
+@pdbadhab = -5
+trait_pc_gaia_preference_terraforming = {
+    icon = "gfx/interface/icons/traits/trait_pc_gaia_preference.dds"
+    species_potential_add = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = yes
+    }
+    ideal_planet_class = pc_gaia
+    allowed_archetypes = {
+        BIOLOGICAL
+        PRESAPIENT
+        LITHOID
+    }
+    initial = no
+    sorting_priority = 30
+    modifier = {
+        pc_gaia_habitability = 1
+    }
+    ai_weight = {
+        weight = 0
+    }
+    custom_tooltip_with_modifiers = gaia_preference_terraforming_trait_tooltip
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                is_planet_class = pc_gaia
+            }
+        }
+        planet_jobs_produces_mult = 0.05
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            planet = {
+                is_pd_bad_exotic = yes
+            }
+        }
+        pop_environment_tolerance = @pdbadhab
+    }
+}

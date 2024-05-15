@@ -1,0 +1,89 @@
+"Lehon Kingdom" = {
+    key = "Lehon Kingdom"
+    ship_prefix = {
+        key = "LSE"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun1"
+        species_name = {
+            key = "Lehon"
+        }
+        species_plural = {
+            key = "Lehontes"
+        }
+        species_adjective = {
+            key = "Lehonian"
+        }
+        species_bio = "The Lehontes are a clever race, they try to find the best solution for every participant and don't like to use violence. They had already to and will again, they just know what level of destruction they can cause, but decided not to use their destructive capabilities. Since the great purge of all 'too stupid' life on their homeworld they wish to pursue their ultimate goal of reaching ultimate knowledge about the universe and it's components. What will be the end of the journey? Why did it start? After the great purge a strong and impressive birth of philosophy took place and aswell as a cultural rebirth!"
+        name_list = "FUN4"
+        gender = not_set
+        trait = "trait_ingenious"
+        trait = "trait_intelligent"
+        trait = "trait_natural_physicists"
+        trait = "trait_slow_breeders"
+        trait = "trait_quarrelsome"
+    }
+    name = {
+        key = "Lehon Kingdom"
+    }
+    adjective = {
+        key = "Lehonian"
+    }
+    authority = "auth_imperial"
+    government = "gov_illuminated_autocracy"
+    planet_name = {
+        key = "Sav"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Savh"
+    }
+    initializer = "shattered_ring_start"
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_17.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "turquoise"
+            "beige"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Stone"
+            }
+        }
+        portrait = "fun1"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Primus inter Pares"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_efficient_bureaucracy"
+    }
+    origin = "origin_shattered_ring"
+}

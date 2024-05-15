@@ -1,0 +1,8 @@
+building_anz_cc_mainframe = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

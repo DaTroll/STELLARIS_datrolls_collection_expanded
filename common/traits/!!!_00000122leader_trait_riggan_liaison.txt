@@ -1,0 +1,29 @@
+leader_trait_riggan_liaison = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_enclave_trader"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_produces
+        RESOURCE = volatile_motes
+        AMOUNT = 2
+    }
+    planet_modifier = {
+        planet_jobs_volatile_motes_produces_mult = 0.25
+        trade_value_mult = 0.1
+    }
+    sector_modifier = {
+        planet_jobs_volatile_motes_produces_mult = 0.1
+        trade_value_mult = 0.05
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

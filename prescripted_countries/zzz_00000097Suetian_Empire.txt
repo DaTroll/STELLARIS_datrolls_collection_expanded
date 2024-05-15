@@ -1,0 +1,86 @@
+"Suetian Empire" = {
+    key = "Suetian Empire"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "ART"
+        portrait = "art8"
+        species_name = {
+            key = "Suet"
+        }
+        species_plural = {
+            key = "Suets"
+        }
+        species_adjective = {
+            key = "Suetian"
+        }
+        species_bio = "the Suetian Empire is an Empire of Militarist, Authoritarian & Materialist. After years of investment in the Space Program, Va-Ra-Mok was still unable to unify his Nation behind one (or two) National ethics, or guidelines. Maybe in the future one Leader, or chain of events, will make the unification possible but this will take more time than anticipated. Now with the first FTL capable vessel, the Materialist hope for scientific breakthroughts, the Authoritarian for Slaves and the Militarist for a change to prove their worth against other interstellar opponents. What a day to be alive. "
+        name_list = "ART1"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_resilient"
+        trait = "trait_wasteful"
+        trait = "trait_solitary"
+    }
+    name = {
+        key = "Suetian Empire"
+    }
+    adjective = {
+        key = "Suetian"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    planet_name = {
+        key = "Suet-Re-Poid"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Suet"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "human"
+            file = "flag_human_3.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "orange"
+            "grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Va-Ra-Mok"
+            }
+        }
+        portrait = "art8"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_militarist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_efficient_bureaucracy"
+        "civic_warrior_culture"
+    }
+    origin = "origin_hegemon"
+}

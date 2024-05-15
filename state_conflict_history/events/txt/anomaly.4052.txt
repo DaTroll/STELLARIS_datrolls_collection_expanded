@@ -1,0 +1,138 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4052
+    title = "anomaly.4045.name"
+    desc = "anomaly.4052.desc"
+    picture = GFX_evt_ocean
+    show_sound = event_mystic_reveal
+    location = FROMFROMFROM
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = story.4
+                    days = 30
+                }
+            }
+        }
+        owner = {
+            add_modifier = {
+                modifier = health_discovery
+                days = 7200
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_negative_high
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_negative_high
+                add_modifier = {
+                    modifier = media_coverage_negative_high
+                    days = 7200
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_negative_medium
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_negative_medium
+                add_modifier = {
+                    modifier = media_coverage_negative_high
+                    days = 7200
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_negative_low
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_negative_low
+                add_modifier = {
+                    modifier = media_coverage_negative_medium
+                    days = 7200
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    NOR = {
+                        has_modifier = media_coverage_positive_high
+                        has_modifier = media_coverage_positive_medium
+                        has_modifier = media_coverage_positive_low
+                        has_modifier = media_coverage_negative_low
+                        has_modifier = media_coverage_negative_medium
+                        has_modifier = media_coverage_negative_high
+                    }
+                }
+            }
+            owner = {
+                add_modifier = {
+                    modifier = media_coverage_negative_low
+                    days = 7200
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_positive_low
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_positive_low
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_positive_medium
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_positive_medium
+                add_modifier = {
+                    modifier = media_coverage_positive_low
+                    days = 7200
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner = {
+                    has_modifier = media_coverage_positive_high
+                }
+            }
+            owner = {
+                remove_modifier = media_coverage_positive_high
+                add_modifier = {
+                    modifier = media_coverage_positive_medium
+                    days = 7200
+                }
+            }
+        }
+    }
+    option = {
+        name = OK
+        custom_tooltip = "anomaly.4052.a.tooltip"
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier1researchreward
+                min = @tier1researchmin
+                max = @tier1researchmax
+            }
+        }
+    }
+}

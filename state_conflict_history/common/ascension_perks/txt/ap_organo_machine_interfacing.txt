@@ -1,0 +1,40 @@
+@ascension_path_base_weight = 100
+ap_organo_machine_interfacing = {
+    on_enabled = {
+        custom_tooltip = "organo_machine_interfacing_tooltip"
+    }
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_ascension_perks_2"
+            num_ascension_perks > 1
+        }
+        custom_tooltip = {
+            fail_text = "requires_not_ap_engineered_evolution"
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_free_tradition_tree"
+            num_tradition_categories < @TRADITION_CATEGORIES_MAX
+        }
+    }
+    potential = {
+        has_utopia = yes
+        NOR = {
+            has_ascension_perk = ap_organo_machine_interfacing
+        }
+        has_authority = auth_hive_mind
+    }
+    ai_weight = {
+        factor = @ascension_path_base_weight
+        modifier = {
+            factor = 0.1
+            num_ascension_perks < 3
+        }
+        modifier = {
+            factor = 10
+            num_ascension_perks > 4
+        }
+    }
+}

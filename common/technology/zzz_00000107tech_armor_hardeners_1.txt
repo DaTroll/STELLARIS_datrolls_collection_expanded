@@ -1,0 +1,18 @@
+tech_armor_hardeners_1 = {
+    area = engineering
+    cost = @tier2cost3
+    tier = 2
+    category = {
+        materials
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_advanced_metallurgy_1"
+        "tech_rare_crystals"
+    }
+    weight = @tier2weight3
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

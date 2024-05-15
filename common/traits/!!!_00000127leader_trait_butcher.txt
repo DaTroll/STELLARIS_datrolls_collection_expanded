@@ -1,0 +1,33 @@
+leader_trait_butcher = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_butcher"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    army_modifier = {
+        army_damage_mult = 0.1
+        army_collateral_damage_mult = 0.33
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_armchair_commander
+        leader_trait_armchair_commander_2
+        leader_trait_restrained
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/army_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+}

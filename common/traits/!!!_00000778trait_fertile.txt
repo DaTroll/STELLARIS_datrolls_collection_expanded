@@ -1,0 +1,29 @@
+trait_fertile = {
+    cost = 4
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    opposites = {
+        "trait_slow_breeders"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        pop_growth_speed = 0.3
+        pop_housing_usage_mult = -0.1
+    }
+    slave_cost = {
+        energy = 2000
+    }
+}

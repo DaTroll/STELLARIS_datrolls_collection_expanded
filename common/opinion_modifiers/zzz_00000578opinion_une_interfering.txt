@@ -1,0 +1,9 @@
+opinion_une_interfering = {
+    opinion = {
+        base = -40
+    }
+    unique = yes
+    decay = {
+        base = 3
+    }
+}

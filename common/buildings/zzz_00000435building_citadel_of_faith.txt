@@ -1,0 +1,100 @@
+building_citadel_of_faith = {
+    base_buildtime = @b2_time
+    empire_limit = {
+        base = 1
+    }
+    category = unity
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                is_spiritualist = yes
+                AND = {
+                    is_gestalt = no
+                    has_make_spiritualist_perk = yes
+                }
+            }
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                OR = {
+                    AND = {
+                        is_spiritualist = no
+                        has_make_spiritualist_perk = no
+                    }
+                    is_gestalt = yes
+                }
+            }
+            has_modifier = slave_colony
+        }
+    }
+    convert_to = {
+        building_autocurating_vault
+        building_alpha_hub
+        building_corporate_vault
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b2_minerals
+            rare_crystals = @b2_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 1200
+            rare_crystals = 375
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = @b2_upkeep
+            rare_crystals = @b2_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 8
+            rare_crystals = 3
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_ringworld_output_boost = yes
+        }
+        planet_administrators_unity_produces_add = 1
+        planet_managers_unity_produces_add = 1
+        planet_priests_unity_produces_add = 1
+        planet_telepaths_unity_produces_add = 1
+    }
+    country_modifier = {
+        country_official_cap_add = 1
+        country_unity_produces_mult = 0.05
+    }
+    planet_modifier = {
+        job_high_priest_add = 1
+        pop_ethic_spiritualist_attraction_mult = 0.2
+    }
+    prerequisites = {
+        "tech_transcendent_faith"
+    }
+    triggered_desc = {
+        text = job_high_priest_effect_desc
+    }
+}

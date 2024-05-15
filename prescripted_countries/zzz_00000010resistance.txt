@@ -1,0 +1,63 @@
+resistance = {
+    name = "EMPIRE_DESIGN_resistance"
+    adjective = "PRESCRIPTED_adjective_resistance"
+    spawn_enabled = no
+    ignore_portrait_duplication = yes
+    playable = has_first_contact_dlc
+    species = {
+        class = "AVI"
+        portrait = "avi6"
+        name = "PRESCRIPTED_species_name_resistance"
+        plural = "PRESCRIPTED_species_plural_resistance"
+        adjective = "PRESCRIPTED_species_adjective_resistance"
+        name_list = "AVI3"
+        gender = indeterminable
+        trait = "trait_ingenious"
+        trait = "trait_quick_learners"
+        trait = "trait_unruly"
+        trait = "trait_natural_engineers"
+    }
+    ship_prefix = "PRESCRIPTED_ship_prefix_resistance"
+    planet_name = "PRESCRIPTED_planet_name_resistance"
+    system_name = "PRESCRIPTED_system_name_resistance"
+    planet_class = "pc_arid"
+    room = "apocalyptic6_room"
+    authority = "auth_democratic"
+    civics = {
+        "civic_nationalistic_zeal"
+        "civic_citizen_service"
+    }
+    government = "gov_military_commissariat"
+    origin = "origin_payback"
+    ethic = "ethic_fanatic_egalitarian"
+    ethic = "ethic_militarist"
+    graphical_culture = "avian_01"
+    city_graphical_culture = "avian_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_17.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_20.dds"
+        }
+        colors = {
+            "indigo"
+            "red"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = "PRESCRIPTED_ruler_name_resistance"
+        portrait = "avi6_m"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        ruler_title = "PRESCRIPTED_ruler_title_resistance"
+        leader_class = commander
+        trait = "leader_trait_fleet_organizer"
+    }
+}

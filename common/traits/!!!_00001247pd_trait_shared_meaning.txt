@@ -1,0 +1,23 @@
+pd_trait_shared_meaning = {
+    cost = 2
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_unruly"
+        "trait_docile"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_HIGH
+    modifier = {
+        species_empire_size_mult = -0.25
+    }
+}

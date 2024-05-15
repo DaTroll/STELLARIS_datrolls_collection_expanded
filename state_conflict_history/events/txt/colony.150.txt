@@ -1,0 +1,62 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.150
+    title = "colony.150.name"
+    desc = "colony.150.desc"
+    picture = GFX_evt_underground_civilization
+    show_sound = event_mystic_reveal
+    location = ROOT
+    trackable = yes
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+        is_occupied_flag = no
+    }
+    trigger = {
+        NOT = {
+            has_global_flag = underground_vault_global
+        }
+        NOT = {
+            has_planet_flag = armageddon_nuked
+        }
+        OR = {
+            is_nuked = yes
+            has_planet_flag = colonized_tomb_world
+            has_modifier = recovered_tomb_world
+        }
+        NOR = {
+            has_planet_flag = primitives_nuked_themselves
+            solar_system = {
+                any_system_planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        owner = {
+            NOT = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        num_pops > 0
+    }
+    is_triggered_only = yes
+    immediate = {
+        set_planet_flag = underground_vault_planet
+        set_global_flag = underground_vault_global
+    }
+    option = {
+        name = colony.150.a
+        enable_special_project = {
+            name = "UNDERGROUND_VAULT_PROJECT"
+            location = this
+            owner = root
+        }
+    }
+    option = {
+        name = colony.150.b
+    }
+}

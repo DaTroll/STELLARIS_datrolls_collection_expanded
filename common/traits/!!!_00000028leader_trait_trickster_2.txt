@@ -1,0 +1,32 @@
+leader_trait_trickster_2 = {
+    replace_traits = {
+        leader_trait_trickster
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_trickster
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    fleet_modifier = {
+        ship_emergency_ftl_mult = -0.2
+        ship_disengage_chance_mult = 0.4
+    }
+    triggered_modifier = {
+        potential = {
+            has_first_contact_dlc = yes
+        }
+        ship_cloaking_strength_add = 1
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_unyielding
+        leader_trait_unyielding_2
+        leader_trait_reckless
+        leader_trait_reckless_2
+    }
+}

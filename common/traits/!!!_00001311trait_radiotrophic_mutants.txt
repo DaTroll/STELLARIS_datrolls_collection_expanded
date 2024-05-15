@@ -1,0 +1,129 @@
+trait_radiotrophic_mutants = {
+    cost = 1
+    opposites = {
+        "trait_weak"
+        "trait_strong"
+        "trait_very_strong"
+        "trait_plantoid_radiotrophic"
+        "trait_plantoid_phototrophic"
+        "trait_lithoid_radiotrophic"
+    }
+    sorting_priority = 20
+    allowed_planet_classes = {
+        pc_irradiated
+    }
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    initial = yes
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    ai_weight = {
+        weight = 0
+    }
+    modifier = {
+        army_damage_mult = 0.3
+    }
+    custom_tooltip_with_modifiers = trait_radiotrophic_mutant_tooltip
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_pd_radiotrophic_world = yes
+                    NOT = {
+                        is_artificial = yes
+                    }
+                    NOT = {
+                        is_pd_habitat = yes
+                    }
+                    NOT = {
+                        is_planet_class = pc_city
+                    }
+                    is_pd_arcology = no
+                    is_pd_hive_arcology = no
+                    is_pd_robot_arcology = no
+                }
+            }
+        }
+        planet_jobs_produces_mult = 0.1
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_pd_radiotrophic_world = yes
+                    NOT = {
+                        is_artificial = yes
+                    }
+                    NOT = {
+                        is_pd_habitat = yes
+                    }
+                    NOT = {
+                        is_planet_class = pc_city
+                    }
+                    is_pd_arcology = no
+                    is_pd_hive_arcology = no
+                    is_pd_robot_arcology = no
+                }
+            }
+        }
+        pop_growth_speed = 0.1
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                is_pd_radiotrophic_world = no
+                NOT = {
+                    is_artificial = yes
+                }
+                NOT = {
+                    is_pd_habitat = yes
+                }
+                NOT = {
+                    is_planet_class = pc_city
+                }
+                is_pd_arcology = no
+                is_pd_hive_arcology = no
+                is_pd_robot_arcology = no
+            }
+        }
+        planet_jobs_produces_mult = -0.1
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                is_pd_radiotrophic_world = no
+                NOT = {
+                    is_artificial = yes
+                }
+                NOT = {
+                    is_pd_habitat = yes
+                }
+                NOT = {
+                    is_planet_class = pc_city
+                }
+                is_pd_arcology = no
+                is_pd_hive_arcology = no
+                is_pd_robot_arcology = no
+            }
+        }
+        pop_growth_speed = -0.1
+    }
+    slave_cost = {
+        energy = 500
+    }
+    icon = "gfx/interface/icons/traits/trait_radiotrophic_mutants.dds"
+}

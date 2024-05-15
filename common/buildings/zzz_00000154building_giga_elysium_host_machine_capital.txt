@@ -1,0 +1,8 @@
+building_giga_elysium_host_machine_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

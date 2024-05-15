@@ -1,0 +1,8 @@
+building_avb_clone_vats_2 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

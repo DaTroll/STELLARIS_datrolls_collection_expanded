@@ -1,0 +1,23 @@
+leader_trait_energy_weapon_specialist = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_energy_weapon_specialist
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_astral_planes_dlc = yes
+    }
+    fleet_modifier = {
+        weapon_type_energy_weapon_damage_mult = 0.1
+        weapon_type_energy_weapon_fire_rate_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

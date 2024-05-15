@@ -1,0 +1,8 @@
+enslaved_our_pops_event = {
+    opinion = {
+        base = -200
+    }
+    decay = {
+        base = 1
+    }
+}

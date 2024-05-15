@@ -1,0 +1,64 @@
+building_toxic_bath_hive = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = amenity
+    icon = building_toxic_bath_hive
+    potential = {
+        owner = {
+            is_hive_empire = yes
+            has_valid_civic = civic_hive_toxic_baths
+            NAND = {
+                is_ai = yes
+                prev = {
+                    has_any_industry_district = no
+                }
+            }
+        }
+    }
+    allow = {
+        owner = {
+            OR = {
+                is_ai = no
+                prev = {
+                    has_any_industry_district = yes
+                }
+            }
+        }
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_hive_empire = no
+                NOT = {
+                    has_valid_civic = civic_hive_toxic_baths
+                }
+                AND = {
+                    is_ai = yes
+                    prev = {
+                        has_any_industry_district = no
+                    }
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        job_bath_attendant_hive_add = @b1_jobs
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+        }
+        text = job_toxic_baths_effect_hive_desc
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+}

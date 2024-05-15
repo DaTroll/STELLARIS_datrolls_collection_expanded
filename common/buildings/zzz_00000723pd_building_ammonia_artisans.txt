@@ -1,0 +1,36 @@
+pd_building_ammonia_artisans = {
+    base_buildtime = 600
+    category = manufacturing
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_ammonia
+        NOT = {
+            has_building = pd_building_ammonia_artisans
+        }
+        NOT = {
+            has_building = pd_building_ammonia_farm
+        }
+        NOT = {
+            has_building = pd_building_ammonia_study
+        }
+        NOT = {
+            has_building_construction = pd_building_ammonia_artisans
+        }
+        NOT = {
+            has_building_construction = pd_building_ammonia_farm
+        }
+        NOT = {
+            has_building_construction = pd_building_ammonia_study
+        }
+    }
+    inline_script = "buildings/pd_rare_consumer_goods_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_ammonia
+            }
+        }
+    }
+}

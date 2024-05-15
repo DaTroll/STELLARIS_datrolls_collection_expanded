@@ -1,0 +1,23 @@
+leader_trait_heavy_hitter_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_heavy_hitter_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_heavy_hitter"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    army_modifier = {
+        army_damage_mult = 0.3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    leader_class = {
+        commander
+    }
+}

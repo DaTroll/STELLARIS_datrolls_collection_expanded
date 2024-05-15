@@ -1,0 +1,40 @@
+tech_detection_array = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        computing
+    }
+    ai_update_type = all
+    is_rare = yes
+    prerequisites = {
+        "tech_sensors_2"
+    }
+    weight = @tier2weight3
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    gateway = detection
+    weight_modifier = {
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_curator
+            }
+        }
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_fotd_scientist
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_detection_array
+        }
+        modifier = {
+            factor = 5
+            has_tradition = tr_subterfuge_adopt
+        }
+    }
+}

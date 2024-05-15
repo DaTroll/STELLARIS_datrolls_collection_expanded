@@ -1,0 +1,101 @@
+"Katarian Empire" = {
+    key = "Katarian Empire"
+    ship_prefix = {
+        key = "KSS"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi4"
+        species_name = {
+            key = "Katarian"
+        }
+        species_plural = {
+            key = "Katarians"
+        }
+        species_adjective = {
+            key = "Katarian"
+        }
+        species_bio = "The Katarians had few  'vanilla' ressources on their homeworld, so they specified more into the intellectual fields and made amazing ground breaking discoveries! Beeing able to even change the most useless elements of heir planet. Even creating impressive AI systems and Robots. They believe in science as other Nations in a god. They will use every occasion to gain new technologies and make progress. \"progress is all that counts.\" is their National devise. "
+        name_list = "AVI4"
+        gender = indeterminable
+        trait = "trait_intelligent"
+        trait = "trait_nonadaptive"
+        trait = "trait_rapid_breeders"
+        trait = "trait_communal"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Katarian Empire"
+    }
+    adjective = {
+        key = "Katarian"
+    }
+    authority = "auth_imperial"
+    government = "gov_illuminated_autocracy"
+    planet_name = {
+        key = "Kataria"
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "Ceasar"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "nemesis_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_15.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_12.dds"
+        }
+        colors = {
+            "light_orange"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Katera"
+            }
+        }
+        portrait = "avi4"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Caesar"
+            literal = yes
+        }
+        heir_title = {
+            key = "Caesar Iunus"
+            literal = yes
+        }
+        ruler_title_female = {
+            key = "Caesar"
+        }
+        heir_title_female = {
+            key = "Caesar Iunus"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_diplomatic_corps"
+    }
+    origin = "origin_mechanists"
+}

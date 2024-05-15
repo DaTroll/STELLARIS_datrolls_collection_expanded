@@ -1,0 +1,36 @@
+tech_power_hub_2 = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        field_manipulation
+    }
+    prerequisites = {
+        "tech_power_hub_1"
+        "tech_colonial_centralization"
+    }
+    weight = @tier2weight3
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOR = {
+                has_technology = tech_mine_exotic_gases
+                has_technology = tech_exotic_gases
+                has_country_flag = has_market_access
+            }
+        }
+        modifier = {
+            factor = 2
+            has_tradition = tr_prosperity_adopt
+        }
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = prospectorium
+            }
+        }
+    }
+    ai_weight = {
+        factor = @energy_grid_ai_factor
+    }
+}

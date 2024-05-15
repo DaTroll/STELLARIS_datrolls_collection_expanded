@@ -1,0 +1,20 @@
+leader_trait_federal_negotiator_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_federal_negotiator"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_federal_negotiator"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    federation_modifier = {
+        federation_experience_add = 0.5
+    }
+    leader_class = {
+        official
+    }
+}

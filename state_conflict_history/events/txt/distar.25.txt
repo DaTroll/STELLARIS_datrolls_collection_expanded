@@ -1,0 +1,29 @@
+namespace = distar
+ship_event = {
+    id = distar.25
+    title = "distar.25.name"
+    desc = "distar.25.desc"
+    picture = GFX_evt_city_ruins
+    show_sound = event_scanner
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            country_event = {
+                id = story.5
+                days = 30
+            }
+        }
+        from = {
+            add_modifier = {
+                modifier = primitive_robots
+                years = -1
+            }
+        }
+    }
+    option = {
+        name = INTERESTING
+        small_artifact_reward = yes
+        custom_tooltip = distar.25.b.tooltip
+    }
+}

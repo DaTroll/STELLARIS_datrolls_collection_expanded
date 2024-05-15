@@ -1,0 +1,11 @@
+opinion_first_contact_trial_fanatic_good = {
+    opinion = {
+        base = 250
+    }
+    decay = {
+        base = 10
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

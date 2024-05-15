@@ -1,0 +1,89 @@
+"Korzen Democracy" = {
+    key = "Korzen Democracy"
+    ship_prefix = {
+        key = "KLD"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla14"
+        species_name = {
+            key = "Korz"
+        }
+        species_plural = {
+            key = "Korzen"
+        }
+        species_adjective = {
+            key = "Korzan"
+        }
+        species_bio = "The Korz have since always been looking at what is to be considered Daleko. Now they can reach out to it. But can they also take it? They have been rooted to their Homes and to their democracy for more than a dozen of milenials. They have very strong attributed which are exemplary on many levels but also some flaws. Will they be able to colonize other worlds and reach out to other species or will they try to stay back and observe the world wothout beeing a global actor? The potential to be a leader on galactic scale is present, But will they exploit it to its fullest? "
+        name_list = "PLANT"
+        gender = not_set
+        trait = "trait_sedentary"
+        trait = "trait_slow_breeders"
+        trait = "trait_nonadaptive"
+        trait = "trait_venerable"
+        trait = "trait_very_strong"
+    }
+    name = {
+        key = "Korzen Democracy"
+    }
+    adjective = {
+        key = "Korzen"
+    }
+    authority = "auth_democratic"
+    government = "gov_moral_democracy"
+    planet_name = {
+        key = "Korz"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Daleko"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_16.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "grey"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Bom"
+            }
+        }
+        portrait = "pla14"
+        texture = 4
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Prime Korz"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_harmonious_hierarchy_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_pacifist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_agrarian_idyll"
+        "civic_parliamentary_system"
+    }
+    origin = "origin_default"
+}

@@ -1,0 +1,16 @@
+opinion_tech_emotion_emulators = {
+    trigger = {
+        is_playable = yes
+        NOR = {
+            has_country_flag = synthetic_empire
+            is_machine_empire = yes
+        }
+        FROM = {
+            is_machine_empire = yes
+            has_technology = tech_emotion_emulators_2
+        }
+    }
+    opinion = {
+        base = 20
+    }
+}

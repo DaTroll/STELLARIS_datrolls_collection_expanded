@@ -1,0 +1,12 @@
+opinion_hostile_first_contact_vivisection = {
+    opinion = {
+        base = -500
+    }
+    accumulative = yes
+    decay = {
+        base = 1.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

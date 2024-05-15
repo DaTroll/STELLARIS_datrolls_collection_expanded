@@ -1,0 +1,11 @@
+opinion_wanted_to_leave_hegemony = {
+    opinion = {
+        base = -50
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_le_origin_palace = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

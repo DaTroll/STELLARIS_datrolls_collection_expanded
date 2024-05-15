@@ -1,0 +1,3 @@
+half_species_special = {
+    uses_modifiers = no
+}

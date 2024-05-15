@@ -1,0 +1,19 @@
+tech_cultural_heritage = {
+    cost = 0
+    area = society
+    start_tech = yes
+    category = {
+        statecraft
+    }
+    tier = 0
+    potential = {
+        OR = {
+            is_hive_empire = no
+            is_memorialist_empire = yes
+        }
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,111 @@
+namespace = anomaly
+namespace = anomaly
+ship_event = {
+    id = anomaly.30
+    title = "anomaly.30.name"
+    desc = {
+        trigger = {
+            NOT = {
+                has_ship_flag = anomaly_30_clue
+            }
+        }
+        text = "anomaly.30.desc"
+    }
+    desc = {
+        trigger = {
+            has_ship_flag = anomaly_30_clue
+        }
+        text = "anomaly.30.desc.clue"
+    }
+    picture = GFX_evt_junkheap
+    show_sound = event_ship_bridge
+    location = FROM
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            clear_deposits = yes
+        }
+        owner = {
+            country_event = {
+                id = story.5
+                days = 30
+            }
+        }
+        if = {
+            limit = {
+                has_distar = yes
+                NOT = {
+                    has_global_flag = l_cluster_opened
+                }
+                owner = {
+                    has_event_chain = l_cluster_chain
+                }
+                leader = {
+                    OR = {
+                        has_trait = leader_trait_meticulous
+                        has_trait = leader_trait_cataloger
+                        has_trait = leader_trait_expertise_materials
+                    }
+                }
+            }
+            set_ship_flag = anomaly_30_clue
+        }
+    }
+    option = {
+        name = anomaly.30.a
+        owner = {
+            hidden_effect = {
+                set_country_flag = lcluster_clue_junkyard
+                pop_lcluster_event = yes
+            }
+        }
+    }
+    option = {
+        name = FASCINATING
+        trigger = {
+            has_ship_flag = anomaly_30_clue
+        }
+        allow = {
+            leader = {
+                OR = {
+                    has_trait = leader_trait_meticulous
+                    has_trait = leader_trait_cataloger
+                    has_trait = leader_trait_expertise_materials
+                }
+            }
+        }
+        owner = {
+            generate_lcluster_clue = yes
+        }
+    }
+    after = {
+        FROM = {
+            set_deposit = d_minerals_3
+        }
+        if = {
+            limit = {
+                has_ship_flag = anomaly_30_clue
+            }
+            FROM = {
+                add_deposit = d_nanites_deposit
+            }
+        }
+        else = {
+            FROM = {
+                add_deposit = d_alloys_1
+            }
+        }
+        hidden_effect = {
+            FROM = {
+                add_modifier = {
+                    modifier = "junkyard"
+                    days = -1
+                }
+            }
+            remove_ship_flag = anomaly_30_clue
+        }
+        owner = {
+            small_artifact_chance = yes
+        }
+    }
+}

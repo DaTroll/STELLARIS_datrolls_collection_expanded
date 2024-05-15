@@ -1,0 +1,90 @@
+"Peoples Dalian Commune " = {
+    key = "Peoples Dalian Commune "
+    ship_prefix = {
+        key = "CSS"
+    }
+    species = {
+        class = "ART"
+        portrait = "art7"
+        species_name = {
+            key = "Dalia"
+        }
+        species_plural = {
+            key = "Dalias"
+        }
+        species_adjective = {
+            key = "Dalian"
+        }
+        species_bio = "The Dalian dream for equality has finally been archieved.They believe that thanks to equality every one will be able to better understand the others. There show of extreme empathy allowed them to maintain their society for centuries. Since they only have only had one way of life for several centuries, they became greatly conformist and since they all have to work equaly, there is less time and energy to fuel a familly thus explaining their slow demographics, almoist loosing population over the centuries. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_slow_breeders"
+        trait = "trait_charismatic"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Peoples Dalian Commune "
+    }
+    adjective = {
+        key = "Dalian"
+    }
+    authority = "auth_democratic"
+    government = "gov_communal_parity"
+    planet_name = {
+        key = "Commune"
+    }
+    planet_class = "pc_tundra"
+    system_name = {
+        key = "Commune"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "human"
+            file = "flag_human_15.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Dalan"
+            }
+        }
+        portrait = "art7"
+        texture = 0
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "First Worker"
+        }
+        ruler_title_female = {
+            key = "First Worker"
+        }
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_egalitarian"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_shadow_council"
+        "civic_shared_burden"
+    }
+    origin = "origin_default"
+}

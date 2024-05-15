@@ -1,0 +1,67 @@
+xvcv_mdlc_leader_trait_composer_chosen = {
+    inline_script = {
+        script = trait/icon_psionic
+        CLASS = leader
+        ICON = "GFX_leader_trait_composer_chosen"
+        RARITY = common
+        COUNCIL = triggered
+        TIER = none
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        army_health = 0.5
+        army_damage_mult = 0.1
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        science_ship_survey_speed = 0.25
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        leader_scientists_volatile_motes_produces_add = 2
+        leader_scientists_exotic_gases_produces_add = 2
+        leader_scientists_rare_crystals_produces_add = 2
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        leader_scientists_physics_research_produces_add = 7.5
+        leader_scientists_society_research_produces_add = 7.5
+        leader_scientists_engineering_research_produces_add = 7.5
+        mult = trigger:has_skill
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        pop_growth_speed = 0.05
+        planet_jobs_produces_mult = 0.05
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        leader_lifespan_add = 50
+        species_leader_exp_gain = 0.3
+        country_leader_cap_add = 1
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+}

@@ -24,16 +24,16 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "exported.json"
+                    "Stellaris_-_DaTroll's_Collection_EXPANDED.zip"
                 ],
 
                 "deployOnSaveButton": [ "DaTroll's Collection EXPANDED" ]
             },
 
             {
-                "name": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
-                "description": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
-                "syncWhenOpen": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+                "name": "DaTroll's Collection EXPANDED IronyModManager DEV Folder",
+                "description": "DaTroll's Collection EXPANDED IronyModManager DEV Folder",
+                "syncWhenOpen": "DaTroll's Collection EXPANDED IronyModManager DEV Folder",
 
                 "files": [
                     "**",
@@ -41,7 +41,7 @@
                 "exclude": [
                     ".vscode/**",
                     "*.md",
-                    "exported.json"
+                    "descriptor.mod"
                 ],
             },
         ],
@@ -57,7 +57,7 @@
             
             {
                 "type": "local",
-                "name": "DaTroll's Collection EXPANDED IroneyModManager DEV Folder",
+                "name": "DaTroll's Collection EXPANDED IronyModManager DEV Folder",
                 "description": "Local folder",
 
                 "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/IronyModManager_Stellaris_-_DaTroll's_Collection_EXPANDED_DEV/"

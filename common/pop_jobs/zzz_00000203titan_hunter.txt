@@ -1,0 +1,57 @@
+titan_hunter = {
+    category = worker
+    is_capped_by_modifier = yes
+    clothes_texture_index = 2
+    icon = hunter_gatherer
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        trade_value_add = 8
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    resources = {
+        category = planet_farmers
+        produces = {
+            food = 8
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|titan_hunter|RESOURCE|food|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+        modifier = {
+            factor = 1.1
+            owner = {
+                has_valid_civic = civic_agrarian_idyll
+            }
+        }
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+        }
+        modifier = {
+            factor = 0.25
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_lithoid
+            owner = {
+                is_lithoid_empire = yes
+                has_monthly_income = {
+                    resource = food
+                    value >= 0
+                }
+            }
+        }
+    }
+}

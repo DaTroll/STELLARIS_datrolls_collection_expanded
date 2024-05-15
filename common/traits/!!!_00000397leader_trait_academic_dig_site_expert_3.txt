@@ -1,0 +1,23 @@
+leader_trait_academic_dig_site_expert_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_academic_dig_site_expert_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_academic_dig_site_expert"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    modifier = {
+        ship_archaeological_site_clues_add = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    leader_class = {
+        scientist
+    }
+}

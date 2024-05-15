@@ -1,0 +1,8 @@
+building_fe_hive_evochamber = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,77 @@
+building_holotemple = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = unity
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                is_spiritualist = yes
+                AND = {
+                    is_gestalt = no
+                    has_make_spiritualist_perk = yes
+                }
+            }
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                OR = {
+                    AND = {
+                        is_spiritualist = no
+                        has_make_spiritualist_perk = no
+                    }
+                    is_gestalt = yes
+                }
+            }
+            has_modifier = slave_colony
+        }
+    }
+    convert_to = {
+        building_bureaucratic_2
+        building_hive_cluster
+        building_network_junction
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+            rare_crystals = @b2_rare_cost
+        }
+        upkeep = {
+            energy = @b2_upkeep
+            rare_crystals = @b2_rare_upkeep
+        }
+    }
+    planet_modifier = {
+        pop_ethic_spiritualist_attraction_mult = 0.1
+    }
+    inline_script = {
+        script = jobs/priests_add
+        AMOUNT = @b2_jobs
+    }
+    upgrades = {
+        building_sacred_nexus
+    }
+    prerequisites = {
+        "tech_holographic_rituals"
+    }
+    show_tech_unlock_if = {
+        OR = {
+            is_spiritualist = yes
+            AND = {
+                is_gestalt = no
+                has_make_spiritualist_perk = yes
+            }
+        }
+    }
+}

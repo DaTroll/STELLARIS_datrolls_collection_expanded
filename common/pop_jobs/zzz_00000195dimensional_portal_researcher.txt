@@ -1,0 +1,214 @@
+dimensional_portal_researcher = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_research_lab_1
+    clothes_texture_index = 3
+    icon = researcher
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_normal
+            }
+        }
+        trade_value_add = 6
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_high
+            }
+        }
+        trade_value_add = 12
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_low
+            }
+        }
+        trade_value_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_crisis
+            }
+        }
+        trade_value_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_normal
+            }
+        }
+        planet_amenities_add = 6
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_high
+            }
+        }
+        planet_amenities_add = 12
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_low
+            }
+        }
+        planet_amenities_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = {
+                has_modifier = dportal_trade_crisis
+            }
+        }
+        planet_amenities_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 12
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = dportal_closed
+                }
+            }
+            physics_research = -6
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = dportal_energy
+                }
+            }
+            energy = 6
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = dportal_void
+                }
+            }
+            sr_dark_matter = 0.2
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = dportal_void2
+                }
+            }
+            sr_dark_matter = 1
+        }
+        upkeep = {
+            consumer_goods = 3
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_planet_flag = dportal_hell
+                }
+            }
+            consumer_goods = 3
+        }
+    }
+    triggered_country_modifier = {
+        modifier = {
+            country_naval_cap_add = 1
+        }
+        mult = planet.modifier:job_researcher_naval_cap_add
+    }
+    weight = {
+        weight = @specialist_job_weight
+        modifier = {
+            mult = value:job_weights_multiple_resources_modifier|JOB|dimensional_portal_researcher|RESOURCE1|physics_research|WEIGHT1|0.6|RESOURCE2|energy|WEIGHT2|0.4|
+            planet = {
+                has_planet_flag = dportal_energy
+            }
+        }
+        modifier = {
+            mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+            planet = {
+                has_planet_flag = dportal_trader
+            }
+        }
+        modifier = {
+            mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+            planet = {
+                has_planet_flag = dportal_trader
+            }
+        }
+        modifier = {
+            mult = value:job_weights_multiple_resources_modifier|JOB|dimensional_portal_researcher|RESOURCE1|physics_research|WEIGHT1|0.75|RESOURCE2|sr_dark_matter|WEIGHT2|0.25|
+            planet = {
+                OR = {
+                    has_planet_flag = dportal_void
+                    has_planet_flag = dportal_void2
+                }
+            }
+        }
+        modifier = {
+            mult = value:job_weights_modifier|JOB|dimensional_portal_researcher|RESOURCE|physics_research|
+            planet = {
+                NOR = {
+                    has_planet_flag = dportal_energy
+                    has_planet_flag = dportal_void
+                    has_planet_flag = dportal_void2
+                }
+            }
+        }
+        modifier = {
+            factor = 0.2
+            has_citizenship_rights = no
+            NOT = {
+                has_trait = trait_mechanical
+            }
+        }
+        modifier = {
+            factor = 2
+            has_living_standard = {
+                type = living_standard_academic_privilege
+            }
+        }
+        modifier = {
+            factor = 0.5
+            AND = {
+                planet = {
+                    has_planet_flag = dportal_hell
+                }
+                OR = {
+                    has_ethic = ethic_spiritualist
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+        }
+        modifier = {
+            factor = 0.1
+            can_take_servant_job = yes
+        }
+    }
+}

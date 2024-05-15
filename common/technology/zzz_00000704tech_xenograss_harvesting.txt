@@ -1,0 +1,52 @@
+tech_xenograss_harvesting = {
+    cost = @tier2cost1
+    area = engineering
+    category = {
+        biology
+    }
+    is_rare = yes
+    tier = 2
+    weight = @tier2weight1
+    weight_modifier = {
+        modifier = {
+            factor = 2
+            has_country_flag = cf_xenograss_found
+        }
+        modifier = {
+            factor = 3
+            has_xenograss_deposit = yes
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_xenograss_harvesting
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_xenograss_found
+            }
+            NOT = {
+                has_xenograss_deposit = yes
+            }
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0
+            NOT = {
+                has_country_flag = cf_xenograss_found
+            }
+            NOT = {
+                has_xenograss_deposit = yes
+            }
+        }
+        modifier = {
+            factor = 2
+            has_country_flag = cf_xenograss_found
+        }
+        modifier = {
+            factor = 3
+            has_xenograss_deposit = yes
+        }
+    }
+}

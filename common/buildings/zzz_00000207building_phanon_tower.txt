@@ -1,0 +1,8 @@
+building_phanon_tower = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

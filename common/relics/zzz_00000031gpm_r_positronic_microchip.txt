@@ -1,0 +1,66 @@
+@activation_cost = 3000
+@triumph_duration_veryshort = 900
+gpm_r_positronic_microchip = {
+    activation_duration = @triumph_duration_veryshort
+    portrait = "GFX_gpm_r_positronic_microchip"
+    sound = "relic_activation_the_omnicodex"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 0
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_machine_empire = yes
+        }
+        MACHINE_species_trait_points_add = 3
+        MACHINE_species_trait_picks_add = 2
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_hive_empire = yes
+        }
+        BIOLOGICAL_species_trait_points_add = 2
+        BIOLOGICAL_species_trait_picks_add = 1
+        LITHOID_species_trait_points_add = 2
+        LITHOID_species_trait_picks_add = 1
+    }
+    triggered_country_modifier = {
+        potential = {
+            is_machine_empire = no
+            is_hive_empire = no
+        }
+        ROBOT_species_trait_points_add = 2
+        ROBOT_species_trait_picks_add = 1
+        BIOLOGICAL_species_trait_points_add = 2
+        BIOLOGICAL_species_trait_picks_add = 1
+        LITHOID_species_trait_points_add = 2
+        LITHOID_species_trait_picks_add = 1
+    }
+    score = 1000
+    active_effect = {
+        add_modifier = {
+            modifier = "gpm_r_positronic_nervious_system_active_effect"
+            days = @triumph_duration_veryshort
+        }
+        custom_tooltip = relic_triumph_cooldown_veryshort
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration_veryshort
+            }
+        }
+    }
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_relic_no_cooldown"
+            NOT = {
+                has_modifier = relic_activation_cooldown
+            }
+        }
+    }
+}

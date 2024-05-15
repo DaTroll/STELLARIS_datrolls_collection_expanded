@@ -1,0 +1,30 @@
+leader_trait_settler = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_settler"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_governor
+    }
+    leader_trait_type = veteran
+    planet_modifier = {
+        planet_housing_add = 4
+        planet_amenities_add = 10
+    }
+    sector_modifier = {
+        planet_housing_add = 2
+        planet_amenities_add = 5
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

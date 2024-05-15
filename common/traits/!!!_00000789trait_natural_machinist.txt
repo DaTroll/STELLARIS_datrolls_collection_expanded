@@ -1,0 +1,32 @@
+trait_natural_machinist = {
+    cost = 2
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_alloys_produces_mult = 0.1
+        planet_jobs_consumer_goods_produces_mult = 0.1
+    }
+    slave_cost = {
+        energy = 2000
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_industrial_designation = yes
+            }
+        }
+    }
+}

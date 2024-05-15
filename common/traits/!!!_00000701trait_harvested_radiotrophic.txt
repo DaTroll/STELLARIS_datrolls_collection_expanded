@@ -1,0 +1,47 @@
+trait_harvested_radiotrophic = {
+    icon = "gfx/interface/icons/traits/trait_plantoid_radiotrophic.dds"
+    host_has_dlc = "Plantoids Species Pack"
+    initial = no
+    randomized = no
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    opposites = {
+        "trait_plantoid_phototrophic"
+        "trait_plantoid_radiotrophic"
+        "trait_lithoid_radiotrophic"
+        "trait_advanced_phototrophic"
+        "trait_advanced_radiotrophic"
+        "trait_voidling"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    species_class = {
+        HUM
+        MAM
+        REP
+        AVI
+        ART
+        MOL
+        NECROID
+        AQUATIC
+        TOX
+    }
+    species_potential_add = {
+        exists = from
+        from = {
+            has_country_flag = harvested_radiotrophic_dna
+            NOT = {
+                has_technology = tech_plantoid_transgenesis
+            }
+        }
+    }
+    custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
+    inline_script = "traits/radiotrophic_effects"
+}

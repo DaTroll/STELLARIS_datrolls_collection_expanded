@@ -1,0 +1,8 @@
+OXR_MDLC_AUTOMATON = {
+    species_max_traits = 1
+    species_trait_points = 4
+    inherit_traits_from = {
+        ROBOT
+    }
+    robotic = yes
+}

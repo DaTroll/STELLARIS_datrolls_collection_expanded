@@ -1,0 +1,19 @@
+dpe_duel_loser_ruler = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_dpe_wooden_spoon"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        pop_happiness = -0.05
+        pop_ethic_militarist_attraction_mult = -0.15
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,20 @@
+xvcv_mdlc_leader_trait_civic_friendship_protocol = {
+    inline_script = {
+        script = trait/icon_machine
+        CLASS = leader
+        ICON = "GFX_xvcv_mdlc_leader_trait_civic_friendship_protocol"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    custom_tooltip = xvcv_mdlc_leader_trait_civic_friendship_protocol_tooltip
+    triggered_councilor_modifier = {
+        diplo_weight_mult = 0.02
+        mult = trigger:has_skill
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

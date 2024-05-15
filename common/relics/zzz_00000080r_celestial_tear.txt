@@ -1,0 +1,50 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+r_celestial_tear = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_celestial_tear"
+    sound = "relic_activation_celestial_tear"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 10
+        modifier = {
+            factor = 10
+            has_resource = {
+                type = astral_threads
+                amount < 100
+            }
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        custom_tooltip = celestial_tear_acquisition_tt
+    }
+    score = 3000
+    active_effect = {
+        owner = {
+            add_resource_astral_threads = {
+                VALUE = 1000
+            }
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_celestial_tear
+        }
+    }
+}

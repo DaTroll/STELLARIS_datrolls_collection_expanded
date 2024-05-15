@@ -1,0 +1,44 @@
+leader_trait_distribution_lines = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_fleet_logistician"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_governor
+    }
+    leader_trait_type = veteran
+    planet_modifier = {
+        planet_metallurgists_upkeep_mult = -0.05
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                country_uses_consumer_goods = yes
+            }
+        }
+        planet_artisans_upkeep_mult = -0.05
+    }
+    sector_modifier = {
+        planet_metallurgists_upkeep_mult = -0.025
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                country_uses_consumer_goods = yes
+            }
+        }
+        planet_artisans_upkeep_mult = -0.025
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

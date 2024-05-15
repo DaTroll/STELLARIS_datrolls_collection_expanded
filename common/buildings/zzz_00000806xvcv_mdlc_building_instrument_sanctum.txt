@@ -1,0 +1,83 @@
+xvcv_mdlc_building_instrument_sanctum = {
+    base_buildtime = @b3_time
+    icon = building_instrument_sanctum
+    category = government
+    empire_limit = {
+        base = 1
+    }
+    potential = {
+        owner = {
+            has_country_flag = xvcv_mdlc_abyss_patron_instrument_rank_1
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_country_flag = xvcv_mdlc_abyss_patron_instrument_rank_1
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        job_evaluator_add = 3
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        text = job_evaluator_effect_desc
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_ethic = ethic_gestalt_consciousness
+                }
+            }
+        }
+        job_culture_worker_add = 3
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_ethic = ethic_gestalt_consciousness
+                }
+            }
+        }
+        text = job_culture_worker_effect_desc
+    }
+    country_modifier = {
+        planet_crime_no_happiness_mult = -0.05
+        planet_jobs_energy_produces_mult = 0.1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            exotic_gases = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            exotic_gases = @b3_rare_upkeep
+        }
+    }
+}

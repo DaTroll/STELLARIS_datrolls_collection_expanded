@@ -1,0 +1,8 @@
+opinion_freed_slaves_event = {
+    opinion = {
+        base = -200
+    }
+    decay = {
+        base = 1
+    }
+}

@@ -1,0 +1,25 @@
+leader_trait_home_guard = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_home_guard"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        defense_armies_add = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_councilor
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

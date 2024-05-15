@@ -1,0 +1,90 @@
+"Survivors of Sor" = {
+    key = "Survivors of Sor"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla7"
+        species_name = {
+            key = "Oneke"
+        }
+        species_plural = {
+            key = "Onokeph"
+        }
+        species_adjective = {
+            key = "Onokephalos"
+        }
+        species_bio = "\"Stubborn as an Onokephalos\"                                                       This saying has its origin right here with the Oneke. They are considered the most stubborn people in the whole galaxy, they wont listen to help unless wanted and wont negotiate but for themselves. The status quo is a loss for them. The Survivors of Sor have not lost that attitude. They surprisingly survived the bombing and certain anhilation of their homeworld miraculously. Therefore they have become certain that they can do and survive  anything. However their will to defend their home has never been broken, even after total destruction of cities, survivors would pick up the guns to fight for the remaining ruins."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_survivor"
+        trait = "trait_nomadic"
+        trait = "trait_solitary"
+        trait = "trait_resilient"
+        trait = "trait_nonadaptive"
+        trait = "trait_plantoid_radiotrophic"
+    }
+    name = {
+        key = "Survivors of Sor"
+    }
+    adjective = {
+        key = "Sorros"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_irenic_bureaucracy"
+    planet_name = {
+        key = "Sor"
+    }
+    planet_class = "pc_arid"
+    system_name = {
+        key = "Astrow"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_6.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "brown"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "O"
+            }
+        }
+        portrait = "pla7"
+        texture = 1
+        attachment = 0
+        clothes = 2
+        ruler_title = {
+            key = "First Survivor"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_decadent_hierarchy_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_pacifist"
+    civics = {
+        "civic_environmentalist"
+        "civic_shadow_council"
+    }
+    origin = "origin_post_apocalyptic"
+}

@@ -1,0 +1,26 @@
+leader_trait_environmental_engineer_2 = {
+    replace_traits = {
+        "leader_trait_environmental_engineer"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_environmental_engineer"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    planet_modifier = {
+        deposit_blockers_cost_mult = -0.35
+        planet_clear_blocker_speed_mult = 0.35
+    }
+    sector_modifier = {
+        deposit_blockers_cost_mult = -0.15
+        planet_clear_blocker_speed_mult = 0.15
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+}

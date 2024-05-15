@@ -1,0 +1,103 @@
+"Speakers of Gendore" = {
+    key = "Speakers of Gendore"
+    ship_prefix = {
+        key = "GHC"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu12"
+        species_name = {
+            key = "Gendore"
+            literal = yes
+        }
+        species_plural = {
+            key = "Gendors"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Gendore"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "Chastity, conformity and docility are the traits by which the Speakers of Gendore control and subjugate the worlds they are about to visit- Their history is hidden between lies and mischief, in such a way that not even the great Matriach now the secrets of their past, but rumors tell, or rather, legend foretells, that they will be drowning in the riches of the stars and enjoying the enlightment of few. Now go, spread the word of the Gendorans through out the galaxy, and we shall see what happens."
+        name_list = "AQUATIC2"
+        gender = not_set
+        trait = "trait_natural_sociologists"
+        trait = "trait_slow_breeders"
+        trait = "trait_docile"
+        trait = "trait_solitary"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Speakers of Gendore"
+        literal = yes
+    }
+    adjective = {
+        key = "Gondoran"
+        literal = yes
+    }
+    authority = "auth_dictatorial"
+    government = "gov_theocratic_dictatorship"
+    planet_name = {
+        key = "Gendore"
+        literal = yes
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Gendora's Might"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "necroid"
+            file = "necroid_08.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_36.dds"
+        }
+        colors = {
+            "burgundy"
+            "ochre_brown"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kendo"
+                literal = yes
+            }
+        }
+        portrait = "aqu12"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_police_state"
+        "civic_exalted_priesthood"
+    }
+    origin = "origin_default"
+}

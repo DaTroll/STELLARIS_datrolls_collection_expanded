@@ -1,0 +1,8 @@
+building_system_capital_gr = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

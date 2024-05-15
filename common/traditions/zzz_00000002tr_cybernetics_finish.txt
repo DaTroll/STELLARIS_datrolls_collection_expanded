@@ -1,0 +1,34 @@
+tr_cybernetics_finish = {
+    on_enabled = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_origin = origin_legendary_leader_dictatorial
+                        AND = {
+                            has_country_flag = paragon_origin_reformists_gone
+                            has_origin = origin_legendary_leader_imperial
+                        }
+                    }
+                    NOT = {
+                        has_country_flag = luminary_ascension_path
+                    }
+                    exists = ruler
+                    ruler = {
+                        has_leader_flag = paragon_origin_legendary_leader
+                    }
+                }
+                country_event = {
+                    id = paragon.5201
+                    days = 3600
+                    random = 7200
+                }
+            }
+        }
+    }
+    modifier = {
+        planet_cyborg_jobs_produces_mult = 0.1
+        BIOLOGICAL_species_trait_picks_add = 1
+        ascension_perks_add = 1
+    }
+}

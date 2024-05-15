@@ -1,0 +1,3 @@
+NYTO = {
+    uses_modifiers = no
+}

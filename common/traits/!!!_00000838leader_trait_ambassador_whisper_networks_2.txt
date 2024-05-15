@@ -1,0 +1,20 @@
+leader_trait_ambassador_whisper_networks_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_ambassador_whisper_networks"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_whisper_networks"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        add_base_country_intel = 10
+    }
+    leader_class = {
+        official
+    }
+}

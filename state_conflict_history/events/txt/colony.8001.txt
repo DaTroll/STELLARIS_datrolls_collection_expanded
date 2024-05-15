@@ -1,0 +1,60 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.8001
+    title = "colony.8001.name"
+    desc = "colony.8001.desc"
+    picture = GFX_evt_colony_settlement
+    show_sound = event_planetary_riot
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        is_ai = no
+        has_ground_combat = no
+        is_capital = no
+    }
+    trigger = {
+        owner = {
+            NOT = {
+                has_ethic = ethic_gestalt_consciousness
+                has_country_flag = feral_overload_flag
+            }
+        }
+        OR = {
+            is_arid = yes
+            is_alpine = yes
+            is_tundra = yes
+            is_wet = yes
+            is_pd_continental = yes
+            is_pd_tropical = yes
+            is_pd_ocean = yes
+            is_pd_arid = yes
+            is_pd_alpine = yes
+            is_pd_tundra = yes
+        }
+        num_pops > 0
+    }
+    immediate = {
+        owner = {
+            set_country_flag = feral_overload_flag
+        }
+        set_planet_flag = colony_event
+    }
+    is_triggered_only = yes
+    option = {
+        name = colony.8001.a
+        add_modifier = {
+            modifier = feral_overload_00
+            days = -1
+        }
+        hidden_effect = {
+            planet_event = {
+                id = colony.8002
+                days = 40
+                random = 20
+            }
+        }
+    }
+}

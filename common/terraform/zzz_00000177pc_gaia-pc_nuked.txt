@@ -1,0 +1,24 @@
+terraform_link = {
+    from = "pc_gaia"
+    to = "pc_nuked"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = 2500
+            exotic_gases = 200
+            volatile_motes = 200
+        }
+    }
+    duration = 5400
+    potential = {
+        exists = owner
+        has_policy_flag = relentless_industrialists_study
+        has_country_flag = relentless_industrialists_study_completed
+    }
+    condition = {
+        has_technology = tech_climate_restoration
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

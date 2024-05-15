@@ -1,0 +1,43 @@
+building_solarpunk_sapling = {
+    icon = holding_tree_of_life_sapling
+    base_buildtime = @b1_time
+    can_build = no
+    can_demolish = yes
+    can_be_ruined = no
+    category = amenity
+    potential = {
+        exists = owner
+        owner = {
+            is_primitive = yes
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_primitive = no
+            }
+        }
+    }
+    planet_modifier = {
+        job_solarpunk_anarchist_add = 5
+        planet_farmers_food_produces_add = 2
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    prerequisites = {
+    }
+    upgrades = {
+    }
+    on_destroy = {
+    }
+    on_repaired = {
+    }
+}

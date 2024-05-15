@@ -1,0 +1,20 @@
+leader_trait_ambassador_ear_to_the_ground_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_ambassador_ear_to_the_ground"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_ear_to_the_ground"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        intel_gain_speed = 0.25
+    }
+    leader_class = {
+        official
+    }
+}

@@ -1,0 +1,38 @@
+primitive_hive_factory_drone = {
+    category = simple_drone
+    is_capped_by_modifier = yes
+    building_icon = building_primitive_factory
+    icon = primitive_laborer
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+            OR = {
+                has_country_flag = steam_age
+                has_country_flag = machine_age
+                has_country_flag = industrial_age
+                has_country_flag = atomic_age
+                has_country_flag = early_space_age
+            }
+        }
+    }
+    resources = {
+        category = planet_artisans
+        produces = {
+            alloys = 2
+        }
+        upkeep = {
+            minerals = 2
+        }
+    }
+    weight = {
+        weight = @complex_drone_job_weight
+        mult = value:job_weights_modifier|JOB|primitive_hive_factory_drone|RESOURCE|alloys|
+    }
+}

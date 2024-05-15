@@ -1,0 +1,86 @@
+"Pnar Galactic Realm" = {
+    key = "Pnar Galactic Realm"
+    ship_prefix = {
+        key = "PSS"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol17"
+        species_name = {
+            key = "Pnar"
+        }
+        species_plural = {
+            key = "Pnar"
+        }
+        species_adjective = {
+            key = "Pnaran"
+        }
+        species_bio = "Lazy, Dumb, Sloppy, thats the best description of this Starfish looking race, called Pnaran. They have all grown on this Gaia world, the ideal foundation, a almost self providing world. This world has made them nonadative to change, slow learners and weak. However, at least they became extremly longliving, due to their extreme conformt and stressless world. Even if their capacity to think criticaly has almost completely vanished. Meaning that they'll believe everything they see, read or hear. Good followers but that's it. However according to their mythology, their world became like this after \"a blue light\" hit it. Could it be that ... an Ancient Race accomplished this? "
+        name_list = "MOL3"
+        gender = not_set
+        trait = "trait_nonadaptive"
+        trait = "trait_slow_learners"
+        trait = "trait_weak"
+        trait = "trait_venerable"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Pnar Galactic Realm"
+    }
+    adjective = {
+        key = "Pnarian"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_plutocratic_oligarchy"
+    planet_name = {
+        key = "Gaia"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Gaia"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_8.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "red"
+            "beige"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Gabb"
+            }
+        }
+        portrait = "mol17"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_charismatic"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_fanatic_xenophile"
+    civics = {
+        "civic_meritocracy"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

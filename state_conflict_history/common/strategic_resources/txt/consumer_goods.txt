@@ -1,0 +1,18 @@
+consumer_goods = {
+    tradable = yes
+    category = advanced
+    market_amount = 50
+    market_price = 100
+    max = 15000
+    deficit_situation = situation_consumer_goods_deficit
+    ai_weight = {
+        weight = 5
+    }
+    ai_wants = {
+        base = 500
+        modifier = {
+            factor = 0.1
+            country_uses_consumer_goods = no
+        }
+    }
+}

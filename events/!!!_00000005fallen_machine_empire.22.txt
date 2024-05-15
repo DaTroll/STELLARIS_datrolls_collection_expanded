@@ -1,0 +1,27 @@
+namespace = fallen_machine_empire
+country_event = {
+    id = fallen_machine_empire.22
+    title = fallen_machine_empire.22.name
+    desc = fallen_machine_empire.22.desc
+    picture = GFX_evt_robot_assembly_plant
+    trigger = {
+        has_modifier = machine_empire_code_rewrite
+    }
+    mean_time_to_happen = {
+        years = 10
+        modifier = {
+            factor = 0.66
+            has_country_flag = fallen_machine_empire_awaken_2
+        }
+    }
+    immediate = {
+        remove_modifier = machine_empire_code_rewrite
+    }
+    option = {
+        name = fallen_machine_empire.22.a
+        add_modifier = {
+            modifier = machine_empire_code_bugs
+            days = 3600
+        }
+    }
+}

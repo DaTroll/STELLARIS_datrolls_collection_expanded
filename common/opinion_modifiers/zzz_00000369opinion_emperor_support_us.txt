@@ -1,0 +1,11 @@
+opinion_emperor_support_us = {
+    opinion = {
+        base = 250
+    }
+    decay = {
+        base = 1
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

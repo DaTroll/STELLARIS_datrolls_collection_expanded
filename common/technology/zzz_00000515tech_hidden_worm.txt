@@ -1,0 +1,69 @@
+tech_hidden_worm = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        archaeostudies
+    }
+    weight = @tier3weight3
+    is_rare = yes
+    is_dangerous = yes
+    icon = tech_quicksand_basin
+    modifier = {
+        custom_tooltip = WORM_BOMBARDMENT
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            NOT = {
+                has_global_flag = tech_hidden_worm_can_spread
+            }
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                any_relation = {
+                    has_communications = ROOT
+                    has_technology = tech_hidden_worm
+                }
+            }
+        }
+        modifier = {
+            factor = 0.2
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_archaeostudies
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius_2
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_2
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_3
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_hidden_worm
+        }
+        modifier = {
+            factor = 2
+            has_relic = r_pox_sample
+        }
+    }
+    ai_weight = {
+    }
+}

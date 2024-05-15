@@ -1,0 +1,12 @@
+pc_rift_star = {
+    entity = "crystal_rift_entity"
+    entity_scale = 6
+    picture = "pc_rift_star"
+    icon = GFX_planet_type_rift_star
+    star = yes
+    star_gfx = no
+    astral_rift_gfx = yes
+    spawn_odds = 0
+    chance_of_ring = 0
+    colonizable = no
+}

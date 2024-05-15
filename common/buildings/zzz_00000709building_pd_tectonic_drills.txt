@@ -1,0 +1,54 @@
+building_pd_tectonic_drills = {
+    base_buildtime = @b4_time
+    base_cap_amount = 1
+    category = government
+    can_be_disabled = no
+    upgrades = {
+        "building_pd_tectonic_drills_2"
+    }
+    potential = {
+        exists = owner
+        owner = {
+            has_origin = origin_pd_ash_tectonic_drillers
+        }
+        has_deposit = d_pd_tectonic_fissure
+    }
+    destroy_trigger = {
+        OR = {
+            is_planet_class = pc_ash
+            is_planet_class = pc_city
+            is_pd_arcology = yes
+            is_pd_hive_world = yes
+            is_pd_hive_arcology = yes
+            is_pd_machine = yes
+            is_pd_robot_arcology = yes
+            is_planet_class = pc_relic
+            NOT = {
+                exists = owner
+            }
+            owner = {
+                NOT = {
+                    has_trait = trait_pc_ash_preference
+                }
+            }
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            energy = 3000
+        }
+        upkeep = {
+            energy = 20
+            rare_crystals = 2
+        }
+    }
+    planet_modifier = {
+        planet_jobs_minerals_produces_mult = 0.1
+        planet_jobs_energy_produces_mult = 0.1
+        pop_environment_tolerance = -0.2
+    }
+    ai_weight = {
+        weight = 10000
+    }
+}

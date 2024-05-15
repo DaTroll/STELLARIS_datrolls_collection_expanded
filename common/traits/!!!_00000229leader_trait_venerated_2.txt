@@ -1,0 +1,50 @@
+leader_trait_venerated_2 = {
+    replace_traits = {
+        "leader_trait_venerated"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_venerated"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                }
+            }
+            trait_is_gestalt_check = no
+        }
+        job_culture_worker_add = 2
+    }
+    triggered_background_planet_modifier = {
+        potential = {
+            exists = FROM
+            FROM = {
+                exists = owner
+                owner = {
+                    is_same_value = root.owner
+                }
+            }
+            trait_is_gestalt_check = yes
+        }
+        job_evaluator_add = 2
+    }
+    planet_modifier = {
+        planet_amenities_add = 6
+    }
+    sector_modifier = {
+        planet_amenities_add = 3
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+}

@@ -1,0 +1,8 @@
+building_crystallization_facilities = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,131 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.6740
+    title = "anomaly.6740.name"
+    desc = "anomaly.6740.desc"
+    picture = GFX_evt_star_yellow
+    show_sound = event_mystic_reveal
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            set_country_flag = colorscience_divination_flag
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                is_gestalt = no
+            }
+        }
+        name = anomaly.6740.a
+        hidden_effect = {
+            FROM = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_deposit_for = shipclass_research_station
+                        }
+                    }
+                    clear_deposits = yes
+                }
+            }
+        }
+        FROM = {
+            add_deposit = d_physics_4
+        }
+        owner = {
+            add_modifier = {
+                modifier = "new_resonance_music_art"
+                years = 50
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        name = anomaly.6740.a.gestalt
+        hidden_effect = {
+            FROM = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_deposit_for = shipclass_research_station
+                        }
+                    }
+                    clear_deposits = yes
+                }
+            }
+        }
+        FROM = {
+            add_deposit = d_physics_4
+        }
+        owner = {
+            add_modifier = {
+                modifier = "new_resonance_study"
+                years = 50
+            }
+        }
+    }
+    option = {
+        name = anomaly.6740.b
+        trigger = {
+            owner = {
+                NOT = {
+                    has_technology = tech_lasers_5
+                }
+            }
+        }
+        owner = {
+            switch = {
+                trigger = has_technology
+                tech_lasers_5 = {
+                    add_monthly_resource_mult = {
+                        resource = physics_research
+                        value = @tier3researchreward
+                        min = @tier3researchmin
+                        max = @tier3researchmax
+                    }
+                }
+                tech_lasers_4 = {
+                    add_tech_option_or_research_effect = {
+                        TECH = tech_lasers_5
+                        PROGRESS = 0.3
+                        CATEGORY = physics_research
+                    }
+                }
+                tech_lasers_3 = {
+                    add_tech_option_or_research_effect = {
+                        TECH = tech_lasers_4
+                        PROGRESS = 0.4
+                        CATEGORY = physics_research
+                    }
+                }
+                tech_lasers_2 = {
+                    add_tech_option_or_research_effect = {
+                        TECH = tech_lasers_3
+                        PROGRESS = 0.5
+                        CATEGORY = physics_research
+                    }
+                }
+                tech_lasers_1 = {
+                    add_tech_option_or_research_effect = {
+                        TECH = tech_lasers_2
+                        PROGRESS = 0.6
+                        CATEGORY = physics_research
+                    }
+                }
+                default = {
+                    add_tech_option_or_research_effect = {
+                        TECH = tech_lasers_1
+                        PROGRESS = 0.6
+                        CATEGORY = physics_research
+                    }
+                }
+            }
+        }
+    }
+}

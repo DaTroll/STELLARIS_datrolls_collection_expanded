@@ -1,0 +1,65 @@
+building_navel_command = {
+    base_buildtime = @b1_time
+    can_build = no
+    planetary_ftl_inhibitor = yes
+    position_priority = 100
+    icon = holding_overlord_garrison
+    category = army
+    allow = {
+        has_upgraded_capital = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_naval_admin_add = 4
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_naval_admin_hive_add = 4
+        }
+    }
+    resources = {
+        category = planet_buildings_strongholds
+        cost = {
+            minerals = @b2_minerals
+            volatile_motes = @b2_rare_cost
+        }
+        upkeep = {
+            energy = 1
+            volatile_motes = @b2_rare_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_global_defense_grid"
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_naval_admin_hive_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = job_naval_admin_effect_desc
+    }
+}

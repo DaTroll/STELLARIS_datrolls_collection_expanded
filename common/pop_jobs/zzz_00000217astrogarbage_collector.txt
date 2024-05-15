@@ -1,0 +1,65 @@
+astrogarbage_collector = {
+    category = worker
+    is_capped_by_modifier = yes
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_junkheap
+    icon = low_tech_laborer
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    resources = {
+        category = planet_miners
+        produces = {
+            alloys = 2
+        }
+    }
+    planet_modifier = {
+        pop_environment_tolerance = 0.025
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|astrogarbage_collector|RESOURCE|alloys|
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+            NOT = {
+                has_slavery_type = {
+                    type = slavery_indentured
+                }
+            }
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = {
+                has_technology = tech_droid_workers
+            }
+        }
+        modifier = {
+            factor = 200
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = {
+                NOT = {
+                    has_technology = tech_droid_workers
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            can_take_servant_job = yes
+        }
+    }
+}

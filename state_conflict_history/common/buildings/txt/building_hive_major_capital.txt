@@ -1,0 +1,132 @@
+@buildings_t4 = 4
+@tier_3_capital_defense_armies = 8
+building_hive_major_capital = {
+    base_buildtime = @b2_time
+    capital = yes
+    can_build = no
+    can_demolish = no
+    can_be_ruined = no
+    can_be_disabled = no
+    position_priority = 0
+    category = government
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                is_hive_empire = yes
+                is_country_type = swarm
+            }
+            is_fallen_empire = no
+        }
+    }
+    convert_to = {
+        building_machine_major_capital
+        building_major_capital
+        building_ancient_control_center
+        building_ancient_palace
+    }
+    upgrades = {
+        "building_imperial_hive_capital"
+    }
+    allow = {
+        num_sapient_pops >= 25
+        is_occupied_flag = no
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+    }
+    show_tech_unlock_if = {
+        is_hive_empire = yes
+    }
+    planet_modifier = {
+        planet_housing_add = 10
+        planet_amenities_add = 12
+        job_synapse_drone_add = 3
+        job_maintenance_drone_add = 5
+        job_patrol_drone_add = 2
+        planet_max_buildings_add = @buildings_t4
+        defense_armies_add = @tier_3_capital_defense_armies
+    }
+    inline_script = {
+        script = buildings/on_all_capital_buildings
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_origin = origin_progenitor_hive
+            }
+            is_planet_class = pc_hive
+        }
+        job_spawning_drone_add = -1
+        job_offspring_drone_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_technology = tech_capital_productivity_1
+            }
+        }
+        modifier = {
+            planet_jobs_productive_upkeep_mult = 0.1
+            planet_jobs_productive_produces_mult = 0.1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_technology = tech_capital_productivity_2
+            }
+        }
+        modifier = {
+            planet_jobs_productive_upkeep_mult = 0.1
+            planet_jobs_productive_produces_mult = 0.1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_technology = tech_capital_productivity_3
+            }
+        }
+        modifier = {
+            planet_jobs_productive_upkeep_mult = 0.1
+            planet_jobs_productive_produces_mult = 0.1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_cybernetics_organ_harvesting
+            }
+            has_current_purge = yes
+            exists = growing_species
+            growing_species = {
+                has_trait = trait_cybernetic
+            }
+        }
+        pop_growth_speed = 0.1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = {
+            energy = @b2_upkeep
+        }
+    }
+    triggered_desc = {
+        text = job_synapse_drone_effect_desc
+    }
+    triggered_desc = {
+        text = job_maintenance_drone_effect_desc
+    }
+    triggered_desc = {
+        text = job_patrol_drone_effect_desc
+    }
+}

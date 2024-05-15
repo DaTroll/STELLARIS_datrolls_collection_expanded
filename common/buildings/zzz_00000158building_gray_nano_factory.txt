@@ -1,0 +1,8 @@
+building_gray_nano_factory = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

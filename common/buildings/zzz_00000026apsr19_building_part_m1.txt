@@ -1,0 +1,8 @@
+apsr19_building_part_m1 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

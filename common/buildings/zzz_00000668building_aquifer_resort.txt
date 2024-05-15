@@ -1,0 +1,36 @@
+building_aquifer_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_aquifer
+        NOT = {
+            has_building = building_aquifer_farm
+        }
+        NOT = {
+            has_building_construction = building_aquifer_farm
+        }
+        NOT = {
+            has_building = building_aquifer_lab
+        }
+        NOT = {
+            has_building_construction = building_aquifer_lab
+        }
+        NOT = {
+            has_building = building_aquifer_resort
+        }
+        NOT = {
+            has_building_construction = building_aquifer_resort
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_aquifer
+            }
+        }
+    }
+}

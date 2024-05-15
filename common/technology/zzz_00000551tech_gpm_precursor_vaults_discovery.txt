@@ -1,0 +1,18 @@
+tech_gpm_precursor_vaults_discovery = {
+    area = physics
+    cost = @tier2cost1
+    category = {
+        field_manipulation
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        country_base_minor_artifacts_produces_add = 2
+        weapon_archaeotech_weapon_damage_mult = 0.2
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

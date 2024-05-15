@@ -1,0 +1,36 @@
+leader_trait_observant = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_observant"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        OR = {
+            has_trait = subclass_scientist_explorer
+            has_trait = subclass_commander_admiral
+        }
+        has_paragon_dlc = yes
+    }
+    modifier = {
+        ship_sensor_range_add = 1
+        ship_hyperlane_range_add = 2
+        ship_windup_mult = -0.05
+    }
+    leader_class = {
+        commander
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/dual_subclass_weight_mult
+            SUBCLASS_1 = commander_admiral
+            SUBCLASS_2 = scientist_explorer
+        }
+    }
+}

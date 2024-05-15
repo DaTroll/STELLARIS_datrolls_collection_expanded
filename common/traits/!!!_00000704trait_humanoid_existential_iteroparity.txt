@@ -1,0 +1,39 @@
+trait_humanoid_existential_iteroparity = {
+    host_has_dlc = "Humanoids Species Pack"
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    opposites = {
+        "trait_humanoid_psychological_infertility"
+        "trait_rapid_breeders"
+        "trait_fertile"
+        "trait_rapid_breeders_lithoid"
+        "trait_plantoid_budding"
+        "trait_lithoid_budding"
+        "trait_vat_grown"
+        "trait_tiyanki"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    icon = "gfx/interface/icons/traits/trait_existential_iteroparity.dds"
+    custom_tooltip = TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                OR = {
+                    is_at_war = yes
+                    has_crisis = yes
+                }
+            }
+        }
+        pop_growth_speed = 0.3
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

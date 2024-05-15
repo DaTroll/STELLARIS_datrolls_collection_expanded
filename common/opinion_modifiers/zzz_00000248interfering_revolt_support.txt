@@ -1,0 +1,8 @@
+interfering_revolt_support = {
+    opinion = {
+        base = -200
+    }
+    decay = {
+        base = 2
+    }
+}

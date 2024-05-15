@@ -1,0 +1,8 @@
+building_possibility_portal = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

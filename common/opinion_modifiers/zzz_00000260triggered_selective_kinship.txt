@@ -1,0 +1,16 @@
+triggered_selective_kinship = {
+    trigger = {
+        OR = {
+            has_valid_civic = civic_selective_kinship
+            from = {
+                has_valid_civic = civic_selective_kinship
+            }
+        }
+        exists = from.species
+        is_same_species_class = from
+        is_fallen_empire = no
+    }
+    opinion = {
+        base = 100
+    }
+}

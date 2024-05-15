@@ -1,0 +1,5 @@
+endtime_star_fantasy_empire = {
+    ai = {
+        enabled = no
+    }
+}

@@ -1,0 +1,16 @@
+xvcv_mdlc_bio_robot_trait_rapid_breeders = {
+    cost = 2
+    allowed_archetypes = {
+        XVCV_MDLC_BIO_ROBOT
+    }
+    icon = "gfx/interface/icons/traits/trait_rapid_breeders.dds"
+    modifier = {
+        xvcv_mdlc_bio_robot_growth_add = @xvcv_mdlc_bio_robot_growth_add_1
+    }
+    opposites = {
+        trait_rapid_breeders
+    }
+    slave_cost = {
+        energy = 200
+    }
+}

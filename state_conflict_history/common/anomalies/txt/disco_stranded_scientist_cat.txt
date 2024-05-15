@@ -1,0 +1,25 @@
+disco_stranded_scientist_cat = {
+    desc = "disco_stranded_scientist_cat_desc"
+    picture = "GFX_evt_asteroid_field"
+    max_once_global = yes
+    level = 4
+    spawn_chance = {
+        modifier = {
+            add = 2
+            is_asteroid = yes
+            has_any_strategic_resource = no
+        }
+        modifier = {
+            factor = 0
+            from.owner = {
+                OR = {
+                    is_homicidal = yes
+                    has_ethic = ethic_fanatic_xenophobe
+                    species_portrait = human
+                    species_portrait = human_legacy
+                }
+            }
+        }
+    }
+    on_success = distar.3020
+}

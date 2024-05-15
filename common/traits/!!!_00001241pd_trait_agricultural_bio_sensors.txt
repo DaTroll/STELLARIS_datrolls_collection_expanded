@@ -1,0 +1,38 @@
+pd_trait_agricultural_bio_sensors = {
+    cost = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_agrarian"
+        "pd_trait_fiscal_sub_routines"
+        "pd_trait_fossorial_attachments"
+    }
+    initial = no
+    species_potential_add = {
+        can_add_biosynth_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_biosynth_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = BIOSYNTH_LM_UPKEEP_EFFECT_LOW
+    modifier = {
+        planet_jobs_food_produces_mult = 0.25
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_generator_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_rural_designation = yes
+            }
+        }
+    }
+}

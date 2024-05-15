@@ -1,0 +1,33 @@
+leader_trait_utopian_idealist = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_utopian_idealist"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_official_governor
+    }
+    planet_modifier = {
+        pop_happiness = 0.2
+        pop_growth_from_immigration = 0.25
+        planet_immigration_pull_mult = 0.1
+    }
+    sector_modifier = {
+        pop_happiness = 0.1
+        pop_growth_from_immigration = 0.125
+        planet_immigration_pull_mult = 0.05
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

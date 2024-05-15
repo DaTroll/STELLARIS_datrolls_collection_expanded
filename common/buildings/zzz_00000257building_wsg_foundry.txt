@@ -1,0 +1,8 @@
+building_wsg_foundry = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

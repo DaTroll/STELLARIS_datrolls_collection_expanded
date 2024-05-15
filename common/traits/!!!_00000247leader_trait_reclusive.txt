@@ -1,0 +1,30 @@
+leader_trait_reclusive = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_reclusive"
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        diplo_weight_mult = -0.05
+    }
+    leader_class = {
+        official
+        scientist
+        commander
+    }
+    opposites = {
+        leader_trait_master_diplomat
+    }
+    selectable_weight = {
+        weight = @shared_negative_trait_weight
+        inline_script = paragon/council_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_solitary
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

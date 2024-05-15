@@ -1,0 +1,9 @@
+opinion_subject_released = {
+    opinion = {
+        base = 100
+    }
+    decay = {
+        base = 1
+    }
+    unique = yes
+}

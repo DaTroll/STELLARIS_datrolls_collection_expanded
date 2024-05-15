@@ -1,0 +1,46 @@
+tech_construction_templates = {
+    cost = @tier3cost2
+    area = engineering
+    tier = 3
+    is_rare = yes
+    category = {
+        industry
+    }
+    prerequisites = {
+        "tech_assembly_pattern"
+    }
+    weight = @tier3weight2
+    modifier = {
+        planet_building_build_speed_mult = 0.5
+        empire_size_districts_mult = -0.1
+        show_only_custom_tooltip = no
+        custom_tooltip = tech_construction_templates_effect
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0.5
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_industry
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_construction_templates
+        }
+        modifier = {
+            factor = 1.25
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_militarist
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

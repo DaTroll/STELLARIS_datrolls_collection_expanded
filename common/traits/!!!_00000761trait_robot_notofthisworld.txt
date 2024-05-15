@@ -1,0 +1,23 @@
+trait_robot_notofthisworld = {
+    cost = 0
+    icon = "gfx/interface/icons/traits/trait_notofthisworld.dds"
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        ROBOT
+        MACHINE
+    }
+    custom_tooltip_with_modifiers = TRAIT_NOTOFTHISWORLD_EFFECT
+    modifier = {
+        planet_pops_upkeep_mult = 0.1
+    }
+}

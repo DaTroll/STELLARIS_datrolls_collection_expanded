@@ -1,0 +1,128 @@
+"Kethur Forts" = {
+    key = "Kethur Forts"
+    ship_prefix = {
+        key = "KWO"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec2"
+        species_name = {
+            key = "Kethur"
+            literal = yes
+        }
+        species_plural = {
+            key = "Kethurs"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Kethur"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Kethur Forts, and with them the Kathur people was a once great, green, brutal race inhabiting the forestry planet which is now called \"First Kethur\". In their past they often opted to violence and carred little about the consequences. Their reckless nature turned their rich planet into a basic wasteland of sand and dune seas. The worst consequence of all was perhaps the destruction of their oft physiology, and the aim to ever get better in a pure violent way of forging war, this has led them to wear a hightech cyber-suit, equiped with enhencing drugs and optimized survival tools. Make no mistake, they don't seek peace. "
+        name_list = "NECROID4"
+        gender = male
+        trait = "trait_very_strong"
+        trait = "trait_slow_breeders"
+        trait = "trait_quarrelsome"
+        trait = "trait_adaptive"
+    }
+    name = {
+        key = "Kethur Forts"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "dictatorial_mil"
+                            value = {
+                                key = "Regime"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Kethur"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_dictatorial"
+    government = "gov_martial_dictatorship"
+    advisor_voice_type = "l_militarist"
+    planet_name = {
+        key = "First Kethur"
+        literal = yes
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Kethurus"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pirate"
+            file = "flag_pirate_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_45.dds"
+        }
+        colors = {
+            "intense_red"
+            "dark_grey"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kurthan"
+                literal = yes
+            }
+        }
+        portrait = "nec2"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Best Kurthan"
+            literal = yes
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_pompous_purists"
+    }
+    origin = "origin_default"
+}

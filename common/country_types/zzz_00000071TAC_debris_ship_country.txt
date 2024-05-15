@@ -1,0 +1,5 @@
+TAC_debris_ship_country = {
+    ai = {
+        enabled = no
+    }
+}

@@ -1,0 +1,27 @@
+trait_robot_superconductive = {
+    cost = 2
+    allowed_archetypes = {
+        ROBOT
+        MACHINE
+    }
+    modifier = {
+        planet_jobs_energy_produces_mult = 0.15
+    }
+    slave_cost = {
+        energy = 750
+    }
+    assembly_score = {
+        modifier = {
+            add = 1.5
+            from = {
+                has_generator_designation = yes
+            }
+        }
+        modifier = {
+            add = 0.5
+            from = {
+                has_rural_designation = yes
+            }
+        }
+    }
+}

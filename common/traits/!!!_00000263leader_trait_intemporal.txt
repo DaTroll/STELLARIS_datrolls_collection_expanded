@@ -1,0 +1,18 @@
+leader_trait_intemporal = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_intemporal"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    immortal_leaders = yes
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+}

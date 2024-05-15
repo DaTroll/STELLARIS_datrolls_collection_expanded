@@ -1,0 +1,37 @@
+pc_pd_cold_cave = {
+    entity = "pd_cold_cave_planet"
+    entity_scale = @planet_standard_scale
+    icon = GFX_planet_type_pd_cold_cave
+    climate = "cold"
+    picture = pc_pd_cold_cave
+    atmosphere_color = hsv {
+        0.48
+        0.15
+        0.8
+    }
+    atmosphere_intensity = 1
+    atmosphere_width = 0.5
+    city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+    colonizable = yes
+    initial = yes
+    planet_size = {
+        min = 25
+        max = 30
+    }
+    moon_size = {
+        min = @habitable_moon_min_size
+        max = @habitable_moon_max_size
+    }
+    uses_alternative_skies_for_moons = no
+    modifier = {
+        planet_orbital_bombardment_damage = -0.3
+        planet_buildings_upkeep_mult = 0.1
+        planet_districts_upkeep_mult = 0.1
+        pop_environment_tolerance = -0.1
+        biological_pop_growth_speed = -0.1
+        lithoid_pop_growth_speed = 0.1
+    }
+    district_set = standard
+    can_be_moon = no
+    carry_cap_per_free_district = @carry_cap_normal
+}

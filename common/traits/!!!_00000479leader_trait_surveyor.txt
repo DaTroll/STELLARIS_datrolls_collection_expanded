@@ -1,0 +1,34 @@
+leader_trait_surveyor = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_surveyor"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_governor_subclass = yes
+    }
+    planet_modifier = {
+        planet_technician_physics_research_produces_add = @trait_surveyor_amt
+        planet_farmers_society_research_produces_add = @trait_surveyor_amt
+        planet_miners_engineering_research_produces_add = @trait_surveyor_amt
+    }
+    sector_modifier = {
+        planet_technician_physics_research_produces_add = @trait_surveyor_sector_amt
+        planet_farmers_society_research_produces_add = @trait_surveyor_sector_amt
+        planet_miners_engineering_research_produces_add = @trait_surveyor_sector_amt
+    }
+    leader_class = {
+        commander
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

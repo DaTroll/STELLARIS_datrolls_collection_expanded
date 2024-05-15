@@ -1,0 +1,11 @@
+acot_free_thinker = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

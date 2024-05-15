@@ -1,0 +1,52 @@
+tech_cloaking_1 = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    is_rare = yes
+    prerequisites = {
+        "tech_shields_2"
+    }
+    weight = @tier2weight3
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    feature_flags = {
+        active_reconnaissance_unlocked
+    }
+    prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "TECH_UNLOCK_CLOAKING_1_TITLE"
+            desc = "TECH_UNLOCK_CLOAKING_1_DESC"
+        }
+    }
+    gateway = cloaking
+    weight_modifier = {
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_curator
+            }
+        }
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_fotd_scientist
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_cloaking_1
+        }
+        modifier = {
+            factor = 5
+            has_tradition = tr_subterfuge_adopt
+        }
+    }
+    ai_weight = {
+    }
+}

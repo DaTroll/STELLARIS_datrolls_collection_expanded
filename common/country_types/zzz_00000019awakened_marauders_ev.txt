@@ -1,0 +1,5 @@
+awakened_marauders_ev = {
+    ai = {
+        enabled = no
+    }
+}

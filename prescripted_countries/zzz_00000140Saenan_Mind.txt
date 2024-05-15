@@ -1,0 +1,104 @@
+"Saenan Mind" = {
+    key = "Saenan Mind"
+    ship_prefix = {
+        key = "SHV"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec3"
+        species_name = {
+            key = "Saen"
+            literal = yes
+        }
+        species_plural = {
+            key = "Saens"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Saen"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "\"Remember all, when the outsiders came and destroyed, purged, us and our magnificient homeworld, how they tried, we shall do to them.\"                                                      This well known phrase is often repeated amongst the drones of Saen. Why were they exterminated you ask ? It  seems that they mandible were used to infest new hosts, or something like this, making them impossible to integrate into a spacefaring civilization, but they destroyers failed, and now ... "
+        name_list = "NECROID4"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_survivor"
+        trait = "trait_communal"
+        trait = "trait_resilient"
+        trait = "trait_repugnant"
+        trait = "trait_docile"
+    }
+    name = {
+        key = "Saenan Mind"
+        literal = yes
+    }
+    adjective = {
+        key = "Saenan"
+        literal = yes
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    advisor_voice_type = "l_necroid_vir"
+    planet_name = {
+        key = "Saen"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Tae"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "necroid_01"
+    empire_flag = {
+        icon = {
+            category = "necroid"
+            file = "necroid_04.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_55.dds"
+        }
+        colors = {
+            "black"
+            "light_green"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Eternel Saen"
+                literal = yes
+            }
+        }
+        portrait = "nec3"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_memorialist"
+        "civic_hive_strength_of_legions"
+    }
+    origin = "origin_post_apocalyptic"
+}

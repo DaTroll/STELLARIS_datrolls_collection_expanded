@@ -1,0 +1,23 @@
+leader_trait_gpm_guilli = {
+    cost = 0
+    initial = no
+    randomized = no
+    leader_potential_add = {
+        always = no
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.1
+        category_psionics_research_speed_mult = 0.5
+        category_psionics_draw_chance_mult = 1
+    }
+    icon = "gfx/interface/icons/traits/trait_gpm_guilli.dds"
+    immortal_leaders = yes
+    leader_class = {
+        scientist
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        PRESAPIENT
+        LITHOID
+    }
+}

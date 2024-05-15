@@ -1,0 +1,86 @@
+"The Union" = {
+    key = "The Union"
+    ship_prefix = {
+        key = "US"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi3"
+        species_name = {
+            key = "One"
+        }
+        species_plural = {
+            key = "Ones"
+        }
+        species_adjective = {
+            key = "Onan"
+        }
+        species_bio = "The One are a Hive mind which don't have a proper specie name for themselves. Not as the other species they had to came up with one once they had built their hole society. Therefore it might not seem very creative, aswell as their Homeplanet. They don't have a specific objective by exploring space. Maybe one desicive objective will come to their minds in time, or a great challenge will make appear their destiny."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_nonadaptive"
+        trait = "trait_talented"
+        trait = "trait_quick_learners"
+        trait = "trait_traditional"
+        trait = "trait_communal"
+    }
+    name = {
+        key = "The Union"
+    }
+    adjective = {
+        key = "Unian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Home"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Home-Star"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_14.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "beige"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Ruler"
+            }
+        }
+        portrait = "avi3"
+        texture = 4
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_ruthless_capitalists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_subspace_ephapse"
+        "civic_hive_one_mind"
+    }
+    origin = "origin_tree_of_life"
+}

@@ -1,0 +1,8 @@
+building_plentiful_traditions_advanced_pillar_of_affliction = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

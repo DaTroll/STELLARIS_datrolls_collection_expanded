@@ -1,0 +1,23 @@
+tech_artificial_moral_codes = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        statecraft
+    }
+    weight = @tier2weight2
+    modifier = {
+        planet_crime_mult = -0.15
+        planet_amenities_mult = 0.05
+    }
+    potential = {
+        NOT = {
+            has_ethic = ethic_gestalt_consciousness
+        }
+    }
+    weight_modifier = {
+        factor = 1.5
+    }
+    ai_weight = {
+    }
+}

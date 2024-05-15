@@ -1,0 +1,86 @@
+"Aporii Leadership" = {
+    key = "Aporii Leadership"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun7"
+        species_name = {
+            key = "Aporia"
+        }
+        species_plural = {
+            key = "Aporii"
+        }
+        species_adjective = {
+            key = "Aporian"
+        }
+        species_bio = "The Aporia are a scared race. They will try to avoid contact with the outside as much as possible. But if it's needed they will do it. They are not evil by nature, or demonic as some species called them, they are just extremly easy to affray and thus not inspiring trust. But once you meet them closer and get to know them, they are actually a very nice and enjoyable compagny. Most of them even have an extended sense of humor and are willing to make new friends, even xenos. They are no such thing as racist or xenophobe, it's their government, not the people and individuals which compose it."
+        name_list = "FUN4"
+        gender = not_set
+        trait = "trait_charismatic"
+        trait = "trait_communal"
+        trait = "trait_wasteful"
+        trait = "trait_plantoid_budding"
+        trait = "trait_unruly"
+    }
+    name = {
+        key = "Aporii Leadership"
+    }
+    adjective = {
+        key = "Aporian"
+    }
+    authority = "auth_democratic"
+    government = "gov_military_commissariat"
+    planet_name = {
+        key = "Apaideytos"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Amthes"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "teal"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Apil"
+            }
+        }
+        portrait = "fun7"
+        texture = 1
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_nationalistic_zeal"
+        "civic_police_state"
+    }
+    origin = "origin_default"
+}

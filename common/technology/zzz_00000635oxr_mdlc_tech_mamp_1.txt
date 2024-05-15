@@ -1,0 +1,13 @@
+oxr_mdlc_tech_mamp_1 = {
+    cost = @tier5cost1
+    area = engineering
+    tier = 5
+    category = {
+        industry
+    }
+    weight = @xvcv_mdlc_not_researchable_tech_weight
+    potential = {
+        has_ascension_perk = oxr_mdlc_ap_mamp
+    }
+    is_reverse_engineerable = no
+}

@@ -1,0 +1,24 @@
+tech_compact_living = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        statecraft
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    modifier = {
+        envoys_add = @major_insight_envoy_gain
+        country_tech_influence_produces_add = 0.2
+        empire_size_penalty_mult = -0.05
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+        }
+    }
+}

@@ -1,0 +1,33 @@
+leader_trait_truth_seeker = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_truth_seeker"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_psionic_jobs_produces_mult = 0.25
+        pop_job_amenities_mult = 0.2
+        pop_ethic_spiritualist_attraction_mult = 0.5
+    }
+    sector_modifier = {
+        planet_psionic_jobs_produces_mult = 0.125
+        pop_job_amenities_mult = 0.1
+        pop_ethic_spiritualist_attraction_mult = 0.25
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_scientist_governor
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

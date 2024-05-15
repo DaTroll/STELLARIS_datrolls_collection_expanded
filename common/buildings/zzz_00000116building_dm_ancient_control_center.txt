@@ -1,0 +1,8 @@
+building_dm_ancient_control_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

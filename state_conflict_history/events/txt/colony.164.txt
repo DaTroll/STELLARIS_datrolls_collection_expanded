@@ -1,0 +1,141 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.164
+    title = "colony.164.name"
+    desc = "colony.164.desc"
+    picture = GFX_evt_smugglers_in_bar
+    show_sound = event_administrative_work
+    location = ROOT
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+        is_occupied_flag = no
+    }
+    trigger = {
+        NOT = {
+            has_planet_flag = armageddon_nuked
+        }
+        is_nuked = yes
+        NOR = {
+            has_planet_flag = wasteland_pacifist_movement
+            solar_system = {
+                any_system_planet = {
+                    is_capital = yes
+                }
+            }
+        }
+        owner = {
+            NOT = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        num_pops > 0
+        any_owned_pop = {
+            NOR = {
+                pop_has_trait = trait_mechanical
+                OR = {
+                    has_ethic = "ethic_pacifist"
+                    has_ethic = "ethic_fanatic_pacifist"
+                }
+            }
+            is_enslaved = no
+            is_being_purged = no
+        }
+        NOT = {
+            owner = {
+                has_country_flag = had_colony_164
+            }
+        }
+    }
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            set_planet_flag = wasteland_pacifist_movement
+            owner = {
+                set_country_flag = had_colony_164
+            }
+        }
+    }
+    option = {
+        name = colony.164.a
+        custom_tooltip = colony.164.a.tooltip
+        trigger = {
+            owner = {
+                is_pacifist = no
+                is_militarist = no
+            }
+        }
+    }
+    option = {
+        name = colony.164.b
+        custom_tooltip = colony.164.a.tooltip
+        trigger = {
+            owner = {
+                is_militarist = yes
+            }
+        }
+        owner = {
+            gain_negative_media_coverage = yes
+        }
+    }
+    option = {
+        name = colony.164.c
+        custom_tooltip = colony.164.a.tooltip
+        trigger = {
+            owner = {
+                is_pacifist = yes
+            }
+        }
+        owner = {
+            gain_possitive_media_coverage = yes
+        }
+    }
+    after = {
+        add_modifier = {
+            modifier = pacifist_movement
+            days = -1
+        }
+        hidden_effect = {
+            random_owned_pop = {
+                limit = {
+                    NOR = {
+                        has_ethic = "ethic_pacifist"
+                        pop_has_trait = trait_mechanical
+                    }
+                }
+                pop_change_ethic = ethic_pacifist
+            }
+            random_owned_pop = {
+                limit = {
+                    NOR = {
+                        has_ethic = "ethic_pacifist"
+                        pop_has_trait = trait_mechanical
+                    }
+                }
+                pop_change_ethic = ethic_pacifist
+            }
+            random_owned_pop = {
+                limit = {
+                    NOR = {
+                        has_ethic = "ethic_pacifist"
+                        pop_has_trait = trait_mechanical
+                    }
+                }
+                pop_change_ethic = ethic_pacifist
+            }
+            random_owned_pop = {
+                limit = {
+                    NOR = {
+                        has_ethic = "ethic_pacifist"
+                        pop_has_trait = trait_mechanical
+                    }
+                }
+                pop_change_ethic = ethic_pacifist
+            }
+        }
+    }
+}

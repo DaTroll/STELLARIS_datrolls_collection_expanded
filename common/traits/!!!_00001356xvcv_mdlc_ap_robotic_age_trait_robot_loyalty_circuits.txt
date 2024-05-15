@@ -1,0 +1,24 @@
+xvcv_mdlc_ap_robotic_age_trait_robot_loyalty_circuits = {
+    cost = 1
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        ROBOT
+    }
+    species_potential_add = {
+        exists = from
+        from = {
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+            has_ascension_perk = xvcv_mdlc_ap_robotic_age
+        }
+    }
+    modifier = {
+        pop_happiness = 0.1
+        pop_amenities_usage_add = 0.2
+    }
+    slave_cost = {
+        energy = 150
+    }
+}

@@ -1,0 +1,26 @@
+trait_ruler_warlike = {
+    starting_ruler_trait = yes
+    forbidden_origins = {
+        origin_legendary_leader
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_warlike"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        ship_weapon_damage = 0.05
+        army_damage_mult = 0.05
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

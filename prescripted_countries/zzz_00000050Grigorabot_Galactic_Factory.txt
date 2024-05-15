@@ -1,0 +1,89 @@
+"Grigorabot Galactic Factory" = {
+    key = "Grigorabot Galactic Factory"
+    ship_prefix = {
+        key = "GSU"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_mam_robot"
+        species_name = {
+            key = "Grigorabot"
+        }
+        species_plural = {
+            key = "Grigorabots"
+        }
+        species_adjective = {
+            key = "Grigorabotian"
+        }
+        species_bio = "\"One screw there, one more over there, *click clack* hop hop and put it on.\"                                                                                    Extremly cheap, extremly mass produced. This Robot, called \"Grigorabot\" by it's creators is one of the cheapest and quickest Roboters the galaxy has ever seen, tehy can be used for a multitude of task however they would be described as somewhat hard to store. The planet suffered a sort of overpopulation, but from Robots, too many everywhere. As soon as they gained consciousness the end was there within hours.                             Their goal? Produce more and more of their kind. more and more                                    ....and more ....                                                          .... and more ..."
+        name_list = "MACHINE3"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_bulky"
+        trait = "trait_robot_mass_produced"
+        trait = "trait_robot_recycled"
+        trait = "trait_robot_uncanny"
+    }
+    name = {
+        key = "Grigorabot Galactic Factory"
+    }
+    adjective = {
+        key = "Grigorabot"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_industrial"
+    advisor_voice_type = "l_machine"
+    planet_name = {
+        key = "Klick"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Klick"
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "horizontal.dds"
+        }
+        colors = {
+            "red"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Unit B-alpha2"
+            }
+        }
+        portrait = "sd_mam_robot"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Production Hub"
+        }
+        trait = "trait_ruler_feedback_loop"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_zero_waste_protocols"
+        "civic_machine_replication"
+    }
+    origin = "origin_default"
+}

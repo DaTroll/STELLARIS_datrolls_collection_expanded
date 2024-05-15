@@ -1,0 +1,11 @@
+tech_ariphaos_sensors_wormhole = {
+    cost = 0
+    area = physics
+    category = {
+        particles
+    }
+    tier = 4
+    potential = {
+        merg_has_sensor_expansion = yes
+    }
+}

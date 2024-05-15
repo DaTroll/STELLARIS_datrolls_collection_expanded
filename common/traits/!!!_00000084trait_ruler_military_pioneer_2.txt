@@ -1,0 +1,21 @@
+trait_ruler_military_pioneer_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        trait_ruler_military_pioneer
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_military_pioneer
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        starbase_shipyard_build_speed_mult = 0.1
+        starbase_upgrade_cost_mult = -0.075
+    }
+    leader_class = {
+        commander
+    }
+}

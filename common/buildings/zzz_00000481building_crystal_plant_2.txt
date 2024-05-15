@@ -1,0 +1,39 @@
+building_crystal_plant_2 = {
+    base_buildtime = 800
+    can_build = no
+    category = manufacturing
+    potential = {
+        owner = {
+            has_country_flag = lithoid_crystal_plant
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    inline_script = {
+        script = jobs/translucer_add
+        AMOUNT = 3
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+        }
+        upkeep = {
+            energy = 3
+        }
+    }
+    prerequisites = {
+        "tech_rare_crystals"
+    }
+    show_tech_unlock_if = {
+        owner = {
+            has_country_flag = lithoid_crystal_plant
+        }
+    }
+}

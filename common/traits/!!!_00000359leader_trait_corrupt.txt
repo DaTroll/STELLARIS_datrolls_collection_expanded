@@ -1,0 +1,63 @@
+leader_trait_corrupt = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_corrupt"
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        NOT = {
+            has_trait_tier1or2 = {
+                TRAIT = leader_trait_lawless
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_crime_add = 10
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_crime_no_happiness_add = 10
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        planet_crime_add = 5
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_crime_no_happiness_add = 5
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    opposites = {
+        leader_trait_righteous
+        leader_trait_righteous_2
+        leader_trait_martinet
+        leader_trait_martinet_2
+        leader_trait_martinet_3
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_decadent
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

@@ -1,0 +1,94 @@
+building_posthumous_employment_center = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = pop_assembly
+    potential = {
+        exists = owner
+        OR = {
+            owner = {
+                is_ai = no
+            }
+            NOT = {
+                exists = assembling_species
+            }
+            assembling_species = {
+                is_organic_species = yes
+            }
+        }
+        OR = {
+            owner = {
+                is_ai = no
+            }
+            NAND = {
+                free_district_slots = 0
+                free_building_slots <= 1
+                free_housing <= 0
+                free_jobs <= 0
+            }
+        }
+        owner = {
+            is_regular_empire = yes
+            has_valid_civic = civic_permanent_employment
+            OR = {
+                is_ai = no
+                num_pops < @ariphaos_patch_ai_pop_limit
+            }
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_permanent_employment
+                }
+            }
+            owner = {
+                is_ai = yes
+                num_pops > @ariphaos_patch_ai_pop_limit
+            }
+            AND = {
+                owner = {
+                    is_ai = yes
+                }
+                free_district_slots = 0
+                free_building_slots = 0
+                free_housing <= 0
+                free_jobs <= 0
+            }
+        }
+    }
+    planet_modifier = {
+        job_reassigner_add = 1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    triggered_desc = {
+        text = job_reassigner_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            OR = {
+                has_building = building_robot_assembly_plant
+                AND = {
+                    exists = assembling_species
+                    assembling_species = {
+                        is_robotic = yes
+                    }
+                }
+            }
+        }
+        text = tooltip_organic_and_artificial_assembly_warning
+    }
+}

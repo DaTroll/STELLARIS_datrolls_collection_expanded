@@ -1,0 +1,41 @@
+tech_galactic_markets = {
+    cost = @tier4cost1
+    area = society
+    tier = 4
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+        "tech_interstellar_economics"
+    }
+    weight = @tier4weight1
+    is_rare = yes
+    potential = {
+        is_gestalt = no
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0.25
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_statecraft
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_galactic_markets
+        }
+        modifier = {
+            factor = 0
+            num_communications < 2
+        }
+    }
+    ai_weight = {
+    }
+}

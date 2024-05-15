@@ -1,0 +1,26 @@
+leader_trait_scout_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_scout_2
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = GFX_leader_trait_scout
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    fleet_modifier = {
+        ship_speed_mult = 0.25
+        ship_hyperlane_range_add = 4
+        fleet_mia_time_mult = -0.25
+    }
+    leader_class = {
+        commander
+        scientist
+    }
+}

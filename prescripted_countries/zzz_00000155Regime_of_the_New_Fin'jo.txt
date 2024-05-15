@@ -1,0 +1,97 @@
+"Regime of the New Fin'jo" = {
+    key = "Regime of the New Fin'jo"
+    ship_prefix = {
+        key = "FNV"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu9"
+        species_name = {
+            key = "Fin'jo"
+            literal = yes
+        }
+        species_plural = {
+            key = "Fin'jos"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Fin'joan"
+            literal = yes
+        }
+        species_bio = "The last day was for a long time announced to them. For they had wasted all the ressources and poisoned their Homeworld, every Fin'jo was ready to die. But as the day ended and they woke up again the next one on artificial Space Habitats with a few new vessels, they knew, that they had been saved. They didn't posses the technology to create such artificial spacecrafts nor to navigate between the stars. In their due thankfullness they reformed their whole society in a way to never repeat the old errors. Some say it made them radical, extremists, and borderline a shell of their former self, but they knew, that if their decadent lifestyle was to continue, their specie would be doomed."
+        name_list = "AQUATIC4"
+        gender = not_set
+        trait = "trait_void_dweller_1"
+        trait = "trait_communal"
+        trait = "trait_docile"
+        trait = "trait_slow_breeders"
+        trait = "trait_conservational"
+    }
+    name = {
+        key = "Regime of the New Fin'jo"
+        literal = yes
+    }
+    adjective = {
+        key = "Fin'joan"
+        literal = yes
+    }
+    authority = "auth_oligarchic"
+    government = "gov_military_junta"
+    advisor_voice_type = "l_authoritarian"
+    planet_name = {
+        key = "New Home"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Dok'nu"
+        literal = yes
+    }
+    initializer = "void_dweller_system"
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_8.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_21.dds"
+        }
+        colors = {
+            "light_blue"
+            "white"
+            "blue"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Scii'jo"
+                literal = yes
+            }
+        }
+        portrait = "aqu9"
+        texture = 9
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_charismatic"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_slaving_despots_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_militarist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_functional_architecture"
+        "civic_shadow_council"
+    }
+    origin = "origin_void_dwellers"
+}

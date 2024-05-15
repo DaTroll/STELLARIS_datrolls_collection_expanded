@@ -1,0 +1,21 @@
+leader_trait_home_guard_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_home_guard"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_home_guard"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        defense_armies_add = 1
+        planet_orbital_bombardment_damage = -0.1
+    }
+    leader_class = {
+        commander
+    }
+}

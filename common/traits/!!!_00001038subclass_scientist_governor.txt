@@ -1,0 +1,46 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+subclass_scientist_governor = {
+    custom_subtitle = scientist_subclass
+    leader_trait_type = subclass
+    inline_script = {
+        script = trait/icon_subclass
+        SUBCLASS = scientist_governor
+        COUNCIL = no
+    }
+    custom_tooltip_with_modifiers = governor_subclass_tt
+    planet_modifier = {
+        planet_jobs_physics_research_produces_mult = 0.1
+        planet_jobs_society_research_produces_mult = 0.1
+        planet_jobs_engineering_research_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_jobs_physics_research_produces_mult = 0.05
+        planet_jobs_society_research_produces_mult = 0.05
+        planet_jobs_engineering_research_produces_mult = 0.05
+    }
+    ai_weight = {
+        modifier = {
+            is_councilor = yes
+            factor = @ai_selection_low
+        }
+        modifier = {
+            is_councilor = no
+            factor = @ai_selection_high
+        }
+        modifier = {
+            exists = planet
+            factor = @ai_selection_high
+        }
+        modifier = {
+            NOT = {
+                exists = planet
+            }
+            factor = @ai_selection_low
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    background_icon = "GFX_leader_subclass_scientist_governor_background"
+}

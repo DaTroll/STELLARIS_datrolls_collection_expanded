@@ -1,0 +1,49 @@
+pdzro_dealer_drone = {
+    category = complex_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_pdzro_dealer_domestic
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_administrators
+        produces = {
+            unity = 4
+        }
+        upkeep = {
+            trigger = {
+                is_lithoid = no
+            }
+            food = 2
+            energy = 2
+            sr_zro = 0.25
+        }
+        upkeep = {
+            trigger = {
+                is_lithoid = yes
+            }
+            minerals = 2
+            energy = 2
+            sr_zro = 0.25
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_stability_add = 0.025
+    }
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|synapse_drone|RESOURCE|unity|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+    }
+}

@@ -1,0 +1,97 @@
+"Prayers of The Way" = {
+    key = "Prayers of The Way"
+    ship_prefix = {
+        key = "WF"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec6"
+        species_name = {
+            key = "Praey"
+            literal = yes
+        }
+        species_plural = {
+            key = "Praeys"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Praeian"
+            literal = yes
+        }
+        species_bio = "The Prayer of the Way claim to have found the true and unique silver lining in existence, and that seems to be, to never, ever, truely die. Their society is divided into two systems, on one hand every libing has to do hard labor during all his life until death, when he'll be considered as \"on the Way\". They don't tolerate any other way of immortality, especially not robotic-based. Seeking to bring enlightement to every still living and conscious creature in the Universe, they truely are ... on the Way."
+        name_list = "NECROID3"
+        gender = not_set
+        trait = "trait_latent_psionic"
+        trait = "trait_intelligent"
+        trait = "trait_ingenious"
+        trait = "trait_traditional"
+        trait = "trait_slow_breeders"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Prayers of The Way"
+        literal = yes
+    }
+    adjective = {
+        key = "Prayers"
+        literal = yes
+    }
+    authority = "auth_dictatorial"
+    government = "gov_theocratic_dictatorship"
+    advisor_voice_type = "l_spiritualist"
+    planet_name = {
+        key = "Truth"
+        literal = yes
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Thruths Orb"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "fungoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_4.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_5.dds"
+        }
+        colors = {
+            "ocean_turquoise"
+            "shadow_teal"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Xzeli"
+                literal = yes
+            }
+        }
+        portrait = "nec6"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "necroids_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_exalted_priesthood"
+        "civic_reanimated_armies"
+    }
+    origin = "origin_shroudwalker_apprentice"
+}

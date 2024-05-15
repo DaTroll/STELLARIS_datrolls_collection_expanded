@@ -1,0 +1,18 @@
+leader_trait_rift_warped = {
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_rift_warped"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    self_modifier = {
+        leader_lifespan_add = 50
+        species_leader_exp_gain = 0.1
+    }
+    custom_tooltip_with_modifiers = leader_trait_ignore_leader_cap_tt
+    leader_class = all
+    initial = no
+    randomized = no
+}

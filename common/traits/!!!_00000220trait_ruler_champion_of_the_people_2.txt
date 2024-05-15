@@ -1,0 +1,42 @@
+trait_ruler_champion_of_the_people_2 = {
+    replace_traits = {
+        "trait_ruler_champion_of_the_people"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_champion_of_the_people"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_civic = civic_dystopian_society
+                }
+            }
+        }
+        pop_happiness = 0.075
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_civic = civic_dystopian_society
+            }
+        }
+        pop_cat_ruler_happiness = 0.1
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    opposites = {
+        leader_trait_tyrannical
+        leader_trait_tyrannical_2
+    }
+}

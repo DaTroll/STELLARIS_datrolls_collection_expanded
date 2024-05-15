@@ -1,0 +1,8 @@
+building_bugged_life_monastery_two = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

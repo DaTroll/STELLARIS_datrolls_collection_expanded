@@ -1,0 +1,23 @@
+leader_trait_fleet_organizer_2 = {
+    replace_traits = {
+        "leader_trait_fleet_organizer"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_fleet_organizer
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        country_naval_cap_mult = 0.15
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_nervous
+        leader_trait_nervous_2
+    }
+}

@@ -1,0 +1,25 @@
+namespace = anomaly
+namespace = anomaly
+ship_event = {
+    id = anomaly.91
+    title = "anomaly.91.name"
+    desc = "anomaly.91.desc"
+    picture = GFX_evt_big_landing_ship
+    show_sound = event_alien_nature
+    location = FROM
+    is_triggered_only = yes
+    option = {
+        name = FASCINATING
+        custom_tooltip = anomaly.91.a.tooltip
+        hidden_effect = {
+        fromfrom = {
+            add_modifier = {
+                modifier = "cunning_flora"
+                days = -1
+            }
+            add_deposit = d_savage_wildlands
+            add_deposit = d_dense_jungle
+            }
+        }
+    }
+}

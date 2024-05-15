@@ -1,0 +1,86 @@
+"Mind of Lock" = {
+    key = "Mind of Lock"
+    ship_prefix = {
+        key = "MLS"
+    }
+    species = {
+        class = "MOL"
+        portrait = "mol7"
+        species_name = {
+            key = "Lock"
+        }
+        species_plural = {
+            key = "Lock"
+        }
+        species_adjective = {
+            key = "Lockian"
+        }
+        species_bio = "Mind of Lock. But who is Lock? It might be their leader. But if a Hive Mind would take on the Name of their leader, they should change Name each time he dies, right? But this never happend. Lock is the Name every single Unit takes when they become the Leader. Perhaps it is not really researched how they elect new leaders within a Hive Mind. But another really interesting point is one of their morphological abilities: they gravitate. How do they gravitate? This would perhaps be a great scientific mystery we could solve!"
+        name_list = "MOL4"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_rapid_breeders"
+        trait = "trait_quick_learners"
+        trait = "trait_weak"
+        trait = "trait_communal"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Mind of Lock"
+    }
+    adjective = {
+        key = "Lockian"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Coral"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Coral"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "diagonal.dds"
+        }
+        colors = {
+            "black"
+            "pink"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Lock"
+            }
+        }
+        portrait = "mol7"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_subsumed_will"
+    }
+    origin = "origin_default"
+}

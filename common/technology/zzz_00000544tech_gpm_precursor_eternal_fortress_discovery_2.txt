@@ -1,0 +1,18 @@
+tech_gpm_precursor_eternal_fortress_discovery_2 = {
+    area = society
+    cost = @tier2cost1
+    category = {
+        military_theory
+    }
+    tier = 2
+    is_custom_tech_3 = yes
+    ai_update_type = all
+    weight = 1
+    modifier = {
+        army_defense_damage_mult = 0.3
+        army_defense_health_mult = 0.3
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

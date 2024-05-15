@@ -1,0 +1,88 @@
+leader_trait_legendary_ancestors_knowledge = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_scroll"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    triggered_modifier = {
+        potential = {
+            leader_class = scientist
+        }
+        ship_speed_mult = 0.25
+        fleet_mia_time_mult = -0.5
+        ship_archaeological_site_excavation_speed_mult = 0.75
+    }
+    triggered_planet_modifier = {
+        potential = {
+            leader_class = official
+        }
+        planet_jobs_specialist_produces_mult = 0.2
+        planet_jobs_upkeep_mult = -0.1
+        job_archivist_add = 4
+    }
+    triggered_sector_modifier = {
+        potential = {
+            leader_class = official
+        }
+        planet_jobs_specialist_produces_mult = 0.1
+        planet_jobs_upkeep_mult = -0.05
+        job_archivist_add = 2
+    }
+    triggered_fleet_modifier = {
+        potential = {
+            leader_class = commander
+        }
+        fleet_mia_time_mult = -0.5
+        ship_armor_hardening_add = 0.3
+        ship_shield_hardening_add = 0.3
+    }
+    triggered_army_modifier = {
+        potential = {
+            leader_class = commander
+        }
+        army_morale = 1.5
+        army_health = 0.75
+        army_collateral_damage_mult = -0.85
+    }
+    triggered_self_modifier = {
+        potential = {
+            leader_class = commander
+        }
+        planet_combat_width_add = 10
+        leader_scientists_physics_research_produces_add = 50
+    }
+    triggered_self_modifier = {
+        potential = {
+            leader_class = commander
+        }
+        leader_scientists_engineering_research_produces_add = 50
+    }
+    triggered_self_modifier = {
+        potential = {
+            leader_class = official
+        }
+        leader_scientists_society_research_produces_add = 50
+    }
+    triggered_self_modifier = {
+        potential = {
+            leader_class = scientist
+        }
+        leader_scientists_physics_research_produces_add = 40
+        leader_scientists_society_research_produces_add = 40
+        leader_scientists_engineering_research_produces_add = 40
+    }
+    self_modifier = {
+        leader_lifespan_add = 25
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

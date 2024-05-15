@@ -1,0 +1,61 @@
+holding_dread_outpost = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = building_dread_encampment
+    base_cap_amount = 1
+    category = army
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    potential = {
+        owner.overlord = {
+            has_valid_civic = civic_reanimated_armies
+        }
+    }
+    allow = {
+        owner = {
+            NOR = {
+                has_valid_civic = civic_reanimated_armies
+                is_machine_empire = yes
+            }
+        }
+        is_occupied_flag = no
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_overlord_necromancer_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_overlord_necromancer_drone_add = 2
+    }
+    on_built = {
+        planet = {
+            set_planet_flag = active_dread_outpost
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_planet_flag = active_dread_outpost
+        }
+    }
+    triggered_desc = {
+        text = job_overlord_necromancer_effect_desc
+    }
+}

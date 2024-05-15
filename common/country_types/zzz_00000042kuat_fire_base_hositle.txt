@@ -1,0 +1,5 @@
+kuat_fire_base_hositle = {
+    ai = {
+        enabled = no
+    }
+}

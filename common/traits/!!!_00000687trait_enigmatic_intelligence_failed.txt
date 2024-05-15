@@ -1,0 +1,47 @@
+trait_enigmatic_intelligence_failed = {
+    cost = 0
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        can_remove_presapient_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    improves_leaders = yes
+    opposites = {
+        "trait_intelligent"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = -0.6
+        planet_jobs_society_research_produces_mult = -0.6
+        planet_jobs_engineering_research_produces_mult = -0.6
+    }
+    slave_cost = {
+        energy = -150
+    }
+    assembly_score = {
+        modifier = {
+            subtract = 1.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            subtract = 1.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

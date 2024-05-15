@@ -1,0 +1,9 @@
+opinon_pre_ftl_bombard = {
+    opinion = {
+        base = -200
+    }
+    accumulative = yes
+    decay = {
+        base = 1
+    }
+}

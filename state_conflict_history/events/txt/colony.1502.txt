@@ -1,0 +1,57 @@
+namespace = colony
+planet_event = {
+    id = colony.1502
+    title = "colony.1502.name"
+    desc = "colony.1502.desc"
+    picture = GFX_evt_atmospheric_entry
+    location = ROOT
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            has_country_flag = FLDrone_country
+        }
+    }
+    option = {
+        name = colony.1502.a
+        custom_tooltip = colony.1502.a.tooltip
+        random_deposit = {
+            limit = {
+                is_blocker = yes
+                NOR = {
+                    is_deposit_type = d_buried_lithoids
+                    is_deposit_type = d_lithoid_devastation
+                    is_deposit_type = d_terraforming_blocker
+                    is_deposit_type = d_archaeological_site
+                    is_deposit_type = d_ruined_arcology
+                }
+            }
+            clear_blocker = yes
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_artificial = no
+                    NOT = {
+                        is_planet_class = pc_machine
+                    }
+                    NOT = {
+                        is_planet_class = pc_hive
+                    }
+                    NOT = {
+                        is_planet_class = pc_city
+                    }
+                }
+                planet_event = {
+                    id = colonyexpanded.360
+                    days = 360
+                }
+            }
+            else = {
+                planet_event = {
+                    id = colony.1503
+                    days = 360
+                }
+            }
+        }
+    }
+}

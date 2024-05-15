@@ -1,0 +1,21 @@
+leader_trait_crew_trainer_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_crew_trainer_2
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_destroyer_focus
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    councilor_modifier = {
+        country_naval_cap_add = 60
+        ship_starting_experience_add = 200
+    }
+    leader_class = {
+        commander
+    }
+}

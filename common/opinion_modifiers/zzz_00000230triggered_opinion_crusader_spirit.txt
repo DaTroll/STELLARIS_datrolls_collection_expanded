@@ -1,0 +1,14 @@
+triggered_opinion_crusader_spirit = {
+    trigger = {
+        is_country_type = default
+        has_civic = civic_crusader_spirit
+        FROM = {
+            NOT = {
+                has_same_ethos = PREV
+            }
+        }
+    }
+    opinion = {
+        base = -80
+    }
+}

@@ -1,0 +1,25 @@
+@t2_mult = 0.15
+leader_trait_resolution_category_politics_traditions_focus_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_resolution_category_politics_traditions_focus"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_resolution_category_politics_traditions_focus"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    galcom_modifier = {
+        resolution_category_politics_tradition_1_vote_strength_mult = @t2_mult
+        resolution_category_politics_tradition_2_vote_strength_mult = @t2_mult
+        resolution_category_politics_tradition_3_vote_strength_mult = @t2_mult
+        resolution_category_politics_tradition_4_vote_strength_mult = @t2_mult
+    }
+    custom_tooltip = leader_trait_resolution_category_politics_traditions_focus_2_tt
+    leader_class = {
+        official
+    }
+}

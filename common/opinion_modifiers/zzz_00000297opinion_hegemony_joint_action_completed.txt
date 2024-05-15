@@ -1,0 +1,11 @@
+opinion_hegemony_joint_action_completed = {
+    opinion = {
+        base = 100
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

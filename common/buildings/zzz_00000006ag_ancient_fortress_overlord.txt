@@ -1,0 +1,8 @@
+ag_ancient_fortress_overlord = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

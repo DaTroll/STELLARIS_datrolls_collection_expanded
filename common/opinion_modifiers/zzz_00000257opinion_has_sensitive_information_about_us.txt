@@ -1,0 +1,8 @@
+opinion_has_sensitive_information_about_us = {
+    opinion = {
+        base = -25
+    }
+    decay = {
+        base = 1
+    }
+}

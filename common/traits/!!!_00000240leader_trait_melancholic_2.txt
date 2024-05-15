@@ -1,0 +1,33 @@
+leader_trait_melancholic_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_melancholic"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_melancholic"
+        COUNCIL = no
+        TIER = 2
+    }
+    self_modifier = {
+        species_leader_exp_gain = -0.2
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_immortal = no
+        }
+        leader_lifespan_add = -20
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_immortal = yes
+        }
+        leaders_upkeep_mult = 0.3
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

@@ -1,0 +1,43 @@
+xvcv_mdlc_tech_cloaking_psi = {
+    icon = "tech_cloaking_psi"
+    cost = @tier5cost3
+    area = physics
+    tier = 5
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    is_rare = yes
+    prerequisites = {
+        "xvcv_mdlc_tech_psi_jump_drive_1"
+    }
+    weight = @tier5weight2
+    is_reverse_engineerable = no
+    potential = {
+        has_first_contact_dlc = yes
+        has_ascension_perk = xvcv_mdlc_ap_abyss
+    }
+    prereqfor_desc = {
+        hide_prereq_for_desc = component
+        custom = {
+            title = "XVCV_MDLC_TECH_UNLOCK_CLOAKING_PSI_TITLE"
+            desc = "XVCV_MDLC_TECH_UNLOCK_CLOAKING_PSI_DESC"
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            factor = @ap_technological_ascendancy_rare_tech
+            has_ascension_perk = ap_technological_ascendancy
+        }
+        modifier = {
+            factor = @federation_perk_factor
+            has_federation = yes
+            federation = {
+                has_federation_perk = rare_tech_boost
+                any_member = {
+                    has_technology = xvcv_mdlc_tech_cloaking_psi
+                }
+            }
+        }
+    }
+}

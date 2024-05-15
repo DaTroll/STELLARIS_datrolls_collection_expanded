@@ -1,0 +1,56 @@
+@t3_mult = 0.25
+leader_trait_resolution_category_galacticreforms_focus_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_resolution_category_galacticreforms_focus_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_resolution_category_galacticreforms_focus"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    galcom_modifier = {
+        resolution_category_market_vote_strength_mult = @t3_mult
+        resolution_category_galacticreforms_vote_strength_mult = @t3_mult
+        resolution_category_declare_crisis_vote_strength_mult = @t3_mult
+        resolution_category_galactic_focus_vote_strength_mult = @t3_mult
+        resolution_category_ascension_vote_strength_mult = @t3_mult
+    }
+    triggered_galcom_modifier = {
+        potential = {
+            has_galactic_custodian = yes
+            has_galactic_republic = no
+        }
+        resolution_category_term_limits_vote_strength_mult = @t3_mult
+        resolution_category_custodian_reforms_vote_strength_mult = @t3_mult
+        resolution_category_galactic_institutions_vote_strength_mult = @t3_mult
+    }
+    triggered_galcom_modifier = {
+        potential = {
+            has_galactic_custodian = yes
+            has_galactic_republic = yes
+        }
+        resolution_category_galactic_institutions_vote_strength_mult = @t3_mult
+        resolution_category_imperial_reforms_vote_strength_mult = @t3_mult
+        resolution_category_foreign_relations_vote_strength_mult = @t3_mult
+    }
+    triggered_galcom_modifier = {
+        potential = {
+            has_galactic_emperor = yes
+        }
+        resolution_category_imperial_council_vote_strength_mult = @t3_mult
+        resolution_category_imperial_reforms_vote_strength_mult = @t3_mult
+        resolution_category_emperor_imperial_institutions_vote_strength_mult = @t3_mult
+        resolution_category_foreign_relations_vote_strength_mult = @t3_mult
+    }
+    custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_3_favor_tt
+    leader_class = {
+        official
+    }
+}

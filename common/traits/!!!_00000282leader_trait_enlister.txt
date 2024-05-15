@@ -1,0 +1,40 @@
+leader_trait_enlister = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_enlister"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    planet_modifier = {
+        planet_army_build_speed_mult = 0.1
+        armies_cost_mult = -0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        job_soldier_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        job_warrior_drone_add = 1
+    }
+    sector_modifier = {
+        planet_army_build_speed_mult = 0.05
+        armies_cost_mult = -0.05
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

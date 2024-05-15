@@ -1,0 +1,37 @@
+leader_trait_shroud_preacher = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_shroud_preacher"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    planet_modifier = {
+        planet_psionic_jobs_produces_mult = 0.25
+    }
+    sector_modifier = {
+        planet_psionic_jobs_produces_mult = 0.125
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_ethic = ethic_spiritualist
+        OR = {
+            has_trait = subclass_scientist_governor
+            has_trait = subclass_official_governor
+            has_trait = subclass_commander_governor
+        }
+    }
+    custom_tooltip_with_modifiers = leader_trait_shroud_preacher_effect
+    leader_class = {
+        official
+        scientist
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

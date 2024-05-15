@@ -1,0 +1,30 @@
+leader_trait_the_psionic_luminary = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_psionic"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_upkeep
+        RESOURCE = sr_zro
+        AMOUNT = 3
+    }
+    councilor_modifier = {
+        country_councilor_influence_produces_add = 2
+        pop_government_ethic_attraction = 0.1
+        planet_crime_add = -20
+        intel_decryption_add = 2
+        intel_encryption_add = 2
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+    immortal_leaders = yes
+}

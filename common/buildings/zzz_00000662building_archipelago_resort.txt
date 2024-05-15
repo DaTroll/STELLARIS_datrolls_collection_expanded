@@ -1,0 +1,36 @@
+building_archipelago_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_pd_archipelago
+        NOT = {
+            has_building = building_archipelago_foundry
+        }
+        NOT = {
+            has_building_construction = building_archipelago_foundry
+        }
+        NOT = {
+            has_building = building_archipelago_farm
+        }
+        NOT = {
+            has_building_construction = building_archipelago_farm
+        }
+        NOT = {
+            has_building = building_archipelago_resort
+        }
+        NOT = {
+            has_building_construction = building_archipelago_resort
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_pd_archipelago
+            }
+        }
+    }
+}

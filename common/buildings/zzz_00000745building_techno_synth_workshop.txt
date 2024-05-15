@@ -1,0 +1,87 @@
+building_techno_synth_workshop = {
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    category = research
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+        NOT = {
+            is_planet_class = pc_technoorganic
+        }
+        NOT = {
+            is_planet_class = pc_pd_techno_arc
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+        }
+    }
+    planet_modifier = {
+        planet_researchers_engineering_research_produces_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_living_metal
+                }
+            }
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_techno_eng_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_living_metal
+                }
+            }
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        job_techno_drone_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_deficit = sr_living_metal
+                }
+            }
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        job_techno_drone_add = 2
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            sr_living_metal = 100
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_techno_synth_workshop"
+    }
+}

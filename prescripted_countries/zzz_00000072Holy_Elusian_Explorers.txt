@@ -1,0 +1,92 @@
+"Holy Elusian Explorers" = {
+    key = "Holy Elusian Explorers"
+    ship_prefix = {
+        key = "ESS"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep17"
+        species_name = {
+            key = "Elusian"
+        }
+        species_plural = {
+            key = "Elusians"
+        }
+        species_adjective = {
+            key = "Elusian"
+        }
+        species_bio = "'The Gods are with us, now and forever.'                                                The Elusians have no concept of after-life because they consider themselves already as being in the after-life. Alpha-H, also known as first Heaven is truly a paradise. For millions of years they have already been on this planet. Xenologues often describe them as \"Angel-like\" because of their sort of wings.The Elusian have never known armed conflict and never aim to it. A compromise can always be found thus no one knowswhat they are really capable of. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_perfected_genes"
+        trait = "trait_conformists"
+        trait = "trait_charismatic"
+        trait = "trait_solitary"
+        trait = "trait_unruly"
+    }
+    name = {
+        key = "Holy Elusian Explorers"
+    }
+    adjective = {
+        key = "Elusian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_irenic_dictatorship"
+    planet_name = {
+        key = "Alpha-H"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "H"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_13.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "burgundy"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Elusi"
+            }
+        }
+        portrait = "rep17"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Holy"
+        }
+        ruler_title_female = {
+            key = "Holy"
+        }
+        trait = "leader_trait_legendary_pious_ascet"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_exalted_priesthood"
+        "civic_agrarian_idyll"
+    }
+    origin = "origin_legendary_leader"
+}

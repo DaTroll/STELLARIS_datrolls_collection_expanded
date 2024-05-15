@@ -1,0 +1,62 @@
+namespace = distar
+country_event = {
+    id = distar.65
+    title = "distar.65.name"
+    diplomatic_title = BLANK_STRING
+    desc = "distar.65.desc"
+    location = event_target:kohtalo_second_fleet
+    diplomatic = yes
+    is_triggered_only = yes
+    picture_event_data = {
+        portrait = event_target:kohtalo_captain
+        room = ethic_spaceship_room
+    }
+    immediate = {
+        event_target:ouroboros_system = {
+            random_system_planet = {
+                limit = {
+                    has_planet_flag = ouroboros_pulsar_flag
+                }
+                save_event_target_as = ouroboros_pulsar
+            }
+        }
+    }
+    option = {
+        name = "distar.65.a"
+        custom_tooltip = "distar.65.a.tooltip"
+        hidden_effect = {
+            country_event = {
+                id = distar.66
+            }
+        }
+    }
+    option = {
+        name = "distar.65.b"
+        custom_tooltip = "distar.65.b.tooltip"
+        hidden_effect = {
+            event_target:kohtalo_second_fleet = {
+                delete_fleet = this
+            }
+            country_event = {
+                id = distar.68
+                days = 360
+            }
+        }
+    }
+    option = {
+        name = "distar.65.akx.c"
+        trigger = {
+            has_country_flag = worm_events_available
+        }
+        custom_tooltip = "distar.65.b.tooltip"
+        hidden_effect = {
+            event_target:kohtalo_second_fleet = {
+                delete_fleet = this
+            }
+            country_event = {
+                id = distar.68
+                days = 360
+            }
+        }
+    }
+}

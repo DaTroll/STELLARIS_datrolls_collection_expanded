@@ -1,0 +1,52 @@
+holding_distributed_processing = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_distributed_processing
+    base_cap_amount = 1
+    category = research
+    potential = {
+        owner.overlord = {
+            is_machine_empire = yes
+            NOT = {
+                has_civic = civic_machine_servitor
+            }
+        }
+        has_overlord_dlc = yes
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+            }
+        }
+        job_mind_thrall_add = 4
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = yes
+            }
+        }
+        job_mind_thrall_drone_add = 4
+    }
+    triggered_desc = {
+        text = job_mind_thrall_effect_desc
+    }
+}

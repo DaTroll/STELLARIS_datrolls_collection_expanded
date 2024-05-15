@@ -1,0 +1,25 @@
+leader_trait_legendary_natural_ruler_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_natural_ruler"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_pacifist_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        planet_stability_add = 3.5
+        planet_jobs_upkeep_mult = -0.1
+        pop_government_ethic_attraction = 0.2
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

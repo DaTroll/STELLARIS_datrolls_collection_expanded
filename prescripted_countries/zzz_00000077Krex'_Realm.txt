@@ -1,0 +1,86 @@
+"Krex' Realm" = {
+    key = "Krex' Realm"
+    ship_prefix = {
+        key = "KSS"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep10"
+        species_name = {
+            key = "Krex"
+        }
+        species_plural = {
+            key = "Krex"
+        }
+        species_adjective = {
+            key = "Krex"
+        }
+        species_bio = "The Krex are plagued by a great disease. This disease is the cause of basically all their problems. When a Krex is lonely, he will challenge another one to a duel to death.           They used to be a striving society, working for the greater good, having a global aim, thus they mastered many challenges, but since the disease appeared, after they crafted their first generation of Robots, they have constantly been degradating everything. Only a small ruling Elite seems to have mastered their constrains and with the help of the Robots mastered space flight. Maybe they will find a solution looking up in the sky?"
+        name_list = "REP3"
+        gender = not_set
+        trait = "trait_quarrelsome"
+        trait = "trait_repugnant"
+        trait = "trait_deviants"
+        trait = "trait_very_strong"
+        trait = "trait_intelligent"
+    }
+    name = {
+        key = "Krex' Realm"
+    }
+    adjective = {
+        key = "Krex"
+    }
+    authority = "auth_imperial"
+    government = "gov_star_empire"
+    planet_name = {
+        key = "Krox"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Krox'ne"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "black"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Krax"
+            }
+        }
+        portrait = "rep10"
+        texture = 2
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_honorbound_warriors_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_distinguished_admiralty"
+    }
+    origin = "origin_default"
+}

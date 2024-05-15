@@ -1,0 +1,36 @@
+leader_trait_army_veteran = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_army_veteran"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        planet_army_build_speed_mult = 0.15
+        armies_cost_mult = -0.15
+        army_defense_damage_mult = 0.15
+    }
+    leader_potential_add = {
+        is_pool_leader = yes
+    }
+    on_gained_effect = {
+        add_age = value:percent_of_leader_lifespan|PERCENT|10|
+        set_random_commander_background_effect = yes
+    }
+    leader_class = {
+        official
+        scientist
+    }
+    opposites = {
+        "leader_trait_retired_fleet_officer"
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = {
+            script = "paragon/existing_trait_weight_mult"
+            TRAIT = leader_trait_army_veteran
+        }
+    }
+}

@@ -1,0 +1,24 @@
+leader_trait_roamer_2 = {
+    replace_traits = {
+        "leader_trait_roamer"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_roamer"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    modifier = {
+        science_ship_survey_speed = 0.2
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_neurotic
+        leader_trait_neurotic_2
+    }
+    ai_weight = 100
+}

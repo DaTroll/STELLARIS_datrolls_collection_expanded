@@ -1,0 +1,64 @@
+xvcv_mdlc_leader_trait_bio_robot = {
+    inline_script = {
+        script = trait/icon_machine
+        CLASS = leader
+        ICON = "GFX_xvcv_mdlc_leader_trait_bio_robot"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_fire_rate_mult = 0.1
+        ship_armor_hardening_add = 0.1
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        army_damage_mult = 0.05
+        army_collateral_damage_mult = 0.1
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        ship_anomaly_research_speed_mult = 0.15
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        leader_scientists_physics_research_produces_add = 2.5
+        leader_scientists_society_research_produces_add = 2.5
+        leader_scientists_engineering_research_produces_add = 2.5
+        mult = trigger:has_skill
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        planet_jobs_worker_produces_mult = 0.05
+    }
+    triggered_modifier = {
+        potential = {
+            is_ruler = yes
+        }
+        planet_pop_assembly_add = 1
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    initial = no
+    randomized = no
+    notify_on_gained = no
+}

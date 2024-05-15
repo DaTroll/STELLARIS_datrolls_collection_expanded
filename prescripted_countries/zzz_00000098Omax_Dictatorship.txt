@@ -1,0 +1,86 @@
+"Omax Dictatorship" = {
+    key = "Omax Dictatorship"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "ART"
+        portrait = "art3"
+        species_name = {
+            key = "Pilax"
+        }
+        species_plural = {
+            key = "Pilax"
+        }
+        species_adjective = {
+            key = "Pilax"
+        }
+        species_bio = "After the several conflicts caused by the Kul, who are now subjudated, the Pilax government agreed and collected the confessions of the many warcrimes and aggressions from the Kuls. Their sentence was to be a life of servitude and suffering. The Kul are the second largest specie of Omax who are capable of advanced thinking and handling. They now serve on the fields and in the Mines to let the economy of Omax grow as never before. "
+        name_list = "ART3"
+        gender = not_set
+        trait = "trait_perfected_genes"
+        trait = "trait_intelligent"
+        trait = "trait_rapid_breeders"
+        trait = "trait_decadent"
+        trait = "trait_nonadaptive"
+    }
+    name = {
+        key = "Omax Dictatorship"
+    }
+    adjective = {
+        key = "Omax"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_martial_dictatorship"
+    planet_name = {
+        key = "Omax"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Omax"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_11.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "red"
+            "beige"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Pilax I"
+            }
+        }
+        portrait = "art3"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_legendary_military_knowledge"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_federation_builders_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_shadow_council"
+        "civic_warrior_culture"
+    }
+    origin = "origin_legendary_leader"
+}

@@ -1,0 +1,8 @@
+building_plentiful_traditions_cybernetics_facility = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

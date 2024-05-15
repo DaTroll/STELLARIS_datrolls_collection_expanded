@@ -1,0 +1,131 @@
+"Sheturan Hidden Worlds" = {
+    key = "Sheturan Hidden Worlds"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu2"
+        species_name = {
+            key = "Sheturan"
+            literal = yes
+        }
+        species_plural = {
+            key = "Sheturans"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Sheturan"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "What comes after you've reached the deepest of all the ocean floors ? Exactly, the ground. The Sheturan figured that, why stop ? They had already achieved a way to turn Ocean-deep-seafood into powerfull Alloys, now, they can even go further to either experiment in new environments or to seek shelter in case of need. The maritime life for centuries made them very adaptable to new environments, aswell as resilient to harsh conditions, their rock-like appearence aswell as their overall physiology has litteraly been morphed by the conditions in which they lived for so long."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_cave_dweller"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_resilient"
+        trait = "trait_repugnant"
+        trait = "trait_unruly"
+        trait = "trait_strong"
+    }
+    name = {
+        key = "Sheturan Hidden Worlds"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "imperial_pac_mid_desc"
+                            value = {
+                                key = "Irenic"
+                            }
+                        }
+                         {
+                            key = "imperial_pac"
+                            value = {
+                                key = "Kingdom"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Sheturan"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_imperial"
+    government = "gov_irenic_monarchy"
+    advisor_voice_type = "l_lithoid_vir"
+    planet_name = {
+        key = "Shutur"
+        literal = yes
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Aphar"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "lithoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_4.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "inverted_v.dds"
+        }
+        colors = {
+            "khaki_brown"
+            "shadow_blue"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kutur"
+                literal = yes
+            }
+        }
+        portrait = "aqu2_m"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "aquatics_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_pacifist"
+    civics = {
+        "civic_catalytic_processing"
+        "civic_inwards_perfection"
+    }
+    origin = "origin_subterranean"
+}

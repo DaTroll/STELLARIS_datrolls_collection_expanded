@@ -1,0 +1,18 @@
+r_wormhole_key_fragment_1 = {
+    portrait = "GFX_relic_wormhole_key_1"
+    resources = {
+        category = relics
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_physics_tech_research_speed = 0.05
+    }
+    possible = {
+        custom_tooltip = {
+            fail_text = "relic_cant_activate"
+            always = no
+        }
+    }
+}

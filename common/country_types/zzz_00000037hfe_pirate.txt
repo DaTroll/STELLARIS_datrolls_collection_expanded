@@ -1,0 +1,5 @@
+hfe_pirate = {
+    ai = {
+        enabled = no
+    }
+}

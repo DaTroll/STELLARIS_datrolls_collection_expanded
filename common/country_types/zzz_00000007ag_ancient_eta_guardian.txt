@@ -1,0 +1,5 @@
+ag_ancient_eta_guardian = {
+    ai = {
+        enabled = no
+    }
+}

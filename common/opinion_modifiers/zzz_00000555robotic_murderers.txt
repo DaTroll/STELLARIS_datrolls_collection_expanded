@@ -1,0 +1,18 @@
+robotic_murderers = {
+    trigger = {
+        is_playable = yes
+        has_country_flag = synthetic_empire
+        OR = {
+            is_xenophile = yes
+            is_egalitarian = yes
+        }
+        is_xenophobe = no
+        FROM = {
+            is_playable = yes
+            has_civic = civic_machine_terminator
+        }
+    }
+    opinion = {
+        base = -1000
+    }
+}

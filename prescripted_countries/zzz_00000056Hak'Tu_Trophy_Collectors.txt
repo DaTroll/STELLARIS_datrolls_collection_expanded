@@ -1,0 +1,108 @@
+"Hak'Tu Trophy Collectors" = {
+    key = "Hak'Tu Trophy Collectors"
+    ship_prefix = {
+        key = "TCS"
+    }
+    species = {
+        class = "MACHINE"
+        portrait = "sd_rep_robot"
+        species_name = {
+            key = "Hak'Tu"
+        }
+        species_plural = {
+            key = "Hak'Tu"
+        }
+        species_adjective = {
+            key = "Hak'Tu"
+        }
+        species_bio = "Curious.                                                                                                                         The so called \"Hak'tu\" didnt, as all the others self-aware Robots, kill all their creators and chaged their name. The Hak'Tu conserved the names they got from the Karan'Tuk aswell as their flag. They did also keep them as Bio-trophy. isn't that a curious behavior for a Machine?                                                                        I am pretty sure that we will find some very interested scientists. \"Jonny, get the saw, it's gonna be fun\". But be aware of the threat they represent. They might drill the hell out of your planet if you don't watch out."
+        name_list = "MACHINE4"
+        gender = not_set
+        trait = "trait_machine_unit"
+        trait = "trait_robot_power_drills"
+        trait = "trait_robot_double_jointed"
+        trait = "trait_robot_high_maintenance"
+        trait = "trait_robot_custom_made"
+    }
+    secondary_species = {
+        class = "MOL"
+        portrait = "mol3"
+        species_name = {
+            key = "Karan'Tuk"
+        }
+        species_plural = {
+            key = "Karans"
+        }
+        species_adjective = {
+            key = "Karanian"
+        }
+        species_bio = "\"lets build robots\" they said \"it'll be fun\" they said. Doomed by the Robots we didn't even finish building. Shame of the people of Karan Tuk"
+        name_list = "MOL1"
+        gender = not_set
+        trait = "trait_natural_engineers"
+        trait = "trait_talented"
+        trait = "trait_quick_learners"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Hak'Tu Trophy Collectors"
+    }
+    adjective = {
+        key = "Hak'Tu"
+    }
+    authority = "auth_machine_intelligence"
+    government = "gov_machine_servitor"
+    planet_name = {
+        key = "Tuk 001"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Tuk'Sta"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_18.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "grey"
+            "blue"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Eye 001"
+            }
+        }
+        portrait = "sd_rep_robot"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Supervisory Eye"
+        }
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_erudite_explorers_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_machine_servitor"
+        "civic_machine_rockbreakers"
+    }
+    origin = "origin_doomsday"
+}

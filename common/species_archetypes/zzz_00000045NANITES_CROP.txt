@@ -1,0 +1,3 @@
+NANITES_CROP = {
+    uses_modifiers = no
+}

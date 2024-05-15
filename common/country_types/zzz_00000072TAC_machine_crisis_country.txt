@@ -1,0 +1,5 @@
+TAC_machine_crisis_country = {
+    ai = {
+        enabled = no
+    }
+}

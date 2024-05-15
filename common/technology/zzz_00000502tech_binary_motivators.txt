@@ -1,0 +1,25 @@
+tech_binary_motivators = {
+    cost = @tier3cost1
+    area = engineering
+    tier = 3
+    category = {
+        industry
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+        "tech_robomodding_m"
+    }
+    weight = @tier3weight1
+    gateway = robotics
+    modifier = {
+        MACHINE_species_trait_points_add = 1
+    }
+    potential = {
+        has_authority = auth_machine_intelligence
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+        factor = @robots_ai_tech_factor
+    }
+}

@@ -1,0 +1,30 @@
+trait_presapient_proles = {
+    cost = 0
+    opposites = {
+        "trait_presapient_natural_intellectuals"
+    }
+    initial = no
+    sapient = no
+    species_possible_remove = {
+        can_remove_presapient_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        PRESAPIENT
+        LITHOID
+    }
+    modifier = {
+        army_damage_mult = 0.1
+        planet_jobs_minerals_produces_mult = 0.1
+        planet_jobs_food_produces_mult = 0.1
+        planet_jobs_physics_research_produces_mult = -0.15
+        planet_jobs_society_research_produces_mult = -0.15
+        planet_jobs_engineering_research_produces_mult = -0.15
+    }
+}

@@ -1,0 +1,3 @@
+ARTHROPOID = {
+    uses_modifiers = no
+}

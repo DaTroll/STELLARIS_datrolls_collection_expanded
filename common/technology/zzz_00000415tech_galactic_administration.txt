@@ -1,0 +1,22 @@
+tech_galactic_administration = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight3
+    gateway = capital
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    weight_modifier = {
+        factor = 4
+    }
+    ai_weight = {
+        factor = @capital_tech_ai_factor
+    }
+}

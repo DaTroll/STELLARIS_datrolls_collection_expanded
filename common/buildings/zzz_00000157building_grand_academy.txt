@@ -1,0 +1,8 @@
+building_grand_academy = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

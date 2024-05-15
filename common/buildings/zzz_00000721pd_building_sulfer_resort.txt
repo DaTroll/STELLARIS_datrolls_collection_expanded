@@ -1,0 +1,36 @@
+pd_building_sulfer_resort = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_sulfur
+        NOT = {
+            has_building = pd_building_sulfer_lab
+        }
+        NOT = {
+            has_building = pd_building_sulfer_springs
+        }
+        NOT = {
+            has_building = pd_building_sulfer_resort
+        }
+        NOT = {
+            has_building_construction = pd_building_sulfer_springs
+        }
+        NOT = {
+            has_building_construction = pd_building_sulfer_lab
+        }
+        NOT = {
+            has_building_construction = pd_building_sulfer_resort
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_sulfur
+            }
+        }
+    }
+}

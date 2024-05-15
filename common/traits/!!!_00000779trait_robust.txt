@@ -1,0 +1,38 @@
+trait_robust = {
+    cost = 4
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    opposites = {
+        "trait_nonadaptive"
+        "trait_adaptive"
+        "trait_extremely_adaptive"
+        "trait_adaptive_lithoid"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        pop_environment_tolerance = 0.3
+        planet_jobs_produces_mult = 0.05
+        leader_lifespan_add = 50
+    }
+    slave_cost = {
+        energy = 2000
+    }
+    assembly_score = {
+        modifier = {
+            add = 0.5
+        }
+    }
+}

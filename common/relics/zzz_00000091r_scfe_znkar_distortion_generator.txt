@@ -1,0 +1,54 @@
+r_scfe_znkar_distortion_generator = {
+    activation_duration = 3600
+    portrait = "GFX_relic_scfe_znkar_engine"
+    sound = "relic_activation_vultaum_real_perforator"
+    resources = {
+        category = relics
+        cost = {
+            unity = 2500
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        ship_shield_mult = 0.2
+        ship_shield_hardening_add = 0.1
+        ship_speed_mult = 0.1
+        ship_evasion_mult = 0.2
+    }
+    score = 1000
+    active_effect = {
+        if = {
+            limit = {
+                has_first_contact_dlc = no
+            }
+            add_modifier = {
+                modifier = scfe_znkar_relic_1
+                days = 3600
+            }
+        }
+        else = {
+            add_modifier = {
+                modifier = scfe_znkar_relic_2
+                days = 3600
+            }
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = 3600
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_scfe_znkar_distortion_generator
+        }
+    }
+}

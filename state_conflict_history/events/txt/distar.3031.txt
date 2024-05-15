@@ -1,0 +1,107 @@
+namespace = distar
+country_event = {
+    id = distar.3031
+    title = "distar.3030.name"
+    desc = "distar.3031.desc"
+    picture = GFX_evt_alien_cavemen
+    show_sound = event_scanner
+    location = from
+    trackable = yes
+    is_triggered_only = yes
+    option = {
+        trigger = {
+            is_homicidal = no
+        }
+        name = distar.3031.a
+        enable_special_project = {
+            name = "molluscoid_miners_project_2"
+            location = root.owner.capital_scope
+            owner = root.owner
+        }
+    }
+    option = {
+        name = distar.3031.b
+        hidden_effect = {
+            event_target:molluscoid_miners_planet = {
+                if = {
+                    limit = {
+                        has_global_flag = expanded_pops_active
+                    }
+                    create_species = {
+                        name = random
+                        class = MOL
+                        portrait = "mol6"
+                        namelist = "MOL2"
+                        traits = {
+                            trait = "trait_moluscoid"
+                            trait = "trait_slow_learners"
+                            trait = "trait_industrious"
+                        }
+                        homeworld = event_target:molluscoid_miners_planet
+                        sapient = no
+                        effect = {
+                            save_global_event_target_as = molluscoid_miners_species
+                        }
+                    }
+                }
+                else = {
+                    create_species = {
+                        name = random
+                        class = MOL
+                        portrait = "mol6"
+                        namelist = "MOL2"
+                        traits = {
+                            trait = "trait_slow_learners"
+                            trait = "trait_industrious"
+                        }
+                        homeworld = event_target:molluscoid_miners_planet
+                        sapient = no
+                        effect = {
+                            save_global_event_target_as = molluscoid_miners_species
+                        }
+                    }
+                }
+                while = {
+                    limit = {
+                        count_owned_pop = {
+                            limit = {
+                                is_sapient = no
+                            }
+                            count < 6
+                        }
+                    }
+                    create_pop = {
+                        species = last_created_species
+                    }
+                }
+            }
+        }
+        enable_special_project = {
+            name = "molluscoid_miners_project_3"
+            location = root.owner.capital_scope
+            owner = root.owner
+        }
+    }
+    option = {
+        name = distar.3031.c
+        add_monthly_resource_mult = {
+            resource = minerals
+            value = @tier2materialreward
+            min = @tier2materialmin
+            max = @tier2materialmax
+        }
+        IF = {
+            limit = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophile
+                    has_ethic = ethic_xenophile
+                }
+            }
+            add_modifier = {
+                modifier = disregard_for_alien_life
+                days = 360
+            }
+            gain_negative_media_coverage = yes
+        }
+    }
+}

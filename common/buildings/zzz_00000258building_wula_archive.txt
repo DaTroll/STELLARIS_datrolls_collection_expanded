@@ -1,0 +1,8 @@
+building_wula_archive = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

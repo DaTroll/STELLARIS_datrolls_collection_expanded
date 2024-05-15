@@ -1,0 +1,33 @@
+lost_trophy = {
+    category = specialist
+    can_set_priority = no
+    condition_string = SPECIALIST_JOB_TRIGGER
+    clothes_texture_index = 1
+    building_icon = building_organic_sanctuary
+    icon = bio_trophy
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_bio_trophies
+        produces = {
+            unity = 3
+            society_research = 3
+        }
+        upkeep = {
+            consumer_goods = 2
+        }
+    }
+    weight = {
+        weight = @ruler_job_weight
+        mult = value:job_weights_multiple_resources_modifier|JOB|lost_trophy|RESOURCE1|unity|WEIGHT1|0.75|RESOURCE2|society_research|WEIGHT2|0.25|
+        modifier = {
+            factor = 3
+            has_trait = "trait_decadent"
+        }
+    }
+}

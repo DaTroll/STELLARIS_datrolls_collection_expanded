@@ -1,0 +1,13 @@
+xvcv_mdlc_trait_self_replicating_microbot = {
+    cost = 2
+    initial = yes
+    allowed_archetypes = {
+        MACHINE
+        ROBOT
+        XVCV_MDLC_BIO_ROBOT
+    }
+    custom_tooltip = xvcv_mdlc_trait_self_replicating_microbot_tooltip
+    slave_cost = {
+        energy = 2000
+    }
+}

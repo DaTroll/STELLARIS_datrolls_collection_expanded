@@ -1,0 +1,27 @@
+trait_cyborg_learning_algorithms = {
+    cost = 1
+    opposites = {
+        "trait_cyborg_neural_limiters"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        species_leader_exp_gain = 0.1
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.1
+    }
+    slave_cost = {
+        energy = 1500
+    }
+}

@@ -1,0 +1,28 @@
+leader_trait_restrained_2 = {
+    replace_traits = {
+        "leader_trait_restrained"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_restrained"
+        RARITY = common
+        COUNCIL = no
+        TIER = 2
+    }
+    army_modifier = {
+        army_disengage_chance_mult = 0.15
+        army_collateral_damage_mult = -0.35
+    }
+    fleet_modifier = {
+        ship_orbital_bombardment_pop_damage_mult = -0.15
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_victory_or_death
+        leader_trait_victory_or_death_2
+        leader_trait_butcher
+    }
+}

@@ -1,0 +1,20 @@
+leader_trait_scholarium_observer = {
+    cost = 0
+    inline_script = {
+        script = trait/icon_specialist
+        CLASS = scientist
+        ICON = "GFX_leader_trait_scholarium_observer"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_anomaly_research_speed_mult = 0.25
+        ship_anomaly_generation_chance_mult = 0.05
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

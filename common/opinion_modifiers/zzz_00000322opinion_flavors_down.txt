@@ -1,0 +1,5 @@
+opinion_flavors_down = {
+    opinion = {
+        base = -500
+    }
+}

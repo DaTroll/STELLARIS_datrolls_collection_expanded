@@ -1,0 +1,5 @@
+sbtg_stellarborne_empire_active = {
+    ai = {
+        enabled = no
+    }
+}

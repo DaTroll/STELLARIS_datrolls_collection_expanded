@@ -1,0 +1,86 @@
+"Lyrrameen Technocracy" = {
+    key = "Lyrrameen Technocracy"
+    ship_prefix = {
+        key = "SSV"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun10"
+        species_name = {
+            key = "Lyrrameen"
+        }
+        species_plural = {
+            key = "Lyrrameens"
+        }
+        species_adjective = {
+            key = "Lyrrameen"
+        }
+        species_bio = "The Lyrrameens live on paradise, almost too utopic to be true, they have always been unfriendly one to another, beeing more pragmatic in the choices of relationships and other things. A lot of species would call them cold, some would say that they only know this one way of life, it is unsure want is the closest to the truth, however, everyone agrees on the fact that they are excellent scientists, elaborated engineers and clever as no one. Will they overcome they xenophobia and be able to share their technologies? Or will they be the last Empire standing?"
+        name_list = "FUN1"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_natural_engineers"
+        trait = "trait_nonadaptive"
+        trait = "trait_quarrelsome"
+        trait = "trait_conformists"
+    }
+    name = {
+        key = "Lyrrameen Technocracy"
+    }
+    adjective = {
+        key = "Lyrrameen"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_technocratic_dictatorship"
+    planet_name = {
+        key = "Paradise"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Paradise"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_6.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "blue"
+            "turquoise"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Pa"
+            }
+        }
+        portrait = "fun10"
+        texture = 6
+        attachment = 0
+        clothes = 3
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_cutthroat_politics"
+    }
+    origin = "origin_default"
+}

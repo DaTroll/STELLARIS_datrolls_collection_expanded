@@ -1,0 +1,64 @@
+guardianship_of_nyrr = {
+    name = EMPIRE_DESIGN_guardianship_of_nyrr
+    adjective = PRESCRIPTED_adjective_guardianship_of_nyrr
+    spawn_enabled = no
+    ignore_portrait_duplication = yes
+    playable = has_astral_planes_dlc
+    species = {
+        class = REP
+        portrait = rep14
+        species_name = PRESCRIPTED_species_name_guardianship_of_nyrr
+        species_plural = PRESCRIPTED_species_plural_guardianship_of_nyrr
+        species_adjective = PRESCRIPTED_species_adjective_guardianship_of_nyrr
+        name_list = REP4
+        gender = not_set
+        trait = trait_nonadaptive
+        trait = trait_sedentary
+        trait = trait_venerable
+        trait = trait_slow_breeders
+        trait = trait_very_strong
+    }
+    ship_prefix = PRESCRIPTED_ship_prefix_guardianship_of_nyrr
+    planet_name = PRESCRIPTED_planet_name_guardianship_of_nyrr
+    system_name = PRESCRIPTED_system_name_guardianship_of_nyrr
+    planet_class = pc_desert
+    room = "outdoor12_room"
+    authority = auth_imperial
+    government = gov_defensive_union
+    civics = {
+        "civic_sovereign_guardianship"
+        "civic_warrior_culture"
+    }
+    origin = origin_default
+    ethic = ethic_authoritarian
+    ethic = ethic_fanatic_militarist
+    graphical_culture = reptilian_01
+    city_graphical_culture = reptilian_01
+    empire_flag = {
+        icon = {
+            category = "legion"
+            file = "legion_05.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_8.dds"
+        }
+        colors = {
+            "moss_green"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = PRESCRIPTED_ruler_name_guardianship_of_nyrr
+        portrait = rep14
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = commander
+    }
+    advisor_voice_type = l_authoritarian
+}

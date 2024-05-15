@@ -1,0 +1,5 @@
+pg_last_hope = {
+    ai = {
+        enabled = no
+    }
+}

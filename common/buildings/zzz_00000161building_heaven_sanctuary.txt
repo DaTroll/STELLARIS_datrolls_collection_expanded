@@ -1,0 +1,8 @@
+building_heaven_sanctuary = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

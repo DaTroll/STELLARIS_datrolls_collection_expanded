@@ -1,0 +1,6 @@
+captain = {
+    icon = colonist
+    possible = {
+        always = no
+    }
+}

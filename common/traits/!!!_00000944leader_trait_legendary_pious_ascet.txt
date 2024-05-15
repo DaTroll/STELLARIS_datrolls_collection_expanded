@@ -1,0 +1,32 @@
+leader_trait_legendary_pious_ascet = {
+    starting_ruler_trait = yes
+    leader_trait_type = veteran
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    allowed_ethics = {
+        ethic_spiritualist
+        ethic_fanatic_spiritualist
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_spiritualist_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        pop_amenities_usage_mult = -0.1
+        pop_housing_usage_mult = -0.1
+        planet_priests_society_research_produces_add = 0.5
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

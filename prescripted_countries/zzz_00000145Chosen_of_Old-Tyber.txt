@@ -1,0 +1,149 @@
+"Chosen of Old-Tyber" = {
+    key = "Chosen of Old-Tyber"
+    ship_prefix = {
+        key = "TSS"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec11"
+        species_name = {
+            key = "Tyber"
+            literal = yes
+        }
+        species_plural = {
+            key = "Tybers"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Tyber"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "The Tyber are an ancestral civilisation who after reaching prime, power, and the shroud, were cast out and therefore pushed back for thousands of years in their evolution. But now the time has come again, their homeworld \"Old-Tyber\", a former relic of their once great power and strengh. The links that they formed with the shroud are not entirelly broken, but the strong latent link still persists.Having spend hundreds of centuries in the ruins and ashes has cultivated their strong link with the deads and the past, but do they wish to claim it anew ?"
+        name_list = "NECROID1"
+        gender = not_set
+        trait = "trait_adaptive"
+        trait = "trait_thrifty"
+        trait = "trait_solitary"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "format.subversive_cult.2"
+        variables = {
+             {
+                key = "subversive_cult_2"
+                value = {
+                    key = "Chosen"
+                }
+            }
+             {
+                key = "This.Capital.GetName"
+                value = {
+                    key = "Old-Tyber"
+                }
+            }
+             {
+                key = "This.GetSpeciesName"
+                value = {
+                    key = "Tyber"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "subversive_cult_2"
+                            value = {
+                                key = "Chosen"
+                            }
+                        }
+                         {
+                            key = "This.Capital.GetName"
+                            value = {
+                                key = "Old-Tyber"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Tyber"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_oligarchic"
+    government = "gov_grim_council"
+    advisor_voice_type = "l_spiritualist"
+    planet_name = {
+        key = "Old-Tyber"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Tyber-One"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "aquatic_01"
+    empire_flag = {
+        icon = {
+            category = "necroid"
+            file = "necroid_05.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_11.dds"
+        }
+        colors = {
+            "dark_red"
+            "black"
+            "blue"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tydo"
+                literal = yes
+            }
+        }
+        portrait = "nec11"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_evangelizing_zealots_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_death_cult"
+        "civic_exalted_priesthood"
+    }
+    origin = "origin_remnants"
+}

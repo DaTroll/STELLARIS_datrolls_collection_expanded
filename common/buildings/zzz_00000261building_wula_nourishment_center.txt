@@ -1,0 +1,8 @@
+building_wula_nourishment_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

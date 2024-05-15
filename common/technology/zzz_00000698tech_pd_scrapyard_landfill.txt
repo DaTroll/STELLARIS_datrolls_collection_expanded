@@ -1,0 +1,36 @@
+tech_pd_scrapyard_landfill = {
+    cost = @tier3cost3
+    area = engineering
+    tier = 3
+    category = {
+        industry
+    }
+    weight = @tier3weight3
+    is_rare = yes
+    is_reverse_engineerable = no
+    potential = {
+        any_owned_planet = {
+            is_planet_class = pc_pd_scrapyard
+        }
+    }
+    weight_modifier = {
+        factor = 20
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    is_planet_class = pc_pd_scrapyard
+                }
+            }
+        }
+    }
+    ai_weight = {
+        factor = 4
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+}

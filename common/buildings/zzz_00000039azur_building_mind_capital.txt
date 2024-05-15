@@ -1,0 +1,8 @@
+azur_building_mind_capital = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

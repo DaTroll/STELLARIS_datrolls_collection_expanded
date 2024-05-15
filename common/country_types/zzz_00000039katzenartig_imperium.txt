@@ -1,0 +1,5 @@
+katzenartig_imperium = {
+    ai = {
+        enabled = no
+    }
+}

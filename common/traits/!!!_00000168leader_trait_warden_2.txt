@@ -1,0 +1,24 @@
+leader_trait_warden_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_warden"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_warden"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 2
+    }
+    planet_modifier = {
+        defense_armies_add = 4
+    }
+    sector_modifier = {
+        defense_armies_add = 2
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = @subclass_trait_weight
+}

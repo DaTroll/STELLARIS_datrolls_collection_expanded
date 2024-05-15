@@ -1,0 +1,25 @@
+tech_destroyer_hull_1 = {
+    cost = @tier2cost3
+    area = engineering
+    tier = 2
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_destroyers"
+    }
+    weight = @tier2weight3
+    modifier = {
+        custom_tooltip = tech_destroyer_hull_effect
+        shipsize_destroyer_hull_mult = 0.1
+        shipsize_offspring_destroyer_hull_mult = 0.1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_supremacy_adopt
+        }
+    }
+    ai_weight = {
+    }
+}

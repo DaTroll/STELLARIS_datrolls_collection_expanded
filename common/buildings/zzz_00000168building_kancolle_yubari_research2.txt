@@ -1,0 +1,8 @@
+building_kancolle_yubari_research2 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

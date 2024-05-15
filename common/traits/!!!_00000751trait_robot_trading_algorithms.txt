@@ -1,0 +1,23 @@
+trait_robot_trading_algorithms = {
+    cost = 2
+    allowed_archetypes = {
+        ROBOT
+    }
+    opposites = {
+    }
+    species_potential_add = {
+        exists = from
+        from = {
+            has_technology = tech_droid_workers
+            NOT = {
+                has_policy_flag = ai_outlawed
+            }
+        }
+    }
+    modifier = {
+        pop_job_trade_mult = 0.25
+    }
+    slave_cost = {
+        energy = 500
+    }
+}

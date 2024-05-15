@@ -1,0 +1,35 @@
+trait_ruler_from_the_ranks_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "trait_ruler_from_the_ranks_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_from_the_ranks"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        army_morale = 0.25
+    }
+    triggered_councilor_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        army_damage_mult = 0.25
+    }
+    councilor_modifier = {
+        army_experience_gain_mult = 0.5
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    leader_class = {
+        commander
+    }
+}

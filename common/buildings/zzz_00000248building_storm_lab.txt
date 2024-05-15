@@ -1,0 +1,83 @@
+building_storm_lab = {
+    base_buildtime = 600
+    category = research
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = resort_colony
+        }
+        has_modifier = pd_storm
+        NOT = {
+            has_building = building_storm_lab
+        }
+        NOT = {
+            has_building_construction = building_storm_lab
+        }
+        NOT = {
+            has_building = building_storm_grid
+        }
+        NOT = {
+            has_building_construction = building_storm_grid
+        }
+        NOT = {
+            has_building = building_storm_mine
+        }
+        NOT = {
+            has_building_construction = building_storm_mine
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    inline_script = "buildings/pd_rare_physics_building"
+    inline_script = "buildings/pd_rare_engineering_building"
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        modifier = {
+            job_head_researcher_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        modifier = {
+            job_brain_drone_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        modifier = {
+            job_calculator_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 800
+        }
+        upkeep = {
+            energy = 4
+        }
+    }
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                has_modifier = pd_storm
+            }
+        }
+    }
+}

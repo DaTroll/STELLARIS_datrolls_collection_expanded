@@ -1,0 +1,28 @@
+trait_lithoid_radiotrophic = {
+    icon = "gfx/interface/icons/traits/trait_plantoid_radiotrophic.dds"
+    host_has_dlc = "Plantoids Species Pack"
+    cost = 2
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    opposites = {
+        "trait_plantoid_phototrophic"
+        "trait_plantoid_radiotrophic"
+        "trait_harvested_radiotrophic"
+        "trait_advanced_phototrophic"
+        "trait_advanced_radiotrophic"
+        "trait_voidling"
+    }
+    allowed_archetypes = {
+        LITHOID
+    }
+    species_class = {
+        LITHOID
+    }
+    custom_tooltip = TRAIT_LITHOID_RADIOTROPHIC_EFFECT
+    inline_script = "traits/radiotrophic_effects"
+}

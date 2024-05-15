@@ -1,0 +1,47 @@
+leader_trait_insider_trading_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_insider_trading"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_insider_trading"
+        COUNCIL = no
+        TIER = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        trade_value_mult = -0.25
+    }
+    triggered_planet_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_jobs_produces_mult = -0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = no
+        }
+        trade_value_mult = -0.125
+    }
+    triggered_sector_modifier = {
+        potential = {
+            trait_is_gestalt_check = yes
+        }
+        planet_jobs_produces_mult = -0.05
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    opposites = {
+        trait_ruler_investor
+        trait_ruler_investor_2
+        trait_ruler_investor_3
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

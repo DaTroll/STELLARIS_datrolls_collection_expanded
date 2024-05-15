@@ -1,0 +1,98 @@
+"Katjan Science Concordate" = {
+    key = "Katjan Science Concordate"
+    ship_prefix = {
+        key = "KSAI"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi13"
+        species_name = {
+            key = "Katjan"
+        }
+        species_plural = {
+            key = "Katjans"
+        }
+        species_adjective = {
+            key = "Katjian"
+        }
+        species_bio = "The Katjan used to be a very democratic system, until a very shard politician changed the system, with the full support of the people. This famous ancestor changed the political system from a full democratic military system slowly to a scientific and peaceful hereditary empire. The Zetan, or royal family, demilitarised most of the planet in fear of an armed revolt against them. They also focussed stongly on robotics, believing that loyalty is only subject to context, the robotic guards shall be better than any conventional form of guards, and are not affected by war restraining 'ethical' treaties."
+        name_list = "AVI4"
+        gender = not_set
+        trait = "trait_conformists"
+        trait = "trait_intelligent"
+        trait = "trait_natural_engineers"
+        trait = "trait_nonadaptive"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Katjan Science Concordate"
+    }
+    adjective = {
+        key = "Katjan"
+    }
+    authority = "auth_imperial"
+    government = "gov_despotic_hegemony"
+    planet_name = {
+        key = "Katjana'O"
+    }
+    planet_class = "pc_arid"
+    system_name = {
+        key = "Katjan"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_4.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "black"
+            "dark_purple"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Zeta VII"
+            }
+        }
+        portrait = "avi13"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Katjan"
+        }
+        heir_title = {
+            key = "Second Katjan"
+        }
+        ruler_title_female = {
+            key = "First Katjan"
+        }
+        heir_title_female = {
+            key = "Second Katjan"
+        }
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_migrating_flock_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_philosopher_king"
+    }
+    origin = "origin_mechanists"
+}

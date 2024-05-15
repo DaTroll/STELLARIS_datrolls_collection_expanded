@@ -1,0 +1,90 @@
+"Venank Systems" = {
+    key = "Venank Systems"
+    ship_prefix = {
+        key = "VSE"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith10"
+        species_name = {
+            key = "Venank"
+        }
+        species_plural = {
+            key = "Venanks"
+        }
+        species_adjective = {
+            key = "Venankian"
+        }
+        species_bio = "Who said that a lithoid cannot be a hunter? The Venankian have developped quite the appetite for flesh during their early life, a luxury still present today. They have learned to live and think as their prays, making them remarquable sociologist, able to stay in a place, to fusion with the environment just for the right moment. But this is also one of their flaws, some of them turned into a sort of long lasting hybernation, impossible to move and incappable to wake up, some say that those Venanks are dead, other say that they are just waiting for the right moment to awake."
+        name_list = "LITHOID2"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_natural_sociologists"
+        trait = "trait_resilient"
+        trait = "trait_sedentary"
+        trait = "trait_enduring"
+    }
+    name = {
+        key = "Venank Systems"
+    }
+    adjective = {
+        key = "Venankian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_military_dictatorship"
+    planet_name = {
+        key = "Venank"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Des de Venank"
+    }
+    initializer = ""
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "lithoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "dark_blue"
+            "grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Des de Natashene"
+            }
+        }
+        portrait = "lith10"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Venank"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_xenophile"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_reanimated_armies"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

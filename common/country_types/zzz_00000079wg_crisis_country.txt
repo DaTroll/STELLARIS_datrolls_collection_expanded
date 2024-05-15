@@ -1,0 +1,5 @@
+wg_crisis_country = {
+    ai = {
+        enabled = no
+    }
+}

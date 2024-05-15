@@ -1,0 +1,29 @@
+primitive_hive_spawning_drone = {
+    category = complex_drone
+    is_capped_by_modifier = yes
+    building_icon = building_spawning_pool
+    icon = spawning_drone
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        owner = {
+            is_primitive = yes
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_no_happiness_add = 8
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    weight = {
+        weight = @complex_drone_job_weight
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+    }
+}

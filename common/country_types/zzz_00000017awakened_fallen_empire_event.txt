@@ -1,0 +1,5 @@
+awakened_fallen_empire_event = {
+    ai = {
+        enabled = no
+    }
+}

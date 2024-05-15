@@ -1,0 +1,8 @@
+protoss_building_bf = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

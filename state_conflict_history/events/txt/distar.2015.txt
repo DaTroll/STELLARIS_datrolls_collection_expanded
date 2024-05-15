@@ -1,0 +1,80 @@
+namespace = distar
+ship_event = {
+    id = distar.2015
+    title = "distar.2015.name"
+    desc = {
+        text = distar.2015.desc
+        trigger = {
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_machine_terminator
+                }
+            }
+        }
+    }
+    desc = {
+        text = distar.2015.desc.terminator
+        trigger = {
+            owner = {
+                has_valid_civic = civic_machine_terminator
+            }
+        }
+    }
+    picture = GFX_evt_microscopic_life
+    show_sound = event_alien_nature
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            clear_deposits = yes
+        }
+    }
+    option = {
+        name = FASCINATING
+        trigger = {
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_machine_terminator
+                }
+            }
+        }
+        from = {
+            add_deposit = d_society_3
+        }
+    }
+    option = {
+        name = distar.2015.A.machine
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+                NOT = {
+                    has_civic = civic_machine_servitor
+                }
+            }
+        }
+        owner = {
+            add_monthly_resource_mult = {
+                resource = unity
+                value = @tier3unityreward
+            }
+        }
+    }
+    after = {
+        if = {
+            limit = {
+                from = {
+                    can_be_terraforming_candidate = yes
+                }
+            }
+            custom_tooltip = TERRAFORMING_CANDIDATE_EFFECT
+            hidden_effect = {
+                from = {
+                    add_modifier = {
+                        modifier = "terraforming_candidate"
+                        days = -1
+                    }
+                }
+            }
+        }
+    }
+}

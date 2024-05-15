@@ -1,0 +1,113 @@
+"Raas'ti Empire" = {
+    key = "Raas'ti Empire"
+    ship_prefix = {
+        key = "RSSE"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam8"
+        species_name = {
+            key = "Raas'ti"
+        }
+        species_plural = {
+            key = "Raas'te"
+        }
+        species_adjective = {
+            key = "Raas'tian"
+        }
+        species_bio = "The Raas'te are violent, brutal, some would even say barbaric. Thousands of years ago, a lost ship landed on they planet. The aliens it carried had multiple good effects for the planet but it had its costs. The Raas'ti united to fight off the alien. Instead of killing them all, they enslaved it, ultimatly freeing the planet from Raas'ti slaves, replacing them with new ones.                                                 They will do everything in their power to expand their slave monopol to further expand their riches.  "
+        name_list = "MAM4"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_quarrelsome"
+        trait = "trait_intelligent"
+        trait = "trait_sedentary"
+        trait = "trait_decadent"
+    }
+    secondary_species = {
+        class = "MAM"
+        portrait = "mam2"
+        species_name = {
+            key = "Ta'or"
+        }
+        species_plural = {
+            key = "Ta'ors"
+        }
+        species_adjective = {
+            key = "Ta'orian"
+        }
+        species_bio = "The Ta'or landed few centuries ago on \"Free Sky\", a freindly mission to seek out new life, however they got trapped and enslaved. Their descendends are now still enslaved and unhappiness is rapidly rising since the hope of being freed by their ancestors homeworld is growing."
+        name_list = "MAM4"
+        gender = not_set
+        trait = "trait_syncretic_proles"
+        trait = "trait_industrious"
+        trait = "trait_ingenious"
+        trait = "trait_weak"
+        trait = "trait_repugnant"
+    }
+    name = {
+        key = "Raas'ti Empire"
+    }
+    adjective = {
+        key = "Raas'tian"
+    }
+    authority = "auth_imperial"
+    government = "gov_star_empire"
+    planet_name = {
+        key = "Free Sky"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Sky"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_8.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "triangle_split.dds"
+        }
+        colors = {
+            "grey"
+            "red"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Rak'tuk"
+            }
+        }
+        portrait = "mam8"
+        texture = 0
+        attachment = 0
+        clothes = 3
+        heir_title = {
+            key = "Vice-Emperor"
+        }
+        heir_title_female = {
+            key = "Vice-Emperess"
+        }
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_police_state"
+        "civic_nationalistic_zeal"
+    }
+    origin = "origin_syncretic_evolution"
+}

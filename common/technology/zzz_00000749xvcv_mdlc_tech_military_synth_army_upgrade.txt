@@ -1,0 +1,32 @@
+xvcv_mdlc_tech_military_synth_army_upgrade = {
+    cost = @tier3cost3
+    area = society
+    tier = 4
+    category = {
+        military_theory
+    }
+    weight = @xvcv_mdlc_not_researchable_tech_weight
+    is_reverse_engineerable = no
+    potential = {
+        is_synthetic_empire = yes
+        has_technology = tech_regenerative_hull_tissue
+    }
+    modifier = {
+        army_health = 0.2
+        army_defense_health_mult = 0.2
+    }
+    ai_weight = {
+        factor = @robots_ai_tech_factor
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_fanatic_materialist
+            }
+        }
+        modifier = {
+            factor = 2
+            has_origin = origin_mechanists
+        }
+    }
+}

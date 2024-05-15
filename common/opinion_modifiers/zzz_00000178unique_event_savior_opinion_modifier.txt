@@ -1,0 +1,6 @@
+unique_event_savior_opinion_modifier = {
+    opinion = {
+        base = 1000
+    }
+    decay = 2
+}

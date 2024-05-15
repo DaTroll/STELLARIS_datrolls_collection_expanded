@@ -1,0 +1,3 @@
+Areta = {
+    uses_modifiers = no
+}

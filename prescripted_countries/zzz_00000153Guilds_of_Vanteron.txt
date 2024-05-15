@@ -1,0 +1,133 @@
+"Guilds of Vanteron" = {
+    key = "Guilds of Vanteron"
+    ship_prefix = {
+        key = "VSS"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu6"
+        species_name = {
+            key = "Vantalus"
+            literal = yes
+        }
+        species_plural = {
+            key = "Vantalus"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Vantalus"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "the Vantalus society is plagued with a century-old power struggle. This struggle takes place between the Mining Guild, the Merchand Guildand the Scientist Guild. All three form the backbone of their society and none does willingly relinquish power to the others. Everyfew years for the election of the Grand Duke, a merciless powerstruggle ensuies. The scientist Guild, who currently beholds the government, have recently achieved a breakthrough. Their new clone army, is said officially to obey the Government, but in fact, they obey to their creator, the Scientist Guild. None knows what the next election will bring upon the Vantalus society."
+        name_list = "AQUATIC3"
+        gender = not_set
+        trait = "trait_clone_soldier_infertile"
+        trait = "trait_intelligent"
+        trait = "trait_industrious"
+        trait = "trait_ingenious"
+        trait = "trait_unruly"
+        trait = "trait_nonadaptive"
+    }
+    name = {
+        key = "Guilds of Vanteron"
+        literal = yes
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.homeworld"
+                    variables = {
+                         {
+                            key = "dictatorial_mat"
+                            value = {
+                                key = "Coalition"
+                            }
+                        }
+                         {
+                            key = "This.Capital.GetName"
+                            value = {
+                                key = "Vanteron"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_dictatorial"
+    government = "gov_totalitarian_regime"
+    planet_name = {
+        key = "Vanteron"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Guild's Star"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_12.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_19.dds"
+        }
+        colors = {
+            "light_green"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Onti"
+                literal = yes
+            }
+        }
+        portrait = "aqu6_m"
+        texture = 3
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "Grand Duke"
+            literal = yes
+        }
+        ruler_title_female = {
+            key = "Grand "
+            literal = yes
+        }
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "machine_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_mining_guilds"
+        "civic_merchant_guilds"
+    }
+    origin = "origin_clone_army"
+}

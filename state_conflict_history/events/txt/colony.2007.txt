@@ -1,0 +1,101 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.2007
+    title = PROJECT_COMPLETE
+    desc = colony.2007.desc
+    picture = GFX_evt_hangar_bay
+    show_sound = event_ship_bridge
+    location = root
+    is_triggered_only = yes
+    option = {
+        name = colony.2007.a.phobe
+        custom_tooltip = colony.2007.a
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophobe
+                    has_ethic = ethic_xenophobe
+                }
+            }
+        }
+        hidden_effect = {
+            owner = {
+                add_modifier = {
+                    modifier = streamlined_ship_design
+                    days = -1
+                }
+            }
+        }
+        owner = {
+            add_monthly_resource_mult = {
+                resource = alloys
+                value = @tier1materialreward
+                min = @tier1materialmin
+                max = @tier1materialmax
+            }
+        }
+    }
+    option = {
+        name = colony.2007.a.phile
+        custom_tooltip = colony.2007.a
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophile
+                    has_ethic = ethic_xenophile
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+            }
+        }
+        hidden_effect = {
+            owner = {
+                add_modifier = {
+                    modifier = streamlined_ship_design
+                    days = -1
+                }
+            }
+        }
+        owner = {
+            add_monthly_resource_mult = {
+                resource = alloys
+                value = @tier1materialreward
+                min = @tier1materialmin
+                max = @tier1materialmax
+            }
+        }
+    }
+    option = {
+        name = GOOD
+        custom_tooltip = colony.2007.a
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_xenophobe
+                    has_ethic = ethic_xenophobe
+                    has_ethic = ethic_fanatic_xenophile
+                    has_ethic = ethic_xenophile
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+            }
+        }
+        hidden_effect = {
+            owner = {
+                add_modifier = {
+                    modifier = streamlined_ship_design
+                    days = -1
+                }
+            }
+        }
+        owner = {
+            add_monthly_resource_mult = {
+                resource = alloys
+                value = @tier1materialreward
+                min = @tier1materialmin
+                max = @tier1materialmax
+            }
+        }
+    }
+}

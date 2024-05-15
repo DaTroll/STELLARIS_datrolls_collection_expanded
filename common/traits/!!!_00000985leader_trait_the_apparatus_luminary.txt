@@ -1,0 +1,24 @@
+leader_trait_the_apparatus_luminary = {
+    force_councilor_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_automation_champion"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    inline_script = {
+        script = paragon/leader_resource_upkeep
+        RESOURCE = energy
+        AMOUNT = 50
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+    immortal_leaders = yes
+}

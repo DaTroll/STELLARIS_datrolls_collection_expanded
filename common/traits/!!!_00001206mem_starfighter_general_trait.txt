@@ -1,0 +1,19 @@
+mem_starfighter_general_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_mem_starfighter"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        army_health = 0.1
+        army_damage_mult = 0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

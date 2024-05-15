@@ -1,0 +1,39 @@
+leader_trait_academic_minor_artifacts_expert = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_academic_minor_artifacts_expert"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    custom_tooltip = leader_trait_academic_minor_artifacts_expert_tt
+    leader_potential_add = {
+        has_ancrel = yes
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_scientist_scholar
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    prerequisites = {
+        tech_archaeostudies
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_scholar
+        }
+        modifier = {
+            from = {
+                has_ascension_perk = ap_archaeoengineers
+            }
+            factor = @synergy_weight_mult
+        }
+    }
+}

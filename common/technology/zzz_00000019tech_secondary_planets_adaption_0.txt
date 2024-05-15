@@ -1,0 +1,11 @@
+tech_secondary_planets_adaption_0 = {
+    cost = 0
+    area = physics
+    category = {
+        particles
+    }
+    tier = 4
+    potential = {
+        merg_has_district_ovfun = yes
+    }
+}

@@ -1,0 +1,30 @@
+leader_trait_expertise_materials_3 = {
+    replace_traits = {
+        "leader_trait_expertise_materials_2"
+    }
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon_engineering
+        CLASS = scientist
+        ICON = "GFX_leader_trait_expertise_materials"
+        RARITY = veteran
+        COUNCIL = triggered
+        TIER = 3
+    }
+    councilor_modifier = {
+        category_materials_research_speed_mult = 0.15
+        category_materials_draw_chance_mult = 0.75
+    }
+    inline_script = {
+        script = traits/technocracy_expertise_effects
+        FIELD = engineering
+        TIER = 3
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+    }
+    leader_class = {
+        scientist
+    }
+    ai_weight = 100
+}

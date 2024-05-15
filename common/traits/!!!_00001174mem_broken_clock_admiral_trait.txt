@@ -1,0 +1,25 @@
+mem_broken_clock_admiral_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_academic_astral_rift_expert"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_disengage_chance_mult = 0.25
+        ship_fire_rate_mult = 0.1
+        ship_speed_mult = 0.1
+        ship_weapon_damage = 0.1
+        ships_upkeep_mult = -0.25
+        army_damage_mult = 0.25
+        army_collateral_damage_mult = 0.5
+        armies_upkeep_mult = -0.3
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

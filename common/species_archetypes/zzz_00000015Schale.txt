@@ -1,0 +1,3 @@
+Schale = {
+    uses_modifiers = no
+}

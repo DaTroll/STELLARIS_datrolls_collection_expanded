@@ -1,0 +1,42 @@
+@designation_bonus = 50
+leader_trait_refinement_focus = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_refinement_focus"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_any_governor_focus = no
+        has_governor_subclass = yes
+    }
+    planet_modifier = {
+        planet_refiners_produces_mult = 0.1
+        planet_translucers_produces_mult = 0.1
+        planet_chemists_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_refiners_produces_mult = 0.05
+        planet_translucers_produces_mult = 0.05
+        planet_chemists_produces_mult = 0.05
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        official
+    }
+    custom_tooltip_with_modifiers = only_one_governor_focus
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            add = @designation_bonus
+            exists = planet
+            planet = {
+                has_refinery_designation = yes
+            }
+        }
+    }
+}

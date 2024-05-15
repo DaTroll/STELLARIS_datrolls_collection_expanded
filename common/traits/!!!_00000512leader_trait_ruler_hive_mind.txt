@@ -1,0 +1,21 @@
+leader_trait_ruler_hive_mind = {
+    force_councilor_trait = yes
+    immortal_leaders = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_ruler_hive_mind"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = leader_trait_ignore_leader_cap_tt
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+    hide_age = yes
+    initial = no
+    randomized = no
+}

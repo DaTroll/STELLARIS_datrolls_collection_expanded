@@ -1,0 +1,26 @@
+leader_trait_neurotic_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_neurotic"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_neurotic"
+        COUNCIL = no
+        TIER = 2
+    }
+    modifier = {
+        science_ship_survey_speed = -0.2
+        ship_anomaly_research_speed_mult = -0.2
+    }
+    leader_class = {
+        scientist
+    }
+    opposites = {
+        leader_trait_carefree
+        leader_trait_carefree_2
+        leader_trait_roamer
+        leader_trait_roamer_2
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

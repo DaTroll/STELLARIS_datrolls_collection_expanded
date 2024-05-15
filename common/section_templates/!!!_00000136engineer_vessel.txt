@@ -1,0 +1,8 @@
+ship_section_template = {
+    key = "engineer_vessel"
+    ship_size = engineer_vessel
+    fits_on_slot = mid
+    entity = "pre_ftl_chemical_ship_mesh_entity"
+    icon = "GFX_ship_part_core_mid"
+    small_utility_slots = 2
+}

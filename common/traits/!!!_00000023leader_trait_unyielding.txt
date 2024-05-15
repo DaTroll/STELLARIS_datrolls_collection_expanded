@@ -1,0 +1,29 @@
+leader_trait_unyielding = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_unyielding
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    fleet_modifier = {
+        ship_hull_mult = 0.15
+        ship_disengage_chance_mult = -0.33
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_nervous
+        leader_trait_nervous_2
+        leader_trait_slipshod
+        leader_trait_slipshod_2
+        leader_trait_trickster
+        leader_trait_trickster_2
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/pilot_weight_mult
+    }
+}

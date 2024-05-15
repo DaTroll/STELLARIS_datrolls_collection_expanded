@@ -1,0 +1,118 @@
+@buildings_t1 = 1
+building_colony_shelter = {
+    capital = yes
+    can_build = no
+    can_demolish = no
+    can_be_ruined = no
+    can_be_disabled = no
+    position_priority = 0
+    category = government
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_fallen_empire = no
+        }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            uses_habitat_capitals = yes
+        }
+    }
+    convert_to = {
+        building_hive_capital
+        building_deployment_post
+        building_resort_capital
+        building_slave_capital
+        building_ancient_control_center
+        building_ancient_palace
+    }
+    planet_modifier = {
+        planet_housing_add = 3
+        planet_amenities_add = 7
+        planet_max_buildings_add = @buildings_t1
+        job_colonist_add = 2
+    }
+    inline_script = {
+        script = buildings/on_all_capital_buildings
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_dystopian_society
+            }
+        }
+        job_enforcer_add = 1
+        job_colonist_add = -1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_synthetics_finish
+            }
+        }
+        job_roboticist_add = 1
+        job_colonist_add = -1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_cybernetics_organ_harvesting
+            }
+            has_current_purge = yes
+            exists = growing_species
+            growing_species = {
+                has_trait = trait_cybernetic
+            }
+        }
+        pop_growth_speed = 0.1
+    }
+    resources = {
+        category = planet_buildings
+        upkeep = {
+            energy = 1
+        }
+    }
+    upgrades = {
+        building_capital
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NAND = {
+                    has_valid_civic = civic_dystopian_society
+                    has_active_tradition = tr_synthetics_finish
+                }
+            }
+        }
+        text = job_colonist_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_dystopian_society
+            }
+        }
+        text = job_enforcer_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_synthetics_finish
+            }
+        }
+        text = job_roboticist_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            has_modifier = payback_unified_purpose
+        }
+        text = job_unifier_effect_desc
+    }
+}

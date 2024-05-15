@@ -1,0 +1,22 @@
+leader_trait_border_guard_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        leader_trait_border_guard
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_home_in_the_sky
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        shipsize_military_station_small_build_speed_mult = 0.15
+        shipclass_starbase_damage_mult = 0.2
+        shipclass_starbase_hull_mult = 0.25
+    }
+    leader_class = {
+        commander
+    }
+}

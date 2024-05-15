@@ -1,0 +1,46 @@
+trait_advanced_budding = {
+    host_has_dlc = "Plantoids Species Pack"
+    cost = 2
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+        exists = from
+        from = {
+            has_technology = tech_plantoid_transgenesis
+        }
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    opposites = {
+        "trait_slow_breeders"
+        "trait_rapid_breeders"
+        "trait_necrophage"
+        "trait_clone_soldier_infertile"
+        "trait_clone_soldier_infertile_full_potential"
+        "trait_plantoid_budding"
+        "trait_lithoid_budding"
+        "trait_tiyanki"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    species_class = {
+        HUM
+        MAM
+        REP
+        AVI
+        ART
+        MOL
+        NECROID
+        AQUATIC
+        TOX
+    }
+    custom_tooltip = TRAIT_PLANTOID_BUDDING_EFFECT
+    slave_cost = {
+        energy = 2500
+    }
+}

@@ -1,0 +1,35 @@
+leader_trait_juryrigger = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_juryrigger
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_admiral
+    }
+    fleet_modifier = {
+        create_debris_chance = -1
+    }
+    leader_class = {
+        commander
+    }
+    custom_tooltip_with_modifiers = leader_trait_juryrigger_effect
+    opposites = {
+        leader_trait_wrecker
+        leader_trait_wrecker_2
+        leader_trait_wrecker_3
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_admiral
+        }
+    }
+}

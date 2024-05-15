@@ -1,0 +1,8 @@
+building_just_dvorets = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

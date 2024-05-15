@@ -1,0 +1,46 @@
+xvcv_mdlc_building_uplink_node_facility = {
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    category = government
+    potential = {
+        exists = owner
+        owner = {
+            has_valid_civic = xvcv_mdlc_civic_uplink_node
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_valid_civic = xvcv_mdlc_civic_uplink_node
+            }
+        }
+    }
+    convert_to = {
+        building_noble_estates
+    }
+    planet_modifier = {
+        job_xvcv_mdlc_uplink_node_coordinator_add = 1
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    triggered_desc = {
+        text = job_xvcv_mdlc_uplink_node_coordinator_effect_desc
+    }
+    ai_resource_production = {
+        energy = 10
+        trigger = {
+            always = yes
+        }
+    }
+}

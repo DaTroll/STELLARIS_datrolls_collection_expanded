@@ -1,0 +1,25 @@
+@advancedCost = 5000
+terraform_link = {
+    from = "pc_arid"
+    to = "pc_alpine"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @advancedCost
+        }
+    }
+    duration = 3600
+    condition = {
+        has_technology = "tech_terrestrial_sculpting"
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_arid
+                CLASS_TO = pc_alpine
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_oe_palace = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,9 @@
+opinion_wormed_my_world = {
+    opinion = {
+        base = -750
+    }
+    accumulative = yes
+    decay = {
+        base = 1
+    }
+}

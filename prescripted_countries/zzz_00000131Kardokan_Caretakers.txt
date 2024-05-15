@@ -1,0 +1,87 @@
+"Kardokan Caretakers" = {
+    key = "Kardokan Caretakers"
+    ship_prefix = {
+        key = "KCV"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith4"
+        species_name = {
+            key = "Kardokan"
+        }
+        species_plural = {
+            key = "Kardokan"
+        }
+        species_adjective = {
+            key = "Kardokan"
+        }
+        species_bio = "The peacefull by nature and spiritualist by choice. The  Kardokan Lithoids never had many wars or conflict, they are great caretakers and greatly care for their planet, turning it into a wonderfull Gaia world. Their spiritualist attractions and practices may be considered irrational, but none ever dared say it after they opened their Eye. Besides all of their great care over the millenials, they have become very weak and unsuted for the harsh conditions of mining or the art of entertaining. "
+        name_list = "LITHOID3"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_conformists"
+        trait = "trait_docile"
+        trait = "trait_traditional"
+        trait = "trait_repugnant"
+        trait = "trait_weak"
+    }
+    name = {
+        key = "Kardokan Caretakers"
+    }
+    adjective = {
+        key = "Kardokan"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_irenic_dictatorship"
+    planet_name = {
+        key = "Kard Heaven"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kard Star"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_3.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "yellow"
+            "dark_brown"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Kard"
+            }
+        }
+        portrait = "lith4"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_charismatic"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_agrarian_idyll"
+        "civic_environmentalist"
+    }
+    origin = "origin_life_seeded"
+}

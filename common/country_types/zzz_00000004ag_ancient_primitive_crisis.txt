@@ -1,0 +1,5 @@
+ag_ancient_primitive_crisis = {
+    ai = {
+        enabled = no
+    }
+}

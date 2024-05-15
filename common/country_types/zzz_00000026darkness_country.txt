@@ -1,0 +1,5 @@
+darkness_country = {
+    ai = {
+        enabled = no
+    }
+}

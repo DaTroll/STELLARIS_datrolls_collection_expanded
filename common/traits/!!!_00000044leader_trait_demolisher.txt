@@ -1,0 +1,29 @@
+leader_trait_demolisher = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_demolisher
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    fleet_modifier = {
+        ship_damage_against_starbases_mult = 0.2
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_commander_general
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+}

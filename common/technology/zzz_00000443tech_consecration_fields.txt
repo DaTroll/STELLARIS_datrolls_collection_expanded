@@ -1,0 +1,27 @@
+tech_consecration_fields = {
+    cost = @tier3cost2
+    area = society
+    category = {
+        statecraft
+    }
+    tier = 3
+    prerequisites = {
+        "tech_holographic_rituals"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight2
+    potential = {
+        OR = {
+            has_ethic = ethic_spiritualist
+            has_ethic = ethic_fanatic_spiritualist
+            AND = {
+                is_gestalt = no
+                has_make_spiritualist_perk = yes
+            }
+        }
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

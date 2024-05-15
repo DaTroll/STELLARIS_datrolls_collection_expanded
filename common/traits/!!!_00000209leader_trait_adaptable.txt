@@ -1,0 +1,23 @@
+leader_trait_adaptable = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_adaptable"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    self_modifier = {
+        species_leader_exp_gain = 0.1
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    opposites = {
+        leader_trait_stubborn
+        leader_trait_stubborn_2
+    }
+    selectable_weight = @shared_trait_weight
+}

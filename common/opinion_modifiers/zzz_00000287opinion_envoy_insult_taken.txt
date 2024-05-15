@@ -1,0 +1,12 @@
+opinion_envoy_insult_taken = {
+    opinion = {
+        base = -75
+    }
+    accumulative = yes
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

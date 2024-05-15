@@ -1,0 +1,67 @@
+building_woorskyr_biofuel_refinery = {
+    base_buildtime = 360
+    base_cap_amount = 1
+    empire_limit = {
+        base = 1
+    }
+    category = resource
+    potential = {
+        planet = {
+            planet_has_woorskyr_deposit = yes
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = requirement_has_woorskyr
+            planet = {
+                planet_has_woorskyr_deposit = yes
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                NOT = {
+                    has_technology = tech_woorskyr_biofuel_refinery
+                }
+            }
+            planet = {
+                planet_has_woorskyr_deposit = no
+            }
+        }
+    }
+    inline_script = {
+        script = jobs/miners_add
+        AMOUNT = 4
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            minerals = 5
+        }
+        cost = {
+            minerals = 200
+            exotic_gases = 20
+        }
+        upkeep = {
+            energy = 2
+            exotic_gases = 1
+        }
+    }
+    country_modifier = {
+        planet_miners_minerals_produces_add = 0.1
+    }
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            owner_main_species = {
+                is_species_class = LITHOID
+            }
+        }
+        lithoid_pop_growth_speed = 0.1
+    }
+    prerequisites = {
+        "tech_woorskyr_biofuel_refinery"
+    }
+}

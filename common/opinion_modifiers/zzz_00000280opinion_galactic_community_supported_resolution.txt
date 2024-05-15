@@ -1,0 +1,12 @@
+opinion_galactic_community_supported_resolution = {
+    opinion = {
+        base = 25
+    }
+    accumulative = yes
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:positive_opinion_decay_rate
+        }
+    }
+}

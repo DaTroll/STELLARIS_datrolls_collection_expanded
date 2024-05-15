@@ -1,0 +1,51 @@
+gpm_asteroid_miner_drone = {
+    category = simple_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_mineral_purification_plant
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 18
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        mult = value:job_weights_modifier|JOB|gpm_asteroid_miner_drone|RESOURCE|minerals|
+        modifier = {
+            factor = 1.1
+            exists = owner
+            years_passed < 1
+            owner = {
+                has_valid_civic = civic_machine_assimilator
+            }
+            has_trait = trait_cybernetic
+        }
+        modifier = {
+            factor = 1.2
+            has_job = gpm_asteroid_miner_drone
+        }
+        modifier = {
+            factor = 0.9
+            NOT = {
+                has_job = gpm_asteroid_miner_drone
+            }
+            owner = {
+                has_monthly_income = {
+                    resource = minerals
+                    value > 85
+                }
+            }
+        }
+    }
+}

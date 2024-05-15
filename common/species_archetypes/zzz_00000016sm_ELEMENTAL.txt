@@ -1,0 +1,3 @@
+sm_ELEMENTAL = {
+    uses_modifiers = no
+}

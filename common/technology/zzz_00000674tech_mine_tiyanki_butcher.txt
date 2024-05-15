@@ -1,0 +1,38 @@
+tech_mine_tiyanki_butcher = {
+    icon = tech_mine_tiyanki_butcher
+    cost = @tier2cost1
+    area = society
+    tier = 2
+    category = {
+        biology
+    }
+    prerequisites = {
+        "tech_basic_industry"
+        "tech_tiyanki_research"
+    }
+    weight = @tier2weight1
+    is_rare = yes
+    is_reverse_engineerable = no
+    start_tech = no
+    potential = {
+        has_country_flag = pdtiyankiharvest
+    }
+    weight_modifier = {
+        factor = 10
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_biology
+            }
+        }
+    }
+    ai_weight = {
+        factor = 5
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_biology
+            }
+        }
+    }
+}

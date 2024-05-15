@@ -1,0 +1,86 @@
+"Larban Hive" = {
+    key = "Larban Hive"
+    ship_prefix = {
+        key = "LHS"
+    }
+    species = {
+        class = "ART"
+        portrait = "art11"
+        species_name = {
+            key = "Larban"
+        }
+        species_plural = {
+            key = "Larbans"
+        }
+        species_adjective = {
+            key = "Larbian"
+        }
+        species_bio = "We are resilient, we  were here, we are here, we will stay here. The Larban are known to have an extremly strong back bone protexting them from litteraly any rear attack. Little is known about their history, origin, or even physiology. Only that no one really dies since they share a common memory as common events. They do not fear death which makes them more dangerous than the usual opponent."
+        name_list = "ART1"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_sedentary"
+        trait = "trait_resilient"
+        trait = "trait_enduring"
+        trait = "trait_repugnant"
+        trait = "trait_communal"
+    }
+    name = {
+        key = "Larban Hive"
+    }
+    adjective = {
+        key = "Larban"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_hive_mind"
+    planet_name = {
+        key = "Larb-Ti-Darm"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Larb-Ti-Darm"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "dark_teal"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Ro-Ab"
+            }
+        }
+        portrait = "art11"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_logistic_understanding"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_strength_of_legions"
+        "civic_hive_natural_neural_network"
+    }
+    origin = "origin_default"
+}

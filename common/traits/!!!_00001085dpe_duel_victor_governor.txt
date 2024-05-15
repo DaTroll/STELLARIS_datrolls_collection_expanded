@@ -1,0 +1,19 @@
+dpe_duel_victor_governor = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_glory_seeker"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ARMY_DEFENSE_DAMAGE_MULT = 0.33
+        pop_ethic_militarist_attraction_mult = 0.33
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

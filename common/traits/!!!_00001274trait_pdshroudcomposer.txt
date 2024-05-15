@@ -1,0 +1,22 @@
+trait_pdshroudcomposer = {
+    cost = 0
+    initial = no
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = yes
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+    }
+    modifier = {
+        leader_lifespan_add = 25
+        pop_amenities_usage_mult = 0.2
+        pop_government_ethic_attraction = -0.15
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

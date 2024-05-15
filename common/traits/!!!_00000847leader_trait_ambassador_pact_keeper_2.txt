@@ -1,0 +1,20 @@
+leader_trait_ambassador_pact_keeper_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_ambassador_pact_keeper"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_pact_keeper"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        diplomacy_influence_upkeep_mult = -0.1
+    }
+    leader_class = {
+        official
+    }
+}

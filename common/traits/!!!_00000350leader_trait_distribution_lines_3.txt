@@ -1,0 +1,39 @@
+leader_trait_distribution_lines_3 = {
+    replace_traits = {
+        "leader_trait_distribution_lines_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_fleet_logistician"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = 3
+    }
+    leader_trait_type = veteran
+    planet_modifier = {
+        planet_metallurgists_upkeep_mult = -0.2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                country_uses_consumer_goods = yes
+            }
+        }
+        planet_artisans_upkeep_mult = -0.2
+    }
+    sector_modifier = {
+        planet_metallurgists_upkeep_mult = -0.1
+    }
+    triggered_sector_modifier = {
+        potential = {
+            owner = {
+                country_uses_consumer_goods = yes
+            }
+        }
+        planet_artisans_upkeep_mult = -0.1
+    }
+    leader_class = {
+        official
+    }
+}

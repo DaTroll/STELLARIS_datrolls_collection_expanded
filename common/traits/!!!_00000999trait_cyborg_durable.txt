@@ -1,0 +1,25 @@
+trait_cyborg_durable = {
+    cost = 1
+    opposites = {
+        "trait_cyborg_high_maintenance"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    initial = no
+    species_potential_add = {
+        can_add_cybernetic_traits = yes
+    }
+    species_possible_remove = {
+        can_remove_cybernetic_traits = yes
+    }
+    randomized = no
+    custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+    modifier = {
+        pop_amenities_usage_add = -0.5
+    }
+    slave_cost = {
+        energy = 750
+    }
+}

@@ -1,0 +1,50 @@
+tech_synchronized_defences = {
+    area = physics
+    tier = 4
+    cost = @tier4cost2
+    category = {
+        computing
+    }
+    ai_update_type = military
+    prerequisites = {
+        "tech_self_aware_logic"
+    }
+    is_rare = yes
+    weight = @tier4weight2
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0.5
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_computing
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            has_ethic = ethic_pacifist
+        }
+        modifier = {
+            factor = 0.65
+            has_ethic = ethic_fanatic_pacifist
+        }
+        modifier = {
+            factor = 1.1
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.2
+            has_ethic = ethic_fanatic_militarist
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_synchronized_defences
+        }
+    }
+    ai_weight = {
+    }
+}

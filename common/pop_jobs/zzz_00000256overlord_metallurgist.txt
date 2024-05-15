@@ -1,0 +1,38 @@
+overlord_metallurgist = {
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = holding_offworld_foundry
+    clothes_texture_index = 3
+    icon = foundry
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        hidden_trigger = {
+            exists = owner
+        }
+        owner = {
+            is_gestalt = no
+        }
+    }
+    resources = {
+        category = planet_overlord_metallurgists
+        upkeep = {
+            minerals = 6
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_metallurgists
+        produces = {
+            alloys = 3
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

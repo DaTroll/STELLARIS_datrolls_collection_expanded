@@ -1,0 +1,21 @@
+leader_trait_reformer_2 = {
+    replace_traits = {
+        "leader_trait_reformer"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_reformer"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        country_unity_produces_mult = 0.1
+        pop_government_ethic_attraction = 0.5
+    }
+    leader_trait_type = veteran
+    leader_class = {
+        official
+    }
+}

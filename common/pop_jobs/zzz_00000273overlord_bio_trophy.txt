@@ -1,0 +1,42 @@
+overlord_bio_trophy = {
+    category = worker
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = building_organic_sanctuary
+    clothes_texture_index = 1
+    icon = bio_trophy
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    possible = {
+        is_robotic_species = no
+    }
+    resources = {
+        category = planet_overlord_bio_trophies
+        produces = {
+            unity = 2
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_bio_trophies
+        produces = {
+            unity = 3
+        }
+    }
+    planet_modifier = {
+        pop_happiness = 0.01
+    }
+    triggered_pop_modifier = {
+        pop_happiness = 0.4
+        pop_housing_usage_add = -1
+        planet_pops_upkeep_mult = -2
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

@@ -1,0 +1,89 @@
+"Alko Scientific Union" = {
+    key = "Alko Scientific Union"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla3"
+        species_name = {
+            key = "Alko"
+        }
+        species_plural = {
+            key = "Alkos"
+        }
+        species_adjective = {
+            key = "Alkan"
+        }
+        species_bio = "Whereas most of the species try to survive. The Alko try to improve. Imagine how much faster scientific discoveries would have been if only they hadn't to worry about gravitation. The Alko have a natural Helium pocket within them that allows them to basically ... fly. They can on their own decide if they want to go higher or lower. This allowed the scientist of Axtera to make some extraordinary improvements in only a bunch of years, where others species would have needed a century to only wrap their heads around. Therefore the scientist are the most important persons on their planet and often, succesfull scientist will become \"First Scientist\" for their last years, as a glory end to their carreer. "
+        name_list = "PLANT3"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_venerable"
+        trait = "trait_slow_breeders"
+        trait = "trait_weak"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Alko Scientific Union"
+    }
+    adjective = {
+        key = "Alkan"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_science_directorate"
+    planet_name = {
+        key = "Axtera"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Axtar"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_9.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "new_dawn.dds"
+        }
+        colors = {
+            "turquoise"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Alk"
+            }
+        }
+        portrait = "pla3"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Scientist"
+        }
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_environmentalist"
+    }
+    origin = "origin_mechanists"
+}

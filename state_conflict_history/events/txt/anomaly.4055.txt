@@ -1,0 +1,89 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4055
+    title = "anomaly.4055.name"
+    desc = "anomaly.4055.desc"
+    picture = GFX_evt_physics_research
+    show_sound = event_laboratory_sound
+    location = FROM
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            if = {
+                limit = {
+                    habitable_planet = no
+                }
+                clear_deposits = yes
+            }
+        }
+    }
+    option = {
+        name = anomaly.4055.a
+        custom_tooltip = "anomaly.4055.a.tooltip"
+        hidden_effect = {
+            owner = {
+                create_leader = {
+                    class = scientist
+                    species = owner_main_species
+                    name = random
+                }
+                last_created_leader = {
+                    add_experience = 200
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_trait = leader_trait_spark_of_genius
+                            }
+                        }
+                        add_trait = leader_trait_spark_of_genius
+                    }
+                    add_leader_traits_after_modification = yes
+                    remove_leader_traits_after_modification = yes
+                }
+            }
+            FROM = {
+                if = {
+                    limit = {
+                        habitable_planet = no
+                    }
+                    add_deposit = d_minerals_4
+                    add_deposit = d_rare_crystals_1
+                }
+                else = {
+                    add_deposit = d_rich_mountain
+                    add_deposit = d_crystalline_caverns
+                }
+            }
+        }
+    }
+    option = {
+        name = anomaly.4055.b
+        custom_tooltip = "anomaly.4055.b.tooltip"
+        hidden_effect = {
+            root = {
+                add_modifier = {
+                    modifier = protege_onboard
+                    days = 7200
+                }
+            }
+            FROM = {
+                if = {
+                    limit = {
+                        habitable_planet = no
+                    }
+                    add_deposit = d_minerals_4
+                    add_deposit = d_rare_crystals_1
+                }
+                else = {
+                    add_deposit = d_rich_mountain
+                    add_deposit = d_crystalline_caverns
+                }
+            }
+        }
+        add_modifier = {
+            modifier = protege_onboard
+            days = 7200
+        }
+        custom_tooltip = "anomaly.4055.b.tooltip"
+    }
+}

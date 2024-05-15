@@ -1,0 +1,24 @@
+stratovent_refiner_upg = {
+    category = specialist
+    is_capped_by_modifier = yes
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_bio_reprocessing_facilities
+    icon = gas_extractor
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    resources = {
+        category = planet_sr_miners
+        produces = {
+            exotic_gases = 3
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|stratovent_refiner_upg|RESOURCE|exotic_gases|
+    }
+}

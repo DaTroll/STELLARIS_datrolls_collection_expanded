@@ -1,0 +1,25 @@
+tech_doctrine_navy_size_1 = {
+    cost = @tier1cost2
+    area = society
+    tier = 1
+    category = {
+        military_theory
+    }
+    weight = @tier1weight2
+    modifier = {
+        country_naval_cap_add = 25
+    }
+    weight_modifier = {
+        factor = 3
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

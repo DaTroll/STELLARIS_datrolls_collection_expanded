@@ -1,0 +1,34 @@
+overlord_ranger_drone = {
+    category = simple_drone
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_park_ranger_lodge
+    clothes_texture_index = 1
+    icon = ranger
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                country_uses_consumer_goods = yes
+            }
+        }
+        planet_pops_consumer_goods_upkeep_mult = -0.1
+    }
+    overlord_resources = {
+        category = planet_overlord_rangers
+        produces = {
+            unity = 10
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

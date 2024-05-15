@@ -1,0 +1,138 @@
+"Bovis Imperium" = {
+    key = "Bovis Imperium"
+    ship_prefix = {
+        key = "SB"
+        literal = yes
+    }
+    species = {
+        class = "NECROID"
+        portrait = "nec10"
+        species_name = {
+            key = "Bovis"
+            literal = yes
+        }
+        species_plural = {
+            key = "Bove"
+            literal = yes
+        }
+        species_adjective = {
+            key = "%ADJECTIVE%"
+            variables = {
+                 {
+                    key = "adjective"
+                    value = {
+                        key = "Bovis"
+                        literal = yes
+                    }
+                }
+            }
+        }
+        species_bio = "Extreme Strengh, exeptional Longevity, four arms, and a huge amount of skulls on the walls.                                     Their Hierarchy is uniquely based around strengh, with the imperial family at its center. Each year the imperial family chooses among the young new recruits in order to drill them to be their elite guard, and enforcing the law in the capital. Those who dare oppose them in single fight are either suicidal or already dead. Nonetheless, their goals are unknown and their longevity gives them an edge over most other species in the emptyness of space, aswell as their origins, which is clouded in mystery."
+        name_list = "NECROID2"
+        gender = male
+        trait = "trait_very_strong"
+        trait = "trait_venerable"
+        trait = "trait_deviants"
+        trait = "trait_unruly"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "format.imp_mil.3"
+        variables = {
+             {
+                key = "imperial_mil"
+                value = {
+                    key = "Imperium"
+                }
+            }
+             {
+                key = "This.GetSpeciesName"
+                value = {
+                    key = "Bovis"
+                }
+            }
+        }
+    }
+    adjective = {
+        key = "%ADJECTIVE%"
+        variables = {
+             {
+                key = "adjective"
+                value = {
+                    key = "format.species"
+                    variables = {
+                         {
+                            key = "imperial_mil"
+                            value = {
+                                key = "Imperium"
+                            }
+                        }
+                         {
+                            key = "This.GetSpeciesName"
+                            value = {
+                                key = "Bovis"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    advisor_voice_type = "l_militarist"
+    planet_name = {
+        key = "Villa"
+        literal = yes
+    }
+    planet_class = "pc_arctic"
+    system_name = {
+        key = "Mons"
+        literal = yes
+    }
+    initializer = ""
+    graphical_culture = "necroid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_6.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "ice_turquoise"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Bove-enkhi-Amonthra"
+                literal = yes
+            }
+        }
+        portrait = "nec10"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_police_state"
+    }
+    origin = "origin_shoulders_of_giants"
+}

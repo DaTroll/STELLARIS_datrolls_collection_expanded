@@ -1,0 +1,8 @@
+opinion_stole_galatron = {
+    opinion = {
+        base = -60
+    }
+    decay = {
+        base = 1
+    }
+}

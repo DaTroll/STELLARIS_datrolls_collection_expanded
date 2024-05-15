@@ -1,0 +1,40 @@
+tech_dark_matter_detection = {
+    cost = @tier5cost3
+    area = physics
+    tier = 5
+    category = {
+        particles
+    }
+    ai_update_type = all
+    is_rare = yes
+    prerequisites = {
+        "tech_detection_array"
+        "tech_mine_dark_matter"
+    }
+    weight = @tier5weight3
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    weight_modifier = {
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_curator
+            }
+        }
+        modifier = {
+            factor = value:tech_weight_likelihood
+            has_trait_in_council = {
+                TRAIT = leader_trait_fotd_scientist
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_dark_matter_detection
+        }
+        modifier = {
+            factor = 5
+            has_tradition = tr_subterfuge_adopt
+        }
+    }
+}

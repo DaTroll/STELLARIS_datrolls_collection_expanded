@@ -1,0 +1,23 @@
+trait_ruler_fortifier_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        trait_ruler_fortifier
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = GFX_leader_trait_fortifier
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        starbase_upgrade_cost_mult = -0.075
+        ship_military_station_small_cost_mult = -0.075
+        shipclass_starbase_hull_mult = 0.05
+        shipclass_military_station_hull_mult = 0.05
+    }
+    leader_class = {
+        commander
+    }
+}

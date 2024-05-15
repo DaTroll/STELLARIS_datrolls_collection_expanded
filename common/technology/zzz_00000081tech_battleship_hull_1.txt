@@ -1,0 +1,25 @@
+tech_battleship_hull_1 = {
+    cost = @tier4cost3
+    area = engineering
+    tier = 4
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_battleships"
+    }
+    weight = @tier4weight3
+    modifier = {
+        custom_tooltip = tech_battleship_hull_effect
+        shipsize_battleship_hull_mult = 0.1
+        shipsize_offspring_battleship_hull_mult = 0.1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_supremacy_adopt
+        }
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,19 @@
+tech_covenant_eater = {
+    area = society
+    cost = @guardiantechcost
+    tier = @guardiantechtier
+    category = {
+        psionics
+    }
+    ai_update_type = all
+    is_rare = yes
+    prerequisites = {
+        "tech_psionic_theory"
+    }
+    weight = 0
+    is_reverse_engineerable = no
+    icon = tech_covenant_eater
+    weight_modifier = {
+        factor = 0
+    }
+}

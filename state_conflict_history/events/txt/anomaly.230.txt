@@ -1,0 +1,87 @@
+namespace = anomaly
+namespace = anomaly
+ship_event = {
+    id = anomaly.230
+    title = "anomaly.230.name"
+    desc = {
+        trigger = {
+            owner = {
+                has_technology = tech_terrestrial_sculpting
+            }
+        }
+        text = anomaly.230.desc.v1
+    }
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_technology = tech_terrestrial_sculpting
+                }
+            }
+        }
+        text = anomaly.230.desc.v2
+    }
+    picture = GFX_evt_cold_barren
+    show_sound = event_scanner
+    location = FROM
+    is_triggered_only = yes
+    immediate = {
+        from = {
+            clear_deposits = yes
+        }
+        owner = {
+            set_country_flag = grimacing_divination_flag
+        }
+    }
+    option = {
+        name = anomaly.230.a
+        custom_tooltip = anomaly.230.a.tooltip
+        custom_tooltip = TERRAFORMING_CANDIDATE_EFFECT
+        hidden_effect = {
+            from = {
+                add_modifier = {
+                    modifier = grimacing
+                    days = -1
+                }
+                add_modifier = {
+                    modifier = "terraforming_candidate"
+                    days = -1
+                }
+                add_deposit = d_physics_4
+            }
+        }
+    }
+    option = {
+        allow = {
+            owner = {
+                resource_stockpile_compare = {
+                    resource = energy
+                    value >= 200
+                }
+            }
+        }
+        name = anomaly.230.b
+        custom_tooltip = anomaly.230.b.tooltip
+        owner = {
+            add_resource = {
+                energy = -200
+            }
+        }
+        hidden_effect = {
+            random_list = {
+                50 = {
+                    ship_event = {
+                        id = anomaly.231
+                        days = 5
+                    }
+                }
+                50 = {
+                    ship_event = {
+                        id = anomaly.232
+                        days = 5
+                    }
+                }
+            }
+        }
+    }
+}

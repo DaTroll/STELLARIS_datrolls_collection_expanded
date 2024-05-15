@@ -1,0 +1,102 @@
+"Knights of the Holy Pile" = {
+    key = "Knights of the Holy Pile"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "TOX"
+        portrait = "tox9"
+        species_name = {
+            key = "Pile"
+            literal = yes
+        }
+        species_plural = {
+            key = "Piles"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Pilians"
+            literal = yes
+        }
+        species_bio = "Millenials ago the old races went extinct, incapable of living in the world they had created. Through sheer will and determination did the Pilians clean up the planet, managed their efforts for the better future. In the end, one pile remained, as a relinct of old time, and in the name of this old thime they will fight. They founded their whole Nation arround this concept, a Chevalry Order with a distinct chain of command ! Rise a Knight ! "
+        name_list = "TOX2"
+        gender = indeterminable
+        trait = "trait_noxious"
+        trait = "trait_sedentary"
+        trait = "trait_very_strong"
+        trait = "trait_quarrelsome"
+    }
+    name = {
+        key = "Knights of the Holy Pile"
+        literal = yes
+    }
+    adjective = {
+        key = "Knights"
+        literal = yes
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    advisor_voice_type = "l_tox_vir"
+    planet_name = {
+        key = "Pilius One"
+        literal = yes
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Takert"
+        literal = yes
+    }
+    initializer = "toxic_knights_start"
+    graphical_culture = "toxoid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_10.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "flag_BG_12.dds"
+        }
+        colors = {
+            "intense_red"
+            "shadow_teal"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = indeterminable
+        name = {
+            full_names = {
+                key = "Bloab"
+                literal = yes
+            }
+        }
+        portrait = "tox9_f"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Grand Master"
+            literal = yes
+        }
+        heir_title = {
+            key = "Little Master"
+            literal = yes
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "toxoids_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_militarist"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_memorialist"
+        "civic_warrior_culture"
+    }
+    origin = "origin_toxic_knights"
+}

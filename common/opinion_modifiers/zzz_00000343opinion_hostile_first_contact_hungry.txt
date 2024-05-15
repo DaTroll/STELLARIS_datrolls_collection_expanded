@@ -1,0 +1,12 @@
+opinion_hostile_first_contact_hungry = {
+    opinion = {
+        base = -500
+    }
+    accumulative = yes
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

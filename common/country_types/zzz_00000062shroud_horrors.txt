@@ -1,0 +1,5 @@
+shroud_horrors = {
+    ai = {
+        enabled = no
+    }
+}

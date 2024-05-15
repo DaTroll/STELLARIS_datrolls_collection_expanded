@@ -1,0 +1,11 @@
+02_exotic_resource_collection_drone = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

@@ -1,0 +1,93 @@
+"Kerdosia Star Kingdom" = {
+    key = "Kerdosia Star Kingdom"
+    ship_prefix = {
+        key = "KSW"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_12"
+        species_name = {
+            key = "Kerdosia"
+        }
+        species_plural = {
+            key = "Kerdosians"
+        }
+        species_adjective = {
+            key = "Kerdosian"
+        }
+        species_bio = "The Kerdosia still have a King. For over 10.000 rotations many dynasties have ruled, some even as the Trush'nak who just ruled for an afternoon before being overthrown by the troops with which they took power in the first place.                                                                   This might be the biggest problem of the Kerdosians. Internal Power struggle. The ruling dynasty is only on the Throne since 100 years, not even coming close to the long lasting rule of the Ka'tre'fal.                                                                                Order and unification was only made possible by the relentless effort of militarisation and prepare to fight again the probable extraterrestrial ennemies. However, the Kerdosia are in no way "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_quarrelsome"
+        trait = "trait_strong"
+        trait = "trait_sedentary"
+        trait = "trait_communal"
+        trait = "trait_resilient"
+    }
+    name = {
+        key = "Kerdosia Star Kingdom"
+    }
+    adjective = {
+        key = "Kerdosian"
+    }
+    authority = "auth_imperial"
+    government = "gov_feudal_empire"
+    advisor_voice_type = "l_militarist"
+    planet_name = {
+        key = "Kardosia"
+    }
+    planet_class = "pc_tropical"
+    system_name = {
+        key = "Kardosio"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "dark_green"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Ja'Ke'no"
+            }
+        }
+        portrait = "humanoid_hp_12"
+        texture = 18
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "King"
+        }
+        heir_title = {
+            key = "Prince"
+        }
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_feudal_realm"
+        "civic_aristocratic_elite"
+    }
+    origin = "origin_galactic_doorstep"
+}

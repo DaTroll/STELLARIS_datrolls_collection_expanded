@@ -1,0 +1,25 @@
+tech_planetary_infrastructure_2 = {
+    cost = @tier4cost3
+    area = society
+    tier = 4
+    category = {
+        new_worlds
+    }
+    prerequisites = {
+        "tech_galactic_administration"
+        "tech_ship_armor_4"
+        "tech_planetary_infrastructure_1"
+    }
+    weight = @tier4weight3
+    modifier = {
+        planet_max_buildings_add = 1
+        planet_colony_development_speed_mult = 0.25
+        habitat_max_districts_add = 1
+    }
+    weight_modifier = {
+        factor = 4
+    }
+    ai_weight = {
+        factor = @building_slots_ai_tech_factor
+    }
+}

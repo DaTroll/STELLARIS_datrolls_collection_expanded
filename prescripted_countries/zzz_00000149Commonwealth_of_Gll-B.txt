@@ -1,0 +1,96 @@
+"Commonwealth of Gll-B" = {
+    key = "Commonwealth of Gll-B"
+    ship_prefix = {
+        key = "CV"
+        literal = yes
+    }
+    species = {
+        class = "AQUATIC"
+        portrait = "aqu1"
+        species_name = {
+            key = "Gllbl"
+            literal = yes
+        }
+        species_plural = {
+            key = "Gllbs"
+            literal = yes
+        }
+        species_adjective = {
+            key = "Gllblean"
+            literal = yes
+        }
+        species_bio = "The Gllblean are the indiginous species of Gll-B [pronounciation according to the locals]. They live on an idyllic world, which has always provided for them, mainly in the depths of the Ocean they found many ressources and even more possibilities for their civilization to flourish. The ever-giving planet made their society and their civilization on a larger scale almost totally utopic, allowing them to seek hedonistic pleasures, and the beauty of handcrafting many items. In the upcomming decades, we shall see how their society will, or will not, change with the advent of intergalactic space travel."
+        name_list = "AQUATIC3"
+        gender = not_set
+        trait = "trait_aquatic"
+        trait = "trait_nonadaptive"
+        trait = "trait_rapid_breeders"
+        trait = "trait_traditional"
+        trait = "trait_wasteful"
+    }
+    name = {
+        key = "Commonwealth of Gll-B"
+        literal = yes
+    }
+    adjective = {
+        key = "Commonwealth"
+        literal = yes
+    }
+    authority = "auth_democratic"
+    government = "gov_moral_democracy"
+    advisor_voice_type = "l_aqu_vir"
+    planet_name = {
+        key = "Gll-B"
+        literal = yes
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Khll"
+        literal = yes
+    }
+    initializer = "ocean_paradise_start"
+    graphical_culture = "aquatic_01"
+    city_graphical_culture = "aquatic_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_22.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "sinus.dds"
+        }
+        colors = {
+            "intense_blue"
+            "shadow_blue"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Gelball"
+                literal = yes
+            }
+        }
+        portrait = "aqu1_f"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "necroids_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_egalitarian"
+    ethic = "ethic_pacifist"
+    civics = {
+        "civic_crafters"
+        "civic_pleasure_seekers"
+    }
+    origin = "origin_ocean_paradise"
+}

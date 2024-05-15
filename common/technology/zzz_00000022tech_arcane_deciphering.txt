@@ -1,0 +1,43 @@
+tech_arcane_deciphering = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        archaeostudies
+    }
+    weight = @tier2weight3
+    is_rare = yes
+    feature_flags = {
+        unlock_arcane_deciphering
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            NOT = {
+                has_resource = {
+                    type = minor_artifacts
+                    amount > 0
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            has_ancrel = no
+        }
+        modifier = {
+            factor = 0.5
+            has_modifier = "curator_insight"
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_arcane_deciphering
+        }
+        modifier = {
+            factor = 3
+            has_trait_in_council = {
+                TRAIT = leader_trait_curator
+            }
+        }
+    }
+}

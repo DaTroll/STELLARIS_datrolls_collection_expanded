@@ -1,0 +1,5 @@
+SSAB_ab_remnant = {
+    ai = {
+        enabled = no
+    }
+}

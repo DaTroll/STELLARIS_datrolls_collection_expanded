@@ -1,0 +1,27 @@
+leader_trait_legendary_great_teacher_2 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_legendary_great_teacher"
+    }
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_spiritualist_one"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 2
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        species_leader_exp_gain = 0.15
+        leaders_upkeep_mult = -0.15
+        country_official_cap_add = 1
+        country_commander_cap_add = 1
+        country_scientist_cap_add = 1
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+}

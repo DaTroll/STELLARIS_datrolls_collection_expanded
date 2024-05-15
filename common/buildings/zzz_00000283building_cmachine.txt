@@ -1,0 +1,8 @@
+building_cmachine = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

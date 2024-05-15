@@ -1,0 +1,38 @@
+opinion_respected_species = {
+    opinion = {
+        base = 0
+        modifier = {
+            add = 40
+            FROM = {
+                OR = {
+                    gpm_is_country_type_default = yes
+                    is_fallen_empire = yes
+                }
+                exists = ruler
+                ruler = {
+                    species = {
+                        has_trait = "trait_gpm_high_status"
+                    }
+                    NOT = {
+                        is_same_species = root
+                    }
+                }
+            }
+            OR = {
+                gpm_is_country_type_default = yes
+                is_fallen_empire = yes
+            }
+            NOT = {
+                exists = ruler
+                ruler = {
+                    species = {
+                        has_trait = "trait_gpm_high_status"
+                    }
+                    NOT = {
+                        is_same_species = root
+                    }
+                }
+            }
+        }
+    }
+}

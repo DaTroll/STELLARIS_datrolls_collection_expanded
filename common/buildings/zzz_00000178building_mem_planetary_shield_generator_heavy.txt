@@ -1,0 +1,130 @@
+building_mem_planetary_shield_generator_heavy = {
+    icon = "building_mem_heavy_shield_generator"
+    base_buildtime = 600
+    can_build = no
+    planetary_ftl_inhibitor = yes
+    position_priority = 100
+    can_be_ruined = no
+    category = army
+    allow = {
+        has_upgraded_capital = yes
+        if = {
+            limit = {
+                exists = orbital_defence
+            }
+            orbital_defence = {
+                exists = starbase
+                starbase = {
+                    NOR = {
+                        has_starbase_building = ring_orbital_shield_generator
+                        is_starbase_building_building = ring_orbital_shield_generator
+                    }
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        planet_orbital_bombardment_damage = -0.6
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_country_flag = moon_bump_shield_completed
+            }
+        }
+        modifier = {
+            planet_orbital_bombardment_damage = -0.25
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_soldier_add = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_warrior_drone_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            physics_research = 5
+            engineering_research = 5
+        }
+        cost = {
+            minerals = 800
+            rare_crystals = 50
+        }
+        upkeep = {
+            energy = 6
+            rare_crystals = 1
+        }
+    }
+    prerequisites = {
+        "mem_tech_planetary_shield_generator_heavy"
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_warrior_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        text = job_soldier_effect_desc
+    }
+    ai_resource_production = {
+        trigger = {
+            always = yes
+        }
+        physics_research = 1
+        engineering_research = 1
+    }
+    ai_resource_production = {
+        alloys = 8
+        minerals = 8
+        food = 8
+        engineering_research = 10
+        physics_research = 10
+        trigger = {
+            solar_system = {
+                any_neighbor_system = {
+                    has_star_flag = space_locusts_current_location
+                }
+            }
+        }
+    }
+    ai_resource_production = {
+        alloys = 16
+        minerals = 16
+        food = 16
+        engineering_research = 20
+        physics_research = 20
+        trigger = {
+            solar_system = {
+                has_star_flag = space_locusts_current_location
+            }
+        }
+    }
+}

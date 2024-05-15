@@ -1,0 +1,92 @@
+building_factory_3 = {
+    base_buildtime = @b3_time
+    can_build = no
+    category = manufacturing
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    potential = {
+        exists = owner
+        owner = {
+            country_uses_consumer_goods = yes
+        }
+        NOT = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+        }
+    }
+    destroy_trigger = {
+        OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+            AND = {
+                exists = owner
+                OR = {
+                    owner = {
+                        country_uses_consumer_goods = no
+                    }
+                    AND = {
+                        owner = {
+                            is_ai = yes
+                        }
+                        has_any_industry_district = no
+                    }
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        planet_artisans_consumer_goods_produces_add = 2
+        planet_artisans_minerals_upkeep_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_ringworld_output_boost = yes
+        }
+        modifier = {
+            planet_artisans_consumer_goods_produces_add = 1
+            planet_artisans_minerals_upkeep_add = 1
+        }
+    }
+    inline_script = {
+        script = jobs/factory_add
+        AMOUNT = @b1_jobs
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b3_minerals
+            rare_crystals = @b4_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 1500
+            rare_crystals = 600
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = @b3_upkeep
+            rare_crystals = @b4_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 15
+            rare_crystals = 8
+        }
+    }
+    prerequisites = {
+        tech_luxuries_2
+    }
+}

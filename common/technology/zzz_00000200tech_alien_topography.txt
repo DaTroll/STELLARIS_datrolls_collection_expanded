@@ -1,0 +1,24 @@
+tech_alien_topography = {
+    cost = @tier2cost3
+    area = society
+    tier = 2
+    category = {
+        new_worlds
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    modifier = {
+        envoys_add = @major_insight_envoy_gain
+        country_tech_influence_produces_add = 0.2
+        planet_non_artificial_max_districts_add = 1
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+        }
+    }
+}

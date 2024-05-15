@@ -1,0 +1,5 @@
+awakened_fallen_empire_ev = {
+    ai = {
+        enabled = no
+    }
+}

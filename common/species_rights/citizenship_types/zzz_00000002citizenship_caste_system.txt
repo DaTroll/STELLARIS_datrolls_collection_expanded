@@ -1,0 +1,11 @@
+citizenship_caste_system = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}

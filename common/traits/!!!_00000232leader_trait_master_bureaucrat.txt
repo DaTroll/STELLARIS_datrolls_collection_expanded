@@ -1,0 +1,30 @@
+leader_trait_master_bureaucrat = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_master_bureaucrat"
+        RARITY = paragon
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        leaders_upkeep_mult = -0.05
+        empire_size_penalty_mult = -0.05
+        country_edict_fund_add = 75
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_council_subclass = yes
+    }
+    leader_class = {
+        commander
+        scientist
+        official
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = "paragon/council_weight_mult"
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

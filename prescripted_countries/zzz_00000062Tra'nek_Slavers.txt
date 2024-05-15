@@ -1,0 +1,91 @@
+"Tra'nek Slavers" = {
+    key = "Tra'nek Slavers"
+    ship_prefix = {
+        key = "TST"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam15"
+        species_name = {
+            key = "Tra'nek"
+        }
+        species_plural = {
+            key = "Tra'nek"
+        }
+        species_adjective = {
+            key = "Tra'nek"
+        }
+        species_bio = "\"Tra'nek\" litterally, six eyes.                                                              The conglomerate which build on their planet was long time ago a criminal syndicate. Now they are mainly using slave labor for their production. The member of their species are really strong, a trait which helped them to overcome many problems until now, but will this trait help hem in the future? or will it be the first layer of a revolution against the ruthless slave system?"
+        name_list = "MAM3"
+        gender = not_set
+        trait = "trait_thrifty"
+        trait = "trait_slow_breeders"
+        trait = "trait_sedentary"
+        trait = "trait_very_strong"
+    }
+    name = {
+        key = "Tra'nek Slavers"
+    }
+    adjective = {
+        key = "Tra'nek"
+    }
+    authority = "auth_corporate"
+    government = "gov_megacorporation"
+    planet_name = {
+        key = "Nek'ta"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Nek"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_02.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "new_dawn.dds"
+        }
+        colors = {
+            "turquoise"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Tre'nu'kta"
+            }
+        }
+        portrait = "mam15"
+        texture = 1
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "Chief Trader"
+        }
+        ruler_title_female = {
+            key = "Chief Trader"
+        }
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_slaving_despots_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_pacifist"
+    civics = {
+        "civic_indentured_assets"
+        "civic_media_conglomerate"
+    }
+    origin = "origin_default"
+}

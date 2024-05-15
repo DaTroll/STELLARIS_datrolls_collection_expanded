@@ -1,0 +1,92 @@
+"Peace Keeping Organisation of Karii" = {
+    key = "Peace Keeping Organisation of Karii"
+    ship_prefix = {
+        key = "KPK"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep3"
+        species_name = {
+            key = "Karii"
+        }
+        species_plural = {
+            key = "Karii"
+        }
+        species_adjective = {
+            key = "Kariian"
+        }
+        species_bio = "The Kariian people don't believe that violence can solve anything. Since the Great war and the horrors it brought with it, no violence has be voluntarely commited .                                                           The 'Planetary Governement' they instaled is based on an Oligarchic system which helped to maintain peace. The world leading aristocratic elite help to finance Sciences thus enabeling rapid progress and the maintaining of peace. The dark reality which only few citizen know is that the Oligarchic council is in reality controlled by a shadow council. From which the ambitions are unknown."
+        name_list = "REP2"
+        gender = not_set
+        trait = "trait_weak"
+        trait = "trait_charismatic"
+        trait = "trait_sedentary"
+        trait = "trait_traditional"
+        trait = "trait_conservational"
+    }
+    name = {
+        key = "Peace Keeping Organisation of Karii"
+    }
+    adjective = {
+        key = "Kariian"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_irenic_bureaucracy"
+    planet_name = {
+        key = "Kariia"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Kariia"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_18.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "yellow"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Carya"
+            }
+        }
+        portrait = "rep3_m"
+        texture = 2
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "Leader"
+        }
+        ruler_title_female = {
+            key = "Leader"
+        }
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_peaceful_traders_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_pacifist"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_shadow_council"
+    }
+    origin = "origin_default"
+}

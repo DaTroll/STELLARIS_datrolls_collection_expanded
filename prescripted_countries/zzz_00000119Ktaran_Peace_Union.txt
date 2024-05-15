@@ -1,0 +1,86 @@
+"Ktaran Peace Union" = {
+    key = "Ktaran Peace Union"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "PLANT"
+        portrait = "pla16_baol"
+        species_name = {
+            key = "Ktar"
+        }
+        species_plural = {
+            key = "Ktars"
+        }
+        species_adjective = {
+            key = "Ktaran"
+        }
+        species_bio = "The Ktaran are believed to have been humanoids - they loved to practice their meditational skills, allowing many of their specie to live long and prosperous lives. It is said that some individuals even meditate for over two generations. Therefore aging only a minimal. During the \"great Meditation\" their hole specie meditated, only to find out that their homeworld became a Gaia one and that many got a new look, looking more connected with the nature of their homeworld. Making them even more proud and happy to be Ktaran."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_venerable"
+        trait = "trait_resilient"
+        trait = "trait_slow_breeders"
+        trait = "trait_nonadaptive"
+        trait = "trait_talented"
+    }
+    name = {
+        key = "Ktaran Peace Union"
+    }
+    adjective = {
+        key = "Ktaran"
+    }
+    authority = "auth_imperial"
+    government = "gov_theocratic_monarchy"
+    planet_name = {
+        key = "Ktar'o"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Ktar'a"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_2.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "dark_blue"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Tar"
+            }
+        }
+        portrait = "pla16_baol"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_principled"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_pacifist"
+    ethic = "ethic_fanatic_spiritualist"
+    civics = {
+        "civic_corvee_system"
+        "civic_environmentalist"
+    }
+    origin = "origin_default"
+}

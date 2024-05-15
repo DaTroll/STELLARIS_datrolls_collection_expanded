@@ -1,0 +1,16 @@
+xvcv_mdlc_tech_abyss_patron_eater = {
+    icon = "tech_covenant_eater"
+    area = physics
+    cost = @guardiantechcost
+    tier = @guardiantechtier
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    is_rare = yes
+    weight = @xvcv_mdlc_not_researchable_tech_weight
+    is_reverse_engineerable = no
+    potential = {
+        has_ascension_perk = xvcv_mdlc_ap_abyss
+    }
+}

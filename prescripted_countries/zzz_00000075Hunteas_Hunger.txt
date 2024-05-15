@@ -1,0 +1,85 @@
+"Hunteas Hunger" = {
+    key = "Hunteas Hunger"
+    ship_prefix = {
+        key = "HSV"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep9"
+        species_name = {
+            key = "Huntea"
+        }
+        species_plural = {
+            key = "Hunteas"
+        }
+        species_adjective = {
+            key = "Huntean"
+        }
+        species_bio = "The Huntean scientist have for a long time tryied to end all wars on their home planet. With the help of a lot of scientist and a very strong AI they have found the solution. Genocide of whats not their own and global mindmelting.                                                           Thus  the Huntea are now a Hive Mind. They follow one goal with perfect coordination and total commitment, no matter the cost if the order is given. They also found an evil pleasure in devouring other species, the fresh feeling of juicy alien meat, who doesn't love it?"
+        name_list = "REP3"
+        gender = not_set
+        trait = "trait_hive_mind"
+        trait = "trait_agrarian"
+        trait = "trait_natural_sociologists"
+        trait = "trait_nonadaptive"
+        trait = "trait_talented"
+    }
+    name = {
+        key = "Hunteas Hunger"
+    }
+    adjective = {
+        key = "Huntean"
+    }
+    authority = "auth_hive_mind"
+    government = "gov_devouring_swarm"
+    planet_name = {
+        key = "Huntai"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Huntea"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "beige"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Huntea"
+            }
+        }
+        portrait = "rep9"
+        texture = 4
+        attachment = 0
+        clothes = 4
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_hegemonic_imperialists_room"
+    spawn_enabled = always
+    ethic = "ethic_gestalt_consciousness"
+    civics = {
+        "civic_hive_devouring_swarm"
+        "civic_hive_divided_attention"
+    }
+    origin = "origin_default"
+}

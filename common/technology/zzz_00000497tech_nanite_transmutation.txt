@@ -1,0 +1,36 @@
+tech_nanite_transmutation = {
+    cost = @tier2cost3
+    area = engineering
+    tier = 2
+    category = {
+        materials
+    }
+    weight = @tier2weight3
+    is_rare = yes
+    potential = {
+        host_has_dlc = "Distant Stars Story Pack"
+    }
+    weight_modifier = {
+        factor = 0.5
+        modifier = {
+            factor = 0
+            NOT = {
+                any_system_within_border = {
+                    any_system_planet = {
+                        has_resource = {
+                            type = nanites
+                            amount > 0
+                        }
+                    }
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_nanite_transmutation
+        }
+    }
+    ai_weight = {
+        factor = @strategic_resource_ai_tech_factor
+    }
+}

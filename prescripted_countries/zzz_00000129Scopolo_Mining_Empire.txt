@@ -1,0 +1,87 @@
+"Scopolo Mining Empire" = {
+    key = "Scopolo Mining Empire"
+    ship_prefix = {
+        key = "SME"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith1"
+        species_name = {
+            key = "Scopolus"
+        }
+        species_plural = {
+            key = "Scopolo"
+        }
+        species_adjective = {
+            key = "Scopolan"
+        }
+        species_bio = "The Scopolus are big, bulky and strong. Their government form is all based around the number of Minerals one can posses and gain. The many slaves of their society are the true power base of their world, and who does posses the most slaves is the real Powerplayer. For centuries this has held as such, but now with the dawn of a new Era, will their society change and a revolt occur? Or will the same cycle which has repeated itself for centuries follow the same way again? Will perhaps another Empire subjugate the thrifty Scopolan or will they be the subjugator?"
+        name_list = "LITHOID1"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_very_strong"
+        trait = "trait_resilient"
+        trait = "trait_solitary"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Scopolo Mining Empire"
+    }
+    adjective = {
+        key = "Scopolian"
+    }
+    authority = "auth_imperial"
+    government = "gov_theocratic_monarchy"
+    advisor_voice_type = "l_lithoid_vir"
+    planet_name = {
+        key = "Scopo"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Scopo De"
+    }
+    initializer = ""
+    graphical_culture = "lithoid_01"
+    city_graphical_culture = "lithoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_6.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "rounded_middle.dds"
+        }
+        colors = {
+            "light_green"
+            "grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Scopol I"
+            }
+        }
+        portrait = "lith1"
+        texture = 2
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "crystalline_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_authoritarian"
+    ethic = "ethic_spiritualist"
+    civics = {
+        "civic_slaver_guilds"
+        "civic_mining_guilds"
+    }
+    origin = "origin_lithoid"
+}

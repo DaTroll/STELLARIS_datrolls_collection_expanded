@@ -1,0 +1,5 @@
+master_ai_country = {
+    ai = {
+        enabled = no
+    }
+}

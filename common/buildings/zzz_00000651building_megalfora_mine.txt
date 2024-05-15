@@ -1,0 +1,59 @@
+building_megalfora_mine = {
+    base_buildtime = 600
+    category = resource
+    potential = {
+        exists = owner
+        NOT = {
+            owner = {
+                has_origin = origin_pd_tree_of_life
+            }
+        }
+        NOT = {
+            has_modifier = resort_colony
+        }
+        is_planet_class = pc_megaflora
+        NOT = {
+            has_building = building_megalfora_mine
+        }
+        NOT = {
+            has_building_construction = building_megalfora_mine
+        }
+        NOT = {
+            has_building = building_megalfora_lab
+        }
+        NOT = {
+            has_building_construction = building_megalfora_lab
+        }
+        NOT = {
+            has_building = building_megalfora_grid
+        }
+        NOT = {
+            has_building_construction = building_megalfora_grid
+        }
+        OR = {
+            owner = {
+                is_ai = no
+            }
+            has_any_mining_district = yes
+        }
+    }
+    inline_script = "buildings/pd_rare_mining_building"
+    destroy_trigger = {
+        OR = {
+            has_modifier = resort_colony
+            has_modifier = crucible_colony
+            AND = {
+                exists = owner
+                owner = {
+                    is_ai = yes
+                }
+                has_any_mining_district = no
+            }
+        }
+        planet = {
+            NOT = {
+                is_planet_class = pc_megaflora
+            }
+        }
+    }
+}

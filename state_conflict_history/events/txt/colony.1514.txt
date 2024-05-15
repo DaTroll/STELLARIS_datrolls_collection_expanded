@@ -1,0 +1,356 @@
+namespace = colony
+planet_event = {
+    id = colony.1514
+    title = "colony.1514.name"
+    desc = "colony.1514.desc"
+    picture = GFX_evt_federation_fleet
+    location = ROOT
+    is_triggered_only = yes
+    trigger = {
+        owner = {
+            has_country_flag = FLDrone_country
+        }
+    }
+    option = {
+        name = colony.1514.a
+        hidden_effect = {
+            remove_global_flag = FLDrone_doing_global
+            set_global_flag = FLDrone_done_global
+            create_country = {
+                name = "NAME_Cunning_Pirates"
+                name_list = "PRT1"
+                type = faction
+                auto_delete = yes
+                effect = {
+                    set_faction_hostility = {
+                        set_hostile = yes
+                    }
+                    establish_communications_no_message = root.owner
+                    set_country_flag = helpful_drone_pirates
+                    create_fleet = {
+                        name = "NAME_Cunning_Pirates"
+                        effect = {
+                            set_owner = PREV
+                            while = {
+                                count = 6
+                                create_ship = {
+                                    name = random
+                                    design = "NAME_Outrider"
+                                    prefix = no
+                                    graphical_culture = "pirate_01"
+                                }
+                            }
+                            while = {
+                                count = 3
+                                create_ship = {
+                                    name = random
+                                    design = "NAME_Lancer"
+                                    prefix = no
+                                    graphical_culture = "pirate_01"
+                                }
+                            }
+                            while = {
+                                count = 1
+                                create_ship = {
+                                    name = random
+                                    design = "NAME_Void_Champion"
+                                    prefix = no
+                                    graphical_culture = "pirate_01"
+                                }
+                            }
+                            set_location = ROOT
+                        }
+                    }
+                    create_fleet = {
+                        name = "NAME_Old_Guard"
+                        effect = {
+                            set_owner = PREV
+                            while = {
+                                count = 1
+                                create_ship = {
+                                    name = random
+                                    design = "NAME_Pirate_Galleon"
+                                    graphical_culture = "pirate_01"
+                                }
+                            }
+                            set_location = ROOT
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 100
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 150
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 200
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 250
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 300
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 350
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            years_passed > 400
+                        }
+                        create_fleet = {
+                            name = "NAME_Cunning_Pirates"
+                            effect = {
+                                set_owner = PREV
+                                while = {
+                                    count = 6
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Outrider"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 3
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Lancer"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                while = {
+                                    count = 1
+                                    create_ship = {
+                                        name = random
+                                        design = "NAME_Void_Champion"
+                                        prefix = no
+                                        graphical_culture = "pirate_01"
+                                    }
+                                }
+                                set_location = ROOT
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

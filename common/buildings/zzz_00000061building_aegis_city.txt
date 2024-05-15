@@ -1,0 +1,8 @@
+building_aegis_city = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,27 @@
+tech_corvettes = {
+    cost = @tier0cost1
+    area = engineering
+    start_tech = yes
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_starbase_2"
+    }
+    tier = 0
+    prereqfor_desc = {
+        ship = {
+            title = "TECH_UNLOCK_CORVETTE_CONSTRUCTION_TITLE"
+            desc = "TECH_UNLOCK_CORVETTE_CONSTRUCTION_DESC"
+        }
+    }
+    weight_modifier = {
+        factor = 1000
+    }
+    ai_weight = {
+        weight = 10000
+    }
+    starting_potential = {
+        is_low_tech_start = no
+    }
+}

@@ -1,0 +1,37 @@
+living_standard_none = {
+    allow = {
+        hidden_trigger = {
+            exists = from
+        }
+        custom_tooltip = {
+            fail_text = species_is_neutered_displaced
+            OR = {
+                has_citizenship_type = {
+                    country = from
+                    type = citizenship_purge_machine
+                }
+                has_citizenship_type = {
+                    country = from
+                    type = citizenship_purge
+                }
+            }
+            NOR = {
+                has_purge_type = {
+                    country = from
+                    type = purge_neutering
+                }
+                has_purge_type = {
+                    country = from
+                    type = purge_cosmogenesis_lathe_resettle
+                }
+                has_purge_type = {
+                    country = from
+                    type = purge_displacement
+                }
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}

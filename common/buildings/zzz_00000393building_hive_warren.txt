@@ -1,0 +1,40 @@
+building_hive_warren = {
+    base_buildtime = @b1_time
+    category = amenity
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            is_hive_empire = no
+        }
+    }
+    convert_to = {
+        building_luxury_residence
+        building_drone_storage
+        building_communal_housing
+    }
+    planet_modifier = {
+        planet_housing_add = 3
+        planet_amenities_add = 5
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    upgrades = {
+        "building_expanded_warren"
+    }
+}

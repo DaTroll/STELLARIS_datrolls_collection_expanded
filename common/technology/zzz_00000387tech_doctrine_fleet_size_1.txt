@@ -1,0 +1,25 @@
+tech_doctrine_fleet_size_1 = {
+    cost = @tier1cost1
+    area = society
+    tier = 1
+    category = {
+        military_theory
+    }
+    weight = @tier1weight1
+    modifier = {
+        command_limit_add = 20
+    }
+    weight_modifier = {
+        factor = 3
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 2
+            is_militarist = yes
+        }
+    }
+}

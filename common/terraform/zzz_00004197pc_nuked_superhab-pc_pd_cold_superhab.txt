@@ -1,0 +1,26 @@
+@terraforming_cost_level_3 = 10000
+@terraforming_duration_level_4 = 7200
+terraform_link = {
+    from = pc_nuked_superhab
+    to = pc_pd_cold_superhab
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_3
+        }
+    }
+    duration = @terraforming_duration_level_4
+    condition = {
+        has_technology = "tech_climate_restoration"
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_nuked_superhab
+                CLASS_TO = pc_pd_cold_superhab
+            }
+        }
+    }
+}

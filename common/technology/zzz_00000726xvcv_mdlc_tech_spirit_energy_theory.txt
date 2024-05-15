@@ -1,0 +1,18 @@
+xvcv_mdlc_tech_spirit_energy_theory = {
+    cost = @tier3cost1
+    area = physics
+    tier = 3
+    category = {
+        field_manipulation
+    }
+    prerequisites = {
+        tech_hyper_drive_2
+    }
+    weight = @tier3weight1
+    potential = {
+        is_robot_empire = yes
+    }
+    modifier = {
+        category_field_manipulation_research_speed_mult = 0.3
+    }
+}

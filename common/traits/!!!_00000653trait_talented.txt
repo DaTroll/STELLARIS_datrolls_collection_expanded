@@ -1,0 +1,24 @@
+trait_talented = {
+    cost = 1
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    opposites = {
+        "trait_nerve_stapled"
+    }
+    slave_cost = {
+        energy = 500
+    }
+    modifier = {
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.1
+    }
+}

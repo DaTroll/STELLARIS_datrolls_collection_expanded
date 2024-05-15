@@ -1,0 +1,18 @@
+mem_ashes_leader_trait = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_mem_phoenix"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

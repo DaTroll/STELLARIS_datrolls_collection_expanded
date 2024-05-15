@@ -1,0 +1,164 @@
+namespace = terra
+planet_event = {
+    id = terra.5
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        NOT = {
+            has_planet_flag = has_terraformflag
+        }
+    }
+    immediate = {
+        set_planet_flag = has_terraformflag
+        switch = {
+            trigger = is_planet_class
+            pc_desert = {
+                set_planet_flag = desert_terraform
+            }
+            pc_sandsea = {
+                set_planet_flag = desert_terraform
+            }
+            pc_oasis = {
+                set_planet_flag = desert_terraform
+            }
+            pc_outback = {
+                set_planet_flag = desert_terraform
+            }
+            pc_coastal = {
+                set_planet_flag = desert_terraform
+            }
+            pc_arid = {
+                set_planet_flag = arid_terraform
+            }
+            pc_mesa = {
+                set_planet_flag = arid_terraform
+            }
+            pc_hadesert = {
+                set_planet_flag = arid_terraform
+            }
+            pc_med = {
+                set_planet_flag = arid_terraform
+            }
+            pc_badlands = {
+                set_planet_flag = arid_terraform
+            }
+            pc_savannah = {
+                set_planet_flag = savannah_terraform
+            }
+            pc_steppe = {
+                set_planet_flag = savannah_terraform
+            }
+            pc_prairie = {
+                set_planet_flag = savannah_terraform
+            }
+            pc_veld = {
+                set_planet_flag = savannah_terraform
+            }
+            pc_semiarid = {
+                set_planet_flag = savannah_terraform
+            }
+            pc_tropical = {
+                set_planet_flag = tropical_terraform
+            }
+            pc_hajungle = {
+                set_planet_flag = tropical_terraform
+            }
+            pc_desertislands = {
+                set_planet_flag = tropical_terraform
+            }
+            pc_mangrove = {
+                set_planet_flag = tropical_terraform
+            }
+            pc_cenote = {
+                set_planet_flag = tropical_terraform
+            }
+            pc_ocean = {
+                set_planet_flag = ocean_terraform
+            }
+            pc_cascadian = {
+                set_planet_flag = ocean_terraform
+            }
+            pc_wetswamp = {
+                set_planet_flag = ocean_terraform
+            }
+            pc_subarctic = {
+                set_planet_flag = ocean_terraform
+            }
+            pc_fog = {
+                set_planet_flag = ocean_terraform
+            }
+            pc_continental = {
+                set_planet_flag = continental_terraform
+            }
+            pc_tepid = {
+                set_planet_flag = continental_terraform
+            }
+            pc_retinal = {
+                set_planet_flag = continental_terraform
+            }
+            pc_forest = {
+                set_planet_flag = continental_terraform
+            }
+            pc_lake = {
+                set_planet_flag = continental_terraform
+            }
+            pc_tundra = {
+                set_planet_flag = tundra_terraform
+            }
+            pc_swamp = {
+                set_planet_flag = tundra_terraform
+            }
+            pc_basalt = {
+                set_planet_flag = tundra_terraform
+            }
+            pc_mushroom = {
+                set_planet_flag = tundra_terraform
+            }
+            pc_mud = {
+                set_planet_flag = tundra_terraform
+            }
+            pc_arctic = {
+                set_planet_flag = arctic_terraform
+            }
+            pc_antarctic = {
+                set_planet_flag = arctic_terraform
+            }
+            pc_frozen_desert = {
+                set_planet_flag = arctic_terraform
+            }
+            pc_glacial = {
+                set_planet_flag = arctic_terraform
+            }
+            pc_aeolian = {
+                set_planet_flag = arctic_terraform
+            }
+            pc_alpine = {
+                set_planet_flag = alpine_terraform
+            }
+            pc_boreal = {
+                set_planet_flag = alpine_terraform
+            }
+            pc_snow = {
+                set_planet_flag = alpine_terraform
+            }
+            pc_highland = {
+                set_planet_flag = alpine_terraform
+            }
+            pc_duneforest = {
+                set_planet_flag = alpine_terraform
+            }
+            pc_nuked = {
+                set_planet_flag = nuked_terraform
+            }
+            pc_barren = {
+                set_planet_flag = barren_terraform
+            }
+            pc_barren_cold = {
+                set_planet_flag = barren_cold_terraform
+            }
+            default = {
+                set_planet_flag = no_terraform_event
+            }
+        }
+    }
+}

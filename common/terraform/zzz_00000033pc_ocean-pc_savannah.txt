@@ -1,0 +1,25 @@
+@advancedCost = 5000
+terraform_link = {
+    from = "pc_ocean"
+    to = "pc_savannah"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @advancedCost
+        }
+    }
+    duration = 3600
+    condition = {
+        has_technology = "tech_terrestrial_sculpting"
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 2
+            should_terraform_trigger = {
+                CLASS_FROM = pc_ocean
+                CLASS_TO = pc_savannah
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+building_clone_vats_basic_organic = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

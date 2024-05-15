@@ -1,0 +1,6 @@
+opinion_nice_forests = {
+    unique = yes
+    opinion = {
+        base = 50
+    }
+}

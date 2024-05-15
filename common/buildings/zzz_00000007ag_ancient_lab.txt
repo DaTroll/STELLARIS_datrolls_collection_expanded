@@ -1,0 +1,8 @@
+ag_ancient_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

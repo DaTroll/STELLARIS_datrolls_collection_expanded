@@ -1,0 +1,85 @@
+duelist = {
+    category = specialist
+    condition_string = BATTLE_THRALL_JOB_TRIGGER
+    building_icon = building_holo_theatres
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible = {
+        battle_thrall_job_check_trigger = yes
+    }
+    resources = {
+        category = planet_entertainers
+        produces = {
+            unity = 2
+        }
+        upkeep = {
+            alloys = 1
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_councilor = {
+                COUNCILOR = "councilor_warrior_culture"
+            }
+        }
+        planet_amenities_add = 1
+        mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_amenities_mult|TYPE|councilor_warrior_culture|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 10
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_councilor = {
+                COUNCILOR = "councilor_warrior_culture"
+            }
+        }
+        country_naval_cap_add = 0.2
+        mult = value:councilor_level|TYPE|councilor_warrior_culture|
+    }
+    country_modifier = {
+        country_naval_cap_add = 2
+    }
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|duelist|RESOURCE|unity|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        modifier = {
+            factor = 0.2
+            has_citizenship_rights = no
+            NOT = {
+                has_trait = trait_mechanical
+            }
+        }
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            has_slavery_type = {
+                type = slavery_military
+            }
+        }
+        modifier = {
+            factor = 1.5
+            has_job = duelist
+        }
+        modifier = {
+            factor = 0.5
+            NOT = {
+                has_job = duelist
+            }
+            exists = planet
+            planet = {
+                free_amenities > 5
+            }
+        }
+    }
+}

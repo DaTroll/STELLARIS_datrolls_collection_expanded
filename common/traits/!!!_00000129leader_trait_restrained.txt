@@ -1,0 +1,36 @@
+leader_trait_restrained = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_restrained"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    army_modifier = {
+        army_disengage_chance_mult = 0.1
+        army_collateral_damage_mult = -0.25
+    }
+    fleet_modifier = {
+        ship_orbital_bombardment_pop_damage_mult = -0.05
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_victory_or_death
+        leader_trait_victory_or_death_2
+        leader_trait_butcher
+    }
+    selectable_weight = {
+        weight = @class_trait_weight
+        inline_script = paragon/army_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = commander_general
+        }
+    }
+}

@@ -1,0 +1,41 @@
+building_hycean_foundry = {
+    base_buildtime = 600
+    category = manufacturing
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        owner = {
+            NOT = {
+                is_catalytic_empire = yes
+            }
+        }
+        is_planet_class = pc_pd_hycean
+        NOT = {
+            has_building = building_hycean_farm
+        }
+        NOT = {
+            has_building_construction = building_hycean_farm
+        }
+        NOT = {
+            has_building = building_hycean_lab
+        }
+        NOT = {
+            has_building_construction = building_hycean_lab
+        }
+        NOT = {
+            has_building = building_hycean_foundry
+        }
+        NOT = {
+            has_building_construction = building_hycean_foundry
+        }
+    }
+    inline_script = "buildings/pd_rare_foundry_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_pd_hycean
+            }
+        }
+    }
+}

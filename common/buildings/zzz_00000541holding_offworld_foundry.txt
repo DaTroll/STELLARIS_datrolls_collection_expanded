@@ -1,0 +1,112 @@
+holding_offworld_foundry = {
+    base_buildtime = @b2_time
+    owner_type = subject_holding
+    icon = holding_offworld_foundry
+    base_cap_amount = 1
+    category = manufacturing
+    potential = {
+        has_overlord_dlc = yes
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = subject_is_prospectorium
+            exists = planet.owner
+            planet.owner = {
+                is_specialist_subject_type = {
+                    TYPE = prospectorium
+                }
+            }
+        }
+        is_occupied_flag = no
+    }
+    resources = {
+        category = planet_holdings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = @b1_upkeep
+        }
+    }
+    planet_modifier = {
+        monthly_loyalty = -1.5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_gestalt = no
+                is_catalytic_empire = no
+            }
+        }
+        job_overlord_metallurgist_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_hive_empire = yes
+                is_catalytic_empire = no
+            }
+        }
+        job_overlord_foundry_drone_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_machine_empire = yes
+                is_catalytic_empire = no
+            }
+        }
+        job_overlord_fabricator_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_catalytic_empire = yes
+                is_gestalt = no
+            }
+        }
+        job_overlord_catalytic_technician_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet.owner
+            planet.owner = {
+                is_catalytic_empire = yes
+                is_gestalt = yes
+            }
+        }
+        job_overlord_catalytic_drone_add = 2
+    }
+    triggered_desc = {
+        trigger = {
+            exists = planet.owner
+            planet.owner = {
+                is_catalytic_empire = no
+            }
+        }
+        text = job_overlord_alloy_producer_effect_desc
+    }
+    destroy_trigger = {
+        exists = planet.owner
+        planet.owner = {
+            NOT = {
+                is_specialist_subject_type = {
+                    TYPE = prospectorium
+                }
+            }
+        }
+    }
+    triggered_desc = {
+        trigger = {
+            exists = planet.owner
+            planet.owner = {
+                is_catalytic_empire = yes
+            }
+        }
+        text = job_overlord_alloy_producer_catalytic_effect_desc
+    }
+}

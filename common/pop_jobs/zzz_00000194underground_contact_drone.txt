@@ -1,0 +1,52 @@
+underground_contact_drone = {
+    category = simple_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = building_holo_theatres
+    clothes_texture_index = 3
+    icon = spawning_drone
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    pop_modifier = {
+        pop_housing_usage_add = -1
+    }
+    resources = {
+        category = planet_jobs
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_hive_empire = yes
+                }
+            }
+            energy = 3
+            food = 2
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_machine_empire = yes
+                }
+            }
+            energy = 6
+        }
+    }
+    weight = {
+        weight = @simple_drone_job_weight
+        mult = value:job_weights_multiple_resources_modifier|JOB|underground_contact_drone|RESOURCE1|energy|WEIGHT1|0.5|RESOURCE2|food|WEIGHT2|0.5|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+    }
+}

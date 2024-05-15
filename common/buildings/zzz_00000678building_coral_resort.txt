@@ -1,0 +1,36 @@
+building_coral_resort = {
+    base_buildtime = 600
+    category = trade
+    potential = {
+        owner = {
+            is_gestalt = no
+        }
+        is_planet_class = pc_coral
+        NOT = {
+            has_building = building_coral_resort
+        }
+        NOT = {
+            has_building_construction = building_coral_resort
+        }
+        NOT = {
+            has_building = building_coral_lab
+        }
+        NOT = {
+            has_building_construction = building_coral_lab
+        }
+        NOT = {
+            has_building = building_coral_guild
+        }
+        NOT = {
+            has_building_construction = building_coral_guild
+        }
+    }
+    inline_script = "buildings/pd_rare_resort_building"
+    destroy_trigger = {
+        planet = {
+            NOT = {
+                is_planet_class = pc_coral
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+eda_building_research_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

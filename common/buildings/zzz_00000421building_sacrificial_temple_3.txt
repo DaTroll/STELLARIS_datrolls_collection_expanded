@@ -1,0 +1,81 @@
+building_sacrificial_temple_3 = {
+    base_buildtime = @b3_time
+    can_build = no
+    position_priority = 100
+    category = unity
+    potential = {
+        exists = owner
+        owner = {
+            is_death_cult_empire = yes
+        }
+        NOT = {
+            has_modifier = slave_colony
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                is_death_cult_empire = no
+            }
+            has_modifier = slave_colony
+        }
+    }
+    convert_to = {
+        building_bureaucratic_3
+        building_sacred_nexus
+        building_system_conflux
+        building_hive_confluence
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            exotic_gases = @b3_rare_cost
+        }
+        upkeep = {
+            energy = @b3_upkeep
+            exotic_gases = @b3_rare_upkeep
+            volatile_motes = @b2_rare_upkeep
+        }
+    }
+    planet_modifier = {
+        pop_ethic_spiritualist_attraction_mult = 0.15
+        job_death_priest_add = 3
+        job_mortal_initiate_add = 3
+    }
+    triggered_desc = {
+        text = job_death_priest_effect_desc
+    }
+    triggered_desc = {
+        text = job_mortal_initiate_effect_desc
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner.federation
+            owner.federation = {
+                has_federation_perk = all_the_priests_2
+            }
+        }
+        job_high_priest_add = 1
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner.federation
+            owner.federation = {
+                has_federation_perk = all_the_priests_2
+            }
+        }
+        text = job_high_priest_effect_desc
+    }
+    prerequisites = {
+        "tech_consecration_fields"
+    }
+    show_tech_unlock_if = {
+        is_death_cult_empire = yes
+    }
+}

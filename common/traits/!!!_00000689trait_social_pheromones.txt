@@ -1,0 +1,22 @@
+trait_social_pheromones = {
+    cost = 0
+    potential_crossbreeding_chance = 0.33
+    initial = no
+    species_potential_add = {
+        always = no
+    }
+    randomized = no
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        pop_housing_usage_mult = -0.05
+    }
+    slave_cost = {
+        energy = 250
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

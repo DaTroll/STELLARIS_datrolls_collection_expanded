@@ -1,0 +1,31 @@
+leader_trait_legendary_scientific_diplomacy = {
+    starting_ruler_trait = yes
+    leader_trait_type = veteran
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    allowed_ethics = {
+        ethic_xenophile
+        ethic_fanatic_xenophile
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_xenophile_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_tt"
+    councilor_modifier = {
+        diplo_weight_technology_mult = 0.1
+        all_technology_research_speed = 0.05
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,5 @@
+abyssal_host_invaders_type = {
+    ai = {
+        enabled = no
+    }
+}

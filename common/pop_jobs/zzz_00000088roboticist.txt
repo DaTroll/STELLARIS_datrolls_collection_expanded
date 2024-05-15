@@ -1,0 +1,95 @@
+roboticist = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_robot_assembly_plant
+    clothes_texture_index = 3
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    triggered_planet_modifier = {
+        potential = {
+            OR = {
+                AND = {
+                    exists = owner
+                    owner = {
+                        NOT = {
+                            has_policy_flag = roboticist_output_build_cyborgs
+                        }
+                    }
+                }
+                NOT = {
+                    exists = owner
+                }
+            }
+        }
+        planet_pop_assembly_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_policy_flag = roboticist_output_build_cyborgs
+            }
+            can_assemble_cyborg_pop = yes
+        }
+        planet_pop_assembly_organic_add = 2.25
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                exists = ruler
+                ruler = {
+                    has_trait = leader_trait_legendary_great_inventor
+                }
+            }
+        }
+        planet_amenities_add = 1
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                exists = ruler
+                ruler = {
+                    has_trait = leader_trait_legendary_great_inventor_2
+                }
+            }
+        }
+        planet_amenities_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                exists = ruler
+                ruler = {
+                    has_trait = leader_trait_legendary_great_inventor_3
+                }
+            }
+        }
+        planet_amenities_add = 3
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    resources = {
+        category = planet_pop_assemblers
+        upkeep = {
+            alloys = 2
+        }
+    }
+    weight = {
+        weight = 500
+        modifier = {
+            factor = 10
+            owner = {
+                is_synthetic_empire = yes
+            }
+        }
+    }
+}

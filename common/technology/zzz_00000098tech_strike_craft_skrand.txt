@@ -1,0 +1,21 @@
+tech_strike_craft_skrand = {
+    cost = @tier4cost3
+    area = engineering
+    is_rare = yes
+    tier = 4
+    ai_update_type = military
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+    }
+    weight = 0
+    potential = {
+        has_paragon_dlc = yes
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+        base = 100
+    }
+}

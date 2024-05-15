@@ -1,0 +1,39 @@
+trait_natural_engineers = {
+    cost = 1
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 1
+    opposites = {
+        "trait_natural_physicists"
+        "trait_natural_sociologists"
+        "trait_nerve_stapled"
+    }
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_engineering_research_produces_mult = 0.15
+    }
+    slave_cost = {
+        energy = 500
+    }
+    assembly_score = {
+        modifier = {
+            add = 1
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            add = 1
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+}

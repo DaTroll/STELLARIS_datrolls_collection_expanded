@@ -1,0 +1,106 @@
+@hab_cost = 500
+@hab_maintenance = 2
+@low_hab_maintenance = 0.2
+@hab_time = 240
+district_hab_energy = {
+    base_buildtime = @hab_time
+    is_capped_by_modifier = yes
+    show_on_uncolonized = {
+        uses_district_set = habitat
+    }
+    potential = {
+        uses_district_set = habitat
+    }
+    convert_to = {
+    }
+    planet_modifier = {
+        planet_housing_add = 3
+    }
+    inline_script = {
+        script = districts/habitat_districts_triggered_mods
+    }
+    resources = {
+        category = planet_districts_hab_energy
+        cost = {
+            minerals = @hab_cost
+        }
+        upkeep = {
+            energy = @hab_maintenance
+            alloys = @low_hab_maintenance
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        job_technician_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        job_fe_acolyte_generator_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_technician_drone_add = 1
+        mult = owner.value:hab_void_dweller_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        job_technician_drone_add = 1
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        text = job_technician_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_fallen_empire_spiritualist = no
+            }
+        }
+        text = job_technician_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_fallen_empire_spiritualist = yes
+            }
+        }
+        text = job_fe_acolyte_generator_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            always = yes
+        }
+        text = num_energy_orbitals
+    }
+}

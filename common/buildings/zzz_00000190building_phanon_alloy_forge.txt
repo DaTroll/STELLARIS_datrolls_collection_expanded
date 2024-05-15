@@ -1,0 +1,8 @@
+building_phanon_alloy_forge = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

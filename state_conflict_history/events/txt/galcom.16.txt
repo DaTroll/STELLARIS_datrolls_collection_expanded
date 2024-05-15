@@ -1,0 +1,104 @@
+namespace = galcom
+country_event = {
+    id = galcom.16
+    title = "galcom.5.name"
+    desc = "galcom.16.desc"
+    picture = GFX_evt_galactic_community
+    show_sound = event_galactic_community
+    is_triggered_only = yes
+    trigger = {
+        is_galactic_community_member = no
+        NOT = {
+            has_country_flag = galcom_form_nay
+        }
+    }
+    immediate = {
+        if = {
+            limit = {
+                is_homicidal = yes
+            }
+            set_country_flag = galcom_form_nay
+        }
+    }
+    after = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_country_flag = human_1
+                    NOT = {
+                        has_country_flag = found_com
+                    }
+                }
+                country_event = {
+                    id = countryexpanded.44
+                    days = 1
+                }
+            }
+        }
+    }
+    option = {
+        name = galcom.16.a
+        allow = {
+            is_homicidal = no
+        }
+        add_to_galactic_community = yes
+        ai_chance = {
+            factor = 15
+            modifier = {
+                factor = 3
+                has_ethic = ethic_xenophile
+            }
+            modifier = {
+                factor = 10
+                has_ethic = ethic_fanatic_xenophile
+            }
+            modifier = {
+                factor = 10
+                OR = {
+                    has_civic = civic_diplomatic_corps
+                    has_civic = civic_public_relations_specialists
+                    has_civic = civic_hive_empath
+                    has_civic = civic_machine_servitor
+                }
+            }
+        }
+    }
+    option = {
+        name = galcom.16.b
+        trigger = {
+            is_homicidal = no
+        }
+        hidden_effect = {
+            set_country_flag = galcom_form_nay
+        }
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 3
+                has_ethic = ethic_xenophobe
+            }
+            modifier = {
+                factor = 10
+                has_ethic = ethic_fanatic_xenophobe
+            }
+        }
+    }
+    option = {
+        name = SCUM
+        trigger = {
+            has_civic = civic_fanatic_purifiers
+        }
+    }
+    option = {
+        name = anomaly.3089.b
+        trigger = {
+            has_civic = civic_machine_terminator
+        }
+    }
+    option = {
+        name = anomaly.180.e
+        trigger = {
+            has_civic = civic_hive_devouring_swarm
+        }
+    }
+}

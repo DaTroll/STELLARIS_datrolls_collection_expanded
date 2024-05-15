@@ -1,0 +1,117 @@
+building_spawning_pool = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = pop_assembly
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+            NOT = {
+                has_origin = origin_progenitor_hive
+            }
+            OR = {
+                is_ai = no
+                num_pops < @ariphaos_patch_ai_pop_limit
+            }
+        }
+        or = {
+            num_buildings = {
+                type = any
+                value < 15
+            }
+            owner = {
+                is_ai = no
+            }
+        }
+    }
+    allow = {
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            OR = {
+                is_hive_empire = no
+                has_origin = origin_progenitor_hive
+                AND = {
+                    is_ai = yes
+                    num_pops > @ariphaos_patch_ai_pop_limit
+                }
+            }
+        }
+    }
+    planet_modifier = {
+        job_spawning_drone_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_cybernetics_modular_cybernetics_hive
+            }
+        }
+        modifier = {
+            job_cyber_drone_add = 2
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+    convert_to = {
+        building_offspring_nest
+    }
+    triggered_desc = {
+        trigger = {
+            NAND = {
+                exists = owner
+                owner = {
+                    has_origin = origin_necrophage
+                }
+                exists = growing_species
+                growing_species = {
+                    NOT = {
+                        has_trait = trait_hive_mind
+                    }
+                }
+            }
+        }
+        text = job_spawning_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_origin = origin_necrophage
+            }
+            exists = growing_species
+            growing_species = {
+                NOT = {
+                    has_trait = trait_hive_mind
+                }
+            }
+        }
+        text = job_spawning_drone_necrophage_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_cybernetics_modular_cybernetics_hive
+            }
+        }
+        text = job_cyber_drone_effect_desc
+    }
+    triggered_desc = {
+        text = spawning_pool_tooltip
+    }
+    upgrades = {
+        building_eutab_spawning_garden
+        building_avb_spawning_pool_2
+    }
+}

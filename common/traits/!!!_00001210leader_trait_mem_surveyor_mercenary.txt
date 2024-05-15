@@ -1,0 +1,22 @@
+leader_trait_mem_surveyor_mercenary = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_retired_fleet_officer"
+        RARITY = veteran
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_weapon_damage = 0.33
+        ship_weapon_range_mult = 0.33
+        ship_speed_mult = 0.5
+        ship_tracking_add = 50
+        damage_vs_country_type_mem_surveyor_country_red_mult = 1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

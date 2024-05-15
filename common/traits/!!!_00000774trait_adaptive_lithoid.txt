@@ -1,0 +1,32 @@
+trait_adaptive_lithoid = {
+    cost = 2
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    icon = "gfx/interface/icons/traits/trait_adaptive.dds"
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    potential_crossbreeding_chance = 0.5
+    opposites = {
+        "trait_nonadaptive"
+        "trait_extremely_adaptive"
+        "trait_robust"
+        "trait_adaptive"
+    }
+    allowed_archetypes = {
+        LITHOID
+    }
+    modifier = {
+        pop_environment_tolerance = 0.1
+    }
+    slave_cost = {
+        energy = 1000
+    }
+}

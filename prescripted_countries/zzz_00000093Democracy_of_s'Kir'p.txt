@@ -1,0 +1,86 @@
+"Democracy of s'Kir'p" = {
+    key = "Democracy of s'Kir'p"
+    ship_prefix = {
+        key = "DSV"
+    }
+    species = {
+        class = "ART"
+        portrait = "art10"
+        species_name = {
+            key = "s'Kir"
+        }
+        species_plural = {
+            key = "s'Kirs"
+        }
+        species_adjective = {
+            key = "s'Kiran"
+        }
+        species_bio = "The skilled sociologist of s'Kir'p figured that the best for every citizen would be to propose an egalitarian system with a strong scientific field although being open to new and strange encounters out there in a borderless galaxy. Their democratic systems is a system of reward, being the 'best possible system' allowing member of each strata to candidate to be a member of the parlament or even the head governement. Many ambitious competent citizen love this system. "
+        name_list = "ART4"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_natural_sociologists"
+        trait = "trait_nonadaptive"
+        trait = "trait_traditional"
+    }
+    name = {
+        key = "Democracy of s'Kir'p"
+    }
+    adjective = {
+        key = "s'Kir'pian"
+    }
+    authority = "auth_democratic"
+    government = "gov_direct_democracy"
+    planet_name = {
+        key = "s'Kir'p-an"
+    }
+    planet_class = "pc_tundra"
+    system_name = {
+        key = "s'Kir'p-an"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_10.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "burgundy"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kir"
+            }
+        }
+        portrait = "art10"
+        texture = 3
+        attachment = 0
+        clothes = 4
+        trait = "leader_trait_spark_of_genius"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_egalitarian"
+    ethic = "ethic_xenophile"
+    ethic = "ethic_materialist"
+    civics = {
+        "civic_parliamentary_system"
+        "civic_meritocracy"
+    }
+    origin = "origin_default"
+}

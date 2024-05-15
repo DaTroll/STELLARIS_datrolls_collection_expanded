@@ -1,0 +1,33 @@
+@basicTypeCost = 2000
+terraform_link = {
+    from = "pc_tropical"
+    to = "pc_ocean"
+    resources = {
+        category = terraforming_ocean
+        cost = {
+            energy = @basicTypeCost
+        }
+    }
+    duration = 1800
+    condition = {
+        has_technology = "tech_terrestrial_sculpting"
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 1
+            should_terraform_trigger = {
+                CLASS_FROM = pc_tropical
+                CLASS_TO = pc_ocean
+            }
+        }
+        modifier = {
+            factor = 10
+            has_trait = trait_aquatic
+        }
+        modifier = {
+            factor = 10
+            has_trait = trait_robot_aquatic
+        }
+    }
+}

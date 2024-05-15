@@ -1,0 +1,63 @@
+certeran_covenant = {
+    name = EMPIRE_DESIGN_certeran_covenant
+    adjective = PRESCRIPTED_adjective_certeran_covenant
+    spawn_enabled = no
+    ignore_portrait_duplication = yes
+    playable = has_astral_planes_dlc
+    species = {
+        class = HUM
+        portrait = humanoid_hp_16
+        species_name = PRESCRIPTED_species_name_certeran_covenant
+        species_plural = PRESCRIPTED_species_plural_certeran_covenant
+        species_adjective = PRESCRIPTED_species_adjective_certeran_covenant
+        name_list = HUM1
+        gender = not_set
+        trait = trait_intelligent
+        trait = trait_natural_physicists
+        trait = trait_weak
+    }
+    initializer = custom_starting_init_01
+    ship_prefix = PRESCRIPTED_ship_prefix_certeran_covenant
+    planet_name = PRESCRIPTED_planet_name_certeran_covenant
+    system_name = PRESCRIPTED_system_name_certeran_covenant
+    planet_class = pc_alpine
+    room = "outdoor14_room"
+    authority = auth_democratic
+    civics = {
+        "civic_dimensional_worship"
+        "civic_ascensionists"
+    }
+    government = gov_dimensional_covenant
+    origin = origin_riftworld
+    ethic = ethic_xenophile
+    ethic = ethic_fanatic_spiritualist
+    graphical_culture = arthropoid_01
+    city_graphical_culture = arthropoid_01
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_24.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "ice_turquoise"
+            "black"
+            "black"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = PRESCRIPTED_ruler_name_certeran_covenant
+        portrait = humanoid_hp_16
+        texture = 0
+        attachment = 0
+        clothes = 2
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = official
+    }
+    advisor_voice_type = l_spiritualist
+}

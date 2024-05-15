@@ -1,0 +1,20 @@
+leader_trait_fotd_scientist = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_cunning"
+        RARITY = common
+        COUNCIL = yes
+        TIER = none
+    }
+    councilor_modifier = {
+        all_technology_research_speed = 0.05
+    }
+    custom_tooltip_with_modifiers = leader_trait_fotd_scientist_tooltip
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+}

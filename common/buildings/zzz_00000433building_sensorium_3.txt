@@ -1,0 +1,68 @@
+building_sensorium_3 = {
+    base_buildtime = @b3_time
+    can_build = no
+    icon = building_citadel_of_faith
+    category = unity
+    potential = {
+        exists = owner
+        NOT = {
+            has_modifier = slave_colony
+        }
+        owner = {
+            is_hive_empire = yes
+            is_memorialist_empire = no
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+        is_occupied_flag = no
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            has_modifier = slave_colony
+            owner = {
+                OR = {
+                    is_hive_empire = no
+                    is_memorialist_empire = yes
+                }
+            }
+        }
+    }
+    convert_to = {
+        building_corporate_forum
+        building_hypercomms_forum
+        building_galactic_memorial_3
+        building_simulation_3
+    }
+    resources = {
+        category = planet_buildings
+        produces = {
+            trigger = {
+                exists = owner
+            }
+            unity = 3
+            multiplier = owner.trigger:num_ascension_perks
+        }
+        cost = {
+            minerals = @b3_minerals
+        }
+    }
+    planet_modifier = {
+        planet_jobs_unity_produces_mult = 0.15
+        job_evaluator_add = @b3_jobs
+    }
+    triggered_desc = {
+        text = building_hypercomms_forum_effect
+    }
+    triggered_desc = {
+        text = job_evaluator_effect_desc
+    }
+    prerequisites = {
+        "tech_hive_confluence"
+    }
+    show_tech_unlock_if = {
+        is_hive_empire = yes
+        is_memorialist_empire = no
+    }
+}

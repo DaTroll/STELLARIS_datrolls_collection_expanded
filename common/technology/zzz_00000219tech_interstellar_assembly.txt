@@ -1,0 +1,70 @@
+tech_interstellar_assembly = {
+    area = society
+    cost = @tier5cost3
+    tier = 5
+    category = {
+        statecraft
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_mega_engineering"
+    }
+    weight = @tier5weight3
+    is_rare = yes
+    potential = {
+        host_has_dlc = "Megacorp"
+    }
+    weight_modifier = {
+        factor = 0.25
+        modifier = {
+            factor = 0.5
+            is_xenophobe = yes
+        }
+        modifier = {
+            factor = 2
+            is_xenophile = yes
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_2
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_maniacal_3
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius_2
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_ascension_perk = ap_galactic_wonders_megacorp
+                has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+            }
+        }
+        modifier = {
+            factor = 6
+            has_ascension_perk = ap_master_builders
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_interstellar_assembly
+        }
+    }
+    ai_weight = {
+    }
+}

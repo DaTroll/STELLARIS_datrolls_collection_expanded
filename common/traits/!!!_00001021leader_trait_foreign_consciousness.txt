@@ -1,0 +1,21 @@
+leader_trait_foreign_consciousness = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_foreign_consciousness"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_astral_rift_speed_mult = 0.25
+        ship_astral_rift_clues_add = 2
+    }
+    leader_class = {
+        scientist
+    }
+    initial = no
+    randomized = no
+    background_icon = "GFX_leader_background_destiny_1"
+}

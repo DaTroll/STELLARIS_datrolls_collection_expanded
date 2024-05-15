@@ -1,0 +1,18 @@
+dpe_duel_loser_commander = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_dpe_wooden_spoon"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_fire_rate_mult = -0.1
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

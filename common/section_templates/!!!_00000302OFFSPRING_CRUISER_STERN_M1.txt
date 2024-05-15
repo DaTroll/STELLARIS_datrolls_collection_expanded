@@ -1,0 +1,26 @@
+@cruiser_section_cost = 40
+ship_section_template = {
+    key = "OFFSPRING_CRUISER_STERN_M1"
+    ship_size = offspring_cruiser
+    fits_on_slot = stern
+    should_draw_components = yes
+    entity = "cruiser_stern_M1_entity"
+    icon = "GFX_ship_part_core_stern"
+    ai_tags = {
+        artillery
+        artillery_stealth
+        carrier
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        template = "medium_turret"
+        locatorname = "medium_gun_01"
+    }
+    aux_utility_slots = 2
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = @cruiser_section_cost
+        }
+    }
+}

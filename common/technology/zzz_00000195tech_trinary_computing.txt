@@ -1,0 +1,22 @@
+tech_trinary_computing = {
+    cost = @tier2cost3
+    area = physics
+    tier = 2
+    category = {
+        computing
+    }
+    ai_update_type = all
+    is_insight = yes
+    weight = 0
+    potential = {
+        has_first_contact_dlc = yes
+    }
+    modifier = {
+        envoys_add = @insight_envoy_gain
+        country_tech_influence_produces_add = 0.1
+        espionage_operation_speed_mult = 0.1
+        espionage_operation_difficulty_add = -1
+    }
+    ai_weight = {
+    }
+}

@@ -1,0 +1,12 @@
+triggered_selective_kinship_hates = {
+    trigger = {
+        has_valid_civic = civic_selective_kinship
+        exists = from.species
+        NOT = {
+            is_same_species_class = from
+        }
+    }
+    opinion = {
+        base = -50
+    }
+}

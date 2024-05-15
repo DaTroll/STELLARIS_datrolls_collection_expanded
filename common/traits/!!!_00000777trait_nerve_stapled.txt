@@ -1,0 +1,62 @@
+trait_nerve_stapled = {
+    cost = 3
+    species_potential_add = {
+        can_do_advanced_gene_modding = yes
+    }
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0.5
+    opposites = {
+        "trait_intelligent"
+        "trait_erudite"
+        "trait_natural_engineers"
+        "trait_natural_physicists"
+        "trait_natural_sociologists"
+        "trait_communal"
+        "trait_solitary"
+        "trait_talented"
+        "trait_zombie"
+    }
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    forced_happiness = yes
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    modifier = {
+        planet_jobs_produces_mult = 0.05
+        species_leader_exp_gain = -1
+    }
+    custom_tooltip = TRAIT_NERVE_STAPLED_EFFECT
+    slave_cost = {
+        energy = 1500
+    }
+    triggered_pop_modifier = {
+        potential = {
+            OR = {
+                is_pop_category = ruler
+                is_pop_category = specialist
+            }
+        }
+        pop_demotion_time_mult = -10
+    }
+    assembly_score = {
+        modifier = {
+            add = 1
+            from = {
+                OR = {
+                    has_farming_designation = yes
+                    has_generator_designation = yes
+                    has_mining_designation = yes
+                    has_rural_designation = yes
+                }
+            }
+        }
+    }
+}

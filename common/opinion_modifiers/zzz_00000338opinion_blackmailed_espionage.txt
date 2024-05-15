@@ -1,0 +1,13 @@
+opinion_blackmailed_espionage = {
+    opinion = {
+        base = -50
+    }
+    accumulative = yes
+    min = -250
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

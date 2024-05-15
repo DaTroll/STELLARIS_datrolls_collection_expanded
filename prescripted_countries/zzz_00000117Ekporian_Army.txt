@@ -1,0 +1,86 @@
+"Ekporian Army" = {
+    key = "Ekporian Army"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "FUN"
+        portrait = "fun4"
+        species_name = {
+            key = "Ekpore"
+        }
+        species_plural = {
+            key = "Ekpores"
+        }
+        species_adjective = {
+            key = "Ekporan"
+        }
+        species_bio = "The Ekpores believe in pure and raw power. There is no need in having a superrior technique or knowing more if you don't have the brute force to prove it and impose uppon your ennemies. This does not mean that they are by any mean stupid or don't think, they just do not care as much about it if you can't physically impose within this society. The Martial law is since the beginning of time part of their society, if we believe the official history books. At least, if one thing is sacred for them, then it is their Home. They will defend it until the last bullet, meter and stone. Their raw power is, as it will be, their strongest weapon."
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_very_strong"
+        trait = "trait_quarrelsome"
+        trait = "trait_communal"
+        trait = "trait_repugnant"
+        trait = "trait_resilient"
+    }
+    name = {
+        key = "Ekporian Army"
+    }
+    adjective = {
+        key = "Ekporian"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_martial_dictatorship"
+    planet_name = {
+        key = "Ekto"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Ektor"
+    }
+    initializer = ""
+    graphical_culture = "humanoid_01"
+    city_graphical_culture = "humanoid_01"
+    empire_flag = {
+        icon = {
+            category = "domination"
+            file = "domination_22.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "vertical.dds"
+        }
+        colors = {
+            "dark_blue"
+            "beige"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Ektar"
+            }
+        }
+        portrait = "fun4"
+        texture = 5
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_warlike"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_democratic_crusaders_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_slaver_guilds"
+    }
+    origin = "origin_default"
+}

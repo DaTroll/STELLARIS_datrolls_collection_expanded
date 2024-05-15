@@ -1,0 +1,19 @@
+action_recall_embassy = {
+    icon = "GFX_embassy_our"
+    auto_accepted = yes
+    requires_recipient_independence = no
+    requires_actor_independence = no
+    should_notify_all_communications = no
+    should_show_auto_accept_message_recipient = yes
+    action_type = negative
+    should_ai_propose = {
+        weight = 0
+        modifier = {
+            add = 1
+            opinion = {
+                who = from
+                value < -50
+            }
+        }
+    }
+}

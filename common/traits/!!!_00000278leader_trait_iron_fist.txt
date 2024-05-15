@@ -1,0 +1,31 @@
+leader_trait_iron_fist = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_iron_fist"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
+    planet_modifier = {
+        planet_jobs_slave_produces_mult = 0.1
+    }
+    sector_modifier = {
+        planet_jobs_slave_produces_mult = 0.05
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+        trait_is_gestalt_check = no
+        exists = owner
+        owner = {
+            allows_slavery = yes
+        }
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = {
+        weight = @shared_trait_weight
+        inline_script = paragon/governor_weight_mult
+    }
+}

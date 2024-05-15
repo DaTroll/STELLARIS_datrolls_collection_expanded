@@ -1,0 +1,8 @@
+building_plentiful_traditions_trading_depot = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

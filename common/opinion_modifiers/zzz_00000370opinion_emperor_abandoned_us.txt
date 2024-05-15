@@ -1,0 +1,11 @@
+opinion_emperor_abandoned_us = {
+    opinion = {
+        base = -250
+    }
+    decay = {
+        base = 1
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

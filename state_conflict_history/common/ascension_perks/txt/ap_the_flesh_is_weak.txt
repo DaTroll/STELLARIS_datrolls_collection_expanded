@@ -1,0 +1,80 @@
+@ascension_path_base_weight = 100
+@ascension_path_anti_synergy_weight = 0.5
+ap_the_flesh_is_weak = {
+    on_enabled = {
+        custom_tooltip = "flesh_is_weak_tooltip"
+    }
+    possible = {
+        custom_tooltip = {
+            fail_text = "synthetic_empire_synthetic_ascension"
+            NOT = {
+                has_trait = trait_mechanical
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_ascension_perks_2"
+            num_ascension_perks > 1
+        }
+        custom_tooltip = {
+            fail_text = "requires_not_ap_engineered_evolution"
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_not_ap_mind_over_matter"
+            NOT = {
+                has_ascension_perk = ap_mind_over_matter
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_not_ap_synthetic_evolution"
+            NOT = {
+                has_ascension_perk = ap_synthetic_evolution
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_not_origin_pd_warform_world"
+            NOT = {
+                has_origin = origin_pd_warform_world
+            }
+        }
+        custom_tooltip = {
+            fail_text = "requires_free_tradition_tree"
+            num_tradition_categories < @TRADITION_CATEGORIES_MAX
+        }
+    }
+    potential = {
+        has_utopia = yes
+        NOR = {
+            has_ascension_perk = ap_the_flesh_is_weak
+            has_origin = origin_shroudwalker_apprentice
+            has_origin = origin_pd_shroud
+            has_origin = origin_techno_world
+        }
+        is_gestalt = no
+    }
+    ai_weight = {
+        factor = @ascension_path_base_weight
+        modifier = {
+            factor = @ascension_path_anti_synergy_weight
+            has_flesh_is_weak_anti_synergy = yes
+        }
+        modifier = {
+            factor = 0.5
+            has_ethic = ethic_spiritualist
+        }
+        modifier = {
+            factor = 0
+            has_ethic = ethic_fanatic_spiritualist
+        }
+        modifier = {
+            factor = 0.1
+            num_ascension_perks < 3
+        }
+        modifier = {
+            factor = 10
+            num_ascension_perks > 4
+        }
+    }
+}

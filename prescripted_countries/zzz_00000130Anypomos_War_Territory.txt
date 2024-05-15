@@ -1,0 +1,87 @@
+"Anypomos War Territory" = {
+    key = "Anypomos War Territory"
+    ship_prefix = {
+        key = "AWS"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith2"
+        species_name = {
+            key = "Anypomono"
+        }
+        species_plural = {
+            key = "Anypomonos"
+        }
+        species_adjective = {
+            key = "Anypomono"
+        }
+        species_bio = "Hyperactive.Energy Possessed. Extremely energetic. The Anypomo are a extremly unruly and excited species. Some scientist speculated about the interior of the Anypomo being as active as the inside of a small star. The planet was, once a long time ago, a dense mountainous forest, but the hyperactivity and speed of the Anypomo made it a desert world with not much else on it. Their high energy transformed itself into a born-like attitude towards war and energy harvesting. Their keen hability to change and to survive will surely be a problem for anyone colonizing planets next to them."
+        name_list = "LITHOID2"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_ingenious"
+        trait = "trait_thrifty"
+        trait = "trait_natural_engineers"
+        trait = "trait_unruly"
+        trait = "trait_deviants"
+    }
+    name = {
+        key = "Anypomos War Territory"
+    }
+    adjective = {
+        key = "Anypomo"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_military_junta"
+    planet_name = {
+        key = "Anypo"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Any"
+    }
+    initializer = ""
+    graphical_culture = "avian_01"
+    city_graphical_culture = "arthropoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_19.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "orange"
+            "dark_grey"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Anep"
+            }
+        }
+        portrait = "lith2"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_fleet_organizer"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_honorbound_warriors_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_citizen_service"
+    }
+    origin = "origin_default"
+}

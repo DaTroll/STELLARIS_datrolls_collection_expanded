@@ -1,0 +1,57 @@
+building_pd_junksmelter = {
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    category = resource
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        NOT = {
+            is_planet_class = pc_pd_scrapyard
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_technology = tech_pd_scrapyard_incinerator
+            }
+        }
+    }
+    planet_modifier = {
+        planet_technician_energy_produces_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_pd_scrap_tech_add = 6
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_pd_scrap_tech_drone_add = 6
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_pd_scrapyard_incinerator"
+    }
+}

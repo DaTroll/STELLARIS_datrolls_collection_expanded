@@ -1,0 +1,52 @@
+namespace = crime
+event = {
+    id = crime.50
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        every_playable_country = {
+            limit = {
+                NOT = {
+                    has_ethic = ethic_gestalt_consciousness
+                }
+                any_owned_planet = {
+                    OR = {
+                        has_modifier = criminal_underworld
+                        has_modifier = gang_wars
+                        has_modifier = center_of_drug_trade
+                        has_modifier = mob_rule
+                    }
+                    NOR = {
+                        has_planet_flag = planet_crime_flag
+                        has_modifier = crime_lord_deal
+                    }
+                }
+            }
+            country_event = {
+                id = crime.51
+            }
+        }
+        every_playable_country = {
+            limit = {
+                has_authority = auth_hive_mind
+                any_owned_planet = {
+                    has_modifier = drone_deviancy
+                }
+            }
+            country_event = {
+                id = crime.52
+            }
+        }
+        every_playable_country = {
+            limit = {
+                has_authority = auth_machine_intelligence
+                any_owned_planet = {
+                    has_modifier = drone_corruption
+                }
+            }
+            country_event = {
+                id = crime.53
+            }
+        }
+    }
+}

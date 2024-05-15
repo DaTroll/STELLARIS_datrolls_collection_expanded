@@ -1,0 +1,18 @@
+trait_robot_uncanny = {
+    cost = -1
+    opposites = {
+        "trait_robot_emotion_emulators"
+    }
+    allowed_archetypes = {
+        MACHINE
+    }
+    modifier = {
+        pop_job_amenities_mult = -0.2
+    }
+    ai_weight = {
+        factor = 0
+    }
+    slave_cost = {
+        energy = -150
+    }
+}

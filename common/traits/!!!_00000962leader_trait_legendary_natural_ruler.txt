@@ -1,0 +1,32 @@
+leader_trait_legendary_natural_ruler = {
+    starting_ruler_trait = yes
+    leader_trait_type = veteran
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    allowed_ethics = {
+        ethic_pacifist
+        ethic_fanatic_pacifist
+    }
+    cost = 1
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_legendary_pacifist_two"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+    councilor_modifier = {
+        planet_stability_add = 2.5
+        planet_jobs_upkeep_mult = -0.05
+        pop_government_ethic_attraction = 0.1
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

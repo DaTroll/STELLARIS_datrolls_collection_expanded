@@ -1,0 +1,8 @@
+building_avb_foundry_5 = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

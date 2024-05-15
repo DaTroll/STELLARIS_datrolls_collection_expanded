@@ -1,0 +1,19 @@
+xvcv_mdlc_tech_automated_goods_manufacturing_2 = {
+    cost = @tier3cost1
+    area = engineering
+    tier = 3
+    category = {
+        materials
+    }
+    prerequisites = {
+        "xvcv_mdlc_tech_automated_goods_manufacturing_1"
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight1
+    potential = {
+        has_valid_civic = xvcv_mdlc_civic_goods_distributor
+    }
+    modifier = {
+        custom_tooltip = xvcv_mdlc_tech_automated_goods_manufacturing_2_tooltip
+    }
+}

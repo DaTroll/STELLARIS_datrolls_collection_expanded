@@ -1,0 +1,21 @@
+trait_ruler_eye_for_talent_2 = {
+    replace_traits = {
+        "trait_ruler_eye_for_talent"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_eye_for_talent"
+        RARITY = common
+        COUNCIL = yes
+        TIER = 2
+    }
+    councilor_modifier = {
+        species_leader_exp_gain = 0.1
+    }
+    leader_class = {
+        scientist
+        official
+        commander
+    }
+}

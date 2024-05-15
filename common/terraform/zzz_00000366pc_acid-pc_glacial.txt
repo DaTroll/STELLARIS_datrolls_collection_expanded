@@ -1,0 +1,40 @@
+@terraforming_cost_level_3 = 10000
+@terraforming_duration_level_3 = 5400
+terraform_link = {
+    from = pc_acid
+    to = pc_glacial
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @terraforming_cost_level_3
+        }
+    }
+    duration = @terraforming_duration_level_3
+    condition = {
+        has_technology = tech_climate_restoration
+        has_ascension_perk = ap_world_shaper
+    }
+    potential = {
+        has_technology = tech_climate_restoration
+        has_ascension_perk = ap_world_shaper
+    }
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 1
+            should_terraform_trigger = {
+                CLASS_FROM = pc_acid
+                CLASS_TO = pc_glacial
+            }
+        }
+        modifier = {
+            factor = 10
+            has_trait = trait_pc_glacial_preference
+        }
+    }
+    effect = {
+        from = {
+            remove_modifier = pdacid
+        }
+    }
+}

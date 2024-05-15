@@ -1,0 +1,86 @@
+"Almor Space Realm" = {
+    key = "Almor Space Realm"
+    ship_prefix = {
+        key = "ASV"
+    }
+    species = {
+        class = "LITHOID"
+        portrait = "lith6"
+        species_name = {
+            key = "Almor"
+        }
+        species_plural = {
+            key = "Almore"
+        }
+        species_adjective = {
+            key = "Almoran"
+        }
+        species_bio = "Large. Bulky. But producing extremely precious gases.In the past millenials, this specie has often been abducted by galactic empires who wanted to take a souvenir or even by criminal syndicates who sold them on the slave market. The Almoran have been helped more than once in their evolution, firstly by the Zabrac and then by several Diadochs and Epigones over the ages. Only in their later evolution, they noticed some interferenced and thus began to fear anything but themselves. Their fanatical fear and rage drowe them to the brink of civil war and mutual anhilation more than once, but since the discovery of interstellar travel, they orientated their rage outwards. "
+        name_list = "LITHOID4"
+        gender = not_set
+        trait = "trait_lithoid"
+        trait = "trait_very_strong"
+        trait = "trait_solitary"
+        trait = "trait_lithoid_gaseous_byproducts"
+        trait = "trait_unruly"
+    }
+    name = {
+        key = "Almor Space Realm"
+    }
+    adjective = {
+        key = "Almoran"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    planet_name = {
+        key = "Alsore"
+    }
+    planet_class = "pc_alpine"
+    system_name = {
+        key = "Almor Home"
+    }
+    initializer = ""
+    graphical_culture = "lithoid_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "zoological"
+            file = "flag_zoological_14.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "v.dds"
+        }
+        colors = {
+            "black"
+            "red"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = female
+        name = {
+            full_names = {
+                key = "Almor"
+            }
+        }
+        portrait = "lith6"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_fanatic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_police_state"
+        "civic_warrior_culture"
+    }
+    origin = "origin_lost_colony"
+}

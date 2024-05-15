@@ -1,0 +1,24 @@
+mind_thrall = {
+    category = worker
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    building_icon = holding_distributed_processing
+    clothes_texture_index = 1
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    overlord_resources = {
+        category = planet_mind_thralls
+        produces = {
+            physics_research = 1.5
+            engineering_research = 1.5
+            society_research = 1.5
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

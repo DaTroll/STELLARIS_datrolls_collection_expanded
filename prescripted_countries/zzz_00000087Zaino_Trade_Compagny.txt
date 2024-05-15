@@ -1,0 +1,92 @@
+"Zaino Trade Compagny" = {
+    key = "Zaino Trade Compagny"
+    ship_prefix = {
+        key = "WTS"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi2"
+        species_name = {
+            key = "Zaino"
+        }
+        species_plural = {
+            key = "Zainos"
+        }
+        species_adjective = {
+            key = "Zainian"
+        }
+        species_bio = "'Active or Passive' this is all that matters.                                           The Competition is merciless, so we are. The Zainos don't fear sacrifice, losses or barely anything. They want to be active, decide, keep the initiative. This is how this conglomerate simply decided to boycot the governements and thus created a huge Inflation, of course the governement had taken the blame. When after the Governement was extremly poor due to the Hyperinflation, the Compagny simply bought the politicians with common goods as houses and other things. Thus pushing their own Agenda and making the opposition 'dissapear'. "
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_strong"
+        trait = "trait_rapid_breeders"
+        trait = "trait_thrifty"
+        trait = "trait_nonadaptive"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Zaino Trade Compagny"
+    }
+    adjective = {
+        key = "Zaino"
+    }
+    authority = "auth_corporate"
+    government = "gov_criminal_syndicate"
+    planet_name = {
+        key = "Zai"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Zai'sh"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "mammalian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_24.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripes.dds"
+        }
+        colors = {
+            "light_blue"
+            "burgundy"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Zeak"
+            }
+        }
+        portrait = "avi2"
+        texture = 2
+        attachment = 0
+        clothes = 1
+        ruler_title = {
+            key = "Head"
+        }
+        ruler_title_female = {
+            key = "Head"
+        }
+        trait = "leader_trait_spycraft"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_criminal_heritage"
+        "civic_ruthless_competition"
+    }
+    origin = "origin_default"
+}

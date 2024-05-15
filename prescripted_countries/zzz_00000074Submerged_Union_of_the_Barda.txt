@@ -1,0 +1,92 @@
+"Submerged Union of the Barda" = {
+    key = "Submerged Union of the Barda"
+    ship_prefix = {
+        key = "UWSS"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep11"
+        species_name = {
+            key = "Barda"
+        }
+        species_plural = {
+            key = "Bardas"
+        }
+        species_adjective = {
+            key = "Bardian"
+        }
+        species_bio = "The Bardas are a underwater living specie. Distrusting but creative. The similarities between the underwater world and space allow most of their underwater designs to be used in space. They used this technique to colonize the surface of their planet which was their second great endeavour.                                                                           Besides that, they stay distrusting and will probably not share this technology with other species unless forced. Their suits are extremly advanced and aswell as their ships, suitable for space and underwater circumstances and battles. Even possessing very sofisticated security systems. "
+        name_list = "REP3"
+        gender = not_set
+        trait = "trait_perfected_genes"
+        trait = "trait_extremely_adaptive"
+        trait = "trait_repugnant"
+        trait = "trait_communal"
+        trait = "trait_unruly"
+    }
+    name = {
+        key = "Submerged Union of the Barda"
+    }
+    adjective = {
+        key = "Bardianan"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_technocratic_dictatorship"
+    planet_name = {
+        key = "Bardia"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Bardiana"
+    }
+    initializer = ""
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "ornate"
+            file = "flag_ornate_21.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "sinus.dds"
+        }
+        colors = {
+            "black"
+            "light_blue"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Karyt"
+            }
+        }
+        portrait = "rep11"
+        texture = 6
+        attachment = 0
+        clothes = 3
+        ruler_title = {
+            key = "First Emerged"
+        }
+        ruler_title_female = {
+            key = "First Emerged"
+        }
+        trait = "leader_trait_legendary_industry_titan"
+        leader_class = "scientist"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_technocracy"
+        "civic_shadow_council"
+    }
+    origin = "origin_legendary_leader"
+}

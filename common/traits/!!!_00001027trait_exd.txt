@@ -1,0 +1,33 @@
+trait_exd = {
+    cost = 0
+    potential_crossbreeding_chance = 0
+    sorting_priority = 20
+    initial = yes
+    randomized = no
+    species_potential_add = {
+        always = no
+    }
+    species_possible_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    allowed_archetypes = {
+        OTHER
+    }
+    species_class = {
+        EXD
+    }
+    ai_weight = {
+        weight = 0
+    }
+    icon = "gfx/interface/icons/traits/trait_exd.dds"
+    custom_tooltip_with_modifiers = TRAIT_EXD_EFFECT
+    modifier = {
+        leader_lifespan_mult = 0.5
+        pop_environment_tolerance = 0.5
+        pop_growth_speed = -0.25
+        planet_pops_upkeep_mult = 0.5
+    }
+}

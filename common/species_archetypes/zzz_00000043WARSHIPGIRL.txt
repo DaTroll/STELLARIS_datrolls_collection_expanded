@@ -1,0 +1,3 @@
+WARSHIPGIRL = {
+    uses_modifiers = no
+}

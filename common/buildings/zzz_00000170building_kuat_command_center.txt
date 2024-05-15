@@ -1,0 +1,8 @@
+building_kuat_command_center = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

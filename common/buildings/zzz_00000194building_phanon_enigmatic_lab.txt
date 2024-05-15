@@ -1,0 +1,8 @@
+building_phanon_enigmatic_lab = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

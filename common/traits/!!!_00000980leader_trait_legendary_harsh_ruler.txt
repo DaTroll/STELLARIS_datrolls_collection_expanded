@@ -1,0 +1,35 @@
+leader_trait_legendary_harsh_ruler = {
+    starting_ruler_trait = yes
+    allowed_origins = {
+        origin_legendary_leader
+    }
+    opposites = {
+        leader_trait_legendary_unfriendly
+        leader_trait_legendary_warmonger
+        leader_trait_legendary_dreamlike
+        leader_trait_legendary_too_open
+        leader_trait_legendary_hoplofobia
+        leader_trait_legendary_bad_meritocracy
+    }
+    allowed_ethics = {
+        ethic_authoritarian
+        ethic_fanatic_authoritarian
+    }
+    cost = -1
+    inline_script = {
+        script = trait/icon_negative_no_tiers
+        ICON = "GFX_leader_trait_legendary_authoritarian_bad"
+        COUNCIL = yes
+    }
+    custom_tooltip_with_modifiers = "leader_trait_legendary_harsh_ruler_tt"
+    councilor_modifier = {
+        planet_crime_add = 20
+    }
+    leader_class = {
+        official
+        commander
+        scientist
+    }
+    initial = no
+    randomized = no
+}

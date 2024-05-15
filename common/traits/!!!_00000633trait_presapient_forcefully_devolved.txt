@@ -1,0 +1,26 @@
+trait_presapient_forcefully_devolved = {
+    cost = 0
+    initial = no
+    sapient = no
+    species_possible_remove = {
+        can_remove_presapient_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    icon = "gfx/interface/icons/traits/trait_primitive.dds"
+    allowed_archetypes = {
+        BIOLOGICAL
+        PRESAPIENT
+        LITHOID
+    }
+    modifier = {
+        army_damage_mult = -0.1
+        planet_jobs_produces_mult = -0.1
+        pop_growth_speed = -0.1
+        species_leader_exp_gain = -0.2
+    }
+}

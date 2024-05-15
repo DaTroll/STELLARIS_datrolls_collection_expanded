@@ -1,0 +1,18 @@
+district_06_geothermal_generator = {
+    base_buildtime = 1
+    icon = district_city
+    desc = district_city_desc
+    is_capped_by_modifier = no
+    show_on_uncolonized = {
+        always = no
+    }
+    potential = {
+        always = no
+    }
+    resources = {
+        category = planet_districts_cities
+        upkeep = {
+            energy = 1
+        }
+    }
+}

@@ -1,0 +1,5 @@
+opinion_lone_drone = {
+    opinion = {
+        base = 50
+    }
+}

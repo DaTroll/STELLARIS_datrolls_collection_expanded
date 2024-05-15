@@ -1,0 +1,50 @@
+col_habitat_fortress = {
+    icon = GFX_colony_type_habitat_fortress
+    potential = {
+        OR = {
+            uses_district_set = habitat
+            uses_district_set = pdarchive
+        }
+        is_capital = no
+    }
+    planet_modifier = {
+        planet_building_stronghold_build_speed_mult = 0.25
+        planet_orbital_bombardment_damage = -0.1
+        army_defense_damage_mult = 0.2
+    }
+    weight_modifier = {
+        base = 300
+        modifier = {
+            factor = 3
+            has_designation = col_habitat_fortress
+        }
+        modifier = {
+            factor = 2
+            num_buildings = {
+                type = building_stronghold
+                value >= 3
+            }
+        }
+        modifier = {
+            factor = 2
+            num_buildings = {
+                type = building_fortress
+                value >= 2
+            }
+        }
+        modifier = {
+            factor = 3
+            num_buildings = {
+                type = building_stronghold
+                value >= 5
+            }
+        }
+        modifier = {
+            factor = 3
+            num_buildings = {
+                type = building_fortress
+                value >= 4
+            }
+        }
+    }
+}

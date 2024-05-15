@@ -1,0 +1,34 @@
+overlord_foundry_drone = {
+    can_set_priority = no
+    is_capped_by_modifier = yes
+    category = complex_drone
+    condition_string = DRONE_JOB_TRIGGER
+    building_icon = holding_offworld_foundry
+    icon = alloy_drone
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_drone_job
+    possible = {
+        can_think = yes
+    }
+    resources = {
+        category = planet_overlord_metallurgists
+        upkeep = {
+            minerals = 6
+        }
+    }
+    overlord_resources = {
+        category = planet_overlord_metallurgists
+        produces = {
+            alloys = 3
+        }
+    }
+    weight = {
+        weight = @overlord_job_weight
+    }
+}

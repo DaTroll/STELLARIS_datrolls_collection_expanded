@@ -1,0 +1,24 @@
+living_standard_servitude = {
+    potential = {
+        exists = from
+        from = {
+            is_gestalt = no
+        }
+        OR = {
+            has_trait = trait_mechanical
+            has_trait = trait_machine_unit
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = requires_servitude
+            has_citizenship_type = {
+                type = citizenship_robot_servitude
+                country = from
+            }
+        }
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}

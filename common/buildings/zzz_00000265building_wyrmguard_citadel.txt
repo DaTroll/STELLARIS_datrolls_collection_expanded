@@ -1,0 +1,8 @@
+building_wyrmguard_citadel = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

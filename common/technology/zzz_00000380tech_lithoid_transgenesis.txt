@@ -1,0 +1,76 @@
+tech_lithoid_transgenesis = {
+    cost = @tier5cost1
+    area = society
+    tier = 5
+    is_rare = yes
+    weight = @tier5weight1
+    category = {
+        biology
+    }
+    gateway = biological
+    prereqfor_desc = {
+        custom = {
+            title = "TECH_UNLOCK_LITHOID_GENETICS_TITLE"
+            desc = "TECH_UNLOCK_LITHOID_GENETICS_DESC"
+        }
+    }
+    weight_modifier = {
+        factor = 2
+        modifier = {
+            factor = 0
+            has_lithoids = no
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                has_active_tradition = tr_genetics_finish_extra_traits
+            }
+        }
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_species = {
+                    is_species_class = LITHOID
+                }
+            }
+        }
+        modifier = {
+            factor = 0.5
+            has_ethic = ethic_fanatic_xenophobe
+        }
+        modifier = {
+            factor = 0.75
+            has_ethic = ethic_xenophobe
+        }
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_xenophile
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_xenophile
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_lithoid_transgenesis
+        }
+    }
+    ai_weight = {
+        modifier = {
+            factor = 0.5
+            has_ethic = ethic_fanatic_xenophobe
+        }
+        modifier = {
+            factor = 0.75
+            has_ethic = ethic_xenophobe
+        }
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_xenophile
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_xenophile
+        }
+    }
+}

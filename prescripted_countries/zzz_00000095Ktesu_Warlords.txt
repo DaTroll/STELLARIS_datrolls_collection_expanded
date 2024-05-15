@@ -1,0 +1,84 @@
+"Ktesu Warlords" = {
+    key = "Ktesu Warlords"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "ART"
+        portrait = "art5"
+        species_name = {
+            key = "Ktesu"
+        }
+        species_plural = {
+            key = "Ktesus"
+        }
+        species_adjective = {
+            key = "Ktesian"
+        }
+        name_list = "ART3"
+        gender = not_set
+        trait = "trait_adaptive"
+        trait = "trait_quarrelsome"
+        trait = "trait_very_strong"
+        trait = "trait_slow_breeders"
+    }
+    name = {
+        key = "Ktesu Warlords"
+    }
+    adjective = {
+        key = "Ktesu"
+    }
+    authority = "auth_imperial"
+    government = "gov_bandit_kingdom"
+    planet_name = {
+        key = "Ktesu"
+    }
+    planet_class = "pc_continental"
+    system_name = {
+        key = "Ktesu"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "spherical"
+            file = "flag_spherical_14.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "orange"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Crumklac Inaxinirkis"
+            }
+        }
+        portrait = "art5"
+        texture = 0
+        attachment = 0
+        clothes = 0
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "default_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_barbaric_despoilers"
+        "civic_warrior_culture"
+    }
+    origin = "origin_default"
+}

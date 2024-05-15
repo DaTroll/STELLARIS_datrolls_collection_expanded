@@ -1,0 +1,29 @@
+@machineCost = 10000
+@machineTime = 7200
+terraform_link = {
+    to = "pc_machine"
+    from = "pc_barren_cold"
+    resources = {
+        category = terraforming
+        cost = {
+            energy = @machineCost
+        }
+    }
+    duration = @machineTime
+    potential = {
+        exists = owner
+        has_ascension_perk = ap_machine_worlds
+        from = {
+            has_modifier = terraforming_candidate
+        }
+    }
+    effect = {
+        from = {
+            reroll_deposits = yes
+            clear_blockers = yes
+        }
+    }
+    ai_weight = {
+        weight = 20
+    }
+}

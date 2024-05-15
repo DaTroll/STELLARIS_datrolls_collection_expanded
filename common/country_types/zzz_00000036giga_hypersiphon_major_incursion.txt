@@ -1,0 +1,5 @@
+giga_hypersiphon_major_incursion = {
+    ai = {
+        enabled = no
+    }
+}

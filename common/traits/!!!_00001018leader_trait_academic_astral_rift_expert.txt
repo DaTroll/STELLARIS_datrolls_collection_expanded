@@ -1,0 +1,60 @@
+leader_trait_academic_astral_rift_expert = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_academic_astral_rift_expert"
+        RARITY = free_or_veteran
+        COUNCIL = no
+        TIER = 1
+    }
+    modifier = {
+        ship_astral_rift_clues_add = 1
+    }
+    leader_potential_add = {
+        has_astral_planes_dlc = yes
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_scientist_scholar
+        }
+    }
+    leader_class = {
+        scientist
+    }
+    prerequisites = {
+        tech_rift_sphere
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_scholar
+        }
+        modifier = {
+            always = yes
+            factor = value:trait_selectable_weight_per_rift_completed
+        }
+        modifier = {
+            from = {
+                OR = {
+                    has_valid_civic = civic_dimensional_worship
+                    has_valid_civic = civic_corporate_dimensional_worship
+                }
+            }
+            factor = @synergy_weight_mult
+        }
+        modifier = {
+            from = {
+                is_hyperspace_specialty_empire = yes
+            }
+            factor = @synergy_weight_mult
+        }
+        modifier = {
+            from = {
+                has_origin = origin_riftworld
+            }
+            factor = @synergy_weight_mult
+        }
+    }
+}

@@ -1,0 +1,85 @@
+gpm_moon_miner = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_mineral_purification_plant
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = {
+            exists = owner
+        }
+    }
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 15
+            alloys = 5
+        }
+        upkeep = {
+            consumer_goods = 2
+        }
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|gpm_moon_miner|RESOURCE|minerals|
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+            NOT = {
+                has_slavery_type = {
+                    type = slavery_indentured
+                }
+            }
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = {
+                has_technology = tech_droid_workers
+            }
+        }
+        modifier = {
+            factor = 200
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = {
+                NOT = {
+                    has_technology = tech_droid_workers
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = 1.1
+            exists = planet
+            planet = {
+                has_available_jobs = "gpm_moon_miner"
+            }
+            exists = owner
+            owner = {
+                is_ai = yes
+                has_monthly_income = {
+                    resource = minerals
+                    value < 0
+                }
+            }
+        }
+    }
+}

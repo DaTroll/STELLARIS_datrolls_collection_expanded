@@ -1,0 +1,33 @@
+namespace = colony
+planet_event = {
+    id = colony.172
+    title = "colony.172.name"
+    desc = "colony.172.desc"
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_super_explosion
+    location = ROOT
+    trigger = {
+        has_modifier = wasteland_orbital_debris
+        has_planet_flag = wasteland_orbital_debris
+        NOT = {
+            has_planet_flag = wasteland_debris_impact
+        }
+    }
+    mean_time_to_happen = {
+        months = 240
+    }
+    immediate = {
+        hidden_effect = {
+            set_timed_planet_flag = {
+                flag = wasteland_debris_impact
+                days = 27000
+            }
+        }
+    }
+    option = {
+        name = colony.172.a
+        random_owned_pop = {
+            kill_pop = yes
+        }
+    }
+}

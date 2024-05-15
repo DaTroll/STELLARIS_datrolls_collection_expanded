@@ -1,0 +1,37 @@
+leader_trait_procrastinator = {
+    leader_trait_type = negative
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_procrastinator"
+        COUNCIL = no
+        TIER = 1
+    }
+    leader_potential_add = {
+        trait_is_crisis_faction_check = no
+    }
+    planet_modifier = {
+        planet_building_build_speed_mult = -0.1
+    }
+    sector_modifier = {
+        planet_building_build_speed_mult = -0.05
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    opposites = {
+        leader_trait_architectural_interest
+        leader_trait_architectural_interest_2
+    }
+    selectable_weight = {
+        weight = @class_negative_trait_weight
+        inline_script = paragon/governor_weight_mult
+        modifier = {
+            species = {
+                has_trait = trait_sedentary
+            }
+            factor = @species_trait_weight_mult
+        }
+    }
+}

@@ -1,0 +1,69 @@
+ap_world_shaper = {
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_technology_tech_climate_restoration"
+            has_technology = tech_climate_restoration
+        }
+        custom_tooltip = {
+            fail_text = "requires_ascension_perks_1"
+            num_ascension_perks > 0
+        }
+    }
+    modifier = {
+        terraforming_cost_mult = -0.25
+    }
+    on_enabled = {
+        custom_tooltip = "allow_gaia"
+    }
+    potential = {
+        NOT = {
+            has_ascension_perk = ap_world_shaper
+            has_origin = origin_pd_tree_of_life
+        }
+        NOT = {
+            has_authority = auth_hive_mind
+        }
+        OR = {
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+            has_valid_civic = civic_machine_servitor
+            has_valid_civic = civic_machine_assimilator
+        }
+    }
+    ai_weight = {
+        factor = 5
+        modifier = {
+            factor = 0.1
+            has_ascension_perk = ap_machine_worlds
+            has_ascension_perk = ap_hive_worlds
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                has_origin = origin_void_dwellers
+                has_origin = origin_shattered_ring
+                has_trait = trait_aquatic
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_pacifist
+                has_ethic = ethic_xenophobe
+            }
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_ethic = ethic_fanatic_pacifist
+                has_ethic = ethic_fanatic_xenophobe
+            }
+        }
+        modifier = {
+            factor = 100
+            has_origin = origin_life_seeded
+        }
+    }
+}

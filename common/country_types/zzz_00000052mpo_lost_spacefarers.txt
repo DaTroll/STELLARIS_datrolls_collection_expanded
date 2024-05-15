@@ -1,0 +1,5 @@
+mpo_lost_spacefarers = {
+    ai = {
+        enabled = no
+    }
+}

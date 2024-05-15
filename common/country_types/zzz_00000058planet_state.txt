@@ -1,0 +1,5 @@
+planet_state = {
+    ai = {
+        enabled = no
+    }
+}

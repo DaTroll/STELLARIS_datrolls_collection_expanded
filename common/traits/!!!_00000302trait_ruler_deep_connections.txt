@@ -1,0 +1,27 @@
+trait_ruler_deep_connections = {
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_deep_connections"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    councilor_modifier = {
+        country_councilor_influence_produces_add = 0.5
+    }
+    leader_trait_type = veteran
+    leader_potential_add = {
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_official_diplomacy_councilor
+        }
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

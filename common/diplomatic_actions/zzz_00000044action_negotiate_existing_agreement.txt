@@ -1,0 +1,13 @@
+action_negotiate_existing_agreement = {
+    icon = "GFX_action_negotiate_existing_agreement"
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    requires_actor_federation_leader = no
+    requires_recipient_federation_leader = no
+    diplo_view_acceptance_icon = no
+    potential = {
+        NOT = {
+            is_at_war_with = FROM
+        }
+    }
+}

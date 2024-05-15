@@ -1,0 +1,27 @@
+tech_strike_craft_2 = {
+    cost = @tier2cost3
+    area = engineering
+    tier = 2
+    ai_update_type = military
+    category = {
+        voidcraft
+    }
+    prerequisites = {
+        "tech_strike_craft_1"
+    }
+    weight = @tier2weight3
+    weight_modifier = {
+    }
+    ai_weight = {
+        modifier = {
+            factor = @favored_weapon_ai_tech_factor
+            is_preferred_weapons = weapon_type_strike_craft
+        }
+        modifier = {
+            factor = @disfavored_weapon_ai_tech_factor
+            NOT = {
+                is_preferred_weapons = weapon_type_strike_craft
+            }
+        }
+    }
+}

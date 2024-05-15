@@ -1,0 +1,134 @@
+namespace = anomaly
+ship_event = {
+    id = anomaly.4046
+    title = "anomaly.4045.name"
+    desc = "anomaly.4046.desc"
+    picture = GFX_evt_unspeakable_horror
+    show_sound = event_mystic_reveal
+    location = FROMFROM
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = story.4
+                    days = 30
+                }
+            }
+        }
+        fromfrom = {
+            add_deposit = d_ancient_one
+            add_modifier = {
+                modifier = "hostile_environment"
+                days = -1
+            }
+        }
+        owner = {
+            if = {
+                limit = {
+                    has_modifier = media_coverage_negative_high
+                }
+                remove_modifier = "media_coverage_negative_high"
+                add_modifier = {
+                    modifier = media_coverage_negative_high
+                    days = 7200
+                }
+            }
+            if = {
+                limit = {
+                    has_modifier = media_coverage_negative_medium
+                }
+                remove_modifier = "media_coverage_negative_medium"
+                add_modifier = {
+                    modifier = media_coverage_negative_high
+                    days = 7200
+                }
+            }
+            if = {
+                limit = {
+                    has_modifier = media_coverage_negative_low
+                }
+                remove_modifier = "media_coverage_negative_low"
+                add_modifier = {
+                    modifier = media_coverage_negative_medium
+                    days = 7200
+                }
+            }
+            if = {
+                limit = {
+                    NOR = {
+                        has_modifier = media_coverage_positive_high
+                        has_modifier = media_coverage_positive_medium
+                        has_modifier = media_coverage_positive_low
+                        has_modifier = media_coverage_negative_low
+                        has_modifier = media_coverage_negative_medium
+                        has_modifier = media_coverage_negative_high
+                    }
+                }
+                add_modifier = {
+                    modifier = media_coverage_negative_low
+                    days = 7200
+                }
+            }
+            if = {
+                limit = {
+                    has_modifier = media_coverage_positive_low
+                }
+                remove_modifier = "media_coverage_positive_low"
+            }
+            if = {
+                limit = {
+                    has_modifier = media_coverage_positive_medium
+                }
+                remove_modifier = "media_coverage_positive_medium"
+                add_modifier = {
+                    modifier = media_coverage_positive_low
+                    days = 7200
+                }
+            }
+            if = {
+                limit = {
+                    has_modifier = media_coverage_positive_high
+                }
+                remove_modifier = "media_coverage_positive_high"
+                add_modifier = {
+                    modifier = media_coverage_positive_medium
+                    days = 7200
+                }
+            }
+        }
+    }
+    option = {
+        name = "anomaly.4046.a"
+        hidden_effect = {
+            ship_event = {
+                id = anomaly.4047
+            }
+        }
+        hidden_effect = {
+            fromfrom = {
+                remove_modifier = "hostile_environment"
+            }
+        }
+    }
+    option = {
+        name = "anomaly.4046.b"
+        hidden_effect = {
+            fromfrom = {
+                remove_deposit = d_ancient_one
+            }
+            ship_event = {
+                id = anomaly.4048
+            }
+        }
+    }
+    option = {
+        name = "anomaly.4046.c"
+        custom_tooltip = "anomaly.4046.c.tooltip_new"
+        hidden_effect = {
+            fromfrom = {
+                add_deposit = d_ancient_one
+            }
+        }
+    }
+}

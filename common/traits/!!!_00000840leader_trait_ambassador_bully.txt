@@ -1,0 +1,28 @@
+leader_trait_ambassador_bully = {
+    leader_trait_type = veteran
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_ambassador_bully"
+        RARITY = free_or_veteran
+        COUNCIL = yes
+        TIER = 1
+    }
+    leader_potential_add = {
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_official_diplomacy_councilor
+        }
+    }
+    councilor_modifier = {
+        damage_vs_rival_mult = 0.025
+        rivalries_unity_produces_add = 2.5
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = {
+        inline_script = paragon/subclass_free_trait_weight
+        inline_script = paragon/council_weight_mult
+    }
+}

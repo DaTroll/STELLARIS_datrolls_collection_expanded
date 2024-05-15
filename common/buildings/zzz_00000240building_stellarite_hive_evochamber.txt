@@ -1,0 +1,8 @@
+building_stellarite_hive_evochamber = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

@@ -1,0 +1,63 @@
+tech_node_reformatting_3 = {
+    cost = @tier4cost3
+    area = society
+    tier = 4
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_node_reformatting_2"
+    }
+    weight = @tier4weight3
+    is_rare = yes
+    potential = {
+        is_machine_empire = yes
+    }
+    modifier = {
+        restored_node_bonus_skill = 2
+        councilor_skill_add = 1
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill < 6
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 7
+            }
+        }
+        modifier = {
+            factor = 1.5
+            any_owned_leader = {
+                is_councilor = yes
+                is_ruler = no
+                has_skill >= 9
+            }
+        }
+        modifier = {
+            factor = 0.25
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_statecraft
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_node_reformatting_3
+        }
+    }
+    ai_weight = {
+    }
+}

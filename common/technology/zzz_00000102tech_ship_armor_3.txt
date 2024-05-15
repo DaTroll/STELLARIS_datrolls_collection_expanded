@@ -1,0 +1,25 @@
+tech_ship_armor_3 = {
+    area = engineering
+    cost = @tier2cost2
+    tier = 2
+    category = {
+        materials
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_ship_armor_2"
+    }
+    weight = @tier2weight2
+    gateway = infrastructure
+    weight_modifier = {
+        factor = 1.25
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = {
+                TYPE = bulwark
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

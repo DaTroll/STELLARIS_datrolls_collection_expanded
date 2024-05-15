@@ -1,0 +1,28 @@
+leader_trait_sadistic_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_sadistic"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_sadistic"
+        COUNCIL = no
+        TIER = 2
+    }
+    planet_modifier = {
+        planet_stability_add = -10
+    }
+    sector_modifier = {
+        planet_stability_add = -5
+    }
+    leader_class = {
+        commander
+        official
+        scientist
+    }
+    opposites = {
+        leader_trait_righteous
+        leader_trait_righteous_2
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

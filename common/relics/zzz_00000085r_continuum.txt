@@ -1,0 +1,186 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+@continuum_active_reward_months = 12
+r_continuum = {
+    activation_duration = @triumph_duration
+    portrait = "GFX_continuum"
+    sound = "relic_activation_continuum"
+    resources = {
+        category = relics
+        cost = {
+            unity = @activation_cost
+        }
+    }
+    ai_weight = {
+        weight = 10
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = energy
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = minerals
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = food
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = alloys
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = consumer_goods
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = exotic_gases
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = rare_crystals
+            }
+        }
+        modifier = {
+            add = 10
+            has_negative_income_with_stockpile = {
+                RESOURCE = volatile_motes
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = energy
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = minerals
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = food
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = alloys
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = consumer_goods
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = exotic_gases
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = rare_crystals
+            }
+        }
+        modifier = {
+            add = 100
+            has_actual_deficit = {
+                RESOURCE = volatile_motes
+            }
+        }
+    }
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        country_energy_produces_mult = 0.05
+        country_minerals_produces_mult = 0.05
+        country_food_produces_mult = 0.05
+        country_alloys_produces_mult = 0.05
+        country_consumer_goods_produces_mult = 0.05
+        country_physics_tech_research_speed = 0.05
+        country_society_tech_research_speed = 0.05
+        country_engineering_tech_research_speed = 0.05
+    }
+    score = 3000
+    active_effect = {
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = energy
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = minerals
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = food
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = alloys
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = consumer_goods
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = physics_research
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = society_research
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = engineering_research
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = exotic_gases
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = rare_crystals
+            VALUE = @continuum_active_reward_months
+        }
+        add_monthly_resource_mult_if_produced = {
+            RESOURCE = volatile_motes
+            VALUE = @continuum_active_reward_months
+        }
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = {
+                modifier = "relic_activation_cooldown"
+                days = @triumph_duration
+            }
+        }
+    }
+    possible = {
+        inline_script = {
+            script = relics/activation_checks
+            RELIC = r_continuum
+        }
+    }
+}

@@ -1,0 +1,59 @@
+leader_trait_collective_wisdom = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_collective_wisdom"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    leader_potential_add = {
+        OR = {
+            has_paragon_dlc = no
+            has_trait = subclass_scientist_scholar
+        }
+    }
+    modifier = {
+        ship_archaeological_site_excavation_speed_mult = -0.15
+    }
+    triggered_self_modifier = {
+        potential = {
+            is_currently_excavating_site = yes
+        }
+        leader_scientists_society_research_produces_add = @trait_collective_wisdom_soc_amt
+    }
+    triggered_self_modifier = {
+        potential = {
+            has_ancrel = yes
+            is_currently_excavating_site = yes
+        }
+        leader_scientists_minor_artifacts_produces_add = @trait_collective_wisdom_ma_amt
+    }
+    triggered_desc = {
+        trigger = {
+            has_ancrel = no
+            is_currently_excavating_site = no
+        }
+        text = leader_trait_collective_wisdom_effect
+    }
+    triggered_desc = {
+        trigger = {
+            has_ancrel = yes
+            is_currently_excavating_site = no
+        }
+        text = leader_trait_collective_wisdom_ancrel_effect
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_scholar
+        }
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

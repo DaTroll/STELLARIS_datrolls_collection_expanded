@@ -1,0 +1,17 @@
+tech_shield_rechargers_1 = {
+    area = physics
+    cost = @tier2cost3
+    tier = 2
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    prerequisites = {
+        "tech_shields_3"
+    }
+    weight = @tier2weight3
+    weight_modifier = {
+    }
+    ai_weight = {
+    }
+}

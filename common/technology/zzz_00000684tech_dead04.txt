@@ -1,0 +1,26 @@
+tech_dead04 = {
+    cost = @tier4cost2
+    area = engineering
+    tier = 4
+    category = {
+        industry
+    }
+    weight = 0
+    is_rare = yes
+    is_reverse_engineerable = no
+    potential = {
+        any_owned_planet = {
+            OR = {
+                is_planet_class = pc_technoorganic
+                is_planet_class = pc_pd_techno_arc
+            }
+        }
+    }
+    modifier = {
+        planet_jobs_robotic_produces_mult = 0.1
+        planet_researchers_engineering_research_produces_mult = 0.25
+    }
+    weight_modifier = {
+        factor = 0
+    }
+}

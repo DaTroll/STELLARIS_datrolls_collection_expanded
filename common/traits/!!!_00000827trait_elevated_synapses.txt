@@ -1,0 +1,76 @@
+trait_elevated_synapses = {
+    host_has_dlc = "Toxoids Species Pack"
+    cost = 2
+    potential_crossbreeding_chance = 1
+    allowed_archetypes = {
+        BIOLOGICAL
+        LITHOID
+    }
+    allowed_origins = {
+        origin_overtuned
+    }
+    randomized = no
+    species_potential_add = {
+        exists = from
+        from = {
+            has_origin = origin_overtuned
+        }
+    }
+    species_possible_remove = {
+        can_remove_overtuned_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    custom_tooltip_with_modifiers = elevated_synapses_tooltip
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_edict = damn_the_consequences
+                }
+            }
+        }
+        modifier = {
+            planet_jobs_physics_research_produces_mult = 0.2
+            planet_jobs_society_research_produces_mult = 0.2
+            planet_jobs_engineering_research_produces_mult = 0.2
+        }
+    }
+    triggered_pop_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_edict = damn_the_consequences
+            }
+        }
+        modifier = {
+            planet_jobs_physics_research_produces_mult = 0.4
+            planet_jobs_society_research_produces_mult = 0.4
+            planet_jobs_engineering_research_produces_mult = 0.4
+        }
+    }
+    modifier = {
+        leader_lifespan_add = -30
+        negative_leader_traits_species = -1
+        leaders_upkeep_mult = -0.25
+    }
+    assembly_score = {
+        modifier = {
+            add = 2.5
+            from = {
+                has_research_designation = yes
+            }
+        }
+        modifier = {
+            add = 2.5
+            from = {
+                has_building = building_order_keep
+            }
+        }
+    }
+    slave_cost = {
+        energy = 2000
+    }
+}

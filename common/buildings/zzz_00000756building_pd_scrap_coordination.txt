@@ -1,0 +1,119 @@
+building_pd_scrap_coordination = {
+    base_buildtime = @b3_time
+    base_cap_amount = 1
+    empire_limit = 1
+    category = research
+    potential = {
+        NOT = {
+            has_modifier = resort_colony
+        }
+        exists = owner
+        text = EMPIRE_UNIQUE_BUILDING
+        owner = {
+            NOT = {
+                has_country_flag = building_pd_scrap_coordination
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            has_technology = tech_pd_scrapyard_coordination
+        }
+        has_modifier = slave_colony
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+        }
+        upkeep = {
+            energy = @b3_upkeep
+        }
+    }
+    planet_modifier = {
+        planet_jobs_engineering_research_produces_mult = 0.25
+    }
+    country_modifier = {
+        starbase_shipyard_build_speed_mult = 0.1
+        starbase_shipyard_build_cost_mult = -0.1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_head_researcher_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+        }
+        job_brain_drone_add = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+        }
+        job_calculator_add = 2
+    }
+    prerequisites = {
+        "tech_pd_scrapyard_coordination"
+    }
+    ai_resource_production = {
+        trigger = {
+            always = yes
+        }
+        physics_research = 3
+        society_research = 3
+        engineering_research = 3
+    }
+    ai_resource_production = {
+        trigger = {
+            planet_resource_compare = {
+                resource = physics_research
+                value >= 20
+            }
+        }
+        physics_research = 3
+        society_research = 3
+        engineering_research = 3
+    }
+    ai_resource_production = {
+        trigger = {
+            planet_resource_compare = {
+                resource = physics_research
+                value >= 40
+            }
+        }
+        physics_research = 3
+        society_research = 3
+        engineering_research = 3
+    }
+    on_built = {
+        owner = {
+            set_country_flag = building_pd_scrap_coordination
+        }
+    }
+    on_destroy = {
+        owner = {
+            if = {
+                limit = {
+                    has_country_flag = building_pd_scrap_coordination
+                }
+                remove_country_flag = building_pd_scrap_coordination
+            }
+        }
+    }
+}

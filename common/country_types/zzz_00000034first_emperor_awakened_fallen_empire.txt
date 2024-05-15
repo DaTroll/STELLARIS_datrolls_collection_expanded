@@ -1,0 +1,5 @@
+first_emperor_awakened_fallen_empire = {
+    ai = {
+        enabled = no
+    }
+}

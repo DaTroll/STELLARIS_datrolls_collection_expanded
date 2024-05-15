@@ -1,0 +1,91 @@
+"Gork Space" = {
+    key = "Gork Space"
+    ship_prefix = {
+        key = "GSC"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_08"
+        species_name = {
+            key = "Gork"
+        }
+        species_plural = {
+            key = "Gorks"
+        }
+        species_adjective = {
+            key = "Gork"
+        }
+        species_bio = "Gork: litteraly translated by divided.                                             The Gork people are greatly divided and scared of everyone and everything. They don't even trust their own families and friends. Betrayal and Plots have been routine for 4 generations now, sicne the fall of the great \"Dak'na'Sum\" who unified Gork'Ta under his Iron rule. The Gork have lost he will and vision of their Civilisation. They are now divided and following their own interest. The current ruler is a pupet to his advisors, which are no more than pupets of their Wifes and Lovers. Will one be able to unite this specie and bring Order and Safety to their society? Or will they know -yet another- Civil War?"
+        name_list = "HUM1"
+        gender = not_set
+        trait = "trait_strong"
+        trait = "trait_deviants"
+        trait = "trait_decadent"
+        trait = "trait_resilient"
+        trait = "trait_ingenious"
+    }
+    name = {
+        key = "Gork Space"
+    }
+    adjective = {
+        key = "Gork"
+    }
+    authority = "auth_dictatorial"
+    government = "gov_bandit_kingdom"
+    advisor_voice_type = "l_xenophobe"
+    planet_name = {
+        key = "Gork'Ta"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Gork'Ta'Su"
+    }
+    initializer = ""
+    graphical_culture = "mammalian_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_10.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "stripe.dds"
+        }
+        colors = {
+            "black"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Jondru"
+            }
+        }
+        portrait = "humanoid_hp_08"
+        texture = 0
+        attachment = 0
+        clothes = 4
+        ruler_title = {
+            key = "Dictator"
+        }
+        trait = "trait_ruler_charismatic"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_militarist"
+    civics = {
+        "civic_barbaric_despoilers"
+        "civic_police_state"
+    }
+    origin = "origin_doomsday"
+}

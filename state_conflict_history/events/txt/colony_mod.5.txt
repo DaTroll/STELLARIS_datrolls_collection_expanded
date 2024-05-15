@@ -1,0 +1,53 @@
+namespace = colony_mod
+namespace = colony_fed
+planet_event = {
+    id = colony_mod.5
+    title = "colony_mod.5.name"
+    desc = "colony_mod.5.desc"
+    picture = GFX_evt_in_the_dark
+    show_sound = event_air_raid_siren
+    location = ROOT
+    trackable = yes
+    pre_triggers = {
+        has_owner = yes
+        is_homeworld = no
+        original_owner = yes
+        has_ground_combat = no
+        is_capital = no
+    }
+    trigger = {
+        owner = {
+            is_ai = no
+        }
+        owner = {
+            NOT = {
+                has_ethic = ethic_gestalt_consciousness
+            }
+        }
+        has_modifier = "atmospheric_hallucinogen"
+        NOT = {
+            has_planet_flag = atmospheric_hallucinogen_colony_flag
+        }
+        num_pops > 0
+    }
+    immediate = {
+        set_planet_flag = atmospheric_hallucinogen_colony_flag
+    }
+    is_triggered_only = yes
+    option = {
+        name = colony_mod.5.a
+        enable_special_project = {
+            name = "hallucinogen_removal"
+            location = this
+            owner = root
+        }
+    }
+    option = {
+        name = colony_mod.5.b
+        owner = {
+            add_resource = {
+                unity = -200
+            }
+        }
+    }
+}

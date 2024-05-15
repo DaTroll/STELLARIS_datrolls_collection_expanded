@@ -1,0 +1,18 @@
+leader_trait_dimensional_stutter = {
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_dimensional_stutter"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        ship_speed_mult = 0.2
+    }
+    leader_class = {
+        commander
+    }
+    initial = no
+    randomized = no
+}

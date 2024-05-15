@@ -1,0 +1,8 @@
+building_lily_construction_group = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

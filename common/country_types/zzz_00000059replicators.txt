@@ -1,0 +1,5 @@
+replicators = {
+    ai = {
+        enabled = no
+    }
+}

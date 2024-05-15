@@ -1,0 +1,32 @@
+leader_trait_xeno_cataloger = {
+    leader_trait_type = destiny
+    inline_script = {
+        script = trait/icon
+        CLASS = scientist
+        ICON = "GFX_leader_trait_generator_focus"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        science_ship_survey_speed = 0.5
+        ship_speed_mult = 0.5
+        ship_anomaly_generation_chance_mult = 0.15
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_trait = subclass_scientist_explorer
+    }
+    leader_class = {
+        scientist
+    }
+    selectable_weight = {
+        weight = @subclass_trait_weight
+        inline_script = paragon/pilot_weight_mult
+        inline_script = {
+            script = paragon/subclass_weight_mult
+            SUBCLASS = scientist_explorer
+        }
+    }
+    background_icon = "GFX_leader_background_destiny_1"
+}

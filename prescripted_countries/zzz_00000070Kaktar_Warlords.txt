@@ -1,0 +1,97 @@
+"Kaktar Warlords" = {
+    key = "Kaktar Warlords"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "REP"
+        portrait = "rep14"
+        species_name = {
+            key = "Kaktar"
+        }
+        species_plural = {
+            key = "Kaktars"
+        }
+        species_adjective = {
+            key = "Kaktaran"
+        }
+        species_bio = "Once a kaktar has build his home he will never leave it again.                                                                                  A heavy Crust, a strong personality, a warrior culture. Their Kakter, Emperor, is and has to be the strongest to be. Half a century earlier the Kaktar came to pwer and united all the Kaktar Warlords but didn't manage to make it centralized.                                                      Their resilience to leave their homes has caused many civilian casaulties during war, even civilians would regulary pick up arms against outside intruders in order to protect their homes. "
+        name_list = "REP2"
+        gender = not_set
+        trait = "trait_resilient"
+        trait = "trait_very_strong"
+        trait = "trait_slow_learners"
+        trait = "trait_sedentary"
+    }
+    name = {
+        key = "Kaktar Warlords"
+    }
+    adjective = {
+        key = "Kaktaran"
+    }
+    authority = "auth_imperial"
+    government = "gov_martial_empire"
+    planet_name = {
+        key = "Kakt"
+    }
+    planet_class = "pc_desert"
+    system_name = {
+        key = "Kakto"
+    }
+    initializer = ""
+    graphical_culture = "reptilian_01"
+    city_graphical_culture = "reptilian_01"
+    empire_flag = {
+        icon = {
+            category = "pointy"
+            file = "flag_pointy_5.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "pattern_01.dds"
+        }
+        colors = {
+            "beige"
+            "yellow"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kaliktar"
+            }
+        }
+        portrait = "rep14"
+        texture = 1
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "Kaktar"
+        }
+        heir_title = {
+            key = "Kakte"
+        }
+        ruler_title_female = {
+            key = "Kakter"
+        }
+        heir_title_female = {
+            key = "Kakta"
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "general"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_fanatic_purifier_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_warrior_culture"
+        "civic_feudal_realm"
+    }
+    origin = "origin_shoulders_of_giants"
+}

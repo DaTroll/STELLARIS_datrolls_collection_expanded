@@ -1,0 +1,20 @@
+leader_trait_overseer_3 = {
+    leader_trait_type = veteran
+    replace_traits = {
+        "leader_trait_overseer_2"
+    }
+    inline_script = {
+        script = trait/icon
+        CLASS = official
+        ICON = "GFX_leader_trait_overseer"
+        RARITY = veteran
+        COUNCIL = yes
+        TIER = 3
+    }
+    councilor_modifier = {
+        monthly_loyalty_from_subjects = 0.5
+    }
+    leader_class = {
+        official
+    }
+}

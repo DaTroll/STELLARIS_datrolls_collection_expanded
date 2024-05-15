@@ -1,0 +1,15 @@
+tech_mem_outsiders_flux_campouphlage = {
+    area = physics
+    cost = @tier3cost3
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = yes
+    category = {
+        field_manipulation
+    }
+    ai_update_type = all
+    weight = 0
+    weight_modifier = {
+        factor = 0
+    }
+}

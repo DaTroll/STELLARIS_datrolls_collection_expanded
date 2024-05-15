@@ -1,0 +1,46 @@
+namespace = colony
+planet_event = {
+    id = colony.171
+    title = "colony.171.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = colony.171.desc
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = colony.171.desc.mach
+    }
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_ship_explosion
+    location = ROOT
+    trigger = {
+        has_planet_flag = wasteland_orbital_debris
+        has_modifier = wasteland_orbital_debris
+        NOT = {
+            has_planet_flag = wasteland_freighter_crash
+        }
+    }
+    mean_time_to_happen = {
+        months = 240
+    }
+    immediate = {
+        set_timed_planet_flag = {
+            flag = wasteland_freighter_crash
+            days = 19800
+        }
+    }
+    option = {
+        name = colony.171.a
+        add_deposit = d_crater
+    }
+}

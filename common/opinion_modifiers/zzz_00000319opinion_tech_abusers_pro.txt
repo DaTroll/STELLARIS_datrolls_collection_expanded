@@ -1,0 +1,5 @@
+opinion_tech_abusers_pro = {
+    opinion = {
+        base = 300
+    }
+}

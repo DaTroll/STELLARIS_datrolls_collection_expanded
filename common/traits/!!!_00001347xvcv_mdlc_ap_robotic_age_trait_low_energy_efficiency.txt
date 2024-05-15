@@ -1,0 +1,27 @@
+xvcv_mdlc_ap_robotic_age_trait_low_energy_efficiency = {
+    cost = -2
+    initial = no
+    randomized = no
+    allowed_archetypes = {
+        ROBOT
+    }
+    icon = "gfx/interface/icons/traits/trait_cyborg_power_intensive.dds"
+    species_potential_add = {
+        exists = from
+        from = {
+            NOT = {
+                has_authority = auth_machine_intelligence
+            }
+            has_ascension_perk = xvcv_mdlc_ap_robotic_age
+        }
+    }
+    modifier = {
+        pop_category_drones_energy_upkeep_add = 0.5
+        pop_category_rulers_energy_upkeep_add = 0.5
+        pop_category_specialists_energy_upkeep_add = 0.5
+        pop_category_workers_energy_upkeep_add = 0.5
+    }
+    slave_cost = {
+        energy = 150
+    }
+}

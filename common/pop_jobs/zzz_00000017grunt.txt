@@ -1,0 +1,11 @@
+grunt = {
+    category = worker
+    resources = {
+    }
+    possible = {
+        always = no
+    }
+    weight = {
+        weight = 0
+    }
+}

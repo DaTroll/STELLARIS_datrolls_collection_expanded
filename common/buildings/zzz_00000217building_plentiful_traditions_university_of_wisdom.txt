@@ -1,0 +1,8 @@
+building_plentiful_traditions_university_of_wisdom = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

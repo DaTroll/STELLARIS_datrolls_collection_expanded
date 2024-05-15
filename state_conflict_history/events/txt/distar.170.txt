@@ -1,0 +1,126 @@
+namespace = distar
+ship_event = {
+    id = distar.170
+    title = "distar.170.name"
+    desc = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        text = "distar.170.desc"
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        text = "distar.170.desc.machi"
+    }
+    picture = GFX_evt_alien_nature
+    show_sound = event_alien_nature
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            set_country_flag = found_presapients
+        }
+        owner = {
+            country_event = {
+                id = tutorial.57
+                days = 5
+            }
+        }
+        owner = {
+            country_event = {
+                id = story.4
+                days = 30
+            }
+        }
+        from = {
+            create_species = {
+                name = random
+                class = "PRE_REP"
+                portrait = random
+                traits = {
+                    trait = random_presapient_trait
+                }
+                homeworld = FROM
+                sapient = no
+            }
+            while = {
+                count = 3
+                create_pop = {
+                    species = last_created_species
+                }
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+                is_homicidal = no
+                any_owned_pop = {
+                    species = {
+                        NOR = {
+                            has_trait = trait_cybernetic
+                            has_trait = trait_mechanical
+                            has_trait = trait_machine_unit
+                        }
+                    }
+                }
+            }
+        }
+        name = "distar.170.a"
+        from = {
+            enable_special_project = {
+                name = "BRAINSLUG_PROJECT"
+                location = this
+                owner = root.owner
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                NOT = {
+                    has_authority = auth_machine_intelligence
+                }
+            }
+        }
+        name = NOTIME
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier4researchreward
+                min = @tier4researchmin
+                max = @tier4researchmax
+            }
+        }
+    }
+    option = {
+        trigger = {
+            owner = {
+                has_authority = auth_machine_intelligence
+            }
+        }
+        name = "distar.170.machi"
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier4researchreward
+                min = @tier4researchmin
+                max = @tier4researchmax
+            }
+        }
+    }
+    after = {
+        small_artifact_reward = yes
+    }
+}

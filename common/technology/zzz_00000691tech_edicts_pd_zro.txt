@@ -1,0 +1,54 @@
+tech_edicts_pd_zro = {
+    cost = @tier3cost1
+    area = engineering
+    tier = 3
+    category = {
+        materials
+    }
+    prerequisites = {
+        "tech_mine_zro"
+    }
+    weight = @tier3weight1
+    is_rare = yes
+    is_reverse_engineerable = no
+    start_tech = no
+    potential = {
+        any_owned_planet = {
+            is_planet_class = pc_pd_zro
+        }
+    }
+    prereqfor_desc = {
+        ship = {
+            title = "TECH_PD_ZRO_EDICTS_TITLE"
+            desc = "TECH_PD_ZRO_EDICTS_DESC"
+        }
+    }
+    weight_modifier = {
+        factor = 10
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_planet = {
+                    is_planet_class = pc_pd_zro
+                    is_colony = yes
+                }
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+    ai_weight = {
+        factor = @strategic_resource_ai_tech_factor
+        modifier = {
+            factor = 1.25
+            has_trait_in_council = {
+                TRAIT = leader_trait_expertise_industry
+            }
+        }
+    }
+}

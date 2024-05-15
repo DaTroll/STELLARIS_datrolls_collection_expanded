@@ -1,0 +1,24 @@
+leader_trait_slothful_2 = {
+    leader_trait_type = negative
+    replace_traits = {
+        "leader_trait_slothful"
+    }
+    inline_script = {
+        script = trait/icon_negative
+        ICON = "GFX_leader_trait_slothful"
+        COUNCIL = no
+        TIER = 2
+    }
+    army_modifier = {
+        army_health = -0.3
+    }
+    leader_class = {
+        commander
+    }
+    opposites = {
+        leader_trait_hardy
+        leader_trait_hardy_2
+        leader_trait_hardy_3
+    }
+    selectable_weight = @tier2_negative_trait_weight
+}

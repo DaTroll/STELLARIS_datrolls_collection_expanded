@@ -1,0 +1,109 @@
+building_hyper_entertainment_forum = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = amenity
+    potential = {
+        has_building = building_holo_theatres
+    }
+    allow = {
+        has_upgraded_capital = yes
+        is_occupied_flag = no
+        owner = {
+            NOT = {
+                has_valid_civic = civic_dystopian_society
+            }
+        }
+        OR = {
+            owner = {
+                NOT = {
+                    is_ai = yes
+                }
+            }
+            AND = {
+                NOT = {
+                    has_available_jobs = entertainer
+                }
+                NOT = {
+                    has_forbidden_jobs = entertainer
+                }
+            }
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        OR = {
+            owner = {
+                has_valid_civic = civic_dystopian_society
+            }
+            owner = {
+                is_regular_empire = no
+            }
+            has_modifier = slave_colony
+            AND = {
+                owner = {
+                    is_ai = yes
+                }
+                free_amenities > 30
+                years_passed > 25
+            }
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_warrior_culture
+                }
+            }
+        }
+        modifier = {
+            job_entertainer_add = @b2_jobs
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_warrior_culture
+            }
+        }
+        modifier = {
+            job_duelist_add = @b2_jobs
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+            exotic_gases = @b2_rare_cost
+        }
+        upkeep = {
+            energy = @b2_upkeep
+            exotic_gases = @b2_rare_upkeep
+        }
+    }
+    prerequisites = {
+        "tech_hyper_entertainment_forum"
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NOT = {
+                    has_valid_civic = civic_warrior_culture
+                }
+            }
+        }
+        text = job_entertainer_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_warrior_culture
+            }
+        }
+        text = job_duelist_effect_desc
+    }
+}

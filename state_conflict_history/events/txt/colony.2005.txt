@@ -1,0 +1,210 @@
+namespace = colony
+namespace = colony
+planet_event = {
+    id = colony.2005
+    title = colony.2005.name
+    desc = colony.2005.desc
+    picture = GFX_evt_ocean
+    show_sound = event_sensor_ping
+    location = root
+    trackable = yes
+    trigger = {
+        has_owner = yes
+        original_owner = yes
+        is_homeworld = no
+        owner = {
+            has_technology = tech_destroyers
+            NOT = {
+                has_country_flag = colony_submerged_cruiser
+            }
+        }
+        has_ground_combat = no
+        is_occupied_flag = no
+        num_pops > 0
+        is_capital = no
+        NOT = {
+            has_planet_flag = colony_event
+        }
+        OR = {
+            is_continental = yes
+            is_tropical = yes
+            is_gaia = yes
+            is_ocean = yes
+            is_planet_class = pc_gaia
+            is_planet_class = pc_hot_gaia
+            is_planet_class = pc_cold_gaia
+            is_pd_continental = yes
+            is_pd_tropical = yes
+            is_pd_ocean = yes
+        }
+    }
+    is_triggered_only = yes
+    immediate = {
+        set_planet_flag = colony_event
+        owner = {
+            set_country_flag = colony_submerged_cruiser
+        }
+    }
+    option = {
+        name = colony.2005.a
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_materialist
+                    has_ethic = ethic_materialist
+                }
+            }
+        }
+        enable_special_project = {
+            name = "ANCIENT_OCEAN_SHIP"
+            owner = root
+            location = root
+        }
+    }
+    option = {
+        name = colony.2005.a
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_materialist
+                    has_ethic = ethic_materialist
+                }
+            }
+        }
+        enable_special_project = {
+            name = "ANCIENT_OCEAN_SHIP"
+            owner = root
+            location = root
+        }
+    }
+    option = {
+        name = colony.2005.b
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+                NOT = {
+                    has_technology = tech_destroyers
+                }
+            }
+        }
+        owner = {
+            if = {
+                limit = {
+                    has_tech_option = tech_destroyers
+                }
+                add_tech_progress = {
+                    tech = tech_destroyers
+                    progress = 0.6
+                }
+            }
+            else = {
+                add_research_option = tech_destroyers
+                add_tech_progress = {
+                    tech = tech_destroyers
+                    progress = 0.2
+                }
+            }
+        }
+    }
+    option = {
+        name = colony.2005.b
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+                has_technology = tech_destroyers
+                NOT = {
+                    has_technology = tech_cruisers
+                }
+            }
+        }
+        owner = {
+            if = {
+                limit = {
+                    has_tech_option = tech_cruisers
+                }
+                add_tech_progress = {
+                    tech = tech_cruisers
+                    progress = 0.6
+                }
+            }
+            else = {
+                add_research_option = tech_cruisers
+                add_tech_progress = {
+                    tech = tech_cruisers
+                    progress = 0.2
+                }
+            }
+        }
+    }
+    option = {
+        name = colony.2005.b
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+                NOT = {
+                    has_technology = tech_destroyers
+                }
+            }
+        }
+        owner = {
+            if = {
+                limit = {
+                    has_tech_option = tech_destroyers
+                }
+                add_tech_progress = {
+                    tech = tech_destroyers
+                    progress = 0.6
+                }
+            }
+            else = {
+                add_research_option = tech_destroyers
+                add_tech_progress = {
+                    tech = tech_destroyers
+                    progress = 0.2
+                }
+            }
+        }
+    }
+    option = {
+        name = colony.2005.b
+        trigger = {
+            owner = {
+                NOR = {
+                    has_ethic = ethic_fanatic_spiritualist
+                    has_ethic = ethic_spiritualist
+                }
+                has_technology = tech_destroyers
+                NOT = {
+                    has_technology = tech_cruisers
+                }
+            }
+        }
+        owner = {
+            if = {
+                limit = {
+                    has_tech_option = tech_cruisers
+                }
+                add_tech_progress = {
+                    tech = tech_cruisers
+                    progress = 0.6
+                }
+            }
+            else = {
+                add_research_option = tech_cruisers
+                add_tech_progress = {
+                    tech = tech_cruisers
+                    progress = 0.2
+                }
+            }
+        }
+    }
+}

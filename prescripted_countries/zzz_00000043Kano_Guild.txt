@@ -1,0 +1,87 @@
+"Kano Guild" = {
+    key = "Kano Guild"
+    ship_prefix = {
+        key = "ISS"
+    }
+    species = {
+        class = "HUM"
+        portrait = "humanoid_hp_13"
+        species_name = {
+            key = "Kano"
+        }
+        species_plural = {
+            key = "Kanos"
+        }
+        species_adjective = {
+            key = "Kanoi"
+        }
+        species_bio = "\"My eye for the guild\" -An old Kano saying.                                There are not many things a Kano does like, but one thing they love are their guilds. The guilds have been the true masters of society for many rotations, some say that the guilds even created the stars. The Kano are growing up in guilds, living in guilds and governed by guilds. Many say that this is a for of oppresion, But for a Kano this is paradise.Unusual for a specie of their size and strengh, they have longer lifespans than most Species of their morphology. Maybe it's due to the fact that they want slaves to do the dirtiest work for them?"
+        name_list = "HUM4"
+        gender = not_set
+        trait = "trait_decadent"
+        trait = "trait_repugnant"
+        trait = "trait_very_strong"
+        trait = "trait_communal"
+        trait = "trait_enduring"
+    }
+    name = {
+        key = "Kano Guild"
+    }
+    adjective = {
+        key = "Kano"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_plutocratic_oligarchy"
+    advisor_voice_type = "l_xenophile"
+    planet_name = {
+        key = "Kano'Tesh"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Kano'Ta"
+    }
+    initializer = ""
+    graphical_culture = "arthropoid_01"
+    city_graphical_culture = "fungoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_12.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "circle.dds"
+        }
+        colors = {
+            "black"
+            "indigo"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Kano'Ta'Se"
+            }
+        }
+        portrait = "humanoid_hp_13"
+        texture = 0
+        attachment = 0
+        clothes = 3
+        trait = "trait_ruler_industrialist"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_metalheads_room"
+    spawn_enabled = always
+    ethic = "ethic_authoritarian"
+    ethic = "ethic_fanatic_xenophile"
+    civics = {
+        "civic_merchant_guilds"
+        "civic_mining_guilds"
+    }
+    origin = "origin_default"
+}

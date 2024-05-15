@@ -1,0 +1,92 @@
+"Scientific Netar Coalition" = {
+    key = "Scientific Netar Coalition"
+    ship_prefix = {
+        key = "SSS"
+    }
+    species = {
+        class = "AVI"
+        portrait = "avi15"
+        species_name = {
+            key = "Netar"
+        }
+        species_plural = {
+            key = "Netar"
+        }
+        species_adjective = {
+            key = "Netaran"
+        }
+        species_bio = "Since the reveal of the \"All Suit\" the Netar all got one. This suit allows them to dive deep into their Ocean Planet of Tar'ne as they wish. As well as going into the void of space without any risks. They love and hate just one thing each. Science and thiefs. Scientist are higly admired within their society and the most preffered choices for leaders. Wheareas Thieves are executed and everything that might steal their scientific accomplishements is treated extremly hostile. Their goal in life is to accomplish the ultimate discovery, why is the universe? A question asked since ancient times."
+        name_list = "AVI1"
+        gender = not_set
+        trait = "trait_intelligent"
+        trait = "trait_natural_engineers"
+        trait = "trait_deviants"
+        trait = "trait_sedentary"
+        trait = "trait_quick_learners"
+    }
+    name = {
+        key = "Scientific Netar Coalition"
+    }
+    adjective = {
+        key = "Netaran"
+    }
+    authority = "auth_oligarchic"
+    government = "gov_executive_committee"
+    planet_name = {
+        key = "Tar'ne"
+    }
+    planet_class = "pc_ocean"
+    system_name = {
+        key = "Tar'ke"
+    }
+    initializer = ""
+    graphical_culture = "plantoid_01"
+    city_graphical_culture = "plantoid_01"
+    empire_flag = {
+        icon = {
+            category = "blocky"
+            file = "flag_blocky_14.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "vertical.dds"
+        }
+        colors = {
+            "blue"
+            "blue"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Har'kne"
+            }
+        }
+        portrait = "avi15"
+        texture = 3
+        attachment = 0
+        clothes = 0
+        ruler_title = {
+            key = "First Scientist"
+        }
+        ruler_title_female = {
+            key = "First Scientist"
+        }
+        trait = "trait_ruler_eye_for_talent"
+        leader_class = "governor"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_spiritual_seekers_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophobe"
+    ethic = "ethic_fanatic_materialist"
+    civics = {
+        "civic_aristocratic_elite"
+        "civic_functional_architecture"
+    }
+    origin = "origin_doomsday"
+}

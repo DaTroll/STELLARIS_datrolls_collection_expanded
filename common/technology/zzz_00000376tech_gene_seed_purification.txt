@@ -1,0 +1,65 @@
+tech_gene_seed_purification = {
+    cost = @tier4cost1
+    area = society
+    category = {
+        biology
+    }
+    tier = 4
+    is_rare = yes
+    prerequisites = {
+        "tech_gene_tailoring"
+    }
+    weight = @tier4weight1
+    potential = {
+        NOT = {
+            has_authority = auth_machine_intelligence
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            host_has_dlc = "Utopia"
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
+        }
+        modifier = {
+            factor = 1.25
+            has_authority = auth_hive_mind
+        }
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+        modifier = {
+            factor = 0.1
+            NOR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_expertise_biology
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_curator
+                }
+            }
+        }
+        inline_script = {
+            script = technologies/rare_technologies_weight_modifiers
+            TECHNOLOGY = tech_gene_seed_purification
+        }
+        modifier = {
+            factor = 1.25
+            OR = {
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius
+                }
+                has_trait_in_council = {
+                    TRAIT = leader_trait_spark_of_genius_2
+                }
+            }
+        }
+    }
+}

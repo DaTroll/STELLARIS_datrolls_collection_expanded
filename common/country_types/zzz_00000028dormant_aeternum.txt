@@ -1,0 +1,5 @@
+dormant_aeternum = {
+    ai = {
+        enabled = no
+    }
+}

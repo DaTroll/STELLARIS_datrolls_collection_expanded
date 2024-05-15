@@ -1,0 +1,11 @@
+opinion_first_contact_repulsive_aliens = {
+    opinion = {
+        base = -75
+    }
+    decay = {
+        base = 0.5
+        modifier = {
+            factor = value:negative_opinion_decay_rate
+        }
+    }
+}

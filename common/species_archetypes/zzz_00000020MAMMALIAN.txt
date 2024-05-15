@@ -1,0 +1,3 @@
+MAMMALIAN = {
+    uses_modifiers = no
+}

@@ -1,0 +1,92 @@
+"Tealu Profit Makers" = {
+    key = "Tealu Profit Makers"
+    ship_prefix = {
+        key = "TPS"
+    }
+    species = {
+        class = "MAM"
+        portrait = "mam9"
+        species_name = {
+            key = "Tealu"
+        }
+        species_plural = {
+            key = "Tealus"
+        }
+        species_adjective = {
+            key = "Tealuian"
+        }
+        species_bio = "The Tealuare a militarist group, however this is just the national policy. Unless it comes to the business. The Savanna gave this specie an especial hard skin and capable of fighting for long hours again each others.        However, Law is relative and the criminal underground has risen to power, and now, only the law of the strongest applies. However, if not provoked and their interest not in danger, they will be happy to trade with you, or your rivals, whoever offers more. "
+        name_list = "MAM3"
+        gender = not_set
+        trait = "trait_void_dweller_1"
+        trait = "trait_strong"
+        trait = "trait_resilient"
+        trait = "trait_fleeting"
+        trait = "trait_nomadic"
+    }
+    name = {
+        key = "Tealu Profit Makers"
+    }
+    adjective = {
+        key = "Tealu"
+    }
+    authority = "auth_corporate"
+    government = "gov_criminal_syndicate"
+    planet_name = {
+        key = "Tealu"
+    }
+    planet_class = "pc_savannah"
+    system_name = {
+        key = "Tealu"
+    }
+    initializer = "void_dweller_system"
+    graphical_culture = "molluscoid_01"
+    city_graphical_culture = "molluscoid_01"
+    empire_flag = {
+        icon = {
+            category = "corporate"
+            file = "corporate_05.dds"
+        }
+        background = {
+            category = "backgrounds"
+            file = "00_solid.dds"
+        }
+        colors = {
+            "light_orange"
+            "black"
+            "null"
+            "null"
+        }
+    }
+    ruler = {
+        gender = male
+        name = {
+            full_names = {
+                key = "Teali"
+            }
+        }
+        portrait = "mam9"
+        texture = 5
+        attachment = 0
+        clothes = 2
+        ruler_title = {
+            key = "Leader"
+        }
+        ruler_title_female = {
+            key = "Leader"
+        }
+        trait = "trait_ruler_warlike"
+        leader_class = "admiral"
+    }
+    spawn_as_fallen = no
+    ignore_portrait_duplication = no
+    room = "personality_xenophobic_isolationists_room"
+    spawn_enabled = always
+    ethic = "ethic_xenophile"
+    ethic = "ethic_fanatic_militarist"
+    civics = {
+        "civic_criminal_heritage"
+        "civic_ruthless_competition"
+    }
+    origin = "origin_void_dwellers"
+}

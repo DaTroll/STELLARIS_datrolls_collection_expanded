@@ -1,0 +1,18 @@
+dpe_duel_loser_governor = {
+    inline_script = {
+        script = trait/icon
+        CLASS = leader
+        ICON = "GFX_leader_trait_dpe_wooden_spoon"
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+    modifier = {
+        pop_ethic_militarist_attraction_mult = -0.2
+    }
+    leader_class = {
+        official
+    }
+    initial = no
+    randomized = no
+}

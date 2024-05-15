@@ -1,0 +1,5 @@
+al_fallen_empire = {
+    ai = {
+        enabled = no
+    }
+}

@@ -1,0 +1,5 @@
+blokkat_stripminers = {
+    ai = {
+        enabled = no
+    }
+}

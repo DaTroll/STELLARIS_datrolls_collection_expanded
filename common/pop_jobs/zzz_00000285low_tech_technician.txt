@@ -1,0 +1,30 @@
+low_tech_technician = {
+    category = worker
+    is_capped_by_modifier = yes
+    building_icon = building_low_tech_power_plant
+    icon = technician
+    clothes_texture_index = 2
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_low_tech_start = yes
+        }
+    }
+    resources = {
+        category = planet_technician
+        produces = {
+            energy = 4
+        }
+    }
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|low_tech_technician|RESOURCE|energy|
+        modifier = {
+            factor = 5
+            has_job = low_tech_technician
+        }
+    }
+}

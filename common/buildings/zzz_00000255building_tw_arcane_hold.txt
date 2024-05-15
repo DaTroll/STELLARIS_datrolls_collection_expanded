@@ -1,0 +1,8 @@
+building_tw_arcane_hold = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+}

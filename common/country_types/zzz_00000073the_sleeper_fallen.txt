@@ -1,0 +1,5 @@
+the_sleeper_fallen = {
+    ai = {
+        enabled = no
+    }
+}

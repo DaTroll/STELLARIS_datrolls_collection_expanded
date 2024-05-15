@@ -1,0 +1,50 @@
+tech_collective_self = {
+    cost = @tier3cost3
+    area = society
+    tier = 3
+    category = {
+        statecraft
+    }
+    prerequisites = {
+        "tech_colonial_centralization"
+    }
+    weight = @tier3weight3
+    modifier = {
+        country_official_cap_add = 1
+        country_commander_cap_add = 1
+        country_scientist_cap_add = 1
+        external_leader_pool_add = 1
+    }
+    potential = {
+        NOT = {
+            has_ethic = ethic_gestalt_consciousness
+        }
+    }
+    weight_modifier = {
+        modifier = {
+            factor = 0.5
+            num_owned_planets < 7
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 8
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 9
+        }
+        modifier = {
+            factor = 1.5
+            num_owned_planets > 10
+        }
+        modifier = {
+            factor = 1.5
+            OR = {
+                has_ethic = ethic_authoritarian
+                has_ethic = ethic_fanatic_authoritarian
+            }
+        }
+    }
+    ai_weight = {
+    }
+}

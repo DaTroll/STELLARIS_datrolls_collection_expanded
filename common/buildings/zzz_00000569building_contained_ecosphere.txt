@@ -1,0 +1,40 @@
+building_contained_ecosphere = {
+    icon = building_contained_ecosphere
+    empire_limit = {
+        base = 1
+    }
+    can_build = yes
+    can_demolish = yes
+    position_priority = 1
+    category = resource
+    potential = {
+        owner = {
+            has_country_flag = azaryn_dead
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+            alloys = 500
+        }
+        upkeep = {
+            energy = 5
+        }
+        produces = {
+            food = 40
+        }
+    }
+    on_built = {
+        planet = {
+            add_modifier = {
+                modifier = contained_ecosphere_pheromones
+            }
+        }
+    }
+    on_destroy = {
+        planet = {
+            remove_modifier = contained_ecosphere_pheromones
+        }
+    }
+}
