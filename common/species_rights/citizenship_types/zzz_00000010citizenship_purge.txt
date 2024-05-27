@@ -3,7 +3,7 @@ citizenship_purge = {
     is_purge = yes
     potential = {
         exists = from
-        NOR = {
+        NOT = {
             from = {
                 has_authority = auth_machine_intelligence
             }
@@ -11,9 +11,12 @@ citizenship_purge = {
         OR = {
             NOT = {
                 has_trait = trait_mechanical
+                has_trait = trait_machine_unit
             }
             from = {
-                has_policy_flag = robots_outlawed
+                NOT = {
+                    has_policy_flag = ai_full_rights
+                }
             }
             AND = {
                 from = {
@@ -102,6 +105,19 @@ citizenship_purge = {
                     }
                 }
             }
+            if = {
+                limit = {
+                    from = {
+                        has_authority = auth_hive_mind
+                    }
+                }
+                custom_tooltip = {
+                    fail_text = hive_cant_purge_hive
+                    NOT = {
+                        has_trait = trait_hive_mind
+                    }
+                }
+            }
             custom_tooltip = {
                 fail_text = yes_service_yes_citizenship
                 if = {
@@ -118,10 +134,27 @@ citizenship_purge = {
                     }
                 }
             }
+            custom_tooltip = {
+                fail_text = selective_kinship_must_citizen
+                if = {
+                    limit = {
+                        from = {
+                            has_valid_civic = civic_selective_kinship
+                        }
+                    }
+                    NOT = {
+                        is_same_species_class = from
+                    }
+                }
+            }
         }
     }
     ai_will_do = {
         factor = 20
+        modifier = {
+            factor = 0
+            ariphaos_patch_slaves_expel = no
+        }
         modifier = {
             factor = 0
             has_trait = trait_machine_unit
@@ -184,6 +217,7 @@ citizenship_purge = {
         }
         modifier = {
             factor = 0
+            ariphaos_patch_slaves_rare_trait = yes
             from = {
                 has_origin = origin_syncretic_evolution
             }
@@ -205,6 +239,16 @@ citizenship_purge = {
                 has_origin = origin_necrophage
                 is_xenophobe = yes
             }
+        }
+        modifier = {
+            factor = 10
+            from = {
+                OR = {
+                    is_xenophobe = yes
+                    is_authoritarian = yes
+                }
+            }
+            ariphaos_patch_slaves_expel = yes
         }
     }
 }

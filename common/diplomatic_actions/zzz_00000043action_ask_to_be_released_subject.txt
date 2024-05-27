@@ -3,109 +3,13 @@ action_ask_to_be_released_subject = {
     requires_actor_independence = no
     diplo_view_acceptance_icon = yes
     should_notify_all_communications = yes
-    AI_acceptance_base_value = -100
+    AI_acceptance_base_value = -50
     action_type = neutral
     ai_acceptance = {
         modifier = {
             add = -100
-            has_origin = origin_slavers
+            is_minamar = yes
             desc = personality_decadent_capitalists
-        }
-        modifier = {
-            add = -100
-            OR = {
-                is_unfriendly = yes
-                has_civic = civic_machine_assimilator
-            }
-            desc = ariphaos_patch_unfriendly
-        }
-        modifier = {
-            add = 100
-            OR = {
-                has_valid_civic = civic_hive_empath
-                has_valid_civic = civic_machine_exploration_protocol
-                has_origin = origin_fruitful
-            }
-            desc = ariphaos_patch_values_others
-        }
-        modifier = {
-            add = 100
-            has_valid_civic = civic_machine_servitor
-            relative_power = {
-                who = from
-                category = all
-                value <= equivalent
-            }
-            from = {
-                is_synthetic_empire = no
-            }
-            desc = ariphaos_patch_servitor_release
-        }
-        modifier = {
-            add = -100
-            has_valid_civic = civic_machine_servitor
-            relative_power = {
-                who = from
-                category = all
-                value = superior
-            }
-            from = {
-                is_synthetic_empire = no
-            }
-            desc = ariphaos_patch_servitor_protective
-        }
-        modifier = {
-            add = -900
-            has_valid_civic = civic_machine_servitor
-            relative_power = {
-                who = from
-                category = all
-                value >= overwhelming
-            }
-            from = {
-                is_synthetic_empire = no
-            }
-            desc = ariphaos_patch_servitor_protective
-        }
-        modifier = {
-            add = 50
-            has_ethic = ethic_pacifist
-            desc = ethic_pacifist
-        }
-        modifier = {
-            add = 100
-            has_ethic = ethic_fanatic_pacifist
-            desc = ethic_fanatic_pacifist
-        }
-        modifier = {
-            add = -50
-            has_ethic = ethic_militarist
-            desc = ethic_militarist
-        }
-        modifier = {
-            add = -100
-            has_ethic = ethic_fanatic_militarist
-            desc = ethic_fanatic_militarist
-        }
-        modifier = {
-            add = 50
-            has_ethic = ethic_egalitarian
-            desc = ethic_egalitarian
-        }
-        modifier = {
-            add = 100
-            has_ethic = ethic_fanatic_egalitarian
-            desc = ethic_fanatic_egalitarian
-        }
-        modifier = {
-            add = -50
-            has_ethic = ethic_authoritarian
-            desc = ethic_authoritarian
-        }
-        modifier = {
-            add = -100
-            has_ethic = ethic_fanatic_authoritarian
-            desc = ethic_fanatic_authoritarian
         }
     }
 }

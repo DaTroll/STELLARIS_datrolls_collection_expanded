@@ -2,8 +2,9 @@ citizenship_assimilation = {
     is_assimilation = yes
     potential = {
         OR = {
-            host_has_dlc = "Synthetic Dawn Story Pack"
-            host_has_dlc = "Utopia"
+            has_synthetic_dawn = yes
+            has_utopia = yes
+            has_machine_age_dlc = yes
         }
         exists = from
         from = {
@@ -58,13 +59,16 @@ citizenship_assimilation = {
                                 has_civic = civic_hive_devouring_swarm
                             }
                         }
-                        NOT = {
-                            has_ethic = ethic_gestalt_consciousness
+                        AND = {
+                            NOT = {
+                                has_ethic = ethic_gestalt_consciousness
+                            }
+                            is_individual_machine = no
                         }
                     }
                     OR = {
-                        has_tradition = tr_genetics_creation
-                        has_tradition = tr_cybernetics_transubstantiation_synthesis
+                        has_active_tradition = tr_genetics_creation
+                        has_active_tradition = tr_cybernetics_transubstantiation_synthesis
                         has_valid_civic = civic_mutualistic_behavior
                     }
                     ROOT = {
@@ -77,7 +81,13 @@ citizenship_assimilation = {
                         has_authority = auth_machine_intelligence
                     }
                 }
-                has_tradition = tr_psionics_psionic_assimilation
+                has_active_tradition = tr_psionics_psionic_assimilation
+                AND = {
+                    is_individual_machine = yes
+                    ROOT = {
+                        is_robotic_species = yes
+                    }
+                }
             }
         }
     }
@@ -103,9 +113,9 @@ citizenship_assimilation = {
                 }
                 from = {
                     OR = {
-                        has_tradition = tr_genetics_creation
-                        has_tradition = tr_cybernetics_transubstantiation_synthesis
-                        has_tradition = tr_cybernetics_assimilator_inevitable_assimilation
+                        has_active_tradition = tr_genetics_creation
+                        has_active_tradition = tr_cybernetics_transubstantiation_synthesis
+                        has_active_tradition = tr_cybernetics_assimilator_inevitable_assimilation
                     }
                 }
             }
@@ -207,6 +217,7 @@ citizenship_assimilation = {
                         has_trait = trait_mechanical
                         has_trait = trait_machine_unit
                         has_trait = trait_cybernetic
+                        has_trait = trait_limited_cybernetic
                     }
                 }
             }
@@ -214,7 +225,7 @@ citizenship_assimilation = {
         else_if = {
             limit = {
                 from = {
-                    has_tradition = tr_psionics_psionic_assimilation
+                    has_active_tradition = tr_psionics_psionic_assimilation
                 }
             }
             custom_tooltip = {
@@ -237,7 +248,7 @@ citizenship_assimilation = {
         else_if = {
             limit = {
                 from = {
-                    has_tradition = tr_genetics_creation
+                    has_active_tradition = tr_genetics_creation
                 }
             }
             custom_tooltip = {
@@ -271,6 +282,12 @@ citizenship_assimilation = {
                 is_machine_empire = no
             }
             has_trait = trait_mechanical
+        }
+        modifier = {
+            factor = 0.3
+            from = {
+                is_individual_machine = yes
+            }
         }
     }
 }

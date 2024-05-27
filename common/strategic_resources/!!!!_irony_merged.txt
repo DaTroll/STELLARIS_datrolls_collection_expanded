@@ -110,6 +110,11 @@ consumer_goods = {
             country_uses_consumer_goods = no
         }
     }
+    tradable_in_market = {
+        NOT = {
+            has_valid_civic = civic_machine_obsessional_directive
+        }
+    }
 }
 alloys = {
     tradable = yes
@@ -239,7 +244,6 @@ sr_dark_matter = {
 nanites = {
     tradable = no
     category = rare
-    max = 15000
     prerequisites = {
         "tech_construction_templates"
     }

@@ -9,10 +9,10 @@ action_build_spy_network = {
     sound = fc_ui_spy_network_button
     potential = {
         hidden_trigger = {
-            is_country_type = default
+            is_playable = yes
             from = {
                 OR = {
-                    is_country_type = default
+                    is_playable = yes
                     AND = {
                         is_country_type = primitive
                         observation_owner_is_actor = yes
@@ -21,7 +21,10 @@ action_build_spy_network = {
                 NOR = {
                     has_country_flag = fotd_seperatist_country
                     AND = {
-                        has_country_flag = solarpunk_country
+                        OR = {
+                            has_country_flag = solarpunk_country
+                            has_country_flag = primitives_fanatic_purifier
+                        }
                         is_country_type = primitive
                     }
                 }
@@ -33,7 +36,7 @@ action_build_spy_network = {
             fail_text = "diplomacy_wrong_interference_policy"
             OR = {
                 from = {
-                    is_country_type = default
+                    is_playable = yes
                 }
                 from = {
                     is_fallen_empire = yes

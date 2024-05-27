@@ -3,7 +3,7 @@ citizenship_purge = {
     is_purge = yes
     potential = {
         exists = from
-        NOR = {
+        NOT = {
             from = {
                 has_authority = auth_machine_intelligence
             }
@@ -11,9 +11,12 @@ citizenship_purge = {
         OR = {
             NOT = {
                 has_trait = trait_mechanical
+                has_trait = trait_machine_unit
             }
             from = {
-                has_policy_flag = robots_outlawed
+                NOT = {
+                    has_policy_flag = ai_full_rights
+                }
             }
             AND = {
                 from = {
@@ -99,6 +102,19 @@ citizenship_purge = {
                         NOT = {
                             has_policy_flag = purge_not_allowed
                         }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_authority = auth_hive_mind
+                    }
+                }
+                custom_tooltip = {
+                    fail_text = hive_cant_purge_hive
+                    NOT = {
+                        has_trait = trait_hive_mind
                     }
                 }
             }

@@ -1,7 +1,10 @@
 citizenship_full_machine = {
     is_full_citizenship = yes
     potential = {
-        host_has_dlc = "Synthetic Dawn Story Pack"
+        OR = {
+            has_synthetic_dawn = yes
+            has_machine_age_dlc = yes
+        }
         exists = from
         from = {
             has_authority = auth_machine_intelligence

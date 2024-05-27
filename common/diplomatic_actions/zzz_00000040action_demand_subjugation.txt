@@ -17,110 +17,10 @@ action_demand_subjugation = {
         }
     }
     possible = {
-        custom_tooltip = {
-            fail_text = "requires_actor_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                NOT = {
-                    has_valid_civic = civic_fanatic_purifiers
-                }
-            }
+        homicidal_diplomacy_restrictions = {
+            mirror = yes
         }
-        custom_tooltip = {
-            fail_text = "requires_recipient_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                from = {
-                    NOT = {
-                        has_valid_civic = civic_fanatic_purifiers
-                    }
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_devouring_swarm"
-            NOT = {
-                has_valid_civic = civic_hive_devouring_swarm
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_recipient_not_devouring_swarm"
-            from = {
-                NOT = {
-                    has_valid_civic = civic_hive_devouring_swarm
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_machine_terminator"
-            OR = {
-                is_same_species = from
-                NOT = {
-                    has_civic = civic_machine_terminator
-                }
-                AND = {
-                    has_civic = civic_machine_terminator
-                    from = {
-                        OR = {
-                            has_country_flag = synthetic_empire
-                            has_authority = auth_machine_intelligence
-                            is_individual_machine = yes
-                        }
-                    }
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_recipient_not_machine_terminator"
-            OR = {
-                is_same_species = from
-                from = {
-                    NOT = {
-                        has_civic = civic_machine_terminator
-                    }
-                }
-                AND = {
-                    from = {
-                        has_civic = civic_machine_terminator
-                    }
-                    OR = {
-                        has_country_flag = synthetic_empire
-                        has_authority = auth_machine_intelligence
-                        is_individual_machine = yes
-                    }
-                }
-            }
-        }
-        if = {
-            limit = {
-                from = {
-                    has_valid_civic = civic_pompous_purists
-                }
-                NOT = {
-                    root = {
-                        is_overlord_to = from
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    has_intel = {
-                        who = from
-                        intel = civics
-                    }
-                }
-                custom_tooltip = {
-                    fail_text = requires_recipient_not_pompous
-                    always = no
-                }
-            }
-            else = {
-                custom_tooltip = {
-                    fail_text = diplo_action_no_low_intel
-                    always = no
-                }
-            }
-        }
+        pompous_diplomacy_restrictions = yes
         custom_tooltip = {
             fail_text = "requires_recipient_not_in_galactic_empire"
             NAND = {
@@ -210,40 +110,19 @@ action_demand_subjugation = {
                 }
             }
         }
-        modifier = {
-            mult = 0
-            trust = {
-                who = root
-                value < 50
-            }
-        }
     }
     ai_acceptance = {
         modifier = {
-            add = 100
-            relative_power = {
-                who = from
-                category = technology
-                value <= pathetic
+            add = -100
+            OR = {
+                is_militarist = yes
+                is_civic_militarist = yes
+                is_authoritarian = yes
+                is_civic_authoritarian = yes
+                is_xenophobe = yes
+                is_xenophobic_isolationists = yes
             }
-            relative_power = {
-                who = from
-                category = economy
-                value <= pathetic
-            }
-            relative_power = {
-                who = from
-                category = fleet
-                value <= pathetic
-            }
-            desc = ariphaos_patch_overwhelming
-        }
-        modifier = {
-            add = 100
-            from = {
-                values_others = yes
-            }
-            desc = ariphaos_patch_values_others
+            desc = not_good_ethics
         }
         modifier = {
             add = -100
@@ -254,150 +133,6 @@ action_demand_subjugation = {
                 }
             }
             desc = LACK_OF_TRUST
-        }
-        modifier = {
-            add = -100
-            trust = {
-                who = from
-                value < 50
-            }
-            desc = LACK_OF_TRUST
-        }
-        modifier = {
-            add = -100
-            relative_power = {
-                who = from
-                category = all
-                value = equivalent
-            }
-            desc = ariphaos_patch_weak_overall
-        }
-        modifier = {
-            add = -900
-            relative_power = {
-                who = from
-                category = all
-                value >= superior
-            }
-            desc = ariphaos_patch_weak_overall
-        }
-        modifier = {
-            add = -100
-            relative_power = {
-                who = from
-                category = technology
-                value = superior
-            }
-            desc = ariphaos_patch_weak_technology
-        }
-        modifier = {
-            add = -900
-            relative_power = {
-                who = from
-                category = technology
-                value >= overwhelming
-            }
-            desc = ariphaos_patch_weak_technology
-        }
-        modifier = {
-            add = -100
-            relative_power = {
-                who = from
-                category = economy
-                value = superior
-            }
-            desc = ariphaos_patch_weak_economy
-        }
-        modifier = {
-            add = -900
-            relative_power = {
-                who = from
-                category = economy
-                value >= overwhelming
-            }
-            desc = ariphaos_patch_weak_economy
-        }
-        modifier = {
-            add = -100
-            relative_power = {
-                who = from
-                category = fleet
-                value = superior
-            }
-            desc = ariphaos_patch_weak_fleet
-        }
-        modifier = {
-            add = -900
-            relative_power = {
-                who = from
-                category = fleet
-                value >= overwhelming
-            }
-            desc = ariphaos_patch_weak_fleet
-        }
-        modifier = {
-            add = -100
-            from = {
-                has_ethic = ethic_xenophobe
-                NOT = {
-                    is_same_species = ROOT
-                }
-            }
-            desc = ariphaos_patch_xenophobic_bigots
-        }
-        modifier = {
-            add = -100
-            from = {
-                has_ethic = ethic_fanatic_xenophobe
-                is_same_species = ROOT
-            }
-            is_xenophile = yes
-            desc = ariphaos_patch_xenophobic_bigots
-        }
-        modifier = {
-            add = -200
-            from = {
-                has_ethic = ethic_fanatic_xenophobe
-                NOT = {
-                    is_same_species = ROOT
-                }
-            }
-            desc = ariphaos_patch_xenophobic_bigots
-        }
-        modifier = {
-            add = -100
-            from = {
-                OR = {
-                    is_machine_empire = yes
-                }
-                values_others = no
-            }
-            is_machine_empire = no
-            desc = ariphaos_patch_incompatible_existence
-        }
-        modifier = {
-            add = -100
-            from = {
-                OR = {
-                    is_hive_empire = yes
-                }
-                values_others = no
-            }
-            is_hive_empire = no
-            desc = ariphaos_patch_incompatible_existence
-        }
-        modifier = {
-            add = -100
-            from = {
-                is_hive_empire = no
-                is_machine_empire = no
-                values_others = no
-            }
-            OR = {
-                is_hive_empire = yes
-                is_machine_empire = yes
-            }
-            desc = ariphaos_patch_incompatible_existence
         }
     }
 }
