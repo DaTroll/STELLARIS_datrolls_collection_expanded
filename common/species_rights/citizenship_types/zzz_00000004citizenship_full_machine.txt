@@ -25,7 +25,6 @@ citizenship_full_machine = {
             custom_tooltip = {
                 fail_text = MACHINE_SPECIES_NOT_MACHINE
                 OR = {
-                    has_trait = trait_machine_replica
                     has_trait = trait_mechanical
                     has_trait = trait_machine_unit
                     AND = {

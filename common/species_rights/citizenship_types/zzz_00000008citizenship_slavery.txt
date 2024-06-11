@@ -12,15 +12,46 @@ citizenship_slavery = {
         NAND = {
             exists = this
             OR = {
+                AND = {
+                    from = {
+                        is_individual_machine = yes
+                    }
+                    OR = {
+                        has_trait = trait_machine_unit
+                        has_trait = trait_mechanical
+                    }
+                }
                 has_trait = trait_machine_unit
                 has_trait = trait_mechanical
-                has_trait = trait_machine_replica
             }
         }
     }
     allow = {
         hidden_trigger = {
             exists = from
+        }
+        custom_tooltip = {
+            fail_text = "presapients_allowed_citizenship"
+            OR = {
+                is_sapient = yes
+                from = {
+                    NOT = {
+                        has_policy_flag = pre_sapients_protect
+                        has_policy_flag = pre_sapients_allow
+                    }
+                }
+            }
+        }
+        custom_tooltip = {
+            fail_text = "presapients_purged_citizenship"
+            OR = {
+                is_sapient = yes
+                from = {
+                    NOT = {
+                        has_policy_flag = pre_sapients_purge
+                    }
+                }
+            }
         }
         custom_tooltip = {
             fail_text = "HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN"
@@ -40,14 +71,6 @@ citizenship_slavery = {
         custom_tooltip = {
             fail_text = "lonely_hive_mind_pops_kill_themselves_citizenship"
             is_lonely_hive_mind_pop = no
-        }
-        custom_tooltip = {
-            fail_text = MUTUALISTIC_BEHAVIOUR_CANNOT_ENSLAVE
-            from = {
-                NOT = {
-                    has_valid_civic = civic_mutualistic_behavior
-                }
-            }
         }
         custom_tooltip = {
             fail_text = SERVITORS_CANNOT_ENSLAVE
@@ -164,6 +187,7 @@ citizenship_slavery = {
             from = {
                 is_authoritarian = no
                 is_xenophobe = no
+                is_hive_empire = no
             }
         }
         modifier = {
@@ -175,6 +199,10 @@ citizenship_slavery = {
                 is_active_resolution = "resolution_greatergood_balance_in_the_middle"
                 is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
             }
+        }
+        modifier = {
+            factor = 2
+            has_species_flag = syncretic_species@from
         }
     }
 }

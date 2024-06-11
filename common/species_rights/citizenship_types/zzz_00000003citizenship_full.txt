@@ -7,22 +7,18 @@ citizenship_full = {
                 has_authority = auth_machine_intelligence
             }
         }
-        NOR = {
-            has_trait = trait_machine_unit
-            is_shackled_robot_species_rights = yes
-        }
     }
     allow = {
         hidden_trigger = {
             exists = from
         }
         custom_tooltip = {
-            fail_text = "lonely_hive_mind_pops_kill_themselves_citizenship"
-            is_lonely_hive_mind_pop = no
+            fail_text = "pre_sapients_citizenship"
+            is_sapient = yes
         }
         custom_tooltip = {
-            fail_text = "disconnected_machine_pops_kill_themselves_citizenship"
-            is_disconnected_machine_pop = no
+            fail_text = "lonely_hive_mind_pops_kill_themselves_citizenship"
+            is_lonely_hive_mind_pop = no
         }
         custom_tooltip = {
             fail_text = "HIVE_MIND_SPECIES_CITIZENS_ONLY"
@@ -48,18 +44,28 @@ citizenship_full = {
         }
         custom_tooltip = {
             fail_text = too_alien
-            OR = {
-                is_same_species = from
-                from = {
-                    AND = {
-                        has_valid_civic = civic_selective_kinship
-                        is_same_species_class = root
+            if = {
+                limit = {
+                    from = {
+                        NOT = {
+                            has_origin = origin_synthetic_fertility
+                        }
                     }
+                    has_trait = trait_mechanical
                 }
-                from = {
-                    NOR = {
-                        has_ethic = ethic_xenophobe
-                        has_ethic = ethic_fanatic_xenophobe
+                OR = {
+                    is_same_species = from
+                    from = {
+                        AND = {
+                            has_valid_civic = civic_selective_kinship
+                            is_same_species_class = root
+                        }
+                    }
+                    from = {
+                        NOR = {
+                            has_ethic = ethic_xenophobe
+                            has_ethic = ethic_fanatic_xenophobe
+                        }
                     }
                 }
             }
@@ -89,15 +95,30 @@ citizenship_full = {
                 }
             }
         }
+        custom_tooltip = {
+            fail_text = "ROBOTS_NO_RIGHTS"
+            if = {
+                limit = {
+                    OR = {
+                        has_trait = trait_mechanical
+                        has_trait = trait_machine_unit
+                    }
+                }
+                from = {
+                    has_policy_flag = ai_full_rights
+                }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
         modifier = {
-            factor = 10000
-            has_trait = trait_hive_mind_remote_drone
+            factor = 35
+            root = {
+                is_robotic_species = yes
+            }
             from = {
-                has_authority = auth_hive_mind
-                has_origin = origin_hive_overmind
+                is_individual_machine = yes
             }
         }
     }

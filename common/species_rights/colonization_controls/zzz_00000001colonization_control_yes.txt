@@ -1,21 +1,14 @@
 colonization_control_yes = {
-    can_colonize = yes
+    can_colonize = no
     potential = {
         NAND = {
             from = {
                 has_authority = auth_machine_intelligence
             }
             OR = {
-                has_trait = trait_machine_replica
                 has_trait = trait_machine_unit
                 has_trait = trait_mechanical
             }
-        }
-        NOT = {
-            has_trait = trait_hive_mind_remote_drone
-        }
-        NOT = {
-            has_trait = trait_machine_replica
         }
     }
     allow = {
@@ -73,6 +66,13 @@ colonization_control_yes = {
             has_trait = trait_cybernetic
             from = {
                 has_valid_civic = civic_machine_assimilator
+            }
+        }
+        modifier = {
+            factor = 0
+            has_slavery_type = {
+                country = from
+                type = slavery_indentured
             }
         }
     }

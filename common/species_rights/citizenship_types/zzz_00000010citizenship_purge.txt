@@ -69,14 +69,6 @@ citizenship_purge = {
                 }
             }
             custom_tooltip = {
-                fail_text = MUTUALISTIC_BEHAVIOUR_CANNOT_PURGE
-                from = {
-                    NOT = {
-                        has_valid_civic = civic_mutualistic_behavior
-                    }
-                }
-            }
-            custom_tooltip = {
                 fail_text = "presapients_not_purged_citizenship"
                 OR = {
                     is_sapient = yes
@@ -110,12 +102,11 @@ citizenship_purge = {
                     from = {
                         has_authority = auth_hive_mind
                     }
+                    has_trait = trait_hive_mind
                 }
                 custom_tooltip = {
                     fail_text = hive_cant_purge_hive
-                    NOT = {
-                        has_trait = trait_hive_mind
-                    }
+                    has_genesis_preserve_trait = no
                 }
             }
             custom_tooltip = {

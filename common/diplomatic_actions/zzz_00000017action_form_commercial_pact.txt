@@ -7,103 +7,37 @@ action_form_commercial_pact = {
     AI_acceptance_base_value = -50
     action_type = positive
     possible = {
-        custom_tooltip = {
-            fail_text = "ACTION_ACTOR_MUST_BE_INDEPENDENT"
-            OR = {
-                is_subject = no
-                any_agreement = {
-                    agreement_preset = preset_scion
-                }
-            }
+        homicidal_diplomacy_restrictions = {
+            mirror = yes
         }
-        custom_tooltip = {
-            fail_text = "ACTION_RECIPIENT_MUST_BE_INDEPENDENT"
-            FROM = {
-                OR = {
-                    is_subject = no
-                    any_agreement = {
-                        agreement_preset = preset_scion
-                    }
-                }
-            }
+        inwards_perfection_diplomacy_restrictions = {
+            mirror_with_intel = yes
         }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                NOT = {
-                    has_valid_civic = civic_fanatic_purifiers
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_recipient_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                from = {
-                    NOT = {
-                        has_valid_civic = civic_fanatic_purifiers
-                    }
-                }
-            }
-        }
-        if = {
-            limit = {
-                from = {
-                    has_valid_civic = civic_inwards_perfection
-                }
-            }
-            if = {
-                limit = {
-                    has_intel = {
-                        who = from
-                        intel = civics
-                    }
-                }
-                custom_tooltip = {
-                    fail_text = requires_recipient_not_inward_perfection
-                    always = no
-                }
-            }
-            else = {
-                custom_tooltip = {
-                    fail_text = diplo_action_no_low_intel
-                    always = no
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_inward_perfection"
-            NOT = {
-                has_valid_civic = civic_inwards_perfection
-            }
-        }
+        pompous_diplomacy_restrictions = yes
         custom_tooltip = {
             fail_text = "requires_actor_not_gestalt_consciousness"
-            OR = {
-                is_gestalt = no
-                has_valid_civic = civic_mutualistic_behavior
-                has_valid_civic = civic_machine_trading
-            }
+            is_gestalt = no
         }
         custom_tooltip = {
             fail_text = "requires_recipient_not_gestalt_consciousness"
             from = {
-                OR = {
-                    is_gestalt = no
-                    has_valid_civic = civic_mutualistic_behavior
-                    has_valid_civic = civic_machine_trading
-                }
+                is_gestalt = no
             }
         }
         custom_tooltip = {
             fail_text = "requires_actor_not_criminal_heritage"
-            is_criminal_syndicate = no
+            OR = {
+                is_criminal_syndicate = no
+                has_civic = civic_shadow_council_megacorp
+            }
         }
         if = {
             limit = {
                 from = {
                     is_criminal_syndicate = yes
+                    NOT = {
+                        has_civic = civic_shadow_council_megacorp
+                    }
                 }
             }
             if = {
@@ -163,36 +97,6 @@ action_form_commercial_pact = {
                 }
             }
         }
-        if = {
-            limit = {
-                from = {
-                    has_valid_civic = civic_pompous_purists
-                }
-                NOT = {
-                    root = {
-                        is_overlord_to = from
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    has_intel = {
-                        who = from
-                        intel = civics
-                    }
-                }
-                custom_tooltip = {
-                    fail_text = requires_recipient_not_pompous
-                    always = no
-                }
-            }
-            else = {
-                custom_tooltip = {
-                    fail_text = diplo_action_no_low_intel
-                    always = no
-                }
-            }
-        }
         custom_tooltip = {
             fail_text = requires_20_trust_or_good
             OR = {
@@ -232,6 +136,27 @@ action_form_commercial_pact = {
                     has_ascension_perk = ap_universal_transactions
                 }
             }
+        }
+    }
+    ai_acceptance = {
+        modifier = {
+            add = 50
+            is_megacorp = yes
+            desc = auth_corporate
+        }
+        modifier = {
+            add = 50
+            is_megacorp = yes
+            has_ascension_perk = ap_universal_transactions
+            desc = ap_universal_transactions
+        }
+        modifier = {
+            add = 25
+            is_xenophobe = no
+            from = {
+                is_megacorp = yes
+            }
+            desc = auth_corporate
         }
     }
 }

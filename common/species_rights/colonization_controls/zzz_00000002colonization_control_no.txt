@@ -8,7 +8,6 @@ colonization_control_no = {
             NOR = {
                 has_trait = trait_machine_unit
                 has_trait = trait_mechanical
-                has_trait = trait_machine_replica
                 AND = {
                     has_trait = trait_cybernetic
                     from = {
@@ -94,6 +93,12 @@ colonization_control_no = {
     }
     ai_will_do = {
         factor = 1
+        modifier = {
+            factor = 0
+            from = {
+                has_origin = origin_necrophage
+            }
+        }
         modifier = {
             factor = 0
             from = {

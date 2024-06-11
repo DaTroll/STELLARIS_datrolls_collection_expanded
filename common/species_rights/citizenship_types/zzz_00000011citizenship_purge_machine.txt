@@ -6,23 +6,19 @@ citizenship_purge_machine = {
         from = {
             has_authority = auth_machine_intelligence
         }
-        NOR = {
-            has_trait = trait_machine_unit
-            has_trait = trait_mechanical
-            has_trait = trait_machine_replica
-            AND = {
-                has_trait = trait_cybernetic
-                has_trait = trait_zombie
+        OR = {
+            NOT = {
                 from = {
-                    has_ascension_perk = ap_mechromancy
+                    has_valid_civic = civic_machine_servitor
                 }
             }
-        }
-        NAND = {
-            is_lonely_hive_mind_pop = no
             from = {
-                has_valid_civic = civic_machine_servitor
+                has_ascension_perk = ap_become_the_crisis
             }
+            is_lonely_hive_mind_pop = yes
+            has_trait = trait_machine_unit
+            has_trait = trait_mechanical
+            has_trait = trait_zombie
         }
     }
     allow = {

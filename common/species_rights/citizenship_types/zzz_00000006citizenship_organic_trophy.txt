@@ -3,26 +3,11 @@ citizenship_organic_trophy = {
         has_synthetic_dawn = yes
         exists = from
         from = {
-            OR = {
-                AND = {
-                    has_authority = auth_machine_intelligence
-                    has_civic = civic_machine_servitor
-                }
-                has_ascension_perk = ap_life_assemblers
-            }
+            has_authority = auth_machine_intelligence
+            has_civic = civic_machine_servitor
         }
     }
     allow = {
-        custom_tooltip = {
-            fail_text = "HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN"
-            NAND = {
-                from = {
-                    has_authority = auth_hive_mind
-                    has_ascension_perk = ap_life_assemblers
-                }
-                has_trait = trait_hive_mind
-            }
-        }
         custom_tooltip = {
             fail_text = "lonely_hive_mind_pops_kill_themselves_citizenship"
             is_lonely_hive_mind_pop = no

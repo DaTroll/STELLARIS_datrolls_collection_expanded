@@ -91,11 +91,5 @@ population_control_yes = {
                 }
             }
         }
-        modifier = {
-            factor = 0
-            from = {
-                has_valid_civic = civic_mutualistic_behavior
-            }
-        }
     }
 }

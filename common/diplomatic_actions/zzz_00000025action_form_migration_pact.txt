@@ -7,77 +7,25 @@ action_form_migration_pact = {
     AI_acceptance_base_value = -50
     action_type = positive
     possible = {
-        custom_tooltip = {
-            fail_text = "requires_actor_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                NOT = {
-                    has_valid_civic = civic_fanatic_purifiers
-                }
-            }
+        homicidal_diplomacy_restrictions = {
+            mirror = yes
         }
-        custom_tooltip = {
-            fail_text = "requires_recipient_not_fanatic_purifiers"
-            OR = {
-                is_same_species = from
-                OR = {
-                    from = {
-                        NOT = {
-                            has_valid_civic = civic_fanatic_purifiers
-                        }
-                    }
-                }
-            }
+        inwards_perfection_diplomacy_restrictions = {
+            mirror_with_intel = yes
         }
+        barbaric_despoilers_diplomacy_restrictions = {
+            mirror_with_intel = yes
+        }
+        pompous_diplomacy_restrictions = yes
+        pompous_sender_diplomacy_restrictions = yes
         custom_tooltip = {
             fail_text = "requires_actor_not_gestalt_consciousness"
-            OR = {
-                NOT = {
-                    has_ethic = ethic_gestalt_consciousness
-                }
-                has_valid_civic = civic_mutualistic_behavior
-            }
+            is_gestalt = no
         }
         custom_tooltip = {
             fail_text = "requires_recipient_not_gestalt_consciousness"
             from = {
-                OR = {
-                    NOT = {
-                        has_ethic = ethic_gestalt_consciousness
-                    }
-                    has_valid_civic = civic_mutualistic_behavior
-                }
-            }
-        }
-        if = {
-            limit = {
-                from = {
-                    has_valid_civic = civic_inwards_perfection
-                }
-            }
-            if = {
-                limit = {
-                    has_intel = {
-                        who = from
-                        intel = civics
-                    }
-                }
-                custom_tooltip = {
-                    fail_text = requires_recipient_not_inward_perfection
-                    always = no
-                }
-            }
-            else = {
-                custom_tooltip = {
-                    fail_text = diplo_action_no_low_intel
-                    always = no
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_inward_perfection"
-            NOT = {
-                has_valid_civic = civic_inwards_perfection
+                is_gestalt = no
             }
         }
         if = {
@@ -202,42 +150,6 @@ action_form_migration_pact = {
                         }
                     }
                 }
-            }
-        }
-        if = {
-            limit = {
-                from = {
-                    has_valid_civic = civic_pompous_purists
-                }
-                NOT = {
-                    root = {
-                        is_overlord_to = from
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    has_intel = {
-                        who = from
-                        intel = civics
-                    }
-                }
-                custom_tooltip = {
-                    fail_text = requires_recipient_not_pompous
-                    always = no
-                }
-            }
-            else = {
-                custom_tooltip = {
-                    fail_text = diplo_action_no_low_intel
-                    always = no
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = "requires_actor_not_pompous"
-            NOT = {
-                has_valid_civic = civic_pompous_purists
             }
         }
         custom_tooltip = {
