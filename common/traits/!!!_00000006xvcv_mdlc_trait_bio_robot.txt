@@ -5,7 +5,7 @@ xvcv_mdlc_trait_bio_robot = {
         ROBOT
         XVCV_MDLC_BIO_ROBOT
     }
-    sorting_priority = 19
+    inline_script = trait/sorting/oxr_mdlc_bio_robot
     initial = no
     randomized = no
     improves_leaders = yes

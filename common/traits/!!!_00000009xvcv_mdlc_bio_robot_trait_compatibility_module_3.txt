@@ -3,6 +3,7 @@ xvcv_mdlc_bio_robot_trait_compatibility_module_3 = {
     allowed_archetypes = {
         XVCV_MDLC_BIO_ROBOT
     }
+    inline_script = trait/sorting/oxr_mdlc_bio_robot
     modifier = {
         planet_pops_upkeep_mult = 0.3
     }

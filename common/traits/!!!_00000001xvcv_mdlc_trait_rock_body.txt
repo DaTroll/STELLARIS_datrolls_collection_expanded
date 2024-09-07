@@ -1,6 +1,6 @@
 xvcv_mdlc_trait_rock_body = {
     cost = 0
-    sorting_priority = 20
+    inline_script = trait/sorting/oxr_mdlc_basic
     initial = yes
     randomized = no
     opposites = {

@@ -1,18 +1,19 @@
 @battleship_collision_radius_1 = 3
 @battleship_collision_radius_10 = 6
-@battleship_collision_radius_11 = 36
+@battleship_collision_radius_11 = 6
 @battleship_collision_radius_12 = 36
-@battleship_collision_radius_13 = 3
+@battleship_collision_radius_13 = 36
 @battleship_collision_radius_14 = 3
-@battleship_collision_radius_15 = 6
+@battleship_collision_radius_15 = 3
+@battleship_collision_radius_16 = 6
 @battleship_collision_radius_2 = 3
 @battleship_collision_radius_3 = 3
-@battleship_collision_radius_4 = 6
-@battleship_collision_radius_5 = 3
+@battleship_collision_radius_4 = 3
+@battleship_collision_radius_5 = 6
 @battleship_collision_radius_6 = 3
 @battleship_collision_radius_7 = 3
 @battleship_collision_radius_8 = 3
-@battleship_collision_radius_9 = 6
+@battleship_collision_radius_9 = 3
 @battleship_formation_priority_1 = 5
 @battleship_formation_priority_2 = 5
 @battleship_formation_priority_3 = 5
@@ -332,18 +333,19 @@
 @speed_crawl_1 = 30
 @speed_default_1 = 120
 @speed_default_10 = 120
-@speed_default_11 = 100
-@speed_default_12 = 120
+@speed_default_11 = 120
+@speed_default_12 = 100
 @speed_default_13 = 120
 @speed_default_14 = 120
-@speed_default_15 = 100
+@speed_default_15 = 120
+@speed_default_16 = 100
 @speed_default_2 = 120
 @speed_default_3 = 120
 @speed_default_4 = 120
 @speed_default_5 = 120
-@speed_default_6 = 100
+@speed_default_6 = 120
 @speed_default_7 = 100
-@speed_default_8 = 120
+@speed_default_8 = 100
 @speed_default_9 = 120
 @speed_fast_1 = 140
 @speed_fast_10 = 140
@@ -616,42 +618,6 @@ fe_goliath = {
     icon_frame = 1
     icon = ship_size_military_station
 }
-acot_dragon_stellarite = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-acot_tuborek_flagship = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
 KZ_VOY_battlestar = {
     resources = {
         category = starbase_stations
@@ -814,7 +780,7 @@ exe_megastructure_starbase = {
     icon_frame = 1
     icon = ship_size_military_station
 }
-universal_gateway_citadel = {
+IDC_station_fallen_empire = {
     resources = {
         category = starbase_stations
     }
@@ -832,7 +798,7 @@ universal_gateway_citadel = {
     icon_frame = 1
     icon = ship_size_military_station
 }
-IDC_station_fallen_empire = {
+enclave_pirate_mercenary_station = {
     resources = {
         category = starbase_stations
     }
@@ -4762,7 +4728,7 @@ nanite_swarmer = {
         screen
     }
     use_shipnames_from = corvette
-    base_buildtime = 30
+    base_buildtime = 24
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "combat_computers"
@@ -4776,6 +4742,92 @@ nanite_swarmer = {
         }
     }
 }
+nanite_interdictor = {
+    formation_priority = @battleship_formation_priority
+    graphical_culture = no
+    entity = gatebuilder_01_cruiser_entity
+    max_speed = @speed_default_4
+    acceleration = 0.25
+    rotation_speed = 0.175
+    collision_radius = @battleship_collision_radius_1
+    max_hitpoints = 2000
+    modifier = {
+        ship_evasion_add = 20
+        ship_hull_regen_add_static = 15
+        ship_armor_add = 1500
+        ship_armor_regen_add_static = 15
+    }
+    size_multiplier = 4
+    fleet_slot_size = 8
+    section_slots = {
+        "mid" = {
+            locator = "part1"
+        }
+    }
+    num_target_locators = 0
+    is_space_station = no
+    icon = ship_size_military_8
+    base_buildtime = @cruiser_build_time
+    can_have_federation_design = yes
+    enable_default_design = yes
+    enable_3dview_in_ship_browser = yes
+    default_behavior = carrier
+    ship_roles = {
+        explosive
+        carrier
+        energy_torpedoes
+    }
+    potential_country = {
+        has_tradition = tr_nanotech_5
+    }
+    use_shipnames_from = cruiser
+    combat_disengage_chance = 1.25
+    class = shipclass_military
+    construction_type = starbase_shipyard
+    required_component_set = "power_core"
+    required_component_set = "ftl_components"
+    required_component_set = "thruster_components"
+    required_component_set = "sensor_components"
+    required_component_set = "combat_computers"
+    components_add_to_cost = no
+    resources = {
+        category = ships
+        cost = {
+            nanites = 7500
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 50
+                uses_standard_ship_sizes = yes
+            }
+            modifier = {
+                factor = 1.5
+                is_preferred_weapons = weapon_type_strike_craft
+            }
+            modifier = {
+                factor = 1.5
+                has_valid_civic = civic_hive_devouring_swarm
+            }
+            modifier = {
+                factor = 1.5
+                is_machine_empire = yes
+            }
+            modifier = {
+                factor = 1.5
+                has_valid_ai_personality = yes
+                OR = {
+                    has_ai_personality = honorbound_warriors
+                    has_ai_personality = hegemonic_imperialists
+                    has_ai_personality = democratic_crusaders
+                    has_ai_personality = became_the_crisis
+                }
+            }
+        }
+    }
+}
 large_ship_swarm = {
     is_space_object = yes
     graphical_culture = {
@@ -4784,7 +4836,7 @@ large_ship_swarm = {
     max_speed = @speed_slow_5
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_1
+    collision_radius = @battleship_collision_radius_2
     modifier = {
         ship_evasion_add = 5
         ship_armor_add = 3000
@@ -4819,7 +4871,7 @@ large_ship_carrier_swarm = {
     max_speed = @speed_slow_6
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_2
+    collision_radius = @battleship_collision_radius_3
     modifier = {
         ship_evasion_add = 5
         ship_armor_add = 3000
@@ -4889,7 +4941,7 @@ queen_swarm = {
     max_speed = @speed_slow_7
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_3
+    collision_radius = @battleship_collision_radius_4
     modifier = {
         ship_evasion_add = 5
         ship_armor_add = 6000
@@ -5118,7 +5170,7 @@ large_ship_fallen_empire = {
     max_speed = @speed_slow_11
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_4
+    collision_radius = @battleship_collision_radius_5
     modifier = {
         ship_evasion_add = 10
         ship_hull_regen_add_perc = 0.1
@@ -5310,7 +5362,7 @@ large_ship_ed = {
     max_speed = @speed_slow_12
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_5
+    collision_radius = @battleship_collision_radius_6
     modifier = {
         ship_evasion_add = 15
     }
@@ -5342,7 +5394,7 @@ medium_ship_ed = {
         "extra_dimensional_02"
         "extra_dimensional_03"
     }
-    max_speed = @speed_default_4
+    max_speed = @speed_default_5
     acceleration = 0.25
     rotation_speed = 0.175
     collision_radius = @cruiser_collision_radius_1
@@ -6527,7 +6579,7 @@ lost_swarm_adult = {
     max_speed = @speed_slow_24
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_6
+    collision_radius = @battleship_collision_radius_7
     modifier = {
         ship_evasion_add = 5
         ship_armor_add = 4000
@@ -7100,7 +7152,7 @@ large_ship_ai = {
     max_speed = @speed_slow_25
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_7
+    collision_radius = @battleship_collision_radius_8
     modifier = {
         ship_evasion_add = 10
     }
@@ -7129,7 +7181,7 @@ small_ship_ai = {
     graphical_culture = {
         "ai_01"
     }
-    max_speed = @speed_default_5
+    max_speed = @speed_default_6
     acceleration = 0.3
     rotation_speed = 0.2
     collision_radius = @destroyer_collision_radius_10
@@ -8525,7 +8577,7 @@ leviathan_01_voidspawn = {
     is_space_object = yes
     graphical_culture = no
     can_be_inspected = no
-    max_speed = @speed_default_6
+    max_speed = @speed_default_7
     acceleration = 0.2
     rotation_speed = 0.2
     collision_radius = 7
@@ -8644,7 +8696,7 @@ space_amoeba_centenarian = {
     graphical_culture = no
     can_be_inspected = no
     is_space_object = yes
-    max_speed = @speed_default_7
+    max_speed = @speed_default_8
     rotation_speed = 0.8
     collision_radius = 5
     acceleration = 1
@@ -8678,7 +8730,7 @@ space_amoeba_centenarian = {
 graygoo_mothership = {
     graphical_culture = no
     entity = "gatebuilder_01_mothership_entity"
-    max_speed = @speed_default_8
+    max_speed = @speed_default_9
     acceleration = 0.2
     rotation_speed = 0.15
     collision_radius = 5
@@ -10272,7 +10324,7 @@ reanimated_leviathan_01_voidspawn = {
     is_space_object = yes
     graphical_culture = no
     can_be_inspected = no
-    max_speed = @speed_default_9
+    max_speed = @speed_default_10
     acceleration = 0.2
     rotation_speed = 0.2
     collision_radius = 7
@@ -10350,7 +10402,7 @@ reanimated_space_amoeba_centenarian = {
     graphical_culture = no
     can_be_inspected = no
     is_space_object = yes
-    max_speed = @speed_default_10
+    max_speed = @speed_default_11
     rotation_speed = 0.8
     collision_radius = 5
     acceleration = 1
@@ -11612,7 +11664,7 @@ gpm_precursor_destroyer = {
     entity = eventship_08_entity
     acceleration = 0.1
     rotation_speed = 0.1
-    collision_radius = @battleship_collision_radius_8
+    collision_radius = @battleship_collision_radius_9
     modifier = {
         ship_evasion_add = @battleship_evasion
         ship_piracy_suppression_add = 8
@@ -11765,10 +11817,10 @@ mem_ancient_cruiser = {
         "mem_ancient_02"
     }
     is_space_object = yes
-    max_speed = @speed_default_11
+    max_speed = @speed_default_12
     acceleration = 0.25
     rotation_speed = 0.175
-    collision_radius = @battleship_collision_radius_9
+    collision_radius = @battleship_collision_radius_10
     modifier = {
         ship_evasion_add = 20
         ship_hull_regen_add_perc = 0.005
@@ -12239,7 +12291,7 @@ mem_food_constructor_large_ship = {
     max_speed = @speed_slow_33
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_10
+    collision_radius = @battleship_collision_radius_11
     modifier = {
         ship_evasion_add = 10
         ship_hull_regen_add_perc = 0.0025
@@ -12551,7 +12603,7 @@ mem_rubicon_battleship = {
     max_speed = @speed_slow_34
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_11
+    collision_radius = @battleship_collision_radius_12
     max_hitpoints = 2000
     modifier = {
         ship_evasion_add = 5
@@ -12571,7 +12623,7 @@ mem_rubicon_battleship = {
 mem_rubicon_cruiser = {
     graphical_culture = no
     entity = "mem_rubicon_cruiser_entity"
-    max_speed = @speed_default_12
+    max_speed = @speed_default_13
     acceleration = 0.25
     rotation_speed = 0.175
     collision_radius = @cruiser_collision_radius_3
@@ -12640,10 +12692,10 @@ mem_rubicon_corvette = {
 mem_rubicon_mender = {
     graphical_culture = no
     entity = "eventship_03_entity"
-    max_speed = @speed_default_13
+    max_speed = @speed_default_14
     acceleration = 0.25
     rotation_speed = 0.175
-    collision_radius = @battleship_collision_radius_12
+    collision_radius = @battleship_collision_radius_13
     max_hitpoints = 15000
     modifier = {
         ship_evasion_add = 5
@@ -13046,10 +13098,10 @@ mem_ue_cruiser = {
         "mammalian_01"
     }
     entity = "mammalian_01_mem_ue_cruiser_entity"
-    max_speed = @speed_default_14
+    max_speed = @speed_default_15
     acceleration = 0.25
     rotation_speed = 0.2
-    collision_radius = @battleship_collision_radius_13
+    collision_radius = @battleship_collision_radius_14
     modifier = {
         ship_armor_add = 25
         ship_evasion_add = 15
@@ -13088,7 +13140,7 @@ mem_ue_battleship = {
     max_speed = @speed_slow_35
     acceleration = 0.2
     rotation_speed = 0.15
-    collision_radius = @battleship_collision_radius_14
+    collision_radius = @battleship_collision_radius_15
     max_hitpoints = @battleship_hp
     modifier = {
         ship_evasion_add = @battleship_evasion
@@ -13157,10 +13209,10 @@ mem_vazuran_cruiser = {
         "mem_ancient_02"
     }
     is_space_object = yes
-    max_speed = @speed_default_15
+    max_speed = @speed_default_16
     acceleration = 0.25
     rotation_speed = 0.175
-    collision_radius = @battleship_collision_radius_15
+    collision_radius = @battleship_collision_radius_16
     modifier = {
         ship_evasion_add = 10
         ships_upkeep_mult = -1

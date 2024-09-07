@@ -8,4 +8,5 @@ tech_advanced_gene_tailoring = {
     potential = {
         merg_has_rogue_maid = yes
     }
+    weight = 0
 }

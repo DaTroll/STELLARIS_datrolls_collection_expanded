@@ -1,6 +1,6 @@
 xvcv_mdlc_trait_synth_skin = {
     cost = 0
-    sorting_priority = 20
+    inline_script = trait/sorting/oxr_mdlc_basic
     initial = yes
     randomized = no
     opposites = {

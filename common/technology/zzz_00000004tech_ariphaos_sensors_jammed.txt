@@ -8,4 +8,5 @@ tech_ariphaos_sensors_jammed = {
     potential = {
         merg_has_sensor_expansion = yes
     }
+    weight = 0
 }

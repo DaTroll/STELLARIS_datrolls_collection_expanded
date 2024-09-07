@@ -8,4 +8,5 @@ esc_tech_synthetic_lifeform_studies = {
     potential = {
         merg_has_esc_next = yes
     }
+    weight = 0
 }

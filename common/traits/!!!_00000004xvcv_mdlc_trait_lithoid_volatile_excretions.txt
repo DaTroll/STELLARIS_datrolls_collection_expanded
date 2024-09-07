@@ -1,5 +1,6 @@
 xvcv_mdlc_trait_lithoid_volatile_excretions = {
     cost = 2
+    inline_script = trait/sorting/oxr_mdlc_basic
     initial = no
     randomized = no
     opposites = {

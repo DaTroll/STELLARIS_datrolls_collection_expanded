@@ -8,4 +8,5 @@ tech_advanced_dummy_workers = {
     potential = {
         merg_has_wandering_witch = yes
     }
+    weight = 0
 }
