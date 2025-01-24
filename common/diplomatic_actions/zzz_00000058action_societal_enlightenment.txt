@@ -12,9 +12,12 @@ action_societal_enlightenment = {
             }
             OR = {
                 merg_is_default_empire = yes
-                AND = {
-                    has_global_flag = has_fallen_empire_player
-                    is_country_type = fallen_empire
+                inline_script = {
+                    script = merger_of_rules/toggled_code
+                    code = "
+is_country_type = fallen_empire
+"
+                    toggle = @wula_compatch_var
                 }
             }
             from = {
@@ -27,6 +30,7 @@ action_societal_enlightenment = {
                     has_country_flag = solarpunk_country
                 }
                 current_awareness_level = full
+                observation_owner_is_actor = yes
             }
         }
     }
@@ -59,8 +63,10 @@ action_societal_enlightenment = {
             OR = {
                 is_same_species = from
                 from = {
-                    NOT = {
+                    NOR = {
                         has_valid_civic = civic_fanatic_purifiers
+                        has_country_flag = purifying_age
+                        has_country_flag = late_purifying_age
                     }
                 }
             }
@@ -120,7 +126,8 @@ action_societal_enlightenment = {
                     from = {
                         OR = {
                             has_country_flag = synthetic_empire
-                            has_authority = auth_machine_intelligence
+                            is_machine_empire = yes
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -141,7 +148,8 @@ action_societal_enlightenment = {
                     }
                     OR = {
                         has_country_flag = synthetic_empire
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
+                        is_individual_machine = yes
                     }
                 }
             }
@@ -186,6 +194,16 @@ action_societal_enlightenment = {
                 has_modifier = pre_ftl_distrustful
             }
             desc = pre_ftl_distrustful
+        }
+        modifier = {
+            add = 25
+            has_ethic = ethic_xenophile
+            desc = PREFTL_IS_XENOPHILE
+        }
+        modifier = {
+            add = 50
+            has_ethic = ethic_fanatic_xenophile
+            desc = PREFTL_IS_XENOPHILE
         }
     }
 }

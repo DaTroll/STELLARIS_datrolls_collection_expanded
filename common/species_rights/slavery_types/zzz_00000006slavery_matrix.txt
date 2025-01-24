@@ -6,7 +6,7 @@ slavery_matrix = {
     pop_status_frame = 6
     potential = {
         from = {
-            has_authority = auth_machine_intelligence
+            is_machine_empire = yes
         }
         NOT = {
             from = {

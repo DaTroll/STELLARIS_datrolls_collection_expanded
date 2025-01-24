@@ -7,9 +7,12 @@ action_reveal_presence = {
         hidden_trigger = {
             OR = {
                 merg_is_default_empire = yes
-                AND = {
-                    has_global_flag = has_fallen_empire_player
-                    is_country_type = fallen_empire
+                inline_script = {
+                    script = merger_of_rules/toggled_code
+                    code = "
+is_country_type = fallen_empire
+"
+                    toggle = @wula_compatch_var
                 }
             }
             from = {
@@ -20,6 +23,7 @@ action_reveal_presence = {
                 NOT = {
                     current_awareness_level = full
                 }
+                observation_owner_is_actor = yes
             }
         }
     }
@@ -64,8 +68,10 @@ action_reveal_presence = {
             OR = {
                 is_same_species = from
                 from = {
-                    NOT = {
+                    NOR = {
                         has_valid_civic = civic_fanatic_purifiers
+                        has_country_flag = purifying_age
+                        has_country_flag = late_purifying_age
                     }
                 }
             }
@@ -127,7 +133,8 @@ action_reveal_presence = {
                     from = {
                         OR = {
                             has_country_flag = synthetic_empire
-                            has_authority = auth_machine_intelligence
+                            is_machine_empire = yes
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -148,7 +155,8 @@ action_reveal_presence = {
                     }
                     OR = {
                         has_country_flag = synthetic_empire
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
+                        is_individual_machine = yes
                     }
                 }
             }

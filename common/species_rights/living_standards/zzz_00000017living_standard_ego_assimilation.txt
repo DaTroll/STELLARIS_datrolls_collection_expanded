@@ -20,7 +20,7 @@ living_standard_ego_assimilation = {
         }
         exists = from
         from = {
-            has_authority = auth_hive_mind
+            is_hive_empire = yes
             has_active_tradition = tr_genetics_creation
             NOT = {
                 has_civic = civic_hive_devouring_swarm

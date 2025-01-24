@@ -143,6 +143,14 @@ action_ask_to_become_subjugated = {
                 value >= equivalent
             }
         }
+        modifier = {
+            add = -100
+            root = {
+                is_militarist = yes
+                has_faction = imperialist
+            }
+            desc = TOO_IMPERIAL
+        }
     }
     ai_acceptance = {
         modifier = {

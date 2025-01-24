@@ -8,9 +8,12 @@ action_stop_open_technological_enlightenment = {
         hidden_trigger = {
             OR = {
                 merg_is_default_empire = yes
-                AND = {
-                    has_global_flag = has_fallen_empire_player
-                    is_country_type = fallen_empire
+                inline_script = {
+                    script = merger_of_rules/toggled_code
+                    code = "
+is_country_type = fallen_empire
+"
+                    toggle = @wula_compatch_var
                 }
             }
             from = {
@@ -19,6 +22,7 @@ action_stop_open_technological_enlightenment = {
                     has_country_flag = @diplo_flag
                 }
                 is_under_open_technological_enlightenment = root
+                observation_owner_is_actor = yes
             }
         }
     }

@@ -8,13 +8,11 @@ slavery_livestock = {
         host_has_dlc = "Utopia"
         OR = {
             from = {
-                NOT = {
-                    has_authority = auth_machine_intelligence
-                }
+                is_machine_empire = no
             }
             AND = {
                 from = {
-                    has_authority = auth_machine_intelligence
+                    is_machine_empire = yes
                 }
                 from = {
                     has_valid_civic = civic_machine_guided_sapience
@@ -62,7 +60,7 @@ slavery_livestock = {
             NOR = {
                 has_trait = trait_delicious
                 from = {
-                    has_authority = auth_hive_mind
+                    is_hive_empire = yes
                 }
             }
         }

@@ -1,115 +1,3 @@
-cruel_pain_ship_labor_module = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-cruel_suffering_ship_labor_module = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-cruel_agony_ship_labor_module = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-acot_starbase_shipyard = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-acot_sigma_starbase_shipyard = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-acot_phanon_starbase_shipyard = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-acot_theta_starbase_shipyard = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
-virtual_shipyard_uplink = {
-    icon = "GFX_starbase_shipyard"
-    section = "HANGAR_STARBASE_SECTION"
-    construction_days = 0
-    potential = {
-        always = no
-    }
-    resources = {
-        category = starbase_modules
-    }
-    ai_weight = {
-        weight = 0
-    }
-}
 orbital_ring_habitation = {
     icon = "GFX_orbitalring_module_habitation"
     section = "HABITAT_ORBITAL_RING_SECTION"
@@ -180,6 +68,38 @@ orbital_ring_shipyard = {
     initial = yes
     potential = {
         is_orbital_ring = yes
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = orbital_ring_hatchery
+            has_starbase_module = orbital_ring_beastport
+        }
     }
     resources = {
         category = starbase_modules
@@ -206,8 +126,30 @@ orbital_ring_shipyard = {
         }
         starbase_shipyard_capacity_add = 1
     }
+    on_finished = {
+        set_ship_construction_type = starbase_shipyard
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = orbital_ring_shipyard
+                }
+            }
+            set_ship_construction_type = none
+        }
+    }
     ai_weight = {
-        weight = 100
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = orbital_ring_shipyard
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                uses_standard_ship_sizes = no
+            }
+        }
     }
 }
 orbital_ring_anchorage = {
@@ -382,6 +324,251 @@ orbital_ring_hangar_bay = {
     }
     show_in_tech = "tech_strike_craft_1"
 }
+orbital_ring_hatchery = {
+    icon = "GFX_starbase_hatchery"
+    section = "SHIPYARD_ORBITAL_RING_SECTION"
+    construction_days = 180
+    starbase_type = orbital_ring
+    potential = {
+        exists = owner
+        is_orbital_ring = yes
+        owner = {
+            has_technology = tech_alien_cloning
+            is_beastmasters_empire = no
+        }
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = orbital_ring_shipyard
+            has_starbase_module = orbital_ring_beastport
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    station_modifier = {
+        custom_tooltip = sm_hatchery_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 5
+    }
+    on_finished = {
+        set_ship_construction_type = starbase_hatchery
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = orbital_ring_hatchery
+                }
+            }
+            set_ship_construction_type = none
+        }
+    }
+    triggered_station_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner.overlord
+                has_holding = {
+                    holding = holding_orbital_assembly_complex
+                    owner = owner.overlord
+                }
+            }
+        }
+        custom_tooltip = sm_hatchery_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = orbital_ring_hatchery
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                uses_fauna_ship_sizes = no
+            }
+        }
+    }
+    show_in_tech = "tech_alien_cloning"
+}
+orbital_ring_beastport = {
+    icon = "GFX_starbase_beastport"
+    section = "SHIPYARD_ORBITAL_RING_SECTION"
+    construction_days = 180
+    starbase_type = orbital_ring
+    potential = {
+        exists = owner
+        is_orbital_ring = yes
+        owner = {
+            has_technology = tech_alien_cloning
+            is_beastmasters_empire = yes
+        }
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = orbital_ring_shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = orbital_ring_hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = orbital_ring_shipyard
+            has_starbase_module = orbital_ring_hatchery
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    station_modifier = {
+        custom_tooltip = sm_beastport_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 5
+    }
+    on_finished = {
+        set_ship_construction_type = starbase_beastport
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = orbital_ring_beastport
+                }
+            }
+            set_ship_construction_type = none
+        }
+    }
+    triggered_station_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner.overlord
+                has_holding = {
+                    holding = holding_orbital_assembly_complex
+                    owner = owner.overlord
+                }
+            }
+        }
+        custom_tooltip = sm_beastport_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = orbital_ring_beastport
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                uses_fauna_ship_sizes = no
+            }
+        }
+    }
+}
+orbital_ring_vivarium_tank = {
+    icon = "GFX_starbase_vivarium_tank"
+    section = "HANGAR_ORBITAL_RING_SECTION"
+    construction_days = 180
+    starbase_type = orbital_ring
+    potential = {
+        exists = owner
+        is_orbital_ring = yes
+        owner = {
+            OR = {
+                has_technology = tech_gravity_wells
+                has_origin = origin_primal_calling
+            }
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 10
+    }
+    orbit_modifier = {
+        space_fauna_growth_rate_mult = 0.1
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = orbital_ring_vivarium_tank
+        }
+    }
+    show_in_tech = "tech_gravity_wells"
+}
 shipyard = {
     icon = "GFX_starbase_shipyard"
     section = "ASSEMBLYYARD_STARBASE_SECTION"
@@ -389,6 +576,38 @@ shipyard = {
     initial = yes
     potential = {
         is_normal_starbase = yes
+        solar_system = {
+            count_starbase_modules = {
+                type = hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = hatchery
+            has_starbase_module = beastport
+        }
     }
     resources = {
         category = starbase_modules
@@ -408,53 +627,28 @@ shipyard = {
         }
         starbase_shipyard_capacity_add = 1
     }
-    ai_weight = {
-        weight = 100
-        modifier = {
-            factor = 100
-            owner = {
-                OR = {
-                    count_owned_starbase = {
-                        count = 0
-                        limit = {
-                            has_starbase_module = shipyard
-                        }
-                    }
-                    AND = {
-                        controlled_systems > 30
-                        count_owned_starbase = {
-                            count < 2
-                            limit = {
-                                has_starbase_module = shipyard
-                            }
-                        }
-                    }
-                    AND = {
-                        controlled_systems > 60
-                        count_owned_starbase = {
-                            count < 3
-                            limit = {
-                                has_starbase_module = shipyard
-                            }
-                        }
-                    }
+    on_finished = {
+        set_ship_construction_type = starbase_shipyard
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = shipyard
                 }
             }
+            set_ship_construction_type = none
+        }
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = shipyard
         }
         modifier = {
-            factor = 3
-            has_starbase_module = shipyard
-            count_starbase_modules = {
-                count < 2
-                type = shipyard
-            }
-        }
-        modifier = {
-            factor = 3
-            has_starbase_module = shipyard
-            count_starbase_modules = {
-                count < 4
-                type = shipyard
+            factor = 0
+            owner = {
+                uses_standard_ship_sizes = no
             }
         }
     }
@@ -877,5 +1071,427 @@ astromining_bay = {
                 }
             }
         }
+    }
+}
+hatchery = {
+    icon = "GFX_starbase_hatchery"
+    section = "ASSEMBLYYARD_STARBASE_SECTION"
+    construction_days = 180
+    potential = {
+        exists = owner
+        owner = {
+            has_technology = tech_alien_cloning
+            is_beastmasters_empire = no
+        }
+        is_normal_starbase = yes
+        solar_system = {
+            count_starbase_modules = {
+                type = shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = beastport
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = shipyard
+            has_starbase_module = beastport
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    station_modifier = {
+        custom_tooltip = sm_hatchery_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 5
+    }
+    on_finished = {
+        set_ship_construction_type = starbase_hatchery
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = hatchery
+                }
+            }
+            set_ship_construction_type = none
+        }
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = hatchery
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                uses_fauna_ship_sizes = no
+            }
+        }
+    }
+    show_in_tech = "tech_alien_cloning"
+}
+beastport = {
+    icon = "GFX_starbase_beastport"
+    section = "ASSEMBLYYARD_STARBASE_SECTION"
+    construction_days = 180
+    potential = {
+        exists = owner
+        owner = {
+            has_technology = tech_alien_cloning
+            is_beastmasters_empire = yes
+        }
+        is_normal_starbase = yes
+        solar_system = {
+            count_starbase_modules = {
+                type = shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            count_starbase_modules = {
+                type = shipyard
+                count < 1
+                include_being_constructed = yes
+            }
+            count_starbase_modules = {
+                type = hatchery
+                count < 1
+                include_being_constructed = yes
+            }
+        }
+    }
+    abort_construction_trigger = {
+        OR = {
+            has_starbase_module = shipyard
+            has_starbase_module = hatchery
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    station_modifier = {
+        custom_tooltip = sm_beastport_capacity_add_tt
+        show_only_custom_tooltip = yes
+        starbase_shipyard_capacity_add = 1
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 5
+    }
+    on_finished = {
+        set_ship_construction_type = starbase_beastport
+    }
+    on_destroyed = {
+        if = {
+            limit = {
+                NOT = {
+                    has_starbase_module = beastport
+                }
+            }
+            set_ship_construction_type = none
+        }
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = beastport
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                uses_fauna_ship_sizes = no
+            }
+        }
+    }
+}
+vivarium_tank = {
+    icon = "GFX_starbase_vivarium_tank"
+    section = "SCIENCE_STARBASE_SECTION"
+    construction_days = 180
+    potential = {
+        exists = owner
+        owner = {
+            OR = {
+                has_technology = tech_gravity_wells
+                has_origin = origin_primal_calling
+            }
+        }
+        is_normal_starbase = yes
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 50
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+    country_modifier = {
+        country_vivarium_max_capacity_add = 10
+    }
+    orbit_modifier = {
+        space_fauna_growth_rate_mult = 0.1
+    }
+    ai_weight = {
+        inline_script = {
+            script = starbase_modules/ship_construction_ai_weight
+            MODULE = vivarium_tank
+        }
+    }
+    show_in_tech = "tech_gravity_wells"
+}
+rikk_mdlc_world_machine_dyson_deflector = {
+    icon = "GFX_solar_panel_network"
+    section = "SCIENCE_STARBASE_SECTION"
+    construction_days = 180
+    potential = {
+        exists = owner
+        is_normal_starbase = yes
+        owner = {
+            has_technology = "rikk_mdlc_tech_world_machine_dyson"
+            has_monthly_income = {
+                resource = engineering_research
+                value > @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+            }
+            has_monthly_income = {
+                resource = physics_research
+                value = @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            custom_tooltip = {
+                fail_text = "rikk_mdlc_requires_full_dyson_sphere"
+                OR = {
+                    has_megastructure = dyson_sphere_5
+                    inline_script = {
+                        script = oxr_merger_of_rules_copy/toggled_code
+                        code = "
+has_megastructure = dyson_sphere_5_a_star
+has_megastructure = dyson_sphere_5_b_star
+has_megastructure = dyson_sphere_5_f_star
+has_megastructure = dyson_sphere_5_g_star
+has_megastructure = dyson_sphere_5_k_star
+has_megastructure = dyson_sphere_5_m_star
+has_megastructure = dyson_sphere_5_m_giant_star
+"
+                        toggle = @has_gigastructures
+                    }
+                }
+            }
+        }
+    }
+    show_in_tech = "rikk_mdlc_tech_world_machine_dyson"
+    country_modifier = {
+        rikk_mdlc_world_machine_dyson_sphere_receiver_max = 4
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 1000
+        }
+        upkeep = {
+            energy = 1000
+            mult = owner.value:scripted_modifier_mult|MODIFIER|country_energy_produces_mult|
+        }
+        upkeep = {
+            trigger = {
+                always = yes
+            }
+            physics_research = @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+            engineering_research = @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    on_destroyed = {
+        owner = {
+            country_event = {
+                id = rikk_mdlc_wm_upgrade_events.120
+                days = 1
+            }
+        }
+    }
+}
+rikk_mdlc_world_machine_dyson_deflector_O = {
+    icon = "GFX_solar_panel_network"
+    section = "SCIENCE_STARBASE_SECTION"
+    construction_days = 180
+    show_in_tech = "rikk_mdlc_tech_world_machine_dyson"
+    potential = {
+        has_global_flag = giga_has_host
+        exists = owner
+        is_normal_starbase = yes
+        owner = {
+            has_technology = "rikk_mdlc_tech_world_machine_dyson"
+            inline_script = {
+                script = oxr_merger_of_rules_copy/toggled_code
+                code = "
+has_technology = "
+                giga_tech_dyson_o_star"
+"
+                toggle = @has_gigastructures
+            }
+            has_monthly_income = {
+                resource = engineering_research
+                value > @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+            }
+            has_monthly_income = {
+                resource = physics_research
+                value = @oxr_mdlc_origin_wm_rikk_dyson_deflector_research_upkeep
+            }
+        }
+    }
+    possible = {
+        solar_system = {
+            custom_tooltip = {
+                fail_text = "rikk_mdlc_requires_full_dyson_sphere"
+                has_megastructure = dyson_sphere_5_o_star
+            }
+        }
+    }
+    country_modifier = {
+        rikk_mdlc_world_machine_dyson_sphere_receiver_max = 20
+    }
+    resources = {
+        category = giga_megastructures
+        cost = {
+            alloys = 5000
+        }
+        upkeep = {
+            energy = @dyson_p2_produces_energy_o_star
+            mult = owner.value:scripted_modifier_mult|MODIFIER|country_energy_produces_mult|
+        }
+        upkeep = {
+            trigger = {
+                always = yes
+            }
+            physics_research = 80
+            engineering_research = 80
+        }
+    }
+    ai_weight = {
+        weight = 100
+    }
+    on_destroyed = {
+        owner = {
+            country_event = {
+                id = rikk_mdlc_wm_upgrade_events.120
+                days = 1
+            }
+        }
+    }
+}
+rikk_mdlc_world_machine_dyson_receiver = {
+    icon = "GFX_solar_panel_network"
+    section = "SOLAR_PANEL_ORBITAL_RING_SECTION"
+    construction_days = 180
+    potential = {
+        exists = owner
+        is_orbital_ring = yes
+        owner = {
+            has_technology = "rikk_mdlc_tech_world_machine_dyson"
+            has_monthly_income = {
+                resource = engineering_research
+                value > @oxr_mdlc_rikk_dyson_deflector_research_upkeep_giga_o
+            }
+            has_monthly_income = {
+                resource = physics_research
+                value > @oxr_mdlc_rikk_dyson_deflector_research_upkeep_giga_o
+            }
+        }
+    }
+    show_in_tech = "rikk_mdlc_tech_world_machine_dyson"
+    possible = {
+        owner = {
+            custom_tooltip = {
+                fail_text = "rikk_mdlc_requires_additional_pylons"
+                check_modifier_value = {
+                    modifier = rikk_mdlc_world_machine_dyson_sphere_receiver_max
+                    value > 0
+                }
+            }
+        }
+    }
+    resources = {
+        category = starbase_modules
+        cost = {
+            alloys = 1000
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    check_modifier_value = {
+                        modifier = rikk_mdlc_world_machine_dyson_sphere_receiver_max
+                        value < 0
+                    }
+                }
+            }
+            energy = 2000
+        }
+        upkeep = {
+            trigger = {
+                always = yes
+            }
+            physics_research = @oxr_mdlc_rikk_dyson_deflector_research_upkeep_giga_o
+            engineering_research = @oxr_mdlc_rikk_dyson_deflector_research_upkeep_giga_o
+        }
+    }
+    planet_modifier = {
+        rikk_mdlc_world_machine_districts_base_production = @oxr_mdlc_planet_base_production_per_orbital_dyson_receiver
+    }
+    country_modifier = {
+        rikk_mdlc_world_machine_dyson_sphere_receiver_max = -1
+    }
+    ai_weight = {
+        weight = 100
     }
 }

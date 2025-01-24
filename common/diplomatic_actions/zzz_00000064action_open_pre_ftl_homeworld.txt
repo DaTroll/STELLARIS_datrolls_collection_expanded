@@ -7,9 +7,12 @@ action_open_pre_ftl_homeworld = {
         hidden_trigger = {
             OR = {
                 merg_is_default_empire = yes
-                AND = {
-                    has_global_flag = has_fallen_empire_player
-                    is_country_type = fallen_empire
+                inline_script = {
+                    script = merger_of_rules/toggled_code
+                    code = "
+is_country_type = fallen_empire
+"
+                    toggle = @wula_compatch_var
                 }
             }
             from = {

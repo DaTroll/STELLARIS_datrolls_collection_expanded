@@ -6,7 +6,7 @@ triggered_opinion_hive_mind_empath = {
         }
         FROM = {
             has_valid_civic = "civic_hive_empath"
-            has_authority = auth_hive_mind
+            is_hive_empire = yes
         }
     }
     opinion = {

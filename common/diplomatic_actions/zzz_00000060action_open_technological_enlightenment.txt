@@ -8,9 +8,12 @@ action_open_technological_enlightenment = {
         hidden_trigger = {
             OR = {
                 merg_is_default_empire = yes
-                AND = {
-                    has_global_flag = has_fallen_empire_player
-                    is_country_type = fallen_empire
+                inline_script = {
+                    script = merger_of_rules/toggled_code
+                    code = "
+is_country_type = fallen_empire
+"
+                    toggle = @wula_compatch_var
                 }
             }
             from = {
@@ -23,6 +26,7 @@ action_open_technological_enlightenment = {
                     is_under_open_technological_enlightenment = root
                     has_country_flag = solarpunk_country
                 }
+                observation_owner_is_actor = yes
             }
         }
     }
@@ -44,8 +48,11 @@ action_open_technological_enlightenment = {
         custom_tooltip = {
             fail_text = "requires_recipient_not_tech_frozen"
             from = {
-                NOT = {
+                NOR = {
                     has_country_flag = tech_frozen
+                    capital_scope = {
+                        merg_is_habitat = yes
+                    }
                 }
             }
         }
@@ -63,8 +70,10 @@ action_open_technological_enlightenment = {
             OR = {
                 is_same_species = from
                 from = {
-                    NOT = {
+                    NOR = {
                         has_valid_civic = civic_fanatic_purifiers
+                        has_country_flag = purifying_age
+                        has_country_flag = late_purifying_age
                     }
                 }
             }
@@ -126,7 +135,8 @@ action_open_technological_enlightenment = {
                     from = {
                         OR = {
                             has_country_flag = synthetic_empire
-                            has_authority = auth_machine_intelligence
+                            is_machine_empire = yes
+                            is_individual_machine = yes
                         }
                     }
                 }
@@ -147,7 +157,8 @@ action_open_technological_enlightenment = {
                     }
                     OR = {
                         has_country_flag = synthetic_empire
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
+                        is_individual_machine = yes
                     }
                 }
             }
@@ -167,7 +178,8 @@ action_open_technological_enlightenment = {
                     }
                     OR = {
                         has_country_flag = synthetic_empire
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
+                        is_individual_machine = yes
                     }
                 }
             }
@@ -193,6 +205,81 @@ action_open_technological_enlightenment = {
                         pre_ftl_ancient_era = yes
                     }
                     set_country_flag = started_enlightening_from_ancient_era
+                }
+                if = {
+                    limit = {
+                        has_country_flag = stone_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_stone_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = bronze_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_bronze_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = iron_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_iron_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = late_medieval_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_late_medieval_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = renaissance_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_renaissance_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = philosophy_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_philosophy_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = industrial_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_industrial_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = machine_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_machine_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = pollution_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_pollution_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = dieselpunk_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_dieselpunk_age
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_country_flag = apocalyptic_age
+                            has_country_flag = post_apocalyptic_age
+                        }
+                    }
+                    set_country_flag = pre_ftl_enlightening_apocalyptic_age
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = pollution_age
+                    }
+                    set_country_flag = pre_ftl_enlightening_pollution_age
                 }
                 capital_scope.observation_outpost = {
                     set_event_locked = yes
@@ -221,6 +308,21 @@ action_open_technological_enlightenment = {
                 has_modifier = pre_ftl_distrustful
             }
             desc = pre_ftl_distrustful
+        }
+        modifier = {
+            add = 25
+            has_ethic = ethic_xenophile
+            desc = PREFTL_IS_XENOPHILE
+        }
+        modifier = {
+            add = 50
+            has_ethic = ethic_fanatic_xenophile
+            desc = PREFTL_IS_XENOPHILE
+        }
+        modifier = {
+            add = 35
+            is_materialist = yes
+            desc = PREFTL_IS_MATERIALIST
         }
     }
 }

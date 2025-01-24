@@ -3,7 +3,7 @@ military_service_full = {
         if = {
             limit = {
                 from = {
-                    has_authority = auth_machine_intelligence
+                    is_machine_empire = yes
                 }
             }
             OR = {
@@ -22,7 +22,7 @@ military_service_full = {
             if = {
                 limit = {
                     from = {
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
                     }
                 }
                 OR = {
@@ -74,30 +74,26 @@ military_service_full = {
                 }
             }
         }
-        if = {
-            limit = {
+        custom_tooltip = {
+            fail_text = too_alien
+            OR = {
+                is_same_species = from
                 from = {
-                    NOT = {
-                        has_origin = origin_synthetic_fertility
+                    AND = {
+                        has_valid_civic = civic_selective_kinship
+                        is_same_species_class = root
                     }
                 }
-                has_trait = trait_mechanical
-            }
-            custom_tooltip = {
-                fail_text = too_alien
-                OR = {
-                    is_same_species = from
+                AND = {
                     from = {
-                        AND = {
-                            has_valid_civic = civic_selective_kinship
-                            is_same_species_class = root
-                        }
+                        has_origin = origin_synthetic_fertility
                     }
-                    from = {
-                        NOR = {
-                            has_ethic = ethic_xenophobe
-                            has_ethic = ethic_fanatic_xenophobe
-                        }
+                    has_trait = trait_mechanical
+                }
+                from = {
+                    NOR = {
+                        has_ethic = ethic_xenophobe
+                        has_ethic = ethic_fanatic_xenophobe
                     }
                 }
             }
@@ -107,7 +103,7 @@ military_service_full = {
             OR = {
                 NOT = {
                     from = {
-                        has_authority = auth_hive_mind
+                        is_hive_empire = yes
                     }
                 }
                 has_trait = trait_hive_mind
@@ -124,7 +120,7 @@ military_service_full = {
                 }
                 from = {
                     OR = {
-                        has_authority = auth_machine_intelligence
+                        is_machine_empire = yes
                         is_individual_machine = yes
                         has_technology = tech_droid_workers
                     }
@@ -134,12 +130,6 @@ military_service_full = {
         custom_tooltip = {
             fail_text = nerve_stapled_cannot_lead_armies
             can_think = yes
-        }
-        custom_tooltip = {
-            fail_text = nerve_stapled_cannot_lead_armies
-            NOT = {
-                has_trait = trait_robot_suppressed
-            }
         }
     }
     ai_will_do = {

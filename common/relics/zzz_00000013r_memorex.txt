@@ -1,4 +1,3 @@
-@triumph_duration = 3600
 r_memorex = {
     activation_duration = @triumph_duration
     portrait = "GFX_relic_orb_insight"

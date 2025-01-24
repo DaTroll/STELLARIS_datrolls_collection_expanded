@@ -8,7 +8,7 @@ living_standard_hive_mind = {
         if = {
             limit = {
                 from = {
-                    has_authority = auth_hive_mind
+                    is_hive_empire = yes
                 }
             }
             custom_tooltip = {
@@ -19,7 +19,7 @@ living_standard_hive_mind = {
         else_if = {
             limit = {
                 from = {
-                    has_authority = auth_machine_intelligence
+                    is_machine_empire = yes
                 }
             }
             custom_tooltip = {

@@ -8,7 +8,7 @@ triggered_opinion_hive_mind = {
             NOT = {
                 has_valid_civic = "civic_hive_devouring_swarm"
             }
-            has_authority = auth_hive_mind
+            is_hive_empire = yes
         }
     }
     opinion = {

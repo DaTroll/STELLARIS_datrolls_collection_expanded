@@ -1,5 +1,3 @@
-@activation_cost = 3000
-@triumph_duration = 3600
 r_three_londor = {
     activation_duration = @triumph_duration
     portrait = "GFX_relic_londor_core"

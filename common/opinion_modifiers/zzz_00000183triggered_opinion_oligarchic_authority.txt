@@ -1,10 +1,10 @@
 triggered_opinion_oligarchic_authority = {
     trigger = {
         is_country_type = default
-        has_authority = auth_oligarchic
+        is_oligarchic_authority = yes
         FROM = {
             is_country_type = default
-            has_authority = auth_oligarchic
+            is_oligarchic_authority = yes
         }
     }
     opinion = {

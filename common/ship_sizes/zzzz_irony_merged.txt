@@ -190,19 +190,19 @@
 @orbital_ring_formation_priority_2 = 1
 @orbital_ring_formation_priority_3 = 1
 @salvagecostlarge_1 = 2000
-@salvagecostlarge_10 = 500
-@salvagecostlarge_11 = 500
-@salvagecostlarge_12 = 500
-@salvagecostlarge_13 = 500
-@salvagecostlarge_14 = 500
-@salvagecostlarge_15 = 500
-@salvagecostlarge_16 = 200
-@salvagecostlarge_17 = 200
-@salvagecostlarge_18 = 200
-@salvagecostlarge_19 = 200
+@salvagecostlarge_10 = 200
+@salvagecostlarge_11 = 200
+@salvagecostlarge_12 = 200
+@salvagecostlarge_13 = 200
+@salvagecostlarge_14 = 5000
+@salvagecostlarge_15 = 5000
+@salvagecostlarge_16 = 5000
+@salvagecostlarge_17 = 5000
+@salvagecostlarge_18 = 5000
+@salvagecostlarge_19 = 5000
 @salvagecostlarge_2 = 2000
-@salvagecostlarge_20 = 200
-@salvagecostlarge_21 = 200
+@salvagecostlarge_20 = 5000
+@salvagecostlarge_21 = 5000
 @salvagecostlarge_22 = 5000
 @salvagecostlarge_23 = 5000
 @salvagecostlarge_24 = 5000
@@ -213,123 +213,64 @@
 @salvagecostlarge_29 = 5000
 @salvagecostlarge_3 = 2000
 @salvagecostlarge_30 = 5000
-@salvagecostlarge_31 = 5000
-@salvagecostlarge_32 = 5000
-@salvagecostlarge_33 = 5000
-@salvagecostlarge_34 = 5000
-@salvagecostlarge_35 = 5000
-@salvagecostlarge_36 = 5000
-@salvagecostlarge_37 = 5000
-@salvagecostlarge_38 = 5000
-@salvagecostlarge_39 = 1000
+@salvagecostlarge_31 = 1000
+@salvagecostlarge_32 = 1000
+@salvagecostlarge_33 = 1000
+@salvagecostlarge_34 = 2000
+@salvagecostlarge_35 = 1000
 @salvagecostlarge_4 = 1000
-@salvagecostlarge_40 = 1000
-@salvagecostlarge_41 = 1000
-@salvagecostlarge_42 = 2000
-@salvagecostlarge_43 = 1000
 @salvagecostlarge_5 = 1000
 @salvagecostlarge_6 = 500
 @salvagecostlarge_7 = 500
-@salvagecostlarge_8 = 500
-@salvagecostlarge_9 = 500
+@salvagecostlarge_8 = 200
+@salvagecostlarge_9 = 200
 @salvagecostlargerare_1 = 100
-@salvagecostlargerare_10 = 50
-@salvagecostlargerare_11 = 200
-@salvagecostlargerare_12 = 200
-@salvagecostlargerare_13 = 200
-@salvagecostlargerare_14 = 200
-@salvagecostlargerare_15 = 200
-@salvagecostlargerare_16 = 200
-@salvagecostlargerare_17 = 100
-@salvagecostlargerare_18 = 100
-@salvagecostlargerare_19 = 1000
+@salvagecostlargerare_10 = 100
+@salvagecostlargerare_11 = 100
+@salvagecostlargerare_12 = 1000
+@salvagecostlargerare_13 = 1000
+@salvagecostlargerare_14 = 1000
+@salvagecostlargerare_15 = 100
+@salvagecostlargerare_16 = 100
 @salvagecostlargerare_2 = 100
-@salvagecostlargerare_20 = 1000
-@salvagecostlargerare_21 = 1000
-@salvagecostlargerare_22 = 100
-@salvagecostlargerare_23 = 100
 @salvagecostlargerare_3 = 50
-@salvagecostlargerare_4 = 50
-@salvagecostlargerare_5 = 50
-@salvagecostlargerare_6 = 50
-@salvagecostlargerare_7 = 50
-@salvagecostlargerare_8 = 50
-@salvagecostlargerare_9 = 50
+@salvagecostlargerare_4 = 200
+@salvagecostlargerare_5 = 200
+@salvagecostlargerare_6 = 200
+@salvagecostlargerare_7 = 200
+@salvagecostlargerare_8 = 200
+@salvagecostlargerare_9 = 200
 @salvagecostmedium_1 = 1000
-@salvagecostmedium_10 = 250
-@salvagecostmedium_11 = 250
-@salvagecostmedium_12 = 250
-@salvagecostmedium_13 = 250
-@salvagecostmedium_14 = 250
-@salvagecostmedium_15 = 250
-@salvagecostmedium_16 = 250
-@salvagecostmedium_17 = 250
-@salvagecostmedium_18 = 250
-@salvagecostmedium_19 = 250
+@salvagecostmedium_10 = 100
+@salvagecostmedium_11 = 2500
 @salvagecostmedium_2 = 1000
-@salvagecostmedium_20 = 100
-@salvagecostmedium_21 = 100
-@salvagecostmedium_22 = 100
-@salvagecostmedium_23 = 2500
 @salvagecostmedium_3 = 500
 @salvagecostmedium_4 = 250
 @salvagecostmedium_5 = 250
 @salvagecostmedium_6 = 250
 @salvagecostmedium_7 = 250
-@salvagecostmedium_8 = 250
-@salvagecostmedium_9 = 250
+@salvagecostmedium_8 = 100
+@salvagecostmedium_9 = 100
 @salvagecostmediumrare_1 = 50
-@salvagecostmediumrare_10 = 25
-@salvagecostmediumrare_11 = 25
-@salvagecostmediumrare_12 = 25
-@salvagecostmediumrare_13 = 25
-@salvagecostmediumrare_14 = 25
-@salvagecostmediumrare_15 = 50
-@salvagecostmediumrare_16 = 500
-@salvagecostmediumrare_17 = 50
 @salvagecostmediumrare_2 = 25
-@salvagecostmediumrare_3 = 25
-@salvagecostmediumrare_4 = 25
-@salvagecostmediumrare_5 = 25
-@salvagecostmediumrare_6 = 25
-@salvagecostmediumrare_7 = 25
-@salvagecostmediumrare_8 = 25
-@salvagecostmediumrare_9 = 25
+@salvagecostmediumrare_3 = 50
+@salvagecostmediumrare_4 = 500
+@salvagecostmediumrare_5 = 50
 @salvagecostsmall_1 = 500
-@salvagecostsmall_10 = 100
-@salvagecostsmall_11 = 100
-@salvagecostsmall_12 = 100
-@salvagecostsmall_13 = 100
-@salvagecostsmall_14 = 100
-@salvagecostsmall_15 = 100
-@salvagecostsmall_16 = 100
-@salvagecostsmall_17 = 100
-@salvagecostsmall_18 = 100
-@salvagecostsmall_19 = 50
+@salvagecostsmall_10 = 50
+@salvagecostsmall_11 = 50
+@salvagecostsmall_12 = 500
 @salvagecostsmall_2 = 500
-@salvagecostsmall_20 = 50
-@salvagecostsmall_21 = 50
-@salvagecostsmall_22 = 50
-@salvagecostsmall_23 = 500
 @salvagecostsmall_3 = 250
 @salvagecostsmall_4 = 250
 @salvagecostsmall_5 = 100
 @salvagecostsmall_6 = 100
 @salvagecostsmall_7 = 100
-@salvagecostsmall_8 = 100
-@salvagecostsmall_9 = 100
+@salvagecostsmall_8 = 50
+@salvagecostsmall_9 = 50
 @salvagecostsmallrare_1 = 25
-@salvagecostsmallrare_10 = 10
-@salvagecostsmallrare_11 = 10
-@salvagecostsmallrare_12 = 10
 @salvagecostsmallrare_2 = 25
 @salvagecostsmallrare_3 = 10
-@salvagecostsmallrare_4 = 10
-@salvagecostsmallrare_5 = 10
-@salvagecostsmallrare_6 = 10
-@salvagecostsmallrare_7 = 10
-@salvagecostsmallrare_8 = 10
-@salvagecostsmallrare_9 = 10
 @speed_crawl_1 = 30
 @speed_default_1 = 120
 @speed_default_10 = 120
@@ -546,259 +487,7 @@ starbase_placeholder = {
     icon_frame = 1
     icon = ship_size_military_station
 }
-lily_super_college_ship = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-lily_college_ship = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-precursor_juggernaut = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-fe_goliath = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-KZ_VOY_battlestar = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-KZ_VOY_holo_training_ship = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-KZ_VOY_planet_killer_prototype = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-ag_epsilon_titan_1 = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-ag_gamma_station_hostile = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-ag_gamma_station_0 = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-ag_gamma_station_1 = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-swfo_supremacy = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-exe_megastructure_starbase = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
 IDC_station_fallen_empire = {
-    resources = {
-        category = starbase_stations
-    }
-    potential_construction = {
-        always = no
-    }
-    possible_construction = {
-        always = no
-    }
-    is_designable = no
-    enable_default_design = yes
-    prerequisites = {
-    }
-    class = shipclass_starbase
-    icon_frame = 1
-    icon = ship_size_military_station
-}
-enclave_pirate_mercenary_station = {
     resources = {
         category = starbase_stations
     }
@@ -972,6 +661,7 @@ explorer_vessel = {
     }
     is_space_station = no
     icon = ship_size_science
+    ship_class_icon_frame = 56
     base_buildtime = @science_build_time
     use_shipnames_from = science
     combat_disengage_chance = 2
@@ -2174,7 +1864,10 @@ constructor = {
     is_designable = no
     components_add_to_cost = no
     class = shipclass_constructor
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -2235,7 +1928,10 @@ colonizer = {
     is_designable = no
     components_add_to_cost = no
     class = shipclass_colonizer
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -2429,7 +2125,10 @@ sponsored_colonizer = {
     is_designable = no
     components_add_to_cost = no
     class = shipclass_colonizer
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -2437,6 +2136,16 @@ sponsored_colonizer = {
     valid_target_aggressive_stance = no
     auto_upgrade = yes
     use_shipnames_from = colonizer
+    potential_construction = {
+        OR = {
+            NOT = {
+                is_scope_type = starbase
+            }
+            NOT = {
+                has_starbase_size = juggernaut
+            }
+        }
+    }
     resources = {
         category = colonies
         cost = {
@@ -2495,7 +2204,10 @@ lithoid_colonizer = {
     is_designable = no
     components_add_to_cost = no
     class = shipclass_colonizer
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -2503,6 +2215,16 @@ lithoid_colonizer = {
     valid_target_aggressive_stance = no
     auto_upgrade = yes
     use_shipnames_from = colonizer
+    potential_construction = {
+        OR = {
+            NOT = {
+                is_scope_type = starbase
+            }
+            NOT = {
+                has_starbase_size = juggernaut
+            }
+        }
+    }
     resources = {
         category = colonies
         cost = {
@@ -2553,7 +2275,10 @@ guided_sapience_colonizer = {
     is_designable = no
     components_add_to_cost = no
     class = shipclass_colonizer
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -2561,6 +2286,16 @@ guided_sapience_colonizer = {
     valid_target_aggressive_stance = no
     auto_upgrade = yes
     use_shipnames_from = colonizer
+    potential_construction = {
+        OR = {
+            NOT = {
+                is_scope_type = starbase
+            }
+            NOT = {
+                has_starbase_size = juggernaut
+            }
+        }
+    }
     potential_country = {
         is_guided_sapience_empire = yes
         OR = {
@@ -2742,7 +2477,10 @@ science = {
     }
     is_civilian = yes
     class = shipclass_science_ship
-    construction_type = starbase_shipyard
+    construction_type = {
+        starbase_shipyard
+        starbase_beastport
+    }
     required_component_set = "power_core"
     required_component_set = "ftl_components"
     required_component_set = "thruster_components"
@@ -4757,8 +4495,8 @@ nanite_interdictor = {
         ship_armor_add = 1500
         ship_armor_regen_add_static = 15
     }
-    size_multiplier = 4
-    fleet_slot_size = 8
+    size_multiplier = 3
+    fleet_slot_size = 6
     section_slots = {
         "mid" = {
             locator = "part1"
@@ -4766,11 +4504,8 @@ nanite_interdictor = {
     }
     num_target_locators = 0
     is_space_station = no
-    icon = ship_size_military_8
+    icon = ship_size_military_4
     base_buildtime = @cruiser_build_time
-    can_have_federation_design = yes
-    enable_default_design = yes
-    enable_3dview_in_ship_browser = yes
     default_behavior = carrier
     ship_roles = {
         explosive
@@ -4855,6 +4590,7 @@ large_ship_swarm = {
     icon = ship_size_military_8
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
@@ -4890,6 +4626,7 @@ large_ship_carrier_swarm = {
     icon = ship_size_military_8
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
@@ -4925,6 +4662,7 @@ small_ship_swarm = {
     is_space_station = no
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
@@ -4960,6 +4698,7 @@ queen_swarm = {
     icon = ship_size_military_16
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
@@ -4993,6 +4732,7 @@ construction_ship_swarm = {
     icon = ship_size_constructor
     is_civilian = yes
     is_designable = no
+    is_space_fauna_ship = yes
     class = shipclass_constructor
     required_component_set = "ftl_components"
     required_component_set = "sensor_components"
@@ -5030,6 +4770,7 @@ colony_ship_swarm = {
     icon = ship_size_colonizer
     is_civilian = yes
     is_designable = no
+    is_space_fauna_ship = yes
     class = shipclass_colonizer
     required_component_set = "ftl_components"
     required_component_set = "sensor_components"
@@ -5067,6 +4808,7 @@ transport_ship_swarm = {
     is_space_station = no
     icon = ship_size_transport
     is_designable = no
+    is_space_fauna_ship = yes
     class = shipclass_transport
     required_component_set = "ftl_components"
     required_component_set = "sensor_components"
@@ -5103,6 +4845,7 @@ sentinel_station = {
     build_block_radius = @build_block_radius_civilian_4
     class = shipclass_military_station
     is_designable = no
+    is_space_fauna_ship = yes
     icon = ship_size_military_station
 }
 massive_ship_fallen_empire = {
@@ -5138,6 +4881,16 @@ massive_ship_fallen_empire = {
     is_space_station = no
     icon = ship_size_military_32
     combat_disengage_chance = 0.5
+    potential_construction = {
+        OR = {
+            NOT = {
+                is_scope_type = starbase
+            }
+            NOT = {
+                has_starbase_size = juggernaut
+            }
+        }
+    }
     resources = {
         category = ships
         cost = {
@@ -5191,6 +4944,25 @@ large_ship_fallen_empire = {
     is_space_station = no
     icon = ship_size_military_8
     combat_disengage_chance = 1
+    possible_construction = {
+        custom_tooltip = {
+            fail_text = ariphaos_patch_juggernaut_disabled_tooltip
+            OR = {
+                NOT = {
+                    is_scope_type = starbase
+                }
+                NOT = {
+                    has_starbase_size = juggernaut
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_policy_flag = ariphaos_patch_juggernaut_enabled
+                    }
+                }
+            }
+        }
+    }
     resources = {
         category = ships
         cost = {
@@ -5242,6 +5014,25 @@ small_ship_fallen_empire = {
     icon = ship_size_military_2
     is_space_station = no
     combat_disengage_chance = 1.5
+    possible_construction = {
+        custom_tooltip = {
+            fail_text = ariphaos_patch_juggernaut_disabled_tooltip
+            OR = {
+                NOT = {
+                    is_scope_type = starbase
+                }
+                NOT = {
+                    has_starbase_size = juggernaut
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_policy_flag = ariphaos_patch_juggernaut_enabled
+                    }
+                }
+            }
+        }
+    }
     resources = {
         category = ships
         cost = {
@@ -5533,6 +5324,8 @@ construction_ship_ed = {
     }
 }
 crystal_ship_small_blue = {
+    ship_category = crystalline_entity
+    mutation_components_size = small
     entity = crystal_ship_small_blue_entity
     graphical_culture = no
     is_space_object = yes
@@ -5549,21 +5342,66 @@ crystal_ship_small_blue = {
         "mid" = {
             locator = "light_pos"
         }
+        "mutations" = {
+            locator = "light_pos"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 1
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = crystalline_entity
+        }
+    }
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_5
-            rare_crystals = @salvagecostsmallrare_3
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 crystal_ship_medium_blue = {
+    ship_category = crystalline_entity
+    mutation_components_size = medium
     entity = crystal_ship_blue_entity
     graphical_culture = no
     is_space_object = yes
@@ -5580,21 +5418,70 @@ crystal_ship_medium_blue = {
         "mid" = {
             locator = "light_pos"
         }
+        "mutations" = {
+            locator = "light_pos"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 2
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = crystalline_entity
+        }
+    }
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_4
-            rare_crystals = @salvagecostmediumrare_2
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 crystal_ship_large_blue = {
+    ship_category = crystalline_entity
+    mutation_components_size = large
     entity = crystal_ship_large_blue_entity
     graphical_culture = no
     is_space_object = yes
@@ -5611,21 +5498,71 @@ crystal_ship_large_blue = {
         "mid" = {
             locator = "light_pos"
         }
+        "mutations" = {
+            locator = "light_pos"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = crystalline_entity
+        }
+    }
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_6
-            rare_crystals = @salvagecostlargerare_3
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 crystal_ship_small_green = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_green_entity
     graphical_culture = no
     is_space_object = yes
@@ -5644,19 +5581,51 @@ crystal_ship_small_green = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 1
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_6
-            rare_crystals = @salvagecostsmallrare_4
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_green = {
+    ship_category = crystalline_entity
     entity = crystal_ship_green_entity
     graphical_culture = no
     is_space_object = yes
@@ -5675,19 +5644,55 @@ crystal_ship_medium_green = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 2
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_5
-            rare_crystals = @salvagecostmediumrare_3
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_green = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_green_entity
     graphical_culture = no
     is_space_object = yes
@@ -5706,19 +5711,57 @@ crystal_ship_large_green = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_7
-            rare_crystals = @salvagecostlargerare_4
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_yellow = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_yellow_entity
     graphical_culture = no
     is_space_object = yes
@@ -5737,19 +5780,51 @@ crystal_ship_small_yellow = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 1
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_7
-            rare_crystals = @salvagecostsmallrare_5
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_yellow = {
+    ship_category = crystalline_entity
     entity = crystal_ship_yellow_entity
     graphical_culture = no
     is_space_object = yes
@@ -5768,19 +5843,55 @@ crystal_ship_medium_yellow = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 2
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_6
-            rare_crystals = @salvagecostmediumrare_4
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_yellow = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_yellow_entity
     graphical_culture = no
     is_space_object = yes
@@ -5799,19 +5910,57 @@ crystal_ship_large_yellow = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_8
-            rare_crystals = @salvagecostlargerare_5
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_red = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_red_entity
     graphical_culture = no
     is_space_object = yes
@@ -5830,19 +5979,51 @@ crystal_ship_small_red = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 1
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_8
-            rare_crystals = @salvagecostsmallrare_6
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_red = {
+    ship_category = crystalline_entity
     entity = crystal_ship_red_entity
     graphical_culture = no
     is_space_object = yes
@@ -5861,19 +6042,55 @@ crystal_ship_medium_red = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 2
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_7
-            rare_crystals = @salvagecostmediumrare_5
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_red = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_red_entity
     graphical_culture = no
     is_space_object = yes
@@ -5892,19 +6109,57 @@ crystal_ship_large_red = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_9
-            rare_crystals = @salvagecostlargerare_6
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_blue_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_blue_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -5923,19 +6178,51 @@ crystal_ship_small_blue_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_9
-            rare_crystals = @salvagecostsmall_9
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_blue_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_blue_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -5954,19 +6241,55 @@ crystal_ship_medium_blue_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_8
-            rare_crystals = @salvagecostmediumrare_6
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_blue_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_blue_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -5985,19 +6308,57 @@ crystal_ship_large_blue_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_10
-            rare_crystals = @salvagecostlargerare_7
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_green_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_green_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6016,19 +6377,51 @@ crystal_ship_small_green_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_10
-            rare_crystals = @salvagecostsmallrare_7
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_green_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_green_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6047,19 +6440,55 @@ crystal_ship_medium_green_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_9
-            rare_crystals = @salvagecostmediumrare_7
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_green_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_green_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6078,19 +6507,57 @@ crystal_ship_large_green_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_11
-            rare_crystals = @salvagecostlargerare_8
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_yellow_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_yellow_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6109,19 +6576,51 @@ crystal_ship_small_yellow_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_11
-            rare_crystals = @salvagecostsmall_11
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_yellow_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_yellow_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6140,19 +6639,55 @@ crystal_ship_medium_yellow_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_10
-            rare_crystals = @salvagecostmediumrare_8
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_yellow_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_yellow_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6171,19 +6706,57 @@ crystal_ship_large_yellow_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_12
-            rare_crystals = @salvagecostlarge_12
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
 crystal_ship_small_red_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_small_red_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6202,19 +6775,51 @@ crystal_ship_small_red_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_1
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 40
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier1_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostsmall_12
-            rare_crystals = @salvagecostsmallrare_8
+            minerals = 300
+            rare_crystals = 15
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
 }
 crystal_ship_medium_red_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_red_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6233,19 +6838,55 @@ crystal_ship_medium_red_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_2
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 40
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier2_rare_crystal_culling_value
+            }
+        }
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_11
-            rare_crystals = @salvagecostmediumrare_9
+            minerals = 500
+            rare_crystals = 25
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
 }
 crystal_ship_large_red_elite = {
+    ship_category = crystalline_entity
     entity = crystal_ship_large_red_elite_entity
     graphical_culture = no
     is_space_object = yes
@@ -6264,15 +6905,52 @@ crystal_ship_large_red_elite = {
         }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_crystalline_entity
+    icon_cloned = ship_size_military_4
     class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
     is_designable = no
+    uses_name_prefix = no
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                rare_crystals = @tier3_rare_crystal_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        icon_frame = 3
+    }
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_13
-            rare_crystals = @salvagecostlargerare_9
+            minerals = 700
+            rare_crystals = 35
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
 }
@@ -6301,12 +6979,14 @@ crystal_station_large = {
     build_block_radius = @build_block_radius_civilian_5
     class = shipclass_military_station
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_14
-            rare_crystals = @salvagecostlargerare_10
+            minerals = @salvagecostlarge_6
+            rare_crystals = @salvagecostlargerare_3
+            mult = @fauna_cost_scaling
         }
     }
 }
@@ -6333,16 +7013,19 @@ space_cloud = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
     components_add_to_cost = no
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostmedium_12
-            sr_dark_matter = @salvagecostmediumrare_10
+            energy = @salvagecostmedium_4
+            sr_dark_matter = @salvagecostmediumrare_2
         }
     }
 }
 space_amoeba = {
+    ship_category = space_amoeba
+    mutation_components_size = small
     graphical_culture = no
     is_space_object = yes
     max_speed = @speed_slow_22
@@ -6360,22 +7043,76 @@ space_amoeba = {
         "mid" = {
             locator = "part1"
         }
+        "mutations" = {
+            locator = "part1"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_space_amoeba
+    icon_cloned = ship_size_military_1
     class = shipclass_military
-    is_designable = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
+    uses_name_prefix = no
     pre_communications_name = "NO_COMMUNICATIONS_AMOEBA"
-    components_add_to_cost = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 30
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                physics_research = @tier1_research_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Small_Space_Organism
+        icon_frame = 1
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = space_amoeba
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostsmall_13
-            exotic_gases = @salvagecostsmallrare_9
+            food = 500
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_small_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 15
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_amoeba_mother = {
+    ship_category = space_amoeba
+    mutation_components_size = large
     graphical_culture = no
     is_space_object = yes
     max_speed = @speed_slow_23
@@ -6393,22 +7130,82 @@ space_amoeba_mother = {
         "mid" = {
             locator = "part1"
         }
+        "mutations" = {
+            locator = "part1"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_space_amoeba
+    icon_cloned = ship_size_military_4
     class = shipclass_military
-    is_designable = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
     pre_communications_name = "NO_COMMUNICATIONS_AMOEBA"
-    components_add_to_cost = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 30
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                physics_research = @tier2_research_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 5
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 6
+        reanimated_ship_design = NAME_Reanimated_Great_Space_Organism
+        icon_frame = 2
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = space_amoeba
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostmedium_13
-            exotic_gases = @salvagecostmediumrare_11
+            food = 1900
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_big_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 25
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_whale_1 = {
+    ship_category = tiyanki
+    mutation_components_size = large
     graphical_culture = no
     is_space_object = yes
     max_speed = @speed_very_slow_3
@@ -6416,30 +7213,91 @@ space_whale_1 = {
     acceleration = 0.6
     modifier = {
         ship_evasion_add = 8
-        ship_armor_add = 2000
+        ship_armor_add = 500
     }
-    max_hitpoints = 4000
+    max_hitpoints = 2400
     size_multiplier = 4
     fleet_slot_size = 4
     section_slots = {
         "mid" = {
             locator = "part1"
         }
+        "mutations" = {
+            locator = "part1"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_tiyanki
+    icon_cloned = ship_size_military_4
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 30
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                food = @tier3_material_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 5
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        reanimated_ship_design = NAME_Reanimated_Tiyanki_Cow
+        icon_frame = 3
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = tiyanki
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostmedium_14
-            exotic_gases = @salvagecostmediumrare_12
+            food = 1700
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_big_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 25
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_whale_2 = {
+    ship_category = tiyanki
+    mutation_components_size = large
     graphical_culture = no
     is_space_object = yes
     max_speed = @speed_very_slow_4
@@ -6447,30 +7305,91 @@ space_whale_2 = {
     acceleration = 0.6
     modifier = {
         ship_evasion_add = 8
-        ship_armor_add = 2000
+        ship_armor_add = 500
     }
-    max_hitpoints = 4000
+    max_hitpoints = 2400
     size_multiplier = 4
     fleet_slot_size = 4
     section_slots = {
         "mid" = {
             locator = "part1"
         }
+        "mutations" = {
+            locator = "part1"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_tiyanki
+    icon_cloned = ship_size_military_4
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 30
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                food = @tier3_material_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 5
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        reanimated_ship_design = NAME_Reanimated_Tiyanki_Bull
+        icon_frame = 3
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = tiyanki
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostmedium_15
-            exotic_gases = @salvagecostmediumrare_13
+            food = 1700
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_big_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 25
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_whale_3 = {
+    ship_category = tiyanki
+    mutation_components_size = small
     graphical_culture = no
     entity = space_whale_orange_section_entity
     is_space_object = yes
@@ -6478,31 +7397,85 @@ space_whale_3 = {
     rotation_speed = 0.02
     acceleration = 0.6
     modifier = {
-        ship_evasion_add = 12
-        ship_armor_add = 1200
+        ship_evasion_add = 25
+        ship_armor_add = 200
     }
-    max_hitpoints = 1500
-    fleet_slot_size = 3
-    size_multiplier = 3
+    max_hitpoints = 500
+    fleet_slot_size = 1
+    size_multiplier = 1
     section_slots = {
         "mid" = {
             locator = "root"
         }
+        "mutations" = {
+            locator = "root"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_tiyanki
+    icon_cloned = ship_size_military_1
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 15
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                food = @tier1_material_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Tiyanki_Hatchling
+        icon_frame = 1
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = tiyanki
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostsmall_14
-            exotic_gases = @salvagecostsmallrare_10
+            food = 550
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_small_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 15
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_whale_4 = {
+    ship_category = tiyanki
+    mutation_components_size = medium
     graphical_culture = no
     entity = space_whale_albino_section_entity
     is_space_object = yes
@@ -6510,66 +7483,176 @@ space_whale_4 = {
     rotation_speed = 0.02
     acceleration = 0.6
     modifier = {
-        ship_evasion_add = 12
-        ship_armor_add = 1600
+        ship_evasion_add = 20
+        ship_armor_add = 300
     }
-    max_hitpoints = 2200
-    fleet_slot_size = 3
-    size_multiplier = 3
+    max_hitpoints = 1100
+    fleet_slot_size = 2
+    size_multiplier = 2
     section_slots = {
         "mid" = {
             locator = "root"
         }
+        "mutations" = {
+            locator = "root"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_tiyanki
+    icon_cloned = ship_size_military_2
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 15
+            max = 30
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                food = @tier2_material_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Tiyanki_Calf
+        icon_frame = 2
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = tiyanki
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostsmall_15
-            exotic_gases = @salvagecostsmallrare_11
+            food = 1100
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_medium_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 20
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 space_whale_5 = {
+    ship_category = tiyanki
+    mutation_components_size = extra_large
     graphical_culture = no
-    entity = space_whale_station_section_entity
     is_space_object = yes
     max_speed = @speed_very_slow_7
     rotation_speed = 0.02
     acceleration = 0.04
     modifier = {
         ship_evasion_mult = -1
-        ship_shield_add = 1000
-        ship_armor_add = 1000
-    }
-    ship_modifier = {
-        ship_fire_rate_mult = 2
-        ship_weapon_range_mult = 2
+        ship_armor_add = 1500
     }
     max_hitpoints = 5000
-    fleet_slot_size = 3
-    size_multiplier = 4
+    fleet_slot_size = 8
+    size_multiplier = 8
     section_slots = {
         "mid" = {
             locator = "root"
         }
+        "mutations" = {
+            locator = "root"
+        }
     }
     num_target_locators = 0
-    icon = ship_size_space_monster
+    icon = ship_size_tiyanki
+    icon_cloned = ship_size_military_8
     class = shipclass_military
-    is_designable = no
-    components_add_to_cost = no
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @battleship_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                food = @tier4_material_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 10
+        monthly_increased_breeding_chance = 1
+        breeding_cooldown_months = 12
+        reanimated_ship_design = NAME_Reanimated_Tiyanki_Bull
+        icon_frame = 4
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = tiyanki
+        }
+    }
     resources = {
         category = ships
         cost = {
-            food = @salvagecostmedium_16
-            exotic_gases = @salvagecostmediumrare_14
+            food = 3300
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_large_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_large_upkeep_energy
         }
     }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 50
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
 }
 lost_swarm_adult = {
     is_space_object = yes
@@ -6599,6 +7682,7 @@ lost_swarm_adult = {
     can_be_inspected = no
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
 }
 ancient_mining_drone = {
     max_speed = @speed_very_fast_12
@@ -6625,8 +7709,8 @@ ancient_mining_drone = {
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_17
-            alloys = @salvagecostsmall_16
+            minerals = @salvagecostmedium_5
+            alloys = @salvagecostsmall_5
         }
     }
 }
@@ -6655,8 +7739,8 @@ ancient_corvette = {
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostmedium_18
-            alloys = @salvagecostsmall_17
+            minerals = @salvagecostmedium_6
+            alloys = @salvagecostsmall_6
         }
     }
 }
@@ -6686,8 +7770,8 @@ ancient_destroyer = {
     resources = {
         category = ships
         cost = {
-            minerals = @salvagecostlarge_15
-            alloys = @salvagecostmedium_19
+            minerals = @salvagecostlarge_7
+            alloys = @salvagecostmedium_7
         }
     }
 }
@@ -6719,8 +7803,8 @@ lesser_space_cloud = {
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostsmall_18
-            sr_dark_matter = @salvagecostsmallrare_12
+            energy = @salvagecostsmall_7
+            sr_dark_matter = @salvagecostsmallrare_3
         }
     }
 }
@@ -7125,13 +8209,13 @@ bemat_cruiser = {
     fleet_slot_size = 3
     section_slots = {
         "bow" = {
-            locator = "part1_locator"
+            locator = "part1"
         }
         "mid" = {
-            locator = "part2_locator"
+            locator = "part2"
         }
         "stern" = {
-            locator = "part3_locator"
+            locator = "part3"
         }
     }
     num_target_locators = 0
@@ -7173,7 +8257,7 @@ large_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_16
+            alloys = @salvagecostlarge_8
         }
     }
 }
@@ -7205,7 +8289,7 @@ small_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostsmall_19
+            alloys = @salvagecostsmall_8
         }
     }
 }
@@ -7240,7 +8324,7 @@ military_station_large_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_17
+            alloys = @salvagecostlarge_9
         }
     }
 }
@@ -7275,7 +8359,7 @@ military_station_small_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostsmall_20
+            alloys = @salvagecostsmall_9
         }
     }
 }
@@ -7311,7 +8395,7 @@ core_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_18
+            alloys = @salvagecostlarge_10
         }
     }
 }
@@ -7348,7 +8432,7 @@ final_core_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_19
+            alloys = @salvagecostlarge_11
         }
     }
 }
@@ -7383,7 +8467,7 @@ construction_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostsmall_21
+            alloys = @salvagecostsmall_10
         }
     }
 }
@@ -7418,7 +8502,7 @@ colony_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostmedium_20
+            alloys = @salvagecostmedium_8
         }
     }
 }
@@ -7452,7 +8536,7 @@ transport_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostmedium_21
+            alloys = @salvagecostmedium_9
         }
     }
 }
@@ -7488,7 +8572,7 @@ blue_core_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_20
+            alloys = @salvagecostlarge_12
         }
     }
 }
@@ -7524,7 +8608,7 @@ blue_military_station_large_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_21
+            alloys = @salvagecostlarge_13
         }
     }
 }
@@ -7561,7 +8645,7 @@ blue_military_station_small_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostsmall_22
+            alloys = @salvagecostsmall_11
         }
     }
 }
@@ -7596,7 +8680,7 @@ blue_transport_ship_ai = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostmedium_22
+            alloys = @salvagecostmedium_10
         }
     }
 }
@@ -7696,7 +8780,7 @@ stellarite = {
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostlarge_22
+            energy = @salvagecostlarge_14
         }
     }
 }
@@ -7731,7 +8815,7 @@ sphere = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_23
+            alloys = @salvagecostlarge_15
         }
     }
 }
@@ -7766,7 +8850,7 @@ galleon = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_24
+            alloys = @salvagecostlarge_16
         }
     }
 }
@@ -7801,8 +8885,8 @@ station_xl = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_25
-            sr_dark_matter = @salvagecostlargerare_11
+            alloys = @salvagecostlarge_17
+            sr_dark_matter = @salvagecostlargerare_4
         }
     }
 }
@@ -7834,8 +8918,8 @@ station_l = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_26
-            sr_dark_matter = @salvagecostlargerare_12
+            alloys = @salvagecostlarge_18
+            sr_dark_matter = @salvagecostlargerare_5
         }
     }
 }
@@ -7867,8 +8951,8 @@ station_m = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_27
-            sr_dark_matter = @salvagecostlargerare_13
+            alloys = @salvagecostlarge_19
+            sr_dark_matter = @salvagecostlargerare_6
         }
     }
 }
@@ -7900,8 +8984,8 @@ station_s = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_28
-            sr_dark_matter = @salvagecostlargerare_14
+            alloys = @salvagecostlarge_20
+            sr_dark_matter = @salvagecostlargerare_7
         }
     }
 }
@@ -7933,8 +9017,8 @@ station_xs = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_29
-            sr_dark_matter = @salvagecostlargerare_15
+            alloys = @salvagecostlarge_21
+            sr_dark_matter = @salvagecostlargerare_8
         }
     }
 }
@@ -7973,7 +9057,7 @@ dimensional_horror = {
     resources = {
         category = ships
         cost = {
-            sr_dark_matter = @salvagecostlargerare_16
+            sr_dark_matter = @salvagecostlargerare_9
         }
     }
 }
@@ -8046,7 +9130,7 @@ npc_warship_01 = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_30
+            alloys = @salvagecostlarge_22
         }
     }
 }
@@ -8132,7 +9216,7 @@ wraith_01_blue = {
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostlarge_31
+            energy = @salvagecostlarge_23
         }
     }
 }
@@ -8166,7 +9250,7 @@ wraith_01_red = {
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostlarge_32
+            energy = @salvagecostlarge_24
         }
     }
 }
@@ -8200,7 +9284,7 @@ wraith_01_yellow = {
     resources = {
         category = ships
         cost = {
-            energy = @salvagecostlarge_33
+            energy = @salvagecostlarge_25
         }
     }
 }
@@ -8425,7 +9509,7 @@ corrupted_avatar = {
     resources = {
         category = ships
         cost = {
-            sr_zro = @salvagecostlargerare_17
+            sr_zro = @salvagecostlargerare_10
         }
     }
 }
@@ -8456,7 +9540,7 @@ shroud_manifestation = {
     resources = {
         category = ships
         cost = {
-            sr_zro = @salvagecostmediumrare_15
+            sr_zro = @salvagecostmediumrare_3
         }
     }
 }
@@ -8487,7 +9571,7 @@ warped_consciousness = {
     resources = {
         category = ships
         cost = {
-            sr_zro = @salvagecostlargerare_18
+            sr_zro = @salvagecostlargerare_11
         }
     }
 }
@@ -8529,8 +9613,8 @@ leviathan_01_scavenger_bot = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_34
-            minerals = @salvagecostlarge_34
+            alloys = @salvagecostlarge_26
+            minerals = @salvagecostlarge_26
         }
     }
 }
@@ -8568,8 +9652,8 @@ leviathan_01_elder_tiyanki = {
             food = 100
         }
         cost = {
-            food = @salvagecostlarge_35
-            exotic_gases = @salvagecostlargerare_19
+            food = @salvagecostlarge_27
+            exotic_gases = @salvagecostlargerare_12
         }
     }
 }
@@ -8611,7 +9695,7 @@ leviathan_01_voidspawn = {
             food = 100
         }
         cost = {
-            food = @salvagecostlarge_36
+            food = @salvagecostlarge_28
         }
     }
 }
@@ -8648,8 +9732,8 @@ enigmatic_cache = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_37
-            sr_dark_matter = @salvagecostlargerare_20
+            alloys = @salvagecostlarge_29
+            sr_dark_matter = @salvagecostlargerare_13
         }
     }
 }
@@ -8686,8 +9770,8 @@ nanite_space_dragon_baby = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostmedium_23
-            nanites = @salvagecostmediumrare_16
+            alloys = @salvagecostmedium_11
+            nanites = @salvagecostmediumrare_4
         }
     }
 }
@@ -8722,8 +9806,8 @@ space_amoeba_centenarian = {
     resources = {
         category = ships
         cost = {
-            food = @salvagecostlarge_38
-            exotic_gases = @salvagecostlargerare_21
+            food = @salvagecostlarge_30
+            exotic_gases = @salvagecostlargerare_14
         }
     }
 }
@@ -8759,7 +9843,7 @@ graygoo_mothership = {
     resources = {
         category = ships
         cost = {
-            nanites = @salvagecostlargerare_22
+            nanites = @salvagecostlargerare_15
         }
     }
 }
@@ -8796,7 +9880,7 @@ graygoo_interdictor = {
     resources = {
         category = ships
         cost = {
-            nanites = @salvagecostmediumrare_17
+            nanites = @salvagecostmediumrare_5
         }
     }
 }
@@ -8831,7 +9915,7 @@ graygoo_factory = {
     resources = {
         category = ships
         cost = {
-            nanites = @salvagecostlargerare_23
+            nanites = @salvagecostlargerare_16
         }
     }
 }
@@ -9229,8 +10313,8 @@ ancient_mining_expansion_barge = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_39
-            minerals = @salvagecostlarge_39
+            alloys = @salvagecostlarge_31
+            minerals = @salvagecostlarge_31
         }
     }
 }
@@ -9264,8 +10348,8 @@ ancient_mining_expansion_drone = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_40
-            minerals = @salvagecostlarge_40
+            alloys = @salvagecostlarge_32
+            minerals = @salvagecostlarge_32
         }
     }
 }
@@ -9298,8 +10382,8 @@ crystal_splitter_ship_large_blue = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_41
-            minerals = @salvagecostlarge_41
+            alloys = @salvagecostlarge_33
+            minerals = @salvagecostlarge_33
         }
     }
 }
@@ -10193,6 +11277,7 @@ reanimated_space_dragon_red = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10232,6 +11317,7 @@ reanimated_space_dragon_blue = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10271,6 +11357,7 @@ reanimated_space_dragon_origin = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10307,6 +11394,7 @@ reanimated_leviathan_01_elder_tiyanki = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10347,6 +11435,7 @@ reanimated_leviathan_01_voidspawn = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10360,7 +11449,8 @@ reanimated_leviathan_01_voidspawn = {
     }
 }
 reanimated_space_amoeba = {
-    entity = space_amoeba_entity
+    ship_category = space_amoeba
+    entity = space_amoeba_medium_reanimated_entity
     graphical_culture = no
     can_be_inspected = no
     is_space_object = yes
@@ -10377,13 +11467,15 @@ reanimated_space_amoeba = {
     fleet_slot_size = 1
     section_slots = {
         "mid" = {
-            locator = "part1"
+            locator = "gun_01"
         }
     }
     num_target_locators = 0
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     pre_communications_name = "NO_COMMUNICATIONS_AMOEBA"
     resources = {
         category = ships
@@ -10398,6 +11490,7 @@ reanimated_space_amoeba = {
     }
 }
 reanimated_space_amoeba_centenarian = {
+    ship_category = space_amoeba
     entity = space_amoeba_large_section_bright_entity
     graphical_culture = no
     can_be_inspected = no
@@ -10423,9 +11516,12 @@ reanimated_space_amoeba_centenarian = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     pre_communications_name = "NO_COMMUNICATIONS_AMOEBA"
 }
 reanimated_space_amoeba_mother = {
+    ship_category = space_amoeba
     entity = space_amoeba_mother_entity
     graphical_culture = no
     can_be_inspected = no
@@ -10439,8 +11535,8 @@ reanimated_space_amoeba_mother = {
         ship_armor_add = 1500
     }
     max_hitpoints = 2000
-    size_multiplier = 1
-    fleet_slot_size = 1
+    size_multiplier = 2
+    fleet_slot_size = 2
     section_slots = {
         "mid" = {
             locator = "part1"
@@ -10450,6 +11546,8 @@ reanimated_space_amoeba_mother = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     pre_communications_name = "NO_COMMUNICATIONS_AMOEBA"
     resources = {
         category = ships
@@ -10464,6 +11562,7 @@ reanimated_space_amoeba_mother = {
     }
 }
 reanimated_space_whale_1 = {
+    ship_category = tiyanki
     entity = space_whale_1_entity
     graphical_culture = no
     can_be_inspected = no
@@ -10473,11 +11572,11 @@ reanimated_space_whale_1 = {
     acceleration = 0.6
     modifier = {
         ship_evasion_add = 8
-        ship_armor_add = 2000
+        ship_armor_add = 500
     }
-    max_hitpoints = 4000
-    size_multiplier = 1
-    fleet_slot_size = 1
+    max_hitpoints = 2400
+    size_multiplier = 2
+    fleet_slot_size = 2
     section_slots = {
         "mid" = {
             locator = "part1"
@@ -10487,6 +11586,8 @@ reanimated_space_whale_1 = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10500,6 +11601,7 @@ reanimated_space_whale_1 = {
     }
 }
 reanimated_space_whale_2 = {
+    ship_category = tiyanki
     entity = space_whale_2_entity
     graphical_culture = no
     can_be_inspected = no
@@ -10509,11 +11611,11 @@ reanimated_space_whale_2 = {
     acceleration = 0.6
     modifier = {
         ship_evasion_add = 8
-        ship_armor_add = 2000
+        ship_armor_add = 500
     }
-    max_hitpoints = 4000
-    size_multiplier = 1
-    fleet_slot_size = 1
+    max_hitpoints = 2400
+    size_multiplier = 2
+    fleet_slot_size = 2
     section_slots = {
         "mid" = {
             locator = "part1"
@@ -10523,6 +11625,8 @@ reanimated_space_whale_2 = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10536,6 +11640,7 @@ reanimated_space_whale_2 = {
     }
 }
 reanimated_space_whale_3 = {
+    ship_category = tiyanki
     graphical_culture = no
     can_be_inspected = no
     entity = space_whale_orange_section_entity
@@ -10544,10 +11649,10 @@ reanimated_space_whale_3 = {
     rotation_speed = 0.02
     acceleration = 0.6
     modifier = {
-        ship_evasion_add = 12
-        ship_armor_add = 1200
+        ship_evasion_add = 25
+        ship_armor_add = 200
     }
-    max_hitpoints = 1500
+    max_hitpoints = 500
     fleet_slot_size = 1
     size_multiplier = 1
     hull_scale = 0.2
@@ -10560,6 +11665,8 @@ reanimated_space_whale_3 = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10573,6 +11680,7 @@ reanimated_space_whale_3 = {
     }
 }
 reanimated_space_whale_4 = {
+    ship_category = tiyanki
     graphical_culture = no
     can_be_inspected = no
     entity = space_whale_albino_section_entity
@@ -10581,10 +11689,10 @@ reanimated_space_whale_4 = {
     rotation_speed = 0.02
     acceleration = 0.6
     modifier = {
-        ship_evasion_add = 12
-        ship_armor_add = 1600
+        ship_evasion_add = 20
+        ship_armor_add = 300
     }
-    max_hitpoints = 2200
+    max_hitpoints = 1100
     fleet_slot_size = 1
     size_multiplier = 1
     hull_scale = 0.2
@@ -10597,6 +11705,8 @@ reanimated_space_whale_4 = {
     icon = ship_size_space_monster
     class = shipclass_military
     is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
     resources = {
         category = ships
         upkeep = {
@@ -10670,6 +11780,25 @@ cosmo_crisis_destroyer = {
             }
         }
     }
+    possible_construction = {
+        custom_tooltip = {
+            fail_text = ariphaos_patch_juggernaut_disabled_tooltip
+            OR = {
+                NOT = {
+                    is_scope_type = starbase
+                }
+                NOT = {
+                    has_starbase_size = juggernaut
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_policy_flag = ariphaos_patch_juggernaut_enabled
+                    }
+                }
+            }
+        }
+    }
     potential_country = {
         has_technology = tech_cosmogenesis_escort
     }
@@ -10733,6 +11862,25 @@ cosmo_crisis_battlecruiser = {
             name = energy_torpedoes
             trigger = {
                 has_technology = tech_energy_torpedoes_1
+            }
+        }
+    }
+    possible_construction = {
+        custom_tooltip = {
+            fail_text = ariphaos_patch_juggernaut_disabled_tooltip
+            OR = {
+                NOT = {
+                    is_scope_type = starbase
+                }
+                NOT = {
+                    has_starbase_size = juggernaut
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_policy_flag = ariphaos_patch_juggernaut_enabled
+                    }
+                }
             }
         }
     }
@@ -10827,7 +11975,12 @@ cosmo_crisis_titan = {
     }
     potential_construction = {
         OR = {
-            is_scope_type = starbase
+            AND = {
+                is_scope_type = starbase
+                NOT = {
+                    has_starbase_size = juggernaut
+                }
+            }
             AND = {
                 is_scope_type = megastructure
                 OR = {
@@ -10900,6 +12053,1068 @@ monadic_qerr = {
     ai_ship_data = {
         min = 1
         max = 1
+    }
+}
+gravity_snare = {
+    graphical_culture = no
+    entity = gravity_snare_entity
+    max_speed = 210
+    rotation_speed = 0.2
+    acceleration = 0.65
+    max_hitpoints = @transport_hp
+    modifier = {
+        ship_armor_add = 100
+        ship_evasion_add = @transport_evasion
+    }
+    size_multiplier = 0
+    fleet_slot_size = 0
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    is_civilian = yes
+    is_space_station = no
+    icon = ship_size_military_1
+    combat_disengage_chance = 1.5
+    enable_default_design = no
+    is_designable = no
+    components_add_to_cost = yes
+    class = shipclass_gravity_snare
+    required_component_set = "power_core"
+    required_component_set = "ftl_components"
+    required_component_set = "thruster_components"
+    required_component_set = "science_cloaking_components"
+    auto_upgrade = yes
+}
+voidworms_small = {
+    ship_category = voidworm
+    mutation_components_size = small
+    graphical_culture = no
+    entity = voidworm_nymph_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 70
+    }
+    max_hitpoints = 400
+    fleet_slot_size = 1
+    size_multiplier = 1
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    icon_cloned = ship_size_military_1
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @corvette_build_time
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 15
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                society_research = @tier1_research_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Voidworms_Nymph
+        icon_frame = 1
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = voidworm
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 250
+            food = 250
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_tiny_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_tiny_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 15
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+voidworms_medium = {
+    ship_category = voidworm
+    mutation_components_size = medium
+    graphical_culture = no
+    entity = voidworm_juvenile_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 35
+        ship_armor_add = 200
+    }
+    max_hitpoints = 800
+    fleet_slot_size = 2
+    size_multiplier = 2
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    icon_cloned = ship_size_military_2
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 15
+            max = 60
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                society_research = @tier2_research_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Voidworms_Juvenile
+        icon_frame = 2
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = voidworm
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 500
+            food = 500
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_small_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 15
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+voidworms_large = {
+    ship_category = voidworm
+    mutation_components_size = large
+    graphical_culture = no
+    entity = voidworm_mature_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 1000
+    }
+    max_hitpoints = 4000
+    size_multiplier = 8
+    fleet_slot_size = 8
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    icon_cloned = ship_size_military_8
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 60
+            max = 65
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                society_research = @tier3_research_culling_value
+            }
+        }
+        merge_with_individuals_amount_to_upgrade = 3
+        reanimated_ship_design = NAME_Reanimated_Voidworms_Mature
+        icon_frame = 3
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = voidworm
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 1600
+            food = 1600
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_big_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_large_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 25
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+voidworms_titan = {
+    ship_category = voidworm
+    mutation_components_size = extra_large
+    graphical_culture = no
+    entity = voidworm_troika_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 3000
+    }
+    max_hitpoints = 12000
+    size_multiplier = 16
+    fleet_slot_size = 16
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm_troika
+    icon_cloned = ship_size_military_16
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @battleship_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 65
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                society_research = @tier4_research_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 3
+        monthly_increased_breeding_chance = 3
+        breeding_cooldown_months = 3
+        reanimated_ship_design = NAME_Reanimated_Voidworms_Troika
+        can_breed_alone = yes
+        icon_frame = 4
+    }
+    enable_default_design = yes
+    potential_country = {
+        always = no
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 4500
+            food = 4500
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_huge_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_huge_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_huge_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 50
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+voidworm_nest = {
+    graphical_culture = no
+    max_speed = 0
+    acceleration = 0
+    rotation_speed = 0
+    entity = voidworm_nest_entity
+    modifier = {
+        ship_evasion_mult = -1
+        ship_armor_add = 60000
+        ship_sensor_range_add = 1
+    }
+    ship_modifier = {
+        ship_weapon_range_mult = 0.2
+    }
+    max_hitpoints = 30000
+    base_buildtime = 720
+    combat_size_multiplier = 50
+    size_multiplier = 16
+    fleet_slot_size = 2
+    section_slots = {
+        "core" = {
+            locator = "root"
+        }
+    }
+    is_designable = no
+    num_target_locators = 0
+    is_space_station = no
+    can_have_federation_design = no
+    is_civilian = no
+    components_add_to_cost = no
+    is_listed = no
+    can_disable = no
+    enable_default_design = no
+    class = shipclass_starbase
+    required_component_set = "sensor_components"
+    icon_frame = -1
+    icon = ship_size_military_station
+}
+cutholoids_hatchling = {
+    ship_category = cutholoid
+    mutation_components_size = medium
+    graphical_culture = no
+    entity = cutholoid_hatchling_01_entity
+    is_space_object = yes
+    max_speed = @speed_default
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 15
+        ship_armor_add = 1000
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 200
+    fleet_slot_size = 2
+    size_multiplier = 2
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    icon_cloned = ship_size_military_2
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @destroyer_build_time
+    prerequisites = {
+        "tech_improved_incubators"
+    }
+    uses_name_prefix = no
+    is_space_station = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            max = 30
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                minerals = @tier1_research_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Cutholoids_Hatchling
+        icon_frame = 1
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = cutholoid
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 1200
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 15
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+cutholoids_juvenile = {
+    ship_category = cutholoid
+    mutation_components_size = large
+    graphical_culture = no
+    entity = cutholoid_juvenile_01_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 2600
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 400
+    fleet_slot_size = 4
+    size_multiplier = 4
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    icon_cloned = ship_size_military_4
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @cruiser_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    is_space_station = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 30
+            max = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                minerals = @tier2_research_culling_value
+            }
+        }
+        reanimated_ship_design = NAME_Reanimated_Cutholoids_Juvenile
+        icon_frame = 2
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = cutholoid
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 2100
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 25
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+cutholoids = {
+    ship_category = cutholoid
+    mutation_components_size = extra_large
+    graphical_culture = no
+    entity = cutholoid_01_entity
+    is_space_object = yes
+    max_speed = @speed_very_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 5
+        ship_armor_add = 4500
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 800
+    fleet_slot_size = 8
+    size_multiplier = 8
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    icon_cloned = ship_size_military_8
+    class = shipclass_military
+    construction_type = {
+        starbase_hatchery
+        starbase_beastport
+    }
+    base_buildtime = @battleship_build_time
+    prerequisites = {
+        "tech_metabolic_gases"
+    }
+    uses_name_prefix = no
+    is_space_station = no
+    can_have_federation_design = yes
+    is_space_fauna_ship = yes
+    space_fauna_values = {
+        age_threshold = {
+            min = 80
+        }
+        culling_value = {
+            category = vivarium
+            produces = {
+                minerals = @tier3_research_culling_value
+            }
+        }
+        monthly_initial_breeding_chance = 1
+        monthly_increased_breeding_chance = 10
+        breeding_cooldown_months = 16
+        reanimated_ship_design = NAME_Reanimated_Cutholoids
+        icon_frame = 3
+    }
+    enable_default_design = yes
+    potential_country = {
+        has_dna = {
+            ship_category = cutholoid
+        }
+    }
+    resources = {
+        category = ships
+        cost = {
+            minerals = 3700
+            mult = @fauna_cost_scaling
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_large_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_large_upkeep_energy
+        }
+    }
+    ai_ship_data = {
+        fraction = {
+            base = 0
+            modifier = {
+                add = 50
+                uses_fauna_ship_sizes = yes
+            }
+        }
+    }
+    required_component_set = "ftl_components_bio"
+    required_component_set = "thruster_components_bio"
+    required_component_set = "sensor_components_bio"
+    required_component_set = "neurochips"
+}
+reanimated_voidworms_small = {
+    ship_category = voidworm
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_voidworm_nymph_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 70
+    }
+    max_hitpoints = 400
+    fleet_slot_size = 1
+    size_multiplier = 1
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    class = shipclass_military
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_tiny_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_tiny_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_small_upkeep_energy
+        }
+    }
+}
+reanimated_voidworms_medium = {
+    ship_category = voidworm
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_voidworm_juvenile_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 35
+        ship_armor_add = 200
+    }
+    max_hitpoints = 800
+    fleet_slot_size = 1
+    size_multiplier = 1
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    class = shipclass_military
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_small_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_small_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
+        }
+    }
+}
+reanimated_voidworms_large = {
+    ship_category = voidworm
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_voidworm_mature_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 1000
+    }
+    max_hitpoints = 4000
+    size_multiplier = 4
+    fleet_slot_size = 4
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm
+    class = shipclass_military
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_big_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_large_upkeep_energy
+        }
+    }
+}
+reanimated_voidworms_titan = {
+    ship_category = voidworm
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_voidworm_troika_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 3000
+    }
+    max_hitpoints = 12000
+    size_multiplier = 8
+    fleet_slot_size = 8
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 0
+    icon = ship_size_voidworm_troika
+    class = shipclass_military
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_huge_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = food
+            UPKEEP = @fauna_huge_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_huge_upkeep_energy
+        }
+    }
+}
+reanimated_cutholoids_hatchling = {
+    ship_category = cutholoid
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_cutholoid_hatchling_01_entity
+    is_space_object = yes
+    max_speed = @speed_default
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 15
+        ship_armor_add = 1000
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 200
+    fleet_slot_size = 1
+    size_multiplier = 1
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    class = shipclass_military
+    is_space_station = no
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_medium_upkeep_food
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_medium_upkeep_energy
+        }
+    }
+}
+reanimated_cutholoids_juvenile = {
+    ship_category = cutholoid
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_cutholoid_juvenile_01_entity
+    is_space_object = yes
+    max_speed = @speed_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 10
+        ship_armor_add = 2600
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 400
+    fleet_slot_size = 2
+    size_multiplier = 2
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    class = shipclass_military
+    is_space_station = no
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_big_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_big_upkeep_energy
+        }
+    }
+}
+reanimated_cutholoids = {
+    ship_category = cutholoid
+    graphical_culture = no
+    can_be_inspected = no
+    entity = reanimated_cutholoid_01_entity
+    is_space_object = yes
+    max_speed = @speed_very_slow
+    rotation_speed = 0.02
+    acceleration = 0.6
+    modifier = {
+        ship_evasion_add = 5
+        ship_armor_add = 4500
+    }
+    collision_radius = @battleship_collision_radius
+    max_hitpoints = 800
+    fleet_slot_size = 4
+    size_multiplier = 4
+    section_slots = {
+        "mid" = {
+            locator = "root"
+        }
+        "mutations" = {
+            locator = "root"
+        }
+    }
+    num_target_locators = 4
+    icon = ship_size_cutholoid
+    class = shipclass_military
+    is_space_station = no
+    is_designable = no
+    is_space_fauna_ship = yes
+    is_reanimated = yes
+    resources = {
+        category = ships
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = minerals
+            UPKEEP = @fauna_large_upkeep_minerals
+        }
+        inline_script = {
+            script = "grand_archive/space_fauna_upkeep"
+            RESOURCE = energy
+            UPKEEP = @fauna_large_upkeep_energy
+        }
     }
 }
 synth_queen_titan = {
@@ -10981,7 +13196,7 @@ large_ship_synth_queen = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostlarge_42
+            alloys = @salvagecostlarge_34
         }
     }
 }
@@ -11017,7 +13232,7 @@ small_ship_synth_queen = {
     resources = {
         category = ships
         cost = {
-            alloys = @salvagecostsmall_23
+            alloys = @salvagecostsmall_12
         }
     }
 }
@@ -11498,7 +13713,7 @@ leviathan_01_void_dragon = {
             food = 100
         }
         cost = {
-            food = @salvagecostlarge_43
+            food = @salvagecostlarge_35
         }
     }
 }
@@ -11947,7 +14162,7 @@ mem_ancient_large_military_station = {
         "mem_ancient_01"
         "mem_ancient_02"
     }
-    max_speed = 6
+    max_speed = 0
     rotation_speed = 10
     acceleration = 10
     modifier = {
@@ -11971,7 +14186,6 @@ mem_ancient_large_military_station = {
     uses_name_prefix = no
     takes_name_from_ship_design = yes
     class = shipclass_military_station
-    construction_type = starbase_defenses
     is_designable = no
     icon = ship_size_military_station
 }
@@ -11980,7 +14194,7 @@ mem_ancient_small_military_station = {
         "mem_ancient_01"
         "mem_ancient_02"
     }
-    max_speed = 6
+    max_speed = 0
     rotation_speed = 10
     acceleration = 10
     modifier = {
@@ -12004,7 +14218,6 @@ mem_ancient_small_military_station = {
     uses_name_prefix = no
     takes_name_from_ship_design = yes
     class = shipclass_military_station
-    construction_type = starbase_defenses
     is_designable = no
     icon = ship_size_military_station
 }

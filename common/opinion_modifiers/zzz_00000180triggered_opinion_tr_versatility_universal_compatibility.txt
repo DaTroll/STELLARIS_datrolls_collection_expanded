@@ -1,6 +1,6 @@
 triggered_opinion_tr_versatility_universal_compatibility = {
     trigger = {
-        has_authority = auth_machine_intelligence
+        is_machine_empire = yes
         FROM = {
             has_tradition = tr_versatility_universal_compatibility
         }

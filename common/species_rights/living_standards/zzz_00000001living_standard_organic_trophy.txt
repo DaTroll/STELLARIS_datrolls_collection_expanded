@@ -17,7 +17,7 @@ living_standard_organic_trophy = {
         has_synthetic_dawn = yes
         exists = from
         from = {
-            has_authority = auth_machine_intelligence
+            is_machine_empire = yes
             has_valid_civic = civic_machine_servitor
         }
     }
